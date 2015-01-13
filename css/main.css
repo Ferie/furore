@@ -9,6 +9,10 @@ body {
 	float: none;
 	display: block;
 }
+#mainContainer {
+	background-color: #FFF;
+	position: absolute;
+}
 /**** GENERAL RULES ****/
 
 /**** HEADER ****/

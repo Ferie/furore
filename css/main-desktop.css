@@ -1,5 +1,10 @@
 @media (min-width: 768px) {
 	/**** GENERAL RULES ****/
+	
+	#mainContainer {
+		top: 80px;
+		left: 80px;
+	}
 	/**** GENERAL RULES ****/
 	
 	/**** HEADER ****/
@@ -111,45 +116,43 @@
 		height: 100%;
 		overflow: hidden;
 	}
-	#sidebar.right {
-		position: relative;
-		width: 80px;
-		height: 100%;
-		overflow: hidden;
-		-webkit-transition: width 0.35s ease;
-		-moz-transition: width 0.35s ease;
-		-o-transition: width 0.35s ease;
-		transition: width 0.35s ease;
-	}
-	#sidebar.right.opened {
-		width: 280px;
-		height: auto;
-	}
 	#sidebar .sidebar-element .sidebar-collapser {
 		width: 280px;
 		display: inline-block;
 		height: 80px;
-	}
-	#sidebar .sidebar-element .sidebar-collapser .sidebar-header {
-		width: 280px;
-		display: inline-block;
-		height: 80px;
-		background-position: left center;
+		background-position: 20px center;
 		background-repeat: no-repeat;
 		padding-left: 80px;
+		font-family: 'unicredit-bold';
+		color: #666666;
+		text-transform: uppercase;
+		line-height: 80px;
 	}
-	#sidebar .sidebar-element.aboutus .sidebar-collapser .sidebar-header  {background-image: url('../img/static/menu-sidebar-aboutus.png');}
-	#sidebar .sidebar-element.aboutus .sidebar-collapser:hover .sidebar-header, #sidebar .sidebar-element.aboutus.active .sidebar-collapser .sidebar-header {background-image: url('../img/static/menu-sidebar-aboutus-active.png');}
-	#sidebar .sidebar-element.governance .sidebar-collapser .sidebar-header {background-image: url('../img/static/menu-sidebar-governance.png');}
-	#sidebar .sidebar-element.governance .sidebar-collapser:hover .sidebar-header, #sidebar .sidebar-element.governance.active .sidebar-collapser .sidebar-header {background-image: url('../img/static/menu-sidebar-governance-active.png');}
-	#sidebar .sidebar-element.investors .sidebar-collapser .sidebar-header {background-image: url('../img/static/menu-sidebar-investors.png');}
-	#sidebar .sidebar-element.investors .sidebar-collapser:hover .sidebar-header, #sidebar .sidebar-element.investors.active .sidebar-collapser .sidebar-header {background-image: url('../img/static/menu-sidebar-investors-active.png');}
-	#sidebar .sidebar-element.pressmedia .sidebar-collapser .sidebar-header {background-image: url('../img/static/menu-sidebar-pressmedia.png');}
-	#sidebar .sidebar-element.pressmedia .sidebar-collapser:hover .sidebar-header, #sidebar .sidebar-element.pressmedia.active .sidebar-collapser .sidebar-header {background-image: url('../img/static/menu-sidebar-pressmedia-active.png');}
-	#sidebar .sidebar-element.career .sidebar-collapser .sidebar-header {background-image: url('../img/static/menu-sidebar-career.png');}
-	#sidebar .sidebar-element.career .sidebar-collapser:hover .sidebar-header, #sidebar .sidebar-element.career.active .sidebar-collapser .sidebar-header {background-image: url('../img/static/menu-sidebar-career-active.png');}
-	#sidebar .sidebar-element.sustainability .sidebar-collapser .sidebar-header {background-image: url('../img/static/menu-sidebar-sustainability.png');}
-	#sidebar .sidebar-element.sustainability .sidebar-collapser:hover .sidebar-header, #sidebar .sidebar-element.sustainability.active .sidebar-collapser .sidebar-header {background-image: url('../img/static/menu-sidebar-sustainability-active.png');}
+	#sidebar .sidebar-element .sidebar-collapser:hover, #sidebar .sidebar-element.active .sidebar-collapser {color: #FFF; text-decoration: none;}
+	#sidebar .sidebar-element.aboutus .sidebar-collapser  {background-image: url('../img/static/menu-sidebar-aboutus.png');}
+	#sidebar .sidebar-element.aboutus .sidebar-collapser:hover, #sidebar .sidebar-element.aboutus.active .sidebar-collapser {background-image: url('../img/static/menu-sidebar-aboutus-active.png');}
+	#sidebar .sidebar-element.governance .sidebar-collapser {background-image: url('../img/static/menu-sidebar-governance.png');}
+	#sidebar .sidebar-element.governance .sidebar-collapser:hover, #sidebar .sidebar-element.governance.active .sidebar-collapser {background-image: url('../img/static/menu-sidebar-governance-active.png');}
+	#sidebar .sidebar-element.investors .sidebar-collapser {background-image: url('../img/static/menu-sidebar-investors.png');}
+	#sidebar .sidebar-element.investors .sidebar-collapser:hover, #sidebar .sidebar-element.investors.active .sidebar-collapser {background-image: url('../img/static/menu-sidebar-investors-active.png');}
+	#sidebar .sidebar-element.pressmedia .sidebar-collapser {background-image: url('../img/static/menu-sidebar-pressmedia.png');}
+	#sidebar .sidebar-element.pressmedia .sidebar-collapser:hover, #sidebar .sidebar-element.pressmedia.active .sidebar-collapser {background-image: url('../img/static/menu-sidebar-pressmedia-active.png');}
+	#sidebar .sidebar-element.career .sidebar-collapser {background-image: url('../img/static/menu-sidebar-career.png');}
+	#sidebar .sidebar-element.career .sidebar-collapser:hover, #sidebar .sidebar-element.career.active .sidebar-collapser {background-image: url('../img/static/menu-sidebar-career-active.png');}
+	#sidebar .sidebar-element.sustainability .sidebar-collapser {background-image: url('../img/static/menu-sidebar-sustainability.png');}
+	#sidebar .sidebar-element.sustainability .sidebar-collapser:hover, #sidebar .sidebar-element.sustainability.active .sidebar-collapser {background-image: url('../img/static/menu-sidebar-sustainability-active.png');}
 	
+	#sidebar .sidebar-element ul {
+		padding: 0 0 0 80px;
+		margin: 0;
+		list-style-type: none;
+	}
+	#sidebar .sidebar-element ul li a {
+		color: #FFF;
+  		font-family: 'unicredit-light';
+	}
+	#sidebar .sidebar-element ul li a.masterLink {
+		font-family: 'unicredit-bold';
+	}
 	/**** SIDEBAR ****/
 }
