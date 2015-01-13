@@ -2,23 +2,26 @@ function toggleSidebar(action){
 	switch (action){
 		case "open":
 			$('#header .sidebar-switch a').addClass("opened");
-			//$('#sidebar').addClass("opened");
 			$('#sidebar').addClass("opened").animate({"width": '+=200'});
+			$('#sidebar .sidebar-footer').slideDown();
 			break;
 		case "close":
 			$('#header .sidebar-switch a').removeClass("opened");
-			//$('#sidebar').removeClass("opened");
 			$('#sidebar').removeClass("opened").animate({"width": '-=200'});
+			$('#sidebar .sidebar-footer').slideUp();
 			$('#sidebar .sidebar-element .collapse.in').slideUp().removeClass("in");
-			//$('#sidebar .sidebar-element .collapse.in').collapse('hide');
+			$('#sidebar .sidebar-element.active').removeClass('active');
 			break;
 		case "toggle":
 			if ($('#header .sidebar-switch a').hasClass("opened")){
 				$('#sidebar').animate({"width": '-=200'});
+				$('#sidebar .sidebar-footer').slideUp();
 				$('#sidebar .sidebar-element .collapse.in').slideUp().removeClass("in");
+				$('#sidebar .sidebar-element.active').removeClass('active');
 				//$('#sidebar .sidebar-element .collapse.in').collapse('hide');				
 			} else {
 				$('#sidebar').animate({"width": '+=200'});
+				$('#sidebar .sidebar-footer').slideDown();
 			}
 			$('#header .sidebar-switch a').toggleClass("opened");
 			$('#sidebar').toggleClass("opened");
@@ -40,6 +43,16 @@ function setWidthContainer(){
 	var width = $(window).outerWidth(true)-left;
 	$('#mainContainer').css({width: width+"px"});
 }
+function setHeightContainer(){
+	var heightS = $(window).outerHeight(true)-$('#header').outerHeight(true);
+	var heightC = $(document).outerHeight(true);
+	$('#mainContainer').css("min-height", heightC+"px");
+	$('#sidebar').css("height", heightS+"px");
+}
+function setWidthRedbar(){
+	var width = $(window).outerWidth(true)-$('#header .sidebar-switch').outerWidth(true)-$('#header .logo').outerWidth(true)-$('#header .online-banking').outerWidth(true);
+	$('#header .menu').css({width: width+"px"});
+}
 
 $(document).ready(function() {
 
@@ -49,6 +62,9 @@ $(document).ready(function() {
 	$('#sidebar .sidebar-element .sidebar-collapser').click(function () {
 		if ($("#sidebar").hasClass("opened")){
 			var elementClass = $(this).data('name');
+			//console.log($("#sidebar .sidebar-element .sidebar-header").outerHeight(true));
+			//console.log($("#sidebar .sidebar-element."+elementClass).index(".sidebar-element"));
+			$("#sidebar").scrollTop($("#sidebar .sidebar-element."+elementClass).index(".sidebar-element")*$("#sidebar .sidebar-element .sidebar-header").outerHeight(true));
 			$('#sidebar .sidebar-element.active:not(.'+elementClass+')').removeClass("active");
 			$('#sidebar .sidebar-element.'+elementClass).toggleClass("active");
 			$('#sidebar .sidebar-element:not(.'+elementClass+') .collapse.in').slideUp().removeClass("in");
@@ -60,5 +76,12 @@ $(document).ready(function() {
 			}
 		}
 	});
+	setWidthRedbar();
 	setWidthContainer();
+	setHeightContainer();
+	$(window).resize(function(){
+		setWidthContainer();
+		setWidthRedbar();
+		setHeightContainer();
+	});
 });
