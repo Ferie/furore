@@ -235,7 +235,8 @@
 		margin: 3px 5px 0 0;
 	}
 	#sidebar .sidebar-footer .change-language a:hover,
-	#sidebar .sidebar-footer .change-language a:active {
+	#sidebar .sidebar-footer .change-language a:active,
+	#sidebar .sidebar-footer .change-language a.active {
 		color: #FFF;
 		text-decoration: none;
 	}
