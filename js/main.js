@@ -46,8 +46,10 @@ function setPositionContainer(){
 	var topC = $('#header').outerHeight(true)+$('#message:visible').outerHeight(true);
 	var leftC = getLeft();
 	var widthC =  $(window).outerWidth(true)-leftC;
+	var widthF =  $(window).outerWidth(true)-leftC;
 	$('#mainContainer').css({top: topC+"px"});
 	$('#mainContainer').animate({left: leftC+"px", width: widthC+"px"}, {"queue": false}, "linear");
+	$('#footer').animate({width: widthC+"px"}, {"queue": false}, "linear");
 	//$('#mainContainer').animate({width: width+"px"}, {"queue": false}, "linear");
 	//$('#mainContainer').css({width: width+"px"});
 }
