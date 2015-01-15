@@ -62,11 +62,12 @@ function setWidthFooter(){
 	$('#footer').css({width: widthF+"px"});	
 }
 function setHeightContainer(){
-	var containerContent = getContentHeight($('#mainContainer'));	
-	var heightC = $(document).outerHeight(true)-$('#header').outerHeight(true);
+	var containerContent =  Math.max(getContentHeight($('#mainContainer')), $(window).outerHeight(true)-$('#header').outerHeight(true));	
+	//var heightC = Math.max($(document).outerHeight(true), $(window).outerHeight(true))-$('#header').outerHeight(true);
 	$('#mainContainer').css("height", containerContent+"px");
 	//var topF = heightC-$('#footer').outerHeight(true)-$('#footer').position().top;
 	//console.log("document: "+$(document).outerHeight(true)+"px");
+	//console.log("window: "+$(window).outerHeight(true)+"px");
 	//console.log("header: "+$('#header').outerHeight(true)+"px");
 	//console.log("footer: "+$('#footer').outerHeight(true)+"px");
 	//console.log("footer Top: "+$('#footer').position().top+"px");
@@ -74,8 +75,8 @@ function setHeightContainer(){
 	//$('#footer').css("top", topF+"px");
 }
 function setHeightSidebar(){
-	var containerContent = getContentHeight($('#mainContainer'));
-	var heightS = $(document).outerHeight(true)-$('#header').outerHeight(true);
+	var containerContent =  Math.max(getContentHeight($('#mainContainer')), $(window).outerHeight(true)-$('#header').outerHeight(true));
+	//var heightS = $(document).outerHeight(true)-$('#header').outerHeight(true);
 	$('#sidebar').css("height", containerContent+"px");	
 }
 function setWidthRedbar(){
