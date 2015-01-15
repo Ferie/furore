@@ -22,6 +22,7 @@
     <![endif]-->
 
     <script src="plugin/js/jquery-1.11.2.min.js"></script>
+	<script src="plugin/js/jquery.cookie.js"></script>
     <script src="plugin/js/bootstrap.min.js"></script>
 	<script src="plugin/js/heartcode-canvasloader-min.js"></script>
     <script src="plugin/js/icheck.min.js"></script>
@@ -47,7 +48,7 @@
 		<div class="logo">
 			<img alt="Unicredit Logo" src="img/static/logo.png">
 		</div>
-		<div class="menu">
+		<div class="menu hidden-xs">
 			<ul>
 				<li><a class="calendar" href="javascript:void(0);">Calendar</a></li>
 				<li><a class="worldwide" href="javascript:void(0);">Worldwide</a></li>
@@ -56,13 +57,26 @@
 				<li><a class="search" href="javascript:void(0);">Search</a></li>
 			</ul>
 		</div>
-		<div class="online-banking">
+		<div class="online-banking hidden-xs">
 			<a href="javascript:void(0);">
 				Online banking
 			</a>	
 		</div>
+		<div class="search visible-xs">
+			<a href="javascript:void(0);">
+			</a>	
+		</div>
 	</div>
 	<div id="sidebar">
+		<div class="menu visible-xs">
+			<ul>
+				<li><a class="calendar" href="javascript:void(0);">Calendar</a></li>
+				<li><a class="worldwide" href="javascript:void(0);">Worldwide</a></li>
+				<li><a class="archive" href="javascript:void(0);">General archive</a></li>
+				<li><a class="contactus" href="javascript:void(0);">Contact us</a></li>
+				<li><a class="search" href="javascript:void(0);">Search</a></li>
+			</ul>
+		</div>
 		<div class="sidebar-element aboutus">
 			<div class="sidebar-header">
 				<a class="sidebar-collapser" href="javascript:void(0);" data-name="aboutus" data-target="#sidebar .sidebar-element.aboutus .collapse">About Us</a>
@@ -70,12 +84,12 @@
 			</div>
 			<div class="collapse">
 				<ul>
-					<li><a class="masterLink" href="javascript:void(0);">UniCredit at a glance</a></li>
-					<li><a href="javascript:void(0);">Our identity</a></li>
-					<li><a href="javascript:void(0);">Culture & Territory</a></li>
-					<li><a href="javascript:void(0);">Innovation</a></li>
-					<li><a href="javascript:void(0);">Business model</a></li>
-					<li><a href="javascript:void(0);">Brand & Communication</a></li>
+					<li><a class="masterLink" href="javascript:void(0);" data-section="aboutus">UniCredit at a glance</a></li>
+					<li><a href="javascript:void(0);" data-section="aboutus">Our identity</a></li>
+					<li><a href="javascript:void(0);" data-section="aboutus">Culture & Territory</a></li>
+					<li><a href="javascript:void(0);" data-section="aboutus">Innovation</a></li>
+					<li><a href="javascript:void(0);" data-section="aboutus">Business model</a></li>
+					<li><a href="javascript:void(0);" data-section="aboutus">Brand & Communication</a></li>
 				</ul>
 			</div>
 		</div>
@@ -86,12 +100,12 @@
 			</div>
 			<div class="collapse">
 				<ul>
-					<li><a class="masterLink" href="javascript:void(0);">UniCredit at a glance</a></li>
-					<li><a href="javascript:void(0);">Our identity</a></li>
-					<li><a href="javascript:void(0);">Culture & Territory</a></li>
-					<li><a href="javascript:void(0);">Innovation</a></li>
-					<li><a href="javascript:void(0);">Business model</a></li>
-					<li><a href="javascript:void(0);">Brand & Communication</a></li>
+					<li><a class="masterLink" href="javascript:void(0);" data-section="governance">Frontpage</a></li>
+					<li><a href="javascript:void(0);" data-section="governance">Page 1</a></li>
+					<li><a href="javascript:void(0);" data-section="governance">Page 2</a></li>
+					<li><a href="javascript:void(0);" data-section="governance">Page 3</a></li>
+					<li><a href="javascript:void(0);" data-section="governance">Page 4</a></li>
+					<li><a href="javascript:void(0);" data-section="governance">Page 5</a></li>
 				</ul>
 			</div>
 		</div>
@@ -102,12 +116,12 @@
 			</div>
 			<div class="collapse">
 				<ul>
-					<li><a class="masterLink" href="javascript:void(0);">UniCredit at a glance</a></li>
-					<li><a href="javascript:void(0);">Our identity</a></li>
-					<li><a href="javascript:void(0);">Culture & Territory</a></li>
-					<li><a href="javascript:void(0);">Innovation</a></li>
-					<li><a href="javascript:void(0);">Business model</a></li>
-					<li><a href="javascript:void(0);">Brand & Communication</a></li>
+					<li><a class="masterLink" href="javascript:void(0);" data-section="investors">Frontpage</a></li>
+					<li><a href="javascript:void(0);" data-section="investors">Page 1</a></li>
+					<li><a href="javascript:void(0);" data-section="investors">Page 2</a></li>
+					<li><a href="javascript:void(0);" data-section="investors">Page 3</a></li>
+					<li><a href="javascript:void(0);" data-section="investors">Page 4</a></li>
+					<li><a href="javascript:void(0);" data-section="investors">Page 5</a></li>
 				</ul>
 			</div>
 		</div>
@@ -118,24 +132,24 @@
 			</div>
 			<div class="collapse">
 				<ul>
-					<li><a class="masterLink" href="javascript:void(0);">UniCredit at a glance</a></li>
-					<li><a href="javascript:void(0);">Our identity</a></li>
-					<li><a href="javascript:void(0);">Culture & Territory</a></li>
-					<li><a href="javascript:void(0);">Innovation</a></li>
-					<li><a href="javascript:void(0);">Business model</a></li>
-					<li><a href="javascript:void(0);">Brand & Communication</a></li>
+					<li><a class="masterLink" href="javascript:void(0);" data-section="pressmedia">Frontpage</a></li>
+					<li><a href="javascript:void(0);" data-section="pressmedia">Page 1</a></li>
+					<li><a href="javascript:void(0);" data-section="pressmedia">Page 2</a></li>
+					<li><a href="javascript:void(0);" data-section="pressmedia">Page 3</a></li>
+					<li><a href="javascript:void(0);" data-section="pressmedia">Page 4</a></li>
+					<li><a href="javascript:void(0);" data-section="pressmedia">Page 5</a></li>
 				</ul>
 			</div>
 		</div>
 		<div class="sidebar-element career reverse">
 			<div class="collapse">
 				<ul>
-					<li><a class="masterLink" href="javascript:void(0);">UniCredit at a glance</a></li>
-					<li><a href="javascript:void(0);">Our identity</a></li>
-					<li><a href="javascript:void(0);">Culture & Territory</a></li>
-					<li><a href="javascript:void(0);">Innovation</a></li>
-					<li><a href="javascript:void(0);">Business model</a></li>
-					<li><a href="javascript:void(0);">Brand & Communication</a></li>
+					<li><a class="masterLink" href="javascript:void(0);" data-section="career">Careers frontpage</a></li>
+					<li><a href="javascript:void(0);" data-section="career">What sets us apart</a></li>
+					<li><a href="javascript:void(0);" data-section="career">Students</a></li>
+					<li><a href="javascript:void(0);" data-section="career">Graduates</a></li>
+					<li><a href="javascript:void(0);" data-section="career">Professionals</a></li>
+					<li><a href="javascript:void(0);" data-section="career">The recruitment process</a></li>
 				</ul>
 			</div>
 			<div class="sidebar-header">
@@ -146,12 +160,13 @@
 		<div class="sidebar-element sustainability reverse">
 			<div class="collapse">
 				<ul>
-					<li><a class="masterLink" href="javascript:void(0);">UniCredit at a glance</a></li>
-					<li><a href="javascript:void(0);">Our identity</a></li>
-					<li><a href="javascript:void(0);">Culture & Territory</a></li>
-					<li><a href="javascript:void(0);">Innovation</a></li>
-					<li><a href="javascript:void(0);">Business model</a></li>
-					<li><a href="javascript:void(0);">Brand & Communication</a></li>
+					<li><a class="masterLink" href="javascript:void(0);" data-section="sustainability">A sustainable Bank</a></li>
+					<li><a href="javascript:void(0);" data-section="sustainability">Culture of sustainability</a></li>
+					<li><a href="javascript:void(0);" data-section="sustainability">Invididuals and families</a></li>
+					<li><a href="javascript:void(0);" data-section="sustainability">Companies</a></li>
+					<li><a href="javascript:void(0);" data-section="sustainability">Environment</a></li>
+					<li><a href="javascript:void(0);" data-section="sustainability">Investors and markets</a></li>
+					<li><a href="javascript:void(0);" data-section="sustainability">Reports and resources</a></li>
 				</ul>
 			</div>
 			<div class="sidebar-header">
