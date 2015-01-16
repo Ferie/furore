@@ -3,11 +3,25 @@ body {
 	font-family: 'unicredit-regular';
 	font-size: 14px;
 	background: #FFF;
+	color: #666666;
 }
 .clear {
 	clear: both;
 	float: none;
 	display: block;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+a {
+	color: #00afd0;
+}
+a:hover, a:active {
+	color: #999999;
+	text-decoration: none;
 }
 #mainContainer {
 	background-color: #FFF;
@@ -18,11 +32,13 @@ body {
 #mainContainer > .pane {
 	display: block;
 	width: 100%;
-	height: 100px;
-	text-align: center;
-	line-height: 100px;
-	font-size: 36px;
-	font-family: 'unicredit-bold';		
+	text-align: center;	
+}
+#mainContainer > .pane h1,
+#mainContainer > .pane h2,
+#mainContainer > .pane h3 {
+	font-family: "unicredit-light";
+    font-weight: normal;
 }
 /**** GENERAL RULES ****/
 	
@@ -235,6 +251,24 @@ body {
 }
 /**** SIDEBAR ****/
 
+/**** BREADCRUMB ****/
+#breadcrumb {
+	border-bottom: 1px solid #c9c9c9;
+}
+#breadcrumb ul {
+	list-style-type: none;
+	padding: 10px;
+}
+#breadcrumb ul li {
+	color: #999999;
+	display: inline-block;
+}
+#breadcrumb ul li:not(:last-child):after {
+	content: "❯";
+	padding: 0 2px 0 5px;
+}
+
+/**** BREADCRUMB ****/
 
 /**** FOOTER ****/
 #footer {

@@ -17,6 +17,8 @@
     <link href="css/font-families.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/main-desktop.css" rel="stylesheet">
+    <link href="css/calendar.css" rel="stylesheet">
+    <link href="css/calendar-desktop.css" rel="stylesheet">
     <link href="css/retina.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <![endif]-->
@@ -34,6 +36,7 @@
 	<script src="js/utility.js"></script>
 	<script src="js/jquery.headerUBIS.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/calendar.js"></script>
     <!--[if lt IE 9]>
       <script src="plugin/js/html5shiv.js"></script>
       <script src="plugin/js/respond.min.js"></script>
@@ -52,7 +55,7 @@
 		</div>
 		<div class="menu hidden-xs">
 			<ul>
-				<li><a class="calendar" href="javascript:void(0);">Calendar</a></li>
+				<li><a class="calendar active" href="javascript:void(0);">Calendar</a></li>
 				<li><a class="worldwide" href="javascript:void(0);">Worldwide</a></li>
 				<li><a class="archive" href="javascript:void(0);">General archive</a></li>
 				<li><a class="contactus" href="javascript:void(0);">Contact us</a></li>
@@ -190,11 +193,108 @@
 		</div>
 	</div>
 	<div id="mainContainer">
-		<div id="pane1" class="pane">
-			<p>Pane 1</p>
+		<div id="breadcrumb">
+			<ul>
+				<li><a href="javascript:void(0);">Press & Media</a></li>
+				<li>Events Calendar</li>
+			</ul>
 		</div>
-		<div id="pane2" class="pane">
-			<p>Pane 2</p>
+		<div id="calendar">
+			<div class="panel">
+				<div class="container">
+					<h1>Events Calendar</h1>
+				</div>
+			</div>
+			<div class="panel" id="calendarTools">
+				<div class="container">
+					<div class="col-xs-12 col-sm-6">
+						<input type="text" class="keywords" name="keywords" placeholder="Search all events">
+					</div>
+					<div class="col-xs-12 col-sm-3">
+						<input type="text" class="date-range datepicker-multi" name="date-range" placeholder="Select range">
+					</div>
+					<div class="col-xs-12 col-sm-3">
+						<select name="category" class="chosen-select" placeholder="All categories">
+							<option value="" class="placeholder">All categories</option>
+							<option value="pressmedia">Press & Media</option>
+							<option value="culturesociety">Culture and Society</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="panel" id="calendarNumberResults">
+				<div class="container">
+					<h3>6 upcoming events</h3>
+				</div>
+			</div>
+			<div class="panel" id="calendarPanelResults">
+				<div class="panel event highlighted">
+					<div class="container">
+						<div class="header col-xs-12">
+							<div class="date col-xs-12 col-sm-3">
+								<ul class="days">
+									<li><h1>15</h1></li>
+								</ul>
+								<div class="labels">
+									<span class="month">November</span>
+									<span class="year">2014</span>
+								</div>
+								<div class="labels">
+									<span class="month">Wien</span>
+									<span class="year">Austria</span>
+								</div>
+							</div>
+							<div class="buttons col-xs-12 col-sm-1">
+								<button class="add">+</button>Save
+							</div>
+							<div class="categories right">
+								<label class="highlighted">Highlighted</label>
+								<label class="inventors">Inventors</label>
+							</div>
+						</div>
+						<div class="body col-xs-12">
+							<h2>Provisional UniCredit S.p.A. Balance Sheet data and Consolidated Balance Sheet as at 31.12.14</h2>
+						</div>
+						<div class="footer col-xs-12">
+							<a href="javascript:void(0);" class="left">Read more</a>
+							<a href="javascript:void(0);" class="right">5 attachments</a>
+						</div>
+					</div>
+				</div>
+				<div class="panel event">
+					<div class="container">
+						<div class="header col-xs-12">
+							<div class="date col-xs-12 col-sm-3">
+								<ul class="days">
+									<li><h1>28</h1></li>
+									<li><h1>29</h1></li>
+								</ul>
+								<div class="labels">
+									<span class="month">November</span>
+									<span class="year">2014</span>
+								</div>
+								<div class="labels">
+									<span class="month">Wien</span>
+									<span class="year">Austria</span>
+								</div>
+							</div>
+							<div class="buttons col-xs-12 col-sm-1">
+								<button class="add">+</button>Save
+							</div>
+							<div class="categories right">
+								<label class="inventors">Inventors</label>
+							</div>
+						</div>
+						<div class="body col-xs-12">
+							<h2>Provisional UniCredit S.p.A. Balance Sheet data and Consolidated Balance Sheet as at 31.12.14</h2>
+						</div>
+						<div class="footer col-xs-12">
+							<a href="javascript:void(0);" class="left">Read more</a>
+							<a href="javascript:void(0);" class="right">5 attachments</a>
+						</div>
+					</div>
+				</div>
+			</div>			
 		</div>
 		<div id="footer">
 			<div class="lightGreyFooter">
