@@ -1,0 +1,44 @@
+#calendar {
+}
+#calendar > .panel {
+	clear: both;
+	padding: 10px 0;	
+}
+#calendar .panel > .container {
+	width: 100%;
+	margin: 0;
+	padding: 0 10px;
+}
+#calendar .container > div {
+	padding: 0;
+	margin: 0;
+}
+#calendarTools input,
+#calendarTools select {
+	width: 100%;
+	padding: 10px 0;
+}
+#calendar .event.highlighted {
+	background-color: #f2f2f2;
+}
+#calendar .event .header .date .days {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;	
+	display: inline-block;
+}
+#calendar .event .header .date .days h1 {
+	margin: 0;
+}
+#calendar .event .header .date .days li {
+	display: inline-block;
+}
+#calendar .event .header .labels {
+	display: inline-block;	
+}
+#calendar .event .header .labels > span:first-child {
+	font-family: 'unicredit-bold'
+}
+#calendar .event .header .labels > span {
+	display: block;
+}
