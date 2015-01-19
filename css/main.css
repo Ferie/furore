@@ -16,12 +16,19 @@ body {
 .right {
 	float: right;
 }
-a {
+a, a:visited, a:focus {
 	color: #00afd0;
+	text-decoration: none;
+	outline: 0;
 }
 a:hover, a:active {
 	color: #999999;
 	text-decoration: none;
+}
+.panel {
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
 }
 #mainContainer {
 	background-color: #FFF;
@@ -175,7 +182,10 @@ a:hover, a:active {
 #sidebar .sidebar-element.sustainability .sidebar-collapser:active {background-image: url('../img/static/menu-sidebar-sustainability-active.png');}
 
 #sidebar .sidebar-element.active .sidebar-header {
-	background: url('../img/static/menu-sidebar-arrow-active.png') no-repeat scroll right center transparent;
+	background: url('../img/static/menu-sidebar-arrowup.png') no-repeat scroll right center transparent;
+}
+#sidebar .sidebar-element.active.reverse .sidebar-header {
+	background: url('../img/static/menu-sidebar-arrowdown.png') no-repeat scroll right center transparent;
 }
 
 #sidebar .sidebar-element .collapse{

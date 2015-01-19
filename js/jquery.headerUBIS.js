@@ -1,5 +1,6 @@
 /* PLUGIN HEADER e SIDEBAR */
 (function($) {
+	var st;
 	var methods = {
 		init: function(options){
 			var defaults = {
@@ -23,7 +24,7 @@
 				timer: null
 				
 			};
-			var st = $.extend(true, defaults, options); 
+			st = $.extend(true, defaults, options); 
 			
 			var $header = $(st.headerSelector);
 			var $sidebar = $(st.sidebarSelector);
@@ -48,7 +49,7 @@
 			});
 			
 
-			st.$header.find('.sidebar-switch a').click(function(){utils._toggleSidebar(st,"toggle");});
+			st.$header.find('.sidebar-switch a').click(function(){utils._toggleSidebar("toggle");});
 			
 			st.$sidebar.find('.sidebar-element .sidebar-collapser').click(function () {
 				if (st.$sidebar.hasClass("opened")){
@@ -62,38 +63,39 @@
 					var target = $($(this).data("target"));
 					if (target.hasClass("in")) {
 						target.slideUp({complete: function(){
-							utils._setHeightSidebar(st);
-							utils._setHeightContainer(st);		
+							utils._setHeightSidebar();
+							utils._setHeightContainer();		
 							}}).removeClass("in");
 					} else {
 						target.slideDown({complete: function(){
-							utils._setHeightSidebar(st);
-							utils._setHeightContainer(st);		
+							utils._setHeightSidebar();
+							utils._setHeightContainer();		
 							}}).addClass("in");
 					}
 				}
 			});
 			
 
-			utils._setWidthLogoHeader(st);
-			utils._setWidthRedbar(st);
-			utils._setWidthContainer(st);
-			utils._setWidthFooter(st);
-			utils._setHeightSidebar(st);
-			utils._setHeightContainer(st);
-			utils._setPositionContainer(st);
+			utils._setWidthLogoHeader();
+			utils._setWidthRedbar();
+			utils._setWidthContainer();
+			utils._setWidthFooter();
+			utils._setHeightSidebar();
+			utils._setHeightContainer();
+			utils._setPositionContainer();
 			$(window).resize(function(){
-				utils._setWidthLogoHeader(st);
-				utils._setWidthRedbar(st);
-				utils._setWidthContainer(st);
-				utils._setWidthFooter(st);
-				utils._setHeightSidebar(st);
-				utils._setHeightContainer(st);
-				utils._setPositionContainer(st);
-				utils._setWidthSidebar(st);
+				utils._setWidthLogoHeader();
+				utils._setWidthRedbar();
+				utils._setWidthContainer();
+				utils._setWidthFooter();
+				utils._setHeightSidebar();
+				utils._setHeightContainer();
+				utils._setPositionContainer();
+				utils._setWidthSidebar();
 			});
 			
-			return {	
+			return {
+				utils: utils,
 				header: $header, 
 				sidebar: $sidebar, 
 				message: $message, 
@@ -103,7 +105,7 @@
 			}
 		};
 	var utils = {
-		_getContainerLeft: function(st){
+		_getContainerLeft: function(){
 			var result = 0;
 			if (isBreakpoint(st.breakpoint)) {
 				result = st.$sidebar.hasClass('opened') ? st.openedContainerLeftMobile : st.collapsedContainerLeftMobile;
@@ -112,7 +114,7 @@
 			}	
 			return result;
 		},
-		 _getSidebarWidth: function(st){
+		 _getSidebarWidth: function(){
 			var result = 0;
 			if (isBreakpoint(st.breakpoint)) {
 				result = st.$sidebar.hasClass('opened') ? st.openedSidebarWidthMobile : st.collapsedSidebarWidthMobile;
@@ -126,7 +128,7 @@
 			$(element).children().each(function(){sum+=$(this).outerHeight(true);});
 			return sum;
 		},
-		_selectByCookies: function(st){
+		_selectByCookies: function(){
 			if ($.cookie(st.cookieName)!=null){
 				var selection = JSON.parse($.cookie(st.cookieName));
 				st.$sidebar.find(".sidebar-element."+selection.section+" .sidebar-collapser").trigger("click");
@@ -134,17 +136,17 @@
 				$(st.$sidebar.find(".sidebar-element."+selection.section+" .collapse a").get(parseInt(selection.page))).addClass("active");
 			}
 		},
-		_toggleSidebar: function(st, action){
+		_toggleSidebar: function(action){
 			switch (action){
 				case "open":
 					st.$header.find('.sidebar-switch a').addClass("opened");
-					st.$sidebar.addClass("opened").animate({"width": utils._getSidebarWidth(st)+'px'}, {"queue": false}, utils._getSidebarWidth(st)*st.pixelSpeed, "linear");
+					st.$sidebar.addClass("opened").animate({"width": utils._getSidebarWidth()+'px'}, {"queue": false}, utils._getSidebarWidth()*st.pixelSpeed, "linear");
 					st.$sidebar.find('.sidebar-footer').slideDown();
 					utils._selectByCookies(st);
 					break;
 				case "close":
 					st.$header.find('.sidebar-switch a').removeClass("opened");
-					st.$sidebar.removeClass("opened").animate({"width": utils._getSidebarWidth(st)+'px'}, {"queue": false}, utils._getSidebarWidth(st)*st.pixelSpeed, "linear");
+					st.$sidebar.removeClass("opened").animate({"width": utils._getSidebarWidth()+'px'}, {"queue": false}, utils._getSidebarWidth()*st.pixelSpeed, "linear");
 					st.$sidebar.find('.sidebar-footer').slideUp();
 					st.$sidebar.find('.sidebar-element .collapse.in').slideUp().removeClass("in");
 					st.$sidebar.find('.sidebar-element.active').removeClass('active');
@@ -154,13 +156,13 @@
 					st.$header.find('.sidebar-switch a').toggleClass("opened");
 					st.$sidebar.toggleClass("opened");
 					if (st.$header.find('.sidebar-switch a').hasClass("opened")){
-						st.$sidebar.animate({"width": utils._getSidebarWidth(st)+'px'}, {"queue": false}, utils._getSidebarWidth(st)*st.pixelSpeed, "linear");
+						st.$sidebar.animate({"width": utils._getSidebarWidth()+'px'}, {"queue": false}, utils._getSidebarWidth()*st.pixelSpeed, "linear");
 						st.$sidebar.find('.sidebar-footer').slideDown();
 						utils._selectByCookies(st);			
 					} else {
 						st.$sidebar.find('.sidebar-element .collapse.in').slideUp().removeClass("in");
 						st.$sidebar.find('.sidebar-element.active').removeClass('active');
-						st.$sidebar.animate({"width": utils._getSidebarWidth(st)+'px'}, {"queue": false}, utils._getSidebarWidth(st)*st.pixelSpeed, "linear");
+						st.$sidebar.animate({"width": utils._getSidebarWidth()+'px'}, {"queue": false}, utils._getSidebarWidth()*st.pixelSpeed, "linear");
 						st.$sidebar.find('.sidebar-footer').slideUp();
 						st.$sidebar.find(".sidebar-element .collapse a").removeClass("active");
 					}
@@ -168,35 +170,35 @@
 			}
 			utils._setPositionContainer(st);
 		},
-		_setPositionContainer: function(st){
+		_setPositionContainer: function(){
 			var topC = st.$header.outerHeight(true)+(st.$message.is(":visible") ? st.$message.outerHeight(true): 0);
-			var leftC = utils._getContainerLeft(st);
+			var leftC = utils._getContainerLeft();
 			var widthC =  $(window).outerWidth(true)-leftC;
 			var widthF =  $(window).outerWidth(true)-leftC;
 			st.$container.css({top: topC+"px"});
 			st.$container.animate({left: leftC+"px", width: widthC+"px"}, {"queue": false}, "linear");
 			st.$footer.animate({width: widthF+"px"}, {"queue": false}, "linear");
 		},
-		_setWidthContainer: function(st){
-			var widthC = $(window).outerWidth(true)-utils._getContainerLeft(st);
+		_setWidthContainer: function(){
+			var widthC = $(window).outerWidth(true)-utils._getContainerLeft();
 			st.$container.css({width: widthC+"px"});
 		},
-		_setWidthFooter: function(st){
-			var widthF = $(window).outerWidth(true)-utils._getContainerLeft(st);
+		_setWidthFooter: function(){
+			var widthF = $(window).outerWidth(true)-utils._getContainerLeft();
 			st.$footer.css({width: widthF+"px"});	
 		},
-		_setHeightContainer: function(st){
+		_setHeightContainer: function(){
 			var containerContent =  Math.max(utils._getContentHeight(st.$container), $(window).outerHeight(true)-st.$header.outerHeight(true));
 			st.$container.css("height", containerContent+"px");
 		},
-		_setHeightSidebar: function(st){
+		_setHeightSidebar: function(){
 			var containerContent =  Math.max(utils._getContentHeight(st.$container), $(window).outerHeight(true)-st.$header.outerHeight(true));
 			st.$sidebar.css("height", containerContent+"px");	
 		},
-		_setWidthSidebar: function(st){
-			st.$sidebar.css({width: utils._getSidebarWidth(st)+"px"});
+		_setWidthSidebar: function(){
+			st.$sidebar.css({width: utils._getSidebarWidth()+"px"});
 		},
-		_setWidthRedbar: function(st){
+		_setWidthRedbar: function(){
 			var width;
 			if (isBreakpoint(st.breakpoint)) {
 				width = 0;
@@ -205,7 +207,7 @@
 			}
 			st.$header.find('.menu').css({width: width+"px"});
 		},
-		_setWidthLogoHeader: function(st){
+		_setWidthLogoHeader: function(){
 			var width;
 			if (isBreakpoint(st.breakpoint)) {
 				width = $(window).outerWidth(true)-st.$header.find('.sidebar-switch').outerWidth(true)-st.$header.find('.search').outerWidth(true);
