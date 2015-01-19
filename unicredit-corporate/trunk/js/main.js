@@ -1,3 +1,4 @@
+var headerUBISManager;
 $(document).ready(function() {
-	$("body").headerUBISManager();
+	headerUBISManager = $("body").headerUBISManager();
 });

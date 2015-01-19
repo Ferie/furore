@@ -4,4 +4,13 @@
 		margin: 0 auto;
 		padding: 0 10px;
 	}
+	
+	#calendar .event .header .date,
+	#calendar .event .header .buttons,
+	#calendar .event .header .category {
+		width: auto;
+	}
+	#calendar .event .container {
+		padding: 15px 10px 0;
+	}
 }

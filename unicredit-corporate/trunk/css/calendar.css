@@ -19,7 +19,21 @@
 	padding: 10px 0;
 }
 #calendar .event.highlighted {
-	background-color: #f2f2f2;
+	background-color: #e5f7fa;
+}
+#calendar .event .container {
+	padding: 15px 10px 0;
+}
+#calendar .event .header {
+	padding: 30px 0;
+}
+#calendar .event .header > div {
+	padding: 0;
+	height: 40px;
+}
+#calendar .event .header .date {
+	padding-right: 15px;
+	border-right: 1px solid #c9c9c9;	
 }
 #calendar .event .header .date .days {
 	padding: 0;
@@ -28,17 +42,121 @@
 	display: inline-block;
 }
 #calendar .event .header .date .days h1 {
-	margin: 0;
+	margin: 0;	
+	display: inline-block;
+	font-family: 'unicredit-light';
+    font-size: 44px;
+    line-height: 40px;
 }
 #calendar .event .header .date .days li {
 	display: inline-block;
+	padding-right: 10px;
+}
+#calendar .event .header .date .days li:not(:first-child):before {
+	content: "❯";
+    position: relative;
+    top: -6px;
+    margin-right: 10px;
+}
+#calendar .event .header .date .days li:last-child {
+	border-right: 1px solid #c9c9c9;	
 }
 #calendar .event .header .labels {
-	display: inline-block;	
-}
-#calendar .event .header .labels > span:first-child {
-	font-family: 'unicredit-bold'
+	display: inline-block;
+	padding: 0 15px;
 }
 #calendar .event .header .labels > span {
 	display: block;
+	font-size: 13px;
+	color: #c9c9c9;
+}
+#calendar .event .header .labels > span:first-child {
+	font-family: 'unicredit-bold';
+	color: #666;
+}
+#calendar .event .header .buttons {
+	display: inline-block;
+	padding: 12px 20px;
+}
+#calendar .event .header .buttons button {
+    background: url('../img/static/calendar-events-save.png') no-repeat scroll center left;
+    border: none;
+    box-shadow: none;
+    padding: 0 0 0 35px;
+}
+#calendar .event .header .categories label {
+	padding: 2px 10px;
+	border-radius: 6px;
+	border: 1px solid #000;
+	box-shadow: none;
+	background-color: #fff;
+}
+#calendar .event .header .categories label.investors { color: #fbbc0f;border-color: #fbbc0f; }
+#calendar .event .header .categories label.culturesociety { color: #11a79e;border-color: #11a79e; }
+#calendar .event .header .categories label.sustainability { color: #b02b1c;border-color: #b02b1c; }
+#calendar .event .header .categories label.highlighted { color: #999;border-color: #999; }
+
+#calendar .event .body {padding: 0 0 30px 0;}
+#calendar .event .body h2 {
+	margin: 0;
+	font-size: 24px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	height: 24px;
+	line-height: 24px;
+}
+#calendar .event .footer {
+	border-bottom: 1px solid #c9c9c9;
+}
+/*
+#calendar .event.highlighted .footer{
+	border: none;
+}
+*/
+#calendar .event .footer a {
+	font-size: 16px;
+	padding-bottom: 15px;
+}
+#calendar .event .footer a.attach {
+	background: url('../img/static/calendar-events-attachments-arrow-down.png') no-repeat scroll right 10px;
+	padding-right: 15px;
+}
+#calendar .event .footer a.attach:hover,
+#calendar .event .footer a.attach:active {
+	background-image: url('../img/static/calendar-events-attachments-arrow-down-hover.png');
+}
+#calendar .event .footer a.attach.collapsed {
+	background-image: url('../img/static/calendar-events-attachments-arrow-up.png');	
+}
+#calendar .event .footer a.attach.collapsed:hover,
+#calendar .event .footer a.attach.collapsed:active {
+	background-image: url('../img/static/calendar-events-attachments-arrow-up-hover.png');
+}
+#calendar .event .footer .attachments {
+	padding: 0;
+}
+
+#calendar .event .footer .attachments ul {
+	list-style-type: none;
+	display: inline-block;
+	padding: 5px 5px 5px 20px;
+	margin: 0;
+	width: 100%;
+	background-color: #f2f2f2;
+}
+#calendar .event .footer .attachments li a {
+	padding: 10px 0;
+	width: 100%;
+	display: inline-block;
+}
+#calendar .event .footer .attachments li a span {
+	font-family: 'unicredit-bold';
+	text-transform: uppercase;
+	padding-right: 4px;
+}
+#calendar .event .footer .attachments li a span:after {
+	font-family: 'unicredit-light';
+	content: "|";
+	padding-left: 4px;
 }
