@@ -18,6 +18,70 @@
 	width: 100%;
 	padding: 10px 0;
 }
+#calendarTools .chosen-container {
+	height: 40px;
+}
+#calendarTools .chosen-container .chosen-single {
+	background: #999;
+	border: none;
+	box-shadow: none;
+	font-size: 17px;
+	line-height: 40px;
+	height: 40px;
+	color: #fff;
+	padding: 0 10px;
+}
+#calendarTools .chosen-container .chosen-default {
+	background: none;
+	font-size: 17px;
+	line-height: 40px;
+	height: 40px;
+	color: #999;
+	border: 1px solid #999;
+}
+#calendarTools .chosen-container .chosen-single div {
+	width: 0;
+}
+#calendarTools .chosen-container .chosen-default div {
+	width: 30px;
+}
+#calendarTools .chosen-container .chosen-single div b {
+	background: none;
+}
+#calendarTools .chosen-container .chosen-single abbr {
+    background: url('../img/static/select-cross-white.png') no-repeat scroll center center;
+    float: right;
+    position: relative;
+    right: 0;
+    top: -25px;
+}
+#calendarTools .chosen-container .chosen-default div b {
+    background: url('../img/static/select-arrow-down.png') no-repeat scroll center center;
+}
+#calendarTools .chosen-container .chosen-drop  {
+    border-top: 1px solid #999;
+    padding: 8px 8px 0;
+}
+#calendarTools .chosen-container .chosen-drop .chosen-results .active-result {
+    background: url('../img/static/radio-button-unchecked.png') no-repeat scroll left center;
+	color: #999;
+	padding-left: 30px;
+	font-size: 15px;
+	line-height: 20px;
+}
+#calendarTools .chosen-container .chosen-drop .chosen-results .active-result.highlighted {
+    background: url('../img/static/radio-button-checked.png') no-repeat scroll left center;
+	color: #00afd0;
+}
+
+.daterangepicker .month.in-range.myactive,
+.daterangepicker .month.in-range.myactive {
+    background-color: #357ebd;
+    border-color: #3071a9;
+    color: #fff;
+    border-radius: 4px;
+}
+
 #calendar .event.highlighted {
 	background-color: #e5f7fa;
 }

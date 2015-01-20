@@ -8,38 +8,41 @@
     <meta name="author" content="">
     <title>Home page new</title>
     
-    <link href="plugin/css/bootstrap.css" rel="stylesheet">
-    <link href="plugin/css/chosen.min.css" rel="stylesheet">
-    <link href="plugin/css/all.css" rel="stylesheet">
-	<link href="plugin/css/datepicker3.css" rel="stylesheet"> 
-    <link href="plugin/css/idangerous.swiper.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="plugin/css/bootstrap.css"/>
+    <link type="text/css" rel="stylesheet" href="plugin/css/chosen.min.css"/>
+    <link type="text/css" rel="stylesheet" href="plugin/css/all.css"/>
+	<link type="text/css" rel="stylesheet" href="plugin/css/datepicker3.css"/> 
+    <link type="text/css" rel="stylesheet" href="plugin/css/idangerous.swiper.css"/>
+	<link type="text/css" rel="stylesheet" href="plugin/css/daterangepicker-bs3.css"/>
  
-    <link href="css/font-families.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/main-desktop.css" rel="stylesheet">
-    <link href="css/calendar.css" rel="stylesheet">
-    <link href="css/calendar-desktop.css" rel="stylesheet">
-    <link href="css/retina.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/font-families.css"/>
+    <link type="text/css" rel="stylesheet" href="css/main.css"/>
+    <link type="text/css" rel="stylesheet" href="css/main-desktop.css"/>
+    <link type="text/css" rel="stylesheet" href="css/calendar.css"/>
+    <link type="text/css" rel="stylesheet" href="css/calendar-desktop.css"/>
+    <link type="text/css" rel="stylesheet" href="css/retina.css"/>
     <!--[if lt IE 9]>
     <![endif]-->
 
-    <script src="plugin/js/jquery-1.11.2.min.js"></script>
-	<script src="plugin/js/jquery.cookie.js"></script>
-    <script src="plugin/js/bootstrap.min.js"></script>
-	<script src="plugin/js/heartcode-canvasloader-min.js"></script>
-    <script src="plugin/js/icheck.min.js"></script>
-    <script src="plugin/js/chosen.jquery.min.js"></script>
-    <script src="plugin/js/bootstrap-datepicker.js"></script>
-    <script src="plugin/js/locales/bootstrap-datepicker.it.js"></script>
-	<script src="plugin/js/idangerous.swiper.js"></script>
+    <script type="text/javascript" src="plugin/js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="plugin/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="plugin/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="plugin/js/heartcode-canvasloader-min.js"></script>
+    <script type="text/javascript" src="plugin/js/icheck.min.js"></script>
+    <script type="text/javascript" src="plugin/js/chosen.jquery.min.js"></script>
+    <script type="text/javascript" src="plugin/js/bootstrap-datepicker.js"></script>
+	<script type="text/javascript" src="plugin/js/idangerous.swiper.js"></script>
+	<script type="text/javascript" src="plugin/js/moment.min.js"></script>
+    <script type="text/javascript" src="plugin/js/locales/bootstrap-datepicker.it.js"></script>
+	<script type="text/javascript" src="plugin/js/daterangepicker.js"></script>
 
-	<script src="js/utility.js"></script>
-	<script src="js/jquery.headerUBIS.js"></script>
-	<script src="js/main.js"></script>
-	<script src="js/calendar.js"></script>
+	<script type="text/javascript" src="js/utility.js"></script>
+	<script type="text/javascript" src="js/jquery.headerUBIS.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/calendar.js"></script>
     <!--[if lt IE 9]>
-      <script src="plugin/js/html5shiv.js"></script>
-      <script src="plugin/js/respond.min.js"></script>
+      <script type="text/javascript" src="plugin/js/html5shiv.js"></script>
+      <script type="text/javascript" src="plugin/js/respond.min.js"></script>
     <![endif]-->
    
    
@@ -211,15 +214,21 @@
 						<input type="text" class="keywords" name="keywords" placeholder="Search all events">
 					</div>
 					<div  class="input-daterange col-xs-12 col-sm-3">
+						<div>Select Date</div>
+						<!-- <input type="text" class="input-small" name="date-range" placeholder="Select range">
 						<input type="text" class="input-small" name="date-range-start" placeholder="Select range">
 						<span class="add-on">to</span>
-						<input type="text" class="input-small" name="date-range-start" placeholder="Select range">
+						<input type="text" class="input-small" name="date-range-start" placeholder="Select range"> -->
 					</div>
 					<div class="col-xs-12 col-sm-3">
-						<select name="category" class="chosen-select" placeholder="All categories">
-							<option value="" class="placeholder">All categories</option>
-							<option value="pressmedia">Press & Media</option>
-							<option value="culturesociety">Culture and Society</option>
+						<select name="category" class="chosen-select" data-placeholder="All categories">
+							<option value=""></option>
+							<option value="all">All categories (20)</option>
+							<option value="financial">Financial (3)</option>
+							<option value="sustainability">Sustainability (10)</option>
+							<option value="culturesociety">Culture and Society (12)</option>
+							<option value="careers">Careers (7)</option>
+							<option value="business">Business (9)</option>
 						</select>
 					</div>
 				</div>
