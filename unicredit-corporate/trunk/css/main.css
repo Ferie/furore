@@ -274,7 +274,7 @@ a:hover, a:active {
 	display: inline-block;
 }
 #breadcrumb ul li:not(:last-child):after {
-	content: "❯";
+	content: ">";
 	padding: 0 2px 0 5px;
 }
 
