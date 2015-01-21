@@ -44,7 +44,6 @@ function activationDelayed(){
 		if (haveRange)
 			$('.daterangepicker .calendar .month.available[data-datayear="'+v.year+'"][data-title="'+v.title+'"]').addClass("in-range");
 		$('.daterangepicker .calendar .month.available[data-datayear="'+v.year+'"][data-title="'+v.title+'"]').addClass("my-"+(i==0?"start":"end")+"-date");
-		//console.log('.daterangepicker .calendar .month.available[data-datayear="'+v.year+'"][data-title="'+v.title+'"]');
 	});
 }
 function setWidth(){
@@ -57,7 +56,6 @@ function setPosition(){
 	$('.daterangepicker').css({ top: top, left: left});
 }
 function manageClick(calendar, element) {
-	//console.log(calendar);
 	$('#calendarTools .input-daterange').data('daterangepicker').updateInputText();
 	switch(calendar){
 	case "left":
@@ -76,6 +74,20 @@ $(document).ready(function() {
 		setPosition();
 		setWidth();		
 	});
+	$('#calendarTools .cross a').click(function(){
+		$(this).parent().removeClass("selected");
+		$('#calendarTools .keywords').val("").removeClass("selected");		
+	});
+	$('#calendarTools .keywords').focusout(function(){
+			if($(this).val()!="") {
+				$(this).addClass("selected");
+				$(this).parent().find('.cross').addClass("selected");
+			}
+		})
+		.focus(function(){
+			$(this).removeClass("selected");
+			$(this).parent().find('.cross').removeClass("selected");
+		});
 	
 	$('#calendarTools .input-daterange').daterangepicker({
 		minViewMode: "month",
@@ -97,13 +109,6 @@ $(document).ready(function() {
 		setWidth();
 	});
 	$('#calendarTools .input-daterange').on('show.daterangepicker', function(ev, picker) {
-		//$('#calendarTools .input-daterange div').removeClass("selected").html("Select range");
-		$(".daterangepicker .calendar .month.available span").click(function(e){
-			console.log("Ciao!");
-			e.preventDefault();
-			event.stopPropagation();
-			//$(this).parent().trigger("click");
-		});
 		$(".daterangepicker .calendar.left .month.available").click(function(){manageClick("left", this);});
 		$(".daterangepicker .calendar.right .month.available").click(function(){manageClick("left", this);});
 	});
@@ -127,9 +132,7 @@ $(document).ready(function() {
 			disable_search: true}).change(function(){
 		var $txt = $('#calendarTools .chosen-container-single .chosen-single-with-deselect span');
 		if($txt.text().indexOf("(")>-1) {
-			console.log($txt.text()+" - LEN: "+$txt.text().length+" - POS: "+$txt.text().indexOf("("));
 			$txt.text($txt.text().substring(0, $txt.text().indexOf("(")));
-			console.log($txt.text());
 		}
 	});
 	

@@ -24,11 +24,55 @@
 	width: 100%;
 	padding: 10px 0;
 }
-
+#calendarTools .container > div {
+	padding: 0 10px;	
+}
+#calendarTools .container > div:first-child {
+	padding-left: 0;	
+}
+#calendarTools .container > div:last-child {
+	padding-right: 0;	
+}
 /**** generic rules ****/
 
 /**** Date Range Picker ****/
 
+
+#calendarTools input.keywords {
+	padding: 5px 25px 5px 42px;
+	background: url('../img/static/keywords-search.png') no-repeat scroll 8px center #fff;
+	font-size: 17px;
+	color: #333;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 5px;
+}
+#calendarTools input.keywords:focus {
+	box-shadow: none;
+	border-color: #ccc;
+}
+#calendarTools input.keywords.selected {
+	background-image: url('../img/static/keywords-search-selected.png');
+	background-color: #999;
+	color: #fff;
+}
+#calendarTools .cross {
+    display: inline-block;
+    float: right;
+    position: relative;
+    right: 10px;
+    top: -30px;
+    width: auto;
+}
+#calendarTools .cross a {
+	display: inline-block;
+    background: url('../img/static/select-cross-white.png') no-repeat scroll center center transparent;
+	width: 0;
+}
+#calendarTools .cross.selected a {
+	width: 10px;
+	height: 10px;
+}
 #calendarTools .input-daterange {
     background: url('../img/static/select-arrow-down.png') no-repeat scroll 96% center;
     border: none;
