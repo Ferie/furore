@@ -422,7 +422,10 @@
             this.updateView();
             this.updateCalendars();
         },
-
+        getStartDate: function () {
+        	return  typeof this.startDate == "undefined" ? "" : this.startDate.format(this.format);
+        },
+        
         setEndDate: function (endDate) {
             if (typeof endDate === 'string')
                 this.endDate = moment(endDate, this.format);
@@ -437,6 +440,9 @@
 
             this.updateView();
             this.updateCalendars();
+        },
+        getEndDate: function () {
+        	return typeof this.endDate == "undefined" ? "" : this.endDate.format(this.format);
         },
 
         updateView: function () {
@@ -674,7 +680,8 @@
 
         enterDate: function (e) {
 
-            var title = $(e.target).attr('data-title');
+        	var target = typeof $(e.target).attr('data-title')=="undefined" ? $(e.target).parent() : e.target; 
+            var title = $(target).attr('data-title'); 
             var row = title.substr(1, 1);
             var col = title.substr(3, 1);
             var cal = $(e.target).parents('.calendar');
@@ -688,10 +695,11 @@
         },
 
         clickDate: function (e) {
-            var title = $(e.target).attr('data-title');
+        	var target = typeof $(e.target).attr('data-title')=="undefined" ? $(e.target).parent() : e.target; 
+            var title = $(target).attr('data-title'); 
             var row = title.substr(1, 1);
             var col = title.substr(3, 1);
-            var cal = $(e.target).parents('.calendar');
+            var cal = $(target).parents('.calendar');
 
             var startDate, endDate;
             if (cal.hasClass('left')) {
@@ -718,7 +726,7 @@
 
             cal.find('td').removeClass('active');
 
-            $(e.target).addClass('active');
+            $(target).addClass('active');
             this.setDates(startDate, endDate);
             this.updateFormInputs();
 
