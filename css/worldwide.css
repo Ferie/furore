@@ -1,5 +1,5 @@
 #worldwide {
-	/*height: 1500px;*/
+	height: 1500px;
 }
 
 #worldwide > .panel {
@@ -10,77 +10,27 @@
 	position: relative;
 	margin: 0 auto;
 	padding: 0;
-	width: 960px;
+	/*width: 960px;*/
 }
 
-#worldwide #worldwideTitle .container {
-	text-align: center;
-}
-
-#worldwide #worldwideTitle {
+#worldwide #worldwideTitle,
+#worldwide #countryTitle {
 	margin: 34px 0 24px;
 	padding: 0;
 }
 
-#worldwide #worldwideMap {
+#worldwide #worldwideTitle h1,
+#worldwide #countryTitle h1 {
 	margin: 0;
-	padding: 0;
+}
+
+#worldwide #countryTitle h1 {
+	border-bottom: 1px solid #cacaca;
+}
+
+#worldwide #worldwideTitle .container,
+#worldwide #countryTitle .container {
 	text-align: center;
-}
-
-#worldwide #worldwideMap .cerchio {
-	background-color: #FFFFFF;
-	border: 1px solid #cacaca;
-    border-radius: 50%;
-	display: table;
-    height: 180px;
-    width: 180px;
-}
-
-#worldwide #worldwideMap .cerchio .center {
-	display: table-cell;
-    vertical-align: middle;
-}
-
-#worldwide #worldwideMap .cerchio .continent {
-	font-size: 17px;
-	line-height: 19px;
-	text-transform: uppercase;
-}
-
-#worldwide #worldwideMap .cerchio .number {
-	font-size: 60px;
-	color: #00afd0;
-	line-height: 60px;
-}
-
-#worldwide #worldwideMap .cerchio .companies {
-	font-size: 15px;
-}
-
-#worldwide #worldwideMap .cerchio.americas {
-    position: absolute;
-	top: 130px;
-	left: 90px;
-}
-
-#worldwide #worldwideMap .cerchio.europe {
-	border-color: #00afd0;
-    position: absolute;
-	top: 0px;
-	left: 337px;
-}
-
-#worldwide #worldwideMap .cerchio.africa {
-    position: absolute;
-	top: 185px;
-	left: 465px;
-}
-
-#worldwide #worldwideMap .cerchio.asia {
-    position: absolute;
-	top: 65px;
-	left: 650px;
 }
 
 #worldwide .worldwideCountries {
@@ -97,7 +47,7 @@
 	margin-bottom: 24px;
 	padding: 0 0 24px;
 	text-transform: uppercase;
-	width: 960px;
+	/*width: 960px;*/
 }
 
 #worldwide .worldwideCountries .continentCountries {
@@ -106,6 +56,10 @@
 	width: 33%;
 }
 
-#worldwide .worldwideCountries .continentCountries .mainCountry {
+#worldwide .worldwideCountries .continentCountries .country a {
+	color: #666666;
+}
+
+#worldwide .worldwideCountries .continentCountries .mainCountry a {
 	color: #00afd0;
 }

@@ -21,4 +21,28 @@ $(document).ready(function() {
 		headerUBISManager.utils._setHeightContainer();
 		headerUBISManager.utils._setHeightSidebar();
 	});
+	
+	$('.cerchio').on('click', function(){
+		var $this = $(this);
+		if ($this.hasClass('europe')) {
+			$('html, body').animate({
+				scrollTop: $("#europe").offset().top
+			}, 1000);
+		}
+		if ($this.hasClass('asia')) {
+			$('html, body').animate({
+				scrollTop: $("#asia").offset().top
+			}, 1000);
+		}
+		if ($this.hasClass('africa')) {
+			$('html, body').animate({
+				scrollTop: $("#africa").offset().top
+			}, 1000);
+		}
+		if ($this.hasClass('americas')) {
+			$('html, body').animate({
+				scrollTop: $("#america").offset().top
+			}, 1000);
+		}
+	});
 });
