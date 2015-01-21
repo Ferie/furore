@@ -1,3 +1,4 @@
+/**** GENERAL RULES ****/
 #calendar {
 }
 #calendar > .panel {
@@ -13,11 +14,186 @@
 	padding: 0;
 	margin: 0;
 }
+/**** GENERAL RULES ****/
+
+/**** CALENDAR TOOLS ****/
+
+/**** generic rules ****/
 #calendarTools input,
 #calendarTools select {
 	width: 100%;
 	padding: 10px 0;
 }
+
+/**** generic rules ****/
+
+/**** Date Range Picker ****/
+
+#calendarTools .input-daterange {
+    background: url('../img/static/select-arrow-down.png') no-repeat scroll 96% center;
+    border: none;
+    border-radius: 0;
+    shadow-box: none;
+}
+#calendarTools .input-daterange.active {
+	background-image: url('../img/static/select-arrow-up.png');
+}
+#calendarTools .input-daterange > div {
+	background: url('../img/static/datepicker-calendar-icon.png') no-repeat scroll 6px center transparent;
+	padding-left: 37px;
+	font-size: 17px;
+	line-height: 40px;
+	height: 40px;
+	color: #ccc;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+#calendarTools .input-daterange.active > div {
+	border-radius: 5px 5px 0 0;
+}
+#calendarTools .input-daterange .selected {
+	padding: 0 10px;
+    background: url('../img/static/select-cross-white.png') no-repeat scroll 96% center #999;
+	color: #fff;
+}
+#calendarTools .input-daterange .selected span {
+	font-family: 'unicredit-bold';
+}
+.daterangepicker {
+	box-shadow: none;
+	border: none;
+	border-radius: 0;
+	padding: 0;
+	margin: 0;
+	background: transparent;
+	font-family: 'unicredit-regular';
+}
+.daterangepicker .calendar-date {
+	border: none;
+	border-radius: 0;
+	padding: 0;
+	background: transparent;
+}
+.daterangepicker .calendar table {
+	border: 1px solid #ccc;
+	border-radius: 0 0 5px 5px;
+	border-collapse: separate;
+	background-color: #fff;
+}
+.daterangepicker .calendar table thead tr:last-child th,
+.daterangepicker .calendar.right table tfoot tr th{
+	border-collapse: collapse;
+	border-radius: 0;
+}
+.daterangepicker .calendar table thead tr:last-child th {
+	border-bottom: 1px solid #ccc;	
+}
+.daterangepicker .calendar.right table tfoot tr th{
+	border-top: 1px solid #ccc;
+}
+.daterangepicker .calendar table thead tr th:first-child {
+	padding-left: 5px;
+}
+.daterangepicker .calendar table thead tr th:last-child {
+	padding-right: 5px;
+}
+.daterangepicker .calendar td.month {
+	padding: 5px 0;
+	height: auto;
+}
+.daterangepicker .calendar table tbody tr:first-child td {
+	padding-top: 15px;
+}
+.daterangepicker .calendar table tbody tr:last-child td {
+	padding-bottom: 15px;
+}
+.daterangepicker .month:hover {
+	background-color: transparent;	
+}
+.daterangepicker .month span {
+	width: auto;
+	min-width: 35px;
+	padding: 2.5px;
+	display: inline-block;
+	height: 25px;
+	line-height: 20px;
+}.daterangepicker .month.in-range span {
+	width: 100%;
+}
+
+.daterangepicker .month.active,
+.daterangepicker .month.in-range{
+	background-color: transparent;	
+}
+
+.daterangepicker .month.available:hover,
+.daterangepicker .month.available.active:hover,
+.daterangepicker .month.available.in-range:hover {
+	background-color: #ccc;
+	border-radius: 5px;
+} 
+.daterangepicker .available.month.in-range span {
+	background-color: #00afd0;
+	color: #fff;
+}
+.daterangepicker .month.active span,
+.daterangepicker .month.active span,
+.daterangepicker .month.myactive span,
+.daterangepicker .month.myactive span {
+	background-color: #00afd0;
+    border-color: #00afd0;
+    color: #fff;
+    border-radius: 12.5px;
+	font-family: 'unicredit-bold';
+}
+.daterangepicker .available.month.in-range.my-start-date {
+	padding-left: 10px;
+}
+.daterangepicker .available.month.in-range.my-start-date span {
+	border-radius: 12.5px 0 0 12.5px;
+}
+.daterangepicker .available.month.my-end-date {
+	padding-right: 10px;
+}
+.daterangepicker .available.month.my-end-date span {
+	width: 100%;
+	border-radius: 0 12.5px 12.5px 0;
+}
+.daterangepicker .calendar th,
+.daterangepicker .calendar td {
+	font-family: 'unicredit-regular';
+	font-weight: normal;
+	color: #666;	
+}
+.daterangepicker .calendar th .myLabel {
+	color: #666;
+	text-transform: uppercase;
+}
+.daterangepicker .calendar tr.myLabel th span {
+	font-family: 'unicredit-bold';
+    color: #00afd0;
+	text-transform: uppercase;
+}
+.daterangepicker .calendar table thead th.month {
+	font-size: 17px;
+    color: #00afd0;
+}
+.daterangepicker .calendar table tfoot button {
+	font-family: 'unicredit-bold';
+	margin: 9px 0;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #00afd0;
+	padding: 3px 12px;
+}
+.daterangepicker .calendar table tfoot button:hover,
+.daterangepicker .calendar table tfoot button:active {
+	color: #00afd0;
+	background-color: #ccc;
+}
+/**** Date Range Picker ****/
+
+/**** Categories combo-box ****/
 #calendarTools .chosen-container {
 	height: 40px;
 }
@@ -36,8 +212,8 @@
 	font-size: 17px;
 	line-height: 40px;
 	height: 40px;
-	color: #999;
-	border: 1px solid #999;
+	color: #ccc;
+	border: 1px solid #ccc;
 }
 #calendarTools .chosen-container .chosen-single div {
 	width: 0;
@@ -58,13 +234,16 @@
 #calendarTools .chosen-container .chosen-default div b {
     background: url('../img/static/select-arrow-down.png') no-repeat scroll center center;
 }
+#calendarTools .chosen-container.chosen-with-drop .chosen-default div b {
+	background-image: url('../img/static/select-arrow-up.png');
+}
 #calendarTools .chosen-container .chosen-drop  {
-    border-top: 1px solid #999;
+    border-top: 1px solid #ccc;
     padding: 8px 8px 0;
 }
 #calendarTools .chosen-container .chosen-drop .chosen-results .active-result {
     background: url('../img/static/radio-button-unchecked.png') no-repeat scroll left center;
-	color: #999;
+	color: #ccc;
 	padding-left: 30px;
 	font-size: 15px;
 	line-height: 20px;
@@ -73,15 +252,9 @@
     background: url('../img/static/radio-button-checked.png') no-repeat scroll left center;
 	color: #00afd0;
 }
-
-.daterangepicker .month.in-range.myactive,
-.daterangepicker .month.in-range.myactive {
-    background-color: #357ebd;
-    border-color: #3071a9;
-    color: #fff;
-    border-radius: 4px;
-}
-
+/**** Categories combo-box ****/
+/**** CALENDAR TOOLS ****/
+/**** EVENTS LIST ****/
 #calendar .event.highlighted {
 	background-color: #e5f7fa;
 }
@@ -224,3 +397,4 @@
 	content: "|";
 	padding-left: 4px;
 }
+/**** EVENTS LIST ****/

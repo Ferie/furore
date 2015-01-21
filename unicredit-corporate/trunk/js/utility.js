@@ -9,3 +9,6 @@ function isBreakpoint(alias) {
 	}
 	return $('.device-' + alias).is(':visible');
 }
+$.fn.exists = function () {
+    return this.length !== 0;
+}
