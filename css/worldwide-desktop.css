@@ -1,6 +1,16 @@
 @media (min-width: 768px) {
+	#worldwide {
+		height: 1700px;
+	}
+
 	#worldwide .panel > .container {
 		width: 960px;
+	}
+
+	#worldwide #worldwideTitle {
+		border: none;
+		margin: 34px 0 24px;
+		padding: 0;
 	}
 
 	#worldwide #worldwideMap {
@@ -63,5 +73,37 @@
 	    position: absolute;
 		top: 65px;
 		left: 650px;
+	}
+
+	#worldwide .worldwideCountries {
+		border-bottom: none;
+		margin: 0 0 57px;
+		padding: 0;
+	}
+
+	#worldwide .worldwideCountries .continentTitle {
+		cursor: default;
+		margin: 0 10px 24px;
+		padding: 0 0 24px;
+	}
+
+	#worldwide .worldwideCountries .continentCountries {
+		display: block;
+		float: left;
+		font-size: 20px;
+		margin-left: 10px;
+		margin-right: 10px;
+		width: 31%;
+	}
+
+	#worldwide .worldwideCountries .countries.no-transition {
+		display: block;
+		visibility: visible;
+		position: static;
+		height: auto;
+		-moz-transition: none;
+		-ms-transition: none;
+		-webkit-transition: none;
+		transition: none;
 	}
 }

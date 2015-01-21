@@ -1,15 +1,17 @@
 $(document).ready(function() {
-	$('#worldwideTools .input-daterange').datepicker();
-	$('#worldwidePanelResults .event .footer .attach').click(function(){
-		$(this).toggleClass("collapsed");
-		var swapText = $(this).text();
-		if ($(this).data('memotext')==""){
-			$(this).data('memotext', "Hide attachments");
+	function toggleCollapse(){
+		if(!isBreakpoint('xs')) {
+			$('#accordion .countries').removeClass('collapse');
+			$('#accordion .countries').removeClass('in');
+		} else {
+			$('#accordion .countries').addClass('collapse');
 		}
-		$(this).text($(this).data('memotext'));
-		$(this).data('memotext', swapText);
-		//$(this).prop("data-memotext", swapText);
-		//$(this).attr("data-memotext", swapText);
+	}
+
+	toggleCollapse();
+	
+	$(window).resize(function() {
+		toggleCollapse();
 	});
 
 	$('.collapse').on('shown.bs.collapse', function(){
@@ -22,7 +24,7 @@ $(document).ready(function() {
 		headerUBISManager.utils._setHeightSidebar();
 	});
 	
-	$('.cerchio').on('click', function(){
+	$('.cerchio').on('click', function() {
 		var $this = $(this);
 		if ($this.hasClass('europe')) {
 			$('html, body').animate({
@@ -41,8 +43,21 @@ $(document).ready(function() {
 		}
 		if ($this.hasClass('americas')) {
 			$('html, body').animate({
-				scrollTop: $("#america").offset().top
+				scrollTop: $("#americas").offset().top
 			}, 1000);
+		}
+	});
+
+	$('.worldwideCountries').on('click', function() {
+		var $this = $(this);
+		if ($this.hasClass('collapsed')) {
+			$('.worldwideCountries').addClass('collapsed');
+			$this.removeClass('collapsed');
+//			$('html, body').animate({
+//				scrollTop : $this.offset().top
+//			}, 1000);
+		} else {
+			$this.addClass('collapsed');
 		}
 	});
 });

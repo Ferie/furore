@@ -1,5 +1,5 @@
 #worldwide {
-	height: 1500px;
+	height: 2000px;
 }
 
 #worldwide > .panel {
@@ -10,13 +10,18 @@
 	position: relative;
 	margin: 0 auto;
 	padding: 0;
-	/*width: 960px;*/
 }
 
-#worldwide #worldwideTitle,
+#worldwide #worldwideTitle {
+	border-bottom: 1px solid #cacaca;
+	margin: 0;
+	padding: 20px 10px;
+}
+
 #worldwide #countryTitle {
-	margin: 34px 0 24px;
-	padding: 0;
+	border-bottom: 1px solid #cacaca;
+	padding: 0 0 38px;
+	margin: 34px 0 60px;
 }
 
 #worldwide #worldwideTitle h1,
@@ -24,17 +29,22 @@
 	margin: 0;
 }
 
-#worldwide #countryTitle h1 {
-	border-bottom: 1px solid #cacaca;
-}
-
 #worldwide #worldwideTitle .container,
 #worldwide #countryTitle .container {
 	text-align: center;
 }
 
+#worldwide #worldwideMap {
+	margin: 0;
+}
+
+#worldwide .briefText {
+	border-bottom: 1px solid #c9c9c9;
+	padding: 32px 10px;
+}
+
 #worldwide .worldwideCountries {
-	margin: 0 0 57px;
+	margin: 0;
 }
 
 #worldwide .worldwideCountries .container {
@@ -43,23 +53,56 @@
 
 #worldwide .worldwideCountries .continentTitle {
 	border-bottom: 1px solid #c9c9c9;
+	cursor: pointer;
 	font-size: 17px;
-	margin-bottom: 24px;
-	padding: 0 0 24px;
+	margin: 0;
+	padding: 20px 10px;
 	text-transform: uppercase;
-	/*width: 960px;*/
+}
+
+#worldwide .worldwideCountries.collapsed .accordionArrow {
+	background: url("../img/static/calendar-events-attachments-arrow-down-hover.png") no-repeat;
+	position: absolute;
+	top: 30px;
+	right: 10px;
+	height: 5px;
+	width: 10px;
+}
+
+#worldwide .worldwideCountries .accordionArrow {
+	background: url("../img/static/calendar-events-attachments-arrow-up-hover.png") no-repeat;
+	position: absolute;
+	top: 30px;
+	right: 10px;
+	height: 5px;
+	width: 10px;
 }
 
 #worldwide .worldwideCountries .continentCountries {
-	float: left;
+/*	display: none;*/
+	float: none;
 	font-size: 20px;
-	width: 33%;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 100%;
+}
+
+#worldwide .worldwideCountries .countries {
+	margin-top: 0;
+}
+
+#worldwide .worldwideCountries .countries.in {
+	border-bottom: 1px solid #c9c9c9;
+	margin-top: 20px;
+	padding-bottom: 50px;
 }
 
 #worldwide .worldwideCountries .continentCountries .country a {
 	color: #666666;
+	line-height: 1.75;
 }
 
 #worldwide .worldwideCountries .continentCountries .mainCountry a {
 	color: #00afd0;
+	line-height: 1.75;
 }
