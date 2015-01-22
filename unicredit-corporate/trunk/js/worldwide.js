@@ -1,6 +1,6 @@
-$(document).ready(function() {
-	function toggleCollapse(){
-		if(!isBreakpoint('xs')) {
+$(document).ready(function () {
+	function toggleCollapse() {
+		if (!isBreakpoint('xs')) {
 			$('#accordion .countries').removeClass('collapse');
 			$('#accordion .countries').removeClass('in');
 		} else {
@@ -9,22 +9,22 @@ $(document).ready(function() {
 	}
 
 	toggleCollapse();
-	
-	$(window).resize(function() {
+
+	$(window).resize(function () {
 		toggleCollapse();
 	});
 
-	$('.collapse').on('shown.bs.collapse', function(){
+	$('.collapse').on('shown.bs.collapse', function () {
 		headerUBISManager.utils._setHeightContainer();
 		headerUBISManager.utils._setHeightSidebar();
 	});
-	
-	$('.collapse').on('hidden.bs.collapse', function(){
+
+	$('.collapse').on('hidden.bs.collapse', function () {
 		headerUBISManager.utils._setHeightContainer();
 		headerUBISManager.utils._setHeightSidebar();
 	});
-	
-	$('.cerchio').on('click', function() {
+
+	$('.cerchio').on('click', function () {
 		var $this = $(this);
 		if ($this.hasClass('europe')) {
 			$('html, body').animate({
@@ -48,7 +48,7 @@ $(document).ready(function() {
 		}
 	});
 
-	$('.worldwideCountries').on('click', function() {
+	$('.worldwideCountries').on('click', function () {
 		var $this = $(this);
 		if ($this.hasClass('collapsed')) {
 			$('.worldwideCountries').addClass('collapsed');
@@ -60,4 +60,34 @@ $(document).ready(function() {
 			$this.addClass('collapsed');
 		}
 	});
+
+	var tabsHeader = (function() {
+		var partialWidth = 0,
+			tabsNumber = 0,
+			totalPadding,
+			tabPadding;
+
+		$('#tabs .tab').each(function () {
+			var $this = $(this);
+			partialWidth = $this.outerWidth() + partialWidth;
+			tabsNumber++;
+		});
+
+		totalPadding = $('#tabs .container').width() - partialWidth;
+
+		tabPadding = (totalPadding / tabsNumber) / 2;
+
+		$('#tabs .tab').each(function () {
+			var $this = $(this);
+			$this.css('padding-left', tabPadding);
+			$this.css('padding-right', tabPadding);
+		});
+		debugger;
+
+		$('#tabs .tab').on('click', function (e) {
+			e.preventDefault();
+			$('#tabs .tab').removeClass('active');
+			$(this).addClass('active');
+		});
+	})();
 });

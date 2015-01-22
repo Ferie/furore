@@ -41,6 +41,7 @@
 	}
 
 	#worldwide #worldwideMap .cerchio .number {
+		font-family: "unicredit-light";
 		font-size: 60px;
 		color: #00afd0;
 		line-height: 60px;
@@ -52,27 +53,27 @@
 
 	#worldwide #worldwideMap .cerchio.americas {
 	    position: absolute;
-		top: 130px;
-		left: 90px;
+		top: 125px;
+		left: 95px;
 	}
 
 	#worldwide #worldwideMap .cerchio.europe {
 		border-color: #00afd0;
 		position: absolute;
 		top: 0px;
-		left: 337px;
+		left: 340px;
 	}
 
 	#worldwide #worldwideMap .cerchio.africa {
 	    position: absolute;
-		top: 185px;
-		left: 465px;
+		top: 183px;
+		left: 466px;
 	}
 
 	#worldwide #worldwideMap .cerchio.asia {
 	    position: absolute;
-		top: 65px;
-		left: 650px;
+		top: 62px;
+		left: 652px;
 	}
 
 	#worldwide .worldwideCountries {
@@ -96,6 +97,14 @@
 		width: 31%;
 	}
 
+	#worldwide .worldwideCountries .countries .continentCountries:first-child {
+		margin-top: 0;
+	}
+
+	#worldwide .worldwideCountries .countries .continentCountries:last-child {
+		padding-bottom: 0;
+	}
+
 	#worldwide .worldwideCountries .countries.no-transition {
 		display: block;
 		visibility: visible;
@@ -105,5 +114,54 @@
 		-ms-transition: none;
 		-webkit-transition: none;
 		transition: none;
+	}
+
+	/************** COUNTRY PAGE **************/
+
+	#worldwide #intro .row {
+		margin: 0 -15px;
+		padding-bottom: 45px;
+		width: 100%;
+	}
+
+	#worldwide #intro .subtitle {
+		text-align: left;
+	}
+
+	#worldwide #tabs {
+		border-bottom: 1px solid #c9c9c9;
+		margin-top: 18px;
+		height: 89px;
+	}
+
+	#worldwide #tabs .tab {
+		float: left;
+		border-top: 1px solid #c9c9c9;
+		border-left: 1px solid #c9c9c9;
+		cursor: pointer;
+		padding: 34px 0;
+	}
+
+	#worldwide #tabs .tab:last-child {
+		border-right: 1px solid #c9c9c9;
+	}
+
+	#worldwide #tabs .tab.active {
+		background: #FFFFFF;
+		border-bottom: none;
+		padding-bottom: 22px;
+	}
+
+	#worldwide #tabs .tab.active .tabHeader {
+		border-bottom: 2px solid #00afd0;
+		padding-bottom: 10px;
+	}
+
+	#worldwide #tabs .tab .tabHeader a {
+		color: #666666;
+	}
+
+	#worldwide #tabs .tab.active .tabHeader a {
+		color: #00afd0;
 	}
 }
