@@ -408,6 +408,9 @@
         },
 
         setStartDate: function (startDate) {
+        	if (typeof startDate ==="undefined" || startDate===null){
+        		this.startDate = moment();
+        	}
             if (typeof startDate === 'string')
                 this.startDate = moment(startDate, this.format);
 
@@ -427,6 +430,8 @@
         },
         
         setEndDate: function (endDate) {
+        	if (typeof endDate ==="undefined" || endDate===null)
+        		this.endDate = moment();
             if (typeof endDate === 'string')
                 this.endDate = moment(endDate, this.format);
 
@@ -579,8 +584,8 @@
             this.element.removeClass('active');
             this.container.hide();
 
-            if (!this.startDate.isSame(this.oldStartDate) || !this.endDate.isSame(this.oldEndDate))
-                this.notify();
+            //if (!this.startDate.isSame(this.oldStartDate) || !this.endDate.isSame(this.oldEndDate))
+            this.notify();
 
             this.oldStartDate = this.startDate.clone();
             this.oldEndDate = this.endDate.clone();

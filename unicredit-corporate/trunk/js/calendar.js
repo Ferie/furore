@@ -68,28 +68,8 @@ function manageClick(calendar, element) {
 		break;
 	}
 }
-$(document).ready(function() {
-
-	$(window).resize(function(){
-		setPosition();
-		setWidth();		
-	});
-	$('#calendarTools .cross a').click(function(){
-		$(this).parent().removeClass("selected");
-		$('#calendarTools .keywords').val("").removeClass("selected");		
-	});
-	$('#calendarTools .keywords').focusout(function(){
-			if($(this).val()!="") {
-				$(this).addClass("selected");
-				$(this).parent().find('.cross').addClass("selected");
-			}
-		})
-		.focus(function(){
-			$(this).removeClass("selected");
-			$(this).parent().find('.cross').removeClass("selected");
-		});
-	
-	$('#calendarTools .input-daterange').daterangepicker({
+function initDatepickerRange(element){
+	element.daterangepicker({
 		minViewMode: "month",
 	    format: "MMM YYYY",
 	    opens: "center",
@@ -97,9 +77,16 @@ $(document).ready(function() {
 		},
 	    function(start, end) {
 	        $('#calendarTools .input-daterange div').addClass("selected").html('From <span>'+start.format('MMM/YY') + '</span> to <span>' + end.format('MMM/YY')+'</span>');
+	        $('#calendarTools .dates.cross').addClass("selected");
+	        /*$('#calendarTools .input-daterange').click(function(e){
+	    		//e.preventDefault();
+	    		//e.stopPropagation();
+	    		//$(this).parent().trigger("click");
+	    	});*/
 	    });
-	$('#calendarTools .input-daterange').click(function(){
-		//$(this).toggleClass("open-dropdown-date");
+	activeStart= [];
+	element.click(function(){
+		//$('#calendarTools .input-daterange div').removeClass("selected").html("Select range");
 		$(".daterangepicker .calendar.left").show();
 		$(".daterangepicker .ranges").hide();
 		$(".daterangepicker .calendar.right").hide();
@@ -108,11 +95,11 @@ $(document).ready(function() {
 		setPosition();
 		setWidth();
 	});
-	$('#calendarTools .input-daterange').on('show.daterangepicker', function(ev, picker) {
+	element.on('show.daterangepicker', function(ev, picker) {
 		$(".daterangepicker .calendar.left .month.available").click(function(){manageClick("left", this);});
 		$(".daterangepicker .calendar.right .month.available").click(function(){manageClick("left", this);});
 	});
-	$('#calendarTools .input-daterange').on('calendarUpdated.daterangepicker', function(){
+	element.on('calendarUpdated.daterangepicker', function(){
 		$(".daterangepicker .calendar .month.available span").click(function(e){
 			e.preventDefault();
 			event.stopPropagation();
@@ -126,6 +113,38 @@ $(document).ready(function() {
 		setWidth();
 		activationDelayed();
 	});
+}
+$(document).ready(function() {
+
+	$(window).resize(function(){
+		setPosition();
+		setWidth();		
+	});
+	$('#calendarTools .cross.keys a').click(function(){
+		$(this).parent().removeClass("selected");
+		$('#calendarTools .keywords').val("").removeClass("selected");		
+	});
+	$('#calendarTools .cross.dates a').click(function(e){
+		e.preventDefault();
+		e.stopPropagation();
+		$(this).parent().removeClass("selected");
+		$('#calendarTools .input-daterange div').removeClass("selected").html("Select range");
+		$('#calendarTools .input-daterange').data('daterangepicker').remove();
+		initDatepickerRange($('#calendarTools .input-daterange'));
+	});
+	$('#calendarTools .keywords').focusout(function(){
+			if($(this).val()!="") {
+				$(this).addClass("selected");
+				$(this).parent().find('.cross').addClass("selected");
+			}
+		})
+		.focus(function(){
+			$(this).removeClass("selected");
+			$(this).parent().find('.cross').removeClass("selected");
+		});
+
+	initDatepickerRange($('#calendarTools .input-daterange'));
+	
 	
 	$("#calendarTools .chosen-select").chosen({
 			allow_single_deselect: true,
