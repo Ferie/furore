@@ -18,12 +18,6 @@
 	padding: 20px 10px;
 }
 
-#worldwide #countryTitle {
-	border-bottom: 1px solid #cacaca;
-	padding: 0 0 38px;
-	margin: 34px 0 60px;
-}
-
 #worldwide #worldwideTitle h1,
 #worldwide #countryTitle h1 {
 	margin: 0;
@@ -79,7 +73,6 @@
 }
 
 #worldwide .worldwideCountries .continentCountries {
-/*	display: none;*/
 	float: none;
 	font-size: 20px;
 	margin-left: 10px;
@@ -91,9 +84,16 @@
 	margin-top: 0;
 }
 
+#worldwide .worldwideCountries .countries.collapsing,
 #worldwide .worldwideCountries .countries.in {
 	border-bottom: 1px solid #c9c9c9;
+}
+
+#worldwide .worldwideCountries .countries .continentCountries:first-child {
 	margin-top: 20px;
+}
+
+#worldwide .worldwideCountries .countries .continentCountries:last-child {
 	padding-bottom: 50px;
 }
 
@@ -105,4 +105,72 @@
 #worldwide .worldwideCountries .continentCountries .mainCountry a {
 	color: #00afd0;
 	line-height: 1.75;
+}
+
+/************** COUNTRY PAGE **************/
+
+#worldwide #countryTitle {
+	border-bottom: 1px solid #cacaca;
+	padding: 0 0 38px;
+	margin: 34px 0 65px;
+}
+
+/*#worldwide #intro .left,
+#worldwide #intro .right {
+	float: left;
+	width: 388px;
+}
+
+#worldwide #intro .right {
+	width: 572px;
+}*/
+
+#worldwide #intro .subtitle {
+	font-size: 25px;
+	margin-bottom: 30px;
+	line-height: 0.7;
+	text-align: center;
+}
+
+#worldwide #intro .text-left {
+	font-size: 15px;
+}
+
+#worldwide #intro .row {
+	margin: 0 auto 30px;
+	width: 350px;
+}
+
+#worldwide #intro .row div {
+	float: left;
+}
+
+#worldwide #intro .imageEmployers {
+	background: url("../img/static/worldwide-employers.png") no-repeat;
+	border-right: 1px solid #c9c9c9;
+	margin: 0 20px 0 10px;
+	height: 56px;
+	width: 76px;
+}
+
+#worldwide #intro .imageBranches {
+	background: url("../img/static/worldwide-branches.png") no-repeat;
+	border-right: 1px solid #c9c9c9;
+	margin: 0 20px 0 16px;
+	height: 56px;
+	width: 70px;
+}
+
+#worldwide #intro .number {
+	font-family: "unicredit-light";
+	font-size: 64px;
+	color: #00afd0;
+	line-height: 0.8;
+	letter-spacing: -5px;
+	margin-right: 15px;
+}
+
+#worldwide #intro .text-uppercase {
+	font-size: 20px;
+	margin-top: 27px;
 }
