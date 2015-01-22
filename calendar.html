@@ -22,6 +22,7 @@
     <link type="text/css" rel="stylesheet" href="css/calendar-desktop.css"/>
     <link type="text/css" rel="stylesheet" href="css/retina.css"/>
     <!--[if lt IE 9]>
+    <link type="text/css" rel="stylesheet" href="css/ie8.css"/>
     <![endif]-->
 
     <script type="text/javascript" src="plugin/js/jquery-1.11.2.min.js"></script>
@@ -34,7 +35,7 @@
 	<script type="text/javascript" src="plugin/js/idangerous.swiper.js"></script>
 	<script type="text/javascript" src="plugin/js/moment.min.js"></script>
     <script type="text/javascript" src="plugin/js/locales/bootstrap-datepicker.it.js"></script>
-	<script type="text/javascript" src="plugin/js/daterangepicker.js"></script>
+	<script type="text/javascript" src="plugin/js/daterangepicker.modified.js"></script>
 
 	<script type="text/javascript" src="js/utility.js"></script>
 	<script type="text/javascript" src="js/jquery.headerUBIS.js"></script>
@@ -43,6 +44,7 @@
     <!--[if lt IE 9]>
       <script type="text/javascript" src="plugin/js/html5shiv.js"></script>
       <script type="text/javascript" src="plugin/js/respond.min.js"></script>
+      <script type="text/javascript" src="js/ie8.js"></script>
     <![endif]-->
    
    
@@ -210,14 +212,15 @@
 			</div>
 			<div class="panel" id="calendarTools">
 				<div class="container">
-					<div class="col-xs-12 col-sm-6">
+					<div class="col-xs-12 col-sm-6 with-cross">
 						<input type="text" class="keywords form-control" name="keywords" placeholder="Search all events">
-						<div class="cross"><a href="javascript:void(0);"></a></div>
+						<div class="keys cross"><a href="javascript:void(0);"></a></div>
 					</div>
-					<div class="col-xs-12 col-sm-3">
+					<div class="col-xs-12 col-sm-3 with-cross">
 						<div class="input-daterange">
 							<div>Select range</div>
 						</div>
+						<div class="dates cross"><a href="javascript:void(0);"></a></div>
 					</div>
 					<div class="col-xs-12 col-sm-3">
 						<select name="category" class="chosen-select" data-placeholder="All categories">

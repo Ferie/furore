@@ -37,6 +37,10 @@
 
 /**** Date Range Picker ****/
 
+#calendarTools .container > .with-cross{
+    height: 40px;
+    overflow: hidden;
+}
 
 #calendarTools input.keywords {
 	padding: 5px 25px 5px 42px;
@@ -68,10 +72,11 @@
 	display: inline-block;
     background: url('../img/static/select-cross-white.png') no-repeat scroll center center transparent;
 	width: 0;
+	height: 0;
 }
 #calendarTools .cross.selected a {
-	width: 10px;
-	height: 10px;
+	width: 20px;
+	height: 20px;
 }
 #calendarTools .input-daterange {
     background: url('../img/static/select-arrow-down.png') no-repeat scroll 96% center;
@@ -91,13 +96,14 @@
 	color: #ccc;
 	border: 1px solid #ccc;
 	border-radius: 5px;
+	cursor: pointer;
 }
 #calendarTools .input-daterange.active > div {
 	border-radius: 5px 5px 0 0;
 }
 #calendarTools .input-daterange .selected {
 	padding: 0 10px;
-    background: url('../img/static/select-cross-white.png') no-repeat scroll 96% center #999;
+    background: none #999;
 	color: #fff;
 }
 #calendarTools .input-daterange .selected span {
