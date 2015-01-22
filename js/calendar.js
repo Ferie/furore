@@ -7,6 +7,7 @@ function addFields(){
 		$(this).find('thead').prepend('<tr class="myLabel"><th colspan="4">FROM <span class="startDate">'+start+'</span> TO <span class="endDate">'+end+'</span></th></tr>');
 		//$(this).css("width", fieldWidth+"px");
 	});
+	$('.daterangepicker .calendar table thead th.prev i,.daterangepicker .calendar table thead th.next i').removeAttr('class');
 	$('.daterangepicker .calendar.right tfoot').remove();
 	$('.daterangepicker .calendar.right').each(function(){
 		$(this).find('table').append('<tfoot><tr class="myApply"><th colspan="4"><button class="applyBtn btn btn-small">Confirm</button</th></tr></tfoot>');
@@ -114,7 +115,28 @@ function initDatepickerRange(element){
 		activationDelayed();
 	});
 }
+
+
+var spinnerUBISManager;
+
 $(document).ready(function() {
+	
+
+	spinnerUBISManager = $("#mainContainer").spinnerUBISManager({
+				topElementSelector: '#calendarNumberResults',
+				setElementsSelector: '#calendarNumberResults, #calendarPanelResults',
+				htmlMessage: '',
+				textMessage: 'Loading Events',
+				autohide: true,
+				millisecondsTimer: 5000,
+				color: "#00afd0",
+				shape: 'spiral',
+				diameter: 50,
+				density: 71,
+				range: 1.1,
+				fps: 25
+				});
+	spinnerUBISManager.utils._startSpinner();
 
 	$(window).resize(function(){
 		setPosition();
