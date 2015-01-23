@@ -238,80 +238,124 @@
 				
 				<div class="panel" id="tabs">
 					<div class="container">
-						<div class="tab active">
+						<div class="tab active" data-tabbody="consumerAndSMEBanking">
 							<div class="tabHeader">
 								<a href="#">Consumer and SME Banking</a>
 							</div>
 						</div>
-						<div class="tab">
+						<div class="tab" data-tabbody="corporateAndInvestmentBanking">
 							<div class="tabHeader">
 								<a href="#">Corporate & Investment Banking</a>
 							</div>
 						</div>
-						<div class="tab">
+						<div class="tab" data-tabbody="privateBanking">
 							<div class="tabHeader">
 								<a href="#">Private Banking</a>
 							</div>
 						</div>
-						<div class="tab">
+						<div class="tab" data-tabbody="leasing">
 							<div class="tabHeader">
 								<a href="#">Leasing</a>
 							</div>
 						</div>
-						<div class="tab">
+						<div class="tab" data-tabbody="specialCompany">
 							<div class="tabHeader">
 								<a href="#">Special Company</a>
 							</div>
 						</div>
 					</div>
 				</div>
-				
+
 				<div class="panel" id="tabsBody">
 					<div class="container">
-						<div class="tabPanel clearfix">
-							<div class="bankName left">Bank Austria</div>
-							<div class="logo right">
-								<img src="img/static/Bank_Austria_logo.png">
+						<div class="tabPanel selected" id="consumerAndSMEBanking">
+							<div class="tabSection clearfix">
+								<div class="bankName left">Bank Austria</div>
+								<div class="logo right">
+									<img src="img/static/Bank_Austria_logo.png">
+								</div>
+								<div class="externalLink">
+									<a href="http://www.bankaustria.at" target="_blank">bankaustria.at</a>
+								</div>
+								<div class="moreInfo left">
+									<a href="worldwideCompanyInfo.html">more info <span class="arrowRight"></span></a>
+								</div>
+								<div class="icons right">
+									<div class="homeBankingLogin icon left">
+										<a href="#">Home banking login</a>
+									</div>
+									<div class="seeJobPositions icon left">
+										<a href="#">See job positions</a>
+									</div>
+									<div class="findBranch icon left">
+										<a href="#">Find a branch</a>
+									</div>
+									<div class="linkedin icon left">
+										<a href="https://www.linkedin.com/company/unicredit-bank-austria-ag" target="_blank">Linkedin</a>
+									</div>
+								</div>
 							</div>
-							<div class="externalLink">
-								<a href="http://www.bankaustria.at">bankaustria.at</a>
+							<div class="tabSection clearfix">
+								<div class="bankName left">UniCredit Family Financing Bank, Niederlassung der UniCredit S.p.A.</div>
+								<div class="logo right">
+									<img src="img/static/UniCredit_Family_Financing_logo.png">
+								</div>
+								<div class="externalLink">
+									<a href="http://www.ucfin.de" target="_blank">ucfin.de</a>
+								</div>
+								<div class="moreInfo left">
+									<a href="worldwideCompanyInfo.html">more info <span class="arrowRight"></span></a>
+								</div>
+								<div class="icons right"></div>
 							</div>
-							<div class="moreInfo left">
-								<a href="worldwideCompanyInfo.html">more info <span class="arrowRight"></span></a>
-							</div>
-							<div class="icons right">
-								<div class="homeBankingLogin icon left">Home banking login</div>
-								<div class="seeJobPositions icon left">See job positions</div>
-								<div class="findBranch icon left">Find a branch</div>
-								<div class="linkedin icon left">Linkedin</div>
+							<div class="tabSection clearfix">
+								<div class="bankName left">DAB Bank AG</div>
+								<div class="logo right">
+									<img src="img/static/DAB_bank_logo.png">
+								</div>
+								<div class="externalLink">
+									<a href="http://www.dab-bank.de" target="_blank">dab-bank.de</a>
+								</div>
+								<div class="moreInfo left">
+									<a href="worldwideCompanyInfo.html">more info <span class="arrowRight"></span></a>
+								</div>
+								<div class="icons right">
+									<div class="homeBankingLogin icon left">
+										<a href="#">Home banking login</a>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="tabPanel clearfix">
-							<div class="bankName left">UniCredit Family Financing Bank, Niederlassung der UniCredit S.p.A.</div>
-							<div class="logo right">
-								<img src="img/static/UniCredit_Family_Financing_logo.png">
+						
+						<div class="tabPanel" id="corporateAndInvestmentBanking">
+							<div class="container">
+								<div class="tabSection clearfix">
+									<div class="bankName">Corporate & Investment Banking</div>
+								</div>
 							</div>
-							<div class="externalLink">
-								<a href="http://www.ucfin.de">ucfin.de</a>
-							</div>
-							<div class="moreInfo left">
-								<a href="worldwideCompanyInfo.html">more info <span class="arrowRight"></span></a>
-							</div>
-							<div class="icons right"></div>
 						</div>
-						<div class="tabPanel clearfix">
-							<div class="bankName left">DAB Bank AG</div>
-							<div class="logo right">
-								<img src="img/static/DAB_bank_logo.png">
+
+						<div class="tabPanel" id="privateBanking">
+							<div class="container">
+								<div class="tabSection clearfix">
+									<div class="bankName">Private Banking</div>
+								</div>
 							</div>
-							<div class="externalLink">
-								<a href="http://www.dab-bank.de">dab-bank.de</a>
+						</div>
+
+						<div class="tabPanel" id="leasing">
+							<div class="container">
+								<div class="tabSection clearfix">
+									<div class="bankName">Leasing</div>
+								</div>
 							</div>
-							<div class="moreInfo left">
-								<a href="worldwideCompanyInfo.html">more info <span class="arrowRight"></span></a>
-							</div>
-							<div class="icons right">
-								<div class="homeBankingLogin icon left">Home banking login</div>
+						</div>
+
+						<div class="tabPanel" id="specialCompany">
+							<div class="container">
+								<div class="tabSection clearfix">
+									<div class="bankName">Special Company</div>
+								</div>
 							</div>
 						</div>
 					</div>

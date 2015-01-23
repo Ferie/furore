@@ -166,18 +166,26 @@
 		color: #00afd0;
 	}
 
-	#worldwide #tabsBody .tabPanel {
+	#worldwide .tabPanel {
+		display: none;
+	}
+
+	#worldwide .tabPanel.selected {
+		display: block;
+	}
+
+	#worldwide .tabSection {
 		border-bottom: 1px solid #c9c9c9;
 		font-size: 24px;
 		padding: 40px 0 32px;
 	}
 
-	#worldwide #tabsBody .tabPanel .bankName,
-	#worldwide #tabsBody .tabPanel .logo {
+	#worldwide .tabSection .bankName,
+	#worldwide .tabSection .logo {
 		line-height: 1;
 	}
 
-	#worldwide #tabsBody .tabPanel .externalLink {
+	#worldwide .tabSection .externalLink {
 		background: url("../img/static/worldwide_country_page_external_link_icon.png") no-repeat;
 		font-size: 15px;
 		clear: both;
@@ -186,11 +194,11 @@
 		padding-left: 26px;
 	}
 
-	#worldwide #tabsBody .tabPanel .externalLink a {
+	#worldwide .tabSection .externalLink a {
 		color: #00afd0;
 	}
 
-	#worldwide #tabsBody .tabPanel .moreInfo {
+	#worldwide .tabSection .moreInfo {
 		font-size: 14px;
 		line-height: 1;
 		margin-top: 3px;
@@ -198,11 +206,11 @@
 		text-transform: uppercase;
 	}	
 
-	#worldwide #tabsBody .tabPanel .moreInfo a:hover {
+	#worldwide .tabSection .moreInfo a:hover {
 		color: #00afd0;
 	}	
 
-	#worldwide #tabsBody .tabPanel .moreInfo .arrowRight {
+	#worldwide .tabSection .moreInfo .arrowRight {
 		background: url("../img/static/blue_arrow_right.png") no-repeat;
 		float: right;
 		margin-top: 1px;
@@ -211,22 +219,22 @@
 		width: 7px;
 	}
 
-	#worldwide #tabsBody .tabPanel .icons {
+	#worldwide .tabSection .icons {
 		font-size: 14px;
 		line-height: 1;
 		text-transform: uppercase;
 	}
 
-	#worldwide #tabsBody .tabPanel .icons .icon {
+	#worldwide .tabSection .icons .icon {
 		padding-top: 3px;
 		padding-right: 30px;
 	}
 
-	#worldwide #tabsBody .tabPanel .icons .icon:last-child {
+	#worldwide .tabSection .icons .icon:last-child {
 		padding-right: 0;
 	}
 
-	#worldwide #tabsBody .tabPanel .icons .icon.homeBankingLogin {
+	#worldwide .tabSection .icons .icon.homeBankingLogin {
 		background: url("../img/static/home_banking_icon.png") no-repeat;
 		margin-top: 1px;
 		padding-top: 2px;
@@ -234,13 +242,13 @@
 		height: 16px;
 	}
 
-	#worldwide #tabsBody .tabPanel .icons .icon.seeJobPositions {
+	#worldwide .tabSection .icons .icon.seeJobPositions {
 		background: url("../img/static/worldwide_country_page_see_job_position_icon.png") no-repeat;
 		padding-left: 28px;
 		height: 16px;
 	}
 
-	#worldwide #tabsBody .tabPanel .icons .icon.findBranch {
+	#worldwide .tabSection .icons .icon.findBranch {
 		background: url("../img/static/worldwide_country_page_find_a_branch_icon.png") no-repeat;
 		margin-top: 1px;
 		padding-top: 2px;
@@ -248,9 +256,13 @@
 		height: 14px;
 	}
 
-	#worldwide #tabsBody .tabPanel .icons .icon.linkedin {
+	#worldwide .tabSection .icons .icon.linkedin {
 		background: url("../img/static/worldwide_country_page_linkedin_icon.png") no-repeat;
 		padding-left: 23px;
 		height: 14px;
+	}
+
+	#worldwide .tabSection .icons .icon a {
+		color: #666666;
 	}
 }
