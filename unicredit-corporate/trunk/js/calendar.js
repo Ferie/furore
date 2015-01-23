@@ -123,12 +123,12 @@ $(document).ready(function() {
 	
 
 	spinnerUBISManager = $("#mainContainer").spinnerUBISManager({
-				topElementSelector: '#calendarNumberResults',
-				setElementsSelector: '#calendarNumberResults, #calendarPanelResults',
+				topElementSelector: '#calendarMessages',
+				setElementsSelector: '#calendarMessages, #calendarPanelResults',
 				htmlMessage: '',
 				textMessage: 'Loading Events',
 				autohide: true,
-				millisecondsTimer: 5000,
+				millisecondsTimer: 100,
 				color: "#00afd0",
 				shape: 'spiral',
 				diameter: 50,
@@ -170,7 +170,8 @@ $(document).ready(function() {
 	
 	$("#calendarTools .chosen-select").chosen({
 			allow_single_deselect: true,
-			disable_search: true}).change(function(){
+			disable_search: true,
+		    width: "100%"}).change(function(){
 		var $txt = $('#calendarTools .chosen-container-single .chosen-single-with-deselect span');
 		if($txt.text().indexOf("(")>-1) {
 			$txt.text($txt.text().substring(0, $txt.text().indexOf("(")));

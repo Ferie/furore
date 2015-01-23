@@ -101,7 +101,6 @@
 				if(hElement>st.height)
 					st.height = hElement;
 			});
-			console.log(st.height);
 		},
 		_caclulatePosition: function(){
 			st.position = st.$topElement.offset();

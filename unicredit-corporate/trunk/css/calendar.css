@@ -280,6 +280,7 @@
 }
 #calendarTools .chosen-container {
 	height: 40px;
+	width: 100%;
 }
 #calendarTools .chosen-container .chosen-single {
 	background: #999;
@@ -339,14 +340,28 @@
 /**** Categories combo-box ****/
 /**** CALENDAR TOOLS ****/
 
-#calendarNumberResults {
-	margin: 0;
-		
+/**** CALENDAR MESSAGES ****/
+#calendarMessages.panel,
+#calendarMessages.panel > .panel {
+    border: medium none;
+    box-shadow: none;
+    margin: 0;
+    outline: medium none;
+    padding: 0;
+    
 }
-#calendarNumberResults h3 {
+#calendarMessages > .panel.warn {
+	background-color: #fdeeed;
+}
+#calendarMessages.panel .panel > .container {
+	padding: 10px;
+}
+#calendarMessages .panel h3 {
 	font-family: 'unicredit-light';
 	margin: 10px 0;
+	line-height: 24px;
 }
+/**** CALENDAR MESSAGES ****/
 
 /**** EVENTS LIST ****/
 #calendarPanelResults.panel {
@@ -497,3 +512,42 @@
 	padding-left: 4px;
 }
 /**** EVENTS LIST ****/
+/**** PAST EVENTS LIST ****/
+#calendarPanelResults .event.past .header > div {
+	padding: 0;
+	height: auto;
+}
+#calendarPanelResults .event.past .header .date {
+	border: none;
+	color: #999;
+}
+#calendarPanelResults .event.past .header .date span {
+	font-weight: normal;
+	font-family: 'unicredit-bold';
+}
+/**** PAST EVENTS LIST ****/
+/**** LOAD MORE ****/
+#loadMore > .panel {
+	margin: 0;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+#loadMore > .panel .container {
+	text-align: center;
+}
+#loadMore .btn {
+	font-family: 'unicredit-medium';
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 14px;
+	border: 1px solid #CCCCCC;
+	background-color: #f5f5f5;
+	border-radius: 3px;
+	color: #999;
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 20px;
+	text-align: center;
+}
+/**** LOAD MORE ****/

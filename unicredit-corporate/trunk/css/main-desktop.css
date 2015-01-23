@@ -73,8 +73,12 @@
 		background-repeat: no-repeat;
 		text-align: center;
 	}
+	#header .menu ul li a {
+		border-top: 2px solid #e32612;
+	}
 	#header .menu ul li a.active {
 		background-color: #aa1c0d;
+		border-top: 2px solid #fff;
 	}
 	#header .menu ul li a.calendar {
 		background-image: url('../img/static/menu-nav-calendar.png');
@@ -103,7 +107,7 @@
 	
 	/**** BREADCRUMB ****/
 	#breadcrumb ul {
-		width: 960px;
+		width: 100%;
 		margin: 0 auto;
 	}
 	/**** BREADCRUMB ****/
