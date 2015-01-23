@@ -120,7 +120,7 @@ function initDatepickerRange(element){
 var spinnerUBISManager;
 
 $(document).ready(function() {
-	
+	var filename = location.pathname.substr(location.pathname.lastIndexOf('/')+1, location.pathname.length); 
 
 	spinnerUBISManager = $("#mainContainer").spinnerUBISManager({
 				topElementSelector: '#calendarMessages',
@@ -136,7 +136,10 @@ $(document).ready(function() {
 				range: 1.1,
 				fps: 25
 				});
-	spinnerUBISManager.utils._startSpinner();
+	
+	if (filename=="calendar.html") {
+		spinnerUBISManager.utils._startSpinner();
+	}
 
 	$(window).resize(function(){
 		setPosition();
