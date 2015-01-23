@@ -59,7 +59,7 @@
 					var ScrollTo = (st.$sidebar.find(".sidebar-element."+elementClass).index(".sidebar-element")*st.$sidebar.find(".sidebar-element .sidebar-header").outerHeight(true))+menuHeight;
 					st.$sidebar.scrollTop(ScrollTo);
 					st.$sidebar.find('.sidebar-element.active:not(.'+elementClass+')').removeClass("active");
-					st.$sidebar.find('.sidebar-element.'+elementClass).toggleClass("active");
+					st.$sidebar.find('.sidebar-element.'+elementClass).addClass("active");
 					st.$sidebar.find('.sidebar-element:not(.'+elementClass+') .collapse.in').slideUp().removeClass("in");
 					var target = $($(this).data("target"));
 					if (target.hasClass("in")) {
@@ -84,6 +84,7 @@
 			utils._setHeightSidebar();
 			utils._setHeightContainer();
 			utils._setPositionContainer();
+			utils._selectHeaderByCookies();
 			$(window).resize(function(){
 				utils._setWidthLogoHeader();
 				utils._setWidthRedbar();
@@ -137,13 +138,19 @@
 				$(st.$sidebar.find(".sidebar-element."+selection.section+" .collapse a").get(parseInt(selection.page))).addClass("active");
 			}
 		},
+		_selectHeaderByCookies: function(){
+			if ($.cookie(st.cookieName)!=null){
+				var selection = JSON.parse($.cookie(st.cookieName));
+				st.$sidebar.find(".sidebar-element."+selection.section).addClass("active");
+			}
+		},
 		_toggleSidebar: function(action){
 			switch (action){
 				case "open":
 					st.$header.find('.sidebar-switch a').addClass("opened");
 					st.$sidebar.addClass("opened").animate({"width": utils._getSidebarWidth()+'px'}, {"queue": false}, utils._getSidebarWidth()*st.pixelSpeed, "linear");
 					st.$sidebar.find('.sidebar-footer').slideDown();
-					utils._selectByCookies(st);
+					utils._selectByCookies();
 					break;
 				case "close":
 					st.$header.find('.sidebar-switch a').removeClass("opened");
@@ -152,6 +159,7 @@
 					st.$sidebar.find('.sidebar-element .collapse.in').slideUp().removeClass("in");
 					st.$sidebar.find('.sidebar-element.active').removeClass('active');
 					st.$sidebar.find(".sidebar-element .collapse a").removeClass("active");
+					utils._selectHeaderByCookies();
 					break;
 				case "toggle":
 					st.$header.find('.sidebar-switch a').toggleClass("opened");
@@ -159,13 +167,14 @@
 					if (st.$header.find('.sidebar-switch a').hasClass("opened")){
 						st.$sidebar.animate({"width": utils._getSidebarWidth()+'px'}, {"queue": false}, utils._getSidebarWidth()*st.pixelSpeed, "linear");
 						st.$sidebar.find('.sidebar-footer').slideDown();
-						utils._selectByCookies(st);			
+						utils._selectByCookies();			
 					} else {
 						st.$sidebar.find('.sidebar-element .collapse.in').slideUp().removeClass("in");
 						st.$sidebar.find('.sidebar-element.active').removeClass('active');
 						st.$sidebar.animate({"width": utils._getSidebarWidth()+'px'}, {"queue": false}, utils._getSidebarWidth()*st.pixelSpeed, "linear");
 						st.$sidebar.find('.sidebar-footer').slideUp();
 						st.$sidebar.find(".sidebar-element .collapse a").removeClass("active");
+						utils._selectHeaderByCookies();			
 					}
 					break;
 			}

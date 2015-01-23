@@ -154,40 +154,40 @@ h1, h2, h3, h4, h5, h6 {
 	outline: 0;
 	white-space: nowrap;
 }
-#sidebar .sidebar-element .sidebar-collapser:hover,
-#sidebar .sidebar-element .sidebar-collapser:active, 
-#sidebar .sidebar-element.active .sidebar-collapser {color: #FFF; text-decoration: none;}
-#sidebar .sidebar-element .sidebar-collapser:focus, 
-#sidebar .sidebar-element .sidebar-collapser:visited {text-decoration: none;}
+#sidebar.opened .sidebar-element .sidebar-collapser:hover,
+#sidebar.opened .sidebar-element .sidebar-collapser:active, 
+#sidebar.opened .sidebar-element.active .sidebar-collapser {color: #FFF; text-decoration: none;}
+#sidebar.opened .sidebar-element .sidebar-collapser:focus, 
+#sidebar.opened .sidebar-element .sidebar-collapser:visited {text-decoration: none;}
 #sidebar .sidebar-element.aboutus .sidebar-collapser  {background-image: url('../img/static/menu-sidebar-aboutus.png');}
-#sidebar .sidebar-element.aboutus .sidebar-collapser:hover,
-#sidebar .sidebar-element.aboutus.active .sidebar-collapser,
-#sidebar .sidebar-element.aboutus .sidebar-collapser:active {background-image: url('../img/static/menu-sidebar-aboutus-active.png');}
+#sidebar.opened .sidebar-element.aboutus .sidebar-collapser:hover,
+#sidebar.opened .sidebar-element.aboutus.active .sidebar-collapser,
+#sidebar.opened .sidebar-element.aboutus .sidebar-collapser:active {background-image: url('../img/static/menu-sidebar-aboutus-active.png');}
 #sidebar .sidebar-element.governance .sidebar-collapser {background-image: url('../img/static/menu-sidebar-governance.png');}
-#sidebar .sidebar-element.governance .sidebar-collapser:hover, 
-#sidebar .sidebar-element.governance.active .sidebar-collapser,
-#sidebar .sidebar-element.governance .sidebar-collapser:active {background-image: url('../img/static/menu-sidebar-governance-active.png');}
+#sidebar.opened .sidebar-element.governance .sidebar-collapser:hover, 
+#sidebar.opened .sidebar-element.governance.active .sidebar-collapser,
+#sidebar.opened .sidebar-element.governance .sidebar-collapser:active {background-image: url('../img/static/menu-sidebar-governance-active.png');}
 #sidebar .sidebar-element.investors .sidebar-collapser {background-image: url('../img/static/menu-sidebar-investors.png');}
-#sidebar .sidebar-element.investors .sidebar-collapser:hover, 
-#sidebar .sidebar-element.investors.active .sidebar-collapser,
-#sidebar .sidebar-element.investors .sidebar-collapser:active {background-image: url('../img/static/menu-sidebar-investors-active.png');}
+#sidebar.opened .sidebar-element.investors .sidebar-collapser:hover, 
+#sidebar.opened .sidebar-element.investors.active .sidebar-collapser,
+#sidebar.opened .sidebar-element.investors .sidebar-collapser:active {background-image: url('../img/static/menu-sidebar-investors-active.png');}
 #sidebar .sidebar-element.pressmedia .sidebar-collapser {background-image: url('../img/static/menu-sidebar-pressmedia.png');}
-#sidebar .sidebar-element.pressmedia .sidebar-collapser:hover, 
-#sidebar .sidebar-element.pressmedia.active .sidebar-collapser,
-#sidebar .sidebar-element.pressmedia .sidebar-collapser:active {background-image: url('../img/static/menu-sidebar-pressmedia-active.png');}
+#sidebar.opened .sidebar-element.pressmedia .sidebar-collapser:hover, 
+#sidebar.opened .sidebar-element.pressmedia.active .sidebar-collapser,
+#sidebar.opened .sidebar-element.pressmedia .sidebar-collapser:active {background-image: url('../img/static/menu-sidebar-pressmedia-active.png');}
 #sidebar .sidebar-element.career .sidebar-collapser {background-image: url('../img/static/menu-sidebar-career.png');}
-#sidebar .sidebar-element.career .sidebar-collapser:hover, 
-#sidebar .sidebar-element.career.active .sidebar-collapser,
-#sidebar .sidebar-element.career .sidebar-collapser:active {background-image: url('../img/static/menu-sidebar-career-active.png');}
+#sidebar.opened .sidebar-element.career .sidebar-collapser:hover, 
+#sidebar.opened .sidebar-element.career.active .sidebar-collapser,
+#sidebar.opened .sidebar-element.career .sidebar-collapser:active {background-image: url('../img/static/menu-sidebar-career-active.png');}
 #sidebar .sidebar-element.sustainability .sidebar-collapser {background-image: url('../img/static/menu-sidebar-sustainability.png');}
-#sidebar .sidebar-element.sustainability .sidebar-collapser:hover, 
-#sidebar .sidebar-element.sustainability.active .sidebar-collapser,
-#sidebar .sidebar-element.sustainability .sidebar-collapser:active {background-image: url('../img/static/menu-sidebar-sustainability-active.png');}
+#sidebar.opened .sidebar-element.sustainability .sidebar-collapser:hover, 
+#sidebar.opened .sidebar-element.sustainability.active .sidebar-collapser,
+#sidebar.opened .sidebar-element.sustainability .sidebar-collapser:active {background-image: url('../img/static/menu-sidebar-sustainability-active.png');}
 
-#sidebar .sidebar-element.active .sidebar-header {
+#sidebar.opened .sidebar-element.active .sidebar-header {
 	background: url('../img/static/menu-sidebar-arrowup.png') no-repeat scroll right center transparent;
 }
-#sidebar .sidebar-element.active.reverse .sidebar-header {
+#sidebar.opened .sidebar-element.active.reverse .sidebar-header {
 	background: url('../img/static/menu-sidebar-arrowdown.png') no-repeat scroll right center transparent;
 }
 
