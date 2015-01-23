@@ -9,6 +9,7 @@
 				messageSelector: '#message',
 				containerSelector: '#mainContainer',
 				footerSelector: '#footer',
+				containerWidth: 960,
 				collapsedSidebarWidth: 80,
 				openedSidebarWidth: 280,
 				collapsedSidebarWidthMobile: 0,
@@ -168,7 +169,9 @@
 					}
 					break;
 			}
-			utils._setPositionContainer(st);
+			utils._setPositionContainer();
+			utils._setHeightSidebar();
+			utils._setHeightContainer();
 		},
 		_setPositionContainer: function(){
 			var topC = st.$header.outerHeight(true)+(st.$message.is(":visible") ? st.$message.outerHeight(true): 0);
@@ -178,6 +181,11 @@
 			st.$container.css({top: topC+"px"});
 			st.$container.animate({left: leftC+"px", width: widthC+"px"}, {"queue": false}, "linear");
 			st.$footer.animate({width: widthF+"px"}, {"queue": false}, "linear");
+			if(widthC<=st.containerWidth) {
+				st.$container.addClass("with-sidebar-opened");				
+			} else {
+				st.$container.removeClass("with-sidebar-opened");				
+			}
 		},
 		_setWidthContainer: function(){
 			var widthC = $(window).outerWidth(true)-utils._getContainerLeft();
@@ -188,11 +196,11 @@
 			st.$footer.css({width: widthF+"px"});	
 		},
 		_setHeightContainer: function(){
-			var containerContent =  Math.max(utils._getContentHeight(st.$container), $(window).outerHeight(true)-st.$header.outerHeight(true));
+			var containerContent =  Math.max(utils._getContentHeight(st.$container), $(window).outerHeight(true)-st.$header.outerHeight(true))*1.11;
 			st.$container.css("height", containerContent+"px");
 		},
 		_setHeightSidebar: function(){
-			var containerContent =  Math.max(utils._getContentHeight(st.$container), $(window).outerHeight(true)-st.$header.outerHeight(true));
+			var containerContent =  Math.max(utils._getContentHeight(st.$container), $(window).outerHeight(true)-st.$header.outerHeight(true))*1.11;
 			st.$sidebar.css("height", containerContent+"px");	
 		},
 		_setWidthSidebar: function(){
