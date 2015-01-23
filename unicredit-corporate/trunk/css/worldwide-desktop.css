@@ -130,6 +130,7 @@
 
 	#worldwide #tabs {
 		border-bottom: 1px solid #c9c9c9;
+		font-family: "UniCredit Medium";
 		margin-top: 18px;
 		height: 89px;
 	}
@@ -163,5 +164,93 @@
 
 	#worldwide #tabs .tab.active .tabHeader a {
 		color: #00afd0;
+	}
+
+	#worldwide #tabsBody .tabPanel {
+		border-bottom: 1px solid #c9c9c9;
+		font-size: 24px;
+		padding: 40px 0 32px;
+	}
+
+	#worldwide #tabsBody .tabPanel .bankName,
+	#worldwide #tabsBody .tabPanel .logo {
+		line-height: 1;
+	}
+
+	#worldwide #tabsBody .tabPanel .externalLink {
+		background: url("../img/static/worldwide_country_page_external_link_icon.png") no-repeat;
+		font-size: 15px;
+		clear: both;
+		margin-top: 44px;
+		margin-bottom: 24px;
+		padding-left: 26px;
+	}
+
+	#worldwide #tabsBody .tabPanel .externalLink a {
+		color: #00afd0;
+	}
+
+	#worldwide #tabsBody .tabPanel .moreInfo {
+		font-size: 14px;
+		line-height: 1;
+		margin-top: 3px;
+		padding-right: 9px;
+		text-transform: uppercase;
+	}	
+
+	#worldwide #tabsBody .tabPanel .moreInfo a:hover {
+		color: #00afd0;
+	}	
+
+	#worldwide #tabsBody .tabPanel .moreInfo .arrowRight {
+		background: url("../img/static/blue_arrow_right.png") no-repeat;
+		float: right;
+		margin-top: 1px;
+		margin-left: 9px;
+		height: 11px;
+		width: 7px;
+	}
+
+	#worldwide #tabsBody .tabPanel .icons {
+		font-size: 14px;
+		line-height: 1;
+		text-transform: uppercase;
+	}
+
+	#worldwide #tabsBody .tabPanel .icons .icon {
+		padding-top: 3px;
+		padding-right: 30px;
+	}
+
+	#worldwide #tabsBody .tabPanel .icons .icon:last-child {
+		padding-right: 0;
+	}
+
+	#worldwide #tabsBody .tabPanel .icons .icon.homeBankingLogin {
+		background: url("../img/static/home_banking_icon.png") no-repeat;
+		margin-top: 1px;
+		padding-top: 2px;
+		padding-left: 28px;
+		height: 16px;
+	}
+
+	#worldwide #tabsBody .tabPanel .icons .icon.seeJobPositions {
+		background: url("../img/static/worldwide_country_page_see_job_position_icon.png") no-repeat;
+		padding-left: 28px;
+		height: 16px;
+	}
+
+	#worldwide #tabsBody .tabPanel .icons .icon.findBranch {
+		background: url("../img/static/worldwide_country_page_find_a_branch_icon.png") no-repeat;
+		margin-top: 1px;
+		padding-top: 2px;
+		padding-left: 20px;
+		height: 14px;
+	}
+
+	#worldwide #tabsBody .tabPanel .icons .icon.linkedin {
+		background: url("../img/static/worldwide_country_page_linkedin_icon.png") no-repeat;
+		padding-left: 23px;
+		height: 14px;
 	}
 }
