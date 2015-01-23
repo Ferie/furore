@@ -26,26 +26,11 @@ $(document).ready(function () {
 
 	$('.cerchio').on('click', function () {
 		var $this = $(this);
-		if ($this.hasClass('europe')) {
-			$('html, body').animate({
-				scrollTop: $("#europe").offset().top
-			}, 1000);
-		}
-		if ($this.hasClass('asia')) {
-			$('html, body').animate({
-				scrollTop: $("#asia").offset().top
-			}, 1000);
-		}
-		if ($this.hasClass('africa')) {
-			$('html, body').animate({
-				scrollTop: $("#africa").offset().top
-			}, 1000);
-		}
-		if ($this.hasClass('americas')) {
-			$('html, body').animate({
-				scrollTop: $("#americas").offset().top
-			}, 1000);
-		}
+		var continent = $this.data('continent');
+
+		$('html, body').animate({
+			scrollTop: $("#" + continent).offset().top
+		}, 1000);
 	});
 
 	$('.worldwideCountries').on('click', function () {
@@ -61,11 +46,11 @@ $(document).ready(function () {
 		}
 	});
 
-	var tabsHeader = (function() {
+	var tabsHeader = (function () {
 		var partialWidth = 0,
-			tabsNumber = 0,
-			totalPadding,
-			tabPadding;
+				tabsNumber = 0,
+				totalPadding,
+				tabPadding;
 
 		$('#tabs .tab').each(function () {
 			var $this = $(this);
@@ -85,8 +70,14 @@ $(document).ready(function () {
 
 		$('#tabs .tab').on('click', function (e) {
 			e.preventDefault();
+
+			var $this = $(this);
 			$('#tabs .tab').removeClass('active');
-			$(this).addClass('active');
+			$this.addClass('active');
+
+			var target = $this.data('tabbody');
+			$('#tabsBody .tabPanel').removeClass('selected');
+			$('#' + target).addClass('selected');
 		});
 	})();
 });
