@@ -82,7 +82,6 @@ $(document).ready(function () {
 			$this.css('padding-left', tabPadding);
 			$this.css('padding-right', tabPadding);
 		});
-		debugger;
 
 		$('#tabs .tab').on('click', function (e) {
 			e.preventDefault();
