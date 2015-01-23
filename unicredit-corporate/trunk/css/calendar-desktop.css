@@ -1,4 +1,567 @@
 @media (min-width: 768px) {
+	/**** GENERAL RULES ****/
+	#calendar {
+	}
+	#calendar > .panel {
+		clear: both;
+		padding: 10px 0;
+		margin: 0;	
+	}
+	#calendar .panel > .container {
+		width: 100%;
+		margin: 0;
+		padding: 0 10px;
+	}
+	#calendar .container > div {
+		padding: 0;
+		margin: 0;
+	}
+	#calendar .panel > .container h1 {
+	    font-family: unicredit-light;
+	    font-size: 40px;
+	    line-height: 40px;
+	    margin: 0;
+	    padding: 20px 0 0;
+	    text-align: center;
+	}
+	/**** GENERAL RULES ****/
+	
+	/**** CALENDAR TOOLS ****/
+	
+	/**** generic rules ****/
+	#calendarTools input,
+	#calendarTools select {
+		width: 100%;
+		padding: 10px 0;
+	}
+	#calendarTools .container > div {
+		padding: 0 10px;	
+	}
+	#calendarTools .container > div:first-child {
+		padding-left: 0;	
+	}
+	#calendarTools .container > div:last-child {
+		padding-right: 0;	
+	}
+	/**** generic rules ****/
+	
+	/**** Date Range Picker ****/
+	
+	#calendarTools .container > .with-cross{
+	    height: 40px;
+	    overflow: hidden;
+	}
+	
+	#calendarTools input.keywords {
+		padding: 5px 25px 5px 42px;
+		background: url('../img/static/keywords-search.png') no-repeat scroll 8px center #fff;
+		font-size: 17px;
+		color: #333;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 5px;
+	}
+	#calendarTools input.keywords:focus {
+		box-shadow: none;
+		border-color: #ccc;
+	}
+	#calendarTools input.keywords.selected {
+		background-image: url('../img/static/keywords-search-selected.png');
+		background-color: #999;
+		color: #fff;
+	}
+	#calendarTools .cross {
+	    display: inline-block;
+	    float: right;
+	    position: relative;
+	    right: 10px;
+	    top: -30px;
+	    width: auto;
+	}
+	#calendarTools .cross a {
+		display: inline-block;
+	    background: url('../img/static/select-cross-white.png') no-repeat scroll center center transparent;
+		width: 0;
+		height: 0;
+	}
+	#calendarTools .cross.selected a {
+		width: 20px;
+		height: 20px;
+	}
+	#calendarTools .input-daterange {
+	    background: url('../img/static/select-arrow-down.png') no-repeat scroll 96% center;
+	    border: none;
+	    border-radius: 0;
+	    shadow-box: none;
+	}
+	#calendarTools .input-daterange.active {
+		background-image: url('../img/static/select-arrow-up.png');
+	}
+	#calendarTools .input-daterange > div {
+		background: url('../img/static/datepicker-calendar-icon.png') no-repeat scroll 6px center transparent;
+		padding-left: 37px;
+		font-size: 17px;
+		line-height: 40px;
+		height: 40px;
+		color: #ccc;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+	#calendarTools .input-daterange.active > div {
+		border-radius: 5px 5px 0 0;
+	}
+	#calendarTools .input-daterange .selected {
+		padding: 0 10px;
+	    background: none #999;
+		color: #fff;
+	}
+	#calendarTools .input-daterange .selected span {
+		font-family: 'unicredit-bold';
+	}
+	.daterangepicker {
+		box-shadow: none;
+		border: none;
+		border-radius: 0;
+		padding: 0;
+		margin: 0;
+		background: transparent;
+		font-family: 'unicredit-regular';
+	}
+	.daterangepicker .calendar-date {
+		border: none;
+		border-radius: 0;
+		padding: 0;
+		background: transparent;
+	}
+	.daterangepicker .calendar table {
+		border: 1px solid #ccc;
+		border-radius: 0 0 5px 5px;
+		border-collapse: separate;
+		background-color: #fff;
+	}
+	.daterangepicker .calendar table thead tr:last-child th,
+	.daterangepicker .calendar.right table tfoot tr th{
+		border-collapse: collapse;
+		border-radius: 0;
+	}
+	.daterangepicker .calendar table thead tr:last-child th {
+		border-bottom: 1px solid #ccc;	
+	}
+	.daterangepicker .calendar.right table tfoot tr th{
+		border-top: 1px solid #ccc;
+	}
+	.daterangepicker .calendar table thead th.prev,
+	.daterangepicker .calendar table thead th.next {
+		vertical-align: middle;
+	}
+	.daterangepicker .calendar table thead th.prev i,
+	.daterangepicker .calendar table thead th.next i {
+		width: 7px;
+		height: 25px;
+		content: "";
+		background: url('../img/static/datepicker-arrows-icons.png') no-repeat scroll left center transparent;
+		line-height: 25px;
+		display: block;
+		margin: 0 auto;
+	}
+	.daterangepicker .calendar table thead th.prev i {
+		background-position: left center;
+	}
+	.daterangepicker .calendar table thead th.next i {
+		background-position: right center;	
+	}
+	.daterangepicker .calendar table thead tr th:first-child {
+		padding-left: 5px;
+	}
+	.daterangepicker .calendar table thead tr th:last-child {
+		padding-right: 5px;
+	}
+	.daterangepicker .calendar td.month {
+		padding: 5px 0;
+		height: auto;
+	}
+	.daterangepicker .calendar table tbody tr:first-child td {
+		padding-top: 15px;
+	}
+	.daterangepicker .calendar table tbody tr:last-child td {
+		padding-bottom: 15px;
+	}
+	.daterangepicker .month:hover {
+		background-color: transparent;	
+	}
+	.daterangepicker .month span {
+		width: auto;
+		min-width: 35px;
+		padding: 2.5px;
+		display: inline-block;
+		height: 25px;
+		line-height: 20px;
+	}.daterangepicker .month.in-range span {
+		width: 100%;
+	}
+	
+	.daterangepicker .month.active,
+	.daterangepicker .month.in-range{
+		background-color: transparent;	
+	}
+	
+	.daterangepicker .month.available:hover,
+	.daterangepicker .month.available.active:hover,
+	.daterangepicker .month.available.in-range:hover {
+		background-color: #ccc;
+		border-radius: 5px;
+	} 
+	.daterangepicker .available.month.in-range span {
+		background-color: #00afd0;
+		color: #fff;
+	}
+	.daterangepicker .month.active span,
+	.daterangepicker .month.active span,
+	.daterangepicker .month.myactive span,
+	.daterangepicker .month.myactive span {
+		background-color: #00afd0;
+	    border-color: #00afd0;
+	    color: #fff;
+	    border-radius: 12.5px;
+		font-family: 'unicredit-bold';
+	}
+	.daterangepicker .available.month.in-range.my-start-date {
+		padding-left: 10px;
+	}
+	.daterangepicker .available.month.in-range.my-start-date span {
+		border-radius: 12.5px 0 0 12.5px;
+	}
+	.daterangepicker .available.month.my-end-date {
+		padding-right: 10px;
+	}
+	.daterangepicker .available.month.my-end-date span {
+		width: 100%;
+		border-radius: 0 12.5px 12.5px 0;
+	}
+	.daterangepicker .calendar th,
+	.daterangepicker .calendar td {
+		font-family: 'unicredit-regular';
+		font-weight: normal;
+		color: #666;	
+	}
+	.daterangepicker .calendar th .myLabel {
+		color: #666;
+		text-transform: uppercase;
+	}
+	.daterangepicker .calendar tr.myLabel th span {
+		font-family: 'unicredit-bold';
+	    color: #00afd0;
+		text-transform: uppercase;
+	}
+	.daterangepicker .calendar table thead th.month {
+		font-size: 17px;
+	    color: #00afd0;
+	}
+	.daterangepicker .calendar table tfoot button {
+		font-family: 'unicredit-bold';
+		margin: 9px 0;
+		text-transform: uppercase;
+		color: #fff;
+		background-color: #00afd0;
+		padding: 3px 12px;
+	}
+	.daterangepicker .calendar table tfoot button:hover,
+	.daterangepicker .calendar table tfoot button:active {
+		color: #00afd0;
+		background-color: #ccc;
+	}
+	/**** Date Range Picker ****/
+	
+	/**** Categories combo-box ****/
+	#calendarTools.panel {
+		border-bottom: 1px solid #ccc;
+		margin-bottom: 0;
+		padding-bottom: 40px;
+	}
+	#calendarTools .chosen-container {
+		height: 40px;
+		width: 100%;
+	}
+	#calendarTools .chosen-container .chosen-single {
+		background: #999;
+		border: none;
+		box-shadow: none;
+		font-size: 17px;
+		line-height: 40px;
+		height: 40px;
+		color: #fff;
+		padding: 0 10px;
+	}
+	#calendarTools .chosen-container .chosen-default {
+		background: none;
+		font-size: 17px;
+		line-height: 40px;
+		height: 40px;
+		color: #ccc;
+		border: 1px solid #ccc;
+	}
+	#calendarTools .chosen-container .chosen-single div {
+		width: 0;
+	}
+	#calendarTools .chosen-container .chosen-default div {
+		width: 30px;
+	}
+	#calendarTools .chosen-container .chosen-single div b {
+		background: none;
+	}
+	#calendarTools .chosen-container .chosen-single abbr {
+	    background: url('../img/static/select-cross-white.png') no-repeat scroll center center;
+	    float: right;
+	    position: relative;
+	    right: 0;
+	    top: -25px;
+	}
+	#calendarTools .chosen-container .chosen-default div b {
+	    background: url('../img/static/select-arrow-down.png') no-repeat scroll center center;
+	}
+	#calendarTools .chosen-container.chosen-with-drop .chosen-default div b {
+		background-image: url('../img/static/select-arrow-up.png');
+	}
+	#calendarTools .chosen-container .chosen-drop  {
+	    border-top: 1px solid #ccc;
+	    padding: 8px 8px 0;
+	}
+	#calendarTools .chosen-container .chosen-drop .chosen-results .active-result {
+	    background: url('../img/static/radio-button-unchecked.png') no-repeat scroll left center;
+		color: #ccc;
+		padding-left: 30px;
+		font-size: 15px;
+		line-height: 20px;
+	}
+	#calendarTools .chosen-container .chosen-drop .chosen-results .active-result.highlighted {
+	    background: url('../img/static/radio-button-checked.png') no-repeat scroll left center;
+		color: #00afd0;
+	}
+	/**** Categories combo-box ****/
+	/**** CALENDAR TOOLS ****/
+	
+	/**** CALENDAR MESSAGES ****/
+	#calendarMessages.panel,
+	#calendarMessages.panel > .panel {
+	    border: medium none;
+	    box-shadow: none;
+	    margin: 0;
+	    outline: medium none;
+	    padding: 0;
+	    
+	}
+	#calendarMessages > .panel.warn {
+		background-color: #fdeeed;
+	}
+	#calendarMessages.panel .panel > .container {
+		padding: 10px;
+	}
+	#calendarMessages .panel h3 {
+		font-family: 'unicredit-light';
+		margin: 10px 0;
+		line-height: 24px;
+	}
+	/**** CALENDAR MESSAGES ****/
+	
+	/**** EVENTS LIST ****/
+	#calendarPanelResults.panel {
+		padding: 0;
+	}
+	#calendarPanelResults .event.highlighted {
+		background-color: #e5f7fa;
+	}
+	#calendarPanelResults .event.panel {
+		margin: 0;
+	}
+	#calendarPanelResults .event > .container {
+		padding: 0px 10px;
+	}
+	#calendarPanelResults .event .header {
+		padding: 30px 0;
+	}
+	#calendarPanelResults .event:first-child .header {
+		border-top: 1px solid #ccc;
+		padding: 40px 0 30px;
+	}
+	#calendarPanelResults .event .header > div {
+		padding: 0;
+		height: 40px;
+	}
+	#calendarPanelResults .event .header .date {
+		padding-right: 15px;
+		border-right: 1px solid #c9c9c9;	
+	}
+	#calendarPanelResults .event .header .date .days {
+		padding: 0;
+		margin: 0;
+		list-style-type: none;	
+		display: inline-block;
+	}
+	#calendarPanelResults .event .header .date .days h1 {
+		margin: 0;	
+		display: inline-block;
+		font-family: 'unicredit-light';
+	    font-size: 44px;
+	    line-height: 40px;
+	}
+	#calendarPanelResults .event .header .date .days li {
+		display: inline-block;
+		padding-right: 10px;
+	}
+	#calendarPanelResults .event .header .date .days li:not(:first-child):before {
+		content: "❯";
+	    position: relative;
+	    top: -6px;
+	    margin-right: 10px;
+	}
+	#calendarPanelResults .event .header .date .days li:last-child {
+		border-right: 1px solid #c9c9c9;	
+	}
+	#calendarPanelResults .event .header .labels {
+		display: inline-block;
+		padding: 0 15px;
+	}
+	#calendarPanelResults .event .header .labels > span {
+		display: block;
+		font-size: 13px;
+		color: #c9c9c9;
+	}
+	#calendarPanelResults .event .header .labels > span:first-child {
+		font-family: 'unicredit-bold';
+		color: #666;
+	}
+	#calendarPanelResults .event .header .buttons {
+		display: inline-block;
+		padding: 12px 20px;
+		margin: 0;
+	}
+	#calendarPanelResults .event .header .buttons button {
+	    background: url('../img/static/calendar-events-save.png') no-repeat scroll center left;
+	    border: none;
+	    box-shadow: none;
+	    padding: 0 0 0 35px;
+	}
+	#calendarPanelResults .event .header .categories {
+		margin: 0;
+		width: auto;
+		float: right;
+	    right: auto;
+	}
+	#calendarPanelResults .event .header .categories label {
+		padding: 2px 10px;
+		border-radius: 6px;
+		border: 1px solid #000;
+		box-shadow: none;
+		background-color: #fff;
+	}
+	#calendarPanelResults .event .header .categories label.investors { color: #fbbc0f;border-color: #fbbc0f; }
+	#calendarPanelResults .event .header .categories label.culturesociety { color: #11a79e;border-color: #11a79e; }
+	#calendarPanelResults .event .header .categories label.sustainability { color: #b02b1c;border-color: #b02b1c; }
+	#calendarPanelResults .event .header .categories label.highlighted { color: #999;border-color: #999; }
+	
+	#calendarPanelResults .event .body {padding: 0 0 30px 0;}
+	#calendarPanelResults .event .body h2 {
+		margin: 0;
+		font-size: 24px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		height: 24px;
+		line-height: 24px;
+	}
+	#calendarPanelResults .event .footer {
+		border-bottom: 1px solid #c9c9c9;
+	}
+	#calendarPanelResults .event .footer a {
+		font-size: 16px;
+		padding-bottom: 15px;
+	}
+	#calendarPanelResults .event .footer a.attach {
+		background: url('../img/static/calendar-events-attachments-arrow-down.png') no-repeat scroll right 10px;
+		padding-right: 15px;
+	}
+	#calendarPanelResults .event .footer a.attach:hover,
+	#calendarPanelResults .event .footer a.attach:active {
+		background-image: url('../img/static/calendar-events-attachments-arrow-down-hover.png');
+	}
+	#calendarPanelResults .event .footer a.attach.collapsed {
+		background-image: url('../img/static/calendar-events-attachments-arrow-up.png');	
+	}
+	#calendarPanelResults .event .footer a.attach.collapsed:hover,
+	#calendarPanelResults .event .footer a.attach.collapsed:active {
+		background-image: url('../img/static/calendar-events-attachments-arrow-up-hover.png');
+	}
+	#calendarPanelResults .event .footer .attachments {
+		padding: 0;
+	}
+	
+	#calendarPanelResults .event .footer .attachments ul {
+		list-style-type: none;
+		display: inline-block;
+		padding: 5px 5px 5px 20px;
+		margin: 0;
+		width: 100%;
+		background-color: #f2f2f2;
+	}
+	#calendarPanelResults .event .footer .attachments li a {
+		padding: 10px 0;
+		width: 100%;
+		display: inline-block;
+	}
+	#calendarPanelResults .event .footer .attachments li a span {
+		font-family: 'unicredit-bold';
+		text-transform: uppercase;
+		padding-right: 4px;
+	}
+	#calendarPanelResults .event .footer .attachments li a span:after {
+		font-family: 'unicredit-light';
+		content: "|";
+		padding-left: 4px;
+	}
+	/**** EVENTS LIST ****/
+	/**** PAST EVENTS LIST ****/
+	#calendarPanelResults .event.past .header > div {
+		padding: 0;
+		height: auto;
+	}
+	#calendarPanelResults .event.past .header .date {
+		border: none;
+		color: #999;
+	}
+	#calendarPanelResults .event.past .header .date span {
+		font-weight: normal;
+		font-family: 'unicredit-bold';
+	}
+	/**** PAST EVENTS LIST ****/
+	/**** LOAD MORE ****/
+	#loadMore > .panel {
+		margin: 0;
+		padding-top: 20px;
+		padding-bottom: 30px;
+	}
+	#loadMore > .panel .container {
+		text-align: center;
+	}
+	#loadMore .btn {
+		font-family: 'unicredit-medium';
+		text-transform: uppercase;
+		font-weight: normal;
+		font-size: 14px;
+		border: 1px solid #CCCCCC;
+		background-color: #f5f5f5;
+		border-radius: 3px;
+		color: #999;
+		display: inline-block;
+		height: 40px;
+		line-height: 40px;
+		padding: 0 20px;
+		text-align: center;
+	}
+	/**** LOAD MORE ****/
+}
+
+@media (min-width: 768px) {
 	#calendar .panel > .container {
 		width: 960px;
 		margin: 0 auto;

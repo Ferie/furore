@@ -128,7 +128,7 @@ $(document).ready(function() {
 				htmlMessage: '',
 				textMessage: 'Loading Events',
 				autohide: true,
-				millisecondsTimer: 100,
+				millisecondsTimer: 4000,
 				color: "#00afd0",
 				shape: 'spiral',
 				diameter: 50,
