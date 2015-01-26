@@ -4,7 +4,7 @@ function addFields(){
 	$('.daterangepicker .calendar').each(function(){
 		var start = $('#calendarTools .input-daterange').data('daterangepicker').getStartDate();
 		var end = $('#calendarTools .input-daterange').data('daterangepicker').getEndDate();
-		$(this).find('thead').prepend('<tr class="myLabel"><th colspan="4">FROM <span class="startDate">'+start+'</span> TO <span class="endDate">'+end+'</span></th></tr>');
+		$(this).find('thead').prepend('<tr class="myLabel"><th colspan="2">FROM <span class="startDate">'+start+'</span></th><th colspan="2">TO <span class="endDate">'+end+'</span></th></tr>');
 		//$(this).css("width", fieldWidth+"px");
 	});
 	$('.daterangepicker .calendar table thead th.prev i,.daterangepicker .calendar table thead th.next i').removeAttr('class');
@@ -49,6 +49,7 @@ function activationDelayed(){
 }
 function setWidth(){
 	var fieldWidth = $('#calendarTools .input-daterange').outerWidth();
+	$('.daterangepicker').css("width", fieldWidth+"px");
 	$('.daterangepicker .calendar').css("width", fieldWidth+"px");
 }
 function setPosition(){
@@ -140,6 +141,21 @@ $(document).ready(function() {
 	if (filename=="calendar.html") {
 		spinnerUBISManager.utils._startSpinner();
 	}
+	$('#calendar #loadMore button').click(function(){
+
+		$('#calendar #calendarPanelResults').hide();
+		$('#calendar #calendarPanelResults').append($('#calendar #calendarPanelResults .event2,#calendar #calendarPanelResults .event3,#calendar #calendarPanelResults .event4, #calendar #calendarPanelResults .event5').clone());
+		$('#calendar #loadMore').remove();
+		spinnerUBISManager.utils._startSpinner();
+		$('#calendar #calendarPanelResults').show();
+		headerUBISManager.utils._setHeightContainer();
+		headerUBISManager.utils._setHeightSidebar();
+		/*
+		var $containerNews = $('#calendar #calendarPanelResults');
+		$('#calendar #calendarPanelResults .event2,#calendar #calendarPanelResults .event3,#calendar #calendarPanelResults .event4, #calendar #calendarPanelResults .event5').each(function(){
+			$containerNews.append($(this).clone());
+		});*/
+	})
 
 	$(window).resize(function(){
 		setPosition();

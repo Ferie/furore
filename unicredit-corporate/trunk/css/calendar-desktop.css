@@ -89,17 +89,13 @@
 		height: 20px;
 	}
 	#calendarTools .input-daterange {
-	    background: url('../img/static/select-arrow-down.png') no-repeat scroll 96% center;
+	    background: none;
 	    border: none;
 	    border-radius: 0;
 	    shadow-box: none;
 	}
-	#calendarTools .input-daterange.active {
-		background-image: url('../img/static/select-arrow-up.png');
-	}
 	#calendarTools .input-daterange > div {
-		background: url('../img/static/datepicker-calendar-icon.png') no-repeat scroll 6px center transparent;
-		padding-left: 37px;
+		padding-left: 10px;
 		font-size: 17px;
 		line-height: 40px;
 		height: 40px;
@@ -108,15 +104,18 @@
 		border-radius: 5px;
 		cursor: pointer;
 	}
-	#calendarTools .input-daterange.active > div {
-		border-radius: 5px 5px 0 0;
+	#calendarTools .input-daterange.active > div:not(.selected) {
+		background: url('../img/static/datepicker-calendar-icon-opened.png') no-repeat scroll right top transparent;
 	}
-	#calendarTools .input-daterange .selected {
+	#calendarTools .input-daterange > div:not(.selected) {
+		background: url('../img/static/datepicker-calendar-icon.png') no-repeat scroll right top transparent;
+	}
+	#calendarTools .input-daterange > div.selected {
 		padding: 0 10px;
 	    background: none #999;
 		color: #fff;
 	}
-	#calendarTools .input-daterange .selected span {
+	#calendarTools .input-daterange > div.selected span {
 		font-family: 'unicredit-bold';
 	}
 	.daterangepicker {
@@ -127,6 +126,9 @@
 		margin: 0;
 		background: transparent;
 		font-family: 'unicredit-regular';
+	}
+	.daterangepicker .calendar {
+		position: absolute;
 	}
 	.daterangepicker .calendar-date {
 		border: none;
@@ -157,7 +159,7 @@
 	}
 	.daterangepicker .calendar table thead th.prev i,
 	.daterangepicker .calendar table thead th.next i {
-		width: 7px;
+		width: 14px;
 		height: 25px;
 		content: "";
 		background: url('../img/static/datepicker-arrows-icons.png') no-repeat scroll left center transparent;
@@ -253,6 +255,7 @@
 		font-family: 'unicredit-bold';
 	    color: #00afd0;
 		text-transform: uppercase;
+		display: block;
 	}
 	.daterangepicker .calendar table thead th.month {
 		font-size: 17px;
