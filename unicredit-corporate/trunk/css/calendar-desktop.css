@@ -99,7 +99,7 @@
 		font-size: 17px;
 		line-height: 40px;
 		height: 40px;
-		color: #ccc;
+		color: #999;
 		border: 1px solid #ccc;
 		border-radius: 5px;
 		cursor: pointer;
@@ -301,7 +301,7 @@
 		font-size: 17px;
 		line-height: 40px;
 		height: 40px;
-		color: #ccc;
+		color: #999;
 		border: 1px solid #ccc;
 	}
 	#calendarTools .chosen-container .chosen-single div {
@@ -332,7 +332,7 @@
 	}
 	#calendarTools .chosen-container .chosen-drop .chosen-results .active-result {
 	    background: url('../img/static/radio-button-unchecked.png') no-repeat scroll left center;
-		color: #ccc;
+		color: #999;
 		padding-left: 30px;
 		font-size: 15px;
 		line-height: 20px;
@@ -428,7 +428,7 @@
 	#calendarPanelResults .event .header .labels > span {
 		display: block;
 		font-size: 13px;
-		color: #c9c9c9;
+		color: #999;
 	}
 	#calendarPanelResults .event .header .labels > span:first-child {
 		font-family: 'unicredit-bold';
@@ -472,6 +472,7 @@
 		text-overflow: ellipsis;
 		height: 24px;
 		line-height: 24px;
+		color: #333;
 	}
 	#calendarPanelResults .event .footer {
 		border-bottom: 1px solid #c9c9c9;
@@ -552,9 +553,9 @@
 		font-weight: normal;
 		font-size: 14px;
 		border: 1px solid #CCCCCC;
-		background-color: #f5f5f5;
+		background-color: #fff;
 		border-radius: 3px;
-		color: #999;
+		color: #666;
 		display: inline-block;
 		height: 40px;
 		line-height: 40px;

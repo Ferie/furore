@@ -58,8 +58,7 @@
 			st.$sidebar.find('.sidebar-element .sidebar-collapser').click(function () {
 				if (st.$sidebar.hasClass("opened")){
 					var elementClass = $(this).data('name');
-					var menuHeight = (isBreakpoint(st.breakpoint) ? st.$sidebar.find(".menu").outerHeight(true) : 0);
-					var ScrollTo = (st.$sidebar.find(".sidebar-element."+elementClass).index(".sidebar-element")*st.$sidebar.find(".sidebar-element .sidebar-header").outerHeight(true))+menuHeight;
+					var ScrollTo = (st.$sidebar.find(".sidebar-element."+elementClass).index(".sidebar-element")*st.$sidebar.find(".sidebar-element .sidebar-header").outerHeight(true));
 					st.$sidebar.scrollTop(ScrollTo);
 					st.$sidebar.find('.sidebar-element.active:not(.'+elementClass+')').removeClass("active");
 					st.$sidebar.find('.sidebar-element.'+elementClass).addClass("active");

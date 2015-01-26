@@ -44,7 +44,7 @@
 	var utils = {
 		_startSpinner: function(){
 			st.$topElement
-			.append(
+			.prepend(
 					$("<div class=\"modal-layer\">")
 							.append(
 									'<div class="wrapper spinner '+st.containerClass+'"><div id="'+st.idSpinner+'" tabindex="10000"></div><div id=\"spinnerText\"></div><div class="clear"></div></div>'));
