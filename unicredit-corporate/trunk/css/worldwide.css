@@ -20,6 +20,9 @@
 
 #worldwide #worldwideTitle h1,
 #worldwide #countryTitle h1 {
+	font-family: "unicredit-light";
+	font-size: 40px;
+	line-height: 1;
 	margin: 0;
 }
 
@@ -48,6 +51,7 @@
 #worldwide .worldwideCountries .continentTitle {
 	border-bottom: 1px solid #c9c9c9;
 	cursor: pointer;
+	font-family: "UniCredit-Bold";
 	font-size: 17px;
 	margin: 0;
 	padding: 20px 10px;
@@ -55,7 +59,7 @@
 }
 
 #worldwide .worldwideCountries.collapsed .accordionArrow {
-	background: url("../img/static/calendar-events-attachments-arrow-down-hover.png") no-repeat;
+	background: url("../img/static/select-arrow-down.png") no-repeat;
 	position: absolute;
 	top: 30px;
 	right: 10px;
@@ -64,7 +68,7 @@
 }
 
 #worldwide .worldwideCountries .accordionArrow {
-	background: url("../img/static/calendar-events-attachments-arrow-up-hover.png") no-repeat;
+	background: url("../img/static/select-arrow-up.png") no-repeat;
 	position: absolute;
 	top: 30px;
 	right: 10px;
@@ -73,11 +77,12 @@
 }
 
 #worldwide .worldwideCountries .continentCountries {
-	float: none;
+	/*float: none;*/
 	font-size: 20px;
-	margin-left: 10px;
-	margin-right: 10px;
-	width: 100%;
+/*	margin-left: 10px;
+	margin-right: 10px;*/
+	padding-left: 10px;
+	/*width: 100%;*/
 }
 
 #worldwide .worldwideCountries .countries {
@@ -111,8 +116,8 @@
 
 #worldwide #countryTitle {
 	border-bottom: 1px solid #cacaca;
-	padding: 0 0 38px;
 	margin: 34px 0 65px;
+	padding: 0 0 38px;
 }
 
 /*#worldwide #intro .left,
@@ -173,4 +178,25 @@
 #worldwide #intro .text-uppercase {
 	font-size: 20px;
 	margin-top: 27px;
+}
+
+#worldwide #intro .subtitle {
+	text-align: left;
+}
+
+#worldwide #intro .ourPresenceHiddenOnMobile {
+	display: none;
+}
+
+#worldwide #intro .readMore {
+	display: block;
+}
+
+#worldwide #intro .readLess {
+	display: none;
+}
+
+#worldwide #intro .readMore a:hover,
+#worldwide #intro .readLess a:hover {
+	color: #00afd0;
 }
