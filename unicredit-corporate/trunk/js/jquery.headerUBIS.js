@@ -9,11 +9,12 @@
 				messageSelector: '#message',
 				containerSelector: '#mainContainer',
 				footerSelector: '#footer',
+				scrollableSelector: '.scrollable-element',
 				containerWidth: 960,
 				collapsedSidebarWidth: 80,
 				openedSidebarWidth: 280,
 				collapsedSidebarWidthMobile: 0,
-				openedSidebarWidthMobile: $(window).width(),
+				openedSidebarWidthMobile: function(){return ;},
 				collapsedContainerLeft: 80,
 				openedContainerLeft: 280,
 				collapsedContainerLeftMobile: 0,
@@ -32,11 +33,13 @@
 			var $message = $(st.messageSelector);
 			var $container = $(st.containerSelector);
 			var $footer = $(st.footerSelector);
+			var $scrollables = $(st.scrollableClass);
 			st.$header = $header;
 			st.$sidebar = $sidebar;
 			st.$message = $message;
 			st.$container = $container;
 			st.$footer = $footer;
+			st.$scrollables = $scrollables;
 			
 			if ($.cookie(st.cookieName)==null){
 				$.cookie(st.cookieName, JSON.stringify(st.selection), { expiry: 0 });
@@ -81,6 +84,7 @@
 			utils._setWidthRedbar();
 			utils._setWidthContainer();
 			utils._setWidthFooter();
+			//utils._setHeightScrollables();
 			utils._setHeightSidebar();
 			utils._setHeightContainer();
 			utils._setPositionContainer();
@@ -90,6 +94,7 @@
 				utils._setWidthRedbar();
 				utils._setWidthContainer();
 				utils._setWidthFooter();
+				//utils._setHeightScrollables();
 				utils._setHeightSidebar();
 				utils._setHeightContainer();
 				utils._setPositionContainer();
@@ -102,7 +107,8 @@
 				sidebar: $sidebar, 
 				message: $message, 
 				container: $container, 
-				footer: $footer
+				footer: $footer, 
+				scrollables: $scrollables
 				};
 			}
 		};
@@ -119,10 +125,10 @@
 		 _getSidebarWidth: function(){
 			var result = 0;
 			if (isBreakpoint(st.breakpoint)) {
-				result = st.$sidebar.hasClass('opened') ? st.openedSidebarWidthMobile : st.collapsedSidebarWidthMobile;
+				result = st.$sidebar.hasClass('opened') ? $(window).width() : st.collapsedSidebarWidthMobile;
 			} else {
 				result =  st.$sidebar.hasClass('opened') ? st.openedSidebarWidth : st.collapsedSidebarWidth;
-			}	
+			}
 			return result;
 		},
 		_getContentHeight: function(element){
@@ -179,6 +185,7 @@
 					break;
 			}
 			utils._setPositionContainer();
+			//utils._setHeightScrollables();
 			utils._setHeightSidebar();
 			utils._setHeightContainer();
 		},
