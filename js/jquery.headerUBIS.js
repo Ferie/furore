@@ -45,10 +45,10 @@
 				$.cookie(st.cookieName, JSON.stringify(st.selection), { expiry: 0 });
 			}
 			
-			st.$sidebar.find('.sidebar-element .collapse a').click(function(){
+			st.$header.find('a[data-section][data-link]').click(function(){
 				var mysection =  $(this).data("section");
-				var mypage = st.$sidebar.find(".sidebar-element."+mysection+" ul li").index($(this).parent());
-				$.cookie(st.cookieName, JSON.stringify({section: mysection, page:mypage}), { expiry: 0 });
+				var mylink =  $(this).data("link");
+				$.cookie(st.cookieName, JSON.stringify({section: mysection, page:mylink}), { expiry: 0 })
 				location.reload();
 			});
 			
@@ -139,15 +139,29 @@
 		_selectByCookies: function(){
 			if ($.cookie(st.cookieName)!=null){
 				var selection = JSON.parse($.cookie(st.cookieName));
-				st.$sidebar.find(".sidebar-element."+selection.section+" .sidebar-collapser").trigger("click");
+				if (selection.section!="menu") {
+					st.$sidebar.find(".sidebar-element."+selection.section+" .sidebar-collapser").trigger("click");
+				}
+				st.$header.find('.'+selection.section+' ul li a').removeClass("active");
+				st.$header.find('.'+selection.section+' ul li a.'+selection.page).addClass("active");
+					
+				/*
 				st.$sidebar.find(".sidebar-element .collapse a").removeClass("active");
-				$(st.$sidebar.find(".sidebar-element."+selection.section+" .collapse a").get(parseInt(selection.page))).addClass("active");
+				$(st.$sidebar.find(".sidebar-element."+selection.section+" .collapse a."+selection.page).addClass("active");
+				if (selection.section=="menu") {
+					st.$header.find(".menu a").removeClass("active");
+					st.$header.find(".menu a."+selection.page).addClass("active");
+				}*/
 			}
 		},
 		_selectHeaderByCookies: function(){
 			if ($.cookie(st.cookieName)!=null){
 				var selection = JSON.parse($.cookie(st.cookieName));
-				st.$sidebar.find(".sidebar-element."+selection.section).addClass("active");
+				if (selection.section!="menu") {
+					st.$sidebar.find(".sidebar-element."+selection.section).addClass("active");
+				}
+				st.$header.find('.'+selection.section+' ul li a').removeClass("active");
+				st.$header.find('.'+selection.section+' ul li a.'+selection.page).addClass("active");
 			}
 		},
 		_toggleSidebar: function(action){
@@ -229,7 +243,7 @@
 			} else {
 				width = $(window).outerWidth(true)-st.$header.find('.sidebar-switch').outerWidth(true)-st.$header.find('.logo').outerWidth(true)-st.$header.find('.online-banking').outerWidth(true);
 			}
-			st.$header.find('.menu').css({width: width+"px"});
+			st.$header.find('.menu:not(.sidebar-menu)').css({width: width+"px"});
 		},
 		_setWidthLogoHeader: function(){
 			var width;
