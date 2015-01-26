@@ -20,6 +20,12 @@
 		text-align: center;
 	}
 
+	#worldwide #worldwideMap .map img {
+		height: auto;
+		max-width: 847px;
+		width: 100%;
+	}
+
 	#worldwide #worldwideMap .cerchio {
 		background-color: #FFFFFF;
 		border: 1px solid #cacaca;
@@ -351,8 +357,23 @@
 		padding-top: 3px;
 	}
 
+	#worldwide #companyInfos .mappa img {
+		height: auto;
+		width: 100%;
+	}
+
 	#worldwide .companyInfo .companyInfoTitle {
 		font-size: 25px;
 		margin: 50px 0 22px;
+	}
+
+	#worldwide .companyInfo .title {
+		margin: 0;
+		padding-top: 24px;
+	}
+
+	#worldwide .companyInfo p,
+	#worldwide .companyInfo ul {
+		margin: 0;
 	}
 }
