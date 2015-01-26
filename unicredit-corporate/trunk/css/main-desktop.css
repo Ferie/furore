@@ -5,6 +5,9 @@
 		top: 80px;
 		left: 80px;
 	}
+	#mainContainer.with-sidebar-opened .panel .container {
+    	width: 100%;
+	}
 	/**** GENERAL RULES ****/
 	
 	/**** HEADER ****/
@@ -118,6 +121,9 @@
 	#breadcrumb ul {
 		width: 960px;
 		margin: 0 auto;
+	}
+	#mainContainer.with-sidebar-opened #breadcrumb ul {
+    	width: 100%;
 	}
 	/**** BREADCRUMB ****/
 

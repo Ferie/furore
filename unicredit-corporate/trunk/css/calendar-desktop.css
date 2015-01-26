@@ -567,9 +567,6 @@
 		margin: 0 auto;
 		padding: 0 10px;
 	}
-	#mainContainer.with-sidebar-opened #calendar .panel .container {
-		width: 100%;
-	}
 	
 	#calendar .event .header .date,
 	#calendar .event .header .buttons,
