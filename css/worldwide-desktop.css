@@ -4,7 +4,8 @@
 	}
 
 	#worldwide .panel > .container {
-		width: 960px;
+		max-width: 960px;
+		width: 100%;
 	}
 
 	#worldwide #worldwideTitle {
@@ -84,17 +85,18 @@
 
 	#worldwide .worldwideCountries .continentTitle {
 		cursor: default;
+		font-family: "UniCredit-Regular";
 		margin: 0 10px 24px;
 		padding: 0 0 24px;
 	}
 
 	#worldwide .worldwideCountries .continentCountries {
 		display: block;
-		float: left;
+/*		float: left;
 		font-size: 20px;
 		margin-left: 10px;
 		margin-right: 10px;
-		width: 31%;
+		width: 31%;*/
 	}
 
 	#worldwide .worldwideCountries .countries .continentCountries:first-child {
@@ -118,14 +120,23 @@
 
 	/************** COUNTRY PAGE **************/
 
+	#worldwide #intro strong {
+		font-family: "UniCredit Medium";
+	}
+
 	#worldwide #intro .row {
 		margin: 0 -15px;
 		padding-bottom: 45px;
 		width: 100%;
 	}
 
-	#worldwide #intro .subtitle {
-		text-align: left;
+	#worldwide #intro .ourPresenceHiddenOnMobile {
+		display: block;
+	}
+
+	#worldwide #intro .readMore,
+	#worldwide #intro .readLess {
+		display: none;
 	}
 
 	#worldwide #tabs {
@@ -219,7 +230,9 @@
 		width: 7px;
 	}
 
-	#worldwide .tabSection .icons {
+	#worldwide .tabSection .icons,
+	#worldwide #companyInfos .icons {
+		font-family: "UniCredit-Bold";
 		font-size: 14px;
 		line-height: 1;
 		text-transform: uppercase;
@@ -234,7 +247,8 @@
 		padding-right: 0;
 	}
 
-	#worldwide .tabSection .icons .icon.homeBankingLogin {
+	#worldwide .tabSection .icons .icon.homeBankingLogin,
+	#worldwide #companyInfos .icons .icon.homeBankingLogin {
 		background: url("../img/static/home_banking_icon.png") no-repeat;
 		margin-top: 1px;
 		padding-top: 2px;
@@ -242,13 +256,15 @@
 		height: 16px;
 	}
 
-	#worldwide .tabSection .icons .icon.seeJobPositions {
+	#worldwide .tabSection .icons .icon.seeJobPositions,
+	#worldwide #companyInfos .icons .icon.seeJobPositions {
 		background: url("../img/static/worldwide_country_page_see_job_position_icon.png") no-repeat;
 		padding-left: 28px;
 		height: 16px;
 	}
 
-	#worldwide .tabSection .icons .icon.findBranch {
+	#worldwide .tabSection .icons .icon.findBranch,
+	#worldwide #companyInfos .icons .icon.findBranch {
 		background: url("../img/static/worldwide_country_page_find_a_branch_icon.png") no-repeat;
 		margin-top: 1px;
 		padding-top: 2px;
@@ -256,13 +272,87 @@
 		height: 14px;
 	}
 
-	#worldwide .tabSection .icons .icon.linkedin {
+	#worldwide .tabSection .icons .icon.linkedin,
+	#worldwide #companyInfos .icons .icon.linkedin {
 		background: url("../img/static/worldwide_country_page_linkedin_icon.png") no-repeat;
 		padding-left: 23px;
 		height: 14px;
 	}
 
-	#worldwide .tabSection .icons .icon a {
+	#worldwide .tabSection .icons .icon a,
+	#worldwide #companyInfos .icons .icon a {
 		color: #666666;
+	}
+
+	/************** COMPANY PAGE **************/
+
+/*	#worldwide #companyInfos .logo {
+		border-bottom: 1px solid #c9c9c9;
+		padding: 10px;
+	}*/
+
+	#worldwide #companyInfos strong {
+		font-family: "UniCredit-Bold";
+	}
+
+	#worldwide #companyInfos .inner {
+		font-size: 15px;
+	}
+
+	#worldwide #companyInfos .subtitle {
+		border-bottom: 1px solid #c9c9c9;
+		line-height: 1;
+		margin-bottom: 12px;
+		padding: 44px 0 7px;
+		text-transform: uppercase;
+	}
+
+	#worldwide #companyInfos .infos {
+		padding-bottom: 9px;
+	}
+
+	#worldwide #companyInfos .infos a:hover,
+	#worldwide #companyInfos .externalLink a {
+		color: #00afd0;
+	}
+
+	#worldwide #companyInfos .infos .getDirections {
+		font-family: "UniCredit-Bold";
+		font-size: 13px;
+		padding-top: 4px;
+		text-transform: uppercase;
+	}
+
+	#worldwide #companyInfos .infos .getDirections a {
+		color: #666666;
+	}
+
+	#worldwide #companyInfos .externalLink {
+		background: url("../img/static/worldwide_country_page_external_link_icon.png") no-repeat;
+		margin-bottom: 16px;
+		padding-left: 26px;
+	}
+
+	#worldwide #companyInfos .icons .icon.homeBankingLogin,
+	#worldwide #companyInfos .icons .icon.seeJobPositions,
+	#worldwide #companyInfos .icons .icon.findBranch,
+	#worldwide #companyInfos .icons .icon.linkedin {
+		margin-bottom: 14px;
+		padding-left: 28px;
+	}
+
+	#worldwide #companyInfos .icons .icon.findBranch,
+	#worldwide #companyInfos .icons .icon.linkedin {
+		margin-left: 4px;
+		padding-left: 24px;
+	}
+
+	#worldwide #companyInfos .icons .icon.linkedin {
+		padding-top: 3px;
+	}
+
+	#worldwide .companyInfo .companyInfoTitle {
+		font-size: 25px;
+		margin: 50px 0 22px;
 	}
 }
