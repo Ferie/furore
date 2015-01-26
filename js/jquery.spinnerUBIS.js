@@ -83,8 +83,8 @@
 			st.$modal.offset(st.position);
 			st.$modal.css({width: st.width, height: st.height});
 			var left = (st.width / 2) - (st.$container.outerWidth() / 2);
-			var top = (st.height / 2) - (st.$container.outerHeight() / 2);
-			st.$container.css({top: top, left: left});
+			//var top = (st.height / 2) - (st.$container.outerHeight() / 2);
+			st.$container.css({top: '10%', left: left});
 		},
 		_caclulateWidth: function(){
 			st.width = 0;
