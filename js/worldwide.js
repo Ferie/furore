@@ -35,26 +35,27 @@ $(document).ready(function () {
 	function tabsHeader() {
 		var partialWidth = 0,
 			tabsNumber = 0,
-			totalPadding,
-			tabPadding;
+			totalPadding = 0,
+			tabPadding = 0,
+			$containerWidth = $('.container').width();
 
 		$('#tabs .tab').each(function () {
 			var $this = $(this);
-			partialWidth = $this.outerWidth() + partialWidth;
+			partialWidth = $this.width() + partialWidth;
 			tabsNumber++;
 		});
 
-//		if (partialWidth !== $('#tabs .container').width()) {
-			totalPadding = $('#tabs .container').width() - partialWidth;
+		// border inclusion in the partial width to adjust the next padding (2 is for some particular resolution)
+		partialWidth = partialWidth + tabsNumber + 2;
 
-			tabPadding = (totalPadding / tabsNumber) / 2;
+		totalPadding = $('#tabs .container').outerWidth() - partialWidth;
+		tabPadding = Math.abs((totalPadding / tabsNumber) / 2);
 
-			$('#tabs .tab').each(function () {
-				var $this = $(this);
-				$this.css('padding-left', tabPadding);
-				$this.css('padding-right', tabPadding);
-			});
-//		}
+		$('#tabs .tab').each(function () {
+			var $this = $(this);
+			$this.css('padding-left', tabPadding);
+			$this.css('padding-right', tabPadding);
+		});
 
 		$('#tabs .tab').on('click', function (e) {
 			e.preventDefault();
@@ -81,7 +82,13 @@ $(document).ready(function () {
 		window.clearTimeout(timer);
 		timer = window.setTimeout(function() {
 			tabsHeader();
-		}, 1000);
+		}, 400);
+	});
+
+	$('.sidebar-switch').on('click', function (e) {
+		setTimeout(function() {
+			tabsHeader();
+		}, 600);
 	});
 
 	$('.collapse').on('shown.bs.collapse', function () {
