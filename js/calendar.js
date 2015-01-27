@@ -167,8 +167,10 @@ $(document).ready(function() {
 	})
 
 	$(window).resize(function(){
-		setPosition();
-		setWidth();		
+		if($('#calendarTools .input-daterange').exists()) {
+			setPosition();
+			setWidth();
+		}
 	});
 	$('#calendarTools .cross.keys a').click(function(){
 		$(this).parent().removeClass("selected");
@@ -215,7 +217,10 @@ $(document).ready(function() {
 		$(this).text($(this).data('memotext'));
 		$(this).data('memotext', swapText);
 	});
-	
+	$('#socialSingleShare .icon a, #socialSingleShare .closer a').click(function(){
+		$('#socialSingleShare .icon').toggleClass('collapsed');
+		$('#socialSingleShare .collapse > div').toggle();
+	});
 	$('.collapse').on('shown.bs.collapse', function(){
 		headerUBISManager.utils._setHeightContainer();
 		headerUBISManager.utils._setHeightSidebar();

@@ -1,6 +1,4 @@
 /**** GENERAL RULES ****/
-#calendar {
-}
 #calendar > .panel {
 	clear: both;
 	padding: 10px 0;
@@ -561,3 +559,93 @@
 	text-align: center;
 }
 /**** LOAD MORE ****/
+/**** EVENT DETAIL ****/
+/**** SOCIAL SINGLE SHARE ****/
+#socialSingleShare .panel.panel-header {
+	height: 0;
+	margin: 0;
+}
+#socialSingleShare .panel .container .icon {
+	float: right;
+	display: inline-block;
+	position: relative;
+	top: -41px;
+	padding: 10px 0 19px;
+	margin-bottom: -11px;
+	background: url('../img/static/calendar-share-down-arrow.png') no-repeat scroll bottom right;
+}
+#socialSingleShare .panel .container .icon.collapsed  {
+	padding-bottom: 8px;
+	background: transparent;
+}
+#socialSingleShare .panel.panel-collapse {
+	width: 100%;
+	background-color: #f2f2f2;
+	margin: 0;
+	padding: 0;
+}
+
+#socialSingleShare .panel.panel-collapse.collapsing {
+	overflow: visible;
+}
+#socialSingleShare .panel.panel-collapse .container {
+	padding: 20px 0;
+}
+#socialSingleShare .panel.panel-collapse h2 {
+	line-height: 30px;
+	margin: 0;
+    padding: 10px 0;
+    font-size: 24px;
+}
+#socialSingleShare ul {
+	padding: 0;
+	list-style-type: none;
+	display: inline-block;
+	margin: 0;
+	width: 100%;
+}
+#socialSingleShare ul li {
+	display: inline-block;
+    margin: 0px 3%;
+    }
+#socialSingleShare ul li a {
+	line-height: 30px;
+	display: inline-block;
+	margin: 0;
+    padding: 10px 10px 10px 30px;
+	background-color: transparent;
+    background-position: left center;
+    background-repeat: no-repeat;
+    font-family: 'unicredit-medium';
+    font-size: 15px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+#socialSingleShare ul li a.facebook {
+	background-image: url('../img/static/calendar-share-social-facebook.png');
+	color: #3b5998;
+}
+#socialSingleShare ul li a.twitter {
+	background-image: url('../img/static/calendar-share-social-twitter.png');
+	color: #5ea9dd;
+}
+#socialSingleShare ul li a.linkedin {
+	background-image: url('../img/static/calendar-share-social-linkedin.png');
+	color: #1985bc;
+}
+#socialSingleShare ul li a.googleplus {
+	background-image: url('../img/static/calendar-share-social-googleplus.png');
+	color: #aa1c0d;
+}
+
+#socialSingleShare .closer {
+	position: relative;
+	top: -9px;
+	height: 0;
+	text-align: right;
+}
+#socialSingleShare .closer a {
+	padding-right: 13px;
+}
+/**** SOCIAL SINGLE SHARE ****/
+/**** EVENT DETAIL ****/

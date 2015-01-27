@@ -33,7 +33,8 @@
 			
 			
 			$(window).resize(function(){
-				utils._resizeSpinner();
+				if(typeof st.$modal != "undefined")
+					utils._resizeSpinner();
 			});
 			
 			return {
