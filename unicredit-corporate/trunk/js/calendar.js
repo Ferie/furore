@@ -131,10 +131,10 @@ $(document).ready(function() {
 				autohide: true,
 				millisecondsTimer: 4000,
 				color: "#00afd0",
-				shape: 'spiral',
-				diameter: 50,
+				shape: 'UBIS',
+				diameter: 40,
 				density: 71,
-				range: 1.1,
+				range: 2,
 				fps: 25
 				});
 	
@@ -153,10 +153,10 @@ $(document).ready(function() {
 			autohide: true,
 			millisecondsTimer: 4000,
 			color: "#00afd0",
-			shape: 'spiral',
-			diameter: 50,
+			shape: 'UBIS',
+			diameter: 40,
 			density: 71,
-			range: 1.1,
+			range: 2,
 			fps: 25
 			});
 		spinnerLoadMore.utils._startSpinner();
