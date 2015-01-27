@@ -16,7 +16,7 @@
 				density: 40,
 				range: 1.3,
 				fps: 24,
-				shape: "oval",
+				shape: "UBIS",
 				idSpinner: 'spinner-loader',
 				containerClass: 'generalSpinner',
 				position: { top: 0, left: 0 }					
@@ -37,7 +37,8 @@
 			});
 			
 			return {
-				utils: utils
+				utils: utils,
+				spinner: this
 				};
 			}
 		};
