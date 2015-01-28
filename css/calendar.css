@@ -310,6 +310,16 @@
 	color: #999;
 	border: 1px solid #ccc;
 }
+#calendarTools select {
+	background: none;
+	font-size: 17px;
+	line-height: 40px;
+	height: 40px;
+	color: #999;
+	border: 1px solid #ccc;
+	border-radius: 5px;	
+	padding: 0 5px;
+}
 #calendarTools .chosen-container .chosen-single div {
 	width: 0;
 }
@@ -335,6 +345,23 @@
 #calendarTools .chosen-container .chosen-drop  {
     border-top: 1px solid #ccc;
     padding: 8px 8px 0;
+}
+#calendarTools select option:first-child {
+	display: none;
+}
+#calendarTools select option {
+    background: url('../img/static/radio-button-unchecked.png') no-repeat scroll left center;
+	color: #999;
+	font-size: 15px;
+	line-height: 20px;
+    border-top: none;
+    padding: 8px 0 8px 30px;
+}
+#calendarTools select option:focus,
+#calendarTools select option:hover,
+#calendarTools select option:active {
+    background: url('../img/static/radio-button-checked.png') no-repeat scroll left center transparent;
+	color: #00afd0;	
 }
 #calendarTools .chosen-container .chosen-drop .chosen-results .active-result {
     background: url('../img/static/radio-button-unchecked.png') no-repeat scroll left center;
