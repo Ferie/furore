@@ -27,12 +27,13 @@
 	}
 
 	#worldwide #worldwideMap .cerchio {
+		behavior: url(../plugin/js/PIE.htc);
 		background-color: #FFFFFF;
 		border: 1px solid #cacaca;
 		border-radius: 50%;
 		cursor: pointer;
 		display: table;
-	    height: 180px;
+		height: 180px;
 		width: 180px;
 	}
 
@@ -59,28 +60,28 @@
 	}
 
 	#worldwide #worldwideMap .cerchio.americas {
-	    position: absolute;
-		top: 125px;
-		left: 95px;
+		position: absolute;
+		top: 31.0173%; /* 125px */
+		left: 9.89583%; /* 95px */
 	}
 
 	#worldwide #worldwideMap .cerchio.europe {
 		border-color: #00afd0;
 		position: absolute;
-		top: 0px;
-		left: 340px;
+		top: 0%; /* 0px */
+		left: 35.4166%; /* 340px */
 	}
 
 	#worldwide #worldwideMap .cerchio.africa {
-	    position: absolute;
-		top: 183px;
-		left: 466px;
+		position: absolute;
+		top: 45.4094%; /* 183px */
+		left: 48.5416%; /* 466px */
 	}
 
 	#worldwide #worldwideMap .cerchio.asia {
-	    position: absolute;
-		top: 62px;
-		left: 652px;
+		position: absolute;
+		top: 15.3846%; /* 62px */
+		left: 67.9166%; /* 652px */
 	}
 
 	#worldwide .worldwideCountries {
@@ -291,11 +292,6 @@
 	}
 
 	/************** COMPANY PAGE **************/
-
-/*	#worldwide #companyInfos .logo {
-		border-bottom: 1px solid #c9c9c9;
-		padding: 10px;
-	}*/
 
 	#worldwide #companyInfos strong {
 		font-family: "UniCredit-Bold";
