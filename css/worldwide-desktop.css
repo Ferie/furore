@@ -185,16 +185,12 @@
 	}
 
 	#worldwide .tabPanel {
-		display: none;
-	}
-
-	#worldwide .tabPanel.selected {
-		display: block;
+		padding: 0;
 	}
 
 	#worldwide .tabSection {
-		border-bottom: 1px solid #c9c9c9;
 		font-size: 24px;
+		margin-bottom: 0;
 		padding: 40px 0 32px;
 	}
 
@@ -203,49 +199,34 @@
 		line-height: 1;
 	}
 
+	#worldwide .tabSection .bankName {
+		float: left;
+	}
+
+	#worldwide .tabSection .logo {
+		float: right;
+		padding-bottom: 0;
+	}
+
 	#worldwide .tabSection .externalLink {
-		background: url("../img/static/worldwide_country_page_external_link_icon.png") no-repeat;
-		font-size: 15px;
 		clear: both;
+		font-size: 15px;
 		margin-top: 44px;
 		margin-bottom: 24px;
-		padding-left: 26px;
-	}
-
-	#worldwide .tabSection .externalLink a {
-		color: #00afd0;
-	}
-
-	#worldwide .tabSection .moreInfo {
-		font-size: 14px;
-		line-height: 1;
-		margin-top: 3px;
-		padding-right: 9px;
-		text-transform: uppercase;
-	}	
-
-	#worldwide .tabSection .moreInfo a:hover {
-		color: #00afd0;
-	}	
-
-	#worldwide .tabSection .moreInfo .arrowRight {
-		background: url("../img/static/blue_arrow_right.png") no-repeat;
-		float: right;
-		margin-top: 1px;
-		margin-left: 9px;
-		height: 11px;
-		width: 7px;
 	}
 
 	#worldwide .tabSection .icons,
 	#worldwide #companyInfos .icons {
-		font-family: "UniCredit-Bold";
-		font-size: 14px;
-		line-height: 1;
-		text-transform: uppercase;
+		margin-top: 0;
+	}
+
+	#worldwide .tabSection .icons {
+		float: right;
 	}
 
 	#worldwide .tabSection .icons .icon {
+		float: left;
+		margin: 0;
 		padding-top: 3px;
 		padding-right: 30px;
 	}
@@ -256,7 +237,6 @@
 
 	#worldwide .tabSection .icons .icon.homeBankingLogin,
 	#worldwide #companyInfos .icons .icon.homeBankingLogin {
-		background: url("../img/static/home_banking_icon.png") no-repeat;
 		margin-top: 1px;
 		padding-top: 2px;
 		padding-left: 28px;
@@ -265,15 +245,15 @@
 
 	#worldwide .tabSection .icons .icon.seeJobPositions,
 	#worldwide #companyInfos .icons .icon.seeJobPositions {
-		background: url("../img/static/worldwide_country_page_see_job_position_icon.png") no-repeat;
+		padding-top: 3px;
 		padding-left: 28px;
 		height: 16px;
 	}
 
 	#worldwide .tabSection .icons .icon.findBranch,
 	#worldwide #companyInfos .icons .icon.findBranch {
-		background: url("../img/static/worldwide_country_page_find_a_branch_icon.png") no-repeat;
 		margin-top: 1px;
+		margin-left: 0;
 		padding-top: 2px;
 		padding-left: 20px;
 		height: 14px;
@@ -281,14 +261,10 @@
 
 	#worldwide .tabSection .icons .icon.linkedin,
 	#worldwide #companyInfos .icons .icon.linkedin {
-		background: url("../img/static/worldwide_country_page_linkedin_icon.png") no-repeat;
+		margin-left: 0;
+		padding-top: 3px;
 		padding-left: 23px;
 		height: 14px;
-	}
-
-	#worldwide .tabSection .icons .icon a,
-	#worldwide #companyInfos .icons .icon a {
-		color: #666666;
 	}
 
 	/************** COMPANY PAGE **************/

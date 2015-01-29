@@ -210,7 +210,12 @@
 				
 				<div class="panel" id="intro">
 					<div class="container">
-						<div class="col-xs-12 col-sm-5">
+						<div class="col-xs-12 col-sm-7 right">
+							<div class="subtitle">
+								Our Presence
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-5 left">
 							<div class="row">
 								<div class="imageEmployers"></div>
 								<div class="number">7,700</div>
@@ -222,12 +227,7 @@
 								<div class="text-uppercase">Branches</div>
 							</div>
 						</div>
-						<div class="col-xs-12 col-sm-7">
-							<div class="subtitle">
-								Our Presence
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-7">
+						<div class="col-xs-12 col-sm-7 right">
 							<div class="text-left">
 								The group maintains an extensive network in Austria, with about <strong>7.700 employees</strong> serving customers in some <strong>300 branches</strong>.
 								<div class="ourPresenceHiddenOnMobile">
@@ -275,87 +275,75 @@
 					</div>
 				</div>
 
-				<div class="panel visible-xs">
+				<div class="panel visible-xs" id="dropdown">
 					<div class="container">
-						<button id="dropdown" type="button" data-toggle="dropdown">
-							Select business type
-							<span class="arrow"></span>
-						</button>
-						<ul class="dropdown-menu">
-							<li class="dropdownElement">
-								<a href="javascript:void(0);">Consumer and SME Banking</a>
-							</li>
-							<li class="dropdownElement">
-								<a href="javascript:void(0);">Corporate & Investment Banking</a>
-							</li>
-							<li class="dropdownElement">
-								<a href="javascript:void(0);">Private Banking</a>
-							</li>
-							<li class="dropdownElement">
-								<a href="javascript:void(0);">Leasing</a>
-							</li>
-							<li class="dropdownElement">
-								<a href="javascript:void(0);">Special Company</a>
-							</li>
-						</ul>
+						<div class="col-xs-12">
+							<select name="companyCategory" class="chosen-select" data-placeholder="Select business type">
+								<option value="consumerAndSMEBanking">Consumer and SME Banking</option>
+								<option value="corporateAndInvestmentBanking">Corporate & Investment Banking</option>
+								<option value="privateBanking">Private Banking</option>
+								<option value="leasing">Leasing</option>
+								<option value="specialCompany">Special Company</option>
+							</select>
+						</div>
 					</div>
 				</div>
 
-				<div class="panel">
+				<div class="panel" id="tabsBody">
 					<div class="container">
 						<div class="tabPanel selected" id="consumerAndSMEBanking">
 							<div class="tabSection clearfix">
-								<div class="bankName left">Bank Austria</div>
-								<div class="logo right">
+								<div class="logo">
 									<img src="img/static/Bank_Austria_logo.png">
 								</div>
+								<div class="bankName">Bank Austria</div>
 								<div class="externalLink">
 									<a href="http://www.bankaustria.at" target="_blank">bankaustria.at</a>
 								</div>
-								<div class="moreInfo left">
-									<a href="worldwideCompanyInfo.html">more info <span class="arrowRight"></span></a>
+								<div class="moreInfo">
+									<a href="worldwideCompanyInfo.html">More info <span class="arrowRight"></span></a>
 								</div>
-								<div class="icons right">
-									<div class="homeBankingLogin icon left">
+								<div class="icons">
+									<div class="homeBankingLogin icon">
 										<a href="javascript:void(0);">Home banking login</a>
 									</div>
-									<div class="seeJobPositions icon left">
+									<div class="seeJobPositions icon">
 										<a href="javascript:void(0);">See job positions</a>
 									</div>
-									<div class="findBranch icon left">
+									<div class="findBranch icon">
 										<a href="javascript:void(0);">Find a branch</a>
 									</div>
-									<div class="linkedin icon left">
+									<div class="linkedin icon">
 										<a href="https://www.linkedin.com/company/unicredit-bank-austria-ag" target="_blank">Linkedin</a>
 									</div>
 								</div>
 							</div>
 							<div class="tabSection clearfix">
-								<div class="bankName left">UniCredit Family Financing Bank, Niederlassung der UniCredit S.p.A.</div>
-								<div class="logo right">
+								<div class="logo">
 									<img src="img/static/UniCredit_Family_Financing_logo.png">
 								</div>
+								<div class="bankName">UniCredit Family Financing Bank, Niederlassung der UniCredit S.p.A.</div>
 								<div class="externalLink">
 									<a href="http://www.ucfin.de" target="_blank">ucfin.de</a>
 								</div>
-								<div class="moreInfo left">
-									<a href="worldwideCompanyInfo.html">more info <span class="arrowRight"></span></a>
+								<div class="moreInfo">
+									<a href="worldwideCompanyInfo.html">More info <span class="arrowRight"></span></a>
 								</div>
-								<div class="icons right"></div>
+								<div class="icons"></div>
 							</div>
 							<div class="tabSection clearfix">
-								<div class="bankName left">DAB Bank AG</div>
-								<div class="logo right">
+								<div class="logo">
 									<img src="img/static/DAB_bank_logo.png">
 								</div>
+								<div class="bankName">DAB Bank AG</div>
 								<div class="externalLink">
 									<a href="http://www.dab-bank.de" target="_blank">dab-bank.de</a>
 								</div>
-								<div class="moreInfo left">
-									<a href="worldwideCompanyInfo.html">more info <span class="arrowRight"></span></a>
+								<div class="moreInfo">
+									<a href="worldwideCompanyInfo.html">More info <span class="arrowRight"></span></a>
 								</div>
-								<div class="icons right">
-									<div class="homeBankingLogin icon left">
+								<div class="icons">
+									<div class="homeBankingLogin icon">
 										<a href="javascript:void(0);">Home banking login</a>
 									</div>
 								</div>
@@ -363,34 +351,26 @@
 						</div>
 
 						<div class="tabPanel" id="corporateAndInvestmentBanking">
-							<div class="container">
-								<div class="tabSection clearfix">
-									<div class="bankName">Corporate & Investment Banking</div>
-								</div>
+							<div class="tabSection clearfix">
+								<div class="bankName">Corporate & Investment Banking</div>
 							</div>
 						</div>
 
 						<div class="tabPanel" id="privateBanking">
-							<div class="container">
-								<div class="tabSection clearfix">
-									<div class="bankName">Private Banking</div>
-								</div>
+							<div class="tabSection clearfix">
+								<div class="bankName">Private Banking</div>
 							</div>
 						</div>
 
 						<div class="tabPanel" id="leasing">
-							<div class="container">
-								<div class="tabSection clearfix">
-									<div class="bankName">Leasing</div>
-								</div>
+							<div class="tabSection clearfix">
+								<div class="bankName">Leasing</div>
 							</div>
 						</div>
 
 						<div class="tabPanel" id="specialCompany">
-							<div class="container">
-								<div class="tabSection clearfix">
-									<div class="bankName">Special Company</div>
-								</div>
+							<div class="tabSection clearfix">
+								<div class="bankName">Special Company</div>
 							</div>
 						</div>
 					</div>
