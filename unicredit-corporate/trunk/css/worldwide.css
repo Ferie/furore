@@ -58,8 +58,9 @@
 	text-transform: uppercase;
 }
 
-#worldwide .worldwideCountries.collapsed .accordionArrow {
-	background: url("../img/static/select-arrow-down.png") no-repeat;
+#worldwide .worldwideCountries .arrow,
+#worldwide .worldwideCountries.collapsed .arrow {
+	background: url("../img/static/select-arrow-up.png") no-repeat;
 	position: absolute;
 	top: 30px;
 	right: 10px;
@@ -67,13 +68,8 @@
 	width: 10px;
 }
 
-#worldwide .worldwideCountries .accordionArrow {
-	background: url("../img/static/select-arrow-up.png") no-repeat;
-	position: absolute;
-	top: 30px;
-	right: 10px;
-	height: 5px;
-	width: 10px;
+#worldwide .worldwideCountries.collapsed .arrow {
+	background: url("../img/static/select-arrow-down.png") no-repeat;
 }
 
 #worldwide .worldwideCountries .continentCountries {
@@ -200,3 +196,33 @@
 #worldwide #intro .readLess a:hover {
 	color: #00afd0;
 }
+
+/************** COUNTRY PAGE **************/
+
+#worldwide #dropdown {
+	background-color: #FFFFFF;
+	border: 1px solid #c9c9c9;
+	border-radius: 10px;
+	position: relative;
+	font-family: "UniCredit-Bold";
+	font-size: 18px;
+	color: #666666;
+	cursor: pointer;
+	margin: 0 10px;
+	padding: 10px;
+	text-align: center;
+	width: 95%;
+}
+
+#worldwide #dropdown .arrow {
+	background: url("../img/static/select-arrow-up.png") no-repeat;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	height: 5px;
+	width: 10px;
+}
+
+/*#worldwide #dropdown .arrow {
+	background: url("../img/static/select-arrow-down.png") no-repeat;
+}*/
