@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	function toggleCollapse() {
+	function toggleCollapseCountries() {
 		if (!isBreakpoint('xs')) {
 			$('#accordion .countries').removeClass('collapse');
 			$('#accordion .countries').removeClass('in');
@@ -14,13 +14,13 @@ $(document).ready(function () {
 			$('#intro .readMore').show();
 			$('#intro .readLess').hide();
 
-			$('#intro .readMore').on('click', function (e) {
+			$('#intro .readMore a').on('click', function () {
 				$('#intro .ourPresenceHiddenOnMobile').slideDown();
 				$('#intro .readMore').hide();
 				$('#intro .readLess').show();
 			});
 
-			$('#intro .readLess').on('click', function (e) {
+			$('#intro .readLess a').on('click', function () {
 				$('#intro .ourPresenceHiddenOnMobile').slideUp();
 				$('#intro .readMore').show();
 				$('#intro .readLess').hide();
@@ -45,7 +45,8 @@ $(document).ready(function () {
 			tabsNumber++;
 		});
 
-		// border inclusion in the partial width to adjust the next padding (2 is for some particular resolution)
+		// border inclusion in partialWidth to adjust the totalPadding
+		// tabsNumber + 1 is the number of the borders (the number 2 is another unit added that works for some even resolutions)
 		partialWidth = partialWidth + tabsNumber + 2;
 
 		totalPadding = $('#tabs .container').outerWidth() - partialWidth;
@@ -57,38 +58,36 @@ $(document).ready(function () {
 			$this.css('padding-right', tabPadding);
 		});
 
-		$('#tabs .tab').on('click', function (e) {
-			e.preventDefault();
-
+		$('#tabs .tab').on('click', function () {
 			var $this = $(this);
 			$('#tabs .tab').removeClass('active');
 			$this.addClass('active');
 
-			var target = $this.data('tabbody');
-			$('#tabsBody .tabPanel').removeClass('selected');
+			var target = $this.data('tabpanel');
+			$('.panel-group .tabPanel').removeClass('selected');
 			$('#' + target).addClass('selected');
 		});
 	}
 
-	toggleCollapse();
 	readMore();
+	toggleCollapseCountries();
 	tabsHeader();
 
-	var timer = window.setTimeout(function() {}, 0);
+//	var timer = window.setTimeout(function () {}, 0);
 
 	$(window).resize(function () {
-		toggleCollapse();
 		readMore();
-		window.clearTimeout(timer);
-		timer = window.setTimeout(function() {
+		toggleCollapseCountries();
+//		window.clearTimeout(timer);
+//		timer = window.setTimeout(function () {
 			tabsHeader();
-		}, 400);
+//		}, 400);
 	});
 
-	$('.sidebar-switch').on('click', function (e) {
-		setTimeout(function() {
+	$('.sidebar-switch').on('click', function () {
+		setTimeout(function () {
 			tabsHeader();
-		}, 600);
+		}, 400);
 	});
 
 	$('.collapse').on('shown.bs.collapse', function () {
@@ -112,14 +111,16 @@ $(document).ready(function () {
 
 	$('.worldwideCountries').on('click', function () {
 		var $this = $(this);
-		if ($this.hasClass('collapsed')) {
-			$('.worldwideCountries').addClass('collapsed');
-			$this.removeClass('collapsed');
-//			$('html, body').animate({
-//				scrollTop : $this.offset().top
-//			}, 1000);
-		} else {
-			$this.addClass('collapsed');
-		}
+		setTimeout(function () {
+			$('html, body').animate({
+				scrollTop : $this.offset().top - 60
+			}, 1000);
+		}, 350);
+	});
+
+	$('.worldwideCountryCompany').on('click', function () {
+		var $this = $(this);
+//		$this.toggleClass('collapsed');
+//		$this.find('.collapse').collapse('hide');
 	});
 });
