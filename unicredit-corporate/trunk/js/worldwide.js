@@ -1,4 +1,15 @@
 $(document).ready(function () {
+	$('.collapse').on('shown.bs.collapse', function () {
+		headerUBISManager.utils._setHeightContainer();
+		headerUBISManager.utils._setHeightSidebar();
+	});
+
+	$('.collapse').on('hidden.bs.collapse', function () {
+		headerUBISManager.utils._setHeightContainer();
+		headerUBISManager.utils._setHeightSidebar();
+	});
+
+	// accordion for the countries (mobile)
 	function toggleCollapseCountries() {
 		if (!isBreakpoint('xs')) {
 			$('#accordion .countries').removeClass('collapse');
@@ -7,7 +18,8 @@ $(document).ready(function () {
 			$('#accordion .countries').addClass('collapse');
 		}
 	}
-	
+
+	// read more management (mobile)
 	function readMore() {
 		if (isBreakpoint('xs')) {
 			$('#intro .ourPresenceHiddenOnMobile').hide();
@@ -32,12 +44,13 @@ $(document).ready(function () {
 		}
 	}
 
+	// put custom padding on resize on the tab header
 	function tabsHeader() {
 		var partialWidth = 0,
-			tabsNumber = 0,
-			totalPadding = 0,
-			tabPadding = 0,
-			$containerWidth = $('.container').width();
+				tabsNumber = 0,
+				totalPadding = 0,
+				tabPadding = 0,
+				$containerWidth = $('.container').width();
 
 		$('#tabs .tab').each(function () {
 			var $this = $(this);
@@ -57,16 +70,6 @@ $(document).ready(function () {
 			$this.css('padding-left', tabPadding);
 			$this.css('padding-right', tabPadding);
 		});
-
-		$('#tabs .tab').on('click', function () {
-			var $this = $(this);
-			$('#tabs .tab').removeClass('active');
-			$this.addClass('active');
-
-			var target = $this.data('tabpanel');
-			$('.panel-group .tabPanel').removeClass('selected');
-			$('#' + target).addClass('selected');
-		});
 	}
 
 	readMore();
@@ -84,22 +87,14 @@ $(document).ready(function () {
 //		}, 400);
 	});
 
+	// resize the page on sidebar click
 	$('.sidebar-switch').on('click', function () {
 		setTimeout(function () {
 			tabsHeader();
 		}, 400);
 	});
 
-	$('.collapse').on('shown.bs.collapse', function () {
-		headerUBISManager.utils._setHeightContainer();
-		headerUBISManager.utils._setHeightSidebar();
-	});
-
-	$('.collapse').on('hidden.bs.collapse', function () {
-		headerUBISManager.utils._setHeightContainer();
-		headerUBISManager.utils._setHeightSidebar();
-	});
-
+	// scroll on continent circle (desktop)
 	$('.cerchio').on('click', function () {
 		var $this = $(this);
 		var continent = $this.data('continent');
@@ -109,18 +104,48 @@ $(document).ready(function () {
 		}, 1000);
 	});
 
+	// scroll on continent tap (mobile)
 	$('.worldwideCountries').on('click', function () {
 		var $this = $(this);
 		setTimeout(function () {
 			$('html, body').animate({
-				scrollTop : $this.offset().top - 60
+				scrollTop: $this.offset().top - 60
 			}, 1000);
 		}, 350);
 	});
 
-	$('.worldwideCountryCompany').on('click', function () {
+	// tab header event (desktop)
+	$('#tabs .tab').on('click', function () {
 		var $this = $(this);
-//		$this.toggleClass('collapsed');
-//		$this.find('.collapse').collapse('hide');
+		$('#tabs .tab').removeClass('active');
+		$this.addClass('active');
+
+		var target = $this.data('tabpanel');
+		$('#tabsBody .tabPanel').removeClass('selected');
+		$('#' + target).addClass('selected');
+	});
+
+	// skin for the tag select in Worldwide
+	$("#worldwide .chosen-select").chosen({
+				allow_single_deselect: true,
+				disable_search: true,
+				width: "100%"
+			}).change(function () {
+		var $txt = $('#worldwide .chosen-container-single .chosen-single-with-deselect span');
+		if ($txt.text().indexOf("(") > -1) {
+			$txt.text($txt.text().substring(0, $txt.text().indexOf("(")));
+		}
+	});
+
+	// events that put a placeholder when the dropdown menù is open (mobile)
+	$('#worldwide .chosen-container .chosen-single').on('click', function () {
+		$(this).find('span').text($('#worldwide #dropdown select').data('placeholder'));
+	});
+
+	$('#worldwide .chosen-container .chosen-drop ul').on('click', function () {
+		var target = $('#worldwide .chosen-select option:selected').val();
+
+		$('#tabsBody .tabPanel').removeClass('selected');
+		$('#' + target).addClass('selected');
 	});
 });

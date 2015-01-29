@@ -199,30 +199,180 @@
 
 /************** COUNTRY PAGE **************/
 
-#worldwide #dropdown {
-	background-color: #FFFFFF;
+#worldwide .chosen-container {
+	height: 40px;
+	width: 100%;
+}
+
+#worldwide .chosen-container .chosen-single {
 	border: 1px solid #c9c9c9;
-	border-radius: 10px;
-	position: relative;
+	box-shadow: none;
 	font-family: "UniCredit-Bold";
-	font-size: 18px;
+	font-size: 17px;
 	color: #666666;
-	cursor: pointer;
-	margin: 0 10px;
-	padding: 10px;
-	text-align: center;
-	width: 95%;
+	line-height: 40px;
+	padding: 0 10px;
+	height: 40px;
 }
 
-#worldwide #dropdown .arrow {
-	background: url("../img/static/select-arrow-up.png") no-repeat;
-	position: absolute;
-	top: 20px;
-	right: 20px;
-	height: 5px;
-	width: 10px;
+#worldwide .chosen-container .chosen-default {
+	background: none;
+	border: 1px solid #c9c9c9;
+	font-size: 17px;
+	color: #666666;
+	line-height: 40px;
+	height: 40px;
 }
 
-/*#worldwide #dropdown .arrow {
-	background: url("../img/static/select-arrow-down.png") no-repeat;
-}*/
+#worldwide .chosen-container .chosen-single div,
+#worldwide .chosen-container .chosen-default div {
+	width: 30px;
+}
+
+#worldwide .chosen-container .chosen-single div b,
+#worldwide .chosen-container .chosen-default div b {
+	background: url('../img/static/select-arrow-down.png') no-repeat scroll center center;
+}
+
+#worldwide .chosen-container.chosen-with-drop .chosen-single div b,
+#worldwide .chosen-container.chosen-with-drop .chosen-default div b {
+	background-image: url('../img/static/select-arrow-up.png');
+}
+
+#worldwide .chosen-container .chosen-drop  {
+	border: 1px solid #c9c9c9;
+	border-top: none;
+	padding: 10px 10px 5px;
+}
+
+#worldwide .chosen-container .chosen-drop .chosen-results {
+	margin: 0;
+	padding: 0;
+}
+
+#worldwide .chosen-container .chosen-drop .chosen-results .active-result {
+	background: url('../img/static/radio-button-unchecked.png') no-repeat scroll left center;
+	font-size: 15px;
+	color: #666666;
+	line-height: 20px;
+	padding-left: 30px;
+}
+
+#worldwide .chosen-container .chosen-drop .chosen-results .active-result.highlighted {
+	background: url('../img/static/radio-button-checked.png') no-repeat scroll left center;
+}
+
+#worldwide .tabPanel {
+	display: none;
+	font-size: 15px;
+	padding: 15px;
+}
+
+#worldwide .tabPanel.selected {
+	display: block;
+}
+
+#worldwide .tabSection {
+	border-bottom: 1px solid #c9c9c9;
+	margin-bottom: 40px;
+	padding-bottom: 40px;
+}
+
+#worldwide .tabSection .logo {
+	padding-bottom: 20px;
+}
+
+#worldwide .tabSection .bankName {
+	font-size: 24px;
+}
+
+#worldwide .tabSection .externalLink {
+	background: url("../img/static/worldwide_country_page_external_link_icon.png") no-repeat;
+	margin-top: 18px;
+	margin-bottom: 10px;
+	padding-left: 26px;
+}
+
+#worldwide .tabSection .externalLink a:hover {
+	color: #00afd0;
+}
+
+#worldwide .tabSection .moreInfo {
+	float: left;
+	font-size: 14px;
+	line-height: 1;
+	margin-top: 3px;
+	padding-right: 9px;
+	text-transform: uppercase;
+}	
+
+#worldwide .tabSection .moreInfo a:hover {
+	color: #00afd0;
+}
+
+#worldwide .tabSection .moreInfo .arrowRight {
+	background: url("../img/static/blue_arrow_right.png") no-repeat;
+	float: right;
+	margin-top: 1px;
+	margin-left: 9px;
+	height: 11px;
+	width: 7px;
+}
+
+#worldwide .tabSection .icons,
+#worldwide #companyInfos .icons {
+	font-family: "UniCredit-Bold";
+	font-size: 14px;
+	margin-top: 40px;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+#worldwide .tabSection .icons .icon {
+	margin: 15px 0;
+}
+
+#worldwide .tabSection .icons .icon:last-child {
+	margin-bottom: 0;
+}
+
+#worldwide .tabSection .icons .icon.homeBankingLogin,
+#worldwide #companyInfos .icons .icon.homeBankingLogin {
+	background: url("../img/static/home_banking_icon.png") no-repeat;
+	margin-top: 1px;
+	padding-top: 2px;
+	padding-left: 28px;
+	height: 16px;
+}
+
+#worldwide .tabSection .icons .icon.seeJobPositions,
+#worldwide #companyInfos .icons .icon.seeJobPositions {
+	background: url("../img/static/worldwide_country_page_see_job_position_icon.png") no-repeat;
+	padding-top: 3px;
+	padding-left: 28px;
+	height: 16px;
+}
+
+#worldwide .tabSection .icons .icon.findBranch,
+#worldwide #companyInfos .icons .icon.findBranch {
+	background: url("../img/static/worldwide_country_page_find_a_branch_icon.png") no-repeat;
+	margin-top: 1px;
+	margin-left: 4px;
+	padding-top: 2px;
+	padding-left: 24px;
+	height: 14px;
+}
+
+#worldwide .tabSection .icons .icon.linkedin,
+#worldwide #companyInfos .icons .icon.linkedin {
+	background: url("../img/static/worldwide_country_page_linkedin_icon.png") no-repeat;
+	margin-left: 3px;
+	padding-top: 3px;
+	padding-left: 25px;
+	height: 14px;
+}
+
+#worldwide .tabSection .icons .icon a,
+#worldwide #companyInfos .icons .icon a {
+	color: #666666;
+}
