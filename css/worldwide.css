@@ -444,6 +444,7 @@
 	border-bottom: 1px solid #c9c9c9;
 	font-family: "UniCredit-Bold";
 	font-size: 25px;
+	line-height: 1;
 	padding: 20px 15px;
 }
 
@@ -456,7 +457,7 @@
 	background: url("../img/static/select-arrow-down.png") no-repeat;
 	position: absolute;
 	top: 30px;
-	right: 10px;
+	right: 15px;
 	height: 5px;
 	width: 10px;
 }
@@ -509,4 +510,19 @@
 #worldwide #companyInfos .companyInfo p,
 #worldwide #companyInfos .companyInfo ul {
 	margin: 0;
+}
+
+#worldwide.companyLessInfo .companyLessInfoOff,
+#worldwide .companyLessInfoOn {
+	display: none;
+}
+
+#worldwide .companyLessInfoOff,
+#worldwide.companyLessInfo .companyLessInfoOn {
+	display: block;
+}
+
+#worldwide.companyLessInfo #companyInfos .companyInfo .companyInfoTitle {
+	border-top: 1px solid #c9c9c9;
+	margin-top: 50px;
 }
