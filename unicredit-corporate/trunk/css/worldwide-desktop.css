@@ -306,6 +306,14 @@
 		padding: 0;
 	}
 
+	#worldwide #companyInfos .externalLinkContainer {
+		padding: 0;
+	}
+
+	#worldwide #companyInfos .icons {
+		padding: 0;
+	}
+
 	#worldwide #companyInfos .subtitle.links.open {
 		border-bottom: 1px solid #c9c9c9;
 	}
