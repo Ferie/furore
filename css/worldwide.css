@@ -477,11 +477,15 @@
 	border-bottom: 1px solid #c9c9c9;
 	display: none;
 	cursor: pointer;
-	padding: 20px 15px;
+}
+
+#worldwide #companyInfos .externalLinkContainer {
+	padding: 0 15px;
 }
 
 #worldwide #companyInfos .icons {
 	margin-top: 0;
+	padding: 0px 15px 20px;
 }
 
 #worldwide #companyInfos .icons .icon.homeBankingLogin,
@@ -500,6 +504,10 @@
 
 #worldwide #companyInfos .icons .icon.linkedin {
 	padding-top: 3px;
+}
+
+#worldwide #companyInfos .companyInfo .companyInfoBody {
+	padding: 20px 15px;
 }
 
 #worldwide #companyInfos .companyInfo .title {
