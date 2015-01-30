@@ -269,83 +269,46 @@
 
 	/************** COMPANY PAGE **************/
 
-	#worldwide #companyInfos strong {
-		font-family: "UniCredit-Bold";
+	#worldwide #companyInfos .inner {
+		padding-right: 15px;
+		padding-left: 15px;
 	}
 
-	#worldwide #companyInfos .inner {
-		font-size: 15px;
+	#worldwide #companyInfos .logo {
+		margin-bottom: 0;
+		text-align: left;
 	}
 
 	#worldwide #companyInfos .subtitle {
 		border-bottom: 1px solid #c9c9c9;
-		line-height: 1;
-		margin-bottom: 12px;
+		font-size: 15px;
 		padding: 44px 0 7px;
 		text-transform: uppercase;
 	}
 
 	#worldwide #companyInfos .infos {
-		padding-bottom: 9px;
+		padding: 0 0 9px;
 	}
 
-	#worldwide #companyInfos .infos a:hover,
-	#worldwide #companyInfos .externalLink a {
-		color: #00afd0;
+	#worldwide #companyInfos .subtitle.links {
+		border-top: none;
+		font-family: "UniCredit-Regular";
+		font-size: 15px;
+		margin: 0 0 12px;
+		padding: 44px 0 7px;
 	}
 
-	#worldwide #companyInfos .infos .getDirections {
-		font-family: "UniCredit-Bold";
-		font-size: 13px;
-		padding-top: 4px;
-		text-transform: uppercase;
+	#worldwide #companyInfos .externalLinkAndIconsContainer,
+	#worldwide #companyInfos .companyInfo .companyInfoBody {
+		border-bottom: none;
+		display: block;
+		cursor: default;
+		padding: 0;
 	}
 
-	#worldwide #companyInfos .infos .getDirections a {
-		color: #666666;
-	}
-
-	#worldwide #companyInfos .externalLink {
-		background: url("../img/static/worldwide_country_page_external_link_icon.png") no-repeat;
-		margin-bottom: 16px;
-		padding-left: 26px;
-	}
-
-	#worldwide #companyInfos .icons .icon.homeBankingLogin,
-	#worldwide #companyInfos .icons .icon.seeJobPositions,
-	#worldwide #companyInfos .icons .icon.findBranch,
-	#worldwide #companyInfos .icons .icon.linkedin {
-		margin-bottom: 14px;
-		padding-left: 28px;
-	}
-
-	#worldwide #companyInfos .icons .icon.findBranch,
-	#worldwide #companyInfos .icons .icon.linkedin {
-		margin-left: 4px;
-		padding-left: 24px;
-	}
-
-	#worldwide #companyInfos .icons .icon.linkedin {
-		padding-top: 3px;
-	}
-
-	#worldwide #companyInfos .mappa img {
-		height: auto;
-		width: 100%;
-	}
-
-	#worldwide .companyInfo .companyInfoTitle {
-		font-size: 25px;
+	#worldwide #companyInfos .companyInfo .companyInfoTitle {
+		border-bottom: none;
 		margin: 50px 0 22px;
-	}
-
-	#worldwide .companyInfo .title {
-		margin: 0;
-		padding-top: 24px;
-	}
-
-	#worldwide .companyInfo p,
-	#worldwide .companyInfo ul {
-		margin: 0;
+		padding: 0;
 	}
 }

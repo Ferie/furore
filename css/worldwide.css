@@ -110,7 +110,8 @@
 
 /************** COUNTRY PAGE **************/
 
-#worldwide #countryTitle {
+#worldwide #countryTitle,
+#worldwide #companyTitle {
 	border-bottom: 1px solid #cacaca;
 	margin: 34px 0 65px;
 	padding: 0 0 38px;
@@ -375,4 +376,137 @@
 #worldwide .tabSection .icons .icon a,
 #worldwide #companyInfos .icons .icon a {
 	color: #666666;
+}
+
+/************** COMPANY PAGE **************/
+
+#worldwide #companyTitle {
+	margin: 34px 0 38px;
+	text-align: center;
+}
+
+#worldwide #companyInfos strong {
+	font-family: "UniCredit-Bold";
+}
+
+#worldwide #companyInfos .inner {
+	font-size: 15px;
+	padding-right: 0;
+	padding-left: 0;
+}
+
+#worldwide #companyInfos .logo {
+	margin-bottom: 38px;
+	text-align: center;
+}
+
+#worldwide #companyInfos .mappa img {
+	height: auto;
+	width: 100%;
+}
+
+#worldwide #companyInfos .subtitle {
+	font-size: 21px;
+	line-height: 1;
+	margin-bottom: 12px;
+	padding: 44px 15px 7px;
+}
+
+#worldwide #companyInfos .infos {
+	padding: 0 15px 9px;
+}
+
+#worldwide #companyInfos .infos a:hover,
+#worldwide #companyInfos .externalLink a {
+	color: #00afd0;
+}
+
+#worldwide #companyInfos .infos .getDirections {
+	font-family: "UniCredit-Bold";
+	font-size: 13px;
+	padding-top: 4px;
+	text-transform: uppercase;
+}
+
+#worldwide #companyInfos .infos .getDirections a {
+	color: #666666;
+}
+
+#worldwide #companyInfos .subtitle.links {
+	border-top: 1px solid #c9c9c9;
+	margin-top: 50px;
+	margin-bottom: 0;
+}
+
+#worldwide #companyInfos .subtitle.links,
+#worldwide #companyInfos .companyInfoTitle {
+	position: relative;
+	border-bottom: 1px solid #c9c9c9;
+	font-family: "UniCredit-Bold";
+	font-size: 25px;
+	padding: 20px 15px;
+}
+
+#worldwide #companyInfos .subtitle.links.open,
+#worldwide #companyInfos .companyInfoTitle.open {
+	border-bottom: none;
+}
+
+#worldwide #companyInfos .arrow {
+	background: url("../img/static/select-arrow-down.png") no-repeat;
+	position: absolute;
+	top: 30px;
+	right: 10px;
+	height: 5px;
+	width: 10px;
+}
+
+#worldwide #companyInfos .open .arrow {
+	background: url("../img/static/select-arrow-up.png") no-repeat;
+}
+
+#worldwide #companyInfos .externalLink {
+	background: url("../img/static/worldwide_country_page_external_link_icon.png") no-repeat;
+	margin-bottom: 16px;
+	padding-left: 26px;
+}
+
+#worldwide #companyInfos .externalLinkAndIconsContainer,
+#worldwide #companyInfos .companyInfo .companyInfoBody {
+	border-bottom: 1px solid #c9c9c9;
+	display: none;
+	cursor: pointer;
+	padding: 20px 15px;
+}
+
+#worldwide #companyInfos .icons {
+	margin-top: 0;
+}
+
+#worldwide #companyInfos .icons .icon.homeBankingLogin,
+#worldwide #companyInfos .icons .icon.seeJobPositions,
+#worldwide #companyInfos .icons .icon.findBranch,
+#worldwide #companyInfos .icons .icon.linkedin {
+	margin-bottom: 14px;
+	padding-left: 28px;
+}
+
+#worldwide #companyInfos .icons .icon.findBranch,
+#worldwide #companyInfos .icons .icon.linkedin {
+	margin-left: 4px;
+	padding-left: 24px;
+}
+
+#worldwide #companyInfos .icons .icon.linkedin {
+	padding-top: 3px;
+}
+
+#worldwide #companyInfos .companyInfo .title {
+	margin: 0;
+	padding-top: 24px;
+}
+
+#worldwide #companyInfos .companyInfo p,
+#worldwide #companyInfos .companyInfo ul {
+	margin: 0;
 }
