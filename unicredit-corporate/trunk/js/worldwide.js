@@ -101,17 +101,18 @@ $(document).ready(function () {
 
 		$('html, body').animate({
 			scrollTop: $("#" + continent).offset().top
-		}, 1000);
+		}, 800);
 	});
 
 	// scroll on continent tap (mobile)
 	$('.worldwideCountries').on('click', function () {
 		var $this = $(this);
+
 		setTimeout(function () {
 			$('html, body').animate({
 				scrollTop: $this.offset().top - 60
-			}, 1000);
-		}, 350);
+			}, 800);
+		}, 400);
 	});
 
 	// tab header event (desktop)
@@ -147,5 +148,30 @@ $(document).ready(function () {
 
 		$('#tabsBody .tabPanel').removeClass('selected');
 		$('#' + target).addClass('selected');
+	});
+
+	// worldwide company tap on slide panel
+	$('#companyInfos .subtitle.links').on('click', function () {
+		var $this = $(this);
+		if ($this.hasClass('open')) {
+			$('#companyInfos .externalLinkAndIconsContainer').slideUp(function(){
+				$this.removeClass('open');
+			});
+		} else {
+			$this.addClass('open');
+			$('#companyInfos .externalLinkAndIconsContainer').slideDown();
+		}
+	});
+
+	$('#companyInfos .companyInfoTitle').on('click', function () {
+		var $this = $(this);
+		if ($this.hasClass('open')) {
+			$('#companyInfos .companyInfoBody').slideUp(function() {
+				$this.removeClass('open');
+			});
+		} else {
+			$this.addClass('open');
+			$('#companyInfos .companyInfoBody').slideDown();
+		}
 	});
 });
