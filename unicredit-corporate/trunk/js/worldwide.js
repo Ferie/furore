@@ -44,13 +44,12 @@ $(document).ready(function () {
 		}
 	}
 
-	// put custom padding on resize on the tab header
+	// functin that puts custom padding on resize for every tabs
 	function tabsHeader() {
 		var partialWidth = 0,
-				tabsNumber = 0,
-				totalPadding = 0,
-				tabPadding = 0,
-				$containerWidth = $('.container').width();
+			tabsNumber = 0,
+			totalPadding = 0,
+			tabPadding = 0;
 
 		$('#tabs .tab').each(function () {
 			var $this = $(this);
@@ -72,22 +71,65 @@ $(document).ready(function () {
 		});
 	}
 
+	// worldwide company tap on links and company info (mobile)
+	function toggleCompanyInfoEvents() {
+		$('#companyInfos .subtitle.links, #companyInfos .companyInfoTitle').off('click');
+		$('#companyInfos .subtitle.links, #companyInfos .companyInfoTitle').removeClass('open');
+		$('#companyInfos .externalLinkAndIconsContainer, #companyInfos .companyInfoBody').hide();
+
+		if (isBreakpoint('xs')) {
+			$('#companyInfos .subtitle.links').on('click', function (e) {
+				e.stopPropagation();
+				var $this = $(this);
+				if ($this.hasClass('open')) {
+					$('#companyInfos .externalLinkAndIconsContainer').slideUp(function(){
+						$this.removeClass('open');
+					});
+				} else {
+					$this.addClass('open');
+					$('#companyInfos .externalLinkAndIconsContainer').slideDown();
+				}
+			});
+
+			$('#companyInfos .companyInfoTitle').on('click', function (e) {
+				e.stopPropagation();
+				var $this = $(this);
+				if ($this.hasClass('open')) {
+					$('#companyInfos .companyInfoBody').slideUp(function() {
+						$this.removeClass('open');
+					});
+				} else {
+					$this.addClass('open');
+					$('#companyInfos .companyInfoBody').slideDown();
+				}
+			});
+		} else {
+			$('#companyInfos .subtitle.links, #companyInfos .companyInfoTitle').off('click');
+			$('#companyInfos .subtitle.links, #companyInfos .companyInfoTitle').removeClass('open');
+			$('#companyInfos .externalLinkAndIconsContainer, #companyInfos .companyInfoBody').show();
+		}
+	}
+
+	// functions on load
 	readMore();
 	toggleCollapseCountries();
+	toggleCompanyInfoEvents();
 	tabsHeader();
 
-//	var timer = window.setTimeout(function () {}, 0);
+	var timer = window.setTimeout(function () {}, 0);
 
+	// functions on resize
 	$(window).resize(function () {
 		readMore();
 		toggleCollapseCountries();
-//		window.clearTimeout(timer);
-//		timer = window.setTimeout(function () {
-			tabsHeader();
-//		}, 400);
+		tabsHeader();
+		window.clearTimeout(timer);
+		timer = window.setTimeout(function () {
+			toggleCompanyInfoEvents();
+		}, 400);
 	});
 
-	// resize the page on sidebar click
+	// event that resizes the tabs padding on sidebar click
 	$('.sidebar-switch').on('click', function () {
 		setTimeout(function () {
 			tabsHeader();
@@ -115,7 +157,7 @@ $(document).ready(function () {
 		}, 400);
 	});
 
-	// tab header event (desktop)
+	// event that puts the active tab and shows the active panel (desktop)
 	$('#tabs .tab').on('click', function () {
 		var $this = $(this);
 		$('#tabs .tab').removeClass('active');
@@ -126,7 +168,7 @@ $(document).ready(function () {
 		$('#' + target).addClass('selected');
 	});
 
-	// skin for the tag select in Worldwide
+	// skin for the select in Worldwide area
 	$("#worldwide .chosen-select").chosen({
 				allow_single_deselect: true,
 				disable_search: true,
@@ -138,40 +180,16 @@ $(document).ready(function () {
 		}
 	});
 
-	// events that put a placeholder when the dropdown menù is open (mobile)
+	// event that puts a placeholder when the dropdown menù is open (mobile)
 	$('#worldwide .chosen-container .chosen-single').on('click', function () {
 		$(this).find('span').text($('#worldwide #dropdown select').data('placeholder'));
 	});
 
+	// ...and event that shows the active panel (mobile)
 	$('#worldwide .chosen-container .chosen-drop ul').on('click', function () {
 		var target = $('#worldwide .chosen-select option:selected').val();
 
 		$('#tabsBody .tabPanel').removeClass('selected');
 		$('#' + target).addClass('selected');
-	});
-
-	// worldwide company tap on slide panel
-	$('#companyInfos .subtitle.links').on('click', function () {
-		var $this = $(this);
-		if ($this.hasClass('open')) {
-			$('#companyInfos .externalLinkAndIconsContainer').slideUp(function(){
-				$this.removeClass('open');
-			});
-		} else {
-			$this.addClass('open');
-			$('#companyInfos .externalLinkAndIconsContainer').slideDown();
-		}
-	});
-
-	$('#companyInfos .companyInfoTitle').on('click', function () {
-		var $this = $(this);
-		if ($this.hasClass('open')) {
-			$('#companyInfos .companyInfoBody').slideUp(function() {
-				$this.removeClass('open');
-			});
-		} else {
-			$this.addClass('open');
-			$('#companyInfos .companyInfoBody').slideDown();
-		}
 	});
 });

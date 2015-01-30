@@ -306,9 +306,23 @@
 		padding: 0;
 	}
 
+	#worldwide #companyInfos .subtitle.links.open {
+		border-bottom: 1px solid #c9c9c9;
+	}
+
 	#worldwide #companyInfos .companyInfo .companyInfoTitle {
 		border-bottom: none;
 		margin: 50px 0 22px;
 		padding: 0;
+	}
+
+	#worldwide.companyLessInfo #companyInfos .companyInfo .companyInfoTitle {
+		border-top: none;
+		border-bottom: 1px solid #c9c9c9;
+		font-family: "UniCredit-Regular";
+		font-size: 15px;
+		margin: 0 0 12px;
+		padding: 44px 0 7px;
+		text-transform: uppercase;
 	}
 }
