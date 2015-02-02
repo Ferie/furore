@@ -1,7 +1,6 @@
 /* PLUGIN for SPINNER */
 
 (function($) {
-	var st;
 	var methods = {
 		init: function(options){
 			var defaults = {
@@ -9,7 +8,9 @@
 				setElementsSelector: 'body',
 				htmlMessage: '',
 				textMessage: 'Loading ...',
+				fontSize: '24px',
 				autohide: true,
+				modeInline: false,
 				millisecondsTimer: 3000,
 				color: '#000000',
 				diameter: 40,
@@ -21,7 +22,7 @@
 				containerClass: 'generalSpinner',
 				position: { top: 0, left: 0 }					
 			};
-			st = $.extend(true, defaults, options); 
+			var st = $.extend(true, defaults, options); 
 			
 			var $topElement = $(st.topElementSelector);
 			var $setElements = $(st.setElementsSelector);
@@ -30,28 +31,30 @@
 			
 			st.width = 0;
 			st.height = 0;
+			st.timer = null;
 			
 			
 			$(window).resize(function(){
 				if(typeof st.$modal != "undefined")
-					utils._resizeSpinner();
+					utils._resizeSpinner(st);
 			});
 			
 			return {
 				utils: utils,
-				spinner: this
+				spinner: this,
+				st: st
 				};
 			}
 		};
 	var utils = {
-		_startSpinner: function(){
+		_startSpinner: function(st){
 			st.$topElement
 			.prepend(
 					$("<div class=\"modal-layer\">")
 							.append(
-									'<div class="wrapper spinner '+st.containerClass+'"><div id="'+st.idSpinner+'" tabindex="10000"></div><div id=\"spinnerText\"></div><div class="clear"></div></div>'));
+									'<div class="wrapper spinner '+st.containerClass+''+(st.modeInline===true?" inline":"")+'"><div class="spinner-layer" id="'+st.idSpinner+'" tabindex="10000"></div><div class=\"spinnerText\"><div></div></div><div class="clear"></div></div>'));
 			if (typeof st.htmlMessage != 'undefined' || typeof st.textMessage != 'undefined') {
-				$("#spinnerText").html(st.htmlMessage!=""?st.htmlMessage:st.textMessage);
+				st.$topElement.find("div.wrapper.spinner."+st.containerClass+" .spinnerText > div").html(st.htmlMessage!=""?st.htmlMessage:st.textMessage);
 			}
 
 			st.$spinner = new CanvasLoader(st.idSpinner);
@@ -69,26 +72,37 @@
 			st.$container.find('div#'+st.idSpinner).focus();
 			st.$container.removeClass("hide");
 			st.$container.show();
-			utils._resizeSpinner();
+			utils._resizeSpinner(st);
 			st.$spinner.show();
 			if(st.autohide==true) {
-				setTimeout(utils._stopSpinner, st.millisecondsTimer);
+				clearTimeout(st.timer);
+				st.timer = setTimeout(function(){utils._stopSpinner(st)}, st.millisecondsTimer);
 			}
 		},
-		_stopSpinner: function(){
+		_stopSpinner: function(st){
 			st.$modal.remove();			
 		},
-		_resizeSpinner: function(){
-			utils._caclulateWidth();
-			utils._caclulateHeight();
-			utils._caclulatePosition();
+		_resizeSpinner: function(st){
+			utils._caclulateWidth(st);
+			utils._caclulateHeight(st);
+			utils._caclulatePosition(st);
 			st.$modal.offset(st.position);
 			st.$modal.css({width: st.width, height: st.height});
 			var left = (st.width / 2) - (st.$container.outerWidth() / 2);
 			//var top = (st.height / 2) - (st.$container.outerHeight() / 2);
-			st.$container.css({top: '10%', left: left});
+			if(st.modeInline==false){
+				st.$container.css({top: '10%', left: left});
+			} else {
+				st.$container.css({width: st.width});
+				st.$container.find(".spinner-layer").css({height: st.height});
+				st.$container.find(".spinner-layer").css("padding", (st.height-st.diameter)/2+"px 0");
+				st.$container.find(".spinnerText").css({height: st.height});
+				st.$container.find(".spinnerText").css("line-height",st.height+"px");
+				st.$container.find(".spinnerText").css("margin-left",st.diameter+"px");
+				st.$container.find(".spinnerText").css("font-size",st.fontSize);
+			}
 		},
-		_caclulateWidth: function(){
+		_caclulateWidth: function(st){
 			st.width = 0;
 			st.$setElements.each(function(){
 				var wElement = $(this).outerWidth();
@@ -96,15 +110,15 @@
 					st.width = wElement;
 			});
 		},
-		_caclulateHeight: function(){
+		_caclulateHeight: function(st){
 			st.height = 0;
 			st.$setElements.each(function(){
-				var hElement = $(this).outerHeight()*1.11;
+				var hElement = $(this).outerHeight()*(st.modeInline==true?1:1.11);
 				if(hElement>st.height)
 					st.height = hElement;
 			});
 		},
-		_caclulatePosition: function(){
+		_caclulatePosition: function(st){
 			st.position = st.$topElement.offset();
 		}
 	};

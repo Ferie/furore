@@ -123,23 +123,60 @@ var spinnerUBISManager;
 $(document).ready(function() {
 	var filename = location.pathname.substr(location.pathname.lastIndexOf('/')+1, location.pathname.length); 
 
-	spinnerUBISManager = $("#mainContainer").spinnerUBISManager({
-				topElementSelector: '#calendarMessages',
-				setElementsSelector: '#calendarMessages, #calendarPanelResults',
-				htmlMessage: '',
-				textMessage: 'Loading Events',
-				autohide: true,
-				millisecondsTimer: 4000,
-				color: "#00afd0",
-				shape: 'UBIS',
-				diameter: 40,
-				density: 71,
-				range: 2,
-				fps: 25
-				});
-	
+	spinnerUBISManager1 = $("#mainContainer").spinnerUBISManager({
+		topElementSelector: '#calendarTools .input-daterange > div',
+		setElementsSelector: '#calendarTools .input-daterange > div',
+		idSpinner: 'spinner-loader1',
+		htmlMessage: '',
+		textMessage: 'Loading Events',
+		fontSize: '16px',
+		autohide: true,
+		modeInline: true,
+		millisecondsTimer: 3000,
+		color: "#00afd0",
+		shape: 'UBIS',
+		diameter: 15,
+		density: 71,
+		range: 2,
+		fps: 25
+		});
+	spinnerUBISManager2 = $("#mainContainer").spinnerUBISManager({
+		topElementSelector: '#calendarPanelResults',
+		setElementsSelector: '#calendarPanelResults',
+		idSpinner: 'spinner-loader2',
+		htmlMessage: '',
+		textMessage: 'Loading Results',
+		autohide: true,
+		millisecondsTimer: 4000,
+		color: "#00afd0",
+		shape: 'UBIS',
+		diameter: 40,
+		density: 71,
+		range: 2,
+		fps: 25
+		});
+
+	spinnerUBISManager3 = $("#mainContainer").spinnerUBISManager({
+		topElementSelector: '#header .online-banking',
+		setElementsSelector: '#header .online-banking',
+		idSpinner: 'spinner-loader3',
+		htmlMessage: '',
+		textMessage: 'Loading...',
+		fontSize: '18px',
+		autohide: true,
+		modeInline: true,
+		millisecondsTimer: 2000,
+		color: "#00afd0",
+		shape: 'UBIS',
+		diameter: 20,
+		density: 71,
+		range: 2,
+		fps: 25
+		});
 	if (filename=="calendar.html") {
-		spinnerUBISManager.utils._startSpinner();
+		spinnerUBISManager1.utils._startSpinner(spinnerUBISManager1.st);
+		spinnerUBISManager2.utils._startSpinner(spinnerUBISManager2.st);
+		spinnerUBISManager3.utils._startSpinner(spinnerUBISManager3.st);
 	}
 	$('#calendar #loadMore button').click(function(){
 		//$('#calendar #moreEvents').hide();
@@ -148,6 +185,7 @@ $(document).ready(function() {
 		spinnerLoadMore = $("#moreEvents").spinnerUBISManager({
 			topElementSelector: '#moreEvents',
 			setElementsSelector: '#moreEvents',
+			idSpinner: 'spinner-loader3',
 			htmlMessage: '',
 			textMessage: 'Loading More Events',
 			autohide: true,
