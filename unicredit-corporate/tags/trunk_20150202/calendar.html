@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<meta charset="utf-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Home page new</title>
+    
+    <link type="text/css" rel="stylesheet" href="plugin/css/bootstrap.css"/>
+    <link type="text/css" rel="stylesheet" href="plugin/css/chosen.min.css"/>
+    <link type="text/css" rel="stylesheet" href="plugin/css/all.css"/>
+	<link type="text/css" rel="stylesheet" href="plugin/css/datepicker3.css"/> 
+    <link type="text/css" rel="stylesheet" href="plugin/css/idangerous.swiper.css"/>
+	<link type="text/css" rel="stylesheet" href="plugin/css/daterangepicker-bs3.css"/>
+ 
+    <link type="text/css" rel="stylesheet" href="css/font-families.css"/>
+    <link type="text/css" rel="stylesheet" href="css/main.css"/>
+    <link type="text/css" rel="stylesheet" href="css/main-desktop.css"/>
+    <link type="text/css" rel="stylesheet" href="css/spinner.css"/>
+    <link type="text/css" rel="stylesheet" href="css/calendar.css"/>
+    <link type="text/css" rel="stylesheet" href="css/calendar-desktop.css"/>
+    <link type="text/css" rel="stylesheet" href="css/retina.css"/>
+    <!--[if lt IE 9]>
+    <link type="text/css" rel="stylesheet" href="css/ie8.css"/>
+    <![endif]-->
+
+    <script type="text/javascript" src="plugin/js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="plugin/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="plugin/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="plugin/js/heartcode-canvasloader.js"></script>
+    <script type="text/javascript" src="plugin/js/icheck.min.js"></script>
+    <script type="text/javascript" src="plugin/js/chosen.jquery.min.js"></script>
+    <script type="text/javascript" src="plugin/js/bootstrap-datepicker.js"></script>
+	<script type="text/javascript" src="plugin/js/idangerous.swiper.js"></script>
+	<script type="text/javascript" src="plugin/js/moment.min.js"></script>
+    <script type="text/javascript" src="plugin/js/locales/bootstrap-datepicker.it.js"></script>
+	<script type="text/javascript" src="plugin/js/daterangepicker.modified.js"></script>
+
+	<script type="text/javascript" src="js/utility.js"></script>
+	<script type="text/javascript" src="js/jquery.headerUBIS.js"></script>
+	<script type="text/javascript" src="js/jquery.spinnerUBIS.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/calendar.js"></script>
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="plugin/js/html5shiv.js"></script>
+      <script type="text/javascript" src="plugin/js/respond.min.js"></script>
+      <script type="text/javascript" src="js/ie8.js"></script>
+    <![endif]-->
+   
+   
+</head>
+<body>
+	<div id="message" style="display: none;">Messaggio</div>
+	<div id="header">
+		<div class="sidebar-switch">
+			<a href="javascript:void(0);"></a>	
+		</div>
+		<div class="logo">
+			<a href="https://www.unicreditgroup.eu"><img alt="Unicredit Logo" src="img/static/logo.png"></a>
+		</div>
+		<div class="menu hidden-xs">
+			<ul>
+				<li><a class="calendar active" href="calendar.html" data-section="menu" data-link="calendar">Calendar</a></li>
+				<li><a class="worldwide" href="worldwide.html" data-section="menu" data-link="worldwide">Worldwide</a></li>
+				<li><a class="archive" href="javascript:void(0);" data-section="menu" data-link="archive">General archive</a></li>
+				<li><a class="contactus" href="javascript:void(0);" data-section="menu" data-link="contactus">Contact us</a></li>
+				<li><a class="search" href="javascript:void(0);" data-section="menu" data-link="search">Search</a></li>
+			</ul>
+		</div>
+		<div class="online-banking hidden-xs">
+			<a href="javascript:void(0);">
+				Online banking
+			</a>	
+		</div>
+		<div class="search visible-xs">
+			<a href="javascript:void(0);">
+			</a>	
+		</div>
+		<div id="sidebar">
+			<div class="sidebar-element aboutus">
+				<div class="sidebar-header">
+					<a class="sidebar-collapser" href="javascript:void(0);" data-name="aboutus" data-target="#sidebar .sidebar-element.aboutus .collapse">About Us</a>
+					<div class="clear"></div>
+				</div>
+				<div class="collapse">
+					<ul>
+						<li><a class="masterLink" href="javascript:void(0);" data-section="aboutus" data-link="marterLink">UniCredit at a glance</a></li>
+						<li><a class="identity" href="javascript:void(0);" data-section="aboutus" data-link="identity">Our identity</a></li>
+						<li><a class="culture" href="javascript:void(0);" data-section="aboutus" data-link="culture">Culture & Territory</a></li>
+						<li><a class="innovation" href="javascript:void(0);" data-section="aboutus" data-link="innovation">Innovation</a></li>
+						<li><a class="business" href="javascript:void(0);" data-section="aboutus" data-link="business">Business model</a></li>
+						<li><a class="brand" href="javascript:void(0);" data-section="aboutus" data-link="brand">Brand & Communication</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="sidebar-element governance">
+				<div class="sidebar-header">
+					<a class="sidebar-collapser" href="javascript:void(0);" data-name="governance" data-target="#sidebar .sidebar-element.governance .collapse">Governance</a>
+					<div class="clear"></div>
+				</div>
+				<div class="collapse">
+					<ul>
+						<li><a class="masterLink" href="javascript:void(0);" data-section="governance" data-link="masterLink">Frontpage</a></li>
+						<li><a class="1" href="javascript:void(0);" data-section="governance" data-link="1">Page 1</a></li>
+						<li><a class="2" href="javascript:void(0);" data-section="governance" data-link="2">Page 2</a></li>
+						<li><a class="3" href="javascript:void(0);" data-section="governance" data-link="3">Page 3</a></li>
+						<li><a class="4" href="javascript:void(0);" data-section="governance" data-link="4">Page 4</a></li>
+						<li><a class="5" href="javascript:void(0);" data-section="governance" data-link="5">Page 5</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="sidebar-element investors">
+				<div class="sidebar-header">
+					<a class="sidebar-collapser" href="javascript:void(0);" data-name="investors" data-target="#sidebar .sidebar-element.investors .collapse" data-parent="#sidebar">Investors</a>
+					<div class="clear"></div>
+				</div>
+				<div class="collapse">
+					<ul>
+						<li><a class="masterLink" href="javascript:void(0);" data-section="investors" data-link="masterLink">Frontpage</a></li>
+						<li><a class="1" href="javascript:void(0);" data-section="investors" data-link="1">Page 1</a></li>
+						<li><a class="2" href="javascript:void(0);" data-section="investors" data-link="2">Page 2</a></li>
+						<li><a class="3" href="javascript:void(0);" data-section="investors" data-link="3">Page 3</a></li>
+						<li><a class="4" href="javascript:void(0);" data-section="investors" data-link="4">Page 4</a></li>
+						<li><a class="5" href="javascript:void(0);" data-section="investors" data-link="5">Page 5</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="sidebar-element pressmedia">
+				<div class="sidebar-header">
+					<a class="sidebar-collapser" href="javascript:void(0);" data-name="pressmedia" data-target="#sidebar .sidebar-element.pressmedia .collapse" data-parent="#sidebar">Press & Media</a>
+					<div class="clear"></div>
+				</div>
+				<div class="collapse">
+					<ul>
+						<li><a class="masterLink" href="javascript:void(0);" data-section="pressmedia" data-link="masterLink">Frontpage</a></li>
+						<li><a class="1" href="javascript:void(0);" data-section="pressmedia" data-link="1">Page 1</a></li>
+						<li><a class="2" href="javascript:void(0);" data-section="pressmedia" data-link="2">Page 2</a></li>
+						<li><a class="3" href="javascript:void(0);" data-section="pressmedia" data-link="3">Page 3</a></li>
+						<li><a class="4" href="javascript:void(0);" data-section="pressmedia" data-link="4">Page 4</a></li>
+						<li><a class="5" href="javascript:void(0);" data-section="pressmedia" data-link="5">Page 5</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="sidebar-element career reverse">
+				<div class="collapse">
+					<ul>
+						<li><a class="masterLink" href="javascript:void(0);" data-section="career" data-link="masterLink">Careers frontpage</a></li>
+						<li><a class="1" href="javascript:void(0);" data-section="career" data-link="1">Page 1</a></li>
+						<li><a class="2" href="javascript:void(0);" data-section="career" data-link="2">Page 2</a></li>
+						<li><a class="3" href="javascript:void(0);" data-section="career" data-link="3">Page 3</a></li>
+						<li><a class="4" href="javascript:void(0);" data-section="career" data-link="4">Page 4</a></li>
+						<li><a class="5" href="javascript:void(0);" data-section="career" data-link="5">Page 5</a></li>
+					</ul>
+				</div>
+				<div class="sidebar-header">
+					<a class="sidebar-collapser" href="javascript:void(0);" data-name="career" data-target="#sidebar .sidebar-element.career .collapse" data-parent="#sidebar">Career</a>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="sidebar-element sustainability reverse">
+				<div class="collapse">
+					<ul>
+						<li><a class="masterLink" href="javascript:void(0);" data-section="sustainability" data-link="masterLink">A sustainable Bank</a></li>
+						<li><a class="sustainability" href="javascript:void(0);" data-section="sustainability" data-link="sustainability">Culture of sustainability</a></li>
+						<li><a class="families" href="javascript:void(0);" data-section="sustainability" data-link="families">Invididuals and families</a></li>
+						<li><a class="companies" href="javascript:void(0);" data-section="sustainability" data-link="companies">Companies</a></li>
+						<li><a class="environement" href="javascript:void(0);" data-section="sustainability" data-link="environement">Environment</a></li>
+						<li><a class="investors" href="javascript:void(0);" data-section="sustainability" data-link="investors">Investors and markets</a></li>
+						<li><a class="reports" href="javascript:void(0);" data-section="sustainability" data-link="reports">Reports and resources</a></li>
+					</ul>
+				</div>
+				<div class="sidebar-header">
+					<a class="sidebar-collapser" href="javascript:void(0);" data-name="sustainability" data-target="#sidebar .sidebar-element.sustainability .collapse" data-parent="#sidebar">Sustainability</a>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="sidebar-menu menu visible-xs">
+				<ul>
+					<li><a class="contactus" href="javascript:void(0);" data-section="menu" data-link="contactus">Contact us</a></li>
+					<li><a class="calendar" href="calendar.html" data-section="menu" data-link="calendar">Calendar</a></li>
+					<li><a class="worldwide" href="worldwide.html" data-section="menu" data-link="worldwide">Worldwide</a></li>
+					<li><a class="uefa" href="javascript:void(0);" data-section="menu" data-link="uefa">UEFA</a></li>
+					<li><a class="alerts" href="javascript:void(0);" data-section="menu" data-link="alerts">Alerts</a></li>
+					<li><a class="archive" href="javascript:void(0);" data-section="menu" data-link="archive">General archive</a></li>
+					<li><a class="online-banking" href="javascript:void(0);" data-section="menu" data-link="online-banking">Online banking</a></li>
+				</ul>
+			</div>
+			<div class="sidebar-footer" style="display: none;">
+				<div class="champions-league col-xs-12">
+					<div class="logo-champions col-xs-12 col-sm-6">
+						<img alt="Logo Champions League" src="img/static/menu-sidebar-champions.png">
+					</div>
+					<div class="name col-xs-12 col-sm-6">Uefa<br/>Champions League<br/>Official bank</div>
+				</div>
+				<div class="change-language col-xs-push-3 col-xs-6">
+					<a class="eng">Eng</a>
+					<a class="ita active">Ita</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="mainContainer">
+		<div id="breadcrumb">
+			<ul>
+				<li><a href="javascript:void(0);">Press & Media</a></li>
+				<li>Events Calendar</li>
+			</ul>
+		</div>
+		<div id="calendar">
+			<div class="panel">
+				<div class="container">
+					<h1>Events Calendar</h1>
+				</div>
+			</div>
+			<div class="panel" id="calendarTools">
+				<div class="container">
+					<div class="col-xs-12 col-sm-6 with-cross">
+						<input type="text" class="keywords form-control" name="keywords" placeholder="Search all events">
+						<div class="keys cross"><a href="javascript:void(0);"></a></div>
+					</div>
+					<div class="col-xs-12 col-sm-3 with-cross">
+						<div class="input-daterange">
+							<div>Select range</div>
+						</div>
+						<div class="dates cross"><a href="javascript:void(0);"></a></div>
+					</div>
+					<div class="col-xs-12 col-sm-3">
+						<select name="category" class="chosen-select" data-placeholder="All categories" placeholder="All categories">
+							<option value=""></option>
+							<option value="all">All categories (20)</option>
+							<option value="financial">Financial (3)</option>
+							<option value="sustainability">Sustainability (10)</option>
+							<option value="culturesociety">Culture and Society (12)</option>
+							<option value="careers">Careers (7)</option>
+							<option value="business">Business (9)</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="panel" id="calendarMessages">
+				<div class="panel number-results">
+					<div class="container">
+						<h3>6 upcoming events</h3>
+					</div>
+				</div>
+			</div>
+			<div class="panel" id="calendarPanelResults">
+				<div class="panel event event1 highlighted">
+					<div class="container">
+						<div class="header col-xs-12">
+							<div class="date col-xs-12">
+								<ul class="days">
+									<li>
+										<h1>15</h1>
+										<div class="labels">
+											<span class="month">September</span>
+											<span class="year">2014</span>
+										</div>
+									</li>
+								</ul>
+								<div class="labels">
+									<span class="city">Milan</span>
+									<span class="country">Italy</span>
+								</div>
+							</div>
+							<div class="buttons col-xs-3 col-xs-push-9 col-sm-12 col-sm-push-0">
+								<button class="add">Save</button>
+							</div>
+							<div class="categories right col-xs-9 col-xs-pull-3 col-sm-pull-0">
+								<label class="highlighted">Highlighted</label>
+								<label class="investors">Investors</label>
+							</div>
+						</div>
+						<div class="body col-xs-12">
+							<h2>Provisional UniCredit S.p.A. Balance Sheet data and Consolidated Balance Sheet as at 31.12.14</h2>
+						</div>
+						<div class="footer col-xs-12">
+							<a href="calendar-detail.html" class="left">Read more</a>
+							<a href="javascript:void(0);" class="attach right" data-memotext="Hide attachments" data-target=".event1 .attachments.collapse" data-toggle="collapse">5 attachments</a>
+							<div class="col-xs-12 attachments panel-collapse collapse">
+								<ul>
+									<li><a href="javascript: void(0);"><span>Pdf</span>UniCredit SpA 2013 Reports and Accounts</a></li>
+									<li><a href="javascript: void(0);"><span>Pdf</span>2013 Consolidated Reports and Accounts</a></li>
+									<li><a href="javascript: void(0);"><span>Doc</span>Press release (Italian only)</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel event event2">
+					<div class="container">
+						<div class="header col-xs-12">
+							<div class="date col-xs-12">
+								<ul class="days">
+									<li>
+										<h1>28</h1>
+									</li>
+									<li>
+										<h1>29</h1>
+										<div class="labels">
+											<span class="month">November</span>
+											<span class="year">2014</span>
+										</div>
+									</li>
+								</ul>
+								
+								<div class="labels">
+									<span class="city">Wien</span>
+									<span class="country">Austria</span>
+								</div>
+							</div>
+							<div class="buttons col-xs-3 col-xs-push-9 col-sm-12 col-sm-push-0"">
+								<button class="add">Save</button>
+							</div>
+							<div class="categories right col-xs-9 col-xs-pull-3 col-sm-pull-0">
+								<label class="culturesociety">Culture and Society</label>
+							</div>
+						</div>
+						<div class="body col-xs-12">
+							<h2>Multimedia Exhibition Dedicated to Verdi and Wagner</h2>
+						</div>
+						<div class="footer col-xs-12">
+							<a href="calendar-detail.html" class="left">Read more</a>
+							<a href="javascript:void(0);" class="attach right" data-memotext="Hide attachments" data-target=".event2 .attachments.collapse" data-toggle="collapse">5 attachments</a>
+							<div class="col-xs-12 attachments panel-collapse collapse">
+								<ul>
+									<li><a href="javascript: void(0);"><span>Pdf</span>UniCredit SpA 2013 Reports and Accounts</a></li>
+									<li><a href="javascript: void(0);"><span>Pdf</span>2013 Consolidated Reports and Accounts</a></li>
+									<li><a href="javascript: void(0);"><span>Doc</span>Press release (Italian only)</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel event event3">
+					<div class="container">
+						<div class="header col-xs-12">
+							<div class="date col-xs-12">
+								<ul class="days">
+									<li>
+										<h1>28</h1>
+										<div class="labels">
+											<span class="month">Nov<span class="hidden-xs">ember</span></span>
+											<span class="year">2014</span>
+										</div>
+									</li>
+									<li>
+										<h1>2</h1>
+										<div class="labels">
+											<span class="month">Dec<span class="hidden-xs">ember</span></span>
+											<span class="year">2014</span>
+										</div>
+									</li>
+								</ul>
+								
+								<div class="labels">
+									<span class="city">Milan</span>
+									<span class="country">Italy</span>
+								</div>
+							</div>
+							<div class="buttons col-xs-3 col-xs-push-9 col-sm-12 col-sm-push-0"">
+								<button class="add">Save</button>
+							</div>
+							<div class="categories right col-xs-9 col-xs-pull-3 col-sm-pull-0">
+								<label class="culturesociety">Culture and Society</label>
+							</div>
+						</div>
+						<div class="body col-xs-12">
+							<h2>Celebrating Christmas with UniCredit's Light-Covered Art in Milan</h2>
+						</div>
+						<div class="footer col-xs-12">
+							<a href="calendar-detail.html" class="left">Read more</a>
+							<a href="javascript:void(0);" class="attach right" data-memotext="Hide attachments" data-target=".event3 .attachments.collapse" data-toggle="collapse">5 attachments</a>
+							<div class="col-xs-12 attachments panel-collapse collapse">
+								<ul>
+									<li><a href="javascript: void(0);"><span>Pdf</span>UniCredit SpA 2013 Reports and Accounts</a></li>
+									<li><a href="javascript: void(0);"><span>Pdf</span>2013 Consolidated Reports and Accounts</a></li>
+									<li><a href="javascript: void(0);"><span>Doc</span>Press release (Italian only)</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel event event4">
+					<div class="container">
+						<div class="header col-xs-12">
+							<div class="date col-xs-12">
+								<ul class="days">
+									<li>
+										<h1>30</h1>
+										<div class="labels">
+											<span class="month">November</span>
+											<span class="year">2014</span>
+										</div>
+									</li>
+								</ul>
+								<div class="labels">
+									<span class="city">Milan</span>
+									<span class="country">Italy</span>
+								</div>
+							</div>
+							<div class="buttons col-xs-3 col-xs-push-9 col-sm-12 col-sm-push-0">
+								<button class="add">Save</button>
+							</div>
+							<div class="categories right col-xs-9 col-xs-pull-3 col-sm-pull-0">
+								<label class="sustainability">Sustainability</label>
+							</div>
+						</div>
+						<div class="body col-xs-12">
+							<h2>Provisional UniCredit S.p.A. Balance Sheet data and Consolidated Balance Sheet as at 31.12.14</h2>
+						</div>
+						<div class="footer col-xs-12">
+							<a href="calendar-detail.html" class="left">Read more</a>
+							<a href="javascript:void(0);" class="attach right" data-memotext="Hide attachments" data-target=".event1 .attachments.collapse" data-toggle="collapse">5 attachments</a>
+							<div class="col-xs-12 attachments panel-collapse collapse">
+								<ul>
+									<li><a href="javascript: void(0);"><span>Pdf</span>UniCredit SpA 2013 Reports and Accounts</a></li>
+									<li><a href="javascript: void(0);"><span>Pdf</span>2013 Consolidated Reports and Accounts</a></li>
+									<li><a href="javascript: void(0);"><span>Doc</span>Press release (Italian only)</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel event event5">
+					<div class="container">
+						<div class="header col-xs-12">
+							<div class="date col-xs-12">
+								<ul class="days">
+									<li>
+										<h1>28</h1>
+									</li>
+									<li>
+										<h1>29</h1>
+										<div class="labels">
+											<span class="month">November</span>
+											<span class="year">2014</span>
+										</div>
+									</li>
+								</ul>
+								
+								<div class="labels">
+									<span class="city">Wien</span>
+									<span class="country">Austria</span>
+								</div>
+							</div>
+							<div class="buttons col-xs-3 col-xs-push-9 col-sm-12 col-sm-push-0"">
+								<button class="add">Save</button>
+							</div>
+							<div class="categories right col-xs-9 col-xs-pull-3 col-sm-pull-0">
+								<label class="culturesociety">Culture and Society</label>
+							</div>
+						</div>
+						<div class="body col-xs-12">
+							<h2>Multimedia Exhibition Dedicated to Verdi and Wagner</h2>
+						</div>
+						<div class="footer col-xs-12">
+							<a href="calendar-detail.html" class="left">Read more</a>
+							<a href="javascript:void(0);" class="attach right" data-memotext="Hide attachments" data-target=".event2 .attachments.collapse" data-toggle="collapse">5 attachments</a>
+							<div class="col-xs-12 attachments panel-collapse collapse">
+								<ul>
+									<li><a href="javascript: void(0);"><span>Pdf</span>UniCredit SpA 2013 Reports and Accounts</a></li>
+									<li><a href="javascript: void(0);"><span>Pdf</span>2013 Consolidated Reports and Accounts</a></li>
+									<li><a href="javascript: void(0);"><span>Doc</span>Press release (Italian only)</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel event event6">
+					<div class="container">
+						<div class="header col-xs-12">
+							<div class="date col-xs-12">
+								<ul class="days">
+									<li>
+										<h1>28</h1>
+										<div class="labels">
+											<span class="month">Nov<span class="hidden-xs">ember</span></span>
+											<span class="year">2014</span>
+										</div>
+									</li>
+									<li>
+										<h1>2</h1>
+										<div class="labels">
+											<span class="month">Dec<span class="hidden-xs">ember</span></span>
+											<span class="year">2014</span>
+										</div>
+									</li>
+								</ul>
+								
+								<div class="labels">
+									<span class="city">Milan</span>
+									<span class="country">Italy</span>
+								</div>
+							</div>
+							<div class="buttons col-xs-3 col-xs-push-9 col-sm-12 col-sm-push-0"">
+								<button class="add">Save</button>
+							</div>
+							<div class="categories right col-xs-9 col-xs-pull-3 col-sm-pull-0">
+								<label class="culturesociety">Culture and Society</label>
+							</div>
+						</div>
+						<div class="body col-xs-12">
+							<h2>Celebrating Christmas with UniCredit's Light-Covered Art in Milan</h2>
+						</div>
+						<div class="footer col-xs-12">
+							<a href="calendar-detail.html" class="left">Read more</a>
+							<a href="javascript:void(0);" class="attach right" data-memotext="Hide attachments" data-target=".event3 .attachments.collapse" data-toggle="collapse">5 attachments</a>
+							<div class="col-xs-12 attachments panel-collapse collapse">
+								<ul>
+									<li><a href="javascript: void(0);"><span>Pdf</span>UniCredit SpA 2013 Reports and Accounts</a></li>
+									<li><a href="javascript: void(0);"><span>Pdf</span>2013 Consolidated Reports and Accounts</a></li>
+									<li><a href="javascript: void(0);"><span>Doc</span>Press release (Italian only)</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel event event7">
+					<div class="container">
+						<div class="header col-xs-12">
+							<div class="date col-xs-12">
+								<ul class="days">
+									<li>
+										<h1>30</h1>
+										<div class="labels">
+											<span class="month">November</span>
+											<span class="year">2014</span>
+										</div>
+									</li>
+								</ul>
+								<div class="labels">
+									<span class="city">Milan</span>
+									<span class="country">Italy</span>
+								</div>
+							</div>
+							<div class="buttons col-xs-3 col-xs-push-9 col-sm-12 col-sm-push-0">
+								<button class="add">Save</button>
+							</div>
+							<div class="categories right col-xs-9 col-xs-pull-3 col-sm-pull-0">
+								<label class="sustainability">Sustainability</label>
+							</div>
+						</div>
+						<div class="body col-xs-12">
+							<h2>Provisional UniCredit S.p.A. Balance Sheet data and Consolidated Balance Sheet as at 31.12.14</h2>
+						</div>
+						<div class="footer col-xs-12">
+							<a href="calendar-detail.html" class="left">Read more</a>
+							<a href="javascript:void(0);" class="attach right" data-memotext="Hide attachments" data-target=".event1 .attachments.collapse" data-toggle="collapse">5 attachments</a>
+							<div class="col-xs-12 attachments panel-collapse collapse">
+								<ul>
+									<li><a href="javascript: void(0);"><span>Pdf</span>UniCredit SpA 2013 Reports and Accounts</a></li>
+									<li><a href="javascript: void(0);"><span>Pdf</span>2013 Consolidated Reports and Accounts</a></li>
+									<li><a href="javascript: void(0);"><span>Doc</span>Press release (Italian only)</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel event event8">
+					<div class="container">
+						<div class="header col-xs-12">
+							<div class="date col-xs-12">
+								<ul class="days">
+									<li>
+										<h1>28</h1>
+									</li>
+									<li>
+										<h1>29</h1>
+										<div class="labels">
+											<span class="month">November</span>
+											<span class="year">2014</span>
+										</div>
+									</li>
+								</ul>
+								
+								<div class="labels">
+									<span class="city">Wien</span>
+									<span class="country">Austria</span>
+								</div>
+							</div>
+							<div class="buttons col-xs-3 col-xs-push-9 col-sm-12 col-sm-push-0"">
+								<button class="add">Save</button>
+							</div>
+							<div class="categories right col-xs-9 col-xs-pull-3 col-sm-pull-0">
+								<label class="culturesociety">Culture and Society</label>
+							</div>
+						</div>
+						<div class="body col-xs-12">
+							<h2>Multimedia Exhibition Dedicated to Verdi and Wagner</h2>
+						</div>
+						<div class="footer col-xs-12">
+							<a href="calendar-detail.html" class="left">Read more</a>
+							<a href="javascript:void(0);" class="attach right" data-memotext="Hide attachments" data-target=".event2 .attachments.collapse" data-toggle="collapse">5 attachments</a>
+							<div class="col-xs-12 attachments panel-collapse collapse">
+								<ul>
+									<li><a href="javascript: void(0);"><span>Pdf</span>UniCredit SpA 2013 Reports and Accounts</a></li>
+									<li><a href="javascript: void(0);"><span>Pdf</span>2013 Consolidated Reports and Accounts</a></li>
+									<li><a href="javascript: void(0);"><span>Doc</span>Press release (Italian only)</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel event event9">
+					<div class="container">
+						<div class="header col-xs-12">
+							<div class="date col-xs-12">
+								<ul class="days">
+									<li>
+										<h1>28</h1>
+										<div class="labels">
+											<span class="month">Nov<span class="hidden-xs">ember</span></span>
+											<span class="year">2014</span>
+										</div>
+									</li>
+									<li>
+										<h1>2</h1>
+										<div class="labels">
+											<span class="month">Dec<span class="hidden-xs">ember</span></span>
+											<span class="year">2014</span>
+										</div>
+									</li>
+								</ul>
+								
+								<div class="labels">
+									<span class="city">Milan</span>
+									<span class="country">Italy</span>
+								</div>
+							</div>
+							<div class="buttons col-xs-3 col-xs-push-9 col-sm-12 col-sm-push-0"">
+								<button class="add">Save</button>
+							</div>
+							<div class="categories right col-xs-9 col-xs-pull-3 col-sm-pull-0">
+								<label class="culturesociety">Culture and Society</label>
+							</div>
+						</div>
+						<div class="body col-xs-12">
+							<h2>Celebrating Christmas with UniCredit's Light-Covered Art in Milan</h2>
+						</div>
+						<div class="footer col-xs-12">
+							<a href="calendar-detail.html" class="left">Read more</a>
+							<a href="javascript:void(0);" class="attach right" data-memotext="Hide attachments" data-target=".event3 .attachments.collapse" data-toggle="collapse">5 attachments</a>
+							<div class="col-xs-12 attachments panel-collapse collapse">
+								<ul>
+									<li><a href="javascript: void(0);"><span>Pdf</span>UniCredit SpA 2013 Reports and Accounts</a></li>
+									<li><a href="javascript: void(0);"><span>Pdf</span>2013 Consolidated Reports and Accounts</a></li>
+									<li><a href="javascript: void(0);"><span>Doc</span>Press release (Italian only)</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel event event10">
+					<div class="container">
+						<div class="header col-xs-12">
+							<div class="date col-xs-12">
+								<ul class="days">
+									<li>
+										<h1>30</h1>
+										<div class="labels">
+											<span class="month">November</span>
+											<span class="year">2014</span>
+										</div>
+									</li>
+								</ul>
+								<div class="labels">
+									<span class="city">Milan</span>
+									<span class="country">Italy</span>
+								</div>
+							</div>
+							<div class="buttons col-xs-3 col-xs-push-9 col-sm-12 col-sm-push-0">
+								<button class="add">Save</button>
+							</div>
+							<div class="categories right col-xs-9 col-xs-pull-3 col-sm-pull-0">
+								<label class="sustainability">Sustainability</label>
+							</div>
+						</div>
+						<div class="body col-xs-12">
+							<h2>Provisional UniCredit S.p.A. Balance Sheet data and Consolidated Balance Sheet as at 31.12.14</h2>
+						</div>
+						<div class="footer col-xs-12">
+							<a href="calendar-detail.html" class="left">Read more</a>
+							<a href="javascript:void(0);" class="attach right" data-memotext="Hide attachments" data-target=".event1 .attachments.collapse" data-toggle="collapse">5 attachments</a>
+							<div class="col-xs-12 attachments panel-collapse collapse">
+								<ul>
+									<li><a href="javascript: void(0);"><span>Pdf</span>UniCredit SpA 2013 Reports and Accounts</a></li>
+									<li><a href="javascript: void(0);"><span>Pdf</span>2013 Consolidated Reports and Accounts</a></li>
+									<li><a href="javascript: void(0);"><span>Doc</span>Press release (Italian only)</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- END EVENTS LOADED -->
+				<div id="moreEvents">
+				</div>	
+				<div class="panel" id="loadMore">
+					<div class="panel">
+						<div class="container">
+							<button class="btn btn-small">Load More</button>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div id="footer">
+			<div class="lightGreyFooter">
+				<div class="footer-row general">
+					<ul>
+						<li><a href="javascript:void(0);" class="pressmedia">Press Media</a></li>
+						<li><a href="javascript:void(0);" class="contactus">Contact us</a></li>
+						<li><a href="javascript:void(0);" class="archive">General Archive</a></li>
+						<li><a href="javascript:void(0);" class="uclOfficialBank">Uefa Champions<br/>League Official Bank</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="darkGreyFooter">
+				<div class="footer-row utility">
+					<ul>
+						<li><a href="javascript:void(0);">Feed Rss UniCreditGroup.eu</a></li>
+						<li><a href="javascript:void(0);">Mobile & Apps</a></li>
+						<li><a href="javascript:void(0);">Contacts</a></li>
+						<li><a href="javascript:void(0);">Glossary</a></li>
+						<li><a href="javascript:void(0);">Useful links</a></li>
+						<li><a href="javascript:void(0);">System requirement</a></li>
+						<li><a href="javascript:void(0);">Site Map</a></li>
+						<li><a href="javascript:void(0);">Faq</a></li>
+					</ul>  	                                             	
+				</div>
+				<div class="footer-row info">
+					<ul>
+						<li><a href="javascript:void(0);">General Company Info</a></li>
+						<li><a href="javascript:void(0);">Disclaimer</a></li>
+						<li><a href="javascript:void(0);">Privacy</a></li>
+						<li><a href="javascript:void(0);">SDIR and 1Info</a></li>
+						<li><a href="javascript:void(0);">AML and Patriot Act</a></li>
+						<li><a href="javascript:void(0);">Credits</a></li>
+					</ul>
+				</div>
+				<div class="footer-row logos">
+					<img alt="Logo Patti Chiari" src="img/static/footer-nav-pattichiari.png">
+					<img alt="Logo Champions League" src="img/static/footer-nav-champions-light.png">
+				</div>
+				<div class="footer-row copyright">
+					© 2012 UniCredit S.p.A. - P.Iva 00348170101 Tutti i diritti riservati
+				</div>			
+			</div>
+		</div>
+	</div>
+</body>
+</html>
