@@ -197,8 +197,8 @@ $(document).ready(function() {
 			range: 2,
 			fps: 25
 			});
-		spinnerLoadMore.utils._startSpinner();
-		$('#calendar #moreEvents').scrollTop($("#calendar #moreEvents").offset().top);
+		spinnerLoadMore.utils._startSpinner(spinnerLoadMore.st);
+		//$('#calendar #moreEvents').scrollTop($("#calendar #moreEvents").offset().top);
 		headerUBISManager.utils._setHeightContainer();
 		headerUBISManager.utils._setHeightSidebar();
 		$(window).scrollTop($("#calendar #moreEvents").offset().top);

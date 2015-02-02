@@ -14,8 +14,20 @@ $(document).ready(function () {
 		if (!isBreakpoint('xs')) {
 			$('#accordion .countries').removeClass('collapse');
 			$('#accordion .countries').removeClass('in');
+			$('.collapse').off('shown.bs.collapse');
+
+			$('.collapse').off('hidden.bs.collapse');
 		} else {
 			$('#accordion .countries').addClass('collapse');
+			$('.collapse').on('shown.bs.collapse', function () {
+				headerUBISManager.utils._setHeightContainer();
+				headerUBISManager.utils._setHeightSidebar();
+			});
+
+			$('.collapse').on('hidden.bs.collapse', function () {
+				headerUBISManager.utils._setHeightContainer();
+				headerUBISManager.utils._setHeightSidebar();
+			});
 		}
 	}
 
@@ -89,6 +101,8 @@ $(document).ready(function () {
 					$this.addClass('open');
 					$('#companyInfos .externalLinkAndIconsContainer').slideDown();
 				}
+				headerUBISManager.utils._setHeightContainer();
+				headerUBISManager.utils._setHeightSidebar();
 			});
 
 			$('#companyInfos .companyInfoTitle').on('click', function (e) {
@@ -102,6 +116,8 @@ $(document).ready(function () {
 					$this.addClass('open');
 					$('#companyInfos .companyInfoBody').slideDown();
 				}
+				headerUBISManager.utils._setHeightContainer();
+				headerUBISManager.utils._setHeightSidebar();
 			});
 		} else {
 			$('#companyInfos .subtitle.links, #companyInfos .companyInfoTitle').off('click');
