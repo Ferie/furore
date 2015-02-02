@@ -1,13 +1,16 @@
 $(document).ready(function () {
 	$('.collapse').on('shown.bs.collapse', function () {
-		headerUBISManager.utils._setHeightContainer();
-		headerUBISManager.utils._setHeightSidebar();
+		sidebarResize();
 	});
 
 	$('.collapse').on('hidden.bs.collapse', function () {
+		sidebarResize();
+	});
+
+	function sidebarResize() {
 		headerUBISManager.utils._setHeightContainer();
 		headerUBISManager.utils._setHeightSidebar();
-	});
+	}
 
 	// accordion for the countries (mobile)
 	function toggleCollapseCountries() {
@@ -15,18 +18,14 @@ $(document).ready(function () {
 			$('#accordion .countries').removeClass('collapse');
 			$('#accordion .countries').removeClass('in');
 			$('.collapse').off('shown.bs.collapse');
-
 			$('.collapse').off('hidden.bs.collapse');
 		} else {
 			$('#accordion .countries').addClass('collapse');
 			$('.collapse').on('shown.bs.collapse', function () {
-				headerUBISManager.utils._setHeightContainer();
-				headerUBISManager.utils._setHeightSidebar();
+				sidebarResize();
 			});
-
 			$('.collapse').on('hidden.bs.collapse', function () {
-				headerUBISManager.utils._setHeightContainer();
-				headerUBISManager.utils._setHeightSidebar();
+				sidebarResize();
 			});
 		}
 	}
@@ -39,13 +38,17 @@ $(document).ready(function () {
 			$('#intro .readLess').hide();
 
 			$('#intro .readMore a').on('click', function () {
-				$('#intro .ourPresenceHiddenOnMobile').slideDown();
+				$('#intro .ourPresenceHiddenOnMobile').slideDown(function() {
+					sidebarResize();
+				});
 				$('#intro .readMore').hide();
 				$('#intro .readLess').show();
 			});
 
 			$('#intro .readLess a').on('click', function () {
-				$('#intro .ourPresenceHiddenOnMobile').slideUp();
+				$('#intro .ourPresenceHiddenOnMobile').slideUp(function() {
+					sidebarResize();
+				});
 				$('#intro .readMore').show();
 				$('#intro .readLess').hide();
 			});
@@ -90,39 +93,42 @@ $(document).ready(function () {
 		$('#companyInfos .externalLinkAndIconsContainer, #companyInfos .companyInfoBody').hide();
 
 		if (isBreakpoint('xs')) {
-			$('#companyInfos .subtitle.links').on('click', function (e) {
+			$('#companyInfos .subtitle.links').on('touchstart', function (e) {
 				e.stopPropagation();
 				var $this = $(this);
 				if ($this.hasClass('open')) {
 					$('#companyInfos .externalLinkAndIconsContainer').slideUp(function(){
 						$this.removeClass('open');
+						sidebarResize();
 					});
 				} else {
 					$this.addClass('open');
-					$('#companyInfos .externalLinkAndIconsContainer').slideDown();
+					$('#companyInfos .externalLinkAndIconsContainer').slideDown(function() {
+						sidebarResize();
+					});
 				}
-				headerUBISManager.utils._setHeightContainer();
-				headerUBISManager.utils._setHeightSidebar();
 			});
 
-			$('#companyInfos .companyInfoTitle').on('click', function (e) {
+			$('#companyInfos .companyInfoTitle').on('touchstart', function (e) {
 				e.stopPropagation();
 				var $this = $(this);
 				if ($this.hasClass('open')) {
 					$('#companyInfos .companyInfoBody').slideUp(function() {
 						$this.removeClass('open');
+						sidebarResize();
 					});
 				} else {
 					$this.addClass('open');
-					$('#companyInfos .companyInfoBody').slideDown();
+					$('#companyInfos .companyInfoBody').slideDown(function() {
+						sidebarResize();
+					});
 				}
-				headerUBISManager.utils._setHeightContainer();
-				headerUBISManager.utils._setHeightSidebar();
 			});
 		} else {
 			$('#companyInfos .subtitle.links, #companyInfos .companyInfoTitle').off('click');
 			$('#companyInfos .subtitle.links, #companyInfos .companyInfoTitle').removeClass('open');
 			$('#companyInfos .externalLinkAndIconsContainer, #companyInfos .companyInfoBody').show();
+			sidebarResize();
 		}
 	}
 
@@ -131,6 +137,9 @@ $(document).ready(function () {
 	toggleCollapseCountries();
 	toggleCompanyInfoEvents();
 	tabsHeader();
+	timer = window.setTimeout(function () {
+		sidebarResize();
+	}, 1000);
 
 	var timer = window.setTimeout(function () {}, 0);
 
@@ -142,6 +151,7 @@ $(document).ready(function () {
 		window.clearTimeout(timer);
 		timer = window.setTimeout(function () {
 			toggleCompanyInfoEvents();
+			sidebarResize();
 		}, 400);
 	});
 
@@ -149,6 +159,7 @@ $(document).ready(function () {
 	$('.sidebar-switch').on('click', function () {
 		setTimeout(function () {
 			tabsHeader();
+			sidebarResize();
 		}, 400);
 	});
 
@@ -163,14 +174,14 @@ $(document).ready(function () {
 	});
 
 	// scroll on continent tap (mobile)
-	$('.worldwideCountries').on('click', function () {
+	$('.worldwideCountries .continentTitle').on('touchstart', function () {
 		var $this = $(this);
 
 		setTimeout(function () {
 			$('html, body').animate({
 				scrollTop: $this.offset().top - 60
 			}, 800);
-		}, 400);
+		}, 600);
 	});
 
 	// event that puts the active tab and shows the active panel (desktop)
@@ -182,6 +193,10 @@ $(document).ready(function () {
 		var target = $this.data('tabpanel');
 		$('#tabsBody .tabPanel').removeClass('selected');
 		$('#' + target).addClass('selected');
+
+		setTimeout(function () {
+			sidebarResize();
+		}, 400);
 	});
 
 	// skin for the select in Worldwide area
@@ -196,7 +211,7 @@ $(document).ready(function () {
 		}
 	});
 
-	// event that puts a placeholder when the dropdown menù is open (mobile)
+	// event that puts a placeholder when the dropdown menu is open (mobile)
 	$('#worldwide .chosen-container .chosen-single').on('click', function () {
 		$(this).find('span').text($('#worldwide #dropdown select').data('placeholder'));
 	});
@@ -207,5 +222,6 @@ $(document).ready(function () {
 
 		$('#tabsBody .tabPanel').removeClass('selected');
 		$('#' + target).addClass('selected');
+		sidebarResize();
 	});
 });
