@@ -19,7 +19,8 @@
 }
 
 #worldwide #worldwideTitle h1,
-#worldwide #countryTitle h1 {
+#worldwide #countryTitle h1,
+#worldwide #lightToolTitle h1 {
 	font-family: "unicredit-light";
 	font-size: 40px;
 	line-height: 1;
@@ -27,7 +28,8 @@
 }
 
 #worldwide #worldwideTitle .container,
-#worldwide #countryTitle .container {
+#worldwide #countryTitle .container,
+#worldwide #lightToolTitle .container {
 	text-align: center;
 }
 
@@ -111,7 +113,8 @@
 /************** COUNTRY PAGE **************/
 
 #worldwide #countryTitle,
-#worldwide #companyTitle {
+#worldwide #companyTitle,
+#worldwide #lightToolTitle {
 	border-bottom: 1px solid #cacaca;
 	margin: 34px 0 65px;
 	padding: 0 0 38px;
@@ -533,4 +536,74 @@
 #worldwide.companyLessInfo #companyInfos .companyInfo .companyInfoTitle {
 	border-top: 1px solid #c9c9c9;
 	margin-top: 50px;
+}
+
+/************** LIGHT TOOL **************/
+
+#worldwide .countriesContainer {
+	margin-bottom: 42px;
+}
+
+#worldwide .suggestion {
+	display: none;
+}
+
+#worldwide.suggestionOn .suggestion {
+	display: block;
+}
+
+#worldwide .countriesContainer .subtitle {
+	border-bottom: 1px solid #c9c9c9;
+	font-size: 17px;
+	margin: 0 15px 24px;
+	padding-bottom: 23px;
+	text-transform: uppercase;
+}
+
+#worldwide .otherCoutries .subtitle {
+	display: none;
+}
+
+#worldwide.suggestionOn .otherCoutries .subtitle {
+	display: block;
+}
+
+#worldwide .countriesContainer .country {
+	height: 82px;
+	margin-bottom: 32px;
+}
+
+#worldwide .countriesContainer .country .countryName {
+	font-size: 19px;
+	line-height: 1;
+	margin-bottom: 12px;
+}
+
+#worldwide .countriesContainer .country .externalLink {
+	background: url("../img/static/worldwide_country_page_external_link_icon.png") no-repeat;
+	margin-left: 1px;
+	margin-bottom: 12px;
+	padding-left: 26px;
+}
+
+#worldwide .worldwidePresence {
+	border-top: 1px solid #c9c9c9;
+	margin: 0 15px;
+	padding-top: 13px;
+}
+
+#worldwide .worldwidePresence a {
+	font-family: "UniCredit-Medium";
+	font-size: 15px;
+	float: left;
+	text-transform: uppercase;
+}
+
+#worldwide .worldwidePresence .arrowRight {
+	background: url("../img/static/blue_arrow_right.png") no-repeat;
+	float: left;
+	margin-top: 5px;
+	margin-left: 9px;
+	height: 11px;
+	width: 7px;
 }
