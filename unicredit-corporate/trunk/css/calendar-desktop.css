@@ -31,7 +31,6 @@
 	}
 	/**** GENERAL RULES ****/
 	/**** CALENDAR TOOLS ****/
-	/**** generic rules ****/
 	#calendarTools .container > div {
 		padding: 0 10px;	
 	}
@@ -41,14 +40,6 @@
 	#calendarTools .container > div:last-child {
 		padding-right: 0;	
 	}
-	/**** generic rules ****/
-	/**** Date Range Picker ****/
-	#calendarTools .container > .with-cross{
-	    height: 40px;
-	}
-	/**** Date Range Picker ****/
-	/**** Categories combo-box ****/
-	/**** Categories combo-box ****/
 	/**** CALENDAR TOOLS ****/
 	/**** CALENDAR MESSAGES ****/
 	/**** CALENDAR MESSAGES ****/
@@ -58,32 +49,6 @@
 	#calendar .event .header .category {
 		width: auto;
 	}
-	/*
-	#calendarPanelResults .event:first-child .header {
-		padding: 40px 0 30px;
-	}
-
-	#calendarPanelResults .event .header .date {
-		padding-right: 15px;
-		border-right: 1px solid #c9c9c9;	
-	}
-	#calendarPanelResults .event .header .date .days li {
-		padding-right: 10px;
-	}
-	#calendarPanelResults .event .header .labels {
-		padding: 0 15px;
-	}
-	#calendarPanelResults .event .header .buttons {
-		padding: 12px 20px;
-		margin: 0;
-	}
-	#calendarPanelResults .event .header .categories {
-		margin: 0;
-		width: auto;
-		float: right;
-	    right: auto;
-	}
-	*/
 	#calendarPanelResults .event .body {padding: 0 0 30px 0;}
 	#calendarPanelResults .event .body h2 {
 		font-size: 24px;
@@ -99,10 +64,6 @@
 	/**** LOAD MORE ****/
 	/**** LOAD MORE ****/
 	/**** SINGLE EVENT ****/
-	/* SOCIAL SHARE */
-	#socialSingleShare .panel.panel-collapse .container {
-		padding: 20px 10px;
-	}
 	/* PORTRAIT */
 	
 	#singleEvent .title {
