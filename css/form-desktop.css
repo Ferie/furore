@@ -1,0 +1,17 @@
+@media (min-width: 768px) {
+	.container > div {
+		padding: 0 10px;	
+	}
+
+	.container > div:first-child {
+		padding-left: 0;	
+	}
+
+	.container > div:last-child {
+		padding-right: 0;	
+	}
+
+	.container > .with-cross {
+		height: 40px;
+	}
+}
