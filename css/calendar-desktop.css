@@ -99,8 +99,45 @@
 	/**** LOAD MORE ****/
 	/**** LOAD MORE ****/
 	/**** SINGLE EVENT ****/
+	/* SOCIAL SHARE */
+	#socialSingleShare .panel.panel-collapse .container {
+		padding: 20px 10px;
+	}
+	/* PORTRAIT */
 	
-	#singleEvent .panel.event.body.portraitPhoto .image {
+	#singleEvent .title {
+		margin: 45px 0;
+	}
+	#singleEvent .panel.title h1 {
+		font-size: 40px;
+	}
+	#singleEvent .panel.event.portraitPhoto .image {
 		width: auto;
+		float: left;
+		margin: 0 25px 25px 0;
+	}
+	#singleEvent .panel.event.portraitPhoto .image img {
+		width: auto;
+	}
+	#singleEvent .panel.event.embeddedVideo .video {
+		float: left;
+		padding: 0 25px 25px 0;
+	}
+	#singleEvent .panel.event.embeddedVideo .video img.placeholder {
+		width: 100%;
+	}
+	#singleEvent .panel.event.embeddedVideo .video a {
+    	margin: -40px;
+	}
+	#singleEvent .panel.info > .container > div {
+		padding: 0 3%;
+	}
+	#singleEvent .panel.info > .container > div:first-child {
+		padding-left: 0;
+		padding-right: 6%;
+	}
+	#singleEvent .panel.info > .container > div:last-child {
+		padding-left: 6%;
+		padding-right: 0;
 	}
 }

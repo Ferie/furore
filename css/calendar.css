@@ -694,6 +694,7 @@
 	padding: 10px 0 19px;
 	margin-bottom: -11px;
 	background: url('../img/static/calendar-share-down-arrow.png') no-repeat scroll bottom right;
+	z-index: 1;
 }
 #socialSingleShare .panel .container .icon.collapsed  {
 	padding-bottom: 8px;
@@ -710,7 +711,7 @@
 	overflow: visible;
 }
 #socialSingleShare .panel.panel-collapse .container {
-	padding: 20px 0;
+	padding: 0px 10px;
 }
 #socialSingleShare .panel.panel-collapse h2 {
 	font-family: 'unicredit-light';
@@ -762,12 +763,16 @@
 
 #socialSingleShare .closer {
 	position: relative;
-	top: -9px;
 	height: 0;
 	text-align: right;
+	right: -61px;
+    top: 12px;
 }
 #socialSingleShare .closer a {
-	padding-right: 13px;
+	display: inline-block;
+    height: 18px;
+    margin-right: 14px;
+    width: 19px;
 }
 /**** SOCIAL SINGLE SHARE ****/
 /**** EVENT DETAIL ****/
@@ -776,16 +781,22 @@
 }
 #singleEvent .title {
 	text-align: center;
-	margin: 45px 0;
+	margin: 15px 0;
 }
-#singleEvent.panel .title h1 {
+#singleEvent .title.panel h1 {
 	font-family: 'unicredit-light';
+	display: inline-block;
 	width: auto;
 	padding: 0;
+	font-size: 24px;
+	line-height: 1.1;
 }
 #singleEvent .panel.event.body {
 	border-top: 1px solid #ccc;	
 	margin-bottom: 30px;
+}
+#singleEvent .panel.event .body img {
+	width: 100%;
 }
 #singleEvent .panel.event .text p {
 	margin-top: 25px;
@@ -800,15 +811,7 @@
 }
 #singleEvent .panel.info > .container > div {
 	border-top: 1px solid #ccc;
-	padding: 0 3%;
-}
-#singleEvent .panel.info > .container > div:first-child {
-	padding-left: 0;
-	padding-right: 6%;
-}
-#singleEvent .panel.info > .container > div:last-child {
-	padding-left: 6%;
-	padding-right: 0;
+	padding: 0;
 }
 #singleEvent .panel.info .header{
 	border-bottom: 1px solid #ccc;
@@ -866,5 +869,22 @@
 	display: inline-block;
     line-height: 20px;
     text-transform: uppercase;
+}
+/* PORTRAIT */
+#singleEvent .panel.event.embeddedVideo .video,
+#singleEvent .panel.event.portraitPhoto .image {
+	text-align: center;
+}
+#singleEvent .panel.event.embeddedVideo .video img.placeholder,
+#singleEvent .panel.event.portraitPhoto .image img {
+	width: 100%;
+}
+#singleEvent .panel.event.embeddedVideo .video a {
+	display: inline-block;
+    float: left;
+    left: 50%;
+    margin: -30px;
+    position: absolute;
+    top: 50%;
 }
 /**** EVENT DETAIL ****/
