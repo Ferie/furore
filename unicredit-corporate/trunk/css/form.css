@@ -61,14 +61,14 @@ select option:active {
 .checkbox input[type="checkbox"] {
 	
 }
+/*
 .checkbox {
 	background: url('../img/static/checkbox_unchecked.png') no-repeat;
 }
-/* RADIO BUTTON */
 .checkbox .checked {
 	background: url('../img/static/checkbox_checked.png') no-repeat;
 }
-
+*/
 /* RADIO BUTTON */
 .radio input[type="radio"] {
 	
