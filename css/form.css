@@ -2,54 +2,90 @@
 
 .cross {
 	display: inline-block;
-	float: right;
 	position: relative;
 	right: 10px;
 	top: -30px;
+	float: right;
 	width: auto;
 }
 
 .cross a {
 	display: inline-block;
 	background: url('../img/static/select-cross-white.png') no-repeat scroll center center transparent;
-	width: 0;
 	height: 0;
+	width: 0;
 }
 
 .cross.selected a {
-	width: 20px;
 	height: 20px;
+	width: 20px;
 }
+
 /* INPUT TEXT */
+
 input {
-	width: 100%;
 	padding: 10px 0;
+	width: 100%;
+}
+
+/* INPUT TEXT-KEYWORDS */
+
+.container > .with-cross{
+	overflow: hidden;
+	height: 60px;
+}
+
+input.keywords {
+	behavior: url(../plugin/js/PIE.htc);
+	background: url('../img/static/keywords-search.png') no-repeat scroll 8px center #fff;
+	border-radius: 5px;
+	font-size: 17px;
+	color: #333;
+	line-height: 40px;
+	padding: 5px 25px 5px 42px;
+	height: 40px;
+}
+
+input.keywords:focus {
+	border-color: #ccc;
+	box-shadow: none;
+}
+
+input.keywords.selected {
+	background-image: url('../img/static/keywords-search-selected.png');
+	background-color: #999;
+	color: #fff;
 }
 
 /* SELECT */
+
 select {
-	width: 100%;
 	behavior: url(../plugin/js/PIE.htc);
 	background: none;
-	font-size: 17px;
-	line-height: 40px;
-	height: 40px;
-	color: #999;
 	border: 1px solid #ccc;
 	border-radius: 5px;	
+	font-size: 17px;
+	line-height: 40px;
+	color: #999;
 	padding: 0 5px;
+	height: 40px;
+	width: 100%;
 }
+
 select option:first-child {
 	display: none;
+
 }
+
 select option {
     background: url('../img/static/radio-button-unchecked.png') no-repeat scroll left center;
-	color: #999;
-	font-size: 15px;
-	line-height: 20px;
     border-top: none;
+	font-size: 15px;
+	color: #999;
+	line-height: 20px;
     padding: 8px 0 8px 30px;
 }
+
 select option:focus,
 select option:hover,
 select option:active {
@@ -58,48 +94,19 @@ select option:active {
 }
 
 /* CHECKBOX */
+
 .checkbox input[type="checkbox"] {
 	
 }
-/*
-.checkbox {
-	background: url('../img/static/checkbox_unchecked.png') no-repeat;
-}
-.checkbox .checked {
-	background: url('../img/static/checkbox_checked.png') no-repeat;
-}
-*/
+
 /* RADIO BUTTON */
+
 .radio input[type="radio"] {
 	
 }
 
-/* INPUT TEXT-KEYWORDS */
-.container > .with-cross{
-	height: 60px;
-	overflow: hidden;
-}
-
-input.keywords {
-	behavior: url(../plugin/js/PIE.htc);
-	padding: 5px 25px 5px 42px;
-	background: url('../img/static/keywords-search.png') no-repeat scroll 8px center #fff;
-	font-size: 17px;
-	color: #333;
-	height: 40px;
-	line-height: 40px;
-	border-radius: 5px;
-}
-
-input.keywords:focus {
-	box-shadow: none;
-	border-color: #ccc;
-}
-
-input.keywords.selected {
-	background-image: url('../img/static/keywords-search-selected.png');
-	background-color: #999;
-	color: #fff;
+.radio label, .checkbox label {
+	padding-left: 5px;
 }
 
 /************** DATE RANGE PICKER **************/
@@ -114,14 +121,14 @@ input.keywords.selected {
 
 .input-daterange > div {
 	behavior: url(../plugin/js/PIE.htc);
-	padding-left: 10px;
-	font-size: 17px;
-	line-height: 40px;
-	height: 40px;
-	color: #999;
 	border: 1px solid #ccc;
 	border-radius: 5px;
+	font-size: 17px;
+	color: #999;
 	cursor: pointer;
+	line-height: 40px;
+	padding-left: 10px;
+	height: 40px;
 }
 
 
@@ -134,9 +141,9 @@ input.keywords.selected {
 }
 
 .input-daterange > div.selected {
-	padding: 0 10px;
 	background: none #999;
 	color: #fff;
+	padding: 0 10px;
 }
 
 .input-daterange > div.selected span {
@@ -147,9 +154,9 @@ input.keywords.selected {
 	behavior: url(../plugin/js/PIE.htc);
 	background: transparent;
 	font-family: 'unicredit-regular';
-	box-shadow: none;
 	border: none;
 	border-radius: 0;
+	box-shadow: none;
 	margin: 0;
 	padding: 0;
 }
