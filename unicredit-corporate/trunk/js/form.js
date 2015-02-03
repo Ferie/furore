@@ -7,4 +7,6 @@ $(document).ready(function () {
 		cursor: true,
 		increaseArea: '20%'
 	});
+
+	
 });
