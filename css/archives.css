@@ -12,11 +12,6 @@
 	padding: 0 10px;
 }
 
-/*#archives .container > div {
-	padding: 0;
-	margin: 0;
-}*/
-
 #archives .panel > .container h1 {
 	font-family: unicredit-light;
 	font-size: 40px;
@@ -28,40 +23,12 @@
 
 /**** ARCHIVES TOOLS ****/
 
-/*#archivesTools input[type="checkbox"] {
-	display: none;
-}
-
-#archivesTools input[type="checkbox"] + label {
-	background: url('../img/static/checkbox_unchecked.png') left top no-repeat;
-	cursor: pointer;
-	padding-left: 30px;
-}
-
-#archivesTools input[type="checkbox"]:checked + label {
-	background: url('../img/static/checkbox_checked.png') left top no-repeat;
-}*/
-
-#archivesTools .icheckbox {
-	background: url('../img/static/checkbox_unchecked.png') no-repeat;
-	display: inline-block;
-	height: 18px;
-	width: 18px;
-}
-
-#archivesTools .icheckbox.checked {
-	background: url('../img/static/checkbox_checked.png') no-repeat;
-	display: inline-block;
-	height: 18px;
-	width: 18px;
-}
-
 #archivesTools .checkbox label {
 	font-size: 17px;
-	padding-left: 5px;
+	line-height: 1;
+	padding-left: 25px;
 }
 
-/**** Date Range Picker ****/
 /**** Categories combo-box ****/
 
 #archivesTools.panel {

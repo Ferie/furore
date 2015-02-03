@@ -294,12 +294,4 @@ $(document).ready(function () {
 		headerUBISManager.utils._setHeightContainer();
 		headerUBISManager.utils._setHeightSidebar();
 	});
-
-	$('.checkbox input[type="checkbox"]').iCheck({
-//		checkboxClass: 'icheckbox',
-		aria: true,
-		labelHover: false,
-		cursor: true,
-		increaseArea: '20%'
-	});
 });
