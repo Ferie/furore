@@ -287,7 +287,7 @@
 }
 
 #worldwide .tabSection .externalLink {
-	background: url("../img/static/worldwide_country_page_external_link_icon.png") no-repeat;
+	background: url("../img/static/generic_external_link_icon.png") no-repeat;
 	margin-top: 18px;
 	margin-bottom: 10px;
 	padding-left: 26px;
@@ -466,7 +466,7 @@
 }
 
 #worldwide #companyInfos .externalLink {
-	background: url("../img/static/worldwide_country_page_external_link_icon.png") no-repeat;
+	background: url("../img/static/generic_external_link_icon.png") no-repeat;
 	margin-bottom: 16px;
 	padding-left: 26px;
 }
@@ -576,7 +576,7 @@
 }
 
 #worldwide .countriesContainer .country .externalLink {
-	background: url("../img/static/worldwide_country_page_external_link_icon.png") no-repeat;
+	background: url("../img/static/generic_external_link_icon.png") no-repeat;
 	margin-left: 1px;
 	margin-bottom: 12px;
 	padding-left: 26px;

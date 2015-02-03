@@ -174,9 +174,9 @@ $(document).ready(function() {
 		fps: 25
 		});
 	if (filename=="calendar.html") {
-		spinnerUBISManager1.utils._startSpinner(spinnerUBISManager1.st);
-		spinnerUBISManager2.utils._startSpinner(spinnerUBISManager2.st);
-		spinnerUBISManager3.utils._startSpinner(spinnerUBISManager3.st);
+		//spinnerUBISManager1.utils._startSpinner(spinnerUBISManager1.st);
+		//spinnerUBISManager2.utils._startSpinner(spinnerUBISManager2.st);
+		//spinnerUBISManager3.utils._startSpinner(spinnerUBISManager3.st);
 	}
 	$('#calendar #loadMore button').click(function(){
 		//$('#calendar #moreEvents').hide();
@@ -185,9 +185,9 @@ $(document).ready(function() {
 		spinnerLoadMore = $("#moreEvents").spinnerUBISManager({
 			topElementSelector: '#moreEvents',
 			setElementsSelector: '#moreEvents',
-			idSpinner: 'spinner-loader3',
+			idSpinner: 'spinner-loader4',
 			htmlMessage: '',
-			textMessage: 'Loading More Events',
+			textMessage: 'Loading More Results',
 			autohide: true,
 			millisecondsTimer: 4000,
 			color: "#00afd0",
@@ -254,10 +254,6 @@ $(document).ready(function() {
 		}
 		$(this).text($(this).data('memotext'));
 		$(this).data('memotext', swapText);
-	});
-	$('#socialSingleShare .icon a, #socialSingleShare .closer a').click(function(){
-		$('#socialSingleShare .icon').toggleClass('collapsed');
-		$('#socialSingleShare .collapse > div').toggle();
 	});
 	$('.collapse').on('shown.bs.collapse', function(){
 		headerUBISManager.utils._setHeightContainer();

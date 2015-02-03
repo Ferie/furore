@@ -1,44 +1,5 @@
 /************** GENERAL FORM RULES **************/
 
-.checkbox input[type="checkbox"] {
-	
-}
-
-.radio input[type="radio"] {
-	
-}
-
-/************** KEYWORDS **************/
-
-.container > .with-cross{
-	height: 60px;
-	overflow: hidden;
-}
-
-#archivesTools input.keywords {
-	behavior: url(../plugin/js/PIE.htc);
-	padding: 5px 25px 5px 42px;
-	background: url('../img/static/keywords-search.png') no-repeat scroll 8px center #fff;
-	font-size: 17px;
-	color: #333;
-	height: 40px;
-	line-height: 40px;
-	border-radius: 5px;
-}
-
-#archivesTools input.keywords:focus {
-	box-shadow: none;
-	border-color: #ccc;
-}
-
-#archivesTools input.keywords.selected {
-	background-image: url('../img/static/keywords-search-selected.png');
-	background-color: #999;
-	color: #fff;
-}
-
-/************** DATE RANGE PICKER **************/
-
 .cross {
 	display: inline-block;
 	float: right;
@@ -59,6 +20,81 @@
 	width: 20px;
 	height: 20px;
 }
+/* INPUT TEXT */
+input {
+	width: 100%;
+	padding: 10px 0;
+}
+
+/* SELECT */
+select {
+	width: 100%;
+	behavior: url(../plugin/js/PIE.htc);
+	background: none;
+	font-size: 17px;
+	line-height: 40px;
+	height: 40px;
+	color: #999;
+	border: 1px solid #ccc;
+	border-radius: 5px;	
+	padding: 0 5px;
+}
+select option:first-child {
+	display: none;
+}
+select option {
+    background: url('../img/static/radio-button-unchecked.png') no-repeat scroll left center;
+	color: #999;
+	font-size: 15px;
+	line-height: 20px;
+    border-top: none;
+    padding: 8px 0 8px 30px;
+}
+select option:focus,
+select option:hover,
+select option:active {
+    background: url('../img/static/radio-button-checked.png') no-repeat scroll left center transparent;
+	color: #00afd0;	
+}
+
+/* CHECKBOX */
+.checkbox input[type="checkbox"] {
+	
+}
+/* RADIO BUTTON */
+.radio input[type="radio"] {
+	
+}
+
+/* INPUT TEXT-KEYWORDS */
+.container > .with-cross{
+	height: 60px;
+	overflow: hidden;
+}
+
+input.keywords {
+	behavior: url(../plugin/js/PIE.htc);
+	padding: 5px 25px 5px 42px;
+	background: url('../img/static/keywords-search.png') no-repeat scroll 8px center #fff;
+	font-size: 17px;
+	color: #333;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 5px;
+}
+
+input.keywords:focus {
+	box-shadow: none;
+	border-color: #ccc;
+}
+
+input.keywords.selected {
+	background-image: url('../img/static/keywords-search-selected.png');
+	background-color: #999;
+	color: #fff;
+}
+
+/************** DATE RANGE PICKER **************/
 
 .input-daterange {
 	behavior: url(../plugin/js/PIE.htc);
@@ -312,5 +348,69 @@
 .daterangepicker .calendar table tfoot button:hover,
 .daterangepicker .calendar table tfoot button:active {
 	background-color: #ccc;
+	color: #00afd0;
+}
+/* SELECT-CHOSEN */
+
+.chosen-container {
+	height: 40px;
+	width: 100%;
+}
+.chosen-container .chosen-single {
+	background: #999;
+	border: none;
+	box-shadow: none;
+	font-size: 17px;
+	line-height: 40px;
+	height: 40px;
+	color: #fff;
+	padding: 0 10px;
+}
+.chosen-container .chosen-default {
+	background: none;
+	font-size: 17px;
+	line-height: 40px;
+	height: 40px;
+	color: #999;
+	border: 1px solid #ccc;
+}
+.chosen-container .chosen-single div {
+	width: 0;
+}
+.chosen-container .chosen-default div {
+	width: 30px;
+}
+.chosen-container .chosen-single div b {
+	background: none;
+}
+.chosen-container .chosen-single abbr {
+    background: url('../img/static/select-cross-white.png') no-repeat scroll center center;
+    float: right;
+    position: relative;
+    right: 0;
+    top: -25px;
+}
+.chosen-container .chosen-single abbr:hover {
+	background-position: center center;
+}
+.chosen-container .chosen-default div b {
+    background: url('../img/static/select-arrow-down.png') no-repeat scroll center center;
+}
+.chosen-container.chosen-with-drop .chosen-default div b {
+	background-image: url('../img/static/select-arrow-up.png');
+}
+.chosen-container .chosen-drop  {
+    border-top: 1px solid #ccc;
+    padding: 8px 8px 0;
+}
+.chosen-container .chosen-drop .chosen-results .active-result {
+    background: url('../img/static/radio-button-unchecked.png') no-repeat scroll left center;
+	color: #999;
+	padding-left: 30px;
+	font-size: 15px;
+	line-height: 20px;
+}
+.chosen-container .chosen-drop .chosen-results .active-result.highlighted {
+    background: url('../img/static/radio-button-checked.png') no-repeat scroll left center;
 	color: #00afd0;
 }
