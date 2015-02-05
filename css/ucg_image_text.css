@@ -29,29 +29,48 @@
 	width: 66%;
 }
 
+.example {
+	font-size: 21px;
+	padding: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
 /************** ucg_image_text **************/
 
-.ucg_image_text_container .ucg_image {
+.ucg_image_text.panel {
+	margin: 0;
+}
+
+.ucg_image_text .container {
+	width: 100%;
+}
+
+.ucg_image_text .ucg_image {
 	float: left;
 	margin-top: 3px;
 	margin-bottom: 6px;
+	margin-right: 12px;
 }
 
-.ucg_image_text_container .ucg_image img {
-	width: 95%;
+.ucg_image_text .ucg_image img {
+	width: 100%;
 }
 
-.ucg_image_text_container .ucg_text {
-	width: 95%;
+.ucg_image_text .ucg_text {
+	
 }
 
-.ucg_image_text_container .ucg_text h3 {
+.ucg_image_text .ucg_text h3 {
 	margin-top: 0;
 }
 
-.ucg_image_text_container .ucg_text a {
+.ucg_image_text .ucg_text a {
 	background: url('../img/static/blue_arrow_right.png') no-repeat scroll right center;
-	/*display: block;*/
 	padding-right: 12px;
 	text-transform: uppercase;
+}
+
+.ucg_image_text .ucg_text a:hover {
+	color: #00afd0;
 }
