@@ -9,6 +9,10 @@
 				messageSelector: '#message',
 				containerSelector: '#mainContainer',
 				footerSelector: '#footer',
+				toggleEvent: 'toggleSidebar',
+				openEvent: 'openSidebar',
+				closeEvent: 'closeSidebar',
+				animationEvent: 'animationSidebarCompleted',
 				scrollableSelector: '.scrollable-element',
 				containerWidth: 960,
 				collapsedSidebarWidth: 80,
@@ -164,16 +168,19 @@
 			}
 		},
 		_toggleSidebar: function(action){
+			st.$container.trigger(st.toggleEvent);
 			switch (action){
 				case "open":
+					st.$container.trigger(st.openEvent);
 					st.$header.find('.sidebar-switch a').addClass("opened");
-					st.$sidebar.addClass("opened").animate({"width": utils._getSidebarWidth()+'px'}, {"queue": false}, utils._getSidebarWidth()*st.pixelSpeed, "linear");
+					st.$sidebar.addClass("opened").animate({"width": utils._getSidebarWidth()+'px'}, {"queue": false, complete: function(){st.$container.trigger(st.animationEvent);}}, utils._getSidebarWidth()*st.pixelSpeed, "linear");
 					st.$sidebar.find('.sidebar-footer').slideDown();
 					utils._selectByCookies();
 					break;
 				case "close":
+					st.$container.trigger(st.closeEvent);
 					st.$header.find('.sidebar-switch a').removeClass("opened");
-					st.$sidebar.removeClass("opened").animate({"width": utils._getSidebarWidth()+'px'}, {"queue": false}, utils._getSidebarWidth()*st.pixelSpeed, "linear");
+					st.$sidebar.removeClass("opened").animate({"width": utils._getSidebarWidth()+'px'}, {"queue": false, complete: function(){st.$container.trigger(st.animationEvent);}}, utils._getSidebarWidth()*st.pixelSpeed, "linear");
 					st.$sidebar.find('.sidebar-footer').slideUp();
 					st.$sidebar.find('.sidebar-element .collapse.in').slideUp().removeClass("in");
 					st.$sidebar.find('.sidebar-element.active').removeClass('active');
@@ -184,13 +191,15 @@
 					st.$header.find('.sidebar-switch a').toggleClass("opened");
 					st.$sidebar.toggleClass("opened");
 					if (st.$header.find('.sidebar-switch a').hasClass("opened")){
-						st.$sidebar.animate({"width": utils._getSidebarWidth()+'px'}, {"queue": false}, utils._getSidebarWidth()*st.pixelSpeed, "linear");
+						st.$container.trigger(st.openEvent);
+						st.$sidebar.animate({"width": utils._getSidebarWidth()+'px'}, {"queue": false, complete: function(){st.$container.trigger(st.animationEvent);}}, utils._getSidebarWidth()*st.pixelSpeed, "linear");
 						st.$sidebar.find('.sidebar-footer').slideDown();
 						utils._selectByCookies();			
 					} else {
+						st.$container.trigger(st.closeEvent);
 						st.$sidebar.find('.sidebar-element .collapse.in').slideUp().removeClass("in");
 						st.$sidebar.find('.sidebar-element.active').removeClass('active');
-						st.$sidebar.animate({"width": utils._getSidebarWidth()+'px'}, {"queue": false}, utils._getSidebarWidth()*st.pixelSpeed, "linear");
+						st.$sidebar.animate({"width": utils._getSidebarWidth()+'px'}, {"queue": false, complete: function(){st.$container.trigger(st.animationEvent);}}, utils._getSidebarWidth()*st.pixelSpeed, "linear");
 						st.$sidebar.find('.sidebar-footer').slideUp();
 						st.$sidebar.find(".sidebar-element .collapse a").removeClass("active");
 						utils._selectHeaderByCookies();			
@@ -210,6 +219,7 @@
 			st.$container.css({top: topC+"px"});
 			st.$container.animate({left: leftC+"px", width: widthC+"px"}, {"queue": false}, "linear");
 			st.$footer.animate({width: widthF+"px"}, {"queue": false}, "linear");
+			//console.log("Container Width: "+widthC+" <= "+st.containerWidth+" = "+(widthC<=st.containerWidth));
 			if(widthC<=st.containerWidth) {
 				st.$container.addClass("with-sidebar-opened");				
 			} else {
