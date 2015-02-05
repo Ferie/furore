@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	$('.checkbox input[type="checkbox"], .radio input[type="radio"]').iCheck({
+	$('.ucg_checkbox input[type="checkbox"], .ucg_radio input[type="radio"]').iCheck({
 		checkboxClass: 'icheckbox_ubis',
 		radioClass: 'iradio_ubis',
 		aria: true,

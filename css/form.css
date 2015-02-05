@@ -93,19 +93,20 @@ select option:active {
 	color: #00afd0;	
 }
 
-/* CHECKBOX */
+/************** CHECKBOX and RADIO BUTTON **************/
 
-.checkbox input[type="checkbox"] {
-	
+.ucg_checkbox, .ucg_radio {
+	position: relative;
+	display: block;
+	font-size: 17px;
+	color: #999999;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
-/* RADIO BUTTON */
-
-.radio input[type="radio"] {
-	
-}
-
-.radio label, .checkbox label {
+.ucg_checkbox label, .ucg_radio label {
+	font-weight: normal;
+	cursor: pointer;
 	padding-left: 5px;
 }
 
