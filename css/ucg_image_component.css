@@ -1,0 +1,90 @@
+/************** CSS per i titoletti degli esempi - DA LEVARE!!! **************/
+
+#mainContainer {
+	height: 2000px;
+}
+
+.two-columns-box,
+.three-columns-box,
+.onetwo-columns-box,
+.twoone-columns-box {
+	margin-bottom: 24px;
+	padding-top: 1px;
+}
+
+.parsys_column .two-columns-box-c0,
+.parsys_column .two-columns-box-c1 {
+	float: left;
+	width: 49%;
+}
+
+.parsys_column .three-columns-box-c0,
+.parsys_column .three-columns-box-c1,
+.parsys_column .three-columns-box-c2,
+.parsys_column .onetwo-columns-box-c0,
+.parsys_column .twoone-columns-box-c1 {
+	float: left;
+	width: 33%;
+}
+
+.parsys_column .onetwo-columns-box-c1,
+.parsys_column .twoone-columns-box-c0 {
+	float: left;
+	width: 66%;
+}
+
+.example {
+	font-size: 21px;
+	padding: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/************** ucg_image **************/
+
+.ucg_image_component {
+	position: relative;
+}
+
+.ucg_image_component.panel {
+	margin: 0;
+}
+
+.ucg_image_component .ucg_image img {
+	width: 100%;
+}
+
+.ucg_image_component .ucg_text_container_on_image.top_left {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+.ucg_image_component .ucg_text_container_on_image.top_right {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	text-align: right;
+}
+
+.ucg_image_component .ucg_text_container_on_image.bottom_left {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+}
+
+.ucg_image_component .ucg_text_container_on_image.bottom_right {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	text-align: right;
+}
+
+.ucg_image_component .ucg_text_container_on_image .ucg_text_on_image {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.ucg_image_component .ucg_text_container_on_image .ucg_link_on_image {
+	
+}
