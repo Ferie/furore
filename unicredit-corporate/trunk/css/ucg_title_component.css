@@ -36,41 +36,38 @@
 	text-transform: uppercase;
 }
 
-/************** ucg_image_text **************/
+/************** ucg_title_component **************/
 
-.ucg_image_text.panel {
+.ucg_title_component.panel {
 	margin: 0;
 }
 
-.ucg_image_text .container {
+.ucg_title_component .container {
 	width: 100%;
 }
 
-.ucg_image_text .ucg_image {
-	float: left;
-	margin-top: 3px;
-	margin-bottom: 6px;
-	margin-right: 12px;
-}
-
-.ucg_image_text .ucg_image img {
-	width: 100%;
-}
-
-.ucg_image_text .ucg_text {
-	
-}
-
-.ucg_image_text .ucg_text h3 {
+.ucg_title_component .ucg_title h2 {
 	margin-top: 0;
 }
 
-.ucg_image_text .ucg_text a {
-	background: url('../img/static/blue_arrow_right.png') no-repeat scroll right center;
-	padding-right: 12px;
-	text-transform: uppercase;
+.ucg_title_component .ucg_title_text_container {
+	float: left;
 }
 
-.ucg_image_text .ucg_text a:hover {
-	color: #00afd0;
+.ucg_title_component .ucg_title_image {
+	float: right;
+}
+
+.ucg_title_image img {
+	float: right;
+	height: 50%;
+	width: 50%;
+}
+
+@media (min-width: 768px) {
+	.ucg_title_image img {
+		float: none;
+		height: auto;
+		width: auto;
+	}
 }

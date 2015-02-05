@@ -1,0 +1,80 @@
+/************** CQ5 CSS replica per prove DA LEVARE!!! **************/
+
+#mainContainer {
+	height: 2000px;
+}
+
+.two-columns-box,
+.three-columns-box,
+.onetwo-columns-box,
+.twoone-columns-box {
+	margin-bottom: 24px;
+	padding-top: 1px;
+}
+
+.parsys_column .two-columns-box-c0,
+.parsys_column .two-columns-box-c1 {
+	float: left;
+	width: 49%;
+}
+
+.parsys_column .three-columns-box-c0,
+.parsys_column .three-columns-box-c1,
+.parsys_column .three-columns-box-c2,
+.parsys_column .onetwo-columns-box-c0,
+.parsys_column .twoone-columns-box-c1 {
+	float: left;
+	width: 33%;
+}
+
+.parsys_column .onetwo-columns-box-c1,
+.parsys_column .twoone-columns-box-c0 {
+	float: left;
+	width: 66%;
+}
+
+.example {
+	font-size: 21px;
+	padding: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/************** ucg_image_text_component **************/
+
+.ucg_image_text_component.panel {
+	margin: 0;
+}
+
+.ucg_image_text_component .container {
+	width: 100%;
+}
+
+.ucg_image_text_component .ucg_image {
+	float: left;
+	margin-top: 3px;
+	margin-bottom: 6px;
+	margin-right: 12px;
+}
+
+.ucg_image_text_component .ucg_image img {
+	width: 100%;
+}
+
+.ucg_image_text_component .ucg_text {
+	
+}
+
+.ucg_image_text_component .ucg_text h3 {
+	margin-top: 0;
+}
+
+.ucg_image_text_component .ucg_text a {
+	background: url('../img/static/blue_arrow_right.png') no-repeat scroll right center;
+	padding-right: 12px;
+	text-transform: uppercase;
+}
+
+.ucg_image_text_component .ucg_text a:hover {
+	color: #00afd0;
+}
