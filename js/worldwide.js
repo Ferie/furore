@@ -56,6 +56,8 @@ $(document).ready(function () {
 			$('#intro .ourPresenceHiddenOnMobile').show();
 			$('#intro .readMore').hide();
 			$('#intro .readLess').hide();
+			$('#intro .readMore a').off('click');
+			$('#intro .readLess a').off('click');
 		}
 	}
 
