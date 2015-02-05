@@ -5,6 +5,9 @@
 		top: 80px;
 		left: 80px;
 	}
+	#mainContainer .panel .container {
+    	width: 960px;
+	}
 	#mainContainer.with-sidebar-opened .panel .container {
     	width: 100%;
 	}
