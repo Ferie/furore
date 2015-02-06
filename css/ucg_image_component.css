@@ -42,55 +42,59 @@
 
 /************** ucg_image **************/
 
-.ucg_image_component {
+.ucg_image {
 	position: relative;
 }
 
-.ucg_image_component.panel {
+.ucg_image.panel {
 	margin: 0;
 }
 
-.ucg_image_component .ucg_image img {
+.ucg_image .ucg_image_container img {
 	width: 100%;
 }
 
-.ucg_image_component .ucg_text_container_on_image.top_left {
+.ucg_image .ucg_text_on_image_container.top_left {
 	position: absolute;
 	top: 10px;
 	left: 25px;
 }
 
-.ucg_image_component .ucg_text_container_on_image.top_right {
+.ucg_image .ucg_text_on_image_container.top_right {
 	position: absolute;
 	top: 10px;
 	right: 25px;
 	text-align: right;
 }
 
-.ucg_image_component .ucg_text_container_on_image.bottom_left {
+.ucg_image .ucg_text_on_image_container.bottom_left {
 	position: absolute;
 	bottom: 10px;
 	left: 25px;
 }
 
-.ucg_image_component .ucg_text_container_on_image.bottom_right {
+.ucg_image .ucg_text_on_image_container.bottom_right {
 	position: absolute;
 	bottom: 10px;
 	right: 25px;
 	text-align: right;
 }
 
-.ucg_image_component .ucg_text_container_on_image .ucg_text_on_image {
+.ucg_image .ucg_text_on_image_container a:hover {
+	color: #00afd0;
+}
+
+.ucg_image .ucg_text_on_image_container .ucg_text_on_image {
 	font-size: 25px;
 	font-weight: bold;
 }
 
-.ucg_image_component .ucg_text_container_on_image .ucg_link_on_image {
+.ucg_image .ucg_text_on_image_container .ucg_link_on_image {
 	
 }
 
 @media (min-width: 768px) {
-	 #mainContainer .ucg_image_component.panel .container {
+	 #mainContainer .ucg_image.panel .container {
 		width: 100%;
 	}
 }

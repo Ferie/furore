@@ -40,47 +40,47 @@
 	text-transform: uppercase;
 }
 
-/************** ucg_image_text_component **************/
+/************** ucg_image_text **************/
 
-.ucg_image_text_component.panel {
+.ucg_image_text.panel {
 	margin: 0;
 }
 
-.ucg_image_text_component.panel .container {
+.ucg_image_text.panel .container {
 	width: 100%;
 }
 
-.ucg_image_text_component .ucg_image {
+.ucg_image_text .ucg_img {
 	float: left;
 	margin-top: 3px;
 	margin-bottom: 6px;
 	margin-right: 12px;
 }
 
-.ucg_image_text_component .ucg_image img {
+.ucg_image_text .ucg_img img {
 	width: 100%;
 }
 
-.ucg_image_text_component .ucg_text {
+.ucg_image_text .ucg_txt {
 	
 }
 
-.ucg_image_text_component .ucg_text h3 {
+.ucg_image_text .ucg_txt h3 {
 	margin-top: 0;
 }
 
-.ucg_image_text_component .ucg_text a {
+.ucg_image_text .ucg_txt a {
 	background: url('../img/static/blue_arrow_right.png') no-repeat scroll right center;
 	padding-right: 12px;
 	text-transform: uppercase;
 }
 
-.ucg_image_text_component .ucg_text a:hover {
+.ucg_image_text .ucg_txt a:hover {
 	color: #00afd0;
 }
 
 @media (min-width: 768px) {
-	 #mainContainer .ucg_image_text_component.panel .container {
+	 #mainContainer .ucg_image_text.panel .container {
 		width: 100%;
 	}
 }
