@@ -61,16 +61,13 @@
 
 .example {
 	font-size: 21px;
+	color: #FF5500;
 	padding: 20px;
 	text-align: center;
 	text-transform: uppercase;
 }
 
 /************** ucg_text **************/
-
-.ucg_text {
-	position: relative;
-}
 
 .ucg_text.panel {
 	margin: 0;

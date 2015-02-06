@@ -35,16 +35,13 @@
 
 .example {
 	font-size: 21px;
+	color: #FF5500;
 	padding: 20px;
 	text-align: center;
 	text-transform: uppercase;
 }
 
 /************** ucg_linklist **************/
-
-.ucg_linklist {
-	position: relative;
-}
 
 .ucg_linklist.panel {
 	margin: 0;
@@ -61,6 +58,10 @@
 .ucg_linklist .ucg_link_container .ucg_mail {
 	background: none;
 	text-transform: lowercase;
+}
+
+.ucg_linklist .ucg_link_container .ucg_link {
+	
 }
 
 .ucg_linklist .ucg_link_container .ucg_download_link {

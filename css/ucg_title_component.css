@@ -31,6 +31,7 @@
 
 .example {
 	font-size: 21px;
+	color: #FF5500;
 	padding: 20px;
 	text-align: center;
 	text-transform: uppercase;
@@ -39,15 +40,11 @@
 /************** ucg_title **************/
 
 .ucg_title.panel {
-	margin: 0;
+	margin: 0 0 40px;
 }
 
 .ucg_title .container {
 	width: 100%;
-}
-
-.ucg_title .ucg_title_container h2 {
-	margin-top: 0;
 }
 
 .ucg_title .ucg_title_text_container {
