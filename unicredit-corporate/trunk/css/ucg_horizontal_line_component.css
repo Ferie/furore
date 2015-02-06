@@ -7,15 +7,15 @@
 	text-transform: uppercase;
 }
 
-/************** ucg_horizontal_line_component **************/
+/************** ucg_horizontal_line **************/
 
-.ucg_horizontal_line_component .spacer1 {
+.ucg_horizontal_line .spacer1 {
 	border-bottom: 1px solid #cacaca;
 	padding-top: 10px;
 	width: 100%;
 }
 
-.ucg_horizontal_line_component .spacer2 {
+.ucg_horizontal_line .spacer2 {
 	padding-bottom: 10px;
 	width: 100%;
 }
