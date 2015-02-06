@@ -46,7 +46,7 @@
 	margin: 0;
 }
 
-.ucg_image_text_component .container {
+.ucg_image_text_component.panel .container {
 	width: 100%;
 }
 
@@ -77,4 +77,10 @@
 
 .ucg_image_text_component .ucg_text a:hover {
 	color: #00afd0;
+}
+
+@media (min-width: 768px) {
+	 #mainContainer .ucg_image_text_component.panel .container {
+		width: 100%;
+	}
 }
