@@ -21,6 +21,7 @@
     <link type="text/css" rel="stylesheet" href="css/spinner.css"/>
     <link type="text/css" rel="stylesheet" href="css/calendar.css"/>
     <link type="text/css" rel="stylesheet" href="css/calendar-desktop.css"/>
+    <link type="text/css" rel="stylesheet" href="css/videoplayer.css"/>
     <link type="text/css" rel="stylesheet" href="css/social-single-share.css"/>
     <link type="text/css" rel="stylesheet" href="css/social-single-share-desktop.css"/>
     <link type="text/css" rel="stylesheet" href="css/retina.css"/>
@@ -287,7 +288,20 @@
 					</div>
 					<div class="container">
 						<div class="video col-xs-12 col-sm-7 col-md-6 col-lg-5">
-							<iframe width="100%" height="auto" src="" frameborder="0" allowfullscreen></iframe>
+							<!-- Modal -->
+							<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							  <div class="modal-dialog">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							      </div>
+							      <div class="modal-body">
+									<iframe width="480px" height="320px" src="" frameborder="0" allowfullscreen></iframe>
+							      </div>
+							    </div>
+							  </div>
+							</div>
+							<!-- Modal -->
 							<a href="javascript:void(0);" data-video="https://www.youtube.com/embed/j_kOGqFslos?autoplay=1"><img src="img/static/videoplayer_play.png" alt="Play video" title="Play video"></a>
 							<img class="placeholder" src="img/cover_landscape_001.jpg" alt="Image of Turin's Teatro Regio" title="Image of Turin's Teatro Regio">
 						</div>

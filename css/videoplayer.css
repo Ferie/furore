@@ -1,0 +1,14 @@
+.video .modal-dialog {
+	width: 100%;
+}
+.video .modal-header {
+	padding: 20px;
+}
+@media (min-width: 768px) {
+	.video .modal-dialog {
+		width: 960px;
+	}
+	.with-sidebar-opened .video .modal-dialog {
+		width: 100%;
+	}	
+}
