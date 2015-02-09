@@ -77,6 +77,10 @@
 	background-image: url('../img/static/calendar-share-social-googleplus.png');
 	color: #aa1c0d;
 }
+#socialSingleShare ul li a.youtube {
+	background-image: url('../img/static/calendar-share-social-youtube.png');
+	color: #aa1c0d;
+}
 
 #socialSingleShare .closer {
 	position: relative;
