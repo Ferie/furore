@@ -230,7 +230,7 @@
 
 #worldwide .chosen-container.chosen-with-drop .chosen-single div b,
 #worldwide .chosen-container.chosen-with-drop .chosen-default div b {
-	background-image: url('../img/static/select-arrow-up.png');
+	background: url('../img/static/select-arrow-up.png') no-repeat scroll center center;
 }
 
 #worldwide .chosen-container .chosen-drop  {
