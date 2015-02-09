@@ -139,7 +139,7 @@ $(document).ready(function () {
 	toggleCollapseCountries();
 	toggleCompanyInfoEvents();
 	tabsHeader();
-	timer = window.setTimeout(function () {
+	window.setTimeout(function () {
 		sidebarResize();
 	}, 1000);
 
@@ -203,10 +203,10 @@ $(document).ready(function () {
 
 	// skin for the select in Worldwide area
 	$("#worldwide .chosen-select").chosen({
-				allow_single_deselect: true,
-				disable_search: true,
-				width: "100%"
-			}).change(function () {
+		allow_single_deselect: true,
+		disable_search: true,
+		width: "100%"
+	}).change(function () {
 		var $txt = $('#worldwide .chosen-container-single .chosen-single-with-deselect span');
 		if ($txt.text().indexOf("(") > -1) {
 			$txt.text($txt.text().substring(0, $txt.text().indexOf("(")));

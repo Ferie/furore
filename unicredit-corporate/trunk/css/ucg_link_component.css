@@ -4,8 +4,22 @@
 	margin: 0;
 }
 
+.ucg_linklist h5 {
+	border-bottom: 1px solid #c9c9c9;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+}
+
 .ucg_linklist .ucg_link_container {
+	margin: 0;
+	padding: 0;
 	width: 100%;
+}
+
+.ucg_linklist .ucg_link_container li {
+	list-style-type: none;
+	margin-bottom: 10px;
 }
 
 .ucg_linklist .ucg_link_container .ucg_bold {
@@ -22,18 +36,11 @@
 }
 
 .ucg_linklist .ucg_link_container .ucg_download_link {
-	margin-bottom: 10px;
-}
-
-.ucg_linklist .ucg_link_container h5 {
-	border-bottom: 1px solid #c9c9c9;
-	margin-bottom: 10px;
-	padding-bottom: 10px;
-	text-transform: uppercase;
+	
 }
 
 .ucg_linklist .ucg_link_container .ucg_internal_link {
-	margin-bottom: 10px;
+	
 }
 
 .ucg_linklist .ucg_link_container .ucg_internal_link a {
@@ -44,7 +51,6 @@
 
 .ucg_linklist .ucg_link_container .ucg_external_link {
 	background: url("../img/static/generic_external_link_icon.png") no-repeat;
-	margin-bottom: 10px;
 	padding-left: 26px;
 	text-transform: uppercase;
 }
@@ -54,4 +60,5 @@
 }
 
 @media (min-width: 768px) {
+	
 }
