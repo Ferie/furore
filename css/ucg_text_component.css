@@ -1,34 +1,4 @@
 /************** CSS per i titoletti degli esempi - DA LEVARE!!! **************/
-/*componente Title di supporto anche questo da levare*/
-.ucg_title .ucg_title_text_container {
-	float: left;
-}
-
-.ucg_title .ucg_title_image_container {
-	float: right;
-}
-
-.ucg_title .ucg_title_image_container img {
-	float: right;
-	height: 50%;
-	width: 50%;
-}
-
-@media (min-width: 768px) {
-	 #mainContainer .ucg_title.panel .container {
-		width: 100%;
-	}
-
-	.ucg_title .ucg_title_image_container img {
-		float: none;
-		height: auto;
-		width: auto;
-	}
-}
-
-#mainContainer {
-	height: 2000px;
-}
 
 .two-columns-box,
 .three-columns-box,
