@@ -46,4 +46,7 @@
 	.parsys_column {
 		width: 960px;
 	}
+	.with-sidebar-opened > .parsys_column {
+		width: 100%;
+	}
 }
