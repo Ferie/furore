@@ -1,6 +1,7 @@
 /* MOBILE */
 .ucg_swiper {
 	overflow: hidden;
+	height: 320px;
 }
 .ucg_swiper .swiper-container,
 .ucg_swiper .swiper-slide {
@@ -15,14 +16,6 @@
 	width: auto;
 	height: 100%;
 }
-/*
-.ucg_swiper .swiper-slide  img{
-	display: none;
-}
-.ucg_swiper .swiper-slide.swiper-slide-visible.swiper-slide-active img {
-	display: block;
-}
-*/
 .ucg_swiper .ucg_swiper_content {
 	background-color: rgba(0,0,0,0.5);
 	width: 100%;
