@@ -1,14 +1,11 @@
 /************** CSS per i titoletti degli esempi - DA LEVARE!!! **************/
-
-#mainContainer {
-	height: 2000px;
-}
-
 .parsys_column {
 	width: 100%;
 	margin: 0 auto;
 }
-
+#mainContainer .parsys_column .container {
+	width: 100%;
+}
 .two-columns-box,
 .three-columns-box,
 .onetwo-columns-box,

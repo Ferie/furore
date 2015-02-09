@@ -23,9 +23,6 @@
 }
 
 @media (min-width: 768px) {
-	 #mainContainer .ucg_title.panel .container {
-		width: 100%;
-	}
 
 	.ucg_title .ucg_title_image_container img {
 		float: none;
