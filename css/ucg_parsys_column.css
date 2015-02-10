@@ -21,24 +21,16 @@
 }
 
 .parsys_column .two-columns-box-c0,
-.parsys_column .two-columns-box-c1 {
-	float: left;
-	width: 49%;
-}
-
+.parsys_column .two-columns-box-c1,
 .parsys_column .three-columns-box-c0,
 .parsys_column .three-columns-box-c1,
 .parsys_column .three-columns-box-c2,
 .parsys_column .onetwo-columns-box-c0,
-.parsys_column .twoone-columns-box-c1 {
-	float: left;
-	width: 33%;
-}
-
+.parsys_column .twoone-columns-box-c1,
 .parsys_column .onetwo-columns-box-c1,
 .parsys_column .twoone-columns-box-c0 {
 	float: left;
-	width: 66%;
+	width: 100%;
 }
 
 .example {
@@ -52,7 +44,29 @@
 	.parsys_column {
 		width: 960px;
 	}
-	.with-sidebar-opened > .parsys_column {
+	
+	#mainContainer.with-sidebar-opened .parsys_column.three-columns-box,
+	#mainContainer.with-sidebar-opened .parsys_column.two-columns-box,
+	#mainContainer.with-sidebar-opened .parsys_column.onetwo-columns-box,
+	#mainContainer.with-sidebar-opened .parsys_column.twoone-columns-box {
 		width: 100%;
+	}
+	
+	.parsys_column .two-columns-box-c0,
+	.parsys_column .two-columns-box-c1 {
+		width: 49%;
+	}
+	
+	.parsys_column .three-columns-box-c0,
+	.parsys_column .three-columns-box-c1,
+	.parsys_column .three-columns-box-c2,
+	.parsys_column .onetwo-columns-box-c0,
+	.parsys_column .twoone-columns-box-c1 {
+		width: 33%;
+	}
+	
+	.parsys_column .onetwo-columns-box-c1,
+	.parsys_column .twoone-columns-box-c0 {
+		width: 66%;
 	}
 }

@@ -18,8 +18,6 @@
 .ucg_social_twitter .ucg_social_title {
 	background-image: url('../img/static/calendar-share-social-twitter.png');
 	color: #5ea9dd;
-	border-bottom: 1px solid #999;
-	margin-bottom: 8px;
 }
 .ucg_social_youtube .ucg_social_title {
 	background-image: url('../img/static/calendar-share-social-facebook.png');
@@ -36,6 +34,10 @@
 .ucg_social_youtube .ucg_social_title {
 	background-image: url('../img/static/calendar-share-social-youtube.png');
 	color: #aa1c0d;
+}
+.ucg_social .ucg_social_title.no_image {
+	border-bottom: 1px solid #999;
+	margin-bottom: 8px;	
 }
 .ucg_social .ucg_social_image img {
 	width: 100%;
@@ -57,10 +59,12 @@
     font-size: 14px;
     padding: 2px 0;
 }
+/*
 .ucg_social_twitter .ucg_social_text {
 	font-size: 17px;
 	padding: 0;
 }
+*/
 .ucg_social_twitter .ucg_social_text a.shortLink {
 	text-decoration: underline;
 }
@@ -99,15 +103,13 @@
 }
 .ucg_social_footer .ucg_social_others {
     display: inline-block;
-    float: right;
 }
 .ucg_social_footer .ucg_social_others span {
-    color: #999;
     display: inline-block;
     float: left;
     line-height: 30px;
     text-transform: uppercase;
-    margin-right: 66px;
+    margin-right: 20px;
 }
 .ucg_social_footer .ucg_social_others a {
 	width: 25px;
@@ -117,6 +119,9 @@
 	background-color: transparent;
 	background-position: center center;
 	background-attachment: scroll;
+}
+.ucg_social_footer .ucg_social_others a.unicredit {
+	background-image: url('../img/static/calendar-share-social-unicredit-grey.png')
 }
 .ucg_social_footer .ucg_social_others a.facebook {
 	background-image: url('../img/static/calendar-share-social-facebook-grey.png')
@@ -141,5 +146,8 @@
 	.ucg_social .ucg_social_image img {
 		width: auto;
 		height: auto;
+	}
+	#mainContainer.with-sidebar-opened .ucg_social .ucg_social_image img {
+		width: 100%;
 	}
 }
