@@ -1,0 +1,78 @@
+/************** ucg_accordion **************/
+
+.ucg_accordion {
+	position: relative;
+}
+
+.ucg_accordion .panel + .panel {
+	margin: 0;
+}
+
+.ucg_accordion .panel:last-child .collapsing,
+.ucg_accordion .panel:last-child .collapse {
+	border-bottom: 1px solid #c9c9c9;
+}
+
+.ucg_accordion .panel .container {
+	clear: both;
+	padding: 0;
+}
+
+.ucg_accordion .panel .elementTitle {
+	background: url("../img/static/select-arrow-down.png") no-repeat scroll center right;
+	border: 1px solid #c9c9c9;
+	border-bottom: none;
+	cursor: pointer;
+	font-family: "UniCredit-Bold";
+	font-size: 17px;
+	margin: 0;
+	padding: 20px 10px;
+	text-transform: uppercase;
+}
+
+.ucg_accordion .panel:last-child .elementTitle {
+	border-bottom: 1px solid #c9c9c9;
+}
+
+.ucg_accordion .panel .elementsContainer {
+	font-size: 20px;
+	padding-left: 10px;
+}
+
+.ucg_accordion .panel .collapsing,
+.ucg_accordion .panel .collapse {
+	border-left: 1px solid #c9c9c9;
+	border-right: 1px solid #c9c9c9;
+	margin-top: 0;
+}
+
+.ucg_accordion .panel .collapsing .elementsContainer:first-child,
+.ucg_accordion .panel .collapse .elementsContainer:first-child {
+	padding-top: 20px;
+}
+
+.ucg_accordion .panel .collapse .elementsContainer:last-child {
+	padding-bottom: 50px;
+}
+
+.ucg_accordion .panel .elementsContainer .element a {
+	color: #666666;
+	line-height: 1.75;
+}
+
+.ucg_accordion .panel .elementsContainer .mainElement a {
+	color: #00afd0;
+	line-height: 1.75;
+}
+
+@media (min-width: 768px) {
+	.ucg_accordion .panel .elementTitle,
+	.ucg_accordion .panel .collapsing .elementsContainer,
+	.ucg_accordion .panel .collapse .elementsContainer {
+		padding: 20px;
+	}
+
+	.ucg_accordion .panel .collapse .elementsContainer:last-child {
+		padding-bottom: 20px;
+	}
+}
