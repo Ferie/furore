@@ -6,28 +6,33 @@ $(document).ready(function () {
 
 	// functin that puts custom padding on resize for every tabs
 	function tabsHeader() {
-		var partialWidth = 0,
-			tabsNumber = 0,
-			totalPadding = 0,
-			tabPadding = 0;
+		$('.ucg_tab').each(function () {
+			var $thisTab = $(this),
+				$thisTabHeader = $(this).find('.tabs .tab'),
+				partialWidth = 0,
+				tabsNumber = 0,
+				totalPadding = 0,
+				tabPadding = 0;
 
-		$('.tabs .tab').each(function () {
-			var $this = $(this);
-			partialWidth = $this.width() + partialWidth;
-			tabsNumber++;
-		});
+			$thisTabHeader.each(function () {
+				var $this = $(this);
+				partialWidth = $this.width() + partialWidth;
+				tabsNumber++;
+			});
 
-		// border inclusion in partialWidth to adjust the totalPadding
-		// tabsNumber + 1 is the number of the borders (the number 2 is another unit added that works for some even resolutions)
-		partialWidth = partialWidth + tabsNumber + 2;
+			// border inclusion in partialWidth to adjust the totalPadding
+			// tabsNumber + 1 is the number of the borders (the number 2 is another unit added that works for some even resolutions)
+			// the 30 is the total padding of the .ucg_tab .container
+			partialWidth = partialWidth + tabsNumber + 2;
 
-		totalPadding = $('.tabs .container').outerWidth() - partialWidth;
-		tabPadding = Math.abs((totalPadding / tabsNumber) / 2);
+			totalPadding = $thisTab.find('.tabs .container').outerWidth() - partialWidth - 30;
+			tabPadding = Math.abs((totalPadding / tabsNumber) / 2);
 
-		$('.tabs .tab').each(function () {
-			var $this = $(this);
-			$this.css('padding-left', tabPadding);
-			$this.css('padding-right', tabPadding);
+			$thisTabHeader.each(function () {
+				var $this = $(this);
+				$this.css('padding-left', tabPadding);
+				$this.css('padding-right', tabPadding);
+			});
 		});
 	}
 
@@ -58,14 +63,20 @@ $(document).ready(function () {
 
 	// event that puts the active tab and shows the active panel (desktop)
 	$('.tabs .tab').on('click', function () {
-		var $this = $(this);
-		var $thisTabComponent = $this.parents('.ucg_tab');
-		$thisTabComponent.find('.tabs .tab').removeClass('active');
+		var $this = $(this),
+			$thisTab = $this.parents('.ucg_tab'),
+			target = $this.data('tabpanel');
+
+		// update active tabs
+		$thisTab.find('.tabs .tab').removeClass('active');
 		$this.addClass('active');
 
-		var target = $this.data('tabpanel');
-		$thisTabComponent.find('.tabsBody .tabPanel').removeClass('selected');
-		$('#' + target).addClass('selected');
+		// update active chosen-select
+		$thisTab.find('.chosen-select').val(target).trigger('chosen:updated');
+
+		// show the current tab
+		$thisTab.find('.tabsBody .tabPanel').removeClass('selected');
+		$thisTab.find('.tabsBody .' + target).addClass('selected');
 
 		setTimeout(function () {
 			sidebarResize();
@@ -73,28 +84,34 @@ $(document).ready(function () {
 	});
 
 	// skin for the select in Worldwide area
-	$(".chosen-select").chosen({
+	$('.chosen-select').chosen({
 		allow_single_deselect: true,
 		disable_search: true,
-		width: "100%"
+		width: '100%'
 	}).change(function () {
 		var $txt = $('.chosen-container-single .chosen-single-with-deselect span');
-		if ($txt.text().indexOf("(") > -1) {
-			$txt.text($txt.text().substring(0, $txt.text().indexOf("(")));
+		if ($txt.text().indexOf('(') > -1) {
+			$txt.text($txt.text().substring(0, $txt.text().indexOf('(')));
 		}
+
+		// show the active panel (mobile)
+		var $thisTab = $(this).parents('.ucg_tab'),
+			optionSelected = $thisTab.find('.chosen-select option:selected'),
+			target = optionSelected.val(),
+			activeTab = optionSelected.data('value');
+
+		// update active chosen-select
+		$thisTab.find('.tabsBody .tabPanel').removeClass('selected');
+		$thisTab.find('.tabsBody .' + target).addClass('selected');
+
+		// update active tabs
+		$thisTab.find('.tabs .tab').removeClass('active');
+		$thisTab.find('[data-tabpanel="' + activeTab + '"]').addClass('active');
+		sidebarResize();
 	});
 
 	// event that puts a placeholder when the dropdown menu is open (mobile)
 	$('.chosen-container .chosen-single').on('click', function () {
 		$(this).find('span').text($('.dropdown select').data('placeholder'));
-	});
-
-	// ...and event that shows the active panel (mobile)
-	$('.chosen-container .chosen-drop ul').on('click', function () {
-		var target = $('.chosen-select option:selected').val();
-
-		$('.tabsBody .tabPanel').removeClass('selected');
-		$('#' + target).addClass('selected');
-		sidebarResize();
 	});
 });
