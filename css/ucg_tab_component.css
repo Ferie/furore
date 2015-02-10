@@ -1,5 +1,18 @@
 /************** ucg_tab **************/
 
+select {
+	behavior: url(../plugin/js/PIE.htc);
+	background: none;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 17px;
+	line-height: 40px;
+	color: #999;
+	padding: 0 5px;
+	height: 40px;
+	width: 100%;
+}
+
 /************** chosen-container plugin CSS for the dropdown in mobile resolutions **************/
 
 .chosen-container {
