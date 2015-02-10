@@ -18,6 +18,6 @@ $(document).ready(function() {
 	    }	
 	  });
   $('#mainContainer').on("animationSidebarCompleted", function(){
-	  ucgSwiper.resizeFix(true);
+	  ucgAds.resizeFix(true);
   });
 });
