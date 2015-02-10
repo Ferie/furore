@@ -15,6 +15,7 @@
 .ucg_swiper .swiper-slide img {
 	width: auto;
 	height: 100%;
+	margin: 0 -50%;
 }
 .ucg_swiper .ucg_swiper_content {
 	background-color: rgba(0,0,0,0.5);
@@ -118,10 +119,10 @@
 }
 .ucg_swiper .ucg_swiper_text a.video {
 	padding-left: 25px;
-	background: url('../img/static/link_playvideo.png') no-repeat scroll left center transparent;
+	background: url('../img/static/generic_video_link_icon.png') no-repeat scroll left center transparent;
 }
 .ucg_swiper .ucg_swiper_text a.internal {
-	background: url("../img/static/blue_arrow_right.png") no-repeat scroll center right;
+	background: url("../img/static/generic_internal_link_icon.png") no-repeat scroll center right;
 	padding: 0 16px 0 0;
 }
 .ucg_swiper .ucg_swiper_text a.external {

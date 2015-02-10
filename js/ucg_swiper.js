@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  var ucgSwiper = $('.swiper-container').swiper({
+  var ucgSwiper = $('.ucg_swiper .swiper-container').swiper({
 	    mode:'horizontal',
 	    loop: true,
 	    autoplay: 5000,
