@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<meta name="description" content="">
 		<meta name="author" content="">
-		<title>Tabs Component</title>
+		<title>Tab Component</title>
 
 		<link type="text/css" rel="stylesheet" href="plugin/css/bootstrap.css"/>
 		<link type="text/css" rel="stylesheet" href="plugin/css/chosen.min.css">
@@ -18,7 +18,7 @@
 		<!--generic CSS for Parsys Column container -->
 		<link type="text/css" rel="stylesheet" href="css/ucg_parsys_column.css"/>
 		
-		<!--specific CSS for Tabs Component-->
+		<!--specific CSS for Tab Component-->
 		<link type="text/css" rel="stylesheet" href="css/ucg_tab_component.css"/>
 
 		<!--imported CSS component-->
@@ -41,7 +41,7 @@
 		<script type="text/javascript" src="js/jquery.headerUBIS.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 
-		<!--specific JS for Tabs Component-->
+		<!--specific JS for Tab Component-->
 		<script type="text/javascript" src="js/ucg_tab_component.js"></script>
 
 		<!--[if lt IE 9]>
@@ -203,31 +203,32 @@
 		</div>
 
 		<div id="mainContainer">
-			<div class="example">Tabs Component (it becomes a dropdown menù for mobile resolutions)</div>
+			<div class="example">Tab Component</div>
+			<div class="example">Tab Component Full page width<br>(it becomes a dropdown menù for mobile resolutions)</div>
 			<div class="ucg_tab">
 				<div class="panel hidden-xs tabs">
 					<div class="container">
-						<div class="tab active" data-tabpanel="consumerAndSMEBanking">
+						<div class="tab active" data-tabpanel="tabPanelOne">
 							<div class="tabHeader">
 								<a href="javascript:void(0);">Consumer and SME Banking</a>
 							</div>
 						</div>
-						<div class="tab" data-tabpanel="corporateAndInvestmentBanking">
+						<div class="tab" data-tabpanel="tabPanelTwo">
 							<div class="tabHeader">
 								<a href="javascript:void(0);">Corporate & Investment Banking</a>
 							</div>
 						</div>
-						<div class="tab" data-tabpanel="privateBanking">
+						<div class="tab" data-tabpanel="tabPanelThree">
 							<div class="tabHeader">
 								<a href="javascript:void(0);">Private Banking</a>
 							</div>
 						</div>
-						<div class="tab" data-tabpanel="leasing">
+						<div class="tab" data-tabpanel="tabPanelFour">
 							<div class="tabHeader">
 								<a href="javascript:void(0);">Leasing</a>
 							</div>
 						</div>
-						<div class="tab" data-tabpanel="specialCompany">
+						<div class="tab" data-tabpanel="tabPanelFive">
 							<div class="tabHeader">
 								<a href="javascript:void(0);">Special Company</a>
 							</div>
@@ -239,11 +240,11 @@
 					<div class="container">
 						<div class="col-xs-12">
 							<select name="companyCategory" class="chosen-select" data-placeholder="Select business type">
-								<option value="consumerAndSMEBanking">Consumer and SME Banking</option>
-								<option value="corporateAndInvestmentBanking">Corporate & Investment Banking</option>
-								<option value="privateBanking">Private Banking</option>
-								<option value="leasing">Leasing</option>
-								<option value="specialCompany">Special Company</option>
+								<option value="tabPanelOne" data-value="tabPanelOne">Consumer and SME Banking</option>
+								<option value="tabPanelTwo" data-value="tabPanelTwo">Corporate & Investment Banking</option>
+								<option value="tabPanelThree" data-value="tabPanelThree">Private Banking</option>
+								<option value="tabPanelFour" data-value="tabPanelFour">Leasing</option>
+								<option value="tabPanelFive" data-value="tabPanelFive">Special Company</option>
 							</select>
 						</div>
 					</div>
@@ -251,7 +252,7 @@
 
 				<div class="panel tabsBody">
 					<div class="container">
-						<div class="tabPanel selected" id="consumerAndSMEBanking">
+						<div class="tabPanel tabPanelOne selected">
 							<div class="tabSection clearfix">
 								<div class="logo">
 									<img src="img/static/Bank_Austria_logo.png">
@@ -310,25 +311,25 @@
 							</div>
 						</div>
 
-						<div class="tabPanel" id="corporateAndInvestmentBanking">
+						<div class="tabPanel tabPanelTwo">
 							<div class="tabSection clearfix">
 								<div class="bankName">Corporate & Investment Banking</div>
 							</div>
 						</div>
 
-						<div class="tabPanel" id="privateBanking">
+						<div class="tabPanel tabPanelThree">
 							<div class="tabSection clearfix">
 								<div class="bankName">Private Banking</div>
 							</div>
 						</div>
 
-						<div class="tabPanel" id="leasing">
+						<div class="tabPanel tabPanelFour" id="leasing">
 							<div class="tabSection clearfix">
 								<div class="bankName">Leasing</div>
 							</div>
 						</div>
 
-						<div class="tabPanel" id="specialCompany">
+						<div class="tabPanel tabPanelFive">
 							<div class="tabSection clearfix">
 								<div class="bankName">Special Company</div>
 							</div>
@@ -337,18 +338,18 @@
 				</div>
 			</div>
 
-			<div class="example">Tabs Component on CQ5 column (2/3 - 1/3)<br>(it becomes a dropdown menù for mobile resolutions)</div>
+			<div class="example">Tab Component on CQ5 column (2/3 - 1/3)<br>(it becomes a dropdown menù for mobile resolutions)</div>
 			<div class="parsys_column twoone-columns-box clearfix">
 				<div class="parsys_column twoone-columns-box-c0">
 					<div class="ucg_tab">
 						<div class="panel hidden-xs tabs">
 							<div class="container">
-								<div class="tab active" data-tabpanel="latestPressRelease" data-taborder="tabPanelOne">
+								<div class="tab active" data-tabpanel="tabPanelOne">
 									<div class="tabHeader">
 										<a href="javascript:void(0);">Latest Press Release</a>
 									</div>
 								</div>
-								<div class="tab" data-tabpanel="latestNews" data-taborder="tabPanelTwo">
+								<div class="tab" data-tabpanel="tabPanelTwo">
 									<div class="tabHeader">
 										<a href="javascript:void(0);">Latest News</a>
 									</div>
@@ -359,9 +360,9 @@
 						<div class="panel visible-xs dropdown">
 							<div class="container">
 								<div class="col-xs-12">
-									<select name="companyCategory" class="chosen-select" data-placeholder="Select business type">
-										<option value="latestPressRelease">Latest Press Release</option>
-										<option value="latestNews">Latest News</option>
+									<select name="pressAndNews" class="chosen-select" data-placeholder="Select category">
+										<option value="tabPanelOne" data-value="tabPanelOne">Latest Press Release</option>
+										<option value="tabPanelTwo" data-value="tabPanelTwo">Latest News</option>
 									</select>
 								</div>
 							</div>
@@ -369,7 +370,7 @@
 
 						<div class="panel tabsBody">
 							<div class="container">
-								<div class="tabPanel selected tabPanelOne" id="latestPressRelease">
+								<div class="tabPanel tabPanelOne selected">
 									<div class="tabSection clearfix">
 										<div class="panel ucg_video_text">
 											<div class="container">
@@ -390,7 +391,7 @@
 									</div>
 								</div>
 
-								<div class="tabPanel tabPanelTwo" id="latestNews">
+								<div class="tabPanel tabPanelTwo">
 									<div class="tabSection clearfix">
 										<div class="panel ucg_text">
 											<div class="container">
@@ -415,7 +416,7 @@
 														<div class="container">
 															<ul class="ucg_link_container">
 																<li class="ucg_internal_link">
-																	<a href="#" class="ucg_link">See all press releases</a>
+																	<a href="javascript:void(0);" class="ucg_link">See all press releases</a>
 																</li>
 															</ul>
 														</div>
@@ -452,7 +453,7 @@
 									<div class="container">
 										<ul class="ucg_link_container">
 											<li class="ucg_internal_link">
-												<a href="#">Read the latest issue</a>
+												<a href="javascript:void(0);">Read the latest issue</a>
 											</li>
 										</ul>
 									</div>
