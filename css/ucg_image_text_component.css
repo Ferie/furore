@@ -27,19 +27,10 @@
 	margin-top: 0;
 }
 
-.ucg_image_text .ucg_txt ul li {
-	list-style-type: none;
-}
-
-.ucg_image_text .ucg_txt a {
-	background: url('../img/static/blue_arrow_right.png') no-repeat scroll right center;
-	padding-right: 12px;
-	text-transform: uppercase;
-}
-
-.ucg_image_text .ucg_txt a:hover {
-	color: #00afd0;
+.ucg_image_text .ucg_linklist .container {
+	padding: 0;
 }
 
 @media (min-width: 768px) {
+	
 }
