@@ -8,6 +8,8 @@
 	width: 100%;
 }
 
+.ucg_text .ucg_text_container ul,
+.ucg_text .ucg_text_container ol,
 .ucg_text .ucg_text_container p {
 	font-size: 15px;
 	margin-bottom: 0;
@@ -19,11 +21,6 @@
 
 .ucg_text .ucg_text_container p:first-child {
 	margin-top: 0;
-}
-
-.ucg_text .ucg_text_container ul,
-.ucg_text .ucg_text_container ol {
-	margin-bottom: 0;
 }
 
 .ucg_text .ucg_text_container .ucg_date {

@@ -3,10 +3,6 @@ $(document).ready(function () {
 		sidebarResize();
 	});
 
-	$('.collapse').on('hidden.bs.collapse', function () {
-		sidebarResize();
-	});
-
 	function sidebarResize() {
 		headerUBISManager.utils._setHeightContainer();
 		headerUBISManager.utils._setHeightSidebar();

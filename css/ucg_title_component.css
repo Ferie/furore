@@ -16,6 +16,15 @@
 	float: left;
 }
 
+.ucg_title .ucg_title_text_container h1,
+.ucg_title .ucg_title_text_container h2,
+.ucg_title .ucg_title_text_container h3,
+.ucg_title .ucg_title_text_container h4,
+.ucg_title .ucg_title_text_container h5,
+.ucg_title .ucg_title_text_container h6 {
+	margin-top: 0px;
+}
+
 .ucg_title .ucg_title_image_container {
 	float: right;
 }
