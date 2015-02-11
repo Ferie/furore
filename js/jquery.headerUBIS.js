@@ -142,12 +142,19 @@
 		_selectByCookies: function(){
 			if ($.cookie(st.cookieName)!=null){
 				var selection = JSON.parse($.cookie(st.cookieName));
-				if (selection.section!="menu") {
+				
+				if (selection.section!=null & selection.section!="menu") {
 					st.$sidebar.find(".sidebar-element."+selection.section+" .sidebar-collapser").trigger("click");
 				}
-				st.$header.find('.'+selection.section+' ul li a').removeClass("active");
-				st.$header.find('.'+selection.section+' ul li a.'+selection.page).addClass("active");
-					
+				if (selection.section!=null){ 
+					if (selection.page.indexOf("language")!=0) {
+						st.$header.find('.'+selection.section+' ul li a').removeClass("active");
+						st.$header.find('.'+selection.section+' ul li a.'+selection.page).addClass("active");
+					} else {
+						var language = selection.page=="language.ita"?"eng":"ita";
+						st.$header.find('.'+selection.section+' ul li a.'+selection.page).removeAttr("class").addClass("language").addClass(language).text(language).data("link", "language."+language);
+					}
+				}
 				/*
 				st.$sidebar.find(".sidebar-element .collapse a").removeClass("active");
 				$(st.$sidebar.find(".sidebar-element."+selection.section+" .collapse a."+selection.page).addClass("active");
@@ -160,11 +167,18 @@
 		_selectHeaderByCookies: function(){
 			if ($.cookie(st.cookieName)!=null){
 				var selection = JSON.parse($.cookie(st.cookieName));
-				if (selection.section!="menu") {
+				if (selection.section!=null & selection.section!="menu") {
 					st.$sidebar.find(".sidebar-element."+selection.section).addClass("active");
 				}
-				st.$header.find('.'+selection.section+' ul li a').removeClass("active");
-				st.$header.find('.'+selection.section+' ul li a.'+selection.page).addClass("active");
+				if (selection.section!=null){ 
+					if (selection.page.indexOf("language")!=0) {
+						st.$header.find('.'+selection.section+' ul li a').removeClass("active");
+						st.$header.find('.'+selection.section+' ul li a.'+selection.page).addClass("active");
+					} else {
+						var language = selection.page=="language.ita"?"eng":"ita";
+						st.$header.find('.'+selection.section+' ul li a.'+selection.page).removeAttr("class").addClass("language").addClass(language).text(language).data("link", "language."+language);
+					}
+				}
 			}
 		},
 		_toggleSidebar: function(action){
@@ -240,7 +254,12 @@
 		},
 		_setHeightSidebar: function(){
 			var containerContent =  Math.max(utils._getContentHeight(st.$container), $(window).outerHeight(true)-st.$header.outerHeight(true))*1.11;
-			st.$sidebar.css("height", containerContent+"px");	
+			st.$sidebar.css("height", containerContent+"px");
+			var sidebarMenuHeight = containerContent;
+			st.$sidebar.find(".sidebar-element").each(function(){
+				sidebarMenuHeight += $(this) .outerHeight(true)
+			});
+			st.$sidebar.find(".sidebar-menu").css("height", sidebarMenuHeight+"px");
 		},
 		_setWidthSidebar: function(){
 			st.$sidebar.css({width: utils._getSidebarWidth()+"px"});
@@ -252,7 +271,7 @@
 			} else {
 				width = $(window).outerWidth(true)-st.$header.find('.sidebar-switch').outerWidth(true)-st.$header.find('.logo').outerWidth(true)-st.$header.find('.online-banking').outerWidth(true);
 			}
-			st.$header.find('.menu:not(.sidebar-menu)').css({width: width+"px"});
+			st.$header.find('.header-menu').css({width: width+"px"});
 		},
 		_setWidthLogoHeader: function(){
 			var width;
