@@ -4,16 +4,26 @@ $(document).ready(function () {
 		headerUBISManager.utils._setHeightSidebar();
 	}
 
-	$('.collapse').on('shown.bs.collapse', function () {
-		sidebarResize();
+	$('.ucg_accordion .elementTitle').on('click', function () {
+		var $this = $(this),
+			$thisAccordion = $this.parents('.ucg_accordion');
+
+		// bootstrap accordion
+		$thisAccordion.find('.collapse').on('shown.bs.collapse', function () {
+			sidebarResize();
+		});
+
+		// arrow behaviour
+		if ($this.hasClass('open')) {
+			$this.removeClass('open');
+		} else {
+			$('.elementTitle').removeClass('open');
+			$this.addClass('open');
+		}
 	});
 
-	$('.collapse').on('hidden.bs.collapse', function () {
-		sidebarResize();
-	});
-
-	// scroll on accordion tab tapped (mobile)
-	$('.worldwideCountries .elementTitle').on('touchstart', function () {
+	// scroll on accordion tab tapped
+	$('.collapsed .elementTitle').on('touchstart', function () {
 		var $this = $(this);
 
 		setTimeout(function () {

@@ -19,9 +19,10 @@
 }
 
 .ucg_accordion .panel .elementTitle {
-	background: url("../img/static/select-arrow-down.png") no-repeat scroll center right;
+	/*background: url("../img/static/select-arrow-down.png") no-repeat scroll center right;*/
+	position: relative;
 	border: 1px solid #c9c9c9;
-	border-bottom: none;
+	/*border-bottom: none;*/
 	cursor: pointer;
 	font-family: "UniCredit-Bold";
 	font-size: 17px;
@@ -30,8 +31,22 @@
 	text-transform: uppercase;
 }
 
-.ucg_accordion .panel:last-child .elementTitle {
+/*.ucg_accordion .panel:last-child .elementTitle {
 	border-bottom: 1px solid #c9c9c9;
+}*/
+
+.ucg_accordion .panel .elementTitle .arrow,
+.ucg_accordion .panel .elementTitle.open .arrow {
+	background: url("../img/static/select-arrow-down.png") no-repeat;
+	position: absolute;
+	top: 26px;
+	right: 20px;
+	height: 13px;
+	width: 26px;
+}
+
+.ucg_accordion .panel .elementTitle.open .arrow {
+	background: url("../img/static/select-arrow-up.png") no-repeat;
 }
 
 .ucg_accordion .panel .elementsContainer {
@@ -66,6 +81,10 @@
 }
 
 @media (min-width: 768px) {
+	.ucg_accordion .panel {
+		margin-top: 6px;
+	}
+
 	.ucg_accordion .panel .elementTitle,
 	.ucg_accordion .panel .collapsing .elementsContainer,
 	.ucg_accordion .panel .collapse .elementsContainer {
