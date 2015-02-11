@@ -1,5 +1,9 @@
 /************** ucg_title **************/
 
+.ucg_seo_title {
+	text-align: center;
+}
+
 .ucg_title.panel {
 	margin: 0 0 40px;
 }
