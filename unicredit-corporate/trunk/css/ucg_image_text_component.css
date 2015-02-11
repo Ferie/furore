@@ -5,6 +5,7 @@
 }
 
 .ucg_image_text.panel .container {
+	margin-top: 3px;
 	width: 100%;
 }
 
@@ -20,7 +21,7 @@
 }
 
 .ucg_image_text .ucg_txt {
-	
+	font-size: 14px;
 }
 
 .ucg_image_text .ucg_txt h3 {
