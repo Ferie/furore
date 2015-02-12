@@ -6,31 +6,28 @@ $(document).ready(function () {
 
 	$('.ucg_accordion .elementTitle').on('click', function () {
 		var $this = $(this),
-			$thisAccordion = $this.parents('.ucg_accordion');
+			$thisAccordion = $this.parents('.ucg_accordion'),
+			$thisCollapsed = $this.parents('.collapsed');
 
-		// bootstrap accordion
-		$thisAccordion.find('.collapse').on('shown.bs.collapse', function () {
-			sidebarResize();
-		});
-
-		// arrow behaviour
-		if ($this.hasClass('open')) {
-			$this.removeClass('open');
+		// accordion behaviour
+		if ($thisCollapsed.hasClass('open')) {
+			$thisAccordion.find('.collapse').slideUp(function () {
+				sidebarResize();
+				$thisCollapsed.removeClass('open');
+			});
 		} else {
-			$('.elementTitle').removeClass('open');
-			$this.addClass('open');
+			$thisAccordion.find('.collapse').slideUp();
+			$thisAccordion.find('.collapsed').removeClass('open');
+			$thisCollapsed.addClass('open');
+			$thisCollapsed.find('.collapse').slideDown(function () {
+				setTimeout(function () {
+					$('html, body').animate({
+						scrollTop: $this.offset().top
+					}, 800);
+				}, 800);
+				sidebarResize();
+			});
 		}
-	});
-
-	// scroll on accordion tab tapped
-	$('.collapsed .elementTitle').on('touchstart', function () {
-		var $this = $(this);
-
-		setTimeout(function () {
-			$('html, body').animate({
-				scrollTop: $this.offset().top - 60
-			}, 800);
-		}, 600);
 	});
 
 	// functions on load
