@@ -18,6 +18,7 @@
 		<link type="text/css" rel="stylesheet" href="css/ucg_parsys_column.css"/>
 
 		<!--specific CSS for Video-Text Component-->
+    	<link type="text/css" rel="stylesheet" href="css/videoplayer.css"/>
 		<link type="text/css" rel="stylesheet" href="css/ucg_video_text_component.css"/>
 
 		<!--imported CSS component-->
@@ -36,6 +37,9 @@
 		<script type="text/javascript" src="js/utility.js"></script>
 		<script type="text/javascript" src="js/jquery.headerUBIS.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
+		
+		<!--specific CSS for Video-Text Component-->
+		<script type="text/javascript" src="js/videoplayer.js"></script>
 
 		<!--[if lt IE 9]>
 			<script type="text/javascript" src="plugin/js/html5shiv.js"></script>
@@ -172,7 +176,7 @@
 			</div>
 			<div class="sidebar-menu menu sidebar-footer" style="display: none;">
 				<ul>
-					<li><a class="alerts" href="javascript:void(0);" data-section="menu" data-link="alerts">Contact us</a></li>
+					<li><a class="alerts" href="javascript:void(0);" data-section="menu" data-link="alerts">Alerts</a></li>
 					<li><a class="archive" href="archives.html" data-section="menu" data-link="archive">General archive</a></li>
 				</ul>	
 				<ul class="visible-xs">
@@ -189,6 +193,20 @@
 	</div>
 
 		<div id="mainContainer">
+		<!-- Modal -->
+		<div class="ucg_videoplayer modal fade" tabindex="-1" role="dialog" aria-labelledby="ucg_videoplayer" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		      </div>
+		      <div class="modal-body">
+				<iframe width="480px" height="320px" src="" frameborder="0" allowfullscreen></iframe>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- Modal -->
 			<div class="example">Video-Text component</div>
 			<div class="example">CQ5 2 columns (1/2 - 1/2)</div>
 			<div class="parsys_column two-columns-box clearfix">
@@ -196,11 +214,8 @@
 					<div class="panel ucg_video_text">
 						<div class="container">
 							<div class="ucg_video">
-								<video controls poster="img/professional_1.png">
-									<source src="#" type="video/mp4">
-									<source src="#" type="video/ogg">
-									Your browser does not support the video tag.
-								</video>
+								<a class="ucg_videoplayer_starter" href="javascript:void(0);" data-video="https://www.youtube.com/embed/j_kOGqFslos?autoplay=1"></a>
+								<img class="placeholder" src="img/professional_2.png" alt="Professional Career" title="Professional Career">
 							</div>
 							<div class="ucg_txt">
 								<h3>INTERVIEW</h3>
@@ -213,11 +228,8 @@
 					<div class="panel ucg_video_text">
 						<div class="container">
 							<div class="ucg_video">
-								<video controls poster="img/professional_2.png">
-									<source src="#" type="video/mp4">
-									<source src="#" type="video/ogg">
-									Your browser does not support the video tag.
-								</video>
+								<a class="ucg_videoplayer_starter" href="javascript:void(0);" data-video="https://www.youtube.com/embed/j_kOGqFslos?autoplay=1"></a>
+								<img class="placeholder" src="img/student_1.png" alt="Professional Career" title="Professional Career">
 							</div>
 							<div class="ucg_txt">
 								<h3>INTERVIEW</h3>
@@ -269,11 +281,8 @@
 					<div class="panel ucg_video_text">
 						<div class="container">
 							<div class="ucg_video">
-								<video controls poster="img/student_1.png">
-									<source src="#" type="video/mp4">
-									<source src="#" type="video/ogg">
-									Your browser does not support the video tag.
-								</video>
+								<a class="ucg_videoplayer_starter" href="javascript:void(0);" data-video="https://www.youtube.com/embed/j_kOGqFslos?autoplay=1"></a>
+								<img class="placeholder" src="img/student_1.png" alt="Professional Career" title="Professional Career">
 							</div>
 							<div class="ucg_txt">
 								<h3>INTERVIEW</h3>
@@ -286,11 +295,8 @@
 					<div class="panel ucg_video_text">
 						<div class="container">
 							<div class="ucg_video">
-								<video controls poster="img/student_2.png">
-									<source src="#" type="video/mp4">
-									<source src="#" type="video/ogg">
-									Your browser does not support the video tag.
-								</video>
+								<a class="ucg_videoplayer_starter" href="javascript:void(0);" data-video="https://www.youtube.com/embed/j_kOGqFslos?autoplay=1"></a>
+								<img class="placeholder" src="img/student_1.png" alt="Professional Career" title="Professional Career">
 							</div>
 							<div class="ucg_txt">
 								<h3>INTERVIEW</h3>
