@@ -1,7 +1,7 @@
 /************** ucg_tab **************/
 
 select {
-	behavior: url(../plugin/js/PIE.htc);
+	behavior: url('../plugin/js/PIE.htc');
 	background: none;
 	border: 1px solid #ccc;
 	border-radius: 5px;

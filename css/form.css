@@ -36,7 +36,7 @@ input {
 }
 
 input.keywords {
-	behavior: url(../plugin/js/PIE.htc);
+	behavior: url('../plugin/js/PIE.htc');
 	background: url('../img/static/keywords-search.png') no-repeat scroll 8px center #fff;
 	border-radius: 5px;
 	font-size: 17px;
@@ -60,7 +60,7 @@ input.keywords.selected {
 /* SELECT */
 
 select {
-	behavior: url(../plugin/js/PIE.htc);
+	behavior: url('../plugin/js/PIE.htc');
 	background: none;
 	border: 1px solid #ccc;
 	border-radius: 5px;	
@@ -113,7 +113,7 @@ select option:active {
 /************** DATE RANGE PICKER **************/
 
 .input-daterange {
-	behavior: url(../plugin/js/PIE.htc);
+	behavior: url('../plugin/js/PIE.htc');
 	background: none;
 	border: none;
 	border-radius: 0;
@@ -121,7 +121,7 @@ select option:active {
 }
 
 .input-daterange > div {
-	behavior: url(../plugin/js/PIE.htc);
+	behavior: url('../plugin/js/PIE.htc');
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	font-size: 17px;
@@ -152,7 +152,7 @@ select option:active {
 }
 
 .daterangepicker {
-	behavior: url(../plugin/js/PIE.htc);
+	behavior: url('../plugin/js/PIE.htc');
 	background: transparent;
 	font-family: 'unicredit-regular';
 	border: none;
@@ -168,7 +168,7 @@ select option:active {
 }
 
 .daterangepicker .calendar-date {
-	behavior: url(../plugin/js/PIE.htc);
+	behavior: url('../plugin/js/PIE.htc');
 	background: transparent;
 	border: none;
 	border-radius: 0;
@@ -176,7 +176,7 @@ select option:active {
 }
 
 .daterangepicker .calendar table {
-	behavior: url(../plugin/js/PIE.htc);
+	behavior: url('../plugin/js/PIE.htc');
 	background-color: #fff;
 	border: 1px solid #ccc;
 	border-radius: 0 0 5px 5px;
@@ -185,13 +185,13 @@ select option:active {
 
 .daterangepicker .calendar table th,
 .daterangepicker .calendar table th {
-	behavior: url(../plugin/js/PIE.htc);
+	behavior: url('../plugin/js/PIE.htc');
 	border-radius: 0px;
 }
 
 .daterangepicker .calendar table thead tr:last-child th,
 .daterangepicker .calendar.right table tfoot tr th{
-	behavior: url(../plugin/js/PIE.htc);
+	behavior: url('../plugin/js/PIE.htc');
 	border-collapse: collapse;
 	border-radius: 0;
 }
@@ -287,7 +287,7 @@ select option:active {
 .daterangepicker .month.available:hover,
 .daterangepicker .month.available.active:hover,
 .daterangepicker .month.available.in-range:hover {
-	behavior: url(../plugin/js/PIE.htc);
+	behavior: url('../plugin/js/PIE.htc');
 	background-color: #ccc;
 	border-radius: 5px;
 }
@@ -301,7 +301,7 @@ select option:active {
 .daterangepicker .month.active span,
 .daterangepicker .month.myactive span,
 .daterangepicker .month.myactive span {
-	behavior: url(../plugin/js/PIE.htc);
+	behavior: url('../plugin/js/PIE.htc');
 	background-color: #00afd0;
 	border-color: #00afd0;
 	border-radius: 12.5px;
@@ -314,7 +314,7 @@ select option:active {
 }
 
 .daterangepicker .available.month.in-range.my-start-date span {
-	behavior: url(../plugin/js/PIE.htc);
+	behavior: url('../plugin/js/PIE.htc');
 	border-radius: 12.5px 0 0 12.5px;
 }
 
@@ -323,7 +323,7 @@ select option:active {
 }
 
 .daterangepicker .available.month.my-end-date span {
-	behavior: url(../plugin/js/PIE.htc);
+	behavior: url('../plugin/js/PIE.htc');
 	border-radius: 0 12.5px 12.5px 0;
 	width: 100%;
 }

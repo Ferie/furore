@@ -58,7 +58,7 @@
 }
 
 #archivesTools select {
-	behavior: url(../plugin/js/PIE.htc);
+	behavior: url('../plugin/js/PIE.htc');
 	background: none;
 	font-size: 17px;
 	line-height: 40px;
@@ -220,7 +220,7 @@
 }
 
 #archivesPanelResults .event .header .date .days li:last-child {
-	behavior: url(../plugin/js/PIE.htc);
+	behavior: url('../plugin/js/PIE.htc');
 	border-right: 1px solid #c9c9c9;	
 }
 
@@ -258,7 +258,7 @@
 }
 
 #archivesPanelResults .event .header .categories label {
-	behavior: url(../plugin/js/PIE.htc);
+	behavior: url('../plugin/js/PIE.htc');
 	padding: 2px 10px;
 	border-radius: 6px;
 	border: 1px solid #000;
@@ -381,7 +381,7 @@
 }
 
 #loadMore .btn {
-	behavior: url(../plugin/js/PIE.htc);
+	behavior: url('../plugin/js/PIE.htc');
 	font-family: 'unicredit-medium';
 	text-transform: uppercase;
 	font-weight: normal;
