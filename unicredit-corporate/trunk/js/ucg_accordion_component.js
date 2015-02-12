@@ -23,8 +23,8 @@ $(document).ready(function () {
 				setTimeout(function () {
 					$('html, body').animate({
 						scrollTop: $this.offset().top
-					}, 800);
-				}, 800);
+					}, 400);
+				}, 400);
 				sidebarResize();
 			});
 		}
