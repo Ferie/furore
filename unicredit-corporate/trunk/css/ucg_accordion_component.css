@@ -66,6 +66,7 @@
 	padding-top: 20px;
 }
 
+.ucg_accordion .panel .collapsing .elementsContainer:last-child,
 .ucg_accordion .panel .collapse .elementsContainer:last-child {
 	padding-bottom: 50px;
 }
@@ -91,6 +92,7 @@
 		padding: 20px;
 	}
 
+	.ucg_accordion .panel .collapsing .elementsContainer:last-child,
 	.ucg_accordion .panel .collapse .elementsContainer:last-child {
 		padding-bottom: 20px;
 	}
