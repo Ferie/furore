@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 }
 .panel {
-	behavior: url(../plugin/js/PIE.htc);
+	behavior: url('../plugin/js/PIE.htc');
 	border: none;
 	border-radius: 0;
 	box-shadow: none;
