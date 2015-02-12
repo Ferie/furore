@@ -9,6 +9,7 @@
 #mainContainer .panel.grey div{
 	background-color: transparent;
 }
+#mainContainer .parsys_column .panel .container,
 #mainContainer .parsys_column .container {
 	width: 100%;
 }
