@@ -1,14 +1,40 @@
-.video .modal-dialog {
-	width: 100%;
+a.ucg_videoplayer_starter {
+	display: inline-block;
+    float: left;
+    height: 135px;
+    position: absolute;
+    text-align: center;
+    width: 263px;
+    background: url('../img/static/videoplayer_play.png') no-repeat scroll center center transparent;
 }
-.video .modal-header {
+a.ucg_videoplayer_starter:hover {
+	background-image: url('../img/static/videoplayer_play_hover.png');
+}
+.ucg_videoplayer {
+	padding: 0;
+}
+.ucg_videoplayer .modal-dialog {
+	width: 90%;
+	margin: 0 auto;
+}
+.ucg_videoplayer .modal-content {border-radius: 0;}
+.ucg_videoplayer .modal-header {
 	padding: 20px;
+	border: none;
+}
+.ucg_videoplayer .modal-body {
+	text-align: center;
+}
+.ucg_videoplayer .modal-body iframe {
+    width: 100%;
 }
 @media (min-width: 768px) {
-	.video .modal-dialog {
+	.ucg_videoplayer .modal-dialog {
 		width: 960px;
+		margin: 20px auto;
 	}
-	.with-sidebar-opened .video .modal-dialog {
-		width: 100%;
+	.with-sidebar-opened .ucg_videoplayer .modal-dialog {
+		width: 90%;
+		margin: 10px auto;
 	}	
 }
