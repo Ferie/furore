@@ -38,10 +38,6 @@
 	text-align: right;
 }
 
-.ucg_image .ucg_text_on_image_container a:hover {
-	color: #00afd0;
-}
-
 .ucg_image .ucg_text_on_image_container .ucg_text_on_image {
 	font-size: 25px;
 	font-weight: bold;
