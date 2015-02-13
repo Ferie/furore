@@ -279,13 +279,16 @@
 			st.$footer.css({width: widthF+"px"});	
 		},
 		_setHeightContainers: function(){
-			var containerContent =  Math.max(utils._getContentHeight(st.$sidebar), utils._getContentHeight(st.$container), $(window).outerHeight(true)-st.$header.outerHeight(true));
+			st.$sidebar.find(".sidebar-container").css("height", "auto");
+			var containerContent =  Math.max(utils._getContentHeight(st.$sidebar), utils._getContentHeight(st.$container), $(window).outerHeight(true)-st.$header.outerHeight(true))*1.05;
 			st.$container.css("height", containerContent+"px");
 			st.$sidebar.css("height", containerContent+"px");
 			var sidebarMenuHeight = containerContent;
 			st.$sidebar.find(".sidebar-element").each(function(){
 				sidebarMenuHeight -= $(this).outerHeight(true);
+				containerContent += $(this).outerHeight(true);
 			});
+			st.$sidebar.find(".sidebar-container").css("height", containerContent+"px");
 			st.$sidebar.find(".sidebar-menu").css("height", sidebarMenuHeight+"px");
 		},
 		_setWidthSidebar: function(){
