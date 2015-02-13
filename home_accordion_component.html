@@ -26,6 +26,7 @@
 		<link type="text/css" rel="stylesheet" href="css/ucg_text_component.css"/>
 		<link type="text/css" rel="stylesheet" href="css/ucg_link_component.css"/>
 		<link type="text/css" rel="stylesheet" href="css/ucg_image_text_component.css"/>
+		<link type="text/css" rel="stylesheet" href="css/videoplayer.css"/>
 		<link type="text/css" rel="stylesheet" href="css/ucg_video_text_component.css"/>
 
 		<!--[if lt IE 9]>
@@ -43,6 +44,9 @@
 
 		<!--specific JS for Accordion Component-->
 		<script type="text/javascript" src="js/ucg_accordion_component.js"></script>
+
+		<!--imported JS for Accordion Component-->
+		<script type="text/javascript" src="js/videoplayer.js"></script>
 
 		<!--[if lt IE 9]>
 			<script type="text/javascript" src="plugin/js/html5shiv.js"></script>
@@ -196,16 +200,31 @@
 		</div>
 
 		<div id="mainContainer">
+			<!-- Modal -->
+			<div class="ucg_videoplayer modal fade" tabindex="-1" role="dialog" aria-labelledby="ucg_videoplayer" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<div class="modal-body">
+							<iframe width="480" height="320" src="" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Modal -->
+		
 			<div class="example">Accordion Component</div>
 			<div class="example">Accordion Component Full page width</div>
-			<div class="ucg_accordion panel-group">
-				<div class="panel collapsed accordionPanelOne">
-					<div class="container">
+			<div class="ucg_accordion panel">
+				<div class="container">
+					<div class="collapsed accordionPanel accordionPanelOne">
 						<div class="elementTitle">
 							Europe
 							<span class="arrow"></span>
 						</div>
-						<div class="collapse">
+						<div class="collapse clearfix">
 							<div class="elementsContainer col-sm-4">
 								<div class="mainElement"><a href="javascript:void(0);">Italy</a></div>
 								<div class="element"><a href="javascript:void(0);">Bosnia & Herzegovina</a></div>
@@ -243,15 +262,13 @@
 							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="panel collapsed accordionPanelTwo">
-					<div class="container">
+					<div class="collapsed accordionPanel accordionPanelTwo">
 						<div class="elementTitle">
 							Asia and Oceania
 							<span class="arrow"></span>
 						</div>
-						<div class="collapse">
+						<div class="collapse clearfix">
 							<div class="elementsContainer col-sm-4">
 								<div class="element"><a href="javascript:void(0);">Australia</a></div>
 								<div class="element"><a href="javascript:void(0);">Hong Kong</a></div>
@@ -272,15 +289,13 @@
 							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="panel collapsed accordionPanelThree">
-					<div class="container">
+					<div class="collapsed accordionPanel accordionPanelThree">
 						<div class="elementTitle">
 							Middle-East and Africa
 							<span class="arrow"></span>
 						</div>
-						<div class="collapse">
+						<div class="collapse clearfix">
 							<div class="elementsContainer col-sm-4">
 								<div class="element"><a href="javascript:void(0);">Libya</a></div>
 							</div>
@@ -292,15 +307,13 @@
 							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="panel collapsed accordionPanelFour">
-					<div class="container">
+					<div class="collapsed accordionPanel accordionPanelFour">
 						<div class="elementTitle">
 							Americas
 							<span class="arrow"></span>
 						</div>
-						<div class="collapse">
+						<div class="collapse clearfix">
 							<div class="elementsContainer col-sm-4">
 								<div class="element"><a href="javascript:void(0);">Argentina</a></div>
 							</div>
@@ -318,14 +331,14 @@
 			<div class="example">Accordion Component on CQ5 column (2/3 - 1/3)</div>
 			<div class="parsys_column twoone-columns-box clearfix">
 				<div class="parsys_column twoone-columns-box-c0">
-					<div class="ucg_accordion panel-group">
-						<div class="panel collapsed .accordionPanelOne">
-							<div class="container">
+					<div class="ucg_accordion panel">
+						<div class="container">
+							<div class="collapsed accordionPanel accordionPanelOne">
 								<div class="elementTitle">
 									Company Info
 									<span class="arrow"></span>
 								</div>
-								<div class="collapse">
+								<div class="collapse clearfix">
 									<div class="elementsContainer col-sm-12">
 										<div class="panel ucg_text">
 											<div class="container">
@@ -369,15 +382,13 @@
 									</div>
 								</div>
 							</div>
-						</div>
 
-						<div class="panel collapsed .accordionPanelTwo">
-							<div class="container">
+							<div class="collapsed accordionPanel accordionPanelTwo">
 								<div class="elementTitle">
 									Press release download links
 									<span class="arrow"></span>
 								</div>
-								<div class="collapse">
+								<div class="collapse clearfix">
 									<div class="elementsContainer col-sm-12">
 										<div class="panel ucg_linklist">
 											<div class="container">
@@ -410,44 +421,45 @@
 									</div>
 								</div>
 							</div>
-						</div>
 
-						<div class="panel collapsed .accordionPanelThree">
-							<div class="container">
+							<div class="collapsed accordionPanel accordionPanelThree">
 								<div class="elementTitle">
 									Latest Press Release
 									<span class="arrow"></span>
 								</div>
-								<div class="collapse">
+								<div class="collapse clearfix">
 									<div class="elementsContainer col-sm-12">
 										<div class="panel ucg_video_text">
 											<div class="container">
 												<div class="ucg_video">
-													<video controls poster="img/press_and_news.png">
-														<source src="#" type="video/mp4">
-														<source src="#" type="video/ogg">
-														Your browser does not support the video tag.
-													</video>
+													<a class="ucg_videoplayer_starter" href="javascript:void(0);" data-video="https://www.youtube.com/embed/j_kOGqFslos?autoplay=1"></a>
+													<img class="placeholder" src="img/press_and_news.png" alt="Press and news" title="Press and news">
 												</div>
 												<div class="ucg_txt">
 													<h3>Celebrating Christmas with UniCredit's Light-Covered Art in Milan</h3>
 													<p>UniCredit will help celebrate Christmas at Milan's Gae Aulenti Square from December 6 to January 6 by erecting a Christmas tree sculpture that spells "Best Wishes" in all of our Group's languages and by lighting the spire of UniCredit Tower ...</p>
-													<a href="javascript:void(0);">Read more</a>
+													<div class="panel ucg_linklist">
+														<div class="container">
+															<ul class="ucg_link_container">
+																<li class="ucg_link">
+																	<a href="javascript:void(0);">Read more</a>
+																</li>
+															</ul>
+														</div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
 
-						<div class="panel collapsed .accordionPanelFour">
-							<div class="container">
+							<div class="collapsed accordionPanel accordionPanelFour">
 								<div class="elementTitle">
 									Contacts
 									<span class="arrow"></span>
 								</div>
-								<div class="collapse">
+								<div class="collapse clearfix">
 									<div class="elementsContainer col-sm-8">
 										<div class="panel ucg_image_text">
 											<div class="container">

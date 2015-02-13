@@ -9,33 +9,31 @@
 }
 
 .ucg_accordion .panel .container {
-	border-left: 1px solid #c9c9c9;
-	border-right: 1px solid #c9c9c9;
-	clear: both;
 	padding: 0;
 }
 
-.ucg_accordion .panel:last-child .container {
+/* .ucg_accordion .panel:last-child { */
+/* 	border-bottom: 1px solid #c9c9c9; */
+/* } */
+
+/* .ucg_accordion .panel .container .panel .container { */
+/* 	border: none; */
+/* } */
+
+.ucg_accordion .accordionPanel {
+	border: 1px solid #c9c9c9;
+	border-bottom: none;
+	clear: both;
+}
+
+.ucg_accordion .accordionPanel:last-child {
 	border-bottom: 1px solid #c9c9c9;
 }
 
-.ucg_accordion .panel .container .panel .container {
-	border: none;
-}
-
-.ucg_accordion .panel .collapse {
-	border-top: 1px solid #c9c9c9;
-	visibility: visible;
-}
-
-.ucg_accordion .panel:last-child .collapse {
-	border-bottom: none;
-}
-
-.ucg_accordion .panel .elementTitle {
+.ucg_accordion .accordionPanel .elementTitle {
 	/*background: url("../img/static/select-arrow-down.png") no-repeat scroll center right;*/
 	position: relative;
-	border-top: 1px solid #c9c9c9;
+	/*border-top: 1px solid #c9c9c9;*/
 	cursor: pointer;
 	font-family: "UniCredit-Bold";
 	font-size: 17px;
@@ -44,8 +42,8 @@
 	text-transform: uppercase;
 }
 
-.ucg_accordion .panel .elementTitle .arrow,
-.ucg_accordion .panel.open .elementTitle .arrow {
+.ucg_accordion .accordionPanel .elementTitle .arrow,
+.ucg_accordion .accordionPanel.open .elementTitle .arrow {
 	background: url("../img/static/select-arrow-down.png") no-repeat;
 	position: absolute;
 	top: 26px;
@@ -54,36 +52,43 @@
 	width: 26px;
 }
 
-.ucg_accordion .panel.open .elementTitle .arrow {
+.ucg_accordion .accordionPanel.open .elementTitle .arrow {
 	background: url("../img/static/select-arrow-up.png") no-repeat;
 }
 
-.ucg_accordion .panel .elementsContainer {
+.ucg_accordion .accordionPanel .elementsContainer {
 	font-size: 20px;
 	padding-left: 10px;
 }
 
-.ucg_accordion .panel .collapsing,
-.ucg_accordion .panel .collapse {
+.ucg_accordion .accordionPanel .collapsing,
+.ucg_accordion .accordionPanel .collapse {
+ 	border-top: 1px solid #c9c9c9; 
+/*  	border-bottom: none;  */
 	margin-top: 0;
+	visibility: visible;
 }
 
-.ucg_accordion .panel .collapsing .elementsContainer:first-child,
-.ucg_accordion .panel .collapse .elementsContainer:first-child {
+/*.ucg_accordion .accordionPanel:last-child .collapse {
+	border-bottom: none;
+}*/
+
+.ucg_accordion .accordionPanel .collapsing .elementsContainer:first-child,
+.ucg_accordion .accordionPanel .collapse .elementsContainer:first-child {
 	padding-top: 20px;
 }
 
-.ucg_accordion .panel .collapsing .elementsContainer:last-child,
-.ucg_accordion .panel .collapse .elementsContainer:last-child {
+.ucg_accordion .accordionPanel .collapsing .elementsContainer:last-child,
+.ucg_accordion .accordionPanel .collapse .elementsContainer:last-child {
 	padding-bottom: 50px;
 }
 
-.ucg_accordion .panel .elementsContainer .element a {
+.ucg_accordion .accordionPanel .elementsContainer .element a {
 	color: #666666;
 	line-height: 1.75;
 }
 
-.ucg_accordion .panel .elementsContainer .mainElement a {
+.ucg_accordion .accordionPanel .elementsContainer .mainElement a {
 	color: #00afd0;
 	line-height: 1.75;
 }
@@ -93,14 +98,14 @@
 		margin-top: 6px;
 	}
 
-	.ucg_accordion .panel .elementTitle,
-	.ucg_accordion .panel .collapsing .elementsContainer,
-	.ucg_accordion .panel .collapse .elementsContainer {
+	.ucg_accordion .accordionPanel .elementTitle,
+	.ucg_accordion .accordionPanel .collapsing .elementsContainer,
+	.ucg_accordion .accordionPanel .collapse .elementsContainer {
 		padding: 20px;
 	}
 
-	.ucg_accordion .panel .collapsing .elementsContainer:last-child,
-	.ucg_accordion .panel .collapse .elementsContainer:last-child {
+	.ucg_accordion .accordionPanel .collapsing .elementsContainer:last-child,
+	.ucg_accordion .accordionPanel .collapse .elementsContainer:last-child {
 		padding-bottom: 20px;
 	}
 }

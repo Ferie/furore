@@ -20,6 +20,13 @@ $(document).ready(function () {
 			$thisAccordion.find('.collapsed').removeClass('open');
 			$thisCollapsed.addClass('open');
 			$thisCollapsed.find('.collapse').slideDown(function () {
+				$('.ucg_video img').each(function () {
+					var $this = $(this),
+						imageHeight = $this.height(),
+						imageWidth = $this.width();
+						
+					$this.siblings('.ucg_videoplayer_starter').width(imageWidth).height(imageHeight);
+				});
 				setTimeout(function () {
 					$('html, body').animate({
 						scrollTop: $this.offset().top
