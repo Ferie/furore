@@ -1,11 +1,8 @@
 a.ucg_videoplayer_starter {
+    background: url('../img/static/videoplayer_play.png') no-repeat scroll center center transparent;
 	display: inline-block;
-    float: left;
-    height: 135px;
     position: absolute;
     text-align: center;
-    width: 263px;
-    background: url('../img/static/videoplayer_play.png') no-repeat scroll center center transparent;
 }
 a.ucg_videoplayer_starter:hover {
 	background-image: url('../img/static/videoplayer_play_hover.png');
@@ -14,13 +11,13 @@ a.ucg_videoplayer_starter:hover {
 	padding: 0;
 }
 .ucg_videoplayer .modal-dialog {
-	width: 90%;
 	margin: 0 auto;
+	width: 90%;
 }
 .ucg_videoplayer .modal-content {border-radius: 0;}
 .ucg_videoplayer .modal-header {
-	padding: 20px;
 	border: none;
+	padding: 20px;
 }
 .ucg_videoplayer .modal-body {
 	text-align: center;
@@ -30,11 +27,11 @@ a.ucg_videoplayer_starter:hover {
 }
 @media (min-width: 768px) {
 	.ucg_videoplayer .modal-dialog {
-		width: 960px;
 		margin: 20px auto;
+		width: 960px;
 	}
 	.with-sidebar-opened .ucg_videoplayer .modal-dialog {
-		width: 90%;
 		margin: 10px auto;
+		width: 90%;
 	}	
 }

@@ -33,13 +33,25 @@
 	font-size: 15px;
 }
 
+.ucg_video_text .ucg_txt h1,
+.ucg_video_text .ucg_txt h2,
+.ucg_video_text .ucg_txt h3,
+.ucg_video_text .ucg_txt h4,
+.ucg_video_text .ucg_txt h5,
+.ucg_video_text .ucg_txt h6 {
+	margin-top: 0;
+}
+
 .ucg_video_text .ucg_txt h3 {
 	font-size: 24px;
-	margin-top: 0;
 }
 
 .ucg_video_text .ucg_txt a:hover {
 	color: #00afd0;
+}
+
+.ucg_video_text .ucg_linklist .container {
+	padding: 0;
 }
 
 @media (min-width: 768px) {
