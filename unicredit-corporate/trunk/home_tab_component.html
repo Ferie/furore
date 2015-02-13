@@ -25,6 +25,7 @@
 		<link type="text/css" rel="stylesheet" href="css/ucg_title_component.css"/>
 		<link type="text/css" rel="stylesheet" href="css/ucg_text_component.css"/>
 		<link type="text/css" rel="stylesheet" href="css/ucg_link_component.css"/>
+		<link type="text/css" rel="stylesheet" href="css/videoplayer.css"/>
 		<link type="text/css" rel="stylesheet" href="css/ucg_video_text_component.css"/>
 
 		<!--[if lt IE 9]>
@@ -42,6 +43,9 @@
 
 		<!--specific JS for Tab Component-->
 		<script type="text/javascript" src="js/ucg_tab_component.js"></script>
+
+		<!--imported JS for Tab Component-->
+		<script type="text/javascript" src="js/videoplayer.js"></script>
 
 		<!--[if lt IE 9]>
 			<script type="text/javascript" src="plugin/js/html5shiv.js"></script>
@@ -195,6 +199,21 @@
 	</div>
 
 		<div id="mainContainer">
+			<!-- Modal -->
+			<div class="ucg_videoplayer modal fade" tabindex="-1" role="dialog" aria-labelledby="ucg_videoplayer" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<div class="modal-body">
+							<iframe width="480" height="320" src="" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Modal -->
+
 			<div class="example">Tab Component</div>
 			<div class="example">Tab Component Full page width<br>(it becomes a dropdown menù for mobile resolutions)</div>
 			<div class="ucg_tab">
@@ -336,12 +355,12 @@
 					<div class="ucg_tab">
 						<div class="panel hidden-xs tabs">
 							<div class="container">
-								<div class="tab active" data-tabpanel="tabPanelOne">
+								<div class="tab " data-tabpanel="tabPanelOne">
 									<div class="tabHeader">
 										<a href="javascript:void(0);">Latest Press Release</a>
 									</div>
 								</div>
-								<div class="tab" data-tabpanel="tabPanelTwo">
+								<div class="tab active" data-tabpanel="tabPanelTwo">
 									<div class="tabHeader">
 										<a href="javascript:void(0);">Latest News</a>
 									</div>
@@ -362,28 +381,33 @@
 
 						<div class="panel tabsBody">
 							<div class="container">
-								<div class="tabPanel tabPanelOne selected">
+								<div class="tabPanel tabPanelOne ">
 									<div class="tabSection clearfix">
 										<div class="panel ucg_video_text">
 											<div class="container">
 												<div class="ucg_video">
-													<video controls poster="img/press_and_news.png">
-														<source src="#" type="video/mp4">
-														<source src="#" type="video/ogg">
-														Your browser does not support the video tag.
-													</video>
+													<a class="ucg_videoplayer_starter" href="javascript:void(0);" data-video="https://www.youtube.com/embed/j_kOGqFslos?autoplay=1"></a>
+													<img class="placeholder" src="img/press_and_news.png" alt="Press and news" title="Press and news">
 												</div>
 												<div class="ucg_txt">
 													<h3>Celebrating Christmas with UniCredit's Light-Covered Art in Milan</h3>
 													<p>UniCredit will help celebrate Christmas at Milan's Gae Aulenti Square from December 6 to January 6 by erecting a Christmas tree sculpture that spells "Best Wishes" in all of our Group's languages and by lighting the spire of UniCredit Tower ...</p>
-													<a href="javascript:void(0);">Read more</a>
+													<div class="panel ucg_linklist">
+														<div class="container">
+															<ul class="ucg_link_container">
+																<li class="ucg_link">
+																	<a href="javascript:void(0);">Read more</a>
+																</li>
+															</ul>
+														</div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 
-								<div class="tabPanel tabPanelTwo">
+								<div class="tabPanel tabPanelTwo selected">
 									<div class="tabSection clearfix">
 										<div class="panel ucg_text">
 											<div class="container">
