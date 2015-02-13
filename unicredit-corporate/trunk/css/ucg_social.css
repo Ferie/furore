@@ -1,6 +1,4 @@
-.ucg_social > .container:first-child {
-	min-height: 240px;
-}
+
 .ucg_social .ucg_social_title {
 	background-color: transparent;
     background-position: left center;
@@ -39,6 +37,11 @@
 	border-bottom: 1px solid #999;
 	margin-bottom: 8px;	
 }
+.ucg_social .ucg_social_image {
+	float: left;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
 .ucg_social .ucg_social_image img {
 	width: 100%;
 	height: auto;
@@ -47,7 +50,7 @@
     line-height: 1.1;
     font-family: 'unicredit-bold';
     font-size: 15px;
-    padding: 10px 0;
+    padding: 0 0 10px 0;
     color: #999;
 }
 .ucg_social .ucg_social_text p {
@@ -58,6 +61,18 @@
     font-family: 'unicredit-regular';
     font-size: 14px;
     padding: 2px 0;
+}
+.ucg_social .ucg_social_text_title {
+    line-height: 1.6;
+    font-family: 'unicredit-bold';
+    font-size: 17px;
+    padding: 2px 0;
+}
+.ucg_social .ucg_social_text_title a {
+	color: #666666;
+}
+.ucg_social .ucg_social_text_title a:hover {
+	color: #00afd0;
 }
 /*
 .ucg_social_twitter .ucg_social_text {
@@ -141,8 +156,18 @@
 .ucg_social_footer .ucg_social_others a.pinterest {
 	background-image: url('../img/static/calendar-share-social-pinterest-grey.png')
 }
-
+/* SPECIAL CAREER TEXT */
+.ucg_text .ucg_text_container p {
+	margin-bottom: 20px;
+}
 @media (min-width: 768px) {
+	/* SPECIAL CAREER TEXT */
+	.ucg_text .ucg_text_container {
+		min-height: 240px;
+	}
+	.ucg_social > .container:first-child {
+		min-height: 240px;
+	}
 	.ucg_social .ucg_social_image img {
 		width: auto;
 		height: auto;
