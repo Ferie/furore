@@ -70,13 +70,11 @@
 					var target = $($(this).data("target"));
 					if (target.hasClass("in")) {
 						target.slideUp({complete: function(){
-							utils._setHeightSidebar();
-							utils._setHeightContainer();		
+							utils._setHeightContainers();		
 							}}).removeClass("in");
 					} else {
 						target.slideDown({complete: function(){
-							utils._setHeightSidebar();
-							utils._setHeightContainer();		
+							utils._setHeightContainers();		
 							}}).addClass("in");
 					}
 				}
@@ -88,20 +86,22 @@
 			utils._setWidthContainer();
 			utils._setWidthFooter();
 			//utils._setHeightScrollables();
-			utils._setHeightSidebar();
-			utils._setHeightContainer();
+			//utils._setHeightSidebar();
+			//utils._setHeightContainer();
 			utils._setPositionContainer();
 			utils._selectHeaderByCookies();
+			utils._setHeightContainers();
 			$(window).resize(function(){
 				utils._setWidthLogoHeader();
 				utils._setWidthRedbar();
 				utils._setWidthContainer();
 				utils._setWidthFooter();
 				//utils._setHeightScrollables();
-				utils._setHeightSidebar();
-				utils._setHeightContainer();
+				//utils._setHeightSidebar();
+				//utils._setHeightContainer();
 				utils._setPositionContainer();
 				utils._setWidthSidebar();
+				utils._setHeightContainers();
 			});
 			
 			return {
@@ -187,14 +187,28 @@
 				case "open":
 					st.$container.trigger(st.openEvent);
 					st.$header.find('.sidebar-switch a').addClass("opened");
-					st.$sidebar.addClass("opened").animate({"width": utils._getSidebarWidth()+'px'}, {"queue": false, complete: function(){st.$container.trigger(st.animationEvent);}}, utils._getSidebarWidth()*st.pixelSpeed, "linear");
+					st.$sidebar.addClass("opened").animate({"width": utils._getSidebarWidth()+'px'}, {
+						"queue": false, 
+						complete: function(){
+							st.$container.trigger(st.animationEvent);
+							utils._setHeightContainers();
+						}}, 
+						utils._getSidebarWidth()*st.pixelSpeed, 
+						"linear");
 					st.$sidebar.find('.sidebar-footer').slideDown();
 					utils._selectByCookies();
 					break;
 				case "close":
 					st.$container.trigger(st.closeEvent);
 					st.$header.find('.sidebar-switch a').removeClass("opened");
-					st.$sidebar.removeClass("opened").animate({"width": utils._getSidebarWidth()+'px'}, {"queue": false, complete: function(){st.$container.trigger(st.animationEvent);}}, utils._getSidebarWidth()*st.pixelSpeed, "linear");
+					st.$sidebar.removeClass("opened").animate({"width": utils._getSidebarWidth()+'px'}, { 
+						"queue": false, 
+						complete: function(){
+							st.$container.trigger(st.animationEvent);
+							utils._setHeightContainers();
+							}}, 
+						utils._getSidebarWidth()*st.pixelSpeed, 
+						"linear");
 					st.$sidebar.find('.sidebar-footer').slideUp();
 					st.$sidebar.find('.sidebar-element .collapse.in').slideUp().removeClass("in");
 					st.$sidebar.find('.sidebar-element.active').removeClass('active');
@@ -206,14 +220,28 @@
 					st.$sidebar.toggleClass("opened");
 					if (st.$header.find('.sidebar-switch a').hasClass("opened")){
 						st.$container.trigger(st.openEvent);
-						st.$sidebar.animate({"width": utils._getSidebarWidth()+'px'}, {"queue": false, complete: function(){st.$container.trigger(st.animationEvent);}}, utils._getSidebarWidth()*st.pixelSpeed, "linear");
+						st.$sidebar.animate({"width": utils._getSidebarWidth()+'px'}, {
+							"queue": false, 
+							complete: function(){
+								st.$container.trigger(st.animationEvent);
+								utils._setHeightContainers();
+							}}, 
+							utils._getSidebarWidth()*st.pixelSpeed, 
+							"linear");
 						st.$sidebar.find('.sidebar-footer').slideDown();
 						utils._selectByCookies();			
 					} else {
 						st.$container.trigger(st.closeEvent);
 						st.$sidebar.find('.sidebar-element .collapse.in').slideUp().removeClass("in");
 						st.$sidebar.find('.sidebar-element.active').removeClass('active');
-						st.$sidebar.animate({"width": utils._getSidebarWidth()+'px'}, {"queue": false, complete: function(){st.$container.trigger(st.animationEvent);}}, utils._getSidebarWidth()*st.pixelSpeed, "linear");
+						st.$sidebar.animate({"width": utils._getSidebarWidth()+'px'}, {
+								"queue": false,
+								complete: function(){
+									st.$container.trigger(st.animationEvent);
+									utils._setHeightContainers();
+									}}, 
+								utils._getSidebarWidth()*st.pixelSpeed,
+								"linear");
 						st.$sidebar.find('.sidebar-footer').slideUp();
 						st.$sidebar.find(".sidebar-element .collapse a").removeClass("active");
 						utils._selectHeaderByCookies();			
@@ -222,8 +250,9 @@
 			}
 			utils._setPositionContainer();
 			//utils._setHeightScrollables();
-			utils._setHeightSidebar();
-			utils._setHeightContainer();
+			//utils._setHeightSidebar();
+			//utils._setHeightContainer();
+			//utils._setHeightContainers();
 		},
 		_setPositionContainer: function(){
 			var topC = st.$header.outerHeight(true)+(st.$message.is(":visible") ? st.$message.outerHeight(true): 0);
@@ -249,17 +278,29 @@
 			st.$footer.css({width: widthF+"px"});	
 		},
 		_setHeightContainer: function(){
-			var containerContent =  Math.max(utils._getContentHeight(st.$container), $(window).outerHeight(true)-st.$header.outerHeight(true))*1.11;
+			var containerContent =  Math.max(utils._getContentHeight(st.$sidebar), utils._getContentHeight(st.$container), $(window).outerHeight(true)-st.$header.outerHeight(true))*1.11;
 			st.$container.css("height", containerContent+"px");
 		},
 		_setHeightSidebar: function(){
-			var containerContent =  Math.max(utils._getContentHeight(st.$container), $(window).outerHeight(true)-st.$header.outerHeight(true))*1.11;
+			var containerContent =  Math.max(utils._getContentHeight(st.$sidebar), utils._getContentHeight(st.$container), $(window).outerHeight(true)-st.$header.outerHeight(true))*1.11;
 			st.$sidebar.css("height", containerContent+"px");
 			var sidebarMenuHeight = containerContent;
 			st.$sidebar.find(".sidebar-element").each(function(){
 				sidebarMenuHeight += $(this) .outerHeight(true)
 			});
 			st.$sidebar.find(".sidebar-menu").css("height", sidebarMenuHeight+"px");
+		},
+		_setHeightContainers: function(){
+			var containerContent =  Math.max(utils._getContentHeight(st.$sidebar), utils._getContentHeight(st.$container), $(window).outerHeight(true)-st.$header.outerHeight(true))*1.11;
+			st.$container.css("height", containerContent+"px");
+			st.$sidebar.css("height", containerContent+"px");
+			/*
+			var sidebarMenuHeight = containerContent;
+			st.$sidebar.find(".sidebar-element").each(function(){
+				sidebarMenuHeight += $(this) .outerHeight(true)
+			});
+			st.$sidebar.find(".sidebar-menu").css("height", sidebarMenuHeight+"px");
+			*/
 		},
 		_setWidthSidebar: function(){
 			st.$sidebar.css({width: utils._getSidebarWidth()+"px"});
