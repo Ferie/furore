@@ -12,14 +12,6 @@
 	padding: 0;
 }
 
-/* .ucg_accordion .panel:last-child { */
-/* 	border-bottom: 1px solid #c9c9c9; */
-/* } */
-
-/* .ucg_accordion .panel .container .panel .container { */
-/* 	border: none; */
-/* } */
-
 .ucg_accordion .accordionPanel {
 	border: 1px solid #c9c9c9;
 	border-bottom: none;
@@ -31,9 +23,7 @@
 }
 
 .ucg_accordion .accordionPanel .elementTitle {
-	/*background: url("../img/static/select-arrow-down.png") no-repeat scroll center right;*/
 	position: relative;
-	/*border-top: 1px solid #c9c9c9;*/
 	cursor: pointer;
 	font-family: "UniCredit-Bold";
 	font-size: 17px;
@@ -64,14 +54,9 @@
 .ucg_accordion .accordionPanel .collapsing,
 .ucg_accordion .accordionPanel .collapse {
  	border-top: 1px solid #c9c9c9; 
-/*  	border-bottom: none;  */
 	margin-top: 0;
 	visibility: visible;
 }
-
-/*.ucg_accordion .accordionPanel:last-child .collapse {
-	border-bottom: none;
-}*/
 
 .ucg_accordion .accordionPanel .collapsing .elementsContainer:first-child,
 .ucg_accordion .accordionPanel .collapse .elementsContainer:first-child {

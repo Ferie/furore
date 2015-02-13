@@ -153,11 +153,10 @@ $(document).ready(function () {
 	});
 
 	// event that resizes the tabs padding on sidebar click
-	$('.sidebar-switch').on('click', function () {
+	$('#mainContainer').on('animationSidebarCompleted', function () {
 		setTimeout(function () {
 			tabsHeader();
-			sidebarResize();
-		}, 400);
+		}, 200);
 	});
 
 	// scroll on continent circle (desktop)
