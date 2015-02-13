@@ -70,11 +70,11 @@
 					var target = $($(this).data("target"));
 					if (target.hasClass("in")) {
 						target.slideUp({complete: function(){
-							utils._setHeightContainers();		
+							//utils._setHeightContainers();		
 							}}).removeClass("in");
 					} else {
 						target.slideDown({complete: function(){
-							utils._setHeightContainers();		
+							//utils._setHeightContainers();		
 							}}).addClass("in");
 					}
 				}
@@ -136,7 +136,9 @@
 		},
 		_getContentHeight: function(element){
 			var sum = 0;
-			$(element).children().each(function(){sum+=$(this).outerHeight(true);});
+			$(element).children().each(function(){
+				sum+=$(this).outerHeight(true);
+				});
 			return sum;
 		},
 		_selectByCookies: function(){
@@ -262,11 +264,10 @@
 			st.$container.css({top: topC+"px"});
 			st.$container.animate({left: leftC+"px", width: widthC+"px"}, {"queue": false}, "linear");
 			st.$footer.animate({width: widthF+"px"}, {"queue": false}, "linear");
-			//console.log("Container Width: "+widthC+" <= "+st.containerWidth+" = "+(widthC<=st.containerWidth));
 			if(widthC<=st.containerWidth) {
 				st.$container.addClass("with-sidebar-opened");				
 			} else {
-				st.$container.removeClass("with-sidebar-opened");				
+				st.$container.removeClass("with-sidebar-opened");			
 			}
 		},
 		_setWidthContainer: function(){
@@ -277,30 +278,15 @@
 			var widthF = $(window).outerWidth(true)-utils._getContainerLeft();
 			st.$footer.css({width: widthF+"px"});	
 		},
-		_setHeightContainer: function(){
-			var containerContent =  Math.max(utils._getContentHeight(st.$sidebar), utils._getContentHeight(st.$container), $(window).outerHeight(true)-st.$header.outerHeight(true))*1.11;
-			st.$container.css("height", containerContent+"px");
-		},
-		_setHeightSidebar: function(){
-			var containerContent =  Math.max(utils._getContentHeight(st.$sidebar), utils._getContentHeight(st.$container), $(window).outerHeight(true)-st.$header.outerHeight(true))*1.11;
-			st.$sidebar.css("height", containerContent+"px");
-			var sidebarMenuHeight = containerContent;
-			st.$sidebar.find(".sidebar-element").each(function(){
-				sidebarMenuHeight += $(this) .outerHeight(true)
-			});
-			st.$sidebar.find(".sidebar-menu").css("height", sidebarMenuHeight+"px");
-		},
 		_setHeightContainers: function(){
-			var containerContent =  Math.max(utils._getContentHeight(st.$sidebar), utils._getContentHeight(st.$container), $(window).outerHeight(true)-st.$header.outerHeight(true))*1.11;
+			var containerContent =  Math.max(utils._getContentHeight(st.$sidebar), utils._getContentHeight(st.$container), $(window).outerHeight(true)-st.$header.outerHeight(true));
 			st.$container.css("height", containerContent+"px");
 			st.$sidebar.css("height", containerContent+"px");
-			/*
 			var sidebarMenuHeight = containerContent;
 			st.$sidebar.find(".sidebar-element").each(function(){
-				sidebarMenuHeight += $(this) .outerHeight(true)
+				sidebarMenuHeight -= $(this).outerHeight(true);
 			});
 			st.$sidebar.find(".sidebar-menu").css("height", sidebarMenuHeight+"px");
-			*/
 		},
 		_setWidthSidebar: function(){
 			st.$sidebar.css({width: utils._getSidebarWidth()+"px"});
