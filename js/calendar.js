@@ -199,8 +199,7 @@ $(document).ready(function() {
 			});
 		spinnerLoadMore.utils._startSpinner(spinnerLoadMore.st);
 		//$('#calendar #moreEvents').scrollTop($("#calendar #moreEvents").offset().top);
-		headerUBISManager.utils._setHeightContainer();
-		headerUBISManager.utils._setHeightSidebar();
+		headerUBISManager.utils._setHeightContainers();
 		$(window).scrollTop($("#calendar #moreEvents").offset().top);
 	})
 
@@ -256,11 +255,9 @@ $(document).ready(function() {
 		$(this).data('memotext', swapText);
 	});
 	$('.collapse').on('shown.bs.collapse', function(){
-		headerUBISManager.utils._setHeightContainer();
-		headerUBISManager.utils._setHeightSidebar();
+		headerUBISManager.utils._setHeightContainers();
 	});
 	$('.collapse').on('hidden.bs.collapse', function(){
-		headerUBISManager.utils._setHeightContainer();
-		headerUBISManager.utils._setHeightSidebar();
+		headerUBISManager.utils._setHeightContainers();
 	});
 });
