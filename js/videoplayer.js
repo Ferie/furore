@@ -27,4 +27,17 @@ $(document).ready(function() {
 			$this.siblings('.ucg_videoplayer_starter').width(imageWidth).height(imageHeight);
 		});
 	});
+
+	$('.sidebar-switch').on('click', function () {
+		setTimeout(function () {
+			$('.ucg_video img').each(function () {
+				var $this = $(this),
+					imageHeight = $this.height(),
+					imageWidth = $this.width();
+					
+				$this.siblings('.ucg_videoplayer_starter').width(imageWidth).height(imageHeight);
+			});
+		}, 400);
+		
+	});
 });
