@@ -47,17 +47,13 @@ $(document).ready(function () {
 	$(window).resize(function () {
 		tabsHeader();
 		window.clearTimeout(timer);
-		timer = window.setTimeout(function () {
-			sidebarResize();
-		}, 400);
 	});
 
 	// event that resizes the tabs padding on sidebar click
-	$('.sidebar-switch').on('click', function () {
+	$('#mainContainer').on('animationSidebarCompleted', function () {
 		setTimeout(function () {
 			tabsHeader();
-			sidebarResize();
-		}, 400);
+		}, 100);
 	});
 
 	// event that puts the active tab and shows the active panel (desktop)
