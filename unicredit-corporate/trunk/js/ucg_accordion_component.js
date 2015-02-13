@@ -1,7 +1,6 @@
 $(document).ready(function () {
 	function sidebarResize() {
-		headerUBISManager.utils._setHeightContainer();
-		headerUBISManager.utils._setHeightSidebar();
+		headerUBISManager.utils._setHeightContainers();
 	}
 
 	$('.ucg_accordion .elementTitle').on('click', function () {
