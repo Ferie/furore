@@ -40,7 +40,7 @@
 
 .ucg_image .ucg_text_on_image_container .ucg_text_on_image {
 	font-size: 25px;
-	font-weight: bold;
+	font-family: 'unicredit-bold';
 }
 
 .ucg_image .ucg_text_on_image_container .ucg_link_on_image {

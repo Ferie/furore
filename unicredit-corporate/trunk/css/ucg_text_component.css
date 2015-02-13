@@ -38,12 +38,16 @@
 }
 
 .ucg_text .ucg_text_container .ucg_introTitle .ucg_titleLink {
-	font-weight: bold;
+	font-family: 'unicredit-bold';
 	color: #666666;
+}
+.ucg_text .ucg_text_container .ucg_introTitle .ucg_titleLink:hover,
+.ucg_text .ucg_text_container .ucg_introTitle .ucg_titleLink:active {
+	color: #00afd0;
 }
 
 .ucg_text .ucg_text_container .paragraphTitle {
-	font-weight: bold;
+	font-family: 'unicredit-bold';
 	margin-bottom: 0;
 }
 
@@ -52,7 +56,7 @@
 }
 
 .ucg_text .ucg_text_container .ucg_bold {
-	font-weight: bold;
+	font-family: 'unicredit-bold';
 }
 
 .ucg_text .ucg_text_container .ucg_link_container {

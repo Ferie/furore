@@ -71,6 +71,10 @@
 .ucg_social .ucg_social_text_title a {
 	color: #666666;
 }
+.ucg_social .ucg_social_text_title a:hover,
+.ucg_social .ucg_social_text_title a:active {
+	color: #00afd0;
+}
 
 /*
 .ucg_social_twitter .ucg_social_text {
