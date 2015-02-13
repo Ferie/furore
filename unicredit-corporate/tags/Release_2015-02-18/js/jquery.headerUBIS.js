@@ -9,6 +9,10 @@
 				messageSelector: '#message',
 				containerSelector: '#mainContainer',
 				footerSelector: '#footer',
+				toggleEvent: 'toggleSidebar',
+				openEvent: 'openSidebar',
+				closeEvent: 'closeSidebar',
+				animationEvent: 'animationSidebarCompleted',
 				scrollableSelector: '.scrollable-element',
 				containerWidth: 960,
 				collapsedSidebarWidth: 80,
@@ -66,13 +70,11 @@
 					var target = $($(this).data("target"));
 					if (target.hasClass("in")) {
 						target.slideUp({complete: function(){
-							utils._setHeightSidebar();
-							utils._setHeightContainer();		
+							//utils._setHeightContainers();		
 							}}).removeClass("in");
 					} else {
 						target.slideDown({complete: function(){
-							utils._setHeightSidebar();
-							utils._setHeightContainer();		
+							//utils._setHeightContainers();		
 							}}).addClass("in");
 					}
 				}
@@ -84,20 +86,22 @@
 			utils._setWidthContainer();
 			utils._setWidthFooter();
 			//utils._setHeightScrollables();
-			utils._setHeightSidebar();
-			utils._setHeightContainer();
+			//utils._setHeightSidebar();
+			//utils._setHeightContainer();
 			utils._setPositionContainer();
 			utils._selectHeaderByCookies();
+			utils._setHeightContainers();
 			$(window).resize(function(){
 				utils._setWidthLogoHeader();
 				utils._setWidthRedbar();
 				utils._setWidthContainer();
 				utils._setWidthFooter();
 				//utils._setHeightScrollables();
-				utils._setHeightSidebar();
-				utils._setHeightContainer();
+				//utils._setHeightSidebar();
+				//utils._setHeightContainer();
 				utils._setPositionContainer();
 				utils._setWidthSidebar();
+				utils._setHeightContainers();
 			});
 			
 			return {
@@ -132,18 +136,27 @@
 		},
 		_getContentHeight: function(element){
 			var sum = 0;
-			$(element).children().each(function(){sum+=$(this).outerHeight(true);});
+			$(element).children().each(function(){
+				sum+=$(this).outerHeight(true);
+				});
 			return sum;
 		},
 		_selectByCookies: function(){
 			if ($.cookie(st.cookieName)!=null){
 				var selection = JSON.parse($.cookie(st.cookieName));
-				if (selection.section!="menu") {
+				
+				if (selection.section!=null & selection.section!="menu") {
 					st.$sidebar.find(".sidebar-element."+selection.section+" .sidebar-collapser").trigger("click");
 				}
-				st.$header.find('.'+selection.section+' ul li a').removeClass("active");
-				st.$header.find('.'+selection.section+' ul li a.'+selection.page).addClass("active");
-					
+				if (selection.section!=null){ 
+					if (selection.page.indexOf("language")!=0) {
+						st.$header.find('.'+selection.section+' ul li a').removeClass("active");
+						st.$header.find('.'+selection.section+' ul li a.'+selection.page).addClass("active");
+					} else {
+						var language = selection.page=="language.ita"?"eng":"ita";
+						st.$header.find('.'+selection.section+' ul li a.'+selection.page).removeAttr("class").addClass("language").addClass(language).text(language).data("link", "language."+language);
+					}
+				}
 				/*
 				st.$sidebar.find(".sidebar-element .collapse a").removeClass("active");
 				$(st.$sidebar.find(".sidebar-element."+selection.section+" .collapse a."+selection.page).addClass("active");
@@ -156,24 +169,48 @@
 		_selectHeaderByCookies: function(){
 			if ($.cookie(st.cookieName)!=null){
 				var selection = JSON.parse($.cookie(st.cookieName));
-				if (selection.section!="menu") {
+				if (selection.section!=null & selection.section!="menu") {
 					st.$sidebar.find(".sidebar-element."+selection.section).addClass("active");
 				}
-				st.$header.find('.'+selection.section+' ul li a').removeClass("active");
-				st.$header.find('.'+selection.section+' ul li a.'+selection.page).addClass("active");
+				if (selection.section!=null){ 
+					if (selection.page.indexOf("language")!=0) {
+						st.$header.find('.'+selection.section+' ul li a').removeClass("active");
+						st.$header.find('.'+selection.section+' ul li a.'+selection.page).addClass("active");
+					} else {
+						var language = selection.page=="language.ita"?"eng":"ita";
+						st.$header.find('.'+selection.section+' ul li a.'+selection.page).removeAttr("class").addClass("language").addClass(language).text(language).data("link", "language."+language);
+					}
+				}
 			}
 		},
 		_toggleSidebar: function(action){
+			st.$container.trigger(st.toggleEvent);
 			switch (action){
 				case "open":
+					st.$container.trigger(st.openEvent);
 					st.$header.find('.sidebar-switch a').addClass("opened");
-					st.$sidebar.addClass("opened").animate({"width": utils._getSidebarWidth()+'px'}, {"queue": false}, utils._getSidebarWidth()*st.pixelSpeed, "linear");
+					st.$sidebar.addClass("opened").animate({"width": utils._getSidebarWidth()+'px'}, {
+						"queue": false, 
+						complete: function(){
+							st.$container.trigger(st.animationEvent);
+							utils._setHeightContainers();
+						}}, 
+						utils._getSidebarWidth()*st.pixelSpeed, 
+						"linear");
 					st.$sidebar.find('.sidebar-footer').slideDown();
 					utils._selectByCookies();
 					break;
 				case "close":
+					st.$container.trigger(st.closeEvent);
 					st.$header.find('.sidebar-switch a').removeClass("opened");
-					st.$sidebar.removeClass("opened").animate({"width": utils._getSidebarWidth()+'px'}, {"queue": false}, utils._getSidebarWidth()*st.pixelSpeed, "linear");
+					st.$sidebar.removeClass("opened").animate({"width": utils._getSidebarWidth()+'px'}, { 
+						"queue": false, 
+						complete: function(){
+							st.$container.trigger(st.animationEvent);
+							utils._setHeightContainers();
+							}}, 
+						utils._getSidebarWidth()*st.pixelSpeed, 
+						"linear");
 					st.$sidebar.find('.sidebar-footer').slideUp();
 					st.$sidebar.find('.sidebar-element .collapse.in').slideUp().removeClass("in");
 					st.$sidebar.find('.sidebar-element.active').removeClass('active');
@@ -184,13 +221,29 @@
 					st.$header.find('.sidebar-switch a').toggleClass("opened");
 					st.$sidebar.toggleClass("opened");
 					if (st.$header.find('.sidebar-switch a').hasClass("opened")){
-						st.$sidebar.animate({"width": utils._getSidebarWidth()+'px'}, {"queue": false}, utils._getSidebarWidth()*st.pixelSpeed, "linear");
+						st.$container.trigger(st.openEvent);
+						st.$sidebar.animate({"width": utils._getSidebarWidth()+'px'}, {
+							"queue": false, 
+							complete: function(){
+								st.$container.trigger(st.animationEvent);
+								utils._setHeightContainers();
+							}}, 
+							utils._getSidebarWidth()*st.pixelSpeed, 
+							"linear");
 						st.$sidebar.find('.sidebar-footer').slideDown();
 						utils._selectByCookies();			
 					} else {
+						st.$container.trigger(st.closeEvent);
 						st.$sidebar.find('.sidebar-element .collapse.in').slideUp().removeClass("in");
 						st.$sidebar.find('.sidebar-element.active').removeClass('active');
-						st.$sidebar.animate({"width": utils._getSidebarWidth()+'px'}, {"queue": false}, utils._getSidebarWidth()*st.pixelSpeed, "linear");
+						st.$sidebar.animate({"width": utils._getSidebarWidth()+'px'}, {
+								"queue": false,
+								complete: function(){
+									st.$container.trigger(st.animationEvent);
+									utils._setHeightContainers();
+									}}, 
+								utils._getSidebarWidth()*st.pixelSpeed,
+								"linear");
 						st.$sidebar.find('.sidebar-footer').slideUp();
 						st.$sidebar.find(".sidebar-element .collapse a").removeClass("active");
 						utils._selectHeaderByCookies();			
@@ -199,8 +252,9 @@
 			}
 			utils._setPositionContainer();
 			//utils._setHeightScrollables();
-			utils._setHeightSidebar();
-			utils._setHeightContainer();
+			//utils._setHeightSidebar();
+			//utils._setHeightContainer();
+			//utils._setHeightContainers();
 		},
 		_setPositionContainer: function(){
 			var topC = st.$header.outerHeight(true)+(st.$message.is(":visible") ? st.$message.outerHeight(true): 0);
@@ -213,7 +267,7 @@
 			if(widthC<=st.containerWidth) {
 				st.$container.addClass("with-sidebar-opened");				
 			} else {
-				st.$container.removeClass("with-sidebar-opened");				
+				st.$container.removeClass("with-sidebar-opened");			
 			}
 		},
 		_setWidthContainer: function(){
@@ -224,13 +278,15 @@
 			var widthF = $(window).outerWidth(true)-utils._getContainerLeft();
 			st.$footer.css({width: widthF+"px"});	
 		},
-		_setHeightContainer: function(){
-			var containerContent =  Math.max(utils._getContentHeight(st.$container), $(window).outerHeight(true)-st.$header.outerHeight(true))*1.11;
+		_setHeightContainers: function(){
+			var containerContent =  Math.max(utils._getContentHeight(st.$sidebar), utils._getContentHeight(st.$container), $(window).outerHeight(true)-st.$header.outerHeight(true));
 			st.$container.css("height", containerContent+"px");
-		},
-		_setHeightSidebar: function(){
-			var containerContent =  Math.max(utils._getContentHeight(st.$container), $(window).outerHeight(true)-st.$header.outerHeight(true))*1.11;
-			st.$sidebar.css("height", containerContent+"px");	
+			st.$sidebar.css("height", containerContent+"px");
+			var sidebarMenuHeight = containerContent;
+			st.$sidebar.find(".sidebar-element").each(function(){
+				sidebarMenuHeight -= $(this).outerHeight(true);
+			});
+			st.$sidebar.find(".sidebar-menu").css("height", sidebarMenuHeight+"px");
 		},
 		_setWidthSidebar: function(){
 			st.$sidebar.css({width: utils._getSidebarWidth()+"px"});
@@ -242,7 +298,7 @@
 			} else {
 				width = $(window).outerWidth(true)-st.$header.find('.sidebar-switch').outerWidth(true)-st.$header.find('.logo').outerWidth(true)-st.$header.find('.online-banking').outerWidth(true);
 			}
-			st.$header.find('.menu:not(.sidebar-menu)').css({width: width+"px"});
+			st.$header.find('.header-menu').css({width: width+"px"});
 		},
 		_setWidthLogoHeader: function(){
 			var width;

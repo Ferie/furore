@@ -22,14 +22,14 @@ a, a:visited, a:focus {
 	outline: 0;
 }
 a:hover, a:active {
-	color: #999999;
+	color: #00afd0;
 	text-decoration: none;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 }
 .panel {
-	behavior: url(../plugin/js/PIE.htc);
+	behavior: url('../plugin/js/PIE.htc');
 	border: none;
 	border-radius: 0;
 	box-shadow: none;
@@ -117,7 +117,6 @@ h1, h2, h3, h4, h5, h6 {
 /**** SIDEBAR ****/
 #sidebar {
 	width: 0px;
-	height: 100%;
 	overflow: hidden;
 	background-color: #262626;
 	z-index: 1;
@@ -129,9 +128,13 @@ h1, h2, h3, h4, h5, h6 {
 	overflow-y: scroll;
 	z-index: 11;
 }
+#sidebar .sidebar-menu {
+	height: auto;
+	padding: 20px 25px;
+}
 #sidebar .sidebar-menu ul {
-	padding: 20px 10px;
 	margin: 0;
+	padding: 0;
 	list-style-type: none;
 }
 #sidebar .sidebar-menu ul li {
@@ -141,15 +144,31 @@ h1, h2, h3, h4, h5, h6 {
 #sidebar .sidebar-menu ul li a {
 	display: inline-block;
 	width: 100%;
-	text-transform: none;
-	color: #fff;
-    font-family: "unicredit-light";
-    font-size: 16px;
+	text-transform: uppercase;
+	color: #666;
+    font-family: "unicredit-bold";
+    font-size: 15px;
     line-height: 35px;
 }
-#sidebar .sidebar-menu ul li a.active {
+#sidebar .sidebar-menu ul li a.language {
+	background-color: transparent;
+	background-attachment: scroll;
+	background-position: left center;
+	background-repeat: no-repeat;
+	padding-left: 40px;
+}
+#sidebar .sidebar-menu ul li a.language.ita {
+	background-image: url('../img/static/menu-nav-ita.png');	
+}
+#sidebar .sidebar-menu ul li a.language.eng {
+	background-image: url('../img/static/menu-nav-eng.png');	
+}
+#sidebar .sidebar-menu ul li a:hover {
+	color: #fff;
+}
+#sidebar .sidebar-menu ul li a.active{
 	text-decoration: underline;
-    font-family: "unicredit-bold";
+	color: #fff;
 }
 #sidebar .sidebar-element {
 	border-bottom: 1px solid #515151;
@@ -244,6 +263,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'unicredit-bold';
 	text-decoration: underline;	
 }
+/*
 #sidebar .sidebar-footer {
 	background-color: #262626;
 	height: 100%;
@@ -286,6 +306,7 @@ h1, h2, h3, h4, h5, h6 {
 #sidebar .sidebar-footer .change-language .ita {
 	text-align: left;
 }
+*/
 /**** SIDEBAR ****/
 
 /**** BREADCRUMB ****/
@@ -300,7 +321,12 @@ h1, h2, h3, h4, h5, h6 {
 	color: #999999;
 	display: inline-block;
 }
+#breadcrumb ul li:first-child {
+	text-transform: uppercase;
+	font-family: 'unicredit-bold';
+}
 #breadcrumb ul li:not(:last-child):after {
+	font-family: 'unicredit-regular';
 	content: ">";
 	padding: 0 2px 0 5px;
 }
