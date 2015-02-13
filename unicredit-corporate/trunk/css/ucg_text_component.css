@@ -59,13 +59,15 @@
 	font-weight: bold;
 }
 
-.ucg_text .ucg_text_container .ucg_mail {
-	background: none;
-	text-transform: lowercase;
+.ucg_text .ucg_text_container .ucg_link_container {
+	list-style-type: none;
+	bottom: 0;
+	padding: 0;
 }
 
-.ucg_text .ucg_text_container .ucg_link {
-	
+.ucg_text .ucg_text_container .ucg_link,
+.ucg_text .ucg_text_container .ucg_mail {
+	background: none;
 }
 
 .ucg_text .ucg_linklist .container {

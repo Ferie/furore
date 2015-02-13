@@ -19,6 +19,16 @@
 	width: 100%;
 }
 
+.ucg_video_text .ucg_date {
+	font-size: 14px;
+	color: #999999;
+	margin-bottom: 32px;
+}
+
+.ucg_video_text .ucg_bold {
+	font-weight: bold;
+}
+
 .ucg_video_text .ucg_txt {
 	font-size: 15px;
 }
