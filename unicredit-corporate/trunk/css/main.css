@@ -117,7 +117,6 @@ h1, h2, h3, h4, h5, h6 {
 /**** SIDEBAR ****/
 #sidebar {
 	width: 0px;
-	height: 100%;
 	overflow: hidden;
 	background-color: #262626;
 	z-index: 1;
