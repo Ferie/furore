@@ -185,11 +185,6 @@
 	display: none;
 }
 
-#worldwide #intro .readMore a:hover,
-#worldwide #intro .readLess a:hover {
-	color: #00afd0;
-}
-
 /************** COUNTRY PAGE **************/
 
 #worldwide .chosen-container {
@@ -287,10 +282,6 @@
 	padding-left: 26px;
 }
 
-#worldwide .tabSection .externalLink a:hover {
-	color: #00afd0;
-}
-
 #worldwide .tabSection .moreInfo {
 	float: left;
 	font-size: 14px;
@@ -299,10 +290,6 @@
 	padding-right: 9px;
 	text-transform: uppercase;
 }	
-
-#worldwide .tabSection .moreInfo a:hover {
-	color: #00afd0;
-}
 
 #worldwide .tabSection .moreInfo .arrowRight {
 	background: url("../img/static/blue_arrow_right.png") no-repeat;
@@ -409,7 +396,6 @@
 	padding: 0 15px 9px;
 }
 
-#worldwide #companyInfos .infos a:hover,
 #worldwide #companyInfos .externalLink a {
 	color: #00afd0;
 }

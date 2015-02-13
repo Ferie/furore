@@ -127,10 +127,6 @@ select {
 	padding-left: 26px;
 }
 
-.tabSection .externalLink a:hover {
-	color: #00afd0;
-}
-
 .tabSection .moreInfo {
 	float: left;
 	font-size: 14px;
@@ -139,10 +135,6 @@ select {
 	padding-right: 9px;
 	text-transform: uppercase;
 }	
-
-.tabSection .moreInfo a:hover {
-	color: #00afd0;
-}
 
 .tabSection .moreInfo .arrowRight {
 	background: url("../img/static/blue_arrow_right.png") no-repeat;
