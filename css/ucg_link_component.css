@@ -27,9 +27,11 @@
 	font-weight: bold; 
 }
 
-.ucg_linklist .ucg_link_container .ucg_mail {
+.ucg_linklist .ucg_link_container .ucg_mail,
+.ucg_linklist .ucg_link_container .ucg_link {
 	background: none;
-	text-transform: lowercase;
+	font-size: 15px;
+	margin-bottom: 0;
 }
 
 .ucg_linklist .ucg_link_container .ucg_download_link {
