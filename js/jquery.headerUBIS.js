@@ -9,10 +9,6 @@
 				messageSelector: '#message',
 				containerSelector: '#mainContainer',
 				footerSelector: '#footer',
-				toggleEvent: 'toggleSidebar',
-				openEvent: 'openSidebar',
-				closeEvent: 'closeSidebar',
-				animationEvent: 'animationSidebarCompleted',
 				scrollableSelector: '.scrollable-element',
 				containerWidth: 960,
 				collapsedSidebarWidth: 80,
@@ -142,19 +138,12 @@
 		_selectByCookies: function(){
 			if ($.cookie(st.cookieName)!=null){
 				var selection = JSON.parse($.cookie(st.cookieName));
-				
-				if (selection.section!=null & selection.section!="menu") {
+				if (selection.section!="menu") {
 					st.$sidebar.find(".sidebar-element."+selection.section+" .sidebar-collapser").trigger("click");
 				}
-				if (selection.section!=null){ 
-					if (selection.page.indexOf("language")!=0) {
-						st.$header.find('.'+selection.section+' ul li a').removeClass("active");
-						st.$header.find('.'+selection.section+' ul li a.'+selection.page).addClass("active");
-					} else {
-						var language = selection.page=="language.ita"?"eng":"ita";
-						st.$header.find('.'+selection.section+' ul li a.'+selection.page).removeAttr("class").addClass("language").addClass(language).text(language).data("link", "language."+language);
-					}
-				}
+				st.$header.find('.'+selection.section+' ul li a').removeClass("active");
+				st.$header.find('.'+selection.section+' ul li a.'+selection.page).addClass("active");
+					
 				/*
 				st.$sidebar.find(".sidebar-element .collapse a").removeClass("active");
 				$(st.$sidebar.find(".sidebar-element."+selection.section+" .collapse a."+selection.page).addClass("active");
@@ -167,34 +156,24 @@
 		_selectHeaderByCookies: function(){
 			if ($.cookie(st.cookieName)!=null){
 				var selection = JSON.parse($.cookie(st.cookieName));
-				if (selection.section!=null & selection.section!="menu") {
+				if (selection.section!="menu") {
 					st.$sidebar.find(".sidebar-element."+selection.section).addClass("active");
 				}
-				if (selection.section!=null){ 
-					if (selection.page.indexOf("language")!=0) {
-						st.$header.find('.'+selection.section+' ul li a').removeClass("active");
-						st.$header.find('.'+selection.section+' ul li a.'+selection.page).addClass("active");
-					} else {
-						var language = selection.page=="language.ita"?"eng":"ita";
-						st.$header.find('.'+selection.section+' ul li a.'+selection.page).removeAttr("class").addClass("language").addClass(language).text(language).data("link", "language."+language);
-					}
-				}
+				st.$header.find('.'+selection.section+' ul li a').removeClass("active");
+				st.$header.find('.'+selection.section+' ul li a.'+selection.page).addClass("active");
 			}
 		},
 		_toggleSidebar: function(action){
-			st.$container.trigger(st.toggleEvent);
 			switch (action){
 				case "open":
-					st.$container.trigger(st.openEvent);
 					st.$header.find('.sidebar-switch a').addClass("opened");
-					st.$sidebar.addClass("opened").animate({"width": utils._getSidebarWidth()+'px'}, {"queue": false, complete: function(){st.$container.trigger(st.animationEvent);}}, utils._getSidebarWidth()*st.pixelSpeed, "linear");
+					st.$sidebar.addClass("opened").animate({"width": utils._getSidebarWidth()+'px'}, {"queue": false}, utils._getSidebarWidth()*st.pixelSpeed, "linear");
 					st.$sidebar.find('.sidebar-footer').slideDown();
 					utils._selectByCookies();
 					break;
 				case "close":
-					st.$container.trigger(st.closeEvent);
 					st.$header.find('.sidebar-switch a').removeClass("opened");
-					st.$sidebar.removeClass("opened").animate({"width": utils._getSidebarWidth()+'px'}, {"queue": false, complete: function(){st.$container.trigger(st.animationEvent);}}, utils._getSidebarWidth()*st.pixelSpeed, "linear");
+					st.$sidebar.removeClass("opened").animate({"width": utils._getSidebarWidth()+'px'}, {"queue": false}, utils._getSidebarWidth()*st.pixelSpeed, "linear");
 					st.$sidebar.find('.sidebar-footer').slideUp();
 					st.$sidebar.find('.sidebar-element .collapse.in').slideUp().removeClass("in");
 					st.$sidebar.find('.sidebar-element.active').removeClass('active');
@@ -205,15 +184,13 @@
 					st.$header.find('.sidebar-switch a').toggleClass("opened");
 					st.$sidebar.toggleClass("opened");
 					if (st.$header.find('.sidebar-switch a').hasClass("opened")){
-						st.$container.trigger(st.openEvent);
-						st.$sidebar.animate({"width": utils._getSidebarWidth()+'px'}, {"queue": false, complete: function(){st.$container.trigger(st.animationEvent);}}, utils._getSidebarWidth()*st.pixelSpeed, "linear");
+						st.$sidebar.animate({"width": utils._getSidebarWidth()+'px'}, {"queue": false}, utils._getSidebarWidth()*st.pixelSpeed, "linear");
 						st.$sidebar.find('.sidebar-footer').slideDown();
 						utils._selectByCookies();			
 					} else {
-						st.$container.trigger(st.closeEvent);
 						st.$sidebar.find('.sidebar-element .collapse.in').slideUp().removeClass("in");
 						st.$sidebar.find('.sidebar-element.active').removeClass('active');
-						st.$sidebar.animate({"width": utils._getSidebarWidth()+'px'}, {"queue": false, complete: function(){st.$container.trigger(st.animationEvent);}}, utils._getSidebarWidth()*st.pixelSpeed, "linear");
+						st.$sidebar.animate({"width": utils._getSidebarWidth()+'px'}, {"queue": false}, utils._getSidebarWidth()*st.pixelSpeed, "linear");
 						st.$sidebar.find('.sidebar-footer').slideUp();
 						st.$sidebar.find(".sidebar-element .collapse a").removeClass("active");
 						utils._selectHeaderByCookies();			
@@ -233,7 +210,6 @@
 			st.$container.css({top: topC+"px"});
 			st.$container.animate({left: leftC+"px", width: widthC+"px"}, {"queue": false}, "linear");
 			st.$footer.animate({width: widthF+"px"}, {"queue": false}, "linear");
-			//console.log("Container Width: "+widthC+" <= "+st.containerWidth+" = "+(widthC<=st.containerWidth));
 			if(widthC<=st.containerWidth) {
 				st.$container.addClass("with-sidebar-opened");				
 			} else {
@@ -254,12 +230,7 @@
 		},
 		_setHeightSidebar: function(){
 			var containerContent =  Math.max(utils._getContentHeight(st.$container), $(window).outerHeight(true)-st.$header.outerHeight(true))*1.11;
-			st.$sidebar.css("height", containerContent+"px");
-			var sidebarMenuHeight = containerContent;
-			st.$sidebar.find(".sidebar-element").each(function(){
-				sidebarMenuHeight += $(this) .outerHeight(true)
-			});
-			st.$sidebar.find(".sidebar-menu").css("height", sidebarMenuHeight+"px");
+			st.$sidebar.css("height", containerContent+"px");	
 		},
 		_setWidthSidebar: function(){
 			st.$sidebar.css({width: utils._getSidebarWidth()+"px"});
@@ -271,7 +242,7 @@
 			} else {
 				width = $(window).outerWidth(true)-st.$header.find('.sidebar-switch').outerWidth(true)-st.$header.find('.logo').outerWidth(true)-st.$header.find('.online-banking').outerWidth(true);
 			}
-			st.$header.find('.header-menu').css({width: width+"px"});
+			st.$header.find('.menu:not(.sidebar-menu)').css({width: width+"px"});
 		},
 		_setWidthLogoHeader: function(){
 			var width;
