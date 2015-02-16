@@ -1,0 +1,46 @@
+[
+    {
+    "src": "img/ucg_interday_graph.png",
+    "value": "6,16",
+    "currency": "€",
+    "trend": { "value": "+ 0,24", "direction": "up" },
+    "day": "06",
+    "month": "October",
+    "year": "2014",
+    "hours": "12",
+    "minutes": "20"
+    },
+    {
+    "src": "img/ucg_interday_graph.png",
+    "value": "6,18",
+    "currency": "€",
+    "trend": { "value": "+ 0,2", "direction": "up" },
+    "day": "11",
+    "month": "November",
+    "year": "2014",
+    "hours": "15",
+    "minutes": "32"
+    },
+    {
+    "src": "img/ucg_interday_graph.png",
+    "value": "5,45",
+    "currency": "€",
+    "trend": { "value": "- 1,2", "direction": "down" },
+    "day": "02",
+    "month": "January",
+    "year": "2015",
+    "hours": "9",
+    "minutes": "44"
+    },
+    {
+    "src": "img/ucg_interday_graph.png",
+    "value": "7,22",
+    "currency": "$",
+    "trend": { "value": "+ 1,77", "direction": "up" },
+    "day": "12",
+    "month": "February",
+    "year": "2015",
+    "hours": "19",
+    "minutes": "35"
+    }
+]
