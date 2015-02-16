@@ -1,6 +1,9 @@
 .ucg_infografic {
 	padding: 50px 0 17px;
 }
+.ucg_infografic .ucg_image > .container img {
+	max-width: 300px;
+}
 .ucg_infografic .ucg_title.panel {
 	margin-top: 0px;
 	margin-bottom: 33px;
