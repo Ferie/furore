@@ -1,0 +1,188 @@
+.ucg_interday > .container img {
+	width: 100%;
+	height: auto;
+}
+.ucg_interday .ucg_interday_text > span {
+	float: left;
+}
+.ucg_interday .ucg_interday_text .title {
+	font-family: 'unicredit-medium';
+	text-transform: uppercase;
+}
+.ucg_interday .ucg_interday_text .value {
+	font-family: 'unicredit-light';
+	font-size: 60px;
+	line-height: 60px;
+}
+.ucg_interday .ucg_interday_text .currency {
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    margin-top: 31px;
+}
+.ucg_interday .ucg_interday_text .trend {
+	float: right;
+	font-size: 22px;
+	margin-top: 34px;
+	line-height: 22px;
+	margin-bottom: 4px;
+	padding-right: 23px;
+	background-attachment: scroll;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center right;
+}
+.ucg_interday .ucg_interday_text .trend.up {
+	color: #00a197;
+	background-image: url('../img/static/ucg_interday_arrow_up.png');
+}
+.ucg_interday .ucg_interday_text .trend.down {
+	color: #aa2200;
+	background-image: url('../img/static/ucg_interday_arrow_down.png');
+}
+.ucg_interday .ucg_interday_date {
+	margin-top: 36px;	
+}
+.ucg_interday .ucg_interday_date span,
+.ucg_interday .ucg_interday_date > div {
+	font-family: 'unicredit-medium';
+	display: inline-block;
+	float: left;	
+	font-size: 12px;
+	line-height: 12px;
+}
+.ucg_interday .ucg_interday_date > div {
+	padding: 9px 0px 9px 5px;
+}
+.ucg_interday .ucg_interday_date .day,
+.ucg_interday .ucg_interday_date .hours,
+.ucg_interday .ucg_interday_date .minutes {
+	font-family: 'unicredit-light';
+	font-size: 43px;
+	line-height: 43px;
+}
+.ucg_interday .ucg_interday_date .hours:after {
+	content: ':';
+}
+.ucg_interday .ucg_interday_date .month {
+	width: 100%;
+}
+@media (min-width: 768px) {
+	.ucg_interday.with-image > .container {
+		padding: 24px 10px 0;
+	}
+	.ucg_interday.ucg_image > .container {
+		padding: 0 10px;
+	}
+	.ucg_interday .ucg_interday_text .value {
+		font-size: 36px;
+		line-height: 36px;
+	}
+	.ucg_interday .ucg_interday_text .currency {
+	    font-size: 18px;
+	    line-height: 18px;
+	    margin-bottom: 4px;
+	    margin-top: 14px;
+	}
+	.ucg_interday .ucg_interday_text .trend {
+		font-size: 18px;
+		margin-top: 14px;
+		line-height: 18px;
+		margin-bottom: 4px;
+		padding-right: 23px;
+	}
+	.ucg_interday .ucg_interday_date {
+		margin-top: 20px;	
+	}
+	.ucg_interday .ucg_interday_date > div {
+		padding: 6px 0px 6px 3px;
+	}
+	.ucg_interday .ucg_interday_date .day,
+	.ucg_interday .ucg_interday_date .hours,
+	.ucg_interday .ucg_interday_date .minutes {
+		font-size: 36px;
+		line-height: 36px;
+	}
+}
+@media (min-width: 960px) {
+	
+	.ucg_interday.with-image > .container {
+		padding: 28px 0 0 50px;
+	}
+	.ucg_interday.ucg_image > .container {
+		padding: 0 20px 0 0;
+	}
+	.ucg_interday .ucg_interday_text .value {
+		font-size: 60px;
+		line-height: 60px;
+	}
+	.ucg_interday .ucg_interday_text .currency {
+	    font-size: 25px;
+	    line-height: 25px;
+	    margin-bottom: 4px;
+	    margin-top: 31px;
+	}
+	.ucg_interday .ucg_interday_text .trend {
+		font-size: 22px;
+		margin-top: 34px;
+		line-height: 22px;
+		margin-bottom: 4px;
+		padding-right: 23px;
+	}
+	.ucg_interday .ucg_interday_date {
+		margin-top: 36px;	
+	}
+	.ucg_interday .ucg_interday_date > div {
+		padding: 6px 0px 6px 3px;
+	}
+	.ucg_interday .ucg_interday_date .day,
+	.ucg_interday .ucg_interday_date .hours,
+	.ucg_interday .ucg_interday_date .minutes {
+		font-size: 36px;
+		line-height: 36px;
+	}
+	.ucg_interday .ucg_interday_date > div {
+		padding: 9px 0px 9px 5px;
+	}
+	.ucg_interday .ucg_interday_date .day,
+	.ucg_interday .ucg_interday_date .hours,
+	.ucg_interday .ucg_interday_date .minutes {
+		font-size: 43px;
+		line-height: 43px;
+	}
+	#mainContainer.with-sidebar-opened .ucg_interday.with-image > .container {
+		padding: 24px 10px 0;
+	}
+	#mainContainer.with-sidebar-opened .ucg_interday.ucg_image > .container {
+		padding: 0 10px;
+	}
+	#mainContainer.with-sidebar-opened .ucg_interday .ucg_interday_text .value {
+		font-size: 36px;
+		line-height: 36px;
+	}
+	#mainContainer.with-sidebar-opened .ucg_interday .ucg_interday_text .currency {
+	    font-size: 18px;
+	    line-height: 18px;
+	    margin-bottom: 4px;
+	    margin-top: 14px;
+	}
+	#mainContainer.with-sidebar-opened .ucg_interday .ucg_interday_text .trend {
+		font-size: 18px;
+		margin-top: 14px;
+		line-height: 18px;
+		margin-bottom: 4px;
+		padding-right: 23px;
+	}
+	#mainContainer.with-sidebar-opened .ucg_interday .ucg_interday_date {
+		margin-top: 20px;	
+	}
+	#mainContainer.with-sidebar-opened .ucg_interday .ucg_interday_date > div {
+		padding: 6px 0px 6px 3px;
+	}
+	#mainContainer.with-sidebar-opened .ucg_interday .ucg_interday_date .day,
+	#mainContainer.with-sidebar-opened .ucg_interday .ucg_interday_date .hours,
+	#mainContainer.with-sidebar-opened .ucg_interday .ucg_interday_date .minutes {
+		font-size: 36px;
+		line-height: 36px;
+	}
+}
