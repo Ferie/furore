@@ -15,7 +15,6 @@ function getIntradayData() {
 			$('.ucg_interday .ucg_interday_date .year').text(data[toLoad].year);
 			$('.ucg_interday .ucg_interday_date .hours').text(data[toLoad].hours);
 			$('.ucg_interday .ucg_interday_date .minutes').text(data[toLoad].minutes);
-			console.log("Loaded: "+toLoad);
 			lastLoad = toLoad;
 		},
 		error: function (jqXHR, textStatus, errorThrown){
