@@ -35,7 +35,7 @@
 
 .ucg_accordion .accordionPanel .elementTitle .arrow,
 .ucg_accordion .accordionPanel.open .elementTitle .arrow {
-	background: url("../img/static/select-arrow-down.png") no-repeat;
+	background: url("../img/static/select-blue-arrow-down.png") no-repeat;
 	position: absolute;
 	top: 26px;
 	right: 20px;
@@ -44,7 +44,7 @@
 }
 
 .ucg_accordion .accordionPanel.open .elementTitle .arrow {
-	background: url("../img/static/select-arrow-up.png") no-repeat;
+	background: url("../img/static/select-blue-arrow-up.png") no-repeat;
 }
 
 .ucg_accordion .accordionPanel .elementsContainer {
