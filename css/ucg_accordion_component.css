@@ -24,6 +24,7 @@
 
 .ucg_accordion .accordionPanel .elementTitle {
 	position: relative;
+	color: #00afd0;
 	cursor: pointer;
 	font-family: "UniCredit-Bold";
 	font-size: 17px;
@@ -53,6 +54,7 @@
 
 .ucg_accordion .accordionPanel .collapsing,
 .ucg_accordion .accordionPanel .collapse {
+	background-color: #F2F2F2;
  	border-top: 1px solid #c9c9c9; 
 	margin-top: 0;
 	visibility: visible;
