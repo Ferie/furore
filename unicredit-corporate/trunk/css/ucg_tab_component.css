@@ -214,6 +214,7 @@ select {
 
 	.tabs .tab {
 		float: left;
+		background-color: #F5F5F5;
 		border-top: 1px solid #c9c9c9;
 		border-left: 1px solid #c9c9c9;
 		cursor: pointer;
@@ -225,7 +226,7 @@ select {
 	}
 
 	.tabs .tab.active {
-		background: #FFFFFF;
+		background-color: #FFFFFF;
 		border-bottom: none;
 		padding-bottom: 22px;
 	}
