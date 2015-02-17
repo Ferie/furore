@@ -2,6 +2,7 @@
 
 .ucg_accordion {
 	position: relative;
+	margin-top: 6px;
 }
 
 .ucg_accordion .panel + .panel {
@@ -82,7 +83,7 @@
 
 @media (min-width: 768px) {
 	.ucg_accordion .panel {
-		margin-top: 6px;
+		margin-top: 4px;
 	}
 
 	.ucg_accordion .accordionPanel .elementTitle,
