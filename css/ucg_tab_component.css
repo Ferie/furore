@@ -209,16 +209,17 @@ select {
 		border-bottom: 1px solid #c9c9c9;
 		font-family: "UniCredit Medium";
 		margin-top: 6px;
-		height: 89px;
+		height: 88px;
 	}
 
 	.tabs .tab {
 		float: left;
 		background-color: #F5F5F5;
 		border-top: 1px solid #c9c9c9;
+		border-bottom: 1px solid #c9c9c9;
 		border-left: 1px solid #c9c9c9;
 		cursor: pointer;
-		padding: 34px 0;
+		padding: 33px 0;
 	}
 
 	.tabs .tab:last-child {
