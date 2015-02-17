@@ -57,11 +57,11 @@
 }
 
 .ucg_linklist .ucg_link_container .ucg_save_link {
-    background: url('../img/static/calendar-events-save.png') no-repeat scroll center left;
-    padding: 0 0 0 35px;
-    float: right;
-    color: #999;
-    cursor: pointer;
+	background: url('../img/static/calendar-events-save.png') no-repeat scroll center left;
+	float: right;
+	color: #999;
+	cursor: pointer;
+	padding: 0 0 0 35px;
 }
 
 @media (min-width: 768px) {
