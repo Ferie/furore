@@ -1,6 +1,7 @@
-var ucgEvents;
+var swipersCalendar = Array();
+var swipersSelector = Array();
 var swipeTemplate = doT.template(
-		"<div class='swiper-slide parsys_column three-columns-box-c0'>" +
+		"<div class='swiper-slide parsys_column three-columns-box-c0 {{=it.type}} {{=it.category}}'>" +
 			"<div class='panel ucg_text'>" +
 				"<div class='container'>" +
 					"<div class='ucg_text_container'>" +
@@ -21,28 +22,56 @@ var swipeTemplate = doT.template(
 				"</div>" +
 			"</div>" +
 		"</div>");
-
-function getEventsData() {
+function filterType(element, type){
+	if (type!="event" && type!=""){
+		return type==element.type;
+	} else {
+		return true;
+	}
+}
+function filterCategory(element, category){
+	if (category!=""){
+		return category==element.category;
+	} else {
+		return true;
+	}
+}
+function getSlideNum(){
+	return isBreakpoint("xs") ? 1 : 3;
+}
+function getSwiperByName(name){
+	return $.grep(swipersCalendar, function(element){
+		return element.name==name;
+	})[0].swiper;
+}
+function getEventsData(swiperContainer) {
 	$.ajax({
 		type: 'GET',
 		url: 'data/events.json',
 		dataType: "json",
 		success: function(data, textStatus, jqXHR){
-			for (var i = 0; i < data.length; i++) {
-				//ucgEvents.appendSlide(swipeTemplate(data[i]));
-				$('.ucg_calendar_tool .swiper-container .swiper-wrapper').append(swipeTemplate(data[i]));
-				ucgEvents = $('.ucg_calendar_tool .swiper-container').swiper({
-				    mode:'horizontal',
-				    loop: false,
-				    autoplay: 5000,
-				    slidesPerView: 3,
-				    createPagination: false,
-					autoResize: true,
-					resizeReInit: true
-				  });
+			var $name = $(swiperContainer).data('name');
+			var type = $(swiperContainer).data('type');
+			var category = $(swiperContainer).data('category');
+			var dataFiltered = $.grep(data, function(element){
+					return filterType(element, type) && filterCategory(element, category);
+				});
+			var $wrapper = $(swiperContainer).find('.swiper-wrapper');
+			for (var i = 0; i < dataFiltered.length; i++) {
+				$wrapper.append(swipeTemplate(dataFiltered[i]));
 			}
-			//ucgEvents.update();
-			//ucgEvents.startAutoplay();
+			swipersSelector.push('.ucg_calendar_tool .swiper-container[data-name="'+$(swiperContainer).data('name')+'"]');
+			//swipersCalendar.push($(swiperContainer).swiper({
+			swipersCalendar.push({name: $name, swiper: $(swiperContainer).swiper({
+			    mode:'horizontal',
+			    loop: false,
+			    autoplay: 5000,
+			    slidesPerView: getSlideNum(),
+			    createPagination: false,
+				autoResize: true,
+				resizeReInit: true
+				//});
+			  })});
 		},
 		error: function (jqXHR, textStatus, errorThrown){
 			alert(textStatus+"\r\nStatus: "+jqXHR.status+"\r\nError: "+errorThrown);
@@ -50,9 +79,23 @@ function getEventsData() {
 	});
 }
 $(document).ready(function() {
-	
-  getEventsData();
-  $('#mainContainer').on("animationSidebarCompleted", function(){
-	  ucgEvents.resizeFix(true);
-  });
+	$('.ucg_calendar_tool .swiper-container').each(function(){
+		getEventsData($(this));
+	});
+	$('#mainContainer').on("animationSidebarCompleted", function(){
+		$.each(swipersCalendar, function(key, value){ value.swiper.resizeFix(true); });
+	});
+	$('.ucg_calendar_tool .ucg_calendar_tool_arrows a').click(function(){
+		var $swiper = getSwiperByName($(this).data("target"));
+		$(this).hasClass('prev') ? $swiper.swipePrev() : $swiper.swipeNext();;
+	});
+	$(window).resize(function(){
+		$.each(swipersCalendar, function(key, value){
+			var slideNum = getSlideNum();
+			if(value.swiper.params.slidesPerView!=slideNum){
+				value.swiper.params.slidesPerView = slideNum;
+				value.swiper.reInit();
+			}
+		});
+	});
 });
