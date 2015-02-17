@@ -1,12 +1,67 @@
+.ucg_calendar_tool {
+	padding: 10px 0;
+}
 .ucg_calendar_tool .swiper-container {
-	height: 155px;
+	height: 194px;
+	width: 100%;
+	margin: 0 auto;
+}
+.ucg_calendar_tool .ucg_text,
+.ucg_calendar_tool .ucg_text .container{
+	height: 100%;
+}
+.ucg_calendar_tool .ucg_text_container p {
+	height: 137px;
+	overflow: hidden;
+}
+.ucg_calendar_tool .ucg_text_container .ucg_linklist.panel .container {
+	margin: 5px 0 30px;
+}
+.ucg_calendar_tool .ucg_text_container .ucg_introTitle {
+    line-height: 24px;
+}
+.ucg_calendar_tool > .ucg_linklist.panel .ucg_link_container {
+	padding-top: 13px;
+	border-top: 1px solid #c9c9c9;	
 }
 @media (min-width: 768px) {
+	.ucg_calendar_tool {
+		padding: 30px 0;
+	}
 	.ucg_calendar_tool .swiper-container {
 		width: 960px;
 	}
-	#mainContainer .ucg_calendar_tool .swiper-container {
-		width: 960px;
+	#mainContainer.with-sidebar-opened .ucg_calendar_tool .swiper-container {
+		width: 100%;
+	}
+	.ucg_calendar_tool .ucg_calendar_tool_arrows {
+		width: 100%;
+		position: absolute;
+	}
+	.ucg_calendar_tool .ucg_calendar_tool_arrows .container > div {
+		float: right;
+	}
+	.ucg_calendar_tool .ucg_calendar_tool_arrows a {
+		width: 40px;
+		height: 40px;
+		display: inline-block;
+		border: 1px solid #c9c9c9;
+		background-attachment: scroll;
+		background-color: transparent;
+		background-position: center center;
+		background-repeat: no-repeat;
+		float: left;
+	}
+	.ucg_calendar_tool .ucg_calendar_tool_arrows a.prev {
+		background-image: url('../img/static/select-arrow-left.png');
+	}
+	.ucg_calendar_tool .ucg_calendar_tool_arrows a.next {
+		background-image: url('../img/static/select-arrow-right.png');
+		border-left: none;
 	}
 }
-@media (min-width: 960px) {}
+@media (min-width: 960px) {
+	.ucg_calendar_tool {
+		padding: 50px 0;
+	}
+}
