@@ -31,17 +31,15 @@ function getEventsData() {
 			for (var i = 0; i < data.length; i++) {
 				//ucgEvents.appendSlide(swipeTemplate(data[i]));
 				$('.ucg_calendar_tool .swiper-container .swiper-wrapper').append(swipeTemplate(data[i]));
-				console.log(swipeTemplate(data[i]));
-
-				  ucgEvents = $('.ucg_calendar_tool .swiper-container').swiper({
-					    mode:'horizontal',
-					    loop: false,
-					    autoplay: 5000,
-					    slidesPerView: 3,
-					    createPagination: false,
-						autoResize: true,
-						resizeReInit: true
-					  });
+				ucgEvents = $('.ucg_calendar_tool .swiper-container').swiper({
+				    mode:'horizontal',
+				    loop: false,
+				    autoplay: 5000,
+				    slidesPerView: 3,
+				    createPagination: false,
+					autoResize: true,
+					resizeReInit: true
+				  });
 			}
 			//ucgEvents.update();
 			//ucgEvents.startAutoplay();

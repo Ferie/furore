@@ -1,0 +1,12 @@
+.ucg_calendar_tool .swiper-container {
+	height: 155px;
+}
+@media (min-width: 768px) {
+	.ucg_calendar_tool .swiper-container {
+		width: 960px;
+	}
+	#mainContainer .ucg_calendar_tool .swiper-container {
+		width: 960px;
+	}
+}
+@media (min-width: 960px) {}
