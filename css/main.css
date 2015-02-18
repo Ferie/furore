@@ -5,29 +5,41 @@ body {
 	background: #FFF;
 	color: #666666;
 }
+
 .clear {
 	clear: both;
 	float: none;
 	display: block;
 }
+
 .left {
 	float: left;
 }
+
 .right {
 	float: right;
 }
+
 a, a:visited, a:focus {
 	color: #00afd0;
 	text-decoration: none;
 	outline: 0;
 }
+
 a:hover, a:active {
 	color: #00afd0;
 	text-decoration: none;
 }
+
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 }
+
+b {
+	font-family: "unicredit-bold";
+	font-weight: normal;
+}
+
 .panel {
 	behavior: url('../plugin/js/PIE.htc');
 	border: none;
@@ -35,23 +47,27 @@ h1, h2, h3, h4, h5, h6 {
 	box-shadow: none;
 	background: none;
 }
+
 #mainContainer {
 	background-color: #FFF;
 	position: absolute;
 	top: 60px;
 	left: 0px;
 }
+
 #mainContainer > .pane {
 	display: block;
 	width: 100%;
 	text-align: center;	
 }
+
 #mainContainer > .pane h1,
 #mainContainer > .pane h2,
 #mainContainer > .pane h3 {
 	font-family: "unicredit-light";
     font-weight: normal;
 }
+
 /**** GENERAL RULES ****/
 	
 /**** HEADER ****/

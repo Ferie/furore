@@ -6,7 +6,7 @@ var swipeTemplate = doT.template(
 				"<div class='container'>" +
 					"<div class='ucg_text_container'>" +
 						"<p>" +
-							"<span class='ucg_date'><span class='ucg_bold'>{{=it.date}}</span></span>" +
+							"<span class='ucg_date'><b>{{=it.date}}</b></span>" +
 							"<span class='ucg_introTitle'><a href='{{=it.url}}' class='ucg_titleLink'>{{=it.title}}</a></span>" +
 						"</p>" +
 						"<div class='panel ucg_linklist'>" +
@@ -22,6 +22,7 @@ var swipeTemplate = doT.template(
 				"</div>" +
 			"</div>" +
 		"</div>");
+
 function filterType(element, type){
 	if (type!="event" && type!=""){
 		return type==element.type;
@@ -29,6 +30,7 @@ function filterType(element, type){
 		return true;
 	}
 }
+
 function filterCategory(element, category){
 	if (category!=""){
 		return category==element.category;
@@ -36,14 +38,17 @@ function filterCategory(element, category){
 		return true;
 	}
 }
+
 function getSlideNum(){
 	return isBreakpoint("xs") ? 1 : 3;
 }
+
 function getSwiperByName(name){
 	return $.grep(swipersCalendar, function(element){
 		return element.name==name;
 	})[0].swiper;
 }
+
 function getEventsData(swiperContainer) {
 	$.ajax({
 		type: 'GET',
@@ -78,17 +83,22 @@ function getEventsData(swiperContainer) {
 		}
 	});
 }
+
+
 $(document).ready(function() {
 	$('.ucg_calendar_tool .swiper-container').each(function(){
 		getEventsData($(this));
 	});
+
 	$('#mainContainer').on("animationSidebarCompleted", function(){
 		$.each(swipersCalendar, function(key, value){ value.swiper.resizeFix(true); });
 	});
+
 	$('.ucg_calendar_tool .ucg_calendar_tool_arrows a').click(function(){
 		var $swiper = getSwiperByName($(this).data("target"));
 		$(this).hasClass('prev') ? $swiper.swipePrev() : $swiper.swipeNext();;
 	});
+
 	$(window).resize(function(){
 		$.each(swipersCalendar, function(key, value){
 			var slideNum = getSlideNum();

@@ -15,13 +15,13 @@ $(document).ready(function () {
 		freeMode: true
 	});
 
-	$('.ucg_history .ucg_history_arrow_left a').on('click', function () {
-		yearsSwiper.swipePrev();
-	});
-
-	$('.ucg_history .ucg_history_arrow_right a').on('click', function () {
-		yearsSwiper.swipeNext();
-	});
+//	$('.ucg_history .ucg_history_arrow_left a').on('click', function () {
+//		yearsSwiper.swipePrev();
+//	});
+//
+//	$('.ucg_history .ucg_history_arrow_right a').on('click', function () {
+//		yearsSwiper.swipeNext();
+//	});
 
 	var historySwiper = new Swiper('.ucg_history .history_content .swiper-container', {
 		spaceBetween: 30,
