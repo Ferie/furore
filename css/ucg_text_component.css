@@ -12,6 +12,7 @@
 .ucg_text .ucg_text_container ol,
 .ucg_text .ucg_text_container p {
 	font-size: 15px;
+	line-height: 22px;
 	margin-bottom: 0;
 }
 
@@ -59,6 +60,12 @@
 	list-style-type: none;
 	bottom: 0;
 	padding: 0;
+}
+
+.ucg_text .ucg_text_container .ucg_ext_link {
+	background: url("../img/static/generic_external_link_icon.png") no-repeat left center / 16px auto;
+	margin-left: 3px;
+	padding-left: 20px;
 }
 
 .ucg_text .ucg_text_container .ucg_link,
