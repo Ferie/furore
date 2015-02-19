@@ -81,6 +81,10 @@
 	line-height: 1.75;
 }
 
+.ucg_accordion .ucg_text.panel {
+	margin: 0;
+}
+
 @media (min-width: 768px) {
 	.ucg_accordion .panel {
 		margin-top: 4px;

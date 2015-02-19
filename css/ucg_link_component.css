@@ -4,13 +4,6 @@
 	margin: 0;
 }
 
-.ucg_linklist h5 {
-	border-bottom: 1px solid #c9c9c9;
-	margin-bottom: 10px;
-	padding-bottom: 10px;
-	text-transform: uppercase;
-}
-
 .ucg_linklist .ucg_link_container {
 	font-size: 14px;
 	margin: 0;
@@ -58,6 +51,18 @@
 	color: #999;
 	cursor: pointer;
 	padding: 0 0 0 35px;
+}
+
+.ucg_linklist .ucg_underlined_title {
+	margin-bottom: 10px;
+}
+
+.ucg_linklist .ucg_underlined_title .container {
+	padding: 0;
+}
+
+.ucg_linklist .ucg_underlined_title .ucg_title_container {
+	padding-bottom: 10px;
 }
 
 @media (min-width: 768px) {
