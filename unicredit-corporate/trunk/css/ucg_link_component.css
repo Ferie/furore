@@ -20,7 +20,7 @@
 .ucg_linklist .ucg_link_container .ucg_link {
 	background: none;
 	font-size: 15px;
-	margin-bottom: 0;
+	line-height: 22px;
 }
 
 .ucg_linklist .ucg_link_container .ucg_download_link {
