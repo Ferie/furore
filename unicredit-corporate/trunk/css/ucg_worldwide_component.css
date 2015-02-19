@@ -1,0 +1,57 @@
+/************** ucg_worldwide **************/
+
+.ucg_worldwide {
+	overflow: hidden;
+}
+
+.ucg_worldwide .nations_container {
+	border-bottom: 1px solid #C9C9C9;
+	cursor: pointer;
+	margin-bottom: 40px;
+	padding-bottom: 15px;
+}
+
+.ucg_worldwide .nations_container .swiper-container {
+	
+}
+
+.ucg_worldwide .nations_container .swiper-slide a,
+.ucg_worldwide .nations_container .swiper-slide-active a {
+	color: #626262;
+	font-size: 20px;
+	line-height: 1;
+	text-align: center;
+}
+
+.ucg_worldwide .nations_container .swiper-slide {
+	font-size: 20px;
+	line-height: 1;
+	text-align: center;
+}
+
+.ucg_worldwide .nations_container .swiper-slide.active a {
+	color: #00afd0;
+}
+
+.ucg_worldwide .ucg_worldwide_arrows .ucg_worldwide_arrow a {
+	display: inline-block;
+	background: url('../img/static/ucg_small_grey_arrows.png') no-repeat scroll transparent;
+	height: 20px;
+	width: 9px;
+}
+
+.ucg_worldwide .ucg_worldwide_arrows .ucg_worldwide_arrow.ucg_worldwide_arrow_left {
+	float: left;
+}
+
+.ucg_worldwide .ucg_worldwide_arrows .ucg_worldwide_arrow.ucg_worldwide_arrow_left a {
+	background-position: center left;
+}
+
+.ucg_worldwide .ucg_worldwide_arrows .ucg_worldwide_arrow.ucg_worldwide_arrow_right {
+	float: right;
+}
+
+.ucg_worldwide .ucg_worldwide_arrows .ucg_worldwide_arrow.ucg_worldwide_arrow_right a {
+	background-position: center right;
+}
