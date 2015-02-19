@@ -201,6 +201,10 @@
 	color: #666666;
 }
 
+.ucg_tab .ucg_text.panel {
+	margin: 0;
+}
+
 /************** tab CSS for desktop resolutions **************/
 
 @media (min-width: 768px) {

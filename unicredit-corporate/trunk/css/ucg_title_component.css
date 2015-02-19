@@ -18,11 +18,11 @@
 	margin-top: 0px;
 }
 
-.ucg_title .ucg_title_image {
+.ucg_title .ucg_title_image_container {
 	float: right;
 }
 
-.ucg_title .ucg_title_image img {
+.ucg_title .ucg_title_image_container img {
 	float: right;
 	height: 50%;
 	width: 50%;
@@ -35,14 +35,17 @@
 .ucg_underlined_title h1, .ucg_underlined_title h2,
 .ucg_underlined_title h3, .ucg_underlined_title h4,
 .ucg_underlined_title h5, .ucg_underlined_title h6 {
-	border-bottom: 1px solid #c9c9c9;
 	margin: 0;
+}
+
+.ucg_underlined_title .ucg_title_container {
+	border-bottom: 1px solid #c9c9c9;
 	padding-bottom: 16px;
 	text-transform: uppercase;
 }
 
 @media (min-width: 768px) {
-	.ucg_title .ucg_title_image img {
+	.ucg_title .ucg_title_image_container img {
 		float: none;
 		height: 100%;
 		width: 100%;
