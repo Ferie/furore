@@ -19,9 +19,8 @@
 }
 
 .ucg_title .ucg_title_image_container img {
-	float: right;
-	height: 50%;
-	width: 50%;
+	height: 100%;
+	width: 100%;
 }
 
 .ucg_underlined_title {
@@ -41,9 +40,5 @@
 }
 
 @media (min-width: 768px) {
-	.ucg_title .ucg_title_image_container img {
-		float: none;
-		height: 100%;
-		width: 100%;
-	}
+	
 }
