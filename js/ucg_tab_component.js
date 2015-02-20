@@ -86,11 +86,11 @@ $(document).ready(function () {
 	});
 
 	// skin for the select in Worldwide area
-	$('.chosen-select').chosen({
+	$('.ucg_tab .chosen-select').chosen({
 		allow_single_deselect: true,
 		disable_search: true,
 		width: '100%'
-	}).change(function () {
+	}).on('change', function () {
 		var $txt = $('.chosen-container-single .chosen-single-with-deselect span');
 		if ($txt.text().indexOf('(') > -1) {
 			$txt.text($txt.text().substring(0, $txt.text().indexOf('(')));
@@ -113,7 +113,7 @@ $(document).ready(function () {
 	});
 
 	// event that puts a placeholder when the dropdown menu is open (mobile)
-	$('.chosen-container .chosen-single').on('click', function () {
+	$('.ucg_tab .chosen-container .chosen-single').on('click', function () {
 		$(this).find('span').text($('.dropdown select').data('placeholder'));
 	});
 });

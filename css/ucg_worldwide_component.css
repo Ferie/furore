@@ -21,6 +21,7 @@
 	font-size: 20px;
 	line-height: 1;
 	text-align: center;
+	white-space: nowrap;
 }
 
 .ucg_worldwide .nations_container .swiper-slide {
