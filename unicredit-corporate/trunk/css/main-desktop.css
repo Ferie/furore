@@ -144,6 +144,35 @@
 	/**** BREADCRUMB ****/
 
 	/**** FOOTER ****/
+	
+	#footer ul {
+		width: auto;
+		display: inline;
+		float: none;
+	}
+	#footer ul li a {
+	    margin: 0 17px;
+	}
+	#footer .info ul li,
+	#footer .utility ul li {
+		display: inline;
+	    width: auto;
+	}
+	#footer .info ul li a,
+	#footer .utility ul li a {
+		text-align: center;
+	    width: auto;
+		padding: 5px 0;
+	}
+	#footer .darkGreyFooter .info {
+		padding: 0;
+	}
+	#footer .darkGreyFooter .logos img {
+		float: none;
+	}
+	#footer .darkGreyFooter > div:last-child {
+		margin: 0;
+	}
 	/**** FOOTER ****/
 }
 @media (min-width: 960px) {

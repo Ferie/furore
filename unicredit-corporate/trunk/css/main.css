@@ -365,7 +365,6 @@ b, strong {
 #footer ul {
 	margin: 0;
 	padding: 0;
-	width: 100%;
 	list-style-type: none;
 }
 #footer ul li {
@@ -375,7 +374,7 @@ b, strong {
 }
 #footer ul li a {
 	display: inline-block;
-    margin: 0 17px;
+    margin: 0;
     color: #cccccc;
 }
 #footer .lightGreyFooter ul li a {
@@ -404,23 +403,47 @@ b, strong {
 #footer .lightGreyFooter .general {
 	padding: 13px 0 0 0;
 }
-#footer .darkGreyFooter .utility ul li a {
+#footer .info ul:first-child,
+#footer .utility ul:first-child {
+	padding: 0 10px 0 20px;
+}
+#footer .info ul:last-child,
+#footer .utility ul:last-child {
+	padding: 0 20px 0 10px;
+}
+#footer .info ul li,
+#footer .utility ul li {
+	width: 100%;
+	display: block;
+}
+#footer .utility ul li a {
 	color: #ffffff;
 	font-size: 17px;
-	padding: 18px 0;
+	padding: 5px 0;
+    text-align: left;
+    width: 100%;
+}
+#footer .info ul li a {
+    text-align: left;
+    width: 100%;
+	padding: 5px 0;	
 }
 #footer .darkGreyFooter .utility {
-	padding: 0;
+	padding: 10px 0;
 }
 #footer .darkGreyFooter .info {
-	padding: 5px 0;
+	padding: 10px 0;
 }
 #footer .darkGreyFooter .logos {
-	padding: 30px 0;
+	padding: 30px 20px;
+}
+#footer .darkGreyFooter .logos img {
+	float: left;
 }
 #footer .darkGreyFooter > div:last-child {
+	margin-top: 15px;
 	border-top: 1px solid #ababab;
-	padding: 50px 0 35px 0;
+	padding: 45px 0 35px 0;
 }
 #footer ul li a:hover,
 #footer ul li a:active {
