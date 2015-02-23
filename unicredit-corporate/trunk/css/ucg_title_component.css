@@ -40,5 +40,11 @@
 }
 
 @media (min-width: 768px) {
-	
+	.ucg_title .ucg_cols_image {
+		width: auto;
+		float: right;
+	}
+	.ucg_title.ucg_no_image .ucg_cols_text {
+		width: 100%;
+	}
 }
