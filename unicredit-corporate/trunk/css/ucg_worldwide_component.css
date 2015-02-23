@@ -7,7 +7,6 @@
 .ucg_worldwide .nations_container {
 	border-bottom: 1px solid #C9C9C9;
 	cursor: pointer;
-	margin-bottom: 40px;
 	padding-bottom: 15px;
 }
 
@@ -21,7 +20,6 @@
 	font-size: 20px;
 	line-height: 1;
 	text-align: center;
-	white-space: nowrap;
 }
 
 .ucg_worldwide .nations_container .swiper-slide {
@@ -55,4 +53,63 @@
 
 .ucg_worldwide .ucg_worldwide_arrows .ucg_worldwide_arrow.ucg_worldwide_arrow_right a {
 	background-position: center right;
+}
+
+.ucg_worldwide .worldwide_content .mapContainer {
+	position: relative;
+	background: none;
+	font-size: 15px;
+	line-height: 1;
+	height: auto;
+	width: 100%;
+}
+
+.ucg_worldwide .worldwide_content .mapContainer .nationContainer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.ucg_worldwide .worldwide_content .mapContainer .nation {
+	background: url('../img/static/worldwide_component_nation_arrow.png') no-repeat scroll right center transparent;
+	color: #00afd0;
+	font-family: 'unicredit-light';
+	font-size: 40px;
+	margin-top: 4px;
+	margin-bottom: 28px;
+	padding-right: 19px;
+}
+
+.ucg_worldwide .worldwide_content .mapContainer .marketShare {
+	margin-top: 151px;
+	text-align: center;
+}
+
+.ucg_worldwide .worldwide_content .mapContainer .marketShereNumber,
+.ucg_worldwide .worldwide_content .mapContainer .number {
+	font-family: 'unicredit-light';
+	font-size: 40px;
+	letter-spacing: -2px;
+	margin-top: 3px;
+}
+
+.ucg_worldwide .worldwide_content .mapContainer .marketShereNumber {
+	color: #00afd0;
+}
+
+.ucg_worldwide .worldwide_content .mapContainer .employees {
+	margin-top: 118px;
+}
+
+.ucg_worldwide .worldwide_content .mapContainer .branches {
+	margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+	.ucg_worldwide .worldwide_content .mapContainer {
+		background: url('../img/mappa_europa.png') no-repeat scroll right center transparent;
+		border-bottom: 1px solid #C9C9C9;
+		height: 439px;
+		width: 100%;
+	}
 }
