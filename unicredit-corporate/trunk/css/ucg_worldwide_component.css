@@ -7,7 +7,7 @@
 .ucg_worldwide .nations_container {
 	border-bottom: 1px solid #C9C9C9;
 	cursor: pointer;
-	padding-bottom: 15px;
+	padding-bottom: 8px;
 }
 
 .ucg_worldwide .nations_container .swiper-container {
@@ -81,8 +81,15 @@
 }
 
 .ucg_worldwide .worldwide_content .mapContainer .marketShare {
-	margin-top: 151px;
+	position: relative;
+	margin-top: 80px;
 	text-align: center;
+}
+
+.ucg_worldwide .worldwide_content .mapContainer .marketShare .marketShereText {
+	position: absolute;
+	top: 71px;
+	left: 57px;
 }
 
 .ucg_worldwide .worldwide_content .mapContainer .marketShereNumber,
@@ -94,11 +101,15 @@
 }
 
 .ucg_worldwide .worldwide_content .mapContainer .marketShereNumber {
+	position: absolute;
+	top: 89px;
+	left: 57px;
 	color: #00afd0;
+	margin-top: 0;
 }
 
 .ucg_worldwide .worldwide_content .mapContainer .employees {
-	margin-top: 118px;
+	margin-top: 116px;
 }
 
 .ucg_worldwide .worldwide_content .mapContainer .branches {
