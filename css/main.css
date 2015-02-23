@@ -47,6 +47,10 @@ b, strong {
 	top: 60px;
 	left: 0px;
 }
+#mainContainer .ucg_cols {
+	padding: 0;
+	margin: 0;
+}
 #mainContainer > .pane {
 	display: block;
 	width: 100%;
