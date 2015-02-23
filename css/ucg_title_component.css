@@ -4,6 +4,17 @@
 	text-align: center;
 }
 
+.ucg_seo_title h1 {
+	font-family: 'unicredit-light';
+	font-size: 70px;
+	line-height: 80px;
+	margin-top: 0;
+}
+
+.ucg_title {
+	font-family: 'unicredit-light';
+}
+
 .ucg_title .container {
 	width: 100%;
 }
@@ -14,8 +25,14 @@
 	margin-top: 0px;
 }
 
+.ucg_title h2 {
+	font-size: 40px;
+	line-height: 1;
+}
+
 .ucg_title .ucg_title_image_container {
 	float: right;
+	margin-top: 5px;
 }
 
 .ucg_title .ucg_title_image_container img {
@@ -25,6 +42,11 @@
 
 .ucg_underlined_title {
 	width: 100%;
+}
+
+.ucg_underlined_title h5 {
+	font-family: 'unicredit-regular';
+	font-size: 15px;
 }
 
 .ucg_underlined_title h1, .ucg_underlined_title h2,
@@ -44,6 +66,7 @@
 		width: auto;
 		float: right;
 	}
+
 	.ucg_title.ucg_no_image .ucg_cols_text {
 		width: 100%;
 	}
