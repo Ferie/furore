@@ -41,7 +41,12 @@ $(document).ready(function () {
 
 	var mainContainerWidth,
 		numSlidesPerView,
-		nationsSwiper;
+		nationsSwiper = new Swiper('.ucg_worldwide .nations_container .swiper-container', {
+			slidesPerView: 3,
+			mousewheelControl: true,
+			resizeReInit: true,
+			freeMode: true
+		});
 
 	$('.ucg_worldwide .ucg_worldwide_arrow_left a').on('click', function () {
 		nationsSwiper.swipePrev();
@@ -53,10 +58,17 @@ $(document).ready(function () {
 
 	$('.ucg_worldwide .nations_container .swiper-slide a').on('click', function () {
 		var $this = $(this);
+
 		if (!$this.parent().hasClass('active')) {
 			$('.ucg_worldwide .nations_container .swiper-slide').removeClass('active');
 			$this.parent().addClass('active');
 		}
+
+		$('.ucg_worldwide .nationContainer .nation').text($this.text());
+		$('.ucg_worldwide .marketShare .marketShereNumber').text($this.data('marketshare'));
+		$('.ucg_worldwide .marketShare .graph').attr('src', $this.data('graph'))
+		$('.ucg_worldwide .employees .number').text($this.data('emplyees'));
+		$('.ucg_worldwide .branches .number').text($this.data('branches'));
 	});
 
 	$('#mainContainer').on("animationSidebarCompleted", function () {

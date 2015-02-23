@@ -55,7 +55,7 @@
 	background-position: center right;
 }
 
-.ucg_worldwide .worldwide_content .mapContainer {
+.ucg_worldwide .worldwide_content {
 	position: relative;
 	background: none;
 	font-size: 15px;
@@ -64,63 +64,82 @@
 	width: 100%;
 }
 
-.ucg_worldwide .worldwide_content .mapContainer .nationContainer {
-	position: absolute;
-	bottom: 0;
-	left: 0;
+.ucg_worldwide .worldwide_content .nationContainer {
+	padding: 40px 15px 0;
 }
 
-.ucg_worldwide .worldwide_content .mapContainer .nation {
-	background: url('../img/static/worldwide_component_nation_arrow.png') no-repeat scroll right center transparent;
+.ucg_worldwide .worldwide_content .nation {
+	background: url('../img/static/worldwide_component_nation_arrow.png') no-repeat scroll right 12px transparent;
+	display: inline-block;
 	color: #00afd0;
 	font-family: 'unicredit-light';
 	font-size: 40px;
 	margin-top: 4px;
 	margin-bottom: 28px;
-	padding-right: 19px;
+	padding-right: 21px;
 }
 
-.ucg_worldwide .worldwide_content .mapContainer .marketShare {
+.ucg_worldwide .worldwide_content .marketShare {
 	position: relative;
-	margin-top: 80px;
-	text-align: center;
+	margin-top: 20px;
 }
 
-.ucg_worldwide .worldwide_content .mapContainer .marketShare .marketShereText {
+.ucg_worldwide .worldwide_content .marketShare .textOnImage {
 	position: absolute;
 	top: 71px;
 	left: 57px;
+	text-align: center;
 }
 
-.ucg_worldwide .worldwide_content .mapContainer .marketShereNumber,
-.ucg_worldwide .worldwide_content .mapContainer .number {
+.ucg_worldwide .worldwide_content .marketShare .marketShereText {
+	
+}
+
+.ucg_worldwide .worldwide_content .marketShereNumber,
+.ucg_worldwide .worldwide_content .number {
 	font-family: 'unicredit-light';
 	font-size: 40px;
 	letter-spacing: -2px;
 	margin-top: 3px;
 }
 
-.ucg_worldwide .worldwide_content .mapContainer .marketShereNumber {
-	position: absolute;
-	top: 89px;
-	left: 57px;
+.ucg_worldwide .worldwide_content .marketShereNumber {
 	color: #00afd0;
 	margin-top: 0;
 }
 
-.ucg_worldwide .worldwide_content .mapContainer .employees {
-	margin-top: 116px;
+.ucg_worldwide .worldwide_content .employees {
+	margin-top: 56px;
 }
 
-.ucg_worldwide .worldwide_content .mapContainer .branches {
+.ucg_worldwide .worldwide_content .branches {
 	margin-top: 20px;
 }
 
 @media (min-width: 768px) {
-	.ucg_worldwide .worldwide_content .mapContainer {
+	.ucg_worldwide .worldwide_content {
 		background: url('../img/mappa_europa.png') no-repeat scroll right center transparent;
 		border-bottom: 1px solid #C9C9C9;
 		height: 439px;
 		width: 100%;
+	}
+
+	.ucg_worldwide .worldwide_content .nationContainer {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding: 0;
+	}
+
+	.ucg_worldwide .worldwide_content .nation {
+		
+	}
+
+	.ucg_worldwide .worldwide_content .marketShare {
+		margin-top: 80px;
+	}
+
+	.ucg_worldwide .worldwide_content .employees {
+		margin-top: 116px;
 	}
 }
