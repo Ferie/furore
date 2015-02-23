@@ -25,14 +25,8 @@
 
 		<!--imported CSS component-->
 		<link type="text/css" rel="stylesheet" href="css/ucg_title_component.css"/>
-		<link type="text/css" rel="stylesheet" href="css/ucg_text_component.css"/>
-		<link type="text/css" rel="stylesheet" href="css/ucg_image_text_component.css"/>
+<!-- 		<link type="text/css" rel="stylesheet" href="css/ucg_text_component.css"/> -->
 		<link type="text/css" rel="stylesheet" href="css/ucg_link_component.css"/>
-		<link type="text/css" rel="stylesheet" href="css/videoplayer.css"/>
-		<link type="text/css" rel="stylesheet" href="css/ucg_video_text_component.css"/>
-		<link type="text/css" rel="stylesheet" href="css/ucg_tab_component.css"/>
-		<link type="text/css" rel="stylesheet" href="css/ucg_accordion_component.css"/>
-		<link type="text/css" rel="stylesheet" href="css/ucg_ads_component.css"/>
 
 		<!--[if lt IE 9]>
 			<link type="text/css" rel="stylesheet" href="css/ie8.css"/>
@@ -51,10 +45,6 @@
 		<script type="text/javascript" src="js/ucg_worldwide_component.js"></script> 
 
 		<!--imported JS component-->
-		<script type="text/javascript" src="js/videoplayer.js"></script>
-		<script type="text/javascript" src="js/ucg_accordion_component.js"></script>
-		<script type="text/javascript" src="js/ucg_ads.js"></script>
-		<script type="text/javascript" src="js/ucg_tab_component.js"></script>
 
 		<!--[if lt IE 9]>
 			<script type="text/javascript" src="plugin/js/html5shiv.js"></script>
@@ -211,15 +201,13 @@
 		<div id="mainContainer">
 			<div class="example">Worldwide Component</div> 
 			<div class="example">Worldwide Component Full page width</div> 
-			<div class="panel ucg_title"> 
-				<div class="container"> 
-					<div class="ucg_title_text_container"> 
-						<div class="ucg_title_container">
-							<h2>Worldwide</h2>
-						</div>
-						<div class="ucg_subtitle"><h4></h4></div>
-					</div>
+			<div class="panel ucg_title">
+				<div class="container">
 					<div class="ucg_title_image_container"></div>
+					<div class="ucg_title_container">
+						<h2>Worldwide</h2>
+					</div>
+					<div class="ucg_subtitle_container"><h4></h4></div>
 				</div>
 			</div>
 
@@ -234,40 +222,61 @@
 							<div class="swiper-wrapper">
 								<div class="swiper-slide active"><a href="javascript: void(0);" data-slide="0">Italy</a></div>
 								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="1">Austria</a></div>
-								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="2">Belgium</a></div>
+								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="2">Azerbaijan</a></div>
 								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="3">Bosnia & Herzegovina</a></div>
 								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="4">Bulgaria</a></div>
 								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="5">Croatia</a></div>
 								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="6">Czech Republic</a></div>
-								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="7">Estonia</a></div>
-								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="8">France</a></div>
-								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="9">Greece</a></div>
-								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="10">Hungary</a></div>
-								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="11">Ireland</a></div>
-								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="12">Latvia</a></div>
-								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="13">Lithuania</a></div>
-								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="14">Luxembourg</a></div>
-								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="15">Macedonia</a></div>
-								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="16">Montenegro</a></div>
-								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="17">Netherlands</a></div>
-								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="18">Norway</a></div>
-								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="19">Poland</a></div>
-								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="20">Romania</a></div>
-								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="21">Ukraine</a></div>
-								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="22">United Kingdom</a></div>
-								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="23">San Marino</a></div>
-								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="24">Serbia</a></div>
-								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="25">Slovakia</a></div>
-								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="26">Slovenia</a></div>
-								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="27">Spain</a></div>
-								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="28">Switzerland</a></div>
+								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="7">Germany</a></div>
+								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="8">Hungary</a></div>
+								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="9">Poland</a></div>
+								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="10">Romania</a></div>
+								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="11">Russia</a></div>
+								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="12">Serbia</a></div>
+								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="13">Slovakia</a></div>
+								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="14">Slovenia</a></div>
+								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="15">Turkey</a></div>
+								<div class="swiper-slide"><a href="javascript: void(0);" data-slide="16">Ukraine</a></div>
 							</div>
 						</div>
 					</div>
 
 					<div class="worldwide_content">
-						
+						<div class="mapContainer">
+							<div class="nationContainer">
+								<div class="text-uppercase">Unicredit in</div>
+								<div class="nation">Italy</div>
+							</div>
+							<div class="col-xs-12 col-sm-3">
+								<div class="marketShare">
+									<div class="text-uppercase">
+										Market share
+									</div>
+									<div class="marketShereNumber">12,5%</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-3">
+								<div class="employees">
+									<div class="text-uppercase">Employees</div>
+									<div class="number">23.000</div>
+								</div>
+								<div class="branches">
+									<div class="text-uppercase">Branches</div>
+									<div class="number">7.000</div>
+								</div>
+							</div>
+						</div>
 					</div>
+				</div>
+			</div>
+
+			<div class="panel ucg_linklist">
+				<div class="container">
+					<ul class="ucg_link_container">
+						<li class="ucg_internal_link">
+							<a href="javascript:void(0);">Find UniCredit brances and offices around the world</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 
