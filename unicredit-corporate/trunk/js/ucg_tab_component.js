@@ -41,15 +41,18 @@ $(document).ready(function () {
 		sidebarResize();
 	}, 1000);
 
-	var timer = window.setTimeout(function () {}, 0);
+	var timer;
 
 	// functions on resize
 	$(window).resize(function () {
 		tabsHeader();
 		window.clearTimeout(timer);
+		timer = window.setTimeout(function () {
+			sidebarResize();
+		}, 400);
 	});
 
-	// event that resizes the tabs padding on sidebar click
+	// event that resizes the tabs padding on sidebar's animation ends
 	$('#mainContainer').on('animationSidebarCompleted', function () {
 		setTimeout(function () {
 			tabsHeader();
