@@ -52,7 +52,7 @@
 }
 
 .ucg_swiper .ucg_swiper_arrows {
-	z-index: 1;
+	height: 0;
 }
 .ucg_swiper .ucg_swiper_arrows .ucg_swiper_arrow {
 	width: 23px;
@@ -68,6 +68,9 @@
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-color: transparent;
+	position: relative;
+    top: -140px;
+	z-index: 1;
 }
 .ucg_swiper .ucg_swiper_arrows .ucg_swiper_arrow.ucg_swiper_arrow_left{float: left;}
 .ucg_swiper .ucg_swiper_arrows .ucg_swiper_arrow.ucg_swiper_arrow_right{float: right;}
