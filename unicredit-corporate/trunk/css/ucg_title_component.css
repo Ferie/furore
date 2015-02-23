@@ -33,6 +33,7 @@
 .ucg_title .ucg_title_image_container {
 	float: right;
 	margin-top: 5px;
+	margin-left: 15px;
 }
 
 .ucg_title .ucg_title_image_container img {
