@@ -1,13 +1,43 @@
 /************** ucg_button **************/
 
-.ucg_button .ucg_button_link {
-	background-color: #00afd0;
+.ucg_button button {
+	background-color: transparent;
 	border-radius: 3px;
-    font-family: "unicredit-bold";
+    font-family: "unicredit-medium";
 	font-size: 14px;
-	color: #FFFFFF;
+	color: #666;
 	margin-right: 20px;
-	padding: 12px 30px;
+	margin-bottom: 20px;
+	height: 40px;
+	line-height: 40px;
+	padding: 0px 15px;
 	text-align: center;
+	border: 1px solid #CCC;
     text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    min-width: 100px;
+    text-overflow: ellipsis;
+}
+.ucg_button button.ucg_button_large {
+	padding: 0px 30px;
+	height: 60px;
+	line-height: 60px;	
+}
+.ucg_button button.ucg_button_confirm {
+	background-color: #00afd0;
+	border-color: #00afd0;
+	color: #FFFFFF;
+}
+.ucg_button .btn:hover,
+.ucg_button .btn:focus,
+.ucg_button .btn:active {
+	color: inherit;
+	outline: none; 
+}
+.ucg_button .btn.ucg_button_confirm:hover,
+.ucg_button .btn.ucg_button_confirm:focus,
+.ucg_button .btn.ucg_button_confirm:active {
+	color: #FFFFFF;
+	outline: none; 
 }
