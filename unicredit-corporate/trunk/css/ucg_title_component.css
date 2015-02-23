@@ -26,8 +26,9 @@
 }
 
 .ucg_title h2 {
-	font-size: 40px;
-	line-height: 1;
+	font-family: "unicredit-light";
+    line-height: 1.2;
+	font-size: 30px;
 }
 
 .ucg_title .ucg_title_image_container {
@@ -70,5 +71,9 @@
 
 	.ucg_title.ucg_no_image .ucg_cols_text {
 		width: 100%;
+	}
+	
+	.ucg_title h2 {
+		font-size: 40px;
 	}
 }
