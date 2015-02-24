@@ -4,15 +4,16 @@
 	overflow: hidden;
 }
 
+.ucg_history .container .panel .container {
+	padding: 0;
+	width: 100%;
+}
+
 .ucg_history .years_container {
 	border-bottom: 1px solid #C9C9C9;
 	cursor: pointer;
 	margin-bottom: 40px;
 	padding-bottom: 15px;
-}
-
-.ucg_history .years_container .swiper-container {
-	
 }
 
 .ucg_history .years_container .swiper-slide a,
@@ -54,4 +55,11 @@
 
 .ucg_history .ucg_history_arrows .ucg_history_arrow.ucg_history_arrow_right a {
 	background-position: center right;
+}
+
+@media (min-width: 768px) {
+	#mainContainer .ucg_history .container .panel .container {
+		padding: 0;
+		width: 100%;
+	}
 }

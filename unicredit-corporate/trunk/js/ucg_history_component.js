@@ -9,7 +9,7 @@ $(document).ready(function () {
 
 	var yearsSwiper = new Swiper('.ucg_history .years_container .swiper-container', {
 		slidesPerView: 7,
-		spaceBetween: 30,
+		spaceBetween: 50,
 		mousewheelControl: true,
 		resizeReInit: true,
 		freeMode: true
