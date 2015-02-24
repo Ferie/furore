@@ -18,7 +18,7 @@
 		<link type="text/css" rel="stylesheet" href="css/ucg_parsys_column.css"/>
 
 		<!--imported CSS for Links Interday-->
-		<link type="text/css" rel="stylesheet" href="css/ucg_interday_component.css"/>
+		<link type="text/css" rel="stylesheet" href="css/ucg_intraday_component.css"/>
 		
 		<!--specific CSS for Image Component-->
 		<link type="text/css" rel="stylesheet" href="css/ucg_image_component.css"/>
@@ -39,7 +39,7 @@
 		<script type="text/javascript" src="js/main.js"></script>
 		
 		<!--specific JS for Interday Component-->
-		<script type="text/javascript" src="js/ucg_interday.js"></script>
+		<script type="text/javascript" src="js/ucg_intraday.js"></script>
 
 		<!--[if lt IE 9]>
 			<script type="text/javascript" src="plugin/js/html5shiv.js"></script>
@@ -194,29 +194,29 @@
 		</div>
 	</div>
 		<div id="mainContainer">
-			<div class="example">Interday Component</div>
+			<div class="example">Intraday Component</div>
 			<div class="example">CQ5 2 columns (2/3 - 1/3)</div>
 			<div class="parsys_column twoone-columns-box clearfix">
 				<div class="parsys_column twoone-columns-box-c0">
-					<div class="panel ucg_image ucg_interday">
+					<div class="panel ucg_image ucg_intraday">
 						<div class="container">
 							<div class="ucg_img">
-								<img src="img/ucg_interday_graph.png" alt="">
+								<img src="img/ucg_intraday_graph.png" alt="">
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="parsys_column twoone-columns-box-c1">
-					<div class="panel ucg_interday with-image">
+					<div class="panel ucg_intraday with-image">
 						<div class="container">
-							<div class="ucg_interday_text">
+							<div class="ucg_intraday_text">
 								<div class="title">Last price</div>
 								<span class="value">6,16</span>
 								<span class="currency">&euro;</span>
 								<span class="trend up">+ 0,24%</span>
 								<div class="clear"></div>
 							</div>
-							<div class="ucg_interday_date">
+							<div class="ucg_intraday_date">
 								<span class="day">06</span>
 								<div>
 									<span class="month">October</span>
@@ -231,12 +231,61 @@
 				</div>
 			</div>
 
+			<div class="example">CQ5 2 columns without image (1/3 - 2/3)</div>
+			<div class="parsys_column onetwo-columns-box clearfix">
+				<div class="parsys_column onetwo-columns-box-c0">
+					<div class="panel ucg_intraday without-image">
+						<div class="container">
+							<div class="ucg_intraday_text">
+								<div class="title">Last price</div>
+								<span class="value">6,16</span>
+								<span class="currency">&euro;</span>
+								<span class="trend up">+ 0,24%</span>
+								<div class="clear"></div>
+							</div>
+							<div class="ucg_intraday_date">
+								<span class="day">06</span>
+								<div>
+									<span class="month">October</span>
+									<span class="year">2014</span>
+								</div>
+								<span class="hours">12</span>
+								<span class="minutes">20</span>
+								<div class="clear"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="parsys_column onetwo-columns-box-c1">
+					<div class="panel ucg_intraday without-image">
+						<div class="container">
+							<div class="ucg_intraday_text">
+								<div class="title">Last price</div>
+								<span class="value">6,16</span>
+								<span class="currency">&euro;</span>
+								<span class="trend up">+ 0,24%</span>
+								<div class="clear"></div>
+							</div>
+							<div class="ucg_intraday_date">
+								<span class="day">06</span>
+								<div>
+									<span class="month">October</span>
+									<span class="year">2014</span>
+								</div>
+								<span class="hours">12</span>
+								<span class="minutes">20</span>
+								<div class="clear"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="example">CQ5 Full page width</div>
 			<div class="parsys_column two-columns-box clearfix">
 				<div class="parsys_column two-columns-box-c0">
-					<div class="panel ucg_interday">
+					<div class="panel ucg_intraday">
 						<div class="container">
-							<div class="ucg_interday_text">
+							<div class="ucg_intraday_text">
 								<div class="title">Last price</div>
 								<span class="value">6,16</span>
 								<span class="currency">&euro;</span>
@@ -247,9 +296,9 @@
 					</div>
 				</div>
 				<div class="parsys_column two-columns-box-c1">
-					<div class="panel ucg_interday">
+					<div class="panel ucg_intraday">
 						<div class="container">
-							<div class="ucg_interday_date">
+							<div class="ucg_intraday_date">
 								<span class="day">06</span>
 								<div>
 									<span class="month">October</span>

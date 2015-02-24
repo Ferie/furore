@@ -13,6 +13,7 @@
 				openEvent: 'openSidebar',
 				closeEvent: 'closeSidebar',
 				animationEvent: 'animationSidebarCompleted',
+				calcHeightComplete: 'calculationHeightCompleted',
 				scrollableSelector: '.scrollable-element',
 				containerWidth: 960,
 				collapsedSidebarWidth: 80,
@@ -290,6 +291,7 @@
 			});
 			st.$sidebar.find(".sidebar-container").css("height", containerContent+"px");
 			st.$sidebar.find(".sidebar-menu").css("height", sidebarMenuHeight+"px");
+			st.$container.trigger(st.calcHeightComplete);
 		},
 		_setWidthSidebar: function(){
 			st.$sidebar.css({width: utils._getSidebarWidth()+"px"});
