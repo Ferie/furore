@@ -40,7 +40,8 @@ function filterCategory(element, category){
 }
 
 function getSlideNum(){
-	return isBreakpoint("xs") ? 1 : 3;
+	//return isBreakpoint("xs") ? 1 : 3;
+	return 3;
 }
 
 function getSwiperByName(name){
@@ -101,11 +102,12 @@ $(document).ready(function() {
 
 	$(window).resize(function(){
 		$.each(swipersCalendar, function(key, value){
-			var slideNum = getSlideNum();
+			value.swiper.resizeFix(true);
+			/*var slideNum = getSlideNum();
 			if(value.swiper.params.slidesPerView!=slideNum){
 				value.swiper.params.slidesPerView = slideNum;
 				value.swiper.reInit();
-			}
+			}*/
 		});
 	});
 });
