@@ -27,14 +27,15 @@
 		<link type="text/css" rel="stylesheet" href="css/ucg_title_component.css"/>
 		<link type="text/css" rel="stylesheet" href="css/ucg_text_component.css"/>
 		<link type="text/css" rel="stylesheet" href="css/ucg_image_text_component.css"/>
+		<link type="text/css" rel="stylesheet" href="css/ucg_image_component.css"/>
 		<link type="text/css" rel="stylesheet" href="css/ucg_link_component.css"/>
 		<link type="text/css" rel="stylesheet" href="css/videoplayer.css"/>
 		<link type="text/css" rel="stylesheet" href="css/ucg_video_text_component.css"/>
 		<link type="text/css" rel="stylesheet" href="css/ucg_accordion_component.css"/>
 		<link type="text/css" rel="stylesheet" href="css/ucg_ads_component.css"/>
 		<link type="text/css" rel="stylesheet" href="css/ucg_quote_component.css"/>
-		<link type="text/css" rel="stylesheet" href="css/ucg_calendar_tools_component.css"/>
-		<link type="text/css" rel="stylesheet" href="css/ucg_social.css"/>
+		<link type="text/css" rel="stylesheet" href="css/ucg_table_component.css"/>
+		<link type="text/css" rel="stylesheet" href="css/ucg_infografic_component.css"/>
 		<link type="text/css" rel="stylesheet" href="css/retina.css"/>
 
 		<!--[if lt IE 9]>
@@ -57,8 +58,6 @@
 		<script type="text/javascript" src="js/videoplayer.js"></script>
 		<script type="text/javascript" src="js/ucg_accordion_component.js"></script>
 		<script type="text/javascript" src="js/ucg_ads.js"></script>
-		<script type="text/javascript" src="plugin/js/doT.min.js"></script>
-		<script type="text/javascript" src="js/ucg_calendar_tools.js"></script>
 
 		<!--[if lt IE 9]>
 			<script type="text/javascript" src="plugin/js/html5shiv.js"></script>
@@ -318,44 +317,78 @@
 								</div>
 
 								<div class="swiper-slide">
-									<div class="parsys contentpagewelcome-parsys">
-										<div class="section">
-											<div class="panel ucg_calendar_tool">
-												<div class="panel ucg_title">
-													<div class="container">
-														<div class="ucg_title_text_container">
-															<div class="ucg_title_container">
-																<h2>Events</h2>
-															</div>
-															<div class="ucg_subtitle">
-																<h4></h4>
-															</div>
-														</div>
-														<div class="ucg_title_image_container"></div>
-													</div>
-												</div>					
-												<div class="parsys_column three-columns-box clearfix swiper-container" data-type="event" data-name="Events001" data-category="">	
-													<div class="swiper-wrapper">
-													</div>
-												</div>
-												<div class="ucg_calendar_tool_arrows panel hidden-xs">
-													<div class="container">
-														<div>
-															<a class="prev" href="javascript:void(0);" data-target="Events001"></a>
-															<a class="next" href="javascript:void(0);" data-target="Events001"></a>
-														</div>
-													</div>
-												</div>
-												<div class="panel ucg_linklist">
-													<div class="container">
-														<ul class="ucg_link_container">
-															<li class="ucg_internal_link">
-																<a href="javascript:void(0);">Financial highlights</a>
-															</li>
-														</ul>
-													</div>
-												</div>
-											</div>
+
+									<div class="panel ucg_table">
+										<div class="container">
+											<p><b>Consolidated Balance Sheet</b> (€ milion)</p>
+											<table>
+												<tbody>
+													<tr class="tableHead">
+														<th><b>ASSETS</b></th>
+														<th><b>Sep 13</b></th>
+														<th><b>Jun 14</b></th>
+														<th class="highlighted"><b>Sep 14</b></th>
+														<th><b>Y/Y %</b></th>
+														<th><b>Q/Q %</b></th>
+													</tr>
+													<tr class="odd">
+														<td>Cash and cash balances</td>
+														<td>73,630</td>
+														<td>72,308</td>
+														<td class="highlighted">83,284</td>
+														<td>13.1%</td>
+														<td>15.2%</td>
+													</tr>
+													<tr class="even">
+														<td>Financial assets held for trading</td>
+														<td>73,630</td>
+														<td>72,308</td>
+														<td class="highlighted">83,284</td>
+														<td>13.1%</td>
+														<td>15.2%</td>
+													</tr>
+													<tr class="odd">
+														<td>Loans and receivables with banks</td>
+														<td>73,630</td>
+														<td>72,308</td>
+														<td class="highlighted">83,284</td>
+														<td>13.1%</td>
+														<td>15.2%</td>
+													</tr>
+													<tr class="even">
+														<td>Loans and receivables with customers</td>
+														<td>73,630</td>
+														<td>72,308</td>
+														<td class="highlighted">83,284</td>
+														<td>13.1%</td>
+														<td>15.2%</td>
+													</tr>
+													<tr class="odd">
+														<td>Finanncial investments</td>
+														<td>73,630</td>
+														<td>72,308</td>
+														<td class="highlighted">83,284</td>
+														<td>13.1%</td>
+														<td>15.2%</td>
+													</tr>
+													<tr class="even">
+														<td>Hedging instruments</td>
+														<td>73,630</td>
+														<td>72,308</td>
+														<td class="highlighted">83,284</td>
+														<td>13.1%</td>
+														<td>15.2%</td>
+													</tr>
+													<tr class="tableTotal">
+														<td><b>Total</b></td>
+														<td><b>73,630</b></td>
+														<td><b>72,308</b></td>
+														<td class="highlighted"><b>83,284</b></td>
+														<td><b>13.1%</b></td>
+														<td><b>15.2%</b></td>
+													</tr>
+												</tbody>
+											</table>
 										</div>
 									</div>
 								</div>
@@ -400,69 +433,81 @@
 								</div>
 
 								<div class="swiper-slide">
-									<div class="parsys_column three-columns-box clearfix">
-										<div class="parsys_column three-columns-box-c0">
-											<div class="panel ucg_social ucg_social_facebook">
-												<div class="container">
-													<div class="ucg_social_title">Unicredit champions facebook</div>
-													<div class="ucg_social_image">
-														<img alt="" src="img/social-facebook-c3.jpg">
+									<div class="panel ucg_infografic">
+										<div class="panel ucg_title">
+											<div class="container">
+												<div class="ucg_title_text_container">
+													<div class="ucg_title_container">
+														<h2>Financial Highlights 3Q14</h2>
 													</div>
-													<div class="clear visible-xs"></div> 
-													<div class="ucg_social_data">
-														<span>21 November</span>
-													</div>
-													<div class="ucg_social_text">
-														<p>We wish you a good weekend with this quote by Steven Gerrard... Click LIKE if you agree!</p>
+													<div class="ucg_subtitle">
 													</div>
 												</div>
-												<div class="container">
-													<div class="ucg_social_link">
-														<a href="https://www.facebook.com/UniCreditChampionsIT" target="_blank">Become a fan</a>
+												<div class="ucg_title_image_container">
+												</div>
+											</div>
+										</div>
+										<div class="parsys_column three-columns-box clearfix">
+											<div class="parsys_column three-columns-box-c0">
+												<div class="panel">
+													<div class="container">
+														<div class="ucg_infografic_text">
+															<span class="title">Operating profit (loss)</span>
+															<span class="value">2,145</span>
+															<div class="clear"></div>
+														</div>
+														<div class="ucg_infografic_text">
+															<span class="title">Net profit (loss)<a>3</a></span>
+															<span class="value">722</span>
+															<div class="clear"></div>
+														</div>
+														<div class="ucg_infografic_text">
+															<span class="title">Shareholders' equity</span>
+															<span class="value">51,357</span>
+															<div class="clear"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="parsys_column three-columns-box-c1">
+												<div class="panel ucg_image">
+													<div class="container">
+														<div class="ucg_image_container">
+															<img src="img/ucg_infografic_type.png" alt="">
+														</div>
+													</div>
+												</div>					
+											</div>
+											<div class="parsys_column three-columns-box-c2">
+												<div class="panel ucg_image">
+													<div class="container">
+														<div class="ucg_image_container">
+															<img src="img/ucg_infografic_geopgraphicl.png" alt="">
+														</div>
 													</div>
 												</div>
 											</div>
 										</div>
-										<div class="parsys_column three-columns-box-c1">
-											<div class="panel ucg_social ucg_social_twitter">
-												<div class="container">
-													<div class="ucg_social_title no_image">@UniCredit_PR</div>
-													<div class="ucg_social_image">
-													</div>
-													<div class="ucg_social_data">
-														<span>28 November</span>
-													</div>
-													<div class="ucg_social_text">
-														<p>
-															<a class="tag" href="javascript:void(0);">#Cultura</a>: dal 28-11 c/o lo Spazio <a class="tag" href="javascript:void(0);">#Trento</a> UniCredit di Palazzo Firmian la mostra '<a class="tag" href="javascript:void(0);">#PAD</a>, PaesaggioArchitetturaDesign' <a class="shortLink" href="javascript:void(0);">http://goo.gl/NSMBDJ</a>
-														</p>
-													</div>
-												</div>
-												<div class="container">
-													<div class="ucg_social_link">
-														<a href="https://www.facebook.com/UniCreditChampionsIT" target="_blank">Follow us</a>
+										<div class="parsys_column onetwo-columns-box clearfix">
+											<div class="parsys_column onetwo-columns-box-c0">
+												<div class="panel ucg_linklist">
+													<div class="container">
+														<ul class="ucg_link_container">
+															<li class="ucg_internal_link">
+																<a href="javascript:void(0);">Full financial highlights</a>
+															</li>
+														</ul>
 													</div>
 												</div>
 											</div>
-										</div>
-										<div class="parsys_column three-columns-box-c2">
-											<div class="panel ucg_social ucg_social_youtube">
-												<div class="container">
-													<div class="ucg_social_title">Unicredit Channel</div>
-													<div class="ucg_social_image">
-														<img alt="" src="img/social-youtube-c3.jpg">
-													</div>
-													<div class="clear visible-xs"></div> 
-													<div class="ucg_social_data">
-														<span>28 November</span>
-													</div>
-													<div class="ucg_social_text">
-														<p>UniCredit Tower.</p>
-													</div>
-												</div>
-												<div class="container">
-													<div class="ucg_social_link">
-														<a href="https://www.facebook.com/UniCreditChampionsIT" target="_blank">Subscribe</a>
+											<div class="parsys_column onetwo-columns-box-c1">
+												<div class="panel ucg_linklist">
+													<div class="container">
+														<ul class="ucg_link_container">
+															<li class="ucg_internal_link">
+																<a href="javascript:void(0);">See Group Balance</a>
+															</li>
+														</ul>
 													</div>
 												</div>
 											</div>
@@ -769,56 +814,56 @@
 			</div>
 
 			<div id="footer">
-			<div class="lightGreyFooter hidden-xs">
-				<div class="footer-row general">
-					<ul>
-						<li><a href="javascript:void(0);" class="pressmedia">Press Media</a></li>
-						<li><a href="javascript:void(0);" class="contactus">Contact us</a></li>
-						<li><a href="javascript:void(0);" class="archive">General Archive</a></li>
-						<li><a href="javascript:void(0);" class="uclOfficialBank">Uefa Champions<br/>League Official Bank</a></li>
-					</ul>
+				<div class="lightGreyFooter hidden-xs">
+					<div class="footer-row general">
+						<ul>
+							<li><a href="javascript:void(0);" class="pressmedia">Press Media</a></li>
+							<li><a href="javascript:void(0);" class="contactus">Contact us</a></li>
+							<li><a href="javascript:void(0);" class="archive">General Archive</a></li>
+							<li><a href="javascript:void(0);" class="uclOfficialBank">Uefa Champions<br/>League Official Bank</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="darkGreyFooter">
+					<div class="footer-row utility">
+						<ul class="col-xs-6">
+							<li><a href="javascript:void(0);">Feed Rss UniCreditGroup.eu</a></li>
+							<li><a href="javascript:void(0);">Mobile & Apps</a></li>
+							<li><a href="javascript:void(0);">Contacts</a></li>
+							<li><a href="javascript:void(0);">Glossary</a></li>
+						</ul>
+						<ul class="col-xs-6">
+							<li><a href="javascript:void(0);">Useful links</a></li>
+							<li><a href="javascript:void(0);">System requirement</a></li>
+							<li><a href="javascript:void(0);">Site Map</a></li>
+							<li><a href="javascript:void(0);">Faq</a></li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+					<div class="footer-row info">
+						<ul class="col-xs-6">
+							<li><a href="javascript:void(0);">General Company Info</a></li>
+							<li><a href="javascript:void(0);">Disclaimer</a></li>
+							<li><a href="javascript:void(0);">Privacy</a></li>
+						</ul>
+						<ul class="col-xs-6">
+							<li><a href="javascript:void(0);">SDIR and 1Info</a></li>
+							<li><a href="javascript:void(0);">AML and Patriot Act</a></li>
+							<li><a href="javascript:void(0);">Credits</a></li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+					<div class="footer-row logos">
+						<img alt="Logo Patti Chiari" src="img/static/footer-nav-pattichiari.png">
+						<img alt="Logo Champions League" src="img/static/footer-nav-champions-light.png">
+						<div class="clear"></div>
+					</div>
+					<div class="footer-row copyright">
+						© 2012 UniCredit S.p.A.<span class="hidden-xs"> - </span><br class="visible-xs"/>P.Iva 00348170101 Tutti i diritti riservati
+						<div class="clear"></div>
+					</div>
 				</div>
 			</div>
-			<div class="darkGreyFooter">
-				<div class="footer-row utility">
-					<ul class="col-xs-6">
-						<li><a href="javascript:void(0);">Feed Rss UniCreditGroup.eu</a></li>
-						<li><a href="javascript:void(0);">Mobile & Apps</a></li>
-						<li><a href="javascript:void(0);">Contacts</a></li>
-						<li><a href="javascript:void(0);">Glossary</a></li>
-					</ul>  	                                          
-					<ul class="col-xs-6">
-						<li><a href="javascript:void(0);">Useful links</a></li>
-						<li><a href="javascript:void(0);">System requirement</a></li>
-						<li><a href="javascript:void(0);">Site Map</a></li>
-						<li><a href="javascript:void(0);">Faq</a></li>
-					</ul>  
-					<div class="clear"></div>	                                             	
-				</div>
-				<div class="footer-row info">
-					<ul class="col-xs-6">
-						<li><a href="javascript:void(0);">General Company Info</a></li>
-						<li><a href="javascript:void(0);">Disclaimer</a></li>
-						<li><a href="javascript:void(0);">Privacy</a></li>
-					</ul>  	                                          
-					<ul class="col-xs-6">
-						<li><a href="javascript:void(0);">SDIR and 1Info</a></li>
-						<li><a href="javascript:void(0);">AML and Patriot Act</a></li>
-						<li><a href="javascript:void(0);">Credits</a></li>
-					</ul>
-					<div class="clear"></div>
-				</div>
-				<div class="footer-row logos">
-					<img alt="Logo Patti Chiari" src="img/static/footer-nav-pattichiari.png">
-					<img alt="Logo Champions League" src="img/static/footer-nav-champions-light.png">
-					<div class="clear"></div>
-				</div>
-				<div class="footer-row copyright">
-					© 2012 UniCredit S.p.A.<span class="hidden-xs"> - </span><br class="visible-xs"/>P.Iva 00348170101 Tutti i diritti riservati
-					<div class="clear"></div>
-				</div>			
-			</div>
-		</div>
 		</div>
 	</body>
 </html>
