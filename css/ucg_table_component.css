@@ -1,0 +1,98 @@
+/************** ucg_table **************/
+
+.ucg_table {
+	font-family: "UniCredit-Regular";
+	font-size: 15px;
+	line-height: 1;
+}
+
+.ucg_table p {
+	font-size: 17px;
+	padding-bottom: 20px;
+}
+
+.ucg_table table {
+	margin-bottom: 25px;
+	width: 100%;
+}
+
+.ucg_table table.monocolumn {
+	width: auto;
+}
+
+.ucg_table table .highlighted {
+	background-color: #d1edf4;
+}
+
+.ucg_table table tr {
+	border: 1px solid #c9c9c9;
+}
+
+.ucg_table table tr.tableHead {
+	border: 1px solid #666666;
+}
+
+.ucg_table table tr.tableHead .highlighted {
+	background-color: #545f62;
+}
+
+.ucg_table table th {
+	background-color: #666666;
+	color: #FFFFFF;
+	padding: 10px 15px;
+}
+
+.ucg_table table td {
+	padding: 20px 15px;
+}
+
+.ucg_table table td span.moreRows {
+	display: block;
+	padding-bottom: 15px;
+}
+
+.ucg_table table td span.moreRows:last-child {
+	padding-bottom: 0;
+}
+
+.ucg_table table .odd {
+	background-color: #FFFFFF;
+}
+
+.ucg_table table .odd .highlighted {
+	background-color: #d1edf4;
+}
+
+.ucg_table table .even {
+	/*background-color: #f2f2f2;*/
+	background-color: #c9c9c9;
+}
+
+.ucg_table table .even .highlighted {
+	background-color: #c6e1e8;
+}
+
+.ucg_table table td.text {
+	font-size: 13px;
+	line-height: 18px;
+	width: 40%;
+}
+
+.ucg_table table td.text b {
+	font-size: 17px;
+}
+
+.ucg_table table .apex {
+	font-size: 7px;
+	vertical-align: super;
+}
+
+.ucg_table p.note {
+	font-size: 13px;
+	color: #666666;
+	line-height: 20px;
+}
+
+@media (min-width: 768px) {
+	
+}
