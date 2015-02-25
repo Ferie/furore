@@ -1,0 +1,51 @@
+/************** ucg_video_text **************/
+
+.ucg_video_text.panel {
+	margin: 0;
+}
+
+.ucg_video_text.panel .container {
+	width: 100%;
+}
+
+.ucg_video_text .ucg_video {
+	float: left;
+	margin-top: 3px;
+	margin-bottom: 6px;
+	margin-right: 12px;
+}
+
+.ucg_video_text .ucg_video img {
+	width: 100%;
+}
+
+.ucg_video_text .ucg_date {
+	font-size: 14px;
+	color: #999999;
+	margin-bottom: 32px;
+}
+
+.ucg_video_text .ucg_txt {
+	font-size: 15px;
+}
+
+.ucg_video_text .ucg_txt h1,
+.ucg_video_text .ucg_txt h2,
+.ucg_video_text .ucg_txt h3,
+.ucg_video_text .ucg_txt h4,
+.ucg_video_text .ucg_txt h5,
+.ucg_video_text .ucg_txt h6 {
+	margin-top: 0;
+}
+
+.ucg_video_text .ucg_txt h3 {
+	font-size: 24px;
+}
+
+.ucg_video_text .ucg_linklist .container {
+	padding: 0;
+}
+
+@media (min-width: 768px) {
+	
+}

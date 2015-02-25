@@ -1,0 +1,13 @@
+/**** CALENDAR ****/
+#calendarTools .chosen-container {
+	width: 100% !important; 
+}
+
+/*#calendarTools .chosen-container .chosen-single span {
+	display: inline-block;
+}*/
+
+
+.ucg_accordion .accordionPanel {
+	border-bottom: 1px solid #c9c9c9;
+}

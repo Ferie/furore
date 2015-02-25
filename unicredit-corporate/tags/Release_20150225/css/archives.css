@@ -1,0 +1,502 @@
+/**** GENERAL RULES ****/
+
+#archives > .panel {
+	clear: both;
+	padding: 10px 0;
+	margin: 0;	
+}
+
+#archives .panel > .container {
+	width: 100%;
+	margin: 0;
+	padding: 0 10px;
+}
+
+#archives .panel > .container h1 {
+	font-family: unicredit-light;
+	font-size: 40px;
+	line-height: 40px;
+	margin: 0;
+	padding: 20px 0 0;
+	text-align: center;
+}
+
+/**** ARCHIVES TOOLS ****/
+
+
+/**** Categories combo-box ****/
+
+#archivesTools.panel {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 0;
+	padding-bottom: 40px;
+}
+
+#archivesTools .chosen-container {
+	height: 40px;
+	width: 100%;
+}
+
+#archivesTools .chosen-container .chosen-single {
+	background: #999;
+	border: none;
+	box-shadow: none;
+	font-size: 17px;
+	line-height: 40px;
+	height: 40px;
+	color: #fff;
+	padding: 0 10px;
+}
+
+#archivesTools .chosen-container .chosen-default {
+	background: none;
+	font-size: 17px;
+	line-height: 40px;
+	height: 40px;
+	color: #999;
+	border: 1px solid #ccc;
+}
+
+#archivesTools select {
+	behavior: url('../plugin/js/PIE.htc');
+	background: none;
+	font-size: 17px;
+	line-height: 40px;
+	height: 40px;
+	color: #999;
+	border: 1px solid #ccc;
+	border-radius: 5px;	
+	padding: 0 5px;
+}
+
+#archivesTools .chosen-container .chosen-single div {
+	width: 0;
+}
+
+#archivesTools .chosen-container .chosen-default div {
+	width: 30px;
+}
+
+#archivesTools .chosen-container .chosen-single div b {
+	background: none;
+}
+
+#archivesTools .chosen-container .chosen-single abbr {
+	background: url('../img/static/select-cross-white.png') no-repeat scroll center center;
+	float: right;
+	position: relative;
+	right: 0;
+	top: -25px;
+}
+
+#archivesTools .chosen-container .chosen-default div b {
+	background: url('../img/static/select-arrow-down.png') no-repeat scroll center center;
+}
+
+#archivesTools .chosen-container.chosen-with-drop .chosen-default div b {
+	background-image: url('../img/static/select-arrow-up.png');
+}
+
+#archivesTools .chosen-container .chosen-drop  {
+	border-top: 1px solid #ccc;
+	padding: 8px 8px 0;
+}
+
+#archivesTools select option:first-child {
+	display: none;
+}
+
+#archivesTools select option {
+	background: url('../img/static/radio-button-unchecked.png') no-repeat scroll left center;
+	color: #999;
+	font-size: 15px;
+	line-height: 20px;
+	border-top: none;
+	padding: 8px 0 8px 30px;
+}
+
+#archivesTools select option:focus,
+#archivesTools select option:hover,
+#archivesTools select option:active {
+	background: url('../img/static/radio-button-checked.png') no-repeat scroll left center transparent;
+	color: #00afd0;	
+}
+
+#archivesTools .chosen-container .chosen-drop .chosen-results .active-result {
+	background: url('../img/static/radio-button-unchecked.png') no-repeat scroll left center;
+	color: #999;
+	padding-left: 30px;
+	font-size: 15px;
+	line-height: 20px;
+}
+
+#archivesTools .chosen-container .chosen-drop .chosen-results .active-result.highlighted {
+	background: url('../img/static/radio-button-checked.png') no-repeat scroll left center;
+	color: #00afd0;
+}
+
+/**** ARCHIVES MESSAGES ****/
+
+#archivesMessages.panel,
+#archivesMessages.panel > .panel {
+	border: medium none;
+	box-shadow: none;
+	margin: 0;
+	outline: medium none;
+	padding: 0;
+}
+
+#archivesMessages > .panel.warn {
+	background-color: #fdeeed;
+}
+
+#archivesMessages.panel .panel > .container {
+	padding: 10px;
+}
+
+#archivesMessages .panel h3 {
+	font-family: 'unicredit-light';
+	margin: 10px 0;
+	line-height: 24px;
+}
+
+/**** EVENTS LIST ****/
+
+#archivesPanelResults.panel {
+	padding: 0;
+}
+
+#archivesPanelResults .event.highlighted {
+	background-color: #e5f7fa;
+}
+
+#archivesPanelResults .event.panel {
+	margin: 0;
+}
+
+#archivesPanelResults .event > .container {
+	padding: 0px 10px;
+}
+
+#archivesPanelResults .event .header {
+	padding: 30px 0;
+}
+
+#archivesPanelResults .event:first-child .header {
+	border-top: 1px solid #ccc;
+	padding: 20px 0 10px;
+}
+
+#archivesPanelResults .event .header > div {
+	padding: 0;
+	height: 40px;
+}
+
+#archivesPanelResults .event .header .date .days {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;	
+	display: inline-block;
+}
+
+#archivesPanelResults .event .header .date .days h1 {
+	margin: 0;	
+	display: inline-block;
+	font-family: 'unicredit-light';
+	font-size: 44px;
+	line-height: 40px;
+	padding: 0;
+}
+
+#archivesPanelResults .event .header .date .days li {
+	display: inline-block;
+}
+
+#archivesPanelResults .event .header .date .days li:not(:first-child):before {
+	content: "❯";
+	position: relative;
+	top: -6px;
+	margin-right: 10px;
+}
+
+#archivesPanelResults .event .header .date .days li:last-child {
+	behavior: url('../plugin/js/PIE.htc');
+	border-right: 1px solid #c9c9c9;	
+}
+
+#archivesPanelResults .event .header .labels {
+	display: inline-block;
+	padding: 0 7px 0 3px;
+}
+
+#archivesPanelResults .event .header .labels > span {
+	display: block;
+	font-size: 13px;
+	color: #999;
+}
+
+#archivesPanelResults .event .header .labels > span:first-child {
+	font-family: 'unicredit-bold';
+	color: #666;
+}
+
+#archivesPanelResults .event .header .buttons {
+	display: inline-block;
+	padding: 0;
+	margin: 10px 0;
+}
+
+#archivesPanelResults .event .header .buttons button {
+	background: url('../img/static/calendar-events-save.png') no-repeat scroll center left;
+	border: none;
+	box-shadow: none;
+	padding: 0 0 0 35px;
+}
+
+#archivesPanelResults .event .header .categories {
+	margin: 10px 0;
+}
+
+#archivesPanelResults .event .header .categories label {
+	behavior: url('../plugin/js/PIE.htc');
+	padding: 2px 10px;
+	border-radius: 6px;
+	border: 1px solid #000;
+	box-shadow: none;
+	background-color: #fff;
+}
+
+#archivesPanelResults .event .header .categories label.investors {
+	color: #fbbc0f;border-color: #fbbc0f;
+}
+
+#archivesPanelResults .event .header .categories label.culturesociety {
+	color: #11a79e;border-color: #11a79e;
+}
+
+#archivesPanelResults .event .header .categories label.sustainability {
+	color: #b02b1c;border-color: #b02b1c;
+}
+
+#archivesPanelResults .event .header .categories label.highlighted {
+	color: #999;border-color: #999;
+}
+
+#archivesPanelResults .event .body {padding: 0 0 10px 0;}
+#archivesPanelResults .event .body h2 {
+	margin: 0;
+	font-size: 16px;
+	height: auto;
+	line-height: 18px;
+	color: #333;
+}
+
+#archivesPanelResults .event .footer {
+	border-bottom: 1px solid #c9c9c9;
+}
+
+#archivesPanelResults .event .footer a {
+	font-size: 16px;
+	padding-bottom: 15px;
+}
+
+#archivesPanelResults .event .footer a.attach {
+	background: url('../img/static/calendar-events-attachments-arrow-down.png') no-repeat scroll right 10px;
+	padding-right: 15px;
+}
+
+#archivesPanelResults .event .footer a.attach:hover,
+#archivesPanelResults .event .footer a.attach:active {
+	background-image: url('../img/static/calendar-events-attachments-arrow-down-hover.png');
+}
+
+#archivesPanelResults .event .footer a.attach.collapsed {
+	background-image: url('../img/static/calendar-events-attachments-arrow-up.png');	
+}
+
+#archivesPanelResults .event .footer a.attach.collapsed:hover,
+#archivesPanelResults .event .footer a.attach.collapsed:active {
+	background-image: url('../img/static/calendar-events-attachments-arrow-up-hover.png');
+}
+
+#archivesPanelResults .event .footer .attachments {
+	padding: 0;
+}
+
+#archivesPanelResults .event .footer .attachments ul {
+	list-style-type: none;
+	display: inline-block;
+	padding: 5px 5px 5px 20px;
+	margin: 0;
+	width: 100%;
+	background-color: #f2f2f2;
+}
+
+#archivesPanelResults .event .footer .attachments li a {
+	padding: 10px 0;
+	width: 100%;
+	display: inline-block;
+}
+
+#archivesPanelResults .event .footer .attachments li a span {
+	font-family: 'unicredit-bold';
+	text-transform: uppercase;
+	padding-right: 4px;
+}
+
+#archivesPanelResults .event .footer .attachments li a span:after {
+	font-family: 'unicredit-light';
+	content: "|";
+	padding-left: 4px;
+}
+
+/**** EVENTS LIST ****/
+/**** PAST EVENTS LIST ****/
+
+#archivesPanelResults .event.past .header > div {
+	padding: 0;
+	height: auto;
+}
+
+#archivesPanelResults .event.past .header .date {
+	border: none;
+	color: #999;
+}
+
+#archivesPanelResults .event.past .header .date span {
+	font-weight: normal;
+	font-family: 'unicredit-bold';
+}
+
+/**** LOAD MORE ****/
+
+#loadMore > .panel {
+	margin: 0;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+#loadMore > .panel .container {
+	text-align: center;
+}
+
+#loadMore .btn {
+	behavior: url('../plugin/js/PIE.htc');
+	font-family: 'unicredit-medium';
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 14px;
+	border: 1px solid #CCC;
+	background-color: #fff;
+	border-radius: 3px;
+	color: #666;
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 20px;
+	text-align: center;
+}
+
+/**** EVENT DETAIL ****/
+
+/**** SOCIAL SINGLE SHARE ****/
+
+#socialSingleShare .panel.panel-header {
+	height: 0;
+	margin: 0;
+}
+
+#socialSingleShare .panel .container .icon {
+	float: right;
+	display: inline-block;
+	position: relative;
+	top: -41px;
+	padding: 10px 0 19px;
+	margin-bottom: -11px;
+	background: url('../img/static/calendar-share-down-arrow.png') no-repeat scroll bottom right;
+}
+
+#socialSingleShare .panel .container .icon.collapsed  {
+	padding-bottom: 8px;
+	background: transparent;
+}
+
+#socialSingleShare .panel.panel-collapse {
+	width: 100%;
+	background-color: #f2f2f2;
+	margin: 0;
+	padding: 0;
+}
+
+#socialSingleShare .panel.panel-collapse.collapsing {
+	overflow: visible;
+}
+
+#socialSingleShare .panel.panel-collapse .container {
+	padding: 20px 0;
+}
+
+#socialSingleShare .panel.panel-collapse h2 {
+	line-height: 30px;
+	margin: 0;
+	padding: 10px 0;
+	font-size: 24px;
+}
+
+#socialSingleShare ul {
+	padding: 0;
+	list-style-type: none;
+	display: inline-block;
+	margin: 0;
+	width: 100%;
+}
+
+#socialSingleShare ul li {
+	display: inline-block;
+	margin: 0px 3%;
+}
+
+#socialSingleShare ul li a {
+	line-height: 30px;
+	display: inline-block;
+	margin: 0;
+	padding: 10px 10px 10px 30px;
+	background-color: transparent;
+	background-position: left center;
+	background-repeat: no-repeat;
+	font-family: 'unicredit-medium';
+	font-size: 15px;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+#socialSingleShare ul li a.facebook {
+	background-image: url('../img/static/calendar-share-social-facebook.png');
+	color: #3b5998;
+}
+
+#socialSingleShare ul li a.twitter {
+	background-image: url('../img/static/calendar-share-social-twitter.png');
+	color: #5ea9dd;
+}
+
+#socialSingleShare ul li a.linkedin {
+	background-image: url('../img/static/calendar-share-social-linkedin.png');
+	color: #1985bc;
+}
+
+#socialSingleShare ul li a.googleplus {
+	background-image: url('../img/static/calendar-share-social-googleplus.png');
+	color: #aa1c0d;
+}
+
+#socialSingleShare .closer {
+	position: relative;
+	top: -9px;
+	height: 0;
+	text-align: right;
+}
+
+#socialSingleShare .closer a {
+	padding-right: 13px;
+}
