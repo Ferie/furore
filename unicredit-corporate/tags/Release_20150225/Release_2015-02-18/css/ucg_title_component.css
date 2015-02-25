@@ -1,0 +1,63 @@
+/************** ucg_title **************/
+
+.ucg_seo_title {
+	text-align: center;
+}
+
+.ucg_title.panel {
+	margin: 0 0 40px;
+}
+
+.ucg_title .container {
+	width: 100%;
+}
+
+.ucg_title .ucg_title_text_container {
+	float: left;
+}
+
+.ucg_title .ucg_title_text_container h1,
+.ucg_title .ucg_title_text_container h2,
+.ucg_title .ucg_title_text_container h3,
+.ucg_title .ucg_title_text_container h4,
+.ucg_title .ucg_title_text_container h5,
+.ucg_title .ucg_title_text_container h6 {
+	margin-top: 0px;
+}
+
+.ucg_title .ucg_title_image_container {
+	float: right;
+}
+
+.ucg_title .ucg_title_image_container img {
+	float: right;
+	height: 50%;
+	width: 50%;
+}
+
+.ucg_underlined_title .ucg_title_container {
+	width: 100%;
+}
+
+.ucg_underlined_title .ucg_title_container {
+	border-bottom: 1px solid #c9c9c9;
+	padding-bottom: 16px;
+	text-transform: uppercase;	
+}
+
+.ucg_underlined_title .ucg_title_container h1,
+.ucg_underlined_title .ucg_title_container h2,
+.ucg_underlined_title .ucg_title_container h3,
+.ucg_underlined_title .ucg_title_container h4,
+.ucg_underlined_title .ucg_title_container h5,
+.ucg_underlined_title .ucg_title_container h6 {
+	margin: 0;
+}
+
+@media (min-width: 768px) {
+	.ucg_title .ucg_title_image_container img {
+		float: none;
+		height: auto;
+		width: auto;
+	}
+}
