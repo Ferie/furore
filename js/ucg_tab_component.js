@@ -41,18 +41,15 @@ $(document).ready(function () {
 		sidebarResize();
 	}, 1000);
 
-	var timer;
+	var timer = window.setTimeout(function () {}, 0);
 
 	// functions on resize
 	$(window).resize(function () {
 		tabsHeader();
 		window.clearTimeout(timer);
-		timer = window.setTimeout(function () {
-			sidebarResize();
-		}, 400);
 	});
 
-	// event that resizes the tabs padding on sidebar's animation ends
+	// event that resizes the tabs padding on sidebar click
 	$('#mainContainer').on('animationSidebarCompleted', function () {
 		setTimeout(function () {
 			tabsHeader();
@@ -89,11 +86,11 @@ $(document).ready(function () {
 	});
 
 	// skin for the select in Worldwide area
-	$('.ucg_tab .chosen-select').chosen({
+	$('.chosen-select').chosen({
 		allow_single_deselect: true,
 		disable_search: true,
 		width: '100%'
-	}).on('change', function () {
+	}).change(function () {
 		var $txt = $('.chosen-container-single .chosen-single-with-deselect span');
 		if ($txt.text().indexOf('(') > -1) {
 			$txt.text($txt.text().substring(0, $txt.text().indexOf('(')));
@@ -116,7 +113,7 @@ $(document).ready(function () {
 	});
 
 	// event that puts a placeholder when the dropdown menu is open (mobile)
-	$('.ucg_tab .chosen-container .chosen-single').on('click', function () {
+	$('.chosen-container .chosen-single').on('click', function () {
 		$(this).find('span').text($('.dropdown select').data('placeholder'));
 	});
 });

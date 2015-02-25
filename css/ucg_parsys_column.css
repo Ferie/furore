@@ -57,13 +57,6 @@
 	.parsys_column .two-columns-box-c1 {
 		width: 49%;
 	}
-	.parsys_column.first-separator .two-columns-box-c0,
-	.parsys_column.first-separator .three-columns-box-c0,
-	.parsys_column.first-separator .onetwo-columns-box-c0,
-	.parsys_column.first-separator .twoone-columns-box-c0,
-	.parsys_column.second-separator .three-columns-box-c1 {
-		border-right: 1px solid #ccc;
-	}
 	
 	.parsys_column .three-columns-box-c0,
 	.parsys_column .three-columns-box-c1,

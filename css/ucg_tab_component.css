@@ -1,6 +1,6 @@
 /************** ucg_tab **************/
 
-.ucg_tab select {
+select {
 	behavior: url('../plugin/js/PIE.htc');
 	background: none;
 	border: 1px solid #ccc;
@@ -15,12 +15,12 @@
 
 /************** chosen-container plugin CSS for the dropdown in mobile resolutions **************/
 
-.ucg_tab .chosen-container {
+.chosen-container {
 	height: 40px;
 	width: 100%;
 }
 
-.ucg_tab .chosen-container .chosen-single {
+.chosen-container .chosen-single {
 	border: 1px solid #c9c9c9;
 	box-shadow: none;
 	font-family: "UniCredit-Bold";
@@ -31,7 +31,7 @@
 	height: 40px;
 }
 
-.ucg_tab .chosen-container .chosen-default {
+.chosen-container .chosen-default {
 	background: none;
 	border: 1px solid #c9c9c9;
 	font-size: 17px;
@@ -40,38 +40,38 @@
 	height: 40px;
 }
 
-.ucg_tab .chosen-container .chosen-single div,
-.ucg_tab .chosen-container .chosen-default div {
+.chosen-container .chosen-single div,
+.chosen-container .chosen-default div {
 	margin-right: 10px;
 	width: 30px;
 }
 
-.ucg_tab .chosen-container .chosen-single div b,
-.ucg_tab .chosen-container .chosen-default div b {
+.chosen-container .chosen-single div b,
+.chosen-container .chosen-default div b {
 	background: url('../img/static/select-arrow-down.png') no-repeat scroll center center;
 }
 
-.ucg_tab .chosen-container-active.chosen-with-drop .chosen-single {
+.chosen-container-active.chosen-with-drop .chosen-single {
 	border: 1px solid #c9c9c9;
 }
 
-.ucg_tab .chosen-container.chosen-with-drop .chosen-single div b,
-.ucg_tab .chosen-container.chosen-with-drop .chosen-default div b {
+.chosen-container.chosen-with-drop .chosen-single div b,
+.chosen-container.chosen-with-drop .chosen-default div b {
 	background: url('../img/static/select-arrow-up.png') no-repeat scroll center center;
 }
 
-.ucg_tab .chosen-container .chosen-drop  {
+.chosen-container .chosen-drop  {
 	border: 1px solid #c9c9c9;
 	border-top: none;
 	padding: 10px 10px 5px;
 }
 
-.ucg_tab .chosen-container .chosen-drop .chosen-results {
+.chosen-container .chosen-drop .chosen-results {
 	margin: 0;
 	padding: 0;
 }
 
-.ucg_tab .chosen-container .chosen-drop .chosen-results .active-result {
+.chosen-container .chosen-drop .chosen-results .active-result {
 	background: url('../img/static/radio-button-unchecked.png') no-repeat scroll left center;
 	font-size: 15px;
 	color: #666666;
@@ -79,7 +79,7 @@
 	padding-left: 30px;
 }
 
-.ucg_tab .chosen-container .chosen-drop .chosen-results .active-result.highlighted {
+.chosen-container .chosen-drop .chosen-results .active-result.highlighted {
 	background: url('../img/static/radio-button-checked.png') no-repeat scroll left center;
 }
 
@@ -96,42 +96,38 @@
 	padding: 0;
 }
 
-.ucg_tab .tabsBody {
-	clear: both;
-}
-
-.ucg_tab .tabPanel {
+.tabPanel {
 	display: none;
 	font-size: 15px;
 	padding: 15px;
 }
 
-.ucg_tab .tabPanel.selected {
+.tabPanel.selected {
 	display: block;
 }
 
-.ucg_tab .tabSection {
+.tabSection {
 	border-bottom: 1px solid #c9c9c9;
 	margin-bottom: 40px;
 	padding-bottom: 40px;
 }
 
-.ucg_tab .tabSection .logo {
+.tabSection .logo {
 	padding-bottom: 20px;
 }
 
-.ucg_tab .tabSection .bankName {
+.tabSection .bankName {
 	font-size: 24px;
 }
 
-.ucg_tab .tabSection .externalLink {
+.tabSection .externalLink {
 	background: url("../img/static/generic_external_link_icon.png") no-repeat;
 	margin-top: 18px;
 	margin-bottom: 10px;
 	padding-left: 26px;
 }
 
-.ucg_tab .tabSection .moreInfo {
+.tabSection .moreInfo {
 	float: left;
 	font-size: 14px;
 	line-height: 1;
@@ -140,7 +136,7 @@
 	text-transform: uppercase;
 }	
 
-.ucg_tab .tabSection .moreInfo .arrowRight {
+.tabSection .moreInfo .arrowRight {
 	background: url("../img/static/blue_arrow_right.png") no-repeat;
 	float: right;
 	margin-top: 1px;
@@ -149,7 +145,7 @@
 	width: 7px;
 }
 
-.ucg_tab .tabSection .icons {
+.tabSection .icons {
 	font-family: "UniCredit-Bold";
 	font-size: 14px;
 	margin-top: 40px;
@@ -157,15 +153,15 @@
 	text-transform: uppercase;
 }
 
-.ucg_tab .tabSection .icons .icon {
+.tabSection .icons .icon {
 	margin: 15px 0;
 }
 
-.ucg_tab .tabSection .icons .icon:last-child {
+.tabSection .icons .icon:last-child {
 	margin-bottom: 0;
 }
 
-.ucg_tab .tabSection .icons .icon.homeBankingLogin {
+.tabSection .icons .icon.homeBankingLogin {
 	background: url("../img/static/home_banking_icon.png") no-repeat;
 	margin-top: 1px;
 	padding-top: 2px;
@@ -173,14 +169,14 @@
 	height: 16px;
 }
 
-.ucg_tab .tabSection .icons .icon.seeJobPositions {
+.tabSection .icons .icon.seeJobPositions {
 	background: url("../img/static/worldwide_country_page_see_job_position_icon.png") no-repeat;
 	padding-top: 3px;
 	padding-left: 28px;
 	height: 16px;
 }
 
-.ucg_tab .tabSection .icons .icon.findBranch {
+.tabSection .icons .icon.findBranch {
 	background: url("../img/static/worldwide_country_page_find_a_branch_icon.png") no-repeat;
 	margin-top: 1px;
 	margin-left: 4px;
@@ -189,7 +185,7 @@
 	height: 14px;
 }
 
-.ucg_tab .tabSection .icons .icon.linkedin {
+.tabSection .icons .icon.linkedin {
 	background: url("../img/static/worldwide_country_page_linkedin_icon.png") no-repeat;
 	margin-left: 3px;
 	padding-top: 3px;
@@ -197,12 +193,8 @@
 	height: 14px;
 }
 
-.ucg_tab .tabSection .icons .icon a {
+.tabSection .icons .icon a {
 	color: #666666;
-}
-
-.ucg_tab .ucg_text.panel {
-	margin: 0;
 }
 
 /************** tab CSS for desktop resolutions **************/
@@ -213,110 +205,108 @@
 		width: 100%;
 	}
 
-	.ucg_tab .tabs {
+	.tabs {
 		border-bottom: 1px solid #c9c9c9;
 		font-family: "UniCredit Medium";
 		margin-top: 6px;
-		height: 88px;
+		height: 89px;
 	}
 
-	.ucg_tab .tabs .tab {
+	.tabs .tab {
 		float: left;
-		background-color: #F5F5F5;
 		border-top: 1px solid #c9c9c9;
-		border-bottom: 1px solid #c9c9c9;
 		border-left: 1px solid #c9c9c9;
 		cursor: pointer;
-		padding: 33px 0;
+		padding: 34px 0;
 	}
 
-	.ucg_tab .tabs .tab:last-child {
+	.tabs .tab:last-child {
 		border-right: 1px solid #c9c9c9;
 	}
 
-	.ucg_tab .tabs .tab.active {
-		background-color: #FFFFFF;
+	.tabs .tab.active {
+		background: #FFFFFF;
 		border-bottom: none;
 		padding-bottom: 22px;
 	}
 
-	.ucg_tab .tabs .tab.active .tabHeader {
+	.tabs .tab.active .tabHeader {
 		border-bottom: 2px solid #00afd0;
 		padding-bottom: 10px;
 	}
 
-	.ucg_tab .tabs .tab .tabHeader a {
+	.tabs .tab .tabHeader a {
 		color: #666666;
 	}
 
-	.ucg_tab .tabs .tab.active .tabHeader a {
+	.tabs .tab.active .tabHeader a {
 		color: #00afd0;
 	}
 
-	.ucg_tab .tabPanel {
+	.tabPanel {
 		padding: 0;
 	}
 
-	.ucg_tab .tabSection {
+	.tabSection {
 		font-size: 24px;
 		margin-bottom: 0;
 		padding: 40px 0 32px;
 	}
 
-	.ucg_tab .tabSection .bankName,
-	.ucg_tab .tabSection .logo {
+	.tabSection .bankName,
+	.tabSection .logo {
 		line-height: 1;
 	}
 
-	.ucg_tab .tabSection .bankName {
+	.tabSection .bankName {
 		float: left;
 	}
 
-	.ucg_tab .tabSection .logo {
+	.tabSection .logo {
 		float: right;
 		padding-bottom: 0;
 	}
 
-	.ucg_tab .tabSection .externalLink {
+	.tabSection .externalLink {
 		clear: both;
 		font-size: 15px;
 		margin-top: 44px;
 		margin-bottom: 24px;
 	}
 
-	.ucg_tab .tabSection .icons {
+	.tabSection .icons {
 		margin-top: 0;
 	}
 
-	.ucg_tab .tabSection .icons {
+	.tabSection .icons {
 		float: right;
 	}
 
-	.ucg_tab .tabSection .icons .icon {
+	.tabSection .icons .icon {
 		float: left;
 		margin: 0;
 		padding-top: 3px;
 		padding-right: 30px;
 	}
 
-	.ucg_tab .tabSection .icons .icon:last-child {
+	.tabSection .icons .icon:last-child {
 		padding-right: 0;
 	}
 
-	.ucg_tab .tabSection .icons .icon.homeBankingLogin {
+	.tabSection .icons .icon.homeBankingLogin {
 		margin-top: 1px;
 		padding-top: 2px;
 		padding-left: 28px;
 		height: 16px;
 	}
 
-	.ucg_tab .tabSection .icons .icon.seeJobPositions {
+	.tabSection .icons .icon.seeJobPositions {
 		padding-top: 3px;
 		padding-left: 28px;
 		height: 16px;
 	}
 
-	.ucg_tab .tabSection .icons .icon.findBranch {
+	.tabSection .icons .icon.findBranch {
 		margin-top: 1px;
 		margin-left: 0;
 		padding-top: 2px;
@@ -324,7 +314,7 @@
 		height: 14px;
 	}
 
-	.ucg_tab .tabSection .icons .icon.linkedin {
+	.tabSection .icons .icon.linkedin {
 		margin-left: 0;
 		padding-top: 3px;
 		padding-left: 23px;

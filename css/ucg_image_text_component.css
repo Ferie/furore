@@ -1,7 +1,7 @@
 /************** ucg_image_text **************/
 
 .ucg_image_text.panel {
-	margin: 0 0 20px;
+	margin: 0;
 }
 
 .ucg_image_text.panel .container {
@@ -24,6 +24,10 @@
 	font-size: 14px;
 	color: #999999;
 	margin-bottom: 16px;
+}
+
+.ucg_image_text .ucg_bold {
+	font-family: 'unicredit-bold';
 }
 
 .ucg_image_text .ucg_txt {

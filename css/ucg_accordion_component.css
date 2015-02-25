@@ -2,7 +2,6 @@
 
 .ucg_accordion {
 	position: relative;
-	margin-top: 6px;
 }
 
 .ucg_accordion .panel + .panel {
@@ -25,7 +24,6 @@
 
 .ucg_accordion .accordionPanel .elementTitle {
 	position: relative;
-	color: #00afd0;
 	cursor: pointer;
 	font-family: "UniCredit-Bold";
 	font-size: 17px;
@@ -36,7 +34,7 @@
 
 .ucg_accordion .accordionPanel .elementTitle .arrow,
 .ucg_accordion .accordionPanel.open .elementTitle .arrow {
-	background: url("../img/static/select-blue-arrow-down.png") no-repeat;
+	background: url("../img/static/select-arrow-down.png") no-repeat;
 	position: absolute;
 	top: 26px;
 	right: 20px;
@@ -45,7 +43,7 @@
 }
 
 .ucg_accordion .accordionPanel.open .elementTitle .arrow {
-	background: url("../img/static/select-blue-arrow-up.png") no-repeat;
+	background: url("../img/static/select-arrow-up.png") no-repeat;
 }
 
 .ucg_accordion .accordionPanel .elementsContainer {
@@ -55,7 +53,6 @@
 
 .ucg_accordion .accordionPanel .collapsing,
 .ucg_accordion .accordionPanel .collapse {
-	background-color: #F2F2F2;
  	border-top: 1px solid #c9c9c9; 
 	margin-top: 0;
 	visibility: visible;
@@ -81,13 +78,9 @@
 	line-height: 1.75;
 }
 
-.ucg_accordion .ucg_text.panel {
-	margin: 0;
-}
-
 @media (min-width: 768px) {
 	.ucg_accordion .panel {
-		margin-top: 4px;
+		margin-top: 6px;
 	}
 
 	.ucg_accordion .accordionPanel .elementTitle,
