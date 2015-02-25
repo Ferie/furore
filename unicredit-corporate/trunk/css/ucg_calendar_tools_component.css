@@ -24,6 +24,22 @@
 	padding-top: 13px;
 	border-top: 1px solid #c9c9c9;	
 }
+.ucg_calendar_tool_controller {
+	text-align: left;
+}
+.ucg_calendar_tool_controller .ucg_radio {
+    display: inline-block;
+    padding: 0;
+}
+.ucg_calendar_tool_controller .ucg_radio label {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: 'unicredit-bold';
+}
+.ucg_calendar_tool_controller .ucg_radio.checked label {
+	color: #00afd0;
+	text-transform: uppercase;
+}
 @media (min-width: 768px) {
 	.ucg_calendar_tool {
 		padding: 30px 0;
@@ -59,6 +75,23 @@
 		background-image: url('../img/static/select-arrow-right.png');
 		border-left: none;
 	}
+	
+	.ucg_calendar_tool_controller {
+		text-align: right;
+		margin: 5px 0 0;
+	}
+	.ucg_calendar_tool_controller .container {
+		padding: 0;
+	}
+	.ucg_calendar_tool_controller .ucg_radio {
+	    width: auto;
+	    float: none;
+	    margin: 0 20px 0 0;
+	}
+	.ucg_calendar_tool_controller .ucg_radio:last-child {
+		margin: 0;
+	}
+	
 }
 @media (min-width: 960px) {
 	.ucg_calendar_tool {
