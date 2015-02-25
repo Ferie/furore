@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<meta charset="utf-8"> 
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<title>Footnote Component</title>
+
+		<link type="text/css" rel="stylesheet" href="plugin/css/bootstrap.css"/>
+		<link type="text/css" rel="stylesheet" href="css/font-families.css"/>
+		<link type="text/css" rel="stylesheet" href="css/main.css"/>
+		<link type="text/css" rel="stylesheet" href="css/main-desktop.css"/>
+		<link type="text/css" rel="stylesheet" href="css/retina.css"/>
+
+		<!--generic CSS for Parsys Column container -->
+		<link type="text/css" rel="stylesheet" href="css/ucg_parsys_column.css"/>
+
+		<!--specific CSS for Footnote Component-->
+		<link type="text/css" rel="stylesheet" href="css/ucg_footnote_component.css"/>
+
+		<!--[if lt IE 9]>
+			<link type="text/css" rel="stylesheet" href="css/ie8.css"/>
+		<![endif]-->
+
+		<script type="text/javascript" src="plugin/js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="plugin/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="plugin/js/bootstrap.min.js"></script>
+
+		<script type="text/javascript" src="js/utility.js"></script>
+		<script type="text/javascript" src="js/jquery.headerUBIS.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/ucg_footnote.js"></script>
+
+		<!--[if lt IE 9]>
+			<script type="text/javascript" src="plugin/js/html5shiv.js"></script>
+			<script type="text/javascript" src="plugin/js/respond.min.js"></script>
+			<script type="text/javascript" src="js/ie8.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div id="message" style="display: none;">Messaggio</div>
+		<div id="header">
+		<div class="sidebar-switch">
+			<a href="javascript:void(0);"></a>	
+		</div>
+		<div class="logo">
+			<a href="https://www.unicreditgroup.eu"><img alt="Unicredit Logo" src="img/static/logo.png"></a>
+		</div>
+		<div class="header-menu menu hidden-xs">
+			<ul>
+				<li><a class="language ita" href="javascript:void(0);" data-section="menu" data-link="language.ita">ITA</a></li>
+				<li><a class="search" href="javascript:void(0);" data-section="menu" data-link="search">Search</a></li>
+				<li><a class="contactus" href="javascript:void(0);" data-section="menu" data-link="contactus">Contact us</a></li>
+				<li><a class="calendar" href="calendar.html" data-section="menu" data-link="calendar">Calendar</a></li>
+				<li><a class="worldwide" href="worldwide.html" data-section="menu" data-link="worldwide">Worldwide</a></li>
+				<li><a class="uefa" href="javascript:void(0);" data-section="menu" data-link="uefa">Uefa</a></li>
+			</ul>
+		</div>
+		<div class="online-banking hidden-xs">
+			<a href="javascript:void(0);">
+				Online banking
+			</a>	
+		</div>
+		<div class="search visible-xs">
+			<a href="javascript:void(0);">
+			</a>	
+		</div>
+		<div id="sidebar">
+			<div class="sidebar-container">
+			<div class="sidebar-element aboutus">
+				<div class="sidebar-header">
+					<a class="sidebar-collapser" href="javascript:void(0);" data-name="aboutus" data-target="#sidebar .sidebar-element.aboutus .collapse">About Us</a>
+					<div class="clear"></div>
+				</div>
+				<div class="collapse">
+					<ul>
+						<li><a class="masterLink" href="javascript:void(0);" data-section="aboutus" data-link="marterLink">UniCredit at a glance</a></li>
+						<li><a class="identity" href="javascript:void(0);" data-section="aboutus" data-link="identity">Our identity</a></li>
+						<li><a class="culture" href="javascript:void(0);" data-section="aboutus" data-link="culture">Culture & Territory</a></li>
+						<li><a class="innovation" href="javascript:void(0);" data-section="aboutus" data-link="innovation">Innovation</a></li>
+						<li><a class="business" href="javascript:void(0);" data-section="aboutus" data-link="business">Business model</a></li>
+						<li><a class="brand" href="javascript:void(0);" data-section="aboutus" data-link="brand">Brand & Communication</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="sidebar-element governance">
+				<div class="sidebar-header">
+					<a class="sidebar-collapser" href="javascript:void(0);" data-name="governance" data-target="#sidebar .sidebar-element.governance .collapse">Governance</a>
+					<div class="clear"></div>
+				</div>
+				<div class="collapse">
+					<ul>
+						<li><a class="masterLink" href="javascript:void(0);" data-section="governance" data-link="masterLink">Frontpage</a></li>
+						<li><a class="1" href="javascript:void(0);" data-section="governance" data-link="1">Page 1</a></li>
+						<li><a class="2" href="javascript:void(0);" data-section="governance" data-link="2">Page 2</a></li>
+						<li><a class="3" href="javascript:void(0);" data-section="governance" data-link="3">Page 3</a></li>
+						<li><a class="4" href="javascript:void(0);" data-section="governance" data-link="4">Page 4</a></li>
+						<li><a class="5" href="javascript:void(0);" data-section="governance" data-link="5">Page 5</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="sidebar-element investors">
+				<div class="sidebar-header">
+					<a class="sidebar-collapser" href="javascript:void(0);" data-name="investors" data-target="#sidebar .sidebar-element.investors .collapse" data-parent="#sidebar">Investors</a>
+					<div class="clear"></div>
+				</div>
+				<div class="collapse">
+					<ul>
+						<li><a class="masterLink" href="javascript:void(0);" data-section="investors" data-link="masterLink">Frontpage</a></li>
+						<li><a class="1" href="javascript:void(0);" data-section="investors" data-link="1">Page 1</a></li>
+						<li><a class="2" href="javascript:void(0);" data-section="investors" data-link="2">Page 2</a></li>
+						<li><a class="3" href="javascript:void(0);" data-section="investors" data-link="3">Page 3</a></li>
+						<li><a class="4" href="javascript:void(0);" data-section="investors" data-link="4">Page 4</a></li>
+						<li><a class="5" href="javascript:void(0);" data-section="investors" data-link="5">Page 5</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="sidebar-element pressmedia">
+				<div class="sidebar-header">
+					<a class="sidebar-collapser" href="javascript:void(0);" data-name="pressmedia" data-target="#sidebar .sidebar-element.pressmedia .collapse" data-parent="#sidebar">Press & Media</a>
+					<div class="clear"></div>
+				</div>
+				<div class="collapse">
+					<ul>
+						<li><a class="masterLink" href="javascript:void(0);" data-section="pressmedia" data-link="masterLink">Frontpage</a></li>
+						<li><a class="1" href="javascript:void(0);" data-section="pressmedia" data-link="1">Page 1</a></li>
+						<li><a class="2" href="javascript:void(0);" data-section="pressmedia" data-link="2">Page 2</a></li>
+						<li><a class="3" href="javascript:void(0);" data-section="pressmedia" data-link="3">Page 3</a></li>
+						<li><a class="4" href="javascript:void(0);" data-section="pressmedia" data-link="4">Page 4</a></li>
+						<li><a class="5" href="javascript:void(0);" data-section="pressmedia" data-link="5">Page 5</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="sidebar-element career reverse">
+				<div class="collapse">
+					<ul>
+						<li><a class="masterLink" href="javascript:void(0);" data-section="career" data-link="masterLink">Careers frontpage</a></li>
+						<li><a class="1" href="javascript:void(0);" data-section="career" data-link="1">Page 1</a></li>
+						<li><a class="2" href="javascript:void(0);" data-section="career" data-link="2">Page 2</a></li>
+						<li><a class="3" href="javascript:void(0);" data-section="career" data-link="3">Page 3</a></li>
+						<li><a class="4" href="javascript:void(0);" data-section="career" data-link="4">Page 4</a></li>
+						<li><a class="5" href="javascript:void(0);" data-section="career" data-link="5">Page 5</a></li>
+					</ul>
+				</div>
+				<div class="sidebar-header">
+					<a class="sidebar-collapser" href="javascript:void(0);" data-name="career" data-target="#sidebar .sidebar-element.career .collapse" data-parent="#sidebar">Career</a>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="sidebar-element sustainability reverse">
+				<div class="collapse">
+					<ul>
+						<li><a class="masterLink" href="javascript:void(0);" data-section="sustainability" data-link="masterLink">A sustainable Bank</a></li>
+						<li><a class="sustainability" href="javascript:void(0);" data-section="sustainability" data-link="sustainability">Culture of sustainability</a></li>
+						<li><a class="families" href="javascript:void(0);" data-section="sustainability" data-link="families">Invididuals and families</a></li>
+						<li><a class="companies" href="javascript:void(0);" data-section="sustainability" data-link="companies">Companies</a></li>
+						<li><a class="environement" href="javascript:void(0);" data-section="sustainability" data-link="environement">Environment</a></li>
+						<li><a class="investors" href="javascript:void(0);" data-section="sustainability" data-link="investors">Investors and markets</a></li>
+						<li><a class="reports" href="javascript:void(0);" data-section="sustainability" data-link="reports">Reports and resources</a></li>
+					</ul>
+				</div>
+				<div class="sidebar-header">
+					<a class="sidebar-collapser" href="javascript:void(0);" data-name="sustainability" data-target="#sidebar .sidebar-element.sustainability .collapse" data-parent="#sidebar">Sustainability</a>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="sidebar-menu menu sidebar-footer" style="display: none;">
+				<ul>
+					<li><a class="alerts" href="javascript:void(0);" data-section="menu" data-link="alerts">Alerts</a></li>
+					<li><a class="archive" href="archives.html" data-section="menu" data-link="archive">General archive</a></li>
+				</ul>	
+				<ul class="visible-xs">
+					<li><a class="search" href="javascript:void(0);" data-section="menu" data-link="search">Search</a></li>
+					<li><a class="contactus" href="javascript:void(0);" data-section="menu" data-link="contactus">Contact us</a></li>
+					<li><a class="calendar" href="calendar.html" data-section="menu" data-link="calendar">Calendar</a></li>
+					<li><a class="worldwide" href="worldwide.html" data-section="menu" data-link="worldwide">Worldwide</a></li>
+					<li><a class="uefa" href="javascript:void(0);" data-section="menu" data-link="uefa">Uefa</a></li>
+					<li><a class="online-banking" href="javascript:void(0);" data-section="menu" data-link="online-banking">Online banking</a></li>
+					<li><a class="language ita" href="javascript:void(0);" data-section="menu" data-link="language.ita">Ita</a></li>
+				</ul>
+			</div>
+		</div>
+		</div>
+	</div>
+
+		<div id="mainContainer">
+			<div class="example">Footnote component</div>
+			<div class="example">Footnote full page width</div>
+			<div class="panel ucg_footnote">
+				<div class="container">
+					<div class="ucg_footnote_title">Data as at September 30, 2014.</div>
+					<ol>
+						<li>Figures include branches of Koç Financial Group calculated at 100%</li>
+						<li>FTE "Full Time Equivalent"= number of employees counted for the rate of presence. Figures include employees of Koç Financial Services Group calculated at 100%.</li>
+					</ol>
+					<a class="ucg_to_top" href="javascript:void(0);" data-target="#mainContainer">Back to top</a>
+				</div>
+			</div>
+
+			<div class="example">Footnote full columns width CQ5 2 columns (1/2 - 1/2)</div>
+			<div class="parsys_column two-columns-box clearfix">
+				<div class="parsys_column two-columns-box-c0">
+					<div class="panel ucg_footnote">
+						<div class="container">
+					<div class="ucg_footnote_title">Data as at September 30, 2014.</div>
+					<ol>
+						<li>Figures include branches of Koç Financial Group calculated at 100%</li>
+						<li>FTE "Full Time Equivalent"= number of employees counted for the rate of presence. Figures include employees of Koç Financial Services Group calculated at 100%.</li>
+					</ol>
+					<a class="ucg_to_top" href="javascript:void(0);" data-target="#mainContainer">Back to top</a>
+						</div>
+					</div>
+					
+				</div>
+				<div class="parsys_column two-columns-box-c1">
+					<div class="panel ucg_footnote">
+						<div class="container">
+					<div class="ucg_footnote_title">Data as at September 30, 2014.</div>
+					<ol>
+						<li>Figures include branches of Koç Financial Group calculated at 100%</li>
+						<li>FTE "Full Time Equivalent"= number of employees counted for the rate of presence. Figures include employees of Koç Financial Services Group calculated at 100%.</li>
+					</ol>
+					<a class="ucg_to_top" href="javascript:void(0);" data-target="#mainContainer">Back to top</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="example">Footnote CQ5 2 columns (2/3 - 1/3)</div>
+			<div class="parsys_column twoone-columns-box clearfix">
+				<div class="parsys_column twoone-columns-box-c0">
+					<div class="panel ucg_footnote">
+						<div class="container">
+					<div class="ucg_footnote_title">Data as at September 30, 2014.</div>
+					<ol>
+						<li>Figures include branches of Koç Financial Group calculated at 100%</li>
+						<li>FTE "Full Time Equivalent"= number of employees counted for the rate of presence. Figures include employees of Koç Financial Services Group calculated at 100%.</li>
+					</ol>
+					<a class="ucg_to_top" href="javascript:void(0);" data-target="#mainContainer">Back to top</a>
+						</div>
+					</div>
+				</div>
+				<div class="parsys_column twoone-columns-box-c1">
+					<div class="panel ucg_footnote">
+						<div class="container">
+					<div class="ucg_footnote_title">Data as at September 30, 2014.</div>
+					<ol>
+						<li>Figures include branches of Koç Financial Group calculated at 100%</li>
+						<li>FTE "Full Time Equivalent"= number of employees counted for the rate of presence. Figures include employees of Koç Financial Services Group calculated at 100%.</li>
+					</ol>
+					<a class="ucg_to_top" href="javascript:void(0);" data-target="#mainContainer">Back to top</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="footer">
+				<div class="lightGreyFooter">
+					<div class="footer-row general">
+						<ul>
+							<li><a href="javascript:void(0);" class="pressmedia">Press Media</a></li>
+							<li><a href="javascript:void(0);" class="contactus">Contact us</a></li>
+							<li><a href="javascript:void(0);" class="archive">General Archive</a></li>
+							<li><a href="javascript:void(0);" class="uclOfficialBank">Uefa Champions<br/>League Official Bank</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="darkGreyFooter">
+					<div class="footer-row utility">
+						<ul>
+							<li><a href="javascript:void(0);">Feed Rss UniCreditGroup.eu</a></li>
+							<li><a href="javascript:void(0);">Mobile & Apps</a></li>
+							<li><a href="javascript:void(0);">Contacts</a></li>
+							<li><a href="javascript:void(0);">Glossary</a></li>
+							<li><a href="javascript:void(0);">Useful links</a></li>
+							<li><a href="javascript:void(0);">System requirement</a></li>
+							<li><a href="javascript:void(0);">Site Map</a></li>
+							<li><a href="javascript:void(0);">Faq</a></li>
+						</ul>  	                                             	
+					</div>
+					<div class="footer-row info">
+						<ul>
+							<li><a href="javascript:void(0);">General Company Info</a></li>
+							<li><a href="javascript:void(0);">Disclaimer</a></li>
+							<li><a href="javascript:void(0);">Privacy</a></li>
+							<li><a href="javascript:void(0);">SDIR and 1Info</a></li>
+							<li><a href="javascript:void(0);">AML and Patriot Act</a></li>
+							<li><a href="javascript:void(0);">Credits</a></li>
+						</ul>
+					</div>
+					<div class="footer-row logos">
+						<img alt="Logo Patti Chiari" src="img/static/footer-nav-pattichiari.png">
+						<img alt="Logo Champions League" src="img/static/footer-nav-champions-light.png">
+					</div>
+					<div class="footer-row copyright">
+						© 2012 UniCredit S.p.A. - P.Iva 00348170101 Tutti i diritti riservati
+					</div>			
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

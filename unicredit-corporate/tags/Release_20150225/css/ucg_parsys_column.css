@@ -1,0 +1,73 @@
+/************** CSS per i titoletti degli esempi - DA LEVARE!!! **************/
+.parsys_column {
+	width: 100%;
+	margin: 0 auto;
+}
+#mainContainer .panel.grey {
+	background-color: #f2f2f2;
+}
+#mainContainer .panel.grey div{
+	background-color: transparent;
+}
+#mainContainer .parsys_column .panel .container,
+#mainContainer .parsys_column .container {
+	width: 100%;
+}
+.two-columns-box,
+.three-columns-box,
+.onetwo-columns-box,
+.twoone-columns-box {
+	margin-bottom: 24px;
+	padding-top: 1px;
+}
+
+.parsys_column .two-columns-box-c0,
+.parsys_column .two-columns-box-c1,
+.parsys_column .three-columns-box-c0,
+.parsys_column .three-columns-box-c1,
+.parsys_column .three-columns-box-c2,
+.parsys_column .onetwo-columns-box-c0,
+.parsys_column .twoone-columns-box-c1,
+.parsys_column .onetwo-columns-box-c1,
+.parsys_column .twoone-columns-box-c0 {
+	float: left;
+	width: 100%;
+}
+
+.example {
+	font-size: 21px;
+	color: #FF5500;
+	padding: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+@media (min-width: 768px) {
+	.parsys_column {
+		width: 960px;
+	}
+	
+	#mainContainer.with-sidebar-opened .parsys_column.three-columns-box,
+	#mainContainer.with-sidebar-opened .parsys_column.two-columns-box,
+	#mainContainer.with-sidebar-opened .parsys_column.onetwo-columns-box,
+	#mainContainer.with-sidebar-opened .parsys_column.twoone-columns-box {
+		width: 100%;
+	}
+	
+	.parsys_column .two-columns-box-c0,
+	.parsys_column .two-columns-box-c1 {
+		width: 49%;
+	}
+	
+	.parsys_column .three-columns-box-c0,
+	.parsys_column .three-columns-box-c1,
+	.parsys_column .three-columns-box-c2,
+	.parsys_column .onetwo-columns-box-c0,
+	.parsys_column .twoone-columns-box-c1 {
+		width: 33%;
+	}
+	
+	.parsys_column .onetwo-columns-box-c1,
+	.parsys_column .twoone-columns-box-c0 {
+		width: 66%;
+	}
+}
