@@ -139,8 +139,9 @@
 			var sum = 0;
 			$(element).children().each(function(){
 				sum+=$(this).outerHeight(true);
-				});
+			});
 			return sum;
+			//setTimeout(function(){utils._unsetElementSizes(element);}, 4000);
 		},
 		_selectByCookies: function(){
 			if ($.cookie(st.cookieName)!=null){
@@ -279,19 +280,56 @@
 			var widthF = $(window).outerWidth(true)-utils._getContainerLeft();
 			st.$footer.css({width: widthF+"px"});	
 		},
+		_setElementSizes: function(container){
+			$(container).find("img[data-ucg-height]").each(function(index, element){
+				var w = $(element).data('ucg-width');
+				var h = $(element).data('ucg-height');
+				$(element).data("oldStyle", $(element).attr("style"));
+				$(element).data("oldHeight", $(element).attr("height"));
+				$(element).data("oldWidth", $(element).attr("width"));
+				$(element).css({width: w+"px", height: h+"px", display: "block"});
+				$(element).attr("height", h).attr("width", w);
+			});
+		},
+		_unsetElementSizes: function(container){
+			$(container).find("img[data-ucg-height]").each(function(index, element){
+				if(typeof $(element).data("oldStyle")!= "undefined"){
+					$(element).attr("style", $(element).data("oldStyle"));
+				} else {
+					$(element).removeAttr("style");
+				}
+				if(typeof $(element).data("oldHeight")!= "undefined"){
+					$(element).attr("height", $(element).data("oldHeight"));					
+				} else {
+					$(element).removeAttr("height");					
+				}
+				if(typeof $(element).data("oldWidth")!= "undefined"){
+					$(element).attr("width", $(element).data("oldWidth"));					
+				} else {
+					$(element).removeAttr("width");					
+				}
+			});
+		},
 		_setHeightContainers: function(){
 			st.$sidebar.find(".sidebar-container").css("height", "auto");
-			var containerContent =  Math.max(utils._getContentHeight(st.$sidebar), utils._getContentHeight(st.$container), $(window).outerHeight(true)-st.$header.outerHeight(true))*1.05;
-			st.$container.css("height", containerContent+"px");
-			st.$sidebar.css("height", containerContent+"px");
-			var sidebarMenuHeight = containerContent;
-			st.$sidebar.find(".sidebar-element").each(function(){
-				sidebarMenuHeight -= $(this).outerHeight(true);
-				containerContent += $(this).outerHeight(true);
+			var insertSizes = $.Deferred(function(d){
+				utils._setElementSizes(st.$container);
+				d.resolve();
 			});
-			st.$sidebar.find(".sidebar-container").css("height", containerContent+"px");
-			st.$sidebar.find(".sidebar-menu").css("height", sidebarMenuHeight+"px");
-			st.$container.trigger(st.calcHeightComplete);
+			$.when(insertSizes).done(function(){
+				var containerContent =  Math.max(utils._getContentHeight(st.$sidebar), utils._getContentHeight(st.$container), $(window).outerHeight(true)-st.$header.outerHeight(true))*1.05;
+				st.$container.css("height", containerContent+"px");
+				st.$sidebar.css("height", containerContent+"px");
+				var sidebarMenuHeight = containerContent;
+				st.$sidebar.find(".sidebar-element").each(function(){
+					sidebarMenuHeight -= $(this).outerHeight(true);
+					containerContent += $(this).outerHeight(true);
+				});
+				st.$sidebar.find(".sidebar-container").css("height", containerContent+"px");
+				st.$sidebar.find(".sidebar-menu").css("height", sidebarMenuHeight+"px");
+				st.$container.trigger(st.calcHeightComplete);
+				utils._unsetElementSizes(st.$container);
+				});
 		},
 		_setWidthSidebar: function(){
 			st.$sidebar.css({width: utils._getSidebarWidth()+"px"});

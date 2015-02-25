@@ -1,5 +1,5 @@
 var swipersCalendar = Array();
-var swipersSelector = Array();
+//var swipersSelector = Array();
 var swipeTemplate = doT.template(
 		"<div class='swiper-slide parsys_column three-columns-box-c0 {{=it.type}} {{=it.category}}'>" +
 			"<div class='panel ucg_text'>" +
@@ -45,9 +45,10 @@ function getSlideNum(){
 }
 
 function getSwiperByName(name){
-	return $.grep(swipersCalendar, function(element){
+	var result = $.grep(swipersCalendar, function(element){
 		return element.name==name;
-	})[0].swiper;
+	});
+	return typeof result[0].name!="undefined"?result[0].swiper:null;
 }
 
 function getEventsData(swiperContainer) {
@@ -66,7 +67,7 @@ function getEventsData(swiperContainer) {
 			for (var i = 0; i < dataFiltered.length; i++) {
 				$wrapper.append(swipeTemplate(dataFiltered[i]));
 			}
-			swipersSelector.push('.ucg_calendar_tool .swiper-container[data-name="'+$(swiperContainer).data('name')+'"]');
+			//swipersSelector.push('.ucg_calendar_tool .swiper-container[data-name="'+$(swiperContainer).data('name')+'"]');
 			//swipersCalendar.push($(swiperContainer).swiper({
 			swipersCalendar.push({name: $name, swiper: $(swiperContainer).swiper({
 			    mode:'horizontal',
@@ -99,15 +100,23 @@ $(document).ready(function() {
 		var $swiper = getSwiperByName($(this).data("target"));
 		$(this).hasClass('prev') ? $swiper.swipePrev() : $swiper.swipeNext();;
 	});
-
+	$('.ucg_calendar_tool_controller .iradio_ubis').on('ifChecked', function(){
+		$('.ucg_calendar_tool_controller .ucg_radio').removeClass("checked");
+		$(this).parent().parent().addClass("checked");
+		var name = $(this).data("swiper");
+		var $container = $('.ucg_calendar_tool .swiper-container[data-name="'+name+'"]');
+		var $swiper = getSwiperByName(name);
+		$swiper.destroy();
+		$container.html('<div class="swiper-wrapper"></div>');
+		//$container.swiper.destroy();
+		swipersCalendar = swipersCalendar.filter(function(el){ return el.name!=name; });
+		//swipersSelector.pop(getObjectByName(name));
+		$container.data("type", $(this).val()).attr("data-type", $(this).val());
+		getEventsData($container);
+	});
 	$(window).resize(function(){
 		$.each(swipersCalendar, function(key, value){
 			value.swiper.resizeFix(true);
-			/*var slideNum = getSlideNum();
-			if(value.swiper.params.slidesPerView!=slideNum){
-				value.swiper.params.slidesPerView = slideNum;
-				value.swiper.reInit();
-			}*/
 		});
 	});
 });
