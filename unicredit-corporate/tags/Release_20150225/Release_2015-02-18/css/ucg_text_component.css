@@ -1,0 +1,80 @@
+/************** ucg_text **************/
+
+.ucg_text.panel {
+	margin: 0;
+}
+
+.ucg_text .ucg_text_container {
+	width: 100%;
+}
+
+.ucg_text .ucg_text_container ul,
+.ucg_text .ucg_text_container ol,
+.ucg_text .ucg_text_container p {
+	font-size: 15px;
+	margin-bottom: 0;
+}
+
+.ucg_text .ucg_text_container .paragraphTitle {
+	margin-top: 26px;
+}
+
+.ucg_text .ucg_text_container p:first-child {
+	margin-top: 0;
+}
+
+.ucg_text .ucg_text_container .ucg_date {
+	display: block;
+	font-size: 14px;
+	color: #999999;
+	margin-bottom: 16px;
+}
+
+.ucg_text .ucg_text_container .ucg_introTitle {
+	display: block;
+	font-size: 17px;
+	color: #333333;
+	margin-bottom: 5px;
+}
+
+.ucg_text .ucg_text_container .ucg_introTitle .ucg_titleLink {
+	font-family: 'unicredit-bold';
+	color: #666666;
+}
+.ucg_text .ucg_text_container .ucg_introTitle .ucg_titleLink:hover,
+.ucg_text .ucg_text_container .ucg_introTitle .ucg_titleLink:active {
+	color: #00afd0;
+}
+
+.ucg_text .ucg_text_container .paragraphTitle {
+	font-family: 'unicredit-bold';
+	margin-bottom: 0;
+}
+
+.ucg_text .ucg_text_container .ucg_intro {
+	color: #626262;
+}
+
+.ucg_text .ucg_text_container .ucg_bold {
+	font-family: 'unicredit-bold';
+}
+
+.ucg_text .ucg_text_container .ucg_link_container {
+	list-style-type: none;
+	bottom: 0;
+	padding: 0;
+}
+
+.ucg_text .ucg_text_container .ucg_link,
+.ucg_text .ucg_text_container .ucg_mail {
+	background: none;
+}
+
+.ucg_text .ucg_linklist .container {
+	margin-top: 26px;
+	padding: 0;
+}
+
+@media (min-width: 768px) {
+	
+}

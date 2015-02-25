@@ -1,0 +1,15 @@
+.ucg_footnote {
+	font-size: 13px;
+}
+.ucg_footnote .ucg_footnote_title {
+	text-transform: uppercase;
+}
+.ucg_footnote ol {
+	padding: 0 60px 0 12px;
+	margin: 0;
+}
+.ucg_footnote .ucg_to_top {
+	float: right;
+    position: relative;
+    top: -18px;
+}
