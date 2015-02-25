@@ -118,15 +118,17 @@
     text-transform: uppercase;
     font-family: 'unicredit-bold';
 }
+.ucg_social_footer .ucg_social_title,
 .ucg_social_footer .ucg_social_others {
-    display: inline-block;
+	padding: 0;
 }
-.ucg_social_footer .ucg_social_others span {
+.ucg_social_footer .ucg_social_title span {
     display: inline-block;
     float: left;
     line-height: 30px;
     text-transform: uppercase;
-    margin-right: 20px;
+	padding: 0;
+	margin: 0;
 }
 .ucg_social_footer .ucg_social_others a {
 	width: 25px;
@@ -176,5 +178,20 @@
 	}
 	#mainContainer.with-sidebar-opened .ucg_social .ucg_social_image img {
 		width: 100%;
+	}
+	.ucg_social_footer .ucg_social_title {
+		width: auto;
+		float: right;
+    	text-align: right;
+	}
+	.ucg_social_footer .ucg_social_title span {
+		float: none;
+		width: auto;
+    	margin-right: 20px;
+	}
+	.ucg_social_footer .ucg_social_others {
+	    display: inline-block;
+	    width: auto;
+	    float: right;
 	}
 }
