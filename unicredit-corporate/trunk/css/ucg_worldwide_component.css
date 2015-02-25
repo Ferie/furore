@@ -11,7 +11,7 @@
 }
 
 .ucg_worldwide .nations_container .swiper-container {
-	
+
 }
 
 .ucg_worldwide .nations_container .swiper-slide a,
@@ -64,7 +64,13 @@
 	width: 100%;
 }
 
-.ucg_worldwide .worldwide_content .nationContainer {
+.ucg_worldwide .layer_selected,
+.ucg_worldwide .layer_over,
+.ucg_worldwide .layer_mapped {
+	display: none;
+}
+
+.ucg_worldwide .worldwide_content .unicreditInContainer {
 	padding: 40px 15px 0;
 }
 
@@ -92,7 +98,7 @@
 }
 
 .ucg_worldwide .worldwide_content .marketShare .marketShereText {
-	
+
 }
 
 .ucg_worldwide .worldwide_content .marketShereNumber,
@@ -118,13 +124,48 @@
 
 @media (min-width: 768px) {
 	.ucg_worldwide .worldwide_content {
-		background: url('../img/mappa_europa.png') no-repeat scroll right center transparent;
+		background: url('../img/static/map/mappa_europa.png') no-repeat scroll right center transparent;
 		border-bottom: 1px solid #C9C9C9;
-		height: 439px;
+		position: relative;
+		height: 440px;
 		width: 100%;
+		z-index: 1;
 	}
 
-	.ucg_worldwide .worldwide_content .nationContainer {
+	.ucg_worldwide .layer_map,
+	.ucg_worldwide .layer_selected,
+	.ucg_worldwide .layer_over,
+	.ucg_worldwide .layer_mapped {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 440px;
+		width: 520px;
+	}
+
+	.ucg_worldwide .layer_map,
+	.ucg_worldwide .layer_selected,
+	.ucg_worldwide .layer_over {
+		display: block;
+	}
+
+	.ucg_worldwide .layer_selected {
+		z-index: 2;
+	}
+
+	.ucg_worldwide .layer_over {
+		z-index: 3;
+	}
+
+	.ucg_worldwide .layer_map {
+		z-index: 4;
+	}
+
+	.ucg_worldwide .layer_mapped {
+		z-index: 5;
+	}
+
+	.ucg_worldwide .worldwide_content .unicreditInContainer {
 		position: absolute;
 		bottom: 0;
 		left: 0;
@@ -132,7 +173,7 @@
 	}
 
 	.ucg_worldwide .worldwide_content .nation {
-		
+
 	}
 
 	.ucg_worldwide .worldwide_content .marketShare {
