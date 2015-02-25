@@ -28,7 +28,8 @@ $(document).ready(function () {
 		resizeReInit: true
 	});
 
-	$('.ucg_history .years_container .swiper-slide a').on('click', function () {
+	$('.ucg_history .years_container .swiper-slide a').on('click', function (e) {
+		e.stopPropagation();
 		var $this = $(this);
 		if (!$this.parent().hasClass('active')) {
 			$('.ucg_history .years_container .swiper-slide').removeClass('active');
