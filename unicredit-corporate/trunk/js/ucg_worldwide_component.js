@@ -46,7 +46,14 @@ $(document).ready(function () {
 			mousewheelControl: true,
 			resizeReInit: true,
 			freeMode: true
-		});
+		}),
+		$layerSelectedImg = $('.ucg_worldwide .layer_selected img'),
+		$layerMappedMapArea = $('.ucg_worldwide .layer_mapped map area'),
+		$unicreditInContainerNation = $('.ucg_worldwide .unicreditInContainer .nation'),
+		$marketShereNumber = $('.ucg_worldwide .marketShare .marketShereNumber'),
+		$marketShareGraph = $('.ucg_worldwide .marketShare .graph'),
+		$employeesNumber = $('.ucg_worldwide .employees .number'),
+		$branchesNumber = $('.ucg_worldwide .branches .number');
 
 	$('.ucg_worldwide .ucg_worldwide_arrow_left a').on('click', function () {
 		nationsSwiper.swipePrev();
@@ -61,7 +68,7 @@ $(document).ready(function () {
 		var $this = $(this);
 
 		// updating selected nation image
-		$('.ucg_worldwide .layer_selected img').attr('src', $this.data('img-selected'));
+		$layerSelectedImg.attr('src', $this.data('img-selected'));
 
 		// updating nation swiper
 		if (!$this.parent().hasClass('active')) {
@@ -70,24 +77,23 @@ $(document).ready(function () {
 		}
 
 		// updating data nation
-		$('.ucg_worldwide .unicreditInContainer .nation').text($this.text());
-		$('.ucg_worldwide .marketShare .marketShereNumber').text($this.data('marketshare'));
-		$('.ucg_worldwide .marketShare .graph').attr('src', $this.data('graph'))
-		$('.ucg_worldwide .employees .number').text($this.data('emplyees'));
-		$('.ucg_worldwide .branches .number').text($this.data('branches'));
+		$unicreditInContainerNation.text($this.text());
+		$marketShereNumber.text($this.data('marketshare'));
+		$marketShareGraph.attr('src', $this.data('graph'))
+		$employeesNumber.text($this.data('emplyees'));
+		$branchesNumber.text($this.data('branches'));
 	});
 
 	$('#mainContainer').on("animationSidebarCompleted", function () {
 		sidebarResize();
 	});
 
-	$('.ucg_worldwide .layer_mapped map area').on('click', function () {
+	$layerMappedMapArea.on('click', function () {
 		var $this = $(this),
 			$correspondingSwiperSlide = $('.ucg_worldwide .nations_container .swiper-slide a[data-slide=' + $this.data('swiper-slide') + ']');
-		console.log('click on ' + $this.data('nation-name'));
 
 		// updating selected nation image
-		$('.ucg_worldwide .layer_selected img').attr('src', $this.data('img-selected'));
+		$layerSelectedImg.attr('src', $this.data('img-selected'));
 
 		// updating nation swiper
 		$('.ucg_worldwide .nations_container .swiper-slide').removeClass('active');
@@ -95,23 +101,27 @@ $(document).ready(function () {
 		nationsSwiper.swipeTo($this.data('swiper-slide'), 500, false);
 
 		// updating data nation
-		$('.ucg_worldwide .unicreditInContainer .nation').text($correspondingSwiperSlide.text());
-		$('.ucg_worldwide .marketShare .marketShereNumber').text($correspondingSwiperSlide.data('marketshare'));
-		$('.ucg_worldwide .marketShare .graph').attr('src', $correspondingSwiperSlide.data('graph'))
-		$('.ucg_worldwide .employees .number').text($correspondingSwiperSlide.data('emplyees'));
-		$('.ucg_worldwide .branches .number').text($correspondingSwiperSlide.data('branches'));
+		$unicreditInContainerNation.text($correspondingSwiperSlide.text());
+		$marketShereNumber.text($correspondingSwiperSlide.data('marketshare'));
+		$marketShareGraph.attr('src', $correspondingSwiperSlide.data('graph'))
+		$employeesNumber.text($correspondingSwiperSlide.data('emplyees'));
+		$branchesNumber.text($correspondingSwiperSlide.data('branches'));
 	});
 
-	$('.ucg_worldwide .layer_mapped map area').on('mouseover', function () {
-		var $this = $(this);
+	$layerMappedMapArea.on('mouseover', function (e) {
+		var $this = $(this),
+			offsetWorldwideContent = $this.parents('.worldwide_content').offset(),
+			positionX = e.pageX - offsetWorldwideContent.left,
+			positionY = e.pageY - offsetWorldwideContent.top;
 
 		// updating mouseover nation image
 		$('.ucg_worldwide .layer_over').html('<img src="' + $this.data('img-over') + '">');
-	});
 
-	$('.ucg_worldwide .layer_mapped map area').on('mouseleave', function () {
-		// updating mouseover nation image
-		$('.ucg_worldwide .layer_over').html('');
+		// updating mouseover nation name
+		$('.ucg_worldwide .layer_nationName').css({
+			top: positionY + 'px',
+			left: positionX + 'px'
+		}).html($this.data('nation-name'));
 	});
 
 	// functions on load

@@ -64,8 +64,8 @@
 	width: 100%;
 }
 
-.ucg_worldwide .layer_selected,
 .ucg_worldwide .layer_over,
+.ucg_worldwide .layer_selected,
 .ucg_worldwide .layer_mapped {
 	display: none;
 }
@@ -132,9 +132,9 @@
 		z-index: 1;
 	}
 
-	.ucg_worldwide .layer_map,
-	.ucg_worldwide .layer_selected,
 	.ucg_worldwide .layer_over,
+	.ucg_worldwide .layer_selected,
+	.ucg_worldwide .layer_map,
 	.ucg_worldwide .layer_mapped {
 		position: absolute;
 		top: 0;
@@ -143,26 +143,42 @@
 		width: 520px;
 	}
 
-	.ucg_worldwide .layer_map,
+	.ucg_worldwide .layer_over,
 	.ucg_worldwide .layer_selected,
-	.ucg_worldwide .layer_over {
+	.ucg_worldwide .layer_map {
 		display: block;
 	}
 
-	.ucg_worldwide .layer_selected {
+	.ucg_worldwide .layer_over {
 		z-index: 2;
 	}
 
-	.ucg_worldwide .layer_over {
+	.ucg_worldwide .layer_selected {
 		z-index: 3;
 	}
 
-	.ucg_worldwide .layer_map {
+	.ucg_worldwide .layer_nationName {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+/* 		display: none; */
+		background-color: #5a5a5a;
+		border-radius: 3px;
+		color: #FFFFFF;
+		font-family: 'unicredit-bold';
+		font-size: 14px;
+		line-height: 28px;
+		padding: 0 5px;
+		text-transform: uppercase;
 		z-index: 4;
 	}
 
-	.ucg_worldwide .layer_mapped {
+	.ucg_worldwide .layer_map {
 		z-index: 5;
+	}
+
+	.ucg_worldwide .layer_mapped {
+		z-index: 6;
 	}
 
 	.ucg_worldwide .worldwide_content .unicreditInContainer {
