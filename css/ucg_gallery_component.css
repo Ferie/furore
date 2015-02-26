@@ -1,0 +1,117 @@
+/**** SWIPER CONTENT ****/
+.ucg_gallery {
+	height: 700px;
+}
+.ucg_gallery .ucg_gallery_title {
+	text-align: center;
+}
+.ucg_gallery .galleryContainer .swiper-container.swiper-content,
+.ucg_gallery .swiper-content .swiper-slide {
+	width: 100%;
+	height: 460px;
+}
+.ucg_gallery .swiper-content .youtube-layer {
+	position: absolute;
+	background-color: rgba(255,200,0,0.2);
+	float: left;
+	z-index: 3;
+	top: 0;
+}
+.ucg_gallery .swiper-content .youtube-layer.top {
+	height: 43%;
+	width: 100%;
+}
+.ucg_gallery .swiper-content .youtube-layer.right {
+	width: 45%;
+	height: 100%;
+	right: 0;
+	left: auto;
+}
+.ucg_gallery .swiper-content .youtube-layer.bottom {
+    height: 43%;
+    top: auto;
+    bottom: 0;
+    width: 100%;	
+}
+.ucg_gallery .swiper-content .youtube-layer.left {
+	width: 45%;
+	height: 100%;
+	left: 0;
+	right: auto;
+}
+.ucg_gallery .swiper-content .swiper-slide.video-youtube {
+	position: relative;
+}
+.ucg_gallery .swiper-content .swiper-slide.video-youtube > iframe {
+    position: absolute;
+    top: 0px;
+	z-index: 2;
+}
+.ucg_gallery .swiper-content .swiper-slide .img-responsive {
+	height: 100%;
+	width: auto;
+}
+.ucg_gallery .swiper-content .swiper-slide .slide-footer {
+    display: block;
+    height: 34px;
+    position: absolute;
+    bottom: 0;
+    width: auto;
+    z-index: 1000000;
+    color: #fff;
+    background-color: rgba(0,0,0,0.6);
+    line-height: 34px;
+}
+.ucg_gallery .swiper-content .swiper-slide .slide-footer .slide-footer-container {
+	padding: 0;
+	width: 930px;
+}
+.ucg_gallery .swiper-content .swiper-slide .slide-footer .slide-footer-container > div {
+	display: inline-block;
+	position: absolute;
+	width: auto;
+	top: 0;
+	left: 0;
+	float: left;
+}
+.ucg_gallery .swiper-content .swiper-slide .slide-footer .slide-footer-container h5 {
+	text-align: center;
+}
+.ucg_gallery .swiper-content .swiper-slide .slide-footer .slide-footer-container .view-full {
+	float: right;
+	width: auto;
+	left: auto;
+	right: 0;
+}
+.ucg_gallery .swiper-content .swiper-slide .slide-footer .fullscreen {
+	display: inline-block;
+	width: 34px;
+	height: 34px;
+	margin: 0;
+	padding: 0;
+	background: url('../img/static/media-gallery-fullscreen.png') no-repeat scroll center center;
+}
+/**** SWIPER NAV ****/
+.ucg_gallery .galleryContainer .swiper-container.swiper-nav {
+	width: 100%;
+	height: 115px;
+	background-color: #f2f2f2;
+	padding: 10px;
+}
+.ucg_gallery .swiper-nav .swiper-slide .img-responsive {
+	margin-right: 10px;
+}
+.ucg_gallery .swiper-nav .swiper-slide:last-child {
+padding-right: 10px;
+}
+.ucg_gallery .swiper-nav .swiper-slide .img-responsive.selected {
+	display: none;
+    height: 94px;
+    left: -1px;
+    position: relative;
+    top: -93px;
+    width: 192px;
+}
+.ucg_gallery .swiper-nav .swiper-slide.active-nav img.selected {
+	display: block;
+}

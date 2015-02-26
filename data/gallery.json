@@ -1,0 +1,87 @@
+{
+	"infos": {
+			"title": "Visit us in Milan"
+		},
+	"elements": [
+		{
+			"index": 1,
+			"description": "Run with UniCredit",
+			"type": "youtube",
+			"src": "https://www.youtube.com/embed/j_kOGqFslos",
+			"srcMobile": "https://www.youtube.com/embed/j_kOGqFslos",
+            "thumb": "img/video-placeholder-1.jpg"
+		},
+        {
+			"index": 2,
+            "description": "Image 001",
+			"type": "image",
+            "src": "img/image-gallery001.jpg",
+            "srcMobile": "img/image-gallery001.jpg",
+            "thumb": "img/image-gallery001-thumb.jpg"
+        },
+        {
+			"index": 3,
+            "description": "Image 002",
+			"type": "image",
+            "src": "img/image-gallery002.jpg",
+            "srcMobile": "img/image-gallery002.jpg",
+            "thumb": "img/image-gallery002-thumb.jpg"
+        },
+        {
+			"index": 4,
+            "description": "Image 003",
+			"type": "image",
+            "src": "img/image-gallery003.jpg",
+            "srcMobile": "img/image-gallery003.jpg",
+            "thumb": "img/image-gallery003-thumb.jpg"
+        },
+        {
+			"index": 5,
+            "description": "Image 004",
+			"type": "image",
+            "src": "img/image-gallery004.jpg",
+            "srcMobile": "img/image-gallery004.jpg",
+            "thumb": "img/image-gallery004-thumb.jpg"
+        },
+        {
+			"index": 6,
+            "description": "Image 005",
+			"type": "image",
+            "src": "img/image-gallery005.jpg",
+            "srcMobile": "img/image-gallery005.jpg",
+            "thumb": "img/image-gallery005-thumb.jpg"
+        },
+        {
+			"index": 7,
+            "description": "Image 006",
+			"type": "image",
+            "src": "img/image-gallery006.jpg",
+            "srcMobile": "img/image-gallery006.jpg",
+            "thumb": "img/image-gallery006-thumb.jpg"
+        },
+        {
+			"index": 8,
+            "description": "Image 007",
+			"type": "image",
+            "src": "img/image-gallery007.jpg",
+            "srcMobile": "img/image-gallery007.jpg",
+            "thumb": "img/image-gallery007-thumb.jpg"
+        },
+        {
+			"index": 9,
+            "description": "Image 008",
+			"type": "image",
+            "src": "img/image-gallery008.jpg",
+            "srcMobile": "img/image-gallery008.jpg",
+            "thumb": "img/image-gallery008-thumb.jpg"
+        },
+        {
+			"index": 10,
+            "description": "Image 009",
+			"type": "image",
+            "src": "img/image-gallery009.jpg",
+            "srcMobile": "img/image-gallery009.jpg",
+            "thumb": "img/image-gallery009-thumb.jpg"
+        }
+        ]
+}
