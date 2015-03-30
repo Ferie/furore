@@ -5,7 +5,7 @@
 	margin-top: 6px;
 }
 
-.ucg_accordion .panel + .panel {
+.ucg_accordion .panel {
 	margin: 0;
 }
 
@@ -86,10 +86,6 @@
 }
 
 @media (min-width: 768px) {
-	.ucg_accordion .panel {
-		margin-top: 4px;
-	}
-
 	.ucg_accordion .accordionPanel .elementTitle,
 	.ucg_accordion .accordionPanel .collapsing .elementsContainer,
 	.ucg_accordion .accordionPanel .collapse .elementsContainer {

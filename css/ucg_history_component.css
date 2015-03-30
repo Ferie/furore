@@ -57,6 +57,12 @@
 	background-position: center right;
 }
 
+.ucg_history .history_content .hystory_swiper {
+	margin-bottom: 20px;
+	height: 500px;
+	width: 100%;
+}
+
 @media (min-width: 768px) {
 	#mainContainer .ucg_history .container .panel .container {
 		padding: 0;

@@ -14,7 +14,7 @@
 			var result = $.grep(this.spinnerManagers, function(element){
 				return element.selector==selector;
 			});
-			return typeof result[0].selector!="undefined"?result[0].spinner:null;			
+			return result.length>0 ? result[0].spinner : null;			
 		},
 		show:function(selector){
 			this.spinnerManagers.push({selector: selector, spinner: $(selector).spinnerUBISManager({
@@ -35,12 +35,16 @@
 				fps: 25
 				}) });
 			var $spinner = this.getSpinnerBySelector(selector);
-			$spinner.utils._startSpinner($spinner.st);
+			if($spinner!=null) {
+				$spinner.utils._startSpinner($spinner.st);				
+			}
 		},
 		hide:function(selector){
 			var $spinner = this.getSpinnerBySelector(selector);
-			$spinner.utils._stopSpinner($spinner.st);
-			this.spinnerManagers = this.spinnerManagers.filter(function(el){ return el.selector!=selector; });
+			if($spinner!=null) {
+				$spinner.utils._stopSpinner($spinner.st);
+				this.spinnerManagers = this.spinnerManagers.filter(function(el){ return el.selector!=selector; });
+			}
 		}
 	}
 	/**
@@ -55,47 +59,53 @@
 	var methods = {
 		init : function (options){
 			var defaults = {
+				name: "mainGallery",
+				gallerySelector: '.ucg_gallery:not(.modal) .galleryContainer:not(.full)',
 				$container: null,
 				contentSwiper: null,
+				containerModalSelector: '.ucg_gallery.modal .galleryContainer.full',
+				$containerModal: null,
+				contentSwiperModal: null,
 				navEnabled: true,
 				hiddenThumbs: false,
+				openSlideNumber: 0,
 				navSwiper: null,
 				players: [],
 				galleryTitle: "Gallery title",
 				source: "/unicredit-corporate/data/gallery.json",
 				preloadedImageRange:1,//Carica n immagini prima e n immagini dopo quella corrente
-				placeHolder:"img/static/media-gallery-placeholder.jpg",
+				placeHolder:"img/static/gallery-placeholder.jpg",
 				host:"http://localhost:8080/unicredit-corporate",
 				//mediaType is the  media type displayed by the gallery and the visualization order of the the types
 				mediaType:{"YOUTUBE":"youtube","IMAGE":"image"},
-				thumbSelectedImage:"img/static/media-gallery-selected.png",
+				thumbSelectedImage:"img/static/gallery-selected.png",
 				imageCached:[],
 				fullWindow:false
 			};
 			
 			var st = $.extend(true, defaults, options); 
-        	var $container = $(this), data = $container.data('mediaGalleryManager');
+        	var $container = $(this), data = $container.data(st.name);
         	st.$container = $container;
+        	st.$containerModal = $(st.containerModalSelector);
         	
         	
         	if(typeof data === "undefined"){
-        		$container.data('mediaGalleryManager', {
+        		$container.data(st.name, {
         			target : $container,
         			st : st
         		});
         		
         		
-        		$.galleryPreloader.show(".ucg_gallery");
+        		$.galleryPreloader.show(st.gallerySelector);
         		
 				$.when(utils._buildHtml(st)).then(function() {
 					
-					var currentIndex=utils._getCurrentIndexByHash();
+					var currentIndex=utils._getCurrentIndexByHash(st);
         			var $imageArray=utils._getElementsWithRange(st,currentIndex,utils._getThumbElements(st)); 
         			$.when(utils._preloadImages(st,$imageArray)).then(function(){
                 		
                 		utils._initializeSwiper(st);
-                		//utils._initVideoPlayers(st);
-                		$.galleryPreloader.hide(".ucg_gallery");
+                		$.galleryPreloader.hide(st.gallerySelector);
                 		
                 		
         			});
@@ -109,8 +119,8 @@
 	
 	var utils = {
 			
-		_getCurrentIndexByHash : function(){
-			var index=0;
+		_getCurrentIndexByHash : function(st){
+			var index=st.openSlideNumber;
 			var hash=window.location.hash;
 			if(hash){
 				index=$("[data-hash]").index($("[data-hash='"+hash.split("#")[1]+"']"));
@@ -170,18 +180,18 @@
 					//Inserisco l'icona di loader se è una img  e non una thumb
 					var el = $("[data-src='"+$imageArray[0]+"']");
 					if(el.is("[data-type-image]")){
-						$.galleryPreloader.show(".ucg_gallery [data-src='"+$imageArray[0]+"']");
+						$.galleryPreloader.show(st.gallerySelector+" [data-src='"+$imageArray[0]+"']");
 					}
 					
 					$.each($imageArray,function() {
 						preloader.onload = function() {
 							st.imageCached.push($imageArray[0]);
-							utils._insertImageSrcAndRemoveLoader($imageArray[0]);
+							utils._insertImageSrcAndRemoveLoader(st.gallerySelector, $imageArray[0]);
 							utils._preloadImages(st,$imageArray.slice(1),defer);
 						};
 						preloader.onerror = function() {
 							st.imageCached.push($imageArray[0]);
-							utils._insertImageSrcAndRemoveLoader($imageArray[0]);
+							utils._insertImageSrcAndRemoveLoader(st.gallerySelector, $imageArray[0]);
 							utils._preloadImages(st,$imageArray.slice(1),defer);
 						};
 					});
@@ -193,12 +203,12 @@
 			return defer.promise();
 		},
 		
-		_insertImageSrcAndRemoveLoader : function(src){
+		_insertImageSrcAndRemoveLoader : function(gallerySelector, src){
 			var el =$("[data-src='"+src+"']");
 			$("[data-src='"+src+"'] > img").prop("src",src);
 			//Rimuovo il preload dopo una latenza
 			if(el.is("[data-type-image]")){
-				setTimeout($.proxy(function(){$.galleryPreloader.hide(".ucg_gallery [data-src='"+src+"']")}, el), 500);
+				setTimeout($.proxy(function(){$.galleryPreloader.hide(gallerySelector+" [data-src='"+src+"']")}, el), 500);
 			}
 		},
 		/**
@@ -218,7 +228,7 @@
 				 if(data.infos && data.infos.title){
 					 st.galleryTitle =  data.infos.title;
 				 }
-				 $(".ucg_gallery .ucg_gallery_title h2").text(st.galleryTitle);
+				 $(st.gallerySelector+" .ucg_gallery_title h2").text(st.galleryTitle);
 				 $("#closeButton").click(function(){
 					 utils._removeFullWindow(st);
 				 });
@@ -262,12 +272,12 @@
 //				});
 //			}
 
-			var footer = "<div class='footer'>"+
-	    		"<div class='text'>"+
-	    		"</div>"+
-	    		"<div class='fullScreenToggle'></div>"+
-	    		"<div class='thumbToggle'></div>"+
-	    		"</div>";
+//			var footer = "<div class='footer'>"+
+//	    		"<div class='text'>"+
+//	    		"</div>"+
+//	    		"<div class='fullScreenToggle'></div>"+
+//	    		"<div class='thumbToggle'></div>"+
+//	    		"</div>";
 		
 			//****Scafolfing****////			
 					
@@ -278,17 +288,17 @@
 					"</div>")).append($("<div class='swiper-container swiper-nav thumb-list'>").append($("<div class='swiper-wrapper'>")).append($("<div class='thumbArrow'>"+
 							"<a class='arrow arrow-left' href='#'></a>"+
 							"<a class='arrow arrow-right' href='#'></a>"+
-							"</div>"))));
+							"</div>")))).append("<div class='clear'></div>");
 			
-			st.$container.append($(footer));
+			//st.$container.append($(footer));
 			//****Scafolfing****////
 			
 			//****Templating***//
 			var footerSlideTemplate = "<div class='slide-footer'>" +
 							"<div class='slide-footer-container'>" +
-							"<div><b>{{=it.index}}</b> of <b>"+st.elements.length+"</b></div>" +
+							"<div class='indexer'><b>{{=it.index}}</b> of <b>"+st.elements.length+"</b></div>" +
 							"<h5>{{=it.description}}</h5>" +
-							"<div class='view-full'><a href='{{=it.src}}' class='fullscreen'><a></div>" +
+							"<div class='view-full'><a href='javascript:void(0);' data-index='{{=it.index}}' class='fullscreen'></a></div>" +
 							"</div>" +
 						"</div>";
 			//var imageTemplateFn=doT.template("<div class='swiper-slide' data-type-image data-slide-text='{{=it.description}}' data-hash='{{=it.id}}' data-src='{{=it.src}}'><img class='img-responsive' src='"+st.placeHolder+"' alt='' title=''></div>");
@@ -298,12 +308,12 @@
 							"</div>");
 			//var videoTemplateFn=doT.template("<div class='swiper-slide video-player' data-slide-text='{{=it.description}}' data-hash='{{=it.id}}' ><div id='video-{{=it.id}}' data-target-video data-video-url='{{=it.src}}' data-video-cover=''></div></div>");
 			//var youtubeStringTemplate="<div class='swiper-slide video-youtube' data-slide-text='{{=it.description}}' data-hash='{{=it.id}}'>";
-			var youtubeStringTemplate="<div class='swiper-slide video-youtube' data-slide-text='{{=it.description}}'>";
+			var youtubeStringTemplate="<div class='swiper-slide video-youtube' data-slide-text='{{=it.description}}'><div class='youtube-video-container'>";
 			if(utils._isTouch()){	
 				youtubeStringTemplate+="<div class='youtube-layer top' >&nbsp;</div><div class='youtube-layer bottom' >&nbsp;</div>"+
 				"<div class='youtube-layer left' >&nbsp;</div><div class='youtube-layer right' >&nbsp;</div>";
 			}
-			youtubeStringTemplate+="<iframe width='100%' height='100%' src='{{=it.src}}' frameborder='0' allowfullscreen></iframe>"+footerSlideTemplate+"</div>";
+			youtubeStringTemplate+="<iframe width='{{=it.width}}' height='{{=it.height}}' src='{{=it.src}}' frameborder='0' allowfullscreen></iframe></div>"+footerSlideTemplate+"</div>";
 			var youtubeTemplateFn=doT.template(youtubeStringTemplate);
 			
 			var thumbTemplate="<div class='swiper-slide active-nav'>"+
@@ -312,8 +322,8 @@
 			"</div>";
 			var thumbTemplateFn = doT.template(thumbTemplate);
 			
-			var mediaContainer=$(".swiper-container.swiper-content > .swiper-wrapper");
-			var thumbContainer=$(".swiper-container.swiper-nav.thumb-list > .swiper-wrapper");
+			var mediaContainer=st.$container.find(".swiper-container.swiper-content > .swiper-wrapper");
+			var thumbContainer=st.$container.find(".swiper-container.swiper-nav.thumb-list > .swiper-wrapper");
 			$.each(st.elements,function(){
 				switch(this.type) {
 			    case st.mediaType.IMAGE:
@@ -371,6 +381,8 @@
 				st.navSwiper = $cont.find('.swiper-nav').swiper({
 			    	calculateHeight:true,
 			    	visibilityFullFit:true,
+					autoResize: true,
+					resizeReInit: true,
 					slidesPerView:'auto',
 					onSlideClick:function(){
 						st.contentSwiper.swipeTo(st.navSwiper.clickedSlideIndex);
@@ -412,7 +424,14 @@
 				calculateHeight:true,
 				simulateTouch:true,
 				hashNav: true,
+				autoResize: true,
+				resizeReInit: true,
 				onInit: function(swiper){
+					$('.ucg_gallery .swiper-content .swiper-slide.video-youtube .youtube-video-container > iframe').each(function(i, e){
+						var vMargin = ($(this).parent().outerHeight()-$(this).height())/2;
+						var oMargin = ($(this).parent().outerWidth()-$(this).width())/2;
+						$(this).css({margin: vMargin+"px "+oMargin+"px"});
+					});
 					utils._slideChangeActions(st, swiper);
 					utils._manageSwiperArrow(st,swiper);
 				},
@@ -439,6 +458,32 @@
 			    e.preventDefault();
 			    st.contentSwiper.swipeNext();
 		    });
+			$cont.find('.swiper-slide .slide-footer .fullscreen').click(function(){
+				var $modalWindow = st.$containerModal.parents('.ucg_gallery.modal');
+				$('.ucg_gallery:not(.modal) .swiper-slide.video-youtube .youtube-video-container > iframe').each(function(){
+					var swap = $(this).attr("src");
+					$(this).attr("src", "").attr("src", swap);					
+				});
+				$modalWindow.modal({backdrop: "static"});
+				$modalWindow.on("shown.bs.modal", function(){					
+					st.$containerModal.mediaGalleryManager({gallerySelector: ".ucg_gallery.modal .galleryContainer.full", name: "modalGallery", hiddenThumbs: true, fullWindow:false, openSlideNumber: $(this).data("index")});
+					
+				});
+			});
+			$('.ucg_gallery.modal .swiper-slide .slide-footer .fullscreen, .ucg_gallery.modal .modal-header .close-modal-gallery').off("click");
+			$('.ucg_gallery.modal .swiper-slide .slide-footer .fullscreen, .ucg_gallery.modal .modal-header .close-modal-gallery').click(function(){
+				var $mC = st.$containerModal.data("modalGallery");
+				var $modalWindow = st.$containerModal.parents('.ucg_gallery.modal');
+				$mC.st.contentSwiper.destroy();
+				$mC.st.navSwiper.destroy();
+				$mC.st.$container.html("");
+				st.$containerModal.removeData("modalGallery");
+				$modalWindow.modal("hide");
+				//console.log($mC);
+			});
+			$cont.find('.swiper-slide .slide-footer .fullscreen, .ucg_gallery.modal .modal-header .close-modal-gallery').click(function(){
+				
+			});
 			$cont.find('.thumbToggle').click(function(){
 				$cont.find('.thumb-list').stop();
 				$cont.find('.thumb-list').slideToggle(500);
@@ -451,8 +496,15 @@
 			
 			$(window).resize(function(){
 				utils._resizeSwipers(st);
-				utils._resizeShare(st);
+				//utils._resizeShare(st);
     		});
+			$('#mainContainer').on("animationSidebarCompleted", function(){
+				//if($(this).hasClass("with-sidebar-opened")){
+					console.log("AHAHAH");
+					utils._resizeSwipers(st);
+					//utils._resizeShare(st);				
+				//}
+			});
 			utils._resizeSwipers(st);
 			
 		},
@@ -472,8 +524,10 @@
 			}
 		},
 		_resizeSwipers :function(st){
-			st.contentSwiper.resizeFix();
-			st.navSwiper.resizeFix();
+			//st.contentSwiper.resizeFix();
+			//st.navSwiper.resizeFix();
+			st.contentSwiper.reInit();
+			st.navSwiper.reInit();
 		},
 		_resizeShare :function(st){
 			//st.$container.find(".shareContainer").css("height", $(window).height()+"px");
@@ -507,28 +561,13 @@
 		 * @param st
 		 */
 		_slideChangeActions: function(st, swiper){
-			var text = $(swiper.activeSlide()).data('slide-text');
-			var src = $(swiper.activeSlide()).data('src');
-			
-			if(text){
-				st.$container.find('.footer .text').html(text);
-			}else{
-				st.$container.find('.footer .text').html("");
-			}
-			var actionContainer = st.$container.find('.actionContainer');
-			if(src){
-				actionContainer.find('.download a').attr("href", src);
-			}else{
-				actionContainer.find('.download a').attr("href", "javascript:void(0);");
-			}
-			
 			if(st.navEnabled){
 				utils._updateNavPosition(st,swiper);
 			}
 		},
 		
 		_openFullWindow: function(st){
-			var $cont = st.$container;
+			var $cont = st.$container;			
 			$("body>*:not(.loader-container)").wrapAll("<div id='page-layer'></div>");
 			//$("body").wrapInner("<div id='page-layer'></div>");
 			$("#page-layer").after($cont.detach());
@@ -544,65 +583,6 @@
 			utils._resizeSwipers(st);
 		},
 		
-		/**
-		 * Metodo che si occupa di inizializzare un video.
-		 * 
-		 * @param st
-		 * @param target
-		 */
-		/*_initVideoPlayers: function(st){
-			st.$container.find('.video-player [data-target-video]').each(function(){
-				$elem = $(this);
-				
-				var settings = {
-					file: $elem.data('video-url'),
-					height: "100%",
-					width: "auto",
-					volumeMemory: 100
-//					Commentanto perchè generare errore su chrome verificare l'interfaccia
-,					skin:"css/ducati_minimal/ducati.xml"
-//					Vecchia versione
-//,					skin:"css/ducati/ducati.xml"
-				};
-				
-				if(utils._isIe()){
-					settings.wmode='transparent';
-					settings.primary="flash";
-				}
-				
-				if($elem.data('video-cover')!=""){
-					settings.image= $elem.data('video-cover');
-				}
-				
-				if($elem.data('youtube')){
-					settings.events = {
-					   onPlay :function(){
-			    		  //Solo per tablet chrome/safari
-						 if(utils._isTouch()){
-							 $("#"+this.id).parents(".swiper-slide").find(".youtube-layer").remove();
-						 }
-			    	   }
-				    };
-				}
-				
-				if($elem.attr('id') != ""){
-					//st.players.push(jwplayer($elem.attr('id')).setup(settings));
-					var swapPlayer = jwplayer($elem.attr('id')).setup(settings);
-					swapPlayer.volumeMemory = settings.volumeMemory;
-					if (!utils._isIe()) {
-						swapPlayer.onMute(function(){
-							if (swapPlayer.getMute()){
-								swapPlayer.volumeMemory = swapPlayer.getVolume();
-								swapPlayer.setVolume(0);
-							} else {
-								swapPlayer.setVolume(swapPlayer.volumeMemory);							
-							}						
-						});
-					}
-					st.players.push(swapPlayer);
-				}
-			});
-		},*/
 		_isIe :function(){
 			return ((navigator.userAgent.indexOf("MSIE") != -1) ||  (navigator.userAgent.indexOf("rv:11") != -1));
 		},

@@ -41,7 +41,7 @@
 	<script type="text/javascript" src="plugin/js/doT.min.js"></script>
 	<script type="text/javascript" src="plugin/js/heartcode-canvasloader.js"></script>
 	<script type="text/javascript" src="js/jquery.mediaGalleryUBIS.js"></script>
-	<script type="text/javascript" src="js/ucg_gallery.js"></script>
+	<!-- <script type="text/javascript" src="js/ucg_gallery.js"></script> -->
 	<!--[if lt IE 9]>
       <script type="text/javascript" src="plugin/js/html5shiv.js"></script>
       <script type="text/javascript" src="plugin/js/respond.min.js"></script>
@@ -196,12 +196,35 @@
 		</div>
 	</div>
 	<div id="mainContainer">
+		<!-- Modal -->
+		<div class="ucg_gallery_modal_container">
+			<div class="ucg_gallery modal fade" tabindex="-1" role="dialog" aria-labelledby="ucg_gallery_modal" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+				        	<div class="ucg_gallery_title">
+				        		<h2>Gallery title</h2>
+				        		<a href="javascript:void(0);" class="close-modal-gallery"></a>
+				        	</div>
+							
+						</div>
+						<div class="modal-body">
+					        <div class="galleryWrapper">
+					        	<div class="galleryContainer full">
+					        	</div>
+				        	</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Modal -->
 		<div class="parsys contentpagewelcome-parsys">
 			<div class="section">
 				<!-- IMAGE GALLERY -->
 		        <script type="text/javascript">
 		        	$(document).ready(function(){
-		        		$('.galleryContainer').mediaGalleryManager({fullWindow:false});
+		        		$('.galleryContainer:not(.full)').mediaGalleryManager({fullWindow:false});
 		        	});
 		        </script>
 				<div class="panel ucg_gallery">

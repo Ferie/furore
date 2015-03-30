@@ -23,19 +23,21 @@
 	}
 
 	#worldwide #worldwideMap .cerchio {
-		behavior: url('../plugin/js/PIE.htc');
-		background-color: #FFFFFF;
-		border: 1px solid #cacaca;
-		border-radius: 50%;
-		cursor: pointer;
 		display: table;
-		height: 180px;
-		width: 180px;
 	}
 
 	#worldwide #worldwideMap .cerchio .center {
 		display: table-cell;
 		vertical-align: middle;
+		behavior: url('../plugin/js/PIE.htc');
+		position: relative;
+		zoom: 1;
+		background-color: #FFFFFF;
+		border: 1px solid #cacaca;
+		border-radius: 50%;
+		cursor: pointer;
+		height: 180px;
+		width: 180px;
 	}
 
 	#worldwide #worldwideMap .cerchio .continent {
@@ -62,10 +64,12 @@
 	}
 
 	#worldwide #worldwideMap .cerchio.europe {
-		border-color: #00afd0;
 		position: absolute;
 		top: 0%; /* 0px */
 		left: 35.4166%; /* 340px */
+	}
+	#worldwide #worldwideMap .cerchio.europe .center {
+		border-color: #00afd0;
 	}
 
 	#worldwide #worldwideMap .cerchio.africa {

@@ -1,5 +1,10 @@
 /************** ucg_worldwide **************/
 
+map, map > area, map > area:active, map > area:focus {
+	border: none;
+	outline: none;
+}
+
 .ucg_worldwide {
 	overflow: hidden;
 }
@@ -153,6 +158,10 @@
 		z-index: 2;
 	}
 
+	.ucg_worldwide .layer_over img {
+		display: none;
+	}
+
 	.ucg_worldwide .layer_selected {
 		z-index: 3;
 	}
@@ -161,7 +170,6 @@
 		position: absolute;
 		top: 0px;
 		left: 0px;
-/* 		display: none; */
 		background-color: #5a5a5a;
 		border-radius: 3px;
 		color: #FFFFFF;
