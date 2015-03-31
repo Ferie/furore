@@ -1,37 +1,66 @@
+/************** ucg_videoplayer **************/
+
 a.ucg_videoplayer_starter {
     background: url('../img/static/videoplayer_play.png') no-repeat scroll center center transparent;
 	display: inline-block;
     position: absolute;
     text-align: center;
 }
+
 a.ucg_videoplayer_starter:hover {
 	background-image: url('../img/static/videoplayer_play_hover.png');
 }
+
 .ucg_videoplayer {
 	padding: 0;
 }
+
 .ucg_videoplayer .modal-dialog {
-	margin: 0 auto;
+	margin: 70px auto;
 	width: 90%;
 }
-.ucg_videoplayer .modal-content {border-radius: 0;}
+
+.ucg_videoplayer .modal-content {
+	border-radius: 0;
+	height: 100%;
+	width: 100%;
+}
+
 .ucg_videoplayer .modal-header {
 	border: none;
-	padding: 20px;
+	padding: 10px 20px 30px;
 }
+
 .ucg_videoplayer .modal-body {
-	text-align: center;
+	padding: 0;
+	height: 320px;
+	width: 100%;
 }
+
 .ucg_videoplayer .modal-body iframe {
-    width: 100%;
+	height: 100%;
+	width: 100%;
 }
+
 @media (min-width: 768px) {
-	.ucg_videoplayer .modal-dialog {
-		margin: 20px auto;
-		width: 960px;
+	.ucg_videoplayer .modal-dialog,
+	.ucg_videoplayer .modal-content {
+		padding: 0;
+		height: 362px;
+		width: 482px;
 	}
-	.with-sidebar-opened .ucg_videoplayer .modal-dialog {
-		margin: 10px auto;
-		width: 90%;
-	}	
+
+	.ucg_videoplayer .modal-body {
+		padding: 0;
+		height: 322px;
+		width: 482px;
+	}
+
+	.ucg_videoplayer .modal-body iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 320px;
+		width: 480px;
+	}
 }

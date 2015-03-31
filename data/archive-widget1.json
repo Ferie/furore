@@ -1,0 +1,195 @@
+[
+    {
+        "year": "2014",
+        "archive": [
+            {
+                "date": "1 November",
+                "title": "Celebrating Christmas with UniCredit’s Light-Covered Art in Milan",
+                "attach": [
+                    {
+                        "filetype": "PDF",
+                        "src": "javascript:void(0);",
+                        "name": "UniCredit SpA 2013 Reports and Accounts",
+                        "kbyte": ""
+                    },
+                    {
+                        "filetype": "PDF",
+                        "src": "javascript:void(0);",
+                        "name": "2013 Consolidated Reports and Accounts",
+                        "kbyte": ""
+                    },
+                    {
+                        "filetype": "PDF",
+                        "src": "javascript:void(0);",
+                        "name": "Press release (Italian only)",
+                        "kbyte": ""
+                    }
+                ],
+                "grouppedattach": []
+            },
+            {
+                "date": "29 October",
+                "title": "ARTISSIMA 20: The Appointment with Contemporary Art Returns to Turin",
+                "attach": [
+                    {
+                        "filetype": "PDF",
+                        "src": "javascript:void(0);",
+                        "name": "2013 Consolidated Reports and Accounts",
+                        "kbyte": ""
+                    }
+                ],
+                "grouppedattach": []
+            },
+            {
+                "date": "1 September",
+                "title": "«Another Kind of Green», the second UniCredit report on infrastructures and energy",
+                "attach": [],
+                "grouppedattach": []
+            },
+            {
+                "date": "25 August",
+                "title": "The corporate website www.unicreditgroup.eu group once again is the first banking site in Italy and seventh overall.",
+                "attach": [],
+                "grouppedattach": []
+            }
+        ]
+    },
+    {
+        "year": "2013",
+        "archive": [
+            {
+                "date": "1 April",
+                "title": "",
+                "attach": [
+                    {
+                        "filetype": "PDF",
+                        "src": "javascript:void(0);",
+                        "name": "OBG Report per Investitori - Gennaio 2014",
+                        "kbyte": "96"
+                    }
+                ],
+                "grouppedattach": []
+            },
+            {
+                "date": "29 March",
+                "title": "",
+                "attach": [
+                    {
+                        "filetype": "PDF",
+                        "src": "javascript:void(0);",
+                        "name": "OBG Report per Investitori - Aprile 2014",
+                        "kbyte": "144"
+                    }
+                ],
+                "grouppedattach": []
+            },
+            {
+                "date": "1 February",
+                "title": "",
+                "attach": [
+                    {
+                        "filetype": "PDF",
+                        "src": "javascript:void(0);",
+                        "name": "OBG Report per Investitori - Maggio 2014",
+                        "kbyte": "85"
+                    }
+                ],
+                "grouppedattach": []
+            }
+        ]
+    },
+    {
+        "year": "2011-2012",
+        "archive": [
+            {
+                "date": "",
+                "title": "",
+                "attach": [],
+                "grouppedattach": [
+                    {
+                        "title": "Full version",
+                        "attach": [
+                            {
+                                "filetype": "PDF",
+                                "src": "javascript:void(0);",
+                                "name": "Sustainability Report",
+                                "kbyte": "1.945"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Version in chapters",
+                        "attach": [
+                            {
+                                "filetype": "XLS",
+                                "src": "javascript:void(0);",
+                                "name": "Cover",
+                                "kbyte": "96"
+                            },
+                            {
+                                "filetype": "XLS",
+                                "src": "javascript:void(0);",
+                                "name": "CEO's Letter",
+                                "kbyte": "126"
+                            },
+                            {
+                                "filetype": "XLS",
+                                "src": "javascript:void(0);",
+                                "name": "Our Approach",
+                                "kbyte": "136"
+                            },
+                            {
+                                "filetype": "XLS",
+                                "src": "javascript:void(0);",
+                                "name": "Valuing Our Colleagues",
+                                "kbyte": "66"
+                            },
+                            {
+                                "filetype": "XLS",
+                                "src": "javascript:void(0);",
+                                "name": "Serving Individuals and Families",
+                                "kbyte": "54"
+                            },
+                            {
+                                "filetype": "XLS",
+                                "src": "javascript:void(0);",
+                                "name": "Supporting Companies",
+                                "kbyte": "298"
+                            },
+                            {
+                                "filetype": "XLS",
+                                "src": "javascript:void(0);",
+                                "name": "Informing Investors",
+                                "kbyte": "1.514"
+                            },
+                            {
+                                "filetype": "XLS",
+                                "src": "javascript:void(0);",
+                                "name": "Fostering Communities",
+                                "kbyte": "132"
+                            },
+                            {
+                                "filetype": "XLS",
+                                "src": "javascript:void(0);",
+                                "name": "Preserving Natural Resources",
+                                "kbyte": "62"
+                            },
+                            {
+                                "filetype": "XLS",
+                                "src": "javascript:void(0);",
+                                "name": "GRI and UN Global Compact indexes",
+                                "kbyte": "527"
+                            },
+                            {
+                                "filetype": "XLS",
+                                "src": "javascript:void(0);",
+                                "name": "Supplement",
+                                "kbyte": "22"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -7,8 +7,20 @@
 			"index": 1,
 			"description": "Run with UniCredit",
 			"type": "youtube",
-			"width": "900px",
-			"height": "420px",
+			"sizes": {
+						"desktop": {
+							"width": "940px",
+							"height": "460px"
+						},
+						"tablet": {
+							"width": "634px",
+							"height": "426px"
+						},
+						"mobile": {
+							"width": "320px",
+							"height": "215px"
+						}
+					},
 			"src": "https://www.youtube.com/embed/j_kOGqFslos",
 			"srcMobile": "https://www.youtube.com/embed/j_kOGqFslos",
             "thumb": "img/video-placeholder-1.jpg"

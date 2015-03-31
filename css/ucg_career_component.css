@@ -1,0 +1,64 @@
+/************** ucg_career **************/
+
+.ucg_career .ucg_career_intro {
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+}
+
+.ucg_career .ucg_job_opportunities {
+	float: none;
+	margin: 27px auto 2px;
+}
+
+.ucg_career .ucg_profile {
+	border-bottom: 1px solid #cecece;
+	text-align: center;
+	margin-bottom: 25px;
+	padding-bottom: 20px;
+}
+
+.ucg_career .ucg_profile .ucg_linklist {
+	display: inline-block;
+}
+
+.ucg_career .ucg_profile .ucg_linklist .container {
+	width: 100%;
+}
+
+.ucg_career .ucg_profile .accessProfile {
+	background: url("../img/static/access_profile.png") no-repeat;
+	margin-left: 10px;
+	padding-left: 23px;
+}
+
+.ucg_career .link_other_countries {
+	text-align: center;
+}
+
+.ucg_career .ucg_linklist .ucg_link_container li {
+	margin-bottom: 12px;
+}
+
+.ucg_career .ucg_linklist .ucg_link_container li a {
+	line-height: 22px;
+}
+
+@media (min-width: 768px) {
+	.ucg_career .ucg_job_opportunities {
+		margin: 35px auto 24px;
+	}
+
+	.ucg_career .ucg_profile {
+		margin-bottom: 25px;
+		padding-bottom: 17px;
+	}
+
+	#mainContainer .ucg_career .panel.ucg_linklist .container {
+		width: 100%;
+	}
+
+	#mainContainer.with-sidebar-opened .ucg_career .panel.ucg_linklist .container {
+		width: 100%;
+	}
+}

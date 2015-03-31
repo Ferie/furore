@@ -5,9 +5,16 @@
 		top: 80px;
 		left: 80px;
 	}
+
 	#mainContainer .panel .container {
     	width: 960px;
 	}
+
+	#mainContainer .panel .panel .container {
+		max-width: 960px;
+    	width: 100%;
+	}
+
 	#mainContainer.with-sidebar-opened .panel .container {
     	width: 100%;
 	}
@@ -115,7 +122,17 @@
 		padding: 50px 3px 0;
 	}
 	/**** HEADER ****/
-	
+
+	/**** SEARCH ****/
+	.ucg_search input.findAsYouType,
+	.ucg_search input.findAsYouType:focus {
+		padding: 0 0 0 200px;
+	}
+
+	.autocomplete-suggestions {
+		padding: 0 0 0 200px;
+	}
+	/**** SEARCH ****/
 	
 	/**** SIDEBAR ****/
 	#sidebar {
@@ -133,16 +150,6 @@
 	*/
 	/**** SIDEBAR ****/
 	
-	/**** BREADCRUMB ****/
-	#breadcrumb ul {
-		width: 960px;
-		margin: 0 auto;
-	}
-	#mainContainer.with-sidebar-opened #breadcrumb ul {
-    	width: 100%;
-	}
-	/**** BREADCRUMB ****/
-
 	/**** FOOTER ****/
 	
 	#footer ul {

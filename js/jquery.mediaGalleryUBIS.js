@@ -60,7 +60,8 @@
 		init : function (options){
 			var defaults = {
 				name: "mainGallery",
-				gallerySelector: '.ucg_gallery:not(.modal) .galleryContainer:not(.full)',
+				galleryContainer: '.ucg_gallery:not(.modal)',
+				gallerySelector: '.galleryContainer:not(.full)',
 				$container: null,
 				contentSwiper: null,
 				containerModalSelector: '.ucg_gallery.modal .galleryContainer.full',
@@ -72,7 +73,7 @@
 				navSwiper: null,
 				players: [],
 				galleryTitle: "Gallery title",
-				source: "/unicredit-corporate/data/gallery.json",
+				source: "data/gallery.json",
 				preloadedImageRange:1,//Carica n immagini prima e n immagini dopo quella corrente
 				placeHolder:"img/static/gallery-placeholder.jpg",
 				host:"http://localhost:8080/unicredit-corporate",
@@ -96,16 +97,16 @@
         		});
         		
         		
-        		$.galleryPreloader.show(st.gallerySelector);
+        		$.galleryPreloader.show(st.galleryContainer+" "+st.gallerySelector);
         		
 				$.when(utils._buildHtml(st)).then(function() {
 					
-					var currentIndex=utils._getCurrentIndexByHash(st);
-        			var $imageArray=utils._getElementsWithRange(st,currentIndex,utils._getThumbElements(st)); 
+					//st.openSlideNumber=utils._getCurrentIndexByHash(st);
+        			var $imageArray=utils._getElementsWithRange(st,st.openSlideNumber,utils._getThumbElements(st)); 
         			$.when(utils._preloadImages(st,$imageArray)).then(function(){
                 		
                 		utils._initializeSwiper(st);
-                		$.galleryPreloader.hide(st.gallerySelector);
+                		$.galleryPreloader.hide(st.galleryContainer+" "+st.gallerySelector);
                 		
                 		
         			});
@@ -180,18 +181,18 @@
 					//Inserisco l'icona di loader se è una img  e non una thumb
 					var el = $("[data-src='"+$imageArray[0]+"']");
 					if(el.is("[data-type-image]")){
-						$.galleryPreloader.show(st.gallerySelector+" [data-src='"+$imageArray[0]+"']");
+						$.galleryPreloader.show(st.galleryContainer+" "+st.gallerySelector+" [data-src='"+$imageArray[0]+"']");
 					}
 					
 					$.each($imageArray,function() {
 						preloader.onload = function() {
 							st.imageCached.push($imageArray[0]);
-							utils._insertImageSrcAndRemoveLoader(st.gallerySelector, $imageArray[0]);
+							utils._insertImageSrcAndRemoveLoader(st.galleryContainer+" "+st.gallerySelector, $imageArray[0]);
 							utils._preloadImages(st,$imageArray.slice(1),defer);
 						};
 						preloader.onerror = function() {
 							st.imageCached.push($imageArray[0]);
-							utils._insertImageSrcAndRemoveLoader(st.gallerySelector, $imageArray[0]);
+							utils._insertImageSrcAndRemoveLoader(st.galleryContainer+" "+st.gallerySelector, $imageArray[0]);
 							utils._preloadImages(st,$imageArray.slice(1),defer);
 						};
 					});
@@ -228,7 +229,7 @@
 				 if(data.infos && data.infos.title){
 					 st.galleryTitle =  data.infos.title;
 				 }
-				 $(st.gallerySelector+" .ucg_gallery_title h2").text(st.galleryTitle);
+				 $(st.galleryContainer+" .ucg_gallery_title h2").text(st.galleryTitle);
 				 $("#closeButton").click(function(){
 					 utils._removeFullWindow(st);
 				 });
@@ -280,12 +281,18 @@
 //	    		"</div>";
 		
 			//****Scafolfing****////			
-					
+			var arrows ="<div class='arrowContainer'>"
+			if (utils._isIe()){
+				arrows += "<iframe class='arrow arrow-left' frameborder='0'></iframe>";				
+			}
+			arrows += "<a class='arrow arrow-left' href='#'></a>";
+			if (utils._isIe()){
+				arrows += "<iframe class='arrow arrow-right' frameborder='0'></iframe>";				
+			}
+			arrows += "<a class='arrow arrow-right' href='#'></a>";
+			arrows += "</div>"
 			st.$container.append($("<div class='swiper-container swiper-content'>").append($("<div class='swiper-wrapper'>")));
-			st.$container.append($("<div class='bottomGalleryBar'>").append($("<div class='arrowContainer'>"+
-					"<a class='arrow arrow-left' href='#'></a>"+
-					"<a class='arrow arrow-right' href='#'></a>"+
-					"</div>")).append($("<div class='swiper-container swiper-nav thumb-list'>").append($("<div class='swiper-wrapper'>")).append($("<div class='thumbArrow'>"+
+			st.$container.append($("<div class='bottomGalleryBar'>").append($(arrows)).append($("<div class='swiper-container swiper-nav thumb-list'>").append($("<div class='swiper-wrapper'>")).append($("<div class='thumbArrow'>"+
 							"<a class='arrow arrow-left' href='#'></a>"+
 							"<a class='arrow arrow-right' href='#'></a>"+
 							"</div>")))).append("<div class='clear'></div>");
@@ -294,8 +301,11 @@
 			//****Scafolfing****////
 			
 			//****Templating***//
-			var footerSlideTemplate = "<div class='slide-footer'>" +
-							"<div class='slide-footer-container'>" +
+			var footerSlideTemplate = "<div class='slide-footer'>";
+			if (utils._isIe()){
+				footerSlideTemplate += "<iframe class='slide-footer-container' frameborder='0'></iframe>";				
+			}
+			footerSlideTemplate+= "<div class='slide-footer-container'>" +
 							"<div class='indexer'><b>{{=it.index}}</b> of <b>"+st.elements.length+"</b></div>" +
 							"<h5>{{=it.description}}</h5>" +
 							"<div class='view-full'><a href='javascript:void(0);' data-index='{{=it.index}}' class='fullscreen'></a></div>" +
@@ -307,13 +317,19 @@
 							footerSlideTemplate +
 							"</div>");
 			//var videoTemplateFn=doT.template("<div class='swiper-slide video-player' data-slide-text='{{=it.description}}' data-hash='{{=it.id}}' ><div id='video-{{=it.id}}' data-target-video data-video-url='{{=it.src}}' data-video-cover=''></div></div>");
-			//var youtubeStringTemplate="<div class='swiper-slide video-youtube' data-slide-text='{{=it.description}}' data-hash='{{=it.id}}'>";
-			var youtubeStringTemplate="<div class='swiper-slide video-youtube' data-slide-text='{{=it.description}}'><div class='youtube-video-container'>";
-			if(utils._isTouch()){	
+			var youtubeStringTemplate="<div class='swiper-slide video-youtube' data-slide-text='{{=it.description}}' data-videoname='"+st.name+"_video_{{=it.index}}'><div class='youtube-video-container'>";
+//			if(!utils._isIe()){	
 				youtubeStringTemplate+="<div class='youtube-layer top' >&nbsp;</div><div class='youtube-layer bottom' >&nbsp;</div>"+
-				"<div class='youtube-layer left' >&nbsp;</div><div class='youtube-layer right' >&nbsp;</div>";
-			}
-			youtubeStringTemplate+="<iframe width='{{=it.width}}' height='{{=it.height}}' src='{{=it.src}}' frameborder='0' allowfullscreen></iframe></div>"+footerSlideTemplate+"</div>";
+				"<div class='youtube-layer left' >&nbsp;</div><div class='youtube-layer right' >&nbsp;</div><!--<div class='youtube-layer button' >&nbsp;</div>-->";
+//			} else {
+//				youtubeStringTemplate+="<iframe class='youtube-layer top' frameborder='0'>&nbsp;</iframe><iframe class='youtube-layer bottom' frameborder='0'>&nbsp;</iframe>"+
+//				"<iframe class='youtube-layer left' frameborder='0'>&nbsp;</iframe><iframe class='youtube-layer right' frameborder='0'>&nbsp;</iframe><!--<iframe class='youtube-layer button' frameborder='0'>&nbsp;</iframe>-->";
+//			}
+			var typeRes = getVideoTypeRes();
+			
+			//youtubeStringTemplate+="<iframe width='{{=it.sizes."+typeRes+".width}}' height='{{=it.sizes."+typeRes+".height}}' src='{{=it.src}}' frameborder='0' allowfullscreen id='"+st.name+"_video_{{=it.index}}'></iframe>";
+			youtubeStringTemplate+="<div class='player-box' data-index='{{=it.index}}' data-src='{{=it.src}}"+(utils._isIe()?"?wmode=transparent":"")+"' id='"+st.name+"_video_{{=it.index}}'></div>";
+			youtubeStringTemplate+="</div>"+footerSlideTemplate+"</div>";
 			var youtubeTemplateFn=doT.template(youtubeStringTemplate);
 			
 			var thumbTemplate="<div class='swiper-slide active-nav'>"+
@@ -334,13 +350,59 @@
 //			        break;
 			    case st.mediaType.YOUTUBE:
 			    	mediaContainer.append(youtubeTemplateFn(this));
+			    	var name = st.name+"_video_"+this.index;
+			    	var $videoContainer = $(mediaContainer).find('.video-youtube[data-videoname="'+name+'"]')
+			    	$videoContainer.data("sizes", this.sizes);
+//			    	$(mediaContainer).find('.video-youtube[data-videoname="video_'+this.index+'"]').data("sizes", this.sizes).data("player",
+//			    			new YT.Player(
+//			    					"video_"+this.index,	{
+//		        					videoId: utils._getYoutubeVideoId(this.src),
+//		        					events: {
+//				        	            'onReady': function(){console.log("Ready!");},
+//				        	            'onStateChange': function(){console.log("Change!");}
+//				        	          }
+//								}
+//		        			));	
+//			    	$(mediaContainer).find('.video-youtube[data-videoname="video_'+this.index+'"]').data({
+//			    		"sizes": this.sizes,
+//			    		"player": new YT.Player(
+//			    					"video_"+this.index,	{
+//		        					videoId: utils._getYoutubeVideoId(this.src),
+//		        					events: {
+//				        	            'onReady': function(){console.log("Ready!");},
+//				        	            'onStateChange': function(){console.log("Change!");}
+//				        	          	}
+//			    					})
+//			    		}
+//			    	);
+			    	st.players[name] =  new YT.Player(
+			    					name,	{
+		        					videoId: utils._getYoutubeVideoId(this.src),
+		        					wmode: (utils._isIe()?"transparent":"opaque"),
+		        					height: this.sizes[typeRes].height,
+		        					width: this.sizes[typeRes].width,
+		        					events: {
+				        	            'onStateChange': function (event) {
+				        	            	var $videoContainer = $('.video-youtube[data-videoname="'+name+'"]');
+				        	            	//var $layers = $videoContainer.find('.youtube-layer:not(.button)');
+				        	                if (event.data == YT.PlayerState.PLAYING || 
+				        	                	event.data == YT.PlayerState.BUFFERING ) {
+				        	                	$videoContainer.addClass("playing");
+				        	                	//$layers.css("z-index", "0");
+				        	                  } else {
+					        	                	$videoContainer.removeClass("playing");
+					        	                	//$layers.css("z-index", "3");				        	                	  
+				        	                  }
+				        	                }
+				        	          	}
+			    					});
+			    	//st.players[name];
 			        break;
 			        
 			    default:
 			    	break;
 		        
 				}	 
-				
 				thumbContainer.append(thumbTemplateFn(this));
 			});
 			
@@ -434,15 +496,74 @@
 					});
 					utils._slideChangeActions(st, swiper);
 					utils._manageSwiperArrow(st,swiper);
+					if(st.openSlideNumber!=0){
+						swiper.swipeTo(st.openSlideNumber);
+					}
+//					$('.ucg_gallery .swiper-slide.video-youtube').each(function(i, e){
+//							$(e).data({"stop": function(){
+////								var layers = $(this).parent().find('.youtube-layer:not(.button)');
+////								$(layers).css("z-index", "3");
+////								var $iframe  =$(e).find('iframe');
+////								$(e).removeClass("playing");
+////								var swap = toStop = $iframe.attr("src");
+////								if (swap.indexOf("?autoplay")>0){
+////									toStop = swap.substring(0, swap.indexOf("?"));
+////								}
+////								console.log(toStop);
+////								$iframe.attr("src", "").attr("src", toStop);	
+//							}, "play": function(){
+//								
+//								//console.log($(e).find('iframe'));
+////								var layers = $(this).parent().find('.youtube-layer:not(.button)');
+////								$(layers).css("z-index", "0");
+////								$(e).addClass("playing");
+////								var $iframe  =$(e).find('iframe');
+////								var swap = toPlay = $iframe.attr("src");
+////								if (swap.indexOf("?autoplay")<0){
+////									var toPlay = swap+"?autoplay=1";
+////								}
+////								console.log(toPlay);
+////								$iframe.attr("src", "").attr("src", toPlay);	
+//							}, "doneClick": function(){
+////								var $iframe  =$(e).find('iframe');
+////								if($(e).hasClass("playing")){
+////									$iframe.trigger("click");
+////								}	
+//							}
+//						});
+//					});
+//					$('.ucg_gallery .swiper-slide.video-youtube .youtube-layer:not(.button)').off("click");
+//					$('.ucg_gallery .swiper-slide.video-youtube .youtube-layer:not(.button)').click(function(e){
+//						$(this).parents(".video-youtube").data().doneClick();
+//					});
+//					$('.ucg_gallery .swiper-slide.video-youtube .youtube-layer.button').off("click");
+//					$('.ucg_gallery .swiper-slide.video-youtube .youtube-layer.button').click(function(e){
+//						//e.preventDefault();
+//						//e.stopPropagation();
+//						console.log("Click Play");
+//						var $player = $(this).parents(".video-youtube");
+//						//$(this).parents(".video-youtube").data().doneClick();
+//						if (!$player.hasClass("playing")){
+//							$player.data().play();
+//						} else {
+//							$player.data().stop();
+//						}
+//					});
+					
 				},
 				onSlideChangeStart:function(swiper, direction){
+					$('.ucg_gallery .swiper-slide.video-youtube').each(function(i, e){
+						if ($(e).hasClass("playing")){
+							st.players[$(e).data("videoname")].pauseVideo();
+						}
+					});
 					utils._slideChangeActions(st, swiper);
 				},
 				onSlideChangeEnd:function(swiper, direction){
 					//Stoppo i player
-					$(st.players).each(function(){
-						$(this)[0].play(false);
-					});
+//					$(st.players).each(function(){
+//						$(this)[0].play(false);
+//					});
 					
 					utils._preloadImages(st,utils._getElementsWithRange(st,swiper.activeIndex));
 					$.safariYoutubeSliderHack();
@@ -458,54 +579,71 @@
 			    e.preventDefault();
 			    st.contentSwiper.swipeNext();
 		    });
+			$cont.find('.swiper-slide .slide-footer .fullscreen').off('click');
 			$cont.find('.swiper-slide .slide-footer .fullscreen').click(function(){
+				var index = $(this).data("index")-1;
+				st.openSlideNumber = $(this).data("index")-1;
 				var $modalWindow = st.$containerModal.parents('.ucg_gallery.modal');
-				$('.ucg_gallery:not(.modal) .swiper-slide.video-youtube .youtube-video-container > iframe').each(function(){
-					var swap = $(this).attr("src");
-					$(this).attr("src", "").attr("src", swap);					
+				var modalSource = st.source;
+				$('.ucg_gallery .swiper-slide.video-youtube').each(function(i, e){
+					if ($(e).hasClass("playing")){
+						st.players[$(e).data("videoname")].stopVideo();
+					}
 				});
-				$modalWindow.modal({backdrop: "static"});
+//				$('.ucg_gallery:not(.modal) .swiper-slide.video-youtube .youtube-video-container > iframe').each(function(){
+//					var swap = $(this).attr("src");
+//					$(this).attr("src", "").attr("src", swap);					
+//				});
+				//$modalWindow.modal({backdrop: "static"});
+				$modalWindow.modal();
+				$modalWindow.off("shown.bs.modal");
 				$modalWindow.on("shown.bs.modal", function(){					
-					st.$containerModal.mediaGalleryManager({gallerySelector: ".ucg_gallery.modal .galleryContainer.full", name: "modalGallery", hiddenThumbs: true, fullWindow:false, openSlideNumber: $(this).data("index")});
+					st.$containerModal.mediaGalleryManager({galleryContainer: ".ucg_gallery.modal", gallerySelector: ".galleryContainer.full", name: "modal_"+st.name, source: modalSource, hiddenThumbs: true, fullWindow:false, openSlideNumber: index});
 					
 				});
 			});
 			$('.ucg_gallery.modal .swiper-slide .slide-footer .fullscreen, .ucg_gallery.modal .modal-header .close-modal-gallery').off("click");
 			$('.ucg_gallery.modal .swiper-slide .slide-footer .fullscreen, .ucg_gallery.modal .modal-header .close-modal-gallery').click(function(){
-				var $mC = st.$containerModal.data("modalGallery");
+				var $mC = st.$containerModal.data(st.name);
 				var $modalWindow = st.$containerModal.parents('.ucg_gallery.modal');
 				$mC.st.contentSwiper.destroy();
 				$mC.st.navSwiper.destroy();
 				$mC.st.$container.html("");
-				st.$containerModal.removeData("modalGallery");
+				st.$containerModal.removeData(st.name);
 				$modalWindow.modal("hide");
 				//console.log($mC);
 			});
-			$cont.find('.swiper-slide .slide-footer .fullscreen, .ucg_gallery.modal .modal-header .close-modal-gallery').click(function(){
-				
-			});
-			$cont.find('.thumbToggle').click(function(){
-				$cont.find('.thumb-list').stop();
-				$cont.find('.thumb-list').slideToggle(500);
-				$cont.find('.arrowContainer').each(function(){
-					//alert($(this).hasClass('arrowUp') ? "-50px" : "150px");
-					$(this).toggleClass('arrowUp').animate({top: ($(this).hasClass('arrowUp') ? "-=120" : "+=120")}, 500);
-				});
-				st.navSwiper.resizeFix();
-			});
+//			$cont.find('.swiper-slide .slide-footer .fullscreen, .ucg_gallery.modal .modal-header .close-modal-gallery').click(function(){
+//				
+//			});
+//			$cont.find('.thumbToggle').click(function(){
+//				$cont.find('.thumb-list').stop();
+//				$cont.find('.thumb-list').slideToggle(500);
+//				$cont.find('.arrowContainer').each(function(){
+//					//alert($(this).hasClass('arrowUp') ? "-50px" : "150px");
+//					$(this).toggleClass('arrowUp').animate({top: ($(this).hasClass('arrowUp') ? "-=120" : "+=120")}, 500);
+//				});
+//				st.navSwiper.resizeFix();
+//			});
 			
 			$(window).resize(function(){
 				utils._resizeSwipers(st);
 				//utils._resizeShare(st);
     		});
+			$("#mainContainer").on("animationSidebarCompleted",function(){
+				if($(this).hasClass("with-sidebar-open")){
+					utils._resizeSwipers(st);					
+				}
+				//utils._resizeShare(st);
+    		});
 			$('#mainContainer').on("animationSidebarCompleted", function(){
 				//if($(this).hasClass("with-sidebar-opened")){
-					console.log("AHAHAH");
+					
 					utils._resizeSwipers(st);
 					//utils._resizeShare(st);				
 				//}
 			});
-			utils._resizeSwipers(st);
+			//utils._resizeSwipers(st);
 			
 		},
 		
@@ -526,6 +664,17 @@
 		_resizeSwipers :function(st){
 			//st.contentSwiper.resizeFix();
 			//st.navSwiper.resizeFix();
+//			var videos = st.$container.find(".swiper-slide.video-youtube");
+//			$.each(videos, function(i, e){
+//				var sizes = $(this).data("sizes");
+//				var typeRes = getVideoTypeRes();
+//				$(this).find("iframe").attr("height", sizes[typeRes].height).attr("width", sizes[typeRes].width);
+//			});
+			st.$container.find(".swiper-slide.video-youtube").each(function(i, e){
+				var sizes = $(this).data("sizes");
+				var typeRes = getVideoTypeRes();
+				$(this).find("iframe").attr("height", sizes[typeRes].height).attr("width", sizes[typeRes].width);
+			});
 			st.contentSwiper.reInit();
 			st.navSwiper.reInit();
 		},

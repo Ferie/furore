@@ -1,0 +1,76 @@
+#mainContainer .ucg_breadcrumb.panel .container {
+	padding: 0;
+}
+.ucg_breadcrumb .ucg_breadcrumb_addon .container > div {
+	padding: 10px 0;
+	margin: 0;
+}
+.ucg_breadcrumb .ucg_breadcrumb_crumbs {
+	padding: 10px 0;
+	margin: 0;
+}
+#mainContainer .ucg_breadcrumb .ucg_breadcrumb_addon > .container,
+#mainContainer .ucg_breadcrumb .ucg_breadcrumb_crumbs > .container {
+	padding: 0 15px;;
+}
+.ucg_breadcrumb .ucg_breadcrumb_addon {
+	border-top: 1px solid #c9c9c9;
+	clear: both;
+	margin: 0;
+}
+.ucg_breadcrumb_crumbs ul {
+	list-style-type: none;
+	padding: 0px;
+	line-height: 15px;
+	margin: 0;
+}
+.ucg_breadcrumb_crumbs ul li,
+.ucg_breadcrumb_crumbs ul li a {
+	font-size: 14px;
+	line-height: 15px;
+	display: inline-block;	
+}
+.ucg_breadcrumb_crumbs ul li {
+	color: #999999;
+}
+.ucg_breadcrumb_crumbs ul li:first-child {
+	text-transform: uppercase;
+	font-family: 'unicredit-bold';
+}
+.ucg_breadcrumb_crumbs ul li:not(:last-child):after {
+	font-family: 'unicredit-regular';
+	content: ">";
+	padding: 0 2px 0 5px;
+}
+
+@media (min-width: 768px) {
+	#mainContainer .ucg_breadcrumb.panel .container {
+		padding: 0 15px;
+	}
+	.ucg_breadcrumb .ucg_breadcrumb_addon {
+		width: auto;
+		float: right;
+		border: none;
+		clear: none;
+	}
+	#mainContainer .ucg_breadcrumb.panel .container .ucg_breadcrumb_addon.panel > .container,
+	#mainContainer .ucg_breadcrumb.panel .container .ucg_breadcrumb_crumbs.panel > .container {
+		padding: 0;
+		width: 100%;
+	}
+	.ucg_breadcrumb_crumbs {
+		width: auto;
+		float: left;
+		margin: 0;
+	}
+	.ucg_breadcrumb_crumbs ul {
+		width: auto;
+		margin: 0 auto;
+	}
+	#mainContainer.with-sidebar-opened .ucg_breadcrumb_crumbs ul {
+    	width: 100%;
+	}
+	.ucg_breadcrumb_sharing_panel .container > div {
+		padding: 0;
+	}
+}

@@ -9,45 +9,76 @@ function isBreakpoint(alias) {
 	}
 	return $('.device-' + alias).is(':visible');
 }
+function getVideoTypeRes() {
+	if($(window).width()<768){
+		return "mobile";
+	} else if($(window).width()<960){
+		return "tablet";
+	} else {
+		return "desktop";
+	}
+}
 $.fn.exists = function () {
     return this.length !== 0;
 }
 $.browserDetect = {
         init: function () {
-            this.browser = this.searchString(this.dataBrowser) || "Other";
+            this.browser = this.searchBrowser(this.dataBrowser) || "Other";
+            this.system = this.searchSystem(this.dataSystem) || "Other";
             this.version = this.searchVersion(navigator.userAgent) || this.searchVersion(navigator.appVersion) || "Unknown";
         },
-        searchString: function (data) {
+        searchBrowser: function (data) {
             for (var i = 0; i < data.length; i++) {
                 var dataString = data[i].string;
-                this.versionSearchString = data[i].subString;
+                this.versionBrowserString = data[i].subStringBrowser;
 
-                if (dataString.indexOf(data[i].subString) !== -1) {
-                    return data[i].identity;
+                if (dataString.indexOf(data[i].subStringBrowser) !== -1) {
+                    return data[i].identityBrowser;
+                }
+            }
+        },
+        searchSystem: function (data) {
+            for (var i = 0; i < data.length; i++) {
+                var dataString = data[i].string.toLowerCase();
+                this.versionSystemString = data[i].subStringSystem;
+
+                if (dataString.indexOf(data[i].subStringSystem) !== -1) {
+                    return data[i].identitySystem;
                 }
             }
         },
         searchVersion: function (dataString) {
-            var index = dataString.indexOf(this.versionSearchString);
+            var index = dataString.indexOf(this.versionBrowserString);
             if (index === -1) {
                 return;
             }
-
             var rv = dataString.indexOf("rv:");
-            if (this.versionSearchString === "Trident" && rv !== -1) {
+            if (this.versionBrowserString === "Trident" && rv !== -1) {
                 return parseFloat(dataString.substring(rv + 3));
             } else {
-                return parseFloat(dataString.substring(index + this.versionSearchString.length + 1));
+                return parseFloat(dataString.substring(index + this.versionBrowserString.length + 1));
             }
         },
 
         dataBrowser: [
-            {string: navigator.userAgent, subString: "Chrome", identity: "Chrome"},
-            {string: navigator.userAgent, subString: "MSIE", identity: "Explorer"},
-            {string: navigator.userAgent, subString: "Trident", identity: "Explorer"},
-            {string: navigator.userAgent, subString: "Firefox", identity: "Firefox"},
-            {string: navigator.userAgent, subString: "Safari", identity: "Safari"},
-            {string: navigator.userAgent, subString: "Opera", identity: "Opera"}
+            {string: navigator.userAgent, subStringBrowser: "Chrome", identityBrowser: "Chrome"},
+            {string: navigator.userAgent, subStringBrowser: "MSIE", identityBrowser: "Explorer"},
+            {string: navigator.userAgent, subStringBrowser: "Trident", identityBrowser: "Explorer"},
+            {string: navigator.userAgent, subStringBrowser: "Firefox", identityBrowser: "Firefox"},
+            {string: navigator.userAgent, subStringBrowser: "Safari", identityBrowser: "Safari"},
+            {string: navigator.userAgent, subStringBrowser: "Opera", identityBrowser: "Opera"}
+        ],
+
+        dataSystem: [
+            {string: navigator.userAgent, subStringSystem: "android", identitySystem: "Android"},
+            {string: navigator.userAgent, subStringSystem: "blackberry", identitySystem: "BlackBerry"},
+            {string: navigator.userAgent, subStringSystem: "iphone", identitySystem: "iPhone"},
+            {string: navigator.userAgent, subStringSystem: "ipad", identitySystem: "iPad"},
+            {string: navigator.userAgent, subStringSystem: "iemobile", identitySystem: "IEMobile"},
+            {string: navigator.userAgent, subStringSystem: "win", identitySystem: "Windows"},
+            {string: navigator.userAgent, subStringSystem: "mac", identitySystem: "MacOS"},
+            {string: navigator.userAgent, subStringSystem: "x11", identitySystem: "Unix"},
+            {string: navigator.userAgent, subStringSystem: "linux", identitySystem: "Linux"}
         ]
 
     };

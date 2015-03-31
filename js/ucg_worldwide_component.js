@@ -1,6 +1,12 @@
 $(document).ready(function () {
 	$.browserDetect.init();
 
+	if ("ontouchstart" in document.documentElement) {
+		document.documentElement.className += " touch";
+	} else {
+		document.documentElement.className += " no-touch";
+	}
+
 	// deleting outline border on the map in Firefox
 	function outlineOnMap() {
 		$layerMappedMapArea.removeAttr('onFocus');
@@ -41,26 +47,6 @@ $(document).ready(function () {
 		}
 	}
 
-	// map image caching (nations over and nations selected)
-//	function imageCaching() {
-//		var arrayImages = [],
-//			arraySrc = [
-//				'img/static/map/Austria_over.png', 'img/static/map/Austria_selected.png', 'img/static/map/Azerbaijan_over.png', 'img/static/map/Azerbaijan_selected.png',
-//				'img/static/map/Bosnia_and_Herzegovina_over.png', 'img/static/map/Bosnia_and_Herzegovina_selected.png', 'img/static/map/Bulgaria_over.png', 'img/static/map/Bulgaria_selected.png',
-//				'img/static/map/Croatia_over.png', 'img/static/map/Croatia_selected.png', 'img/static/map/Czech_Republic_over.png', 'img/static/map/Czech_Republic_selected.png',
-//				'img/static/map/Germany_over.png', 'img/static/map/Germany_selected.png', 'img/static/map/Hungary_over.png', 'img/static/map/Hungary_selected.png',
-//				'img/static/map/Italy_over.png', 'img/static/map/Italy_selected.png', 'img/static/map/Poland_over.png', 'img/static/map/Poland_selected.png', 'img/static/map/Romania_over.png',
-//				'img/static/map/Romania_selected.png', 'img/static/map/Russia_over.png', 'img/static/map/Russia_selected.png', 'img/static/map/Serbia_over.png', 'img/static/map/Serbia_selected.png',
-//				'img/static/map/Slovakia_over.png', 'img/static/map/Slovakia_selected.png', 'img/static/map/Slovenia_over.png', 'img/static/map/Slovenia_selected.png', 'img/static/map/Turkey_over.png',
-//				'img/static/map/Turkey_selected.png', 'img/static/map/Ukraine_over.png', 'img/static/map/Ukraine_selected.png'
-//			];
-//	
-//		for (var i = 0; i < arraySrc.length; i++) {
-//			arrayImages[i] = new Image();
-//			arrayImages[i].src = arraySrc[i];
-//		}
-//	}
-
 	var mainContainerWidth,
 		nationsSwiper = new Swiper('.ucg_worldwide .nations_container .swiper-container', {
 			slidesPerView: 3,
@@ -73,18 +59,15 @@ $(document).ready(function () {
 		$layerSelectedImg = $('.ucg_worldwide .layer_selected img'),
 		$layerNationName = $('.ucg_worldwide .layer_nationName'),
 		$layerMappedMapArea = $('.ucg_worldwide .layer_mapped map area'),
+		$noTouchLayerMappedMapArea = $('.no-touch .ucg_worldwide .layer_mapped map area'),
 		$unicreditInContainerNation = $('.ucg_worldwide .unicreditInContainer .nation'),
 		$marketShereNumber = $('.ucg_worldwide .marketShare .marketShereNumber'),
 		$marketShareGraph = $('.ucg_worldwide .marketShare .graph'),
 		$employeesNumber = $('.ucg_worldwide .employees .number'),
 		$branchesNumber = $('.ucg_worldwide .branches .number');
 
-	$('.ucg_worldwide .ucg_worldwide_arrow_left a').on('click', function () {
-		nationsSwiper.swipePrev();
-	});
-
-	$('.ucg_worldwide .ucg_worldwide_arrow_right a').on('click', function () {
-		nationsSwiper.swipeNext();
+	$('.ucg_worldwide .ucg_worldwide_arrow a').on('click', function () {
+		$(this).parent().hasClass('prev') ? nationsSwiper.swipePrev() : nationsSwiper.swipeNext();
 	});
 
 	$('.ucg_worldwide .nations_container .swiper-slide a').on('click', function (e) {
@@ -115,7 +98,7 @@ $(document).ready(function () {
 		sidebarResize();
 	});
 
-	$layerMappedMapArea.on('click', function (e) {
+	$layerMappedMapArea.on('click touchend', function (e) {
 		e.stopPropagation();
 		var $this = $(this),
 			$correspondingSwiperSlide = $('.ucg_worldwide .nations_container .swiper-slide a[data-slide=' + $this.data('swiper-slide') + ']');
@@ -136,7 +119,7 @@ $(document).ready(function () {
 		$branchesNumber.text($correspondingSwiperSlide.data('branches'));
 	});
 	
-	$layerMappedMapArea.on('mouseover', function (e) {
+	$noTouchLayerMappedMapArea.on('mouseover', function (e) {
 		var $this = $(this),
 			offsetWorldwideContent = $this.parents('.worldwide_content').offset(),
 			positionX = e.pageX - offsetWorldwideContent.left,
@@ -154,14 +137,14 @@ $(document).ready(function () {
 		}).html($this.data('nation-name'));
 	});
 
-	$layerMappedMapArea.on('mouseleave', function () {
+	$noTouchLayerMappedMapArea.on('mouseleave', function () {
 		// deleting mouseover nation image
 //		$layerOverImg.removeAttr('src');
 //		$layerOver.html('');
 		$layerOverImg.hide();
 
 		// deleting mouseover nation name
-//		$layerNationName.html('');
+		$layerNationName.html('');
 	});
 
 	// functions on load

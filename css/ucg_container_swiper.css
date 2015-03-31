@@ -1,0 +1,74 @@
+#mainContainer .ucg_container_swiper > .container .container {
+	width: 100%;
+	padding: 0;
+}
+.ucg_container_swiper .ucg_container_name,
+.ucg_container_swiper .ucg_container_name h4 {
+	display: inline-block;
+}
+.ucg_container_swiper .ucg_container_name h4 {
+	font-family: 'unicredit-light';
+	font-size: 30px;
+	color: #999;
+}
+.ucg_container_swiper.swiper .ucg_container_name h4 {
+	font-family: "unicredit-regular";
+	font-size: 14px;
+    text-transform: uppercase;
+}
+.ucg_container_swiper .swiper-slide .ucg_image_text .ucg_img {
+	display: none;
+}
+.ucg_container_swiper .ucg_container_swiper_pagination {
+	display: inline-block;
+	width: 100%
+} 
+.ucg_container_swiper .ucg_container_swiper_pagination .swiper_pagination {
+    text-align: center;
+    float: right;
+    margin: 16px 0;
+} 
+.ucg_container_swiper.swiper .ucg_container_swiper_pagination .swiper_pagination {
+    margin: 10px 0;
+}
+.ucg_container_swiper .ucg_container_swiper_pagination .swiper-pagination-switch {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 4px;
+	margin: 0 9px 0 0;
+	cursor: pointer;
+	background-color: #999;
+}
+.ucg_container_swiper .ucg_container_swiper_pagination .swiper-pagination-switch:last-child {
+	margin: 0;
+}
+.ucg_container_swiper .ucg_container_swiper_pagination .swiper-pagination-switch.swiper-active-switch {
+	background-color: #666;
+}
+@media (min-width: 768px) {
+	.ucg_container_swiper .ucg_container_swiper_pagination {
+		margin-bottom: 30px;
+	}
+	.ucg_container_swiper.swiper .ucg_container_swiper_pagination {
+		margin-bottom: 0px;
+	}
+	.ucg_container_swiper .ucg_container_swiper_pagination .ucg_container_swiper_pagination {
+		display: none;	
+	}
+	.ucg_container_swiper .swiper-slide .ucg_image_text .ucg_img {
+		display: block;
+	}
+	.ucg_container_swiper.swiper .swiper-slide .ucg_image_text .ucg_img {
+		display: none;
+	}
+	.ucg_container_swiper.swiper .ucg_container_name h4 {
+		font-family: 'unicredit-medium';
+		font-size: 14px;
+		text-transform: uppercase;
+		margin: 0 0 11px 0;
+	}
+	.ucg_container_swiper.swiper .ucg_container_swiper_pagination .swiper_pagination {
+	    margin: 0;
+	}
+}

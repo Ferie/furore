@@ -11,9 +11,22 @@
 
 .cross a {
 	display: inline-block;
-	background: url('../img/static/select-cross-white.png') no-repeat scroll center center transparent;
+	background: url('../img/static/cross-button-light.png') no-repeat scroll center center transparent;
 	height: 0;
 	width: 0;
+}
+
+.cross.dark a {
+	background-image: url('../img/static/cross-button-dark.png');
+}
+.cross.light a {
+	background-image: url('../img/static/cross-button-light.png');
+}
+.cross.white a {
+	background-image: url('../img/static/cross-button-white.png');
+}
+.cross.blue a {
+	background-image: url('../img/static/cross-button-blue.png');
 }
 
 .cross.selected a {
@@ -21,14 +34,14 @@
 	width: 20px;
 }
 
-/* INPUT TEXT */
+/************** INPUT TEXT **************/
 
 input {
 	padding: 10px 0;
 	width: 100%;
 }
 
-/* INPUT TEXT-KEYWORDS */
+/************** INPUT TEXT-KEYWORDS **************/
 
 .container > .with-cross{
 	overflow: hidden;
@@ -37,7 +50,7 @@ input {
 
 input.keywords {
 	behavior: url('../plugin/js/PIE.htc');
-	background: url('../img/static/keywords-search.png') no-repeat scroll 8px center #fff;
+	background: url('../img/static/keywords-search-light.png') no-repeat scroll 8px center #FFFFFF;
 	border-radius: 5px;
 	font-size: 17px;
 	color: #333;
@@ -47,23 +60,38 @@ input.keywords {
 }
 
 input.keywords:focus {
-	border-color: #ccc;
+	border-color: #CCCCCC;
 	box-shadow: none;
 }
 
-input.keywords.selected {
-	background-image: url('../img/static/keywords-search-selected.png');
+input.keywords.white.selected {
+	background-image: url('../img/static/keywords-search-white.png');
 	background-color: #999;
-	color: #fff;
+	color: #FFFFFF;
+}
+input.keywords.dark.selected {
+	background-image: url('../img/static/keywords-search-dark.png');
+	background-color: #e6e8e7;
+	color: #666;
+}
+input.keywords.blue.selected {
+	background-image: url('../img/static/keywords-search-blue.png');
+	background-color: #FFFFFF;
+	color: #00afd0;
+}
+input.keywords.light.selected {
+	background-image: url('../img/static/keywords-search-light.png');
+	background-color: #999;
+	color: #bebebe;
 }
 
-/* SELECT */
+/************** SELECT **************/
 
 select {
 	behavior: url('../plugin/js/PIE.htc');
 	background: none;
-	border: 1px solid #ccc;
-	border-radius: 5px;	
+	border: 1px solid #CCCCCC;
+	border-radius: 5px;
 	font-size: 17px;
 	line-height: 40px;
 	color: #999;
@@ -74,7 +102,6 @@ select {
 
 select option:first-child {
 	display: none;
-
 }
 
 select option {
@@ -90,7 +117,35 @@ select option:focus,
 select option:hover,
 select option:active {
     background: url('../img/static/radio-button-checked.png') no-repeat scroll left center transparent;
-	color: #00afd0;	
+	color: #00afd0;
+}
+
+/************** INPUT **************/
+
+input {
+	behavior: url('../plugin/js/PIE.htc');
+	background: none;
+	border: 1px solid #CCCCCC;
+	border-radius: 5px;
+	font-size: 17px;
+	color: #999;
+	outline: none;
+	padding: 5px 10px;
+}
+
+/************** TEXTAREA **************/
+
+textarea {
+	behavior: url('../plugin/js/PIE.htc');
+	background: none;
+	border: 1px solid #CCCCCC;
+	border-radius: 5px;
+	font-size: 17px;
+	color: #999;
+	outline: none;
+	padding: 5px 10px;
+	height: 200px;
+	width: 100%;
 }
 
 /************** CHECKBOX and RADIO BUTTON **************/
@@ -99,17 +154,627 @@ select option:active {
 	position: relative;
 	display: block;
 	font-size: 17px;
-	color: #999999;
+	color: #666666;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
-.ucg_checkbox label, .ucg_radio label {
-	font-weight: normal;
-	cursor: pointer;
-	padding-left: 5px;
+.ucg_radio {
+	margin: 0;
 }
 
+.ucg_checkbox.second_level,
+.ucg_radio.second_level {
+	display: block;
+	padding-left: 26px;
+}
+
+.ucg_radio.second_level .ucg_radio_button {
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.ucg_checkbox .ucg_checkbox_label,
+.ucg_radio .ucg_radio_button {
+	font-family: "unicredit-regular";
+	font-weight: normal;
+	cursor: pointer;
+	line-height: 1;
+	margin-bottom: 0;
+}
+
+.ucg_checkbox .ucg_checkbox_label .labelText,
+.ucg_radio .ucg_radio_button .labelText {
+	padding-left: 6px;
+}
+
+.ucg_radio .ucg_radio_button .labelText {
+	padding-right: 25px;
+}
+
+.ucg_radio .ucg_radio_button.checked {
+	color: #00afd0;
+}
+
+/************** ERRORS **************/
+
+.ucg_error {
+	color: #ea5c4d;
+}
+
+input.ucg_error,
+.chosen-container .chosen-single.ucg_error,
+textarea.ucg_error {
+	border: 1px solid #e2001a !important;
+}
+
+.ucg_form .countries .popover {
+	top: 60px !important;
+}
+
+.ucg_form .popover {
+	left: 0 !important;
+}
+
+.ucg_form .ucg_radio_button.ucg_error .popover {
+	top: 21px !important;
+	left: -5px !important;
+}
+
+.ucg_form .popover .arrow {
+	left: 15% !important;
+}
+
+.ucg_form .popover.bottom > .arrow:after {
+	border-bottom-color: #ea5c4d;
+}
+
+.ucg_form .popover,
+.ucg_form .popover .popover-content {
+	background-color: #ea5c4d;
+	border-color: #ea5c4d;
+	box-shadow: none;
+	color: #FFFFFF;
+	z-index: 5;
+}
+
+.ucg_form .alert {
+	display: none;
+}
+
+.ucg_form .alert-danger {
+	background-color: #ea5c4d;
+	border: 2px solid #e2001a;
+	color: #FFFFFF;
+}
+
+.ucg_form .alert-danger .close {
+	color: #FFFFFF;
+	opacity: 1;
+}
+
+/************** BROWSERS BEHAVIOUR **************/
+
+/* Webkit */
+::-webkit-input-placeholder {
+	color: #CCCCCC;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Firefox 4-18 */
+:-moz-placeholder {
+	color: #CCCCCC;
+	opacity: 1;
+}
+
+/* Firefox 19+ */
+::-moz-placeholder {
+	color: #CCCCCC;
+	opacity: 1;
+}
+
+/* IE */
+::-ms-reveal,
+::-ms-clear {
+    display: none;
+}
+
+/* IE10+ */
+:-ms-input-placeholder {
+	color: #CCCCCC;
+}
+
+/************** CONTACT FORMS **************/
+
+#contactForm .ucg_image_text .ucg_txt,
+#contactForm .ucg_image_text .ucg_txt p,
+#unsubscribeForm .ucg_image_text .ucg_txt p,
+.ucg_form {
+	font-size: 17px;
+	color: #666666;
+}
+
+#contactForm .ucg_image_text .ucg_txt {
+	font-size: 17px;
+}
+
+#contactForm h2 {
+	font-size: 25px;
+	margin-top: 0;
+}
+
+.ucg_form .ucg_formTitle {
+	border-bottom: 1px solid #c9c9c9;
+}
+
+#contactForm .ucg_form .ucg_formTitle h2 {
+	font-size: 24px;
+	color: #333333;
+}
+
+#contactForm .inner {
+	margin-bottom: 30px;
+	padding-right: 0;
+	padding-left: 0;
+}
+
+#contactForm .logo img,
+#contactForm .map img {
+	height: auto;
+	max-width: 100%;
+}
+
+#contactForm .infos {
+	font-size: 15px;
+	line-height: 22px;
+}
+
+#contactForm .infos .getDirections {
+	font-family: "UniCredit-Bold";
+	font-size: 14px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.ucg_form .formSectionContainer {
+	padding: 0;
+}
+
+.ucg_form .formSectionContainerCaptcha {
+	margin: 10px 0;
+	padding: 0;
+}
+
+.ucg_form .formSectionContainer .ucg_formIntro {
+	display: block;
+	clear: both;
+}
+
+.ucg_form .formSectionContainer .ucg_formIntro .container {
+	padding: 0;
+}
+
+.ucg_form .ucg_formRow {
+	clear: both;
+}
+
+.ucg_form .ucg_formRow:last-child {
+	margin-bottom: 10px;
+}
+
+.ucg_form input,
+.ucg_form textarea {
+	color: #00afd0;
+}
+
+.ucg_form input {
+	height: 36px;
+}
+
+.ucg_form .ucg_formField {
+	margin: 20px 0;
+	padding-left: 0;
+}
+
+.ucg_form .ucg_formCaptcha {
+	margin-top: 20px;
+	padding-left: 0;
+}
+
+.ucg_form .ucg_formCaptcha img {
+	margin: 5px 0;
+	width: 100%;
+}
+
+.ucg_form .ucg_formField .ucg_radio_button_container {
+	clear: both;
+}
+
+.ucg_form .ucg_formField .ucg_formCounter {
+	margin: 20px 0;
+}
+
+.ucg_form .ucg_formDisclaimerTitle {
+	font-size: 15px;
+	margin: 20px 0;
+	text-transform: uppercase;
+}
+
+.ucg_form .ucg_formDisclaimerContainer {
+	border: 1px solid #c9c9c9;
+	border-radius: 5px;
+	margin: 20px 0;
+	padding: 10px;
+}
+
+.ucg_form .ucg_formDisclaimer {
+	font-size: 15px;
+	padding: 0 10px 0 0;
+	overflow: auto;
+	height: 100px;
+	width: 100%;
+}
+
+.ucg_form .ucg_formDisclaimer::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+	background-color: #FFFFFF;
+	border-radius: 10px;
+}
+
+.ucg_form .ucg_formDisclaimer::-webkit-scrollbar {
+	background-color: #FFFFFF;
+	width: 5px;
+}
+
+.ucg_form .ucg_formDisclaimer::-webkit-scrollbar-thumb {
+	background-color: #666666;
+	border-radius: 50px;
+}
+
+.ucg_form .ucg_formLanguageSelection {
+	margin: 10px 0;
+}
+
+.ucg_form .ucg_formDisclaimerAgreement {
+	margin: 20px 0;
+}
+
+.ucg_form .ucg_formLanguageSelectionIntro,
+.ucg_form .ucg_formDisclaimerAgreementIntro {
+	padding-right: 25px;
+}
+
+.ucg_form .ucg_formCaptchaNoPadding {
+	padding-left: 0;
+	padding-right: 8px;
+}
+
+.ucg_form .ucg_horizontal_line {
+	clear: both;
+}
+
+.ucg_form .ucg_linklist .container {
+	padding: 0;
+	width: 100%;
+}
+
+.ucg_form .ucg_button {
+	float: right;
+}
+
+.ucg_form .ucg_button .container,
+.ucg_form .ucg_title .container,
+.ucg_form .ucg_image_text .container,
+.ucg_form .ucg_button .container {
+	padding: 0;
+}
+
+.ucg_form .ucg_button button {
+	float: right;
+	margin: 20px 0;
+}
+
+.ucg_form .alertColumn:first-child {
+	padding-left: 0;
+}
+
+.ucg_form .alertColumn:last-child {
+	padding-right: 0;
+}
+
+/************** CONTACT FORM THANK YOU PAGE **************/
+
+#contactForm .thanks_message_container {
+	font-family: "unicredit-regular";
+	font-size: 24px;
+	margin: 100px auto;
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	#contactForm .thanks_message_container {
+		margin: 200px auto;
+	}
+}
+
+#contactForm .thanks_message {
+	margin-bottom: 20px;
+}
+
+/************** UNSUBSCRIBE FORM **************/
+
+#unsubscribeForm .ucg_formCaptcha,
+#unsubscribeForm .ucg_formField {
+	margin: 0;
+}
+
+#unsubscribeForm .formSectionContainer {
+	margin: 10px 0;
+}
+
+/************** CHOSEN SELECT **************/
+
+.ucg_form .chosen-container {
+	height: 40px;
+	width: 100%;
+}
+
+.ucg_form .chosen-container .chosen-single {
+	background-color: #FFFFFF;
+	background-image: none;
+	border: 1px solid #c9c9c9;
+	box-shadow: none;
+	font-family: "unicredit-regular";
+	font-size: 17px;
+	color: #00afd0;
+	line-height: 40px;
+	padding: 0 10px;
+	height: 40px;
+}
+
+.ucg_form .chosen-container .chosen-default {
+	background: none;
+	border: 1px solid #c9c9c9;
+	font-size: 17px;
+	color: #666666;
+	line-height: 40px;
+	height: 40px;
+}
+
+.ucg_form .chosen-container .chosen-single div,
+.ucg_form .chosen-container .chosen-default div {
+	margin-right: 10px;
+	width: 30px;
+}
+
+.ucg_form .chosen-container .chosen-single div b,
+.ucg_form .chosen-container .chosen-default div b {
+	background: url('../img/static/select-arrow-down.png') no-repeat scroll center center !important;
+}
+
+.ucg_form .chosen-container-active.chosen-with-drop .chosen-single {
+	border: 1px solid #c9c9c9;
+}
+
+.ucg_form .chosen-container.chosen-with-drop .chosen-single div b,
+.ucg_form .chosen-container.chosen-with-drop .chosen-default div b {
+	background: url('../img/static/select-arrow-up.png') no-repeat scroll center center !important;
+}
+
+.ucg_form .chosen-container .chosen-drop  {
+	border: 1px solid #c9c9c9;
+	border-top: none;
+	padding: 0;
+}
+
+.ucg_form .chosen-container .chosen-drop .chosen-results {
+	margin: 0;
+	padding: 0;
+}
+
+.ucg_form .chosen-container .chosen-drop .chosen-results .active-result {
+	background: none;
+	font-family: "unicredit-regular";
+	font-size: 17px;
+	color: #666666;
+	line-height: 30px;
+	/*padding-left: 0;*/
+	padding: 10px 10px 5px;
+}
+
+.ucg_form .chosen-container .chosen-drop .chosen-results .active-result.highlighted {
+	background: #333333;
+	color: #FFFFFF;
+}
+
+.chosen-container.little-arrow .chosen-single div {
+	margin-right: 3px;
+	width: 30px;
+}
+
+.chosen-container.little-arrow .chosen-single div b {
+    background: url('../img/static/select-arrow-little-down.png') no-repeat scroll center center !important;
+}
+
+.chosen-container.little-arrow.chosen-with-drop .chosen-single div b {
+	background-image: url('../img/static/select-arrow-little-up.png') !important;
+}
+
+/******* CHOSEN WITH INPUT SEARCH - countries ********/
+
+.ucg_form .countries .chosen-select-ubis-search .chosen-single.chosen-default {
+	color: #CCCCCC;
+}
+
+.ucg_form .countries .chosen-select-ubis-search.chosen-container-active.chosen-with-drop .chosen-single.chosen-single-with-deselect:not(.chosen-default) {
+	border: 1px solid #c9c9c9;
+}
+
+.ucg_form .countries .chosen-select-ubis-search.chosen-container .chosen-drop {
+	margin-top: -5px;
+	padding: 0;
+}
+
+.ucg_form .countries .chosen-select-ubis-search.chosen-container .chosen-drop .chosen-search {
+	padding: 0;
+}
+
+.ucg_form .countries .chosen-select-ubis-search.chosen-container .chosen-drop .chosen-search input {
+	background: url('../img/static/keywords-search-light.png') no-repeat right 10px center;
+	background-color: #e8e8e8;
+	border: none;
+	border-top: 1px solid #c9c9c9;
+	border-bottom: 1px solid #c9c9c9;
+	font-family: "unicredit-regular";
+	font-size: 17px;
+	line-height: 30px;
+	padding: 5px 10px;
+}
+
+.ucg_form .countries .chosen-select-ubis-search.chosen-container .chosen-drop .chosen-results li em {
+	font-family: "unicredit-bold";
+	text-decoration: none;
+}
+
+.ucg_form .countries .chosen-container .chosen-single,
+.ucg_form .countries .chosen-container .chosen-default {
+	line-height: 34px;
+	height: 36px;
+}
+
+/************** CHOSEN SELECT WITH RADIO BUTTON **************/
+
+.ucg_chosen_radio .chosen-container {
+	height: 40px;
+	width: 100%;
+}
+
+.ucg_chosen_radio .chosen-container .chosen-single {
+	background-color: inherit;
+	background-image: none;
+	border: 1px solid #CCCCCC;
+	box-shadow: none;
+	font-size: 17px;
+	color: #999999;
+	line-height: 40px;
+	padding: 0 10px;
+	height: 40px;
+}
+
+.ucg_chosen_radio .chosen-container .chosen-default {
+	background: none;
+	border: 1px solid #CCCCCC;
+	font-size: 17px;
+	color: #999999;
+	line-height: 40px;
+	height: 40px;
+}
+
+.ucg_chosen_radio .chosen-container .chosen-default div {
+	margin-right: 10px;
+	width: 30px;
+}
+
+.ucg_chosen_radio .chosen-container .chosen-default div b {
+	background: url('../img/static/select-arrow-down.png') no-repeat scroll center center !important;
+}
+
+.ucg_chosen_radio .chosen-container-active.chosen-with-drop .chosen-single {
+	background-image: none;
+	box-shadow: none;
+}
+
+.ucg_chosen_radio .chosen-container-active.chosen-with-drop .chosen-single.chosen-single-with-deselect:not(.chosen-default) {
+	/* border: none; */
+}
+
+.ucg_chosen_radio .chosen-container.little-arrow .chosen-default div {
+	margin-right: 3px;
+	width: 30px;
+}
+
+.ucg_chosen_radio .chosen-container.chosen-with-drop .chosen-default div b {
+	background-image: url('../img/static/select-arrow-up.png') !important;
+}
+
+.ucg_chosen_radio .chosen-container.little-arrow .chosen-default div b {
+	background: url('../img/static/select-arrow-little-down.png') no-repeat scroll center center !important;
+}
+
+.ucg_chosen_radio .chosen-container.little-arrow.chosen-with-drop .chosen-default div b {
+	background-image: url('../img/static/select-arrow-little-up.png') !important;
+}
+
+.ucg_chosen_radio .chosen-container .chosen-drop  {
+	border: 1px solid #c9c9c9;
+	padding: 8px 8px 0;
+}
+
+.ucg_chosen_radio .chosen-container .chosen-drop .chosen-results .active-result {
+	background: url('../img/static/radio-button-unchecked.png') no-repeat scroll left center;
+	font-size: 15px;
+	color: #999999;
+	line-height: 20px;
+	padding-left: 30px;
+}
+
+.ucg_chosen_radio .chosen-container .chosen-drop .chosen-results .active-result.highlighted {
+	background: url('../img/static/radio-button-checked.png') no-repeat scroll left center;
+	color: #00afd0;
+}
+
+.ucg_chosen_radio .chosen-container.with-deselect .chosen-single.chosen-single-with-deselect:not(.chosen-default) abbr {
+	background-position: center center;
+	position: relative;
+	float: right;
+    right: 3px;
+    top: -26px;
+}
+.ucg_chosen_radio .chosen-container.with-deselect.light .chosen-single.chosen-single-with-deselect:not(.chosen-default){
+	background-color: #999;
+	color: #bebebe;
+}
+.ucg_chosen_radio .chosen-container.with-deselect.light .chosen-single.chosen-single-with-deselect:not(.chosen-default) abbr {
+	background-image: url('../img/static/cross-button-light.png');
+}
+.ucg_chosen_radio .chosen-container.with-deselect.dark .chosen-single.chosen-single-with-deselect:not(.chosen-default) {
+	background-color: #e6e8e7;
+	color: #666;
+}
+.ucg_chosen_radio .chosen-container.with-deselect.dark .chosen-single.chosen-single-with-deselect:not(.chosen-default) abbr {
+	background-image: url('../img/static/cross-button-dark.png');
+}
+.ucg_chosen_radio .chosen-container.with-deselect.blue .chosen-single.chosen-single-with-deselect:not(.chosen-default) {
+	background-color: #FFFFFF;
+	color: #00afd0;
+}
+.ucg_chosen_radio .chosen-container.with-deselect.blue .chosen-single.chosen-single-with-deselect:not(.chosen-default) abbr {
+	background-image: url('../img/static/cross-button-blue.png');	
+}
+.ucg_chosen_radio .chosen-container.with-deselect.white .chosen-single.chosen-single-with-deselect:not(.chosen-default) {
+	background-color: #999;
+	color: #FFFFFF;
+}
+.ucg_chosen_radio .chosen-container.with-deselect.white .chosen-single.chosen-single-with-deselect:not(.chosen-default) abbr {
+	background-image: url('../img/static/cross-button-white.png');	
+}
+.ucg_chosen_radio .chosen-container.with-deselect .chosen-single.chosen-single-with-deselect:not(.chosen-default) div,
+.ucg_chosen_radio .chosen-container.with-deselect .chosen-single.chosen-single-with-deselect:not(.chosen-default) div b {
+	width: 0;
+	height: 0;
+	display: none;
+	margin: 0;
+}
 /************** DATE RANGE PICKER **************/
 
 .input-daterange {
@@ -122,31 +787,44 @@ select option:active {
 
 .input-daterange > div {
 	behavior: url('../plugin/js/PIE.htc');
-	border: 1px solid #ccc;
+	border: 1px solid #CCCCCC;
 	border-radius: 5px;
 	font-size: 17px;
-	color: #999;
+	color: #999999;
 	cursor: pointer;
 	line-height: 40px;
 	padding-left: 10px;
 	height: 40px;
 }
 
+.input-daterange > div:not(.selected) {
+	background: url('../img/static/datepicker-calendar-icon.png') no-repeat scroll right top transparent;
+}
 
 .input-daterange.active > div:not(.selected) {
 	background: url('../img/static/datepicker-calendar-icon-opened.png') no-repeat scroll right top transparent;
 }
 
-.input-daterange > div:not(.selected) {
-	background: url('../img/static/datepicker-calendar-icon.png') no-repeat scroll right top transparent;
-}
-
 .input-daterange > div.selected {
-	background: none #999;
-	color: #fff;
+	background: none;
 	padding: 0 10px;
 }
-
+.input-daterange.dark > div.selected {
+background-color: #e6e8e7;
+	color: #666;
+}
+.input-daterange.light > div.selected {
+	background-color: #999;
+	color: #bebebe;
+}
+.input-daterange.white > div.selected {
+	background-color: #999;
+	color: #FFFFFF;
+}
+.input-daterange.blue > div.selected {
+	background-color: #FFFFFF;
+	color: #00afd0;
+}
 .input-daterange > div.selected span {
 	font-family: 'unicredit-bold';
 }
@@ -177,8 +855,8 @@ select option:active {
 
 .daterangepicker .calendar table {
 	behavior: url('../plugin/js/PIE.htc');
-	background-color: #fff;
-	border: 1px solid #ccc;
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
 	border-radius: 0 0 5px 5px;
 	border-collapse: separate;
 }
@@ -190,18 +868,18 @@ select option:active {
 }
 
 .daterangepicker .calendar table thead tr:last-child th,
-.daterangepicker .calendar.right table tfoot tr th{
+.daterangepicker .calendar.right table tfoot tr th {
 	behavior: url('../plugin/js/PIE.htc');
 	border-collapse: collapse;
 	border-radius: 0;
 }
 
 .daterangepicker .calendar table thead tr:last-child th {
-	border-bottom: 1px solid #ccc;	
+	border-bottom: 1px solid #CCCCCC;
 }
 
 .daterangepicker .calendar.right table tfoot tr th{
-	border-top: 1px solid #ccc;
+	border-top: 1px solid #CCCCCC;
 }
 
 .daterangepicker .calendar table thead th.prev,
@@ -225,7 +903,7 @@ select option:active {
 }
 
 .daterangepicker .calendar table thead th.next i {
-	background-position: right center;	
+	background-position: right center;
 }
 
 .daterangepicker .calendar table thead tr th:first-child {
@@ -263,7 +941,7 @@ select option:active {
 }
 
 .daterangepicker .month:hover {
-	background-color: transparent;	
+	background-color: transparent;
 }
 
 .daterangepicker .month span {
@@ -280,21 +958,21 @@ select option:active {
 }
 
 .daterangepicker .month.active,
-.daterangepicker .month.in-range{
-	background-color: transparent;	
+.daterangepicker .month.in-range {
+	background-color: transparent;
 }
 
 .daterangepicker .month.available:hover,
 .daterangepicker .month.available.active:hover,
 .daterangepicker .month.available.in-range:hover {
 	behavior: url('../plugin/js/PIE.htc');
-	background-color: #ccc;
+	background-color: #CCCCCC;
 	border-radius: 5px;
 }
 
 .daterangepicker .available.month.in-range span {
 	background-color: #00afd0;
-	color: #fff;
+	color: #FFFFFF;
 }
 
 .daterangepicker .month.active span,
@@ -306,7 +984,7 @@ select option:active {
 	border-color: #00afd0;
 	border-radius: 12.5px;
 	font-family: 'unicredit-bold';
-	color: #fff;
+	color: #FFFFFF;
 }
 
 .daterangepicker .available.month.in-range.my-start-date {
@@ -332,11 +1010,11 @@ select option:active {
 .daterangepicker .calendar td {
 	font-family: 'unicredit-regular';
 	font-weight: normal;
-	color: #666;	
+	color: #666666;
 }
 
 .daterangepicker .calendar th .myLabel {
-	color: #666;
+	color: #666666;
 	text-transform: uppercase;
 }
 
@@ -355,7 +1033,7 @@ select option:active {
 .daterangepicker .calendar table tfoot button {
 	background-color: #00afd0;
 	font-family: 'unicredit-bold';
-	color: #fff;
+	color: #FFFFFF;
 	margin: 9px 0;
 	padding: 3px 12px;
 	text-transform: uppercase;
@@ -363,70 +1041,6 @@ select option:active {
 
 .daterangepicker .calendar table tfoot button:hover,
 .daterangepicker .calendar table tfoot button:active {
-	background-color: #ccc;
-	color: #00afd0;
-}
-/* SELECT-CHOSEN */
-
-.chosen-container {
-	height: 40px;
-	width: 100%;
-}
-.chosen-container .chosen-single {
-	background: #999;
-	border: none;
-	box-shadow: none;
-	font-size: 17px;
-	line-height: 40px;
-	height: 40px;
-	color: #fff;
-	padding: 0 10px;
-}
-.chosen-container .chosen-default {
-	background: none;
-	font-size: 17px;
-	line-height: 40px;
-	height: 40px;
-	color: #999;
-	border: 1px solid #ccc;
-}
-.chosen-container .chosen-single div {
-	width: 0;
-}
-.chosen-container .chosen-default div {
-	width: 30px;
-}
-.chosen-container .chosen-single div b {
-	background: none;
-}
-.chosen-container .chosen-single abbr {
-    background: url('../img/static/select-cross-white.png') no-repeat scroll center center;
-    float: right;
-    position: relative;
-    right: 0;
-    top: -25px;
-}
-.chosen-container .chosen-single abbr:hover {
-	background-position: center center;
-}
-.chosen-container .chosen-default div b {
-    background: url('../img/static/select-arrow-down.png') no-repeat scroll center center;
-}
-.chosen-container.chosen-with-drop .chosen-default div b {
-	background-image: url('../img/static/select-arrow-up.png');
-}
-.chosen-container .chosen-drop  {
-    border-top: 1px solid #ccc;
-    padding: 8px 8px 0;
-}
-.chosen-container .chosen-drop .chosen-results .active-result {
-    background: url('../img/static/radio-button-unchecked.png') no-repeat scroll left center;
-	color: #999;
-	padding-left: 30px;
-	font-size: 15px;
-	line-height: 20px;
-}
-.chosen-container .chosen-drop .chosen-results .active-result.highlighted {
-    background: url('../img/static/radio-button-checked.png') no-repeat scroll left center;
+	background-color: #CCCCCC;
 	color: #00afd0;
 }

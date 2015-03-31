@@ -7,7 +7,7 @@
 #calendar .panel > .container {
 	width: 100%;
 	margin: 0;
-	padding: 0 10px;
+	padding: 0 20px;
 }
 #calendar .container > div {
 	padding: 0;
@@ -15,17 +15,19 @@
 }
 #calendar .panel > .container h1 {
     font-family: unicredit-light;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 40px;
     margin: 0;
-    padding: 20px 0 0;
+    padding: 7px 0 0;
     text-align: center;
+}
+#calendar #calendarPanelResults {
+	border-top: 1px solid #ccc;	
 }
 #calendar .event .header {
 	padding: 30px 0;
 }
 #calendar .event:first-child .header {
-	border-top: 1px solid #ccc;
 	padding: 20px 0 10px;
 }
 #calendar .event .header > div {
@@ -114,6 +116,108 @@
 	margin-bottom: 0;
 	padding-bottom: 40px;
 }
+
+
+/* SELECT-CHOSEN */
+/*
+#calendarTools .chosen-container {
+	height: 40px;
+	width: 100%;
+}
+#calendarTools .chosen-container .chosen-single {
+	background-image: none;
+	background: #999;
+	border: none;
+	box-shadow: none;
+	font-size: 17px;
+	line-height: 40px;
+	height: 40px;
+	color: #fff;
+	padding: 0 10px;
+}
+#calendarTools .chosen-container .chosen-default {
+	background: none;
+	font-size: 17px;
+	line-height: 40px;
+	height: 40px;
+	color: #999;
+	border: 1px solid #ccc;
+}
+#calendarTools .chosen-container-active.chosen-with-drop .chosen-single {
+	background-image: none;
+	box-shadow: none;
+}
+#calendarTools .chosen-container-active.chosen-with-drop .chosen-single.chosen-single-with-deselect:not(.chosen-default) {
+	border: none;
+}
+#calendarTools .chosen-container .chosen-single div {
+	width: 0;
+}
+#calendarTools .chosen-container .chosen-default div {
+	margin-right: 10px;
+	width: 30px;
+}
+#calendarTools .chosen-container.little-arrow .chosen-default div {
+	margin-right: 3px;
+	width: 30px;
+}
+#calendarTools .chosen-container .chosen-default div b {
+    background: url('../img/static/select-arrow-down.png') no-repeat scroll center center !important;
+}
+#calendarTools .chosen-container.chosen-with-drop .chosen-default div b {
+	background-image: url('../img/static/select-arrow-up.png') !important;
+}
+#calendarTools .chosen-container.little-arrow .chosen-default div b {
+    background: url('../img/static/select-arrow-little-down.png') no-repeat scroll center center !important;
+}
+#calendarTools .chosen-container.little-arrow.chosen-with-drop .chosen-default div b {
+	background-image: url('../img/static/select-arrow-little-up.png') !important;
+}
+#calendarTools .chosen-container .chosen-drop  {
+    border-top: 1px solid #ccc;
+    padding: 8px 8px 0;
+}
+#calendarTools .chosen-container .chosen-drop .chosen-results .active-result {
+    background: url('../img/static/radio-button-unchecked.png') no-repeat scroll left center;
+	color: #999;
+	padding-left: 30px;
+	font-size: 15px;
+	line-height: 20px;
+}
+#calendarTools .chosen-container .chosen-drop .chosen-results .active-result.highlighted {
+    background: url('../img/static/radio-button-checked.png') no-repeat scroll left center;
+	color: #00afd0;
+}
+#calendarTools .chosen-container .chosen-single {
+	background-color: inherit;
+	color: #999;
+	border: 1px solid #ccc;
+}
+#calendarTools .chosen-container.little-arrow .chosen-single div {
+	margin-right: 3px;
+    width: 30px;	
+} 
+#calendarTools .chosen-container.little-arrow .chosen-default div b {
+    background: url('../img/static/select-arrow-little-down.png') no-repeat scroll center center !important;
+}
+#calendarTools .chosen-container.little-arrow.chosen-with-drop .chosen-default div b {
+	background-image: url('../img/static/select-arrow-little-up.png') !important;
+}
+#calendarTools .chosen-container .chosen-single div b {
+	background: none;
+}
+#calendarTools .chosen-container .chosen-single abbr {
+    background: url('../img/static/select-cross-white.png') no-repeat scroll center center;
+    float: right;
+    position: relative;
+    right: 0;
+    top: -25px;
+}
+#calendarTools .chosen-container .chosen-single abbr:hover {
+	background-position: center center;
+}
+
+*/
 /**** Categories combo-box ****/
 /**** CALENDAR TOOLS ****/
 
@@ -151,7 +255,7 @@
 	margin: 0;
 }
 #calendarPanelResults .event > .container {
-	padding: 0px 10px;
+	padding: 0px 20px;
 }
 /*
 #calendarPanelResults .event .header {

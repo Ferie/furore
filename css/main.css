@@ -6,12 +6,12 @@ body {
 	color: #666666;
 }
 .clear {
-	clear: both;
-	float: none;
-	display: block;
-	padding: 0;
-	margin: 0;
-	border: none;
+	clear: both !important;
+	float: none !important;
+	display: block !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	border: none !important;
 }
 .left {
 	float: left;
@@ -43,7 +43,11 @@ b, strong {
 	border-radius: 0;
 	box-shadow: none;
 	background: none;
+	margin-bottom: 0;
 }
+/* #mainContainer > .panel {
+	margin-bottom: 20px;
+} */
 #mainContainer {
 	background-color: #FFF;
 	position: absolute;
@@ -127,6 +131,83 @@ b, strong {
 	white-space: nowrap;
 }
 /**** HEADER ****/
+
+/**** SEARCH ****/
+.ucg_search {
+	position: absolute;
+	top: 0;
+	left: 80px;
+	background: #FFFFFF;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	z-index: 10;
+	overflow: visible !important;
+}
+
+.ucg_search input.findAsYouType,
+.ucg_search input.findAsYouType:focus {
+	background: #FFFFFF;
+/* 	background: #FFCC00; */
+	border: none;
+	font-family: "unicredit-light";
+	font-size: 40px;
+	line-height: 50px;
+	outline: 0 none;
+	margin: 0;
+	padding: 0 15px;
+	width: 100%;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+.ucg_search .ucg_horizontal_line {
+	position: absolute;
+	top: 49px;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+}
+
+.ucg_search .ucg_horizontal_line .spacer1 {
+	border-bottom: 1px solid #cacaca;
+	/* padding-top: 10px; */
+	width: 100%;
+}
+
+.ucg_search .ucg_horizontal_line .spacer2 {
+	/* padding-bottom: 10px; */
+	width: 100%;
+}
+
+.autocomplete-suggestions {
+	background: #FFFFFF;
+/* 	background: #FF9A33; */
+	border: none;
+	box-shadow: none;
+	padding: 0 15px;
+}
+
+.autocomplete-suggestion {
+	font-family: "unicredit-light";
+	font-size: 40px;
+	line-height: 50px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	outline: 0 none;
+}
+
+.ucg_search.panel .container  {
+	width: 100%;
+	max-width: none;
+	padding: 0;
+}
+
+.ucg_search.with-sidebar-opened.panel .container  {
+	width: 100%;
+}
+/**** SEARCH ****/
 
 /**** SIDEBAR ****/
 #sidebar {
@@ -322,30 +403,6 @@ b, strong {
 }
 */
 /**** SIDEBAR ****/
-
-/**** BREADCRUMB ****/
-#breadcrumb {
-	border-bottom: 1px solid #c9c9c9;
-}
-#breadcrumb ul {
-	list-style-type: none;
-	padding: 10px;
-}
-#breadcrumb ul li {
-	color: #999999;
-	display: inline-block;
-}
-#breadcrumb ul li:first-child {
-	text-transform: uppercase;
-	font-family: 'unicredit-bold';
-}
-#breadcrumb ul li:not(:last-child):after {
-	font-family: 'unicredit-regular';
-	content: ">";
-	padding: 0 2px 0 5px;
-}
-
-/**** BREADCRUMB ****/
 
 /**** FOOTER ****/
 #footer {

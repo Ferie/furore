@@ -1,5 +1,6 @@
 #worldwide > .panel {
-	clear: both;	
+	clear: both;
+	margin-bottom: 20px;
 }
 
 #worldwide .panel > .container {
@@ -56,8 +57,8 @@
 	text-transform: uppercase;
 }
 
-#worldwide .worldwideCountries .arrow,
-#worldwide .worldwideCountries.collapsed .arrow {
+#worldwide .worldwideCountries .arrow {
+	background: url("../img/static/select-arrow-down.png") no-repeat;
 	position: absolute;
 	top: 26px;
 	right: 20px;
@@ -65,12 +66,8 @@
 	width: 26px;
 }
 
-#worldwide .worldwideCountries .arrow {
+#worldwide .worldwideCountries .arrow.open {
 	background: url("../img/static/select-arrow-up.png") no-repeat;
-}
-
-#worldwide .worldwideCountries.collapsed .arrow {
-	background: url("../img/static/select-arrow-down.png") no-repeat;
 }
 
 #worldwide .worldwideCountries .continentCountries {
@@ -119,6 +116,22 @@
 	padding: 0 0 38px;
 }
 
+#worldwide .countryLessInfoOn {
+	display: none;
+}
+
+#worldwide .countryLessInfoOn .container {
+	padding: 0 15px;
+}
+
+#worldwide.countryLessInfo .countryLessInfoOn {
+	display: block;
+}
+
+#worldwide.countryLessInfo .countryLessInfoOff {
+	display: none;
+}
+
 #worldwide #intro .subtitle {
 	font-size: 25px;
 	margin-bottom: 30px;
@@ -132,7 +145,7 @@
 
 #worldwide #intro .row {
 	margin: 0 auto 30px;
-	width: 350px;
+	width: 100%;
 }
 
 #worldwide #intro .row div {
@@ -184,8 +197,6 @@
 #worldwide #intro .readLess {
 	display: none;
 }
-
-/************** COUNTRY PAGE **************/
 
 #worldwide .chosen-container {
 	height: 40px;
@@ -261,28 +272,37 @@
 	display: block;
 }
 
-#worldwide .tabSection {
+#worldwide .tabSection,
+#worldwide .countryLessInfoPanel {
 	border-bottom: 1px solid #c9c9c9;
 	margin-bottom: 40px;
 	padding-bottom: 40px;
 }
 
-#worldwide .tabSection .logo {
+#worldwide .countryLessInfoPanel {
+	border-bottom: none;
+}
+
+#worldwide .tabSection .logo,
+#worldwide .countryLessInfoPanel .logo {
 	padding-bottom: 20px;
 }
 
-#worldwide .tabSection .bankName {
+#worldwide .tabSection .bankName,
+#worldwide .countryLessInfoPanel .bankName {
 	font-size: 24px;
 }
 
-#worldwide .tabSection .externalLink {
+#worldwide .tabSection .externalLink,
+#worldwide .countryLessInfoPanel .externalLink {
 	background: url("../img/static/generic_external_link_icon.png") no-repeat;
 	margin-top: 18px;
 	margin-bottom: 10px;
 	padding-left: 26px;
 }
 
-#worldwide .tabSection .moreInfo {
+#worldwide .tabSection .moreInfo,
+#worldwide .countryLessInfoPanel .moreInfo {
 	float: left;
 	font-size: 14px;
 	line-height: 1;
@@ -291,7 +311,8 @@
 	text-transform: uppercase;
 }	
 
-#worldwide .tabSection .moreInfo .arrowRight {
+#worldwide .tabSection .moreInfo .arrowRight,
+#worldwide .countryLessInfoPanel .arrowRight {
 	background: url("../img/static/blue_arrow_right.png") no-repeat;
 	float: right;
 	margin-top: 1px;
@@ -300,8 +321,18 @@
 	width: 7px;
 }
 
+#worldwide.countryLessInfo .countryLessInfoPanel .moreInfo {
+	width: 100%;
+	padding: 10px 0;
+	margin-bottom: 60px;
+}
+#worldwide.countryLessInfo .countryLessInfoPanel .moreInfo .arrowRight{
+	display: inline-block;
+	float: none;
+}
 #worldwide .tabSection .icons,
-#worldwide #companyInfos .icons {
+#worldwide #companyInfos .icons,
+#worldwide .countryLessInfoPanel .icons {
 	font-family: "UniCredit-Bold";
 	font-size: 14px;
 	margin-top: 40px;
@@ -309,16 +340,19 @@
 	text-transform: uppercase;
 }
 
-#worldwide .tabSection .icons .icon {
+#worldwide .tabSection .icons .icon,
+#worldwide .countryLessInfoPanel .icons .icon {
 	margin: 15px 0;
 }
 
-#worldwide .tabSection .icons .icon:last-child {
+#worldwide .tabSection .icons .icon:last-child,
+#worldwide .countryLessInfoPanel .icons .icon:last-child {
 	margin-bottom: 0;
 }
 
 #worldwide .tabSection .icons .icon.homeBankingLogin,
-#worldwide #companyInfos .icons .icon.homeBankingLogin {
+#worldwide #companyInfos .icons .icon.homeBankingLogin,
+#worldwide .countryLessInfoPanel .icons .icon.homeBankingLogin {
 	background: url("../img/static/home_banking_icon.png") no-repeat;
 	margin-top: 1px;
 	padding-top: 2px;
@@ -327,7 +361,8 @@
 }
 
 #worldwide .tabSection .icons .icon.seeJobPositions,
-#worldwide #companyInfos .icons .icon.seeJobPositions {
+#worldwide #companyInfos .icons .icon.seeJobPositions,
+#worldwide .countryLessInfoPanel .icons .icon.seeJobPositions {
 	background: url("../img/static/worldwide_country_page_see_job_position_icon.png") no-repeat;
 	padding-top: 3px;
 	padding-left: 28px;
@@ -335,7 +370,8 @@
 }
 
 #worldwide .tabSection .icons .icon.findBranch,
-#worldwide #companyInfos .icons .icon.findBranch {
+#worldwide #companyInfos .icons .icon.findBranch,
+#worldwide .countryLessInfoPanel .icons .icon.findBranch {
 	background: url("../img/static/worldwide_country_page_find_a_branch_icon.png") no-repeat;
 	margin-top: 1px;
 	margin-left: 4px;
@@ -345,7 +381,8 @@
 }
 
 #worldwide .tabSection .icons .icon.linkedin,
-#worldwide #companyInfos .icons .icon.linkedin {
+#worldwide #companyInfos .icons .icon.linkedin,
+#worldwide .countryLessInfoPanel .icons .icon.linkedin {
 	background: url("../img/static/worldwide_country_page_linkedin_icon.png") no-repeat;
 	margin-left: 3px;
 	padding-top: 3px;
@@ -354,7 +391,8 @@
 }
 
 #worldwide .tabSection .icons .icon a,
-#worldwide #companyInfos .icons .icon a {
+#worldwide #companyInfos .icons .icon a,
+#worldwide .countryLessInfoPanel .icons .icon a {
 	color: #666666;
 }
 
@@ -422,6 +460,7 @@
 	position: relative;
 	border-bottom: 1px solid #c9c9c9;
 	font-family: "UniCredit-Bold";
+	cursor: pointer;
 	font-size: 25px;
 	line-height: 1;
 	padding: 20px 15px;
@@ -455,7 +494,6 @@
 #worldwide #companyInfos .companyInfo .companyInfoBody {
 	border-bottom: 1px solid #c9c9c9;
 	display: none;
-	cursor: pointer;
 }
 
 #worldwide #companyInfos .externalLinkContainer {

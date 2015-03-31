@@ -6,7 +6,7 @@ function getIntradayData() {
 		dataType: "json",
 		success: function(data, textStatus, jqXHR){
 			var toLoad = (lastLoad+1)%data.length;
-			$('.ucg_intraday .ucg_image img').attr("src", data[toLoad].src);
+			$('.ucg_intraday .ucg_img img').attr("src", data[toLoad].src);
 			$('.ucg_intraday .ucg_intraday_text .value').text(data[toLoad].value);
 			$('.ucg_intraday .ucg_intraday_text .currency').text(data[toLoad].currency);
 			$('.ucg_intraday .ucg_intraday_text .trend').text(data[toLoad].trend.value).removeAttr("class").addClass("trend").addClass(data[toLoad].trend.direction);
@@ -37,5 +37,5 @@ function getIntradayData() {
 };
 jQuery(document).ready(function() {
 getIntradayData();
-setInterval("getIntradayData()", 8000 );
+setInterval("getIntradayData()", 18000 );
 });

@@ -1,49 +1,62 @@
+
 <!DOCTYPE html>
 <html lang="it">
-	<head>
-		<meta charset="utf-8"> 
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<meta name="description" content="">
-		<meta name="author" content="">
-		<title>Our worldwide presence | Bank Austria</title>
-
-		<link href="plugin/css/bootstrap.css" rel="stylesheet">
-		<link href="plugin/css/chosen.min.css" rel="stylesheet">
-		<link href="plugin/css/all.css" rel="stylesheet">
-		<link href="plugin/css/idangerous.swiper.css" rel="stylesheet">
-
-		<link href="css/font-families.css" rel="stylesheet">
-		<link href="css/main.css" rel="stylesheet">
-		<link href="css/main-desktop.css" rel="stylesheet">
-		<link href="css/worldwide.css" rel="stylesheet">
-		<link href="css/worldwide-desktop.css" rel="stylesheet">
-		<link href="css/retina.css" rel="stylesheet">
-		<!--[if lt IE 9]>
-		<![endif]-->
-
-		<script src="plugin/js/jquery-1.11.2.min.js"></script>
-		<script src="plugin/js/jquery.cookie.js"></script>
-		<script src="plugin/js/bootstrap.min.js"></script>
-		<script src="plugin/js/heartcode-canvasloader-min.js"></script>
-		<script src="plugin/js/icheck.min.js"></script>
-		<script src="plugin/js/chosen.jquery.min.js"></script>
-		<script src="plugin/js/idangerous.swiper.js"></script>
-
-		<script src="js/utility.js"></script>
-		<script src="js/jquery.headerUBIS.js"></script>
-		<script src="js/main.js"></script>
+<head>
+	<meta charset="utf-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Our worldwide presence | Bank Austria</title>
+	
+		<link type="text/css" rel="stylesheet" href="plugin/css/bootstrap.css"/>
+	<link type="text/css" rel="stylesheet" href="css/font-families.css"/>
+	<link type="text/css" rel="stylesheet" href="css/main_new_header.css"/>
+	<link type="text/css" rel="stylesheet" href="css/main_new_header-desktop.css"/>
+	<!--[if lt IE 9]>
+	<link type="text/css" rel="stylesheet" href="css/ie8.css"/>
+	<![endif]-->
+	
+	<!-- SPECIFIC CSS START HERE -->
+	
+		<link rel="stylesheet" href="plugin/css/chosen.min.css">
+		<link rel="stylesheet" href="css/worldwide.css">
+		<link rel="stylesheet" href="css/worldwide-desktop.css">
+		<!-- BREADCRUMB -->
+		<link type="text/css" rel="stylesheet" href="css/ucg_breadcrumb.css"/>
+		<link type="text/css" rel="stylesheet" href="css/ucg_breadcrumb_links.css"/>
+		<link type="text/css" rel="stylesheet" href="css/ucg_sharing.css"/>
+	
+	<!-- SPECIFIC CSS END HERE -->    
+       
+    <link type="text/css" rel="stylesheet" href="css/retina.css"/>
+	
+		<script type="text/javascript" src="plugin/js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="plugin/js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="plugin/js/jquery.autocomplete.js"></script>
+	<script type="text/javascript" src="plugin/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/utility.js"></script>
+	<script type="text/javascript" src="js/jquery.new_headerUBIS.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<!--[if lt IE 9]>
+	  <script type="text/javascript" src="plugin/js/html5shiv.js"></script>
+	  <script type="text/javascript" src="plugin/js/respond.min.js"></script>
+	  <script type="text/javascript" src="js/ie8.js"></script>
+	<![endif]-->
+    
+	<!-- SPECIFIC JS START HERE -->
+		
 		<script src="js/worldwide.js"></script>
-		<!--[if lt IE 9]>
-			<script src="plugin/js/html5shiv.js"></script>
-			<script src="plugin/js/respond.min.js"></script>
-		<![endif]-->
-	</head>
-
-	<body>
-		<div id="message" style="display: none;">Messaggio</div>
-
-		<div id="header">
+		<!-- BREADCRUMB -->
+		<script type="text/javascript" src="js/ucg_sharing.js"></script>
+	
+	<!-- SPECIFIC JS END HERE -->
+	
+  
+</head>
+<body>
+	<div id="message" style="display: none;">Messaggio</div>
+	<div id="header">
 		<div class="sidebar-switch">
 			<a href="javascript:void(0);"></a>	
 		</div>
@@ -53,7 +66,7 @@
 		<div class="header-menu menu hidden-xs">
 			<ul>
 				<li><a class="language ita" href="javascript:void(0);" data-section="menu" data-link="language.ita">ITA</a></li>
-				<li><a class="search" href="javascript:void(0);" data-section="menu" data-link="search">Search</a></li>
+				<li><a class="search searchToolHeader" href="javascript:void(0);">Search</a></li>
 				<li><a class="contactus" href="javascript:void(0);" data-section="menu" data-link="contactus">Contact us</a></li>
 				<li><a class="calendar" href="calendar.html" data-section="menu" data-link="calendar">Calendar</a></li>
 				<li><a class="worldwide" href="worldwide.html" data-section="menu" data-link="worldwide">Worldwide</a></li>
@@ -66,298 +79,368 @@
 			</a>	
 		</div>
 		<div class="search visible-xs">
-			<a href="javascript:void(0);">
+			<a class="searchToolHeader" href="javascript:void(0);">
 			</a>	
 		</div>
+	</div>
+<div class="panel ucg_search" style="display: none;">
+	<div class="container">
+		<input class="findAsYouType" type="text" name="findAsYouType" placeholder="Search for..." data-threshold="3">
+	</div>
+	<div class="ucg_horizontal_line">
+		<div class="spacer1"></div>
+		<div class="spacer2"></div>
+	</div>
+</div>
+<div class="body-container-table">
+	<div class="body-container-cell">
 		<div id="sidebar">
+		<div class="sidebar-scroller">
 			<div class="sidebar-container">
-			<div class="sidebar-element aboutus">
-				<div class="sidebar-header">
-					<a class="sidebar-collapser" href="javascript:void(0);" data-name="aboutus" data-target="#sidebar .sidebar-element.aboutus .collapse">About Us</a>
-					<div class="clear"></div>
+				<div class="sidebar-element aboutus">
+					<div class="sidebar-header">
+						<a class="sidebar-collapser" href="javascript:void(0);" data-name="aboutus" data-target="#sidebar .sidebar-element.aboutus .collapse">About Us</a>
+						<div class="clear"></div>
+					</div>
+					<div class="collapse">
+						<ul>
+							<li><a class="masterLink" href="javascript:void(0);" data-section="aboutus" data-link="marterLink">UniCredit at a glance</a></li>
+							<li><a class="identity" href="javascript:void(0);" data-section="aboutus" data-link="identity">Our identity</a></li>
+							<li><a class="culture" href="javascript:void(0);" data-section="aboutus" data-link="culture">Culture & Territory</a></li>
+							<li><a class="innovation" href="javascript:void(0);" data-section="aboutus" data-link="innovation">Innovation</a></li>
+							<li><a class="business" href="javascript:void(0);" data-section="aboutus" data-link="business">Business model</a></li>
+							<li><a class="brand" href="javascript:void(0);" data-section="aboutus" data-link="brand">Brand & Communication</a></li>
+						</ul>
+					</div>
 				</div>
-				<div class="collapse">
+				<div class="sidebar-element governance">
+					<div class="sidebar-header">
+						<a class="sidebar-collapser" href="javascript:void(0);" data-name="governance" data-target="#sidebar .sidebar-element.governance .collapse">Governance</a>
+						<div class="clear"></div>
+					</div>
+					<div class="collapse">
+						<ul>
+							<li><a class="masterLink" href="javascript:void(0);" data-section="governance" data-link="masterLink">Frontpage</a></li>
+							<li><a class="1" href="javascript:void(0);" data-section="governance" data-link="1">Page 1</a></li>
+							<li><a class="2" href="javascript:void(0);" data-section="governance" data-link="2">Page 2</a></li>
+							<li><a class="3" href="javascript:void(0);" data-section="governance" data-link="3">Page 3</a></li>
+							<li><a class="4" href="javascript:void(0);" data-section="governance" data-link="4">Page 4</a></li>
+							<li><a class="5" href="javascript:void(0);" data-section="governance" data-link="5">Page 5</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="sidebar-element investors">
+					<div class="sidebar-header">
+						<a class="sidebar-collapser" href="javascript:void(0);" data-name="investors" data-target="#sidebar .sidebar-element.investors .collapse" data-parent="#sidebar">Investors</a>
+						<div class="clear"></div>
+					</div>
+					<div class="collapse">
+						<ul>
+							<li><a class="masterLink" href="javascript:void(0);" data-section="investors" data-link="masterLink">Frontpage</a></li>
+							<li><a class="1" href="javascript:void(0);" data-section="investors" data-link="1">Page 1</a></li>
+							<li><a class="2" href="javascript:void(0);" data-section="investors" data-link="2">Page 2</a></li>
+							<li><a class="3" href="javascript:void(0);" data-section="investors" data-link="3">Page 3</a></li>
+							<li><a class="4" href="javascript:void(0);" data-section="investors" data-link="4">Page 4</a></li>
+							<li><a class="5" href="javascript:void(0);" data-section="investors" data-link="5">Page 5</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="sidebar-element pressmedia">
+					<div class="sidebar-header">
+						<a class="sidebar-collapser" href="javascript:void(0);" data-name="pressmedia" data-target="#sidebar .sidebar-element.pressmedia .collapse" data-parent="#sidebar">Press & Media</a>
+						<div class="clear"></div>
+					</div>
+					<div class="collapse">
+						<ul>
+							<li><a class="masterLink" href="javascript:void(0);" data-section="pressmedia" data-link="masterLink">Frontpage</a></li>
+							<li><a class="1" href="javascript:void(0);" data-section="pressmedia" data-link="1">Page 1</a></li>
+							<li><a class="2" href="javascript:void(0);" data-section="pressmedia" data-link="2">Page 2</a></li>
+							<li><a class="3" href="javascript:void(0);" data-section="pressmedia" data-link="3">Page 3</a></li>
+							<li><a class="4" href="javascript:void(0);" data-section="pressmedia" data-link="4">Page 4</a></li>
+							<li><a class="5" href="javascript:void(0);" data-section="pressmedia" data-link="5">Page 5</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="sidebar-element career">
+					<div class="sidebar-header">
+						<a class="sidebar-collapser" href="javascript:void(0);" data-name="career" data-target="#sidebar .sidebar-element.career .collapse" data-parent="#sidebar">Career</a>
+						<div class="clear"></div>
+					</div>
+					<div class="collapse">
+						<ul>
+							<li><a class="masterLink" href="javascript:void(0);" data-section="career" data-link="masterLink">Careers frontpage</a></li>
+							<li><a class="1" href="javascript:void(0);" data-section="career" data-link="1">Page 1</a></li>
+							<li><a class="2" href="javascript:void(0);" data-section="career" data-link="2">Page 2</a></li>
+							<li><a class="3" href="javascript:void(0);" data-section="career" data-link="3">Page 3</a></li>
+							<li><a class="4" href="javascript:void(0);" data-section="career" data-link="4">Page 4</a></li>
+							<li><a class="5" href="javascript:void(0);" data-section="career" data-link="5">Page 5</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="sidebar-element sustainability">
+					<div class="sidebar-header">
+						<a class="sidebar-collapser" href="javascript:void(0);" data-name="sustainability" data-target="#sidebar .sidebar-element.sustainability .collapse" data-parent="#sidebar">Sustainability</a>
+						<div class="clear"></div>
+					</div>
+					<div class="collapse">
+						<ul>
+							<li><a class="masterLink" href="javascript:void(0);" data-section="sustainability" data-link="masterLink">A sustainable Bank</a></li>
+							<li><a class="sustainability" href="javascript:void(0);" data-section="sustainability" data-link="sustainability">Culture of sustainability</a></li>
+							<li><a class="families" href="javascript:void(0);" data-section="sustainability" data-link="families">Invididuals and families</a></li>
+							<li><a class="companies" href="javascript:void(0);" data-section="sustainability" data-link="companies">Companies</a></li>
+							<li><a class="environement" href="javascript:void(0);" data-section="sustainability" data-link="environement">Environment</a></li>
+							<li><a class="investors" href="javascript:void(0);" data-section="sustainability" data-link="investors">Investors and markets</a></li>
+							<li><a class="reports" href="javascript:void(0);" data-section="sustainability" data-link="reports">Reports and resources</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="sidebar-menu menu sidebar-footer" style="display: none;">
 					<ul>
-						<li><a class="masterLink" href="javascript:void(0);" data-section="aboutus" data-link="marterLink">UniCredit at a glance</a></li>
-						<li><a class="identity" href="javascript:void(0);" data-section="aboutus" data-link="identity">Our identity</a></li>
-						<li><a class="culture" href="javascript:void(0);" data-section="aboutus" data-link="culture">Culture & Territory</a></li>
-						<li><a class="innovation" href="javascript:void(0);" data-section="aboutus" data-link="innovation">Innovation</a></li>
-						<li><a class="business" href="javascript:void(0);" data-section="aboutus" data-link="business">Business model</a></li>
-						<li><a class="brand" href="javascript:void(0);" data-section="aboutus" data-link="brand">Brand & Communication</a></li>
+						<li><a class="alerts" href="javascript:void(0);" data-section="menu" data-link="alerts">Alerts</a></li>
+						<li><a class="archive" href="archives.html" data-section="menu" data-link="archive">General archive</a></li>
+					</ul>	
+					<ul class="visible-xs">
+						<li><a class="search" href="javascript:void(0);" data-section="menu" data-link="search">Search</a></li>
+						<li><a class="contactus" href="javascript:void(0);" data-section="menu" data-link="contactus">Contact us</a></li>
+						<li><a class="calendar" href="calendar.html" data-section="menu" data-link="calendar">Calendar</a></li>
+						<li><a class="worldwide" href="worldwide.html" data-section="menu" data-link="worldwide">Worldwide</a></li>
+						<li><a class="uefa" href="javascript:void(0);" data-section="menu" data-link="uefa">Uefa</a></li>
+						<li><a class="online-banking" href="javascript:void(0);" data-section="menu" data-link="online-banking">Online banking</a></li>
+						<li><a class="language ita" href="javascript:void(0);" data-section="menu" data-link="language.ita">Ita</a></li>
 					</ul>
 				</div>
 			</div>
-			<div class="sidebar-element governance">
-				<div class="sidebar-header">
-					<a class="sidebar-collapser" href="javascript:void(0);" data-name="governance" data-target="#sidebar .sidebar-element.governance .collapse">Governance</a>
-					<div class="clear"></div>
-				</div>
-				<div class="collapse">
-					<ul>
-						<li><a class="masterLink" href="javascript:void(0);" data-section="governance" data-link="masterLink">Frontpage</a></li>
-						<li><a class="1" href="javascript:void(0);" data-section="governance" data-link="1">Page 1</a></li>
-						<li><a class="2" href="javascript:void(0);" data-section="governance" data-link="2">Page 2</a></li>
-						<li><a class="3" href="javascript:void(0);" data-section="governance" data-link="3">Page 3</a></li>
-						<li><a class="4" href="javascript:void(0);" data-section="governance" data-link="4">Page 4</a></li>
-						<li><a class="5" href="javascript:void(0);" data-section="governance" data-link="5">Page 5</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="sidebar-element investors">
-				<div class="sidebar-header">
-					<a class="sidebar-collapser" href="javascript:void(0);" data-name="investors" data-target="#sidebar .sidebar-element.investors .collapse" data-parent="#sidebar">Investors</a>
-					<div class="clear"></div>
-				</div>
-				<div class="collapse">
-					<ul>
-						<li><a class="masterLink" href="javascript:void(0);" data-section="investors" data-link="masterLink">Frontpage</a></li>
-						<li><a class="1" href="javascript:void(0);" data-section="investors" data-link="1">Page 1</a></li>
-						<li><a class="2" href="javascript:void(0);" data-section="investors" data-link="2">Page 2</a></li>
-						<li><a class="3" href="javascript:void(0);" data-section="investors" data-link="3">Page 3</a></li>
-						<li><a class="4" href="javascript:void(0);" data-section="investors" data-link="4">Page 4</a></li>
-						<li><a class="5" href="javascript:void(0);" data-section="investors" data-link="5">Page 5</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="sidebar-element pressmedia">
-				<div class="sidebar-header">
-					<a class="sidebar-collapser" href="javascript:void(0);" data-name="pressmedia" data-target="#sidebar .sidebar-element.pressmedia .collapse" data-parent="#sidebar">Press & Media</a>
-					<div class="clear"></div>
-				</div>
-				<div class="collapse">
-					<ul>
-						<li><a class="masterLink" href="javascript:void(0);" data-section="pressmedia" data-link="masterLink">Frontpage</a></li>
-						<li><a class="1" href="javascript:void(0);" data-section="pressmedia" data-link="1">Page 1</a></li>
-						<li><a class="2" href="javascript:void(0);" data-section="pressmedia" data-link="2">Page 2</a></li>
-						<li><a class="3" href="javascript:void(0);" data-section="pressmedia" data-link="3">Page 3</a></li>
-						<li><a class="4" href="javascript:void(0);" data-section="pressmedia" data-link="4">Page 4</a></li>
-						<li><a class="5" href="javascript:void(0);" data-section="pressmedia" data-link="5">Page 5</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="sidebar-element career reverse">
-				<div class="collapse">
-					<ul>
-						<li><a class="masterLink" href="javascript:void(0);" data-section="career" data-link="masterLink">Careers frontpage</a></li>
-						<li><a class="1" href="javascript:void(0);" data-section="career" data-link="1">Page 1</a></li>
-						<li><a class="2" href="javascript:void(0);" data-section="career" data-link="2">Page 2</a></li>
-						<li><a class="3" href="javascript:void(0);" data-section="career" data-link="3">Page 3</a></li>
-						<li><a class="4" href="javascript:void(0);" data-section="career" data-link="4">Page 4</a></li>
-						<li><a class="5" href="javascript:void(0);" data-section="career" data-link="5">Page 5</a></li>
-					</ul>
-				</div>
-				<div class="sidebar-header">
-					<a class="sidebar-collapser" href="javascript:void(0);" data-name="career" data-target="#sidebar .sidebar-element.career .collapse" data-parent="#sidebar">Career</a>
-					<div class="clear"></div>
-				</div>
-			</div>
-			<div class="sidebar-element sustainability reverse">
-				<div class="collapse">
-					<ul>
-						<li><a class="masterLink" href="javascript:void(0);" data-section="sustainability" data-link="masterLink">A sustainable Bank</a></li>
-						<li><a class="sustainability" href="javascript:void(0);" data-section="sustainability" data-link="sustainability">Culture of sustainability</a></li>
-						<li><a class="families" href="javascript:void(0);" data-section="sustainability" data-link="families">Invididuals and families</a></li>
-						<li><a class="companies" href="javascript:void(0);" data-section="sustainability" data-link="companies">Companies</a></li>
-						<li><a class="environement" href="javascript:void(0);" data-section="sustainability" data-link="environement">Environment</a></li>
-						<li><a class="investors" href="javascript:void(0);" data-section="sustainability" data-link="investors">Investors and markets</a></li>
-						<li><a class="reports" href="javascript:void(0);" data-section="sustainability" data-link="reports">Reports and resources</a></li>
-					</ul>
-				</div>
-				<div class="sidebar-header">
-					<a class="sidebar-collapser" href="javascript:void(0);" data-name="sustainability" data-target="#sidebar .sidebar-element.sustainability .collapse" data-parent="#sidebar">Sustainability</a>
-					<div class="clear"></div>
-				</div>
-			</div>
-			<div class="sidebar-menu menu sidebar-footer" style="display: none;">
-				<ul>
-					<li><a class="alerts" href="javascript:void(0);" data-section="menu" data-link="alerts">Alerts</a></li>
-					<li><a class="archive" href="archives.html" data-section="menu" data-link="archive">General archive</a></li>
-				</ul>	
-				<ul class="visible-xs">
-					<li><a class="search" href="javascript:void(0);" data-section="menu" data-link="search">Search</a></li>
-					<li><a class="contactus" href="javascript:void(0);" data-section="menu" data-link="contactus">Contact us</a></li>
-					<li><a class="calendar" href="calendar.html" data-section="menu" data-link="calendar">Calendar</a></li>
-					<li><a class="worldwide" href="worldwide.html" data-section="menu" data-link="worldwide">Worldwide</a></li>
-					<li><a class="uefa" href="javascript:void(0);" data-section="menu" data-link="uefa">Uefa</a></li>
-					<li><a class="online-banking" href="javascript:void(0);" data-section="menu" data-link="online-banking">Online banking</a></li>
-					<li><a class="language ita" href="javascript:void(0);" data-section="menu" data-link="language.ita">Ita</a></li>
-				</ul>
-			</div>
-		</div>
 		</div>
 	</div>
-
+	    
+	</div>
+	<div class="body-container-cell">
 		<div id="mainContainer">
-			<div id="breadcrumb">
-				<ul>
-					<li><a href="javascript:void(0);">Info</a></li>
-					<li><a href="worldwide.html">Our worldwide presence</a></li>
-					<li><a href="worldwideCountry.html">Austria</a></li>
-					<li>Bank Austria</li>
-				</ul>
-			</div>
-
-			<div id="worldwide">
-				<div class="panel" id="companyTitle">
-					<div class="container">
-						<h1>Bank Austria</h1>
+			<div class="mainContainer-wrapper">
+			
+			<!-- PAGE START HERE -->
+				<div class="parsys contentpagewelcome-parsys">
+					<div class="section">
+						<!-- BREADCRUMB -->
+						<div class="panel ucg_breadcrumb">
+							<div class="container">
+								<div class="panel ucg_breadcrumb_crumbs col-xs-12">
+									<div class="container">
+										<ul>
+											<li><a href="javascript:void(0);">Info</a></li>
+											<li><a href="worldwide.html">Our worldwide presence</a></li>
+											<li><a href="worldwideCountry.html">Austria</a></li>
+											<li>Bank Austria</li>
+										</ul>
+									</div>
+								</div>
+								<div class="panel ucg_breadcrumb_addon">
+									<div class="container">
+										<!-- BUTTONS -->
+										<div class="ucg_breadcrumb_links col-xs-12">
+											<a class="second-crosslink" href="javascript:void(0);">Second crosslink</a>
+											<a class="first-crosslink" href="javascript:void(0);">First crosslink</a>
+										</div>
+										<!-- BUTTONS -->
+										<!-- SHARING -->
+										<div class="ucg_breadcrumb_sharing col-xs-12">
+											<div class="icon collapsed">
+												<a href="javascript:void(0);" data-target=".ucg_breadcrumb_sharing_panel.collapse" data-toggle="collapse">Share</a>
+											</div>								
+										</div>
+										<!-- SHARING -->
+									</div>
+								</div>
+								<div class="clear"></div>
+								
+							</div>
+							<!-- SHARING COLLAPSABLE-->
+								<div class="panel panel-collapse ucg_breadcrumb_sharing_panel collapse">
+									<div class="container">
+										<div class="arrows">
+											<img class="arrow-down" alt="Arrow Down" src="img/static/breadcrumb-share-down-arrow.png">
+										</div>
+										<div class="col-xs-12 col-sm-4 col-md-3 left">
+											<h2>Share this event on:</h2>
+										</div>
+										<div class="col-xs-12 col-sm-7 col-md-8">
+											<ul>
+												<li class="col-xs-6"><a href="javascript:void(0);" class="facebook">Facebook</a></li>
+												<li class="col-xs-6"><a href="javascript:void(0);" class="twitter">Twitter</a></li>
+												<li class="col-xs-6"><a href="javascript:void(0);" class="linkedin">LinkedIn</a></li>
+												<li class="col-xs-6"><a href="javascript:void(0);" class="googleplus">Google +</a></li>
+											</ul>
+										</div>
+										<div class="closer hidden-xs">
+											<a href="javascript:void(0);" data-target=".ucg_breadcrumb_sharing_panel.collapse" data-toggle="collapse">
+												<img alt="Cross" src="img/static/breadcrumb-share-cross.png">
+											</a>
+										</div>
+									</div>
+								</div>
+								<!-- SHARING COLLAPSABLE-->
+						</div>
+						<!-- BREADCRUMB -->
 					</div>
 				</div>
-
-				<div class="panel" id="companyInfos">
-					<div class="container">
-						<div class="inner col-xs-12 col-sm-3 left">
-							<div class="logo">
-								<img src="img/static/Bank_Austria_logo.png">
-							</div>
+	
+				<div id="worldwide">
+					<div class="panel" id="companyTitle">
+						<div class="container">
+							<h1>Bank Austria</h1>
 						</div>
-						<div class="inner col-xs-12 col-sm-9 right">
-							<div class="mappa">
-								<img src="img/static/mappa_Austria.png">
-							</div>
-						</div>
-						<div class="inner col-xs-12 col-sm-3 left">
-							<div class="subtitle">Headquarters</div>
-							<div class="infos">
-								<div class="info">Schottengasse 6-8</div>
-								<div class="info">1010 - Vienna</div>
-								<div class="info">Austria</div>
-								<div class="getDirections"><a href="javascript:void(0);">Get directions</a></div>
-							</div>
-							<div class="subtitle">Main Contacts</div>
-							<div class="infos">
-								<div class="info">phone: +43 50505 25</div>
-								<div class="info"><a href="mailto:info@unicreditgroup.at">info@unicreditgroup.at</a></div>
-							</div>
-							<div class="subtitle links companyLessInfoOff">
-								Links
-								<span class="arrow visible-xs"></span>
-							</div>
-							<div class="externalLinkAndIconsContainer">
-								<div class="externalLinkContainer companyLessInfoOff">
-									<div class="externalLink">
-										<a href="http://www.bankaustria.at" target="_blank">bankaustria.at</a>
-									</div>
-								</div>
-								<div class="icons companyLessInfoOff">
-									<div class="homeBankingLogin icon">
-										<a href="javascript:void(0);">Home banking login</a>
-									</div>
-									<div class="seeJobPositions icon">
-										<a href="javascript:void(0);">See job positions</a>
-									</div>
-									<div class="findBranch icon">
-										<a href="javascript:void(0);">Find a branch</a>
-									</div>
-									<div class="linkedin icon">
-										<a href="https://www.linkedin.com/company/unicredit-bank-austria-ag" target="_blank">Linkedin</a>
-									</div>
+					</div>
+	
+					<div class="panel" id="companyInfos">
+						<div class="container">
+							<div class="inner col-xs-12 col-sm-3 left">
+								<div class="logo">
+									<img src="img/static/Bank_Austria_logo.png">
 								</div>
 							</div>
-							<div class="companyInfo companyLessInfoOn">
-								<div class="companyInfoTitle">
-									Company info
+							<div class="inner col-xs-12 col-sm-9 right">
+								<div class="mappa">
+									<img src="img/static/mappa_Austria.png">
+								</div>
+							</div>
+							<div class="inner col-xs-12 col-sm-3 left">
+								<div class="subtitle">Headquarters</div>
+								<div class="infos">
+									<div class="info">Schottengasse 6-8</div>
+									<div class="info">1010 - Vienna</div>
+									<div class="info">Austria</div>
+									<div class="getDirections"><a href="javascript:void(0);">Get directions</a></div>
+								</div>
+								<div class="subtitle">Main Contacts</div>
+								<div class="infos">
+									<div class="info">phone: +43 50505 25</div>
+									<div class="info"><a href="mailto:info@unicreditgroup.at">info@unicreditgroup.at</a></div>
+								</div>
+								<div class="subtitle links companyLessInfoOff">
+									Links
 									<span class="arrow visible-xs"></span>
 								</div>
-								<div class="companyInfoBody"><b>Type:</b> Representative office<br></div>
-							</div>
-						</div>
-						<div class="inner col-xs-12 col-sm-9 right">
-							<div class="companyInfo companyLessInfoOff">
-								<div class="companyInfoTitle">
-									Company info
-									<span class="arrow visible-xs"></span>
+								<div class="externalLinkAndIconsContainer">
+									<div class="externalLinkContainer companyLessInfoOff">
+										<div class="externalLink">
+											<a href="http://www.bankaustria.at" target="_blank">bankaustria.at</a>
+										</div>
+									</div>
+									<div class="icons companyLessInfoOff">
+										<div class="homeBankingLogin icon">
+											<a href="javascript:void(0);">Home banking login</a>
+										</div>
+										<div class="seeJobPositions icon">
+											<a href="javascript:void(0);">See job positions</a>
+										</div>
+										<div class="findBranch icon">
+											<a href="javascript:void(0);">Find a branch</a>
+										</div>
+										<div class="linkedin icon">
+											<a href="https://www.linkedin.com/company/unicredit-bank-austria-ag" target="_blank">Linkedin</a>
+										</div>
+									</div>
 								</div>
-								<div class="companyInfoBody">
-									<b>Business category:</b> Consumer and SME Banking, Corporate and Investments banking<br>
-									<b>Type:</b> Representative office
-									<p class="title"><b>Market leader in Austria</b></p>
-									<p>
-										With total assets of EUR 220.8 billion and market shares ranging from 20 to 65 per cent, Bank Austria is by far the largest bank in Austria.<br>
-										As far as Austrian companies are concerned, Bank Austria is the main banker for:
-									</p>
-									<ul>
-										<li>82 per cent of large corporates;</li>
-										<li>62 per cent of medium-sized companies;</li>
-										<li>45 per cent of small businesses are customers of Bank Austria.</li>
-									</ul>
-									<p>
-										As a modern universal bank, it provides its customers with access to financial markets. The bank operates a network of more than 360 branch offices within Austria, with a total of 11,000 employees
-									</p>
-									<p class="title"><b>The largest network in Central and Eastern Europe</b></p>
-									<p>
-										Austria is one of the core markets of UniCredit Group, together with Germany, Italy and Central and Eastern Europe.<br>
-										Within UniCredit Group, Bank Austria is responsible for all banking operations in the growth markets of Central and Eastern Europe (CEE), with the exception of Poland.<br>
-										Vienna is thus the controls centre for a network stretching from the Baltic to the Black Sea and from Hungary to the Chinese border.<br>
-										Our values Our common basic values are enshrined in the Integrity Charter. These values reflect our corporate philosophy, which determines our actions and behav- iour.
-									</p>
-									<p class="title"><b>History</b></p>
-									<p>
-										Bank Austria was created by the merger of Austria's leading banks with a long- standing tradition, the "k.k. privilegirte Oesterreichische Credit-Anstalt für Handel und Gewerbe" (founded in 1855), the "k.k. privilegierte Oesterreichische Laender- bank" (founded in 1880) and the "Zentral-Sparkasse der Gemeinde Wien" (founded in 1905).<br>
-										Bank Austria has been a member of UniCredit Group since November 2005.
-									</p>
-									<p class="title"><b>Recognised excellence</b></p>
-									<p>
-										In the past years, Bank Austria has received more than 250 awards from renowned international financial magazines in recognition of its achievements. Euromoney and The Banker have repeatedly named Bank Austria "Best Bank" and "Bank of the Year". Numerous awards have also been given to Bank Austria in the fields of custody, trade finance, project finance and foreign exchange, and to Bank Austria's CEE subsidiaries..
-									</p>
+								<div class="companyInfo companyLessInfoOn">
+									<div class="companyInfoTitle">
+										Company info
+										<span class="arrow visible-xs"></span>
+									</div>
+									<div class="companyInfoBody"><b>Type:</b> Representative office<br></div>
+								</div>
+							</div>
+							<div class="inner col-xs-12 col-sm-9 right">
+								<div class="companyInfo companyLessInfoOff">
+									<div class="companyInfoTitle">
+										Company info
+										<span class="arrow visible-xs"></span>
+									</div>
+									<div class="companyInfoBody">
+										<b>Business category:</b> Consumer and SME Banking, Corporate and Investments banking<br>
+										<b>Type:</b> Representative office
+										<p class="title"><b>Market leader in Austria</b></p>
+										<p>
+											With total assets of EUR 220.8 billion and market shares ranging from 20 to 65 per cent, Bank Austria is by far the largest bank in Austria.<br>
+											As far as Austrian companies are concerned, Bank Austria is the main banker for:
+										</p>
+										<ul>
+											<li>82 per cent of large corporates;</li>
+											<li>62 per cent of medium-sized companies;</li>
+											<li>45 per cent of small businesses are customers of Bank Austria.</li>
+										</ul>
+										<p>
+											As a modern universal bank, it provides its customers with access to financial markets. The bank operates a network of more than 360 branch offices within Austria, with a total of 11,000 employees
+										</p>
+										<p class="title"><b>The largest network in Central and Eastern Europe</b></p>
+										<p>
+											Austria is one of the core markets of UniCredit Group, together with Germany, Italy and Central and Eastern Europe.<br>
+											Within UniCredit Group, Bank Austria is responsible for all banking operations in the growth markets of Central and Eastern Europe (CEE), with the exception of Poland.<br>
+											Vienna is thus the controls centre for a network stretching from the Baltic to the Black Sea and from Hungary to the Chinese border.<br>
+											Our values Our common basic values are enshrined in the Integrity Charter. These values reflect our corporate philosophy, which determines our actions and behav- iour.
+										</p>
+										<p class="title"><b>History</b></p>
+										<p>
+											Bank Austria was created by the merger of Austria's leading banks with a long- standing tradition, the "k.k. privilegirte Oesterreichische Credit-Anstalt für Handel und Gewerbe" (founded in 1855), the "k.k. privilegierte Oesterreichische Laender- bank" (founded in 1880) and the "Zentral-Sparkasse der Gemeinde Wien" (founded in 1905).<br>
+											Bank Austria has been a member of UniCredit Group since November 2005.
+										</p>
+										<p class="title"><b>Recognised excellence</b></p>
+										<p>
+											In the past years, Bank Austria has received more than 250 awards from renowned international financial magazines in recognition of its achievements. Euromoney and The Banker have repeatedly named Bank Austria "Best Bank" and "Bank of the Year". Numerous awards have also been given to Bank Austria in the fields of custody, trade finance, project finance and foreign exchange, and to Bank Austria's CEE subsidiaries..
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-
-			<div id="footer">
-			<div class="lightGreyFooter hidden-xs">
-				<div class="footer-row general">
-					<ul>
-						<li><a href="javascript:void(0);" class="pressmedia">Press Media</a></li>
-						<li><a href="javascript:void(0);" class="contactus">Contact us</a></li>
-						<li><a href="javascript:void(0);" class="archive">General Archive</a></li>
-						<li><a href="javascript:void(0);" class="uclOfficialBank">Uefa Champions<br/>League Official Bank</a></li>
-					</ul>
+				
+			
+			<!-- PAGE END HERE -->
+						
+								<div id="footer">
+					<div class="darkGreyFooter">
+						<div class="footer-row utility">
+							<ul class="col-xs-6">
+								<li><a href="javascript:void(0);">Feed Rss UniCreditGroup.eu</a></li>
+								<li><a href="javascript:void(0);">Mobile & Apps</a></li>
+								<li><a href="javascript:void(0);">Contacts</a></li>
+								<li><a href="javascript:void(0);">Glossary</a></li>
+							</ul>  	                                          
+							<ul class="col-xs-6">
+								<li><a href="javascript:void(0);">Useful links</a></li>
+								<li><a href="javascript:void(0);">System requirement</a></li>
+								<li><a href="javascript:void(0);">Site Map</a></li>
+								<li><a href="javascript:void(0);">Faq</a></li>
+							</ul>  
+							<div class="clear"></div>	                                             	
+						</div>
+						<div class="footer-row info">
+							<ul class="col-xs-6">
+								<li><a href="javascript:void(0);">General Company Info</a></li>
+								<li><a href="javascript:void(0);">Disclaimer</a></li>
+								<li><a href="javascript:void(0);">Privacy</a></li>
+							</ul>  	                                          
+							<ul class="col-xs-6">
+								<li><a href="javascript:void(0);">SDIR and 1Info</a></li>
+								<li><a href="javascript:void(0);">AML and Patriot Act</a></li>
+								<li><a href="javascript:void(0);">Credits</a></li>
+							</ul>
+							<div class="clear"></div>
+						</div>
+						<div class="footer-row logos">
+							<img alt="Logo Patti Chiari" src="img/static/footer-nav-pattichiari.png">
+							<img alt="Logo Champions League" src="img/static/footer-nav-champions-light.png">
+							<div class="clear"></div>
+						</div>
+						<div class="footer-row copyright">
+							Â© 2012 UniCredit S.p.A.<span class="hidden-xs"> - </span><br class="visible-xs"/>P.Iva 00348170101 Tutti i diritti riservati
+							<div class="clear"></div>
+						</div>			
+					</div>
 				</div>
-			</div>
-			<div class="darkGreyFooter">
-				<div class="footer-row utility">
-					<ul class="col-xs-6">
-						<li><a href="javascript:void(0);">Feed Rss UniCreditGroup.eu</a></li>
-						<li><a href="javascript:void(0);">Mobile & Apps</a></li>
-						<li><a href="javascript:void(0);">Contacts</a></li>
-						<li><a href="javascript:void(0);">Glossary</a></li>
-					</ul>  	                                          
-					<ul class="col-xs-6">
-						<li><a href="javascript:void(0);">Useful links</a></li>
-						<li><a href="javascript:void(0);">System requirement</a></li>
-						<li><a href="javascript:void(0);">Site Map</a></li>
-						<li><a href="javascript:void(0);">Faq</a></li>
-					</ul>  
-					<div class="clear"></div>	                                             	
-				</div>
-				<div class="footer-row info">
-					<ul class="col-xs-6">
-						<li><a href="javascript:void(0);">General Company Info</a></li>
-						<li><a href="javascript:void(0);">Disclaimer</a></li>
-						<li><a href="javascript:void(0);">Privacy</a></li>
-					</ul>  	                                          
-					<ul class="col-xs-6">
-						<li><a href="javascript:void(0);">SDIR and 1Info</a></li>
-						<li><a href="javascript:void(0);">AML and Patriot Act</a></li>
-						<li><a href="javascript:void(0);">Credits</a></li>
-					</ul>
-					<div class="clear"></div>
-				</div>
-				<div class="footer-row logos">
-					<img alt="Logo Patti Chiari" src="img/static/footer-nav-pattichiari.png">
-					<img alt="Logo Champions League" src="img/static/footer-nav-champions-light.png">
-					<div class="clear"></div>
-				</div>
-				<div class="footer-row copyright">
-					© 2012 UniCredit S.p.A.<span class="hidden-xs"> - </span><br class="visible-xs"/>P.Iva 00348170101 Tutti i diritti riservati
-					<div class="clear"></div>
-				</div>			
 			</div>
 		</div>
-		</div>
-	</body>
+	</div>
+</div>
+</body>
 </html>

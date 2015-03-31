@@ -1,0 +1,132 @@
+/************** ucg_disclaimer **************/
+
+.ucg_disclaimer .modal {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+}
+
+.ucg_disclaimer .modal-dialog {
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.ucg_disclaimer .modal-content {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+.ucg_disclaimer .modal-header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	border: none;
+}
+
+.ucg_disclaimer ::-webkit-scrollbar {
+	-webkit-appearance: none;
+	background: #f1f3f5;
+	border-left: 1px solid darken(#f1f3f5, 10%);
+	width: 10px;
+}
+
+.ucg_disclaimer ::-webkit-scrollbar-thumb {
+	background: darken(#f1f3f5, 20%);
+}
+
+.ucg_disclaimer .modal-body {
+	position: absolute;
+/* 	top: 50px; */
+	top: 0;
+	bottom: 0;
+	font-size: 15px;
+	overflow: auto;
+/* 	padding: 0 15px 25px; */
+	padding: 50px 15px 25px;
+	width: 100%;
+}
+
+.ucg_disclaimer .modal-body .ucg_disclaimer_logo {
+	margin-bottom: 50px;
+}
+
+.ucg_disclaimer .modal-body .ucg_disclaimer_title {
+	font-size: 17px;
+	margin-bottom: 30px;
+}
+
+.ucg_disclaimer .ucg_disclaimer_radio_container,
+.ucg_disclaimer .ucg_disclaimer_text p {
+	line-height: 22px;
+	margin-bottom: 25px;
+}
+
+.ucg_disclaimer .ucg_disclaimer_radio,
+.ucg_disclaimer .ucg_disclaimer_radio.checked {
+	display: block;
+	font-family: "unicredit-bold";
+	cursor: pointer;
+	line-height: 22px;
+	margin-left: 15px;
+	padding-left: 35px;
+}
+
+.ucg_disclaimer .ucg_disclaimer_radio {
+	background: url('../img/static/radio-button-unchecked.png') no-repeat scroll;
+}
+
+.ucg_disclaimer .ucg_disclaimer_radio.checked {
+	background: url('../img/static/radio-button-checked.png') no-repeat scroll;
+}
+
+.ucg_disclaimer .ucg_disclaimer_radio input {
+	display: none;
+}
+
+.ucg_disclaimer .ucg_disclaimer_button {
+	background-color: #00afd0;
+	border-radius: 3px;
+	float: right;
+	margin-top: 5px;
+	margin-bottom: 25px;
+	padding: 0px 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.ucg_disclaimer .ucg_disclaimer_button a {
+	background: url('../img/static/white_arrow_right.png') no-repeat scroll right 21px;
+	font-family: "unicredit-bold";
+	font-size: 14px;
+	color: #FFFFFF;
+	line-height: 40px;
+	padding-right: 12px;
+}
+
+.ucg_disclaimer .ucg_disclaimer_footnote {
+	border-top: 1px solid #c9c9c9;
+	font-size: 13px;
+	color: #626262;
+	clear: both;
+	line-height: 1;
+	padding-top: 22px;
+}
+
+@media (min-width: 768px) {
+	.ucg_disclaimer .modal-body {
+/* 		padding: 0 150px 25px; */
+		padding: 50px 150px 25px;
+	}
+}

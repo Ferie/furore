@@ -1,5 +1,5 @@
 @media (min-width: 768px) {
-	.container > div {
+/*	.container > div {
 		padding: 0 10px;	
 	}
 
@@ -9,7 +9,7 @@
 
 	.container > div:last-child {
 		padding-right: 0;	
-	}
+	}*/
 
 	.container > .with-cross {
 		height: 40px;

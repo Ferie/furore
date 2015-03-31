@@ -2,28 +2,43 @@
 	width: 100%;
 	height: auto;
 }
+.ucg_intraday .ucg_intraday_title {
+	padding:  0 0 15px 0;
+}
+.ucg_intraday .ucg_intraday_title > span {
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #999;
+}
+.ucg_intraday .ucg_intraday_text {
+	border: 1px solid #c9c9c9;
+	padding: 5px 0px 13px 7px;
+}
 .ucg_intraday .ucg_intraday_text > span {
 	float: left;
+	color: #333;
 }
 .ucg_intraday .ucg_intraday_text .title {
 	font-family: 'unicredit-medium';
 	text-transform: uppercase;
+	font-size: 10px;
+	color: #626262;
+	margin-bottom: 5px;
 }
 .ucg_intraday .ucg_intraday_text .value {
 	font-family: 'unicredit-light';
-	font-size: 60px;
-	line-height: 60px;
+	font-size: 70px;
+	line-height: 70px;
 }
 .ucg_intraday .ucg_intraday_text .currency {
-    font-size: 25px;
-    line-height: 25px;
-    margin-bottom: 4px;
-    margin-top: 31px;
+    font-size: 70px;
+    line-height: 70px;
+    font-family: 'unicredit-regular';
 }
 .ucg_intraday .ucg_intraday_text .trend {
 	float: right;
 	font-size: 22px;
-	margin-top: 34px;
+	margin-top: 41px;
 	line-height: 22px;
 	margin-bottom: 4px;
 	padding-right: 23px;
@@ -31,6 +46,9 @@
 	background-color: transparent;
 	background-repeat: no-repeat;
 	background-position: center right;
+}
+.ucg_intraday .ucg_intraday_text .trend:after {
+	content: '%';
 }
 .ucg_intraday .ucg_intraday_text .trend.up {
 	color: #00a197;
@@ -41,108 +59,127 @@
 	background-image: url('../img/static/ucg_intraday_arrow_down.png');
 }
 .ucg_intraday .ucg_intraday_date {
-	margin-top: 36px;	
+	float: left;
+	width: 100%;	
+	padding: 3px 7px;
+	border-left: 1px solid #c9c9c9;
+	border-right: 1px solid #c9c9c9;
+	border-bottom: 1px solid #c9c9c9;
 }
-.ucg_intraday .ucg_intraday_date span,
-.ucg_intraday .ucg_intraday_date > div {
-	font-family: 'unicredit-medium';
+.ucg_intraday.only-date .ucg_intraday_date {
+	margin-top: 0px;
+	border-top: 1px solid #c9c9c9;	
+}
+.ucg_intraday .ucg_intraday_date span {
 	display: inline-block;
-	float: left;	
-	font-size: 12px;
-	line-height: 12px;
+	float: left;
+	padding-top: 11px;
+	font-size: 15px;
+	line-height: 15px;
 }
-.ucg_intraday .ucg_intraday_date > div {
-	padding: 9px 0px 9px 5px;
+.ucg_intraday .ucg_intraday_date .month {
+	font-family: 'unicredit-medium';
+	margin-right: 5px;	
+}
+.ucg_intraday .ucg_intraday_date .day{
+	margin-right: 10px;
 }
 .ucg_intraday .ucg_intraday_date .day,
 .ucg_intraday .ucg_intraday_date .hours,
 .ucg_intraday .ucg_intraday_date .minutes {
-	font-family: 'unicredit-light';
-	font-size: 43px;
-	line-height: 43px;
+	font-family: 'unicredit-regular';
+	padding-top: 0;
+	font-size: 28px;
+	line-height: 28px;
+}
+.ucg_intraday .ucg_intraday_date .hours:before {
+	font-size: 20px;
+	content: 'h. ';
+	line-height: 20px;
 }
 .ucg_intraday .ucg_intraday_date .hours:after {
 	content: ':';
 }
-.ucg_intraday .ucg_intraday_date .month {
-	width: 100%;
-}
 @media (min-width: 768px) {
 	.ucg_intraday.with-image > .container {
-		padding: 24px 10px 0;
+		padding: 0 10px;
 	}
 	.ucg_intraday.ucg_image > .container {
 		padding: 0 10px;
 	}
-	.ucg_intraday .ucg_intraday_text .value {
-		font-size: 36px;
-		line-height: 36px;
-	}
+	.ucg_intraday .ucg_intraday_text .value,
 	.ucg_intraday .ucg_intraday_text .currency {
-	    font-size: 18px;
-	    line-height: 18px;
-	    margin-bottom: 4px;
-	    margin-top: 14px;
+	    font-size: 36px;
+	    line-height: 36px;
 	}
 	.ucg_intraday .ucg_intraday_text .trend {
 		font-size: 18px;
-		margin-top: 14px;
+		margin-top: 16px;
 		line-height: 18px;
 		margin-bottom: 4px;
 		padding-right: 23px;
 	}
 	.ucg_intraday .ucg_intraday_date {
-		margin-top: 20px;	
+		padding-top: 5px;
+	}	
+	.ucg_intraday.only-date .ucg_intraday_date {
+		margin-top: 38px;
 	}
-	.ucg_intraday .ucg_intraday_date > div {
-		padding: 6px 0px 6px 3px;
+	.ucg_intraday .ucg_intraday_date span {
+		padding-top: 10px;
+		font-size: 12px;
+		line-height: 12px;
+		padding-bottom: 5px;
 	}
 	.ucg_intraday .ucg_intraday_date .day,
 	.ucg_intraday .ucg_intraday_date .hours,
 	.ucg_intraday .ucg_intraday_date .minutes {
-		font-size: 36px;
-		line-height: 36px;
+		font-size: 24px;
+		line-height: 24px;
+	}
+	.ucg_intraday .ucg_intraday_date .hours:before {
+		font-size: 14px;
+		content: 'h. ';
+		line-height: 14px;
+	}
+	.ucg_intraday .ucg_intraday_date .day{
+		margin-right: 5px;
+	}
+	.ucg_intraday .ucg_intraday_date .month {
+		margin-right: 3px;	
 	}
 }
 @media (min-width: 960px) {
 	
 	.ucg_intraday.with-image > .container {
-		padding: 28px 0 0 50px;
+		padding: 0 0 0 30px;
 	}
 	.ucg_intraday.ucg_image > .container {
 		padding: 0 20px 0 0;
 	}
+	
 	.ucg_intraday .ucg_intraday_text .value {
-		font-size: 60px;
-		line-height: 60px;
+		font-size: 70px;
+		line-height: 70px;
 	}
 	.ucg_intraday .ucg_intraday_text .currency {
-	    font-size: 25px;
-	    line-height: 25px;
-	    margin-bottom: 4px;
-	    margin-top: 31px;
+	    font-size: 70px;
+	    line-height: 70px;
 	}
 	.ucg_intraday .ucg_intraday_text .trend {
 		font-size: 22px;
-		margin-top: 34px;
+		margin-top: 41px;
 		line-height: 22px;
 		margin-bottom: 4px;
 		padding-right: 23px;
 	}
-	.ucg_intraday .ucg_intraday_date {
-		margin-top: 36px;	
+	.ucg_intraday.only-date .ucg_intraday_date {
+		margin-top: 50px;
 	}
-	.ucg_intraday .ucg_intraday_date > div {
-		padding: 6px 0px 6px 3px;
-	}
-	.ucg_intraday .ucg_intraday_date .day,
-	.ucg_intraday .ucg_intraday_date .hours,
-	.ucg_intraday .ucg_intraday_date .minutes {
-		font-size: 36px;
-		line-height: 36px;
-	}
-	.ucg_intraday .ucg_intraday_date > div {
-		padding: 9px 0px 9px 5px;
+	.ucg_intraday .ucg_intraday_date span {
+		padding-top: 23px;
+		font-size: 15px;
+		line-height: 15px;
 	}
 	.ucg_intraday .ucg_intraday_date .day,
 	.ucg_intraday .ucg_intraday_date .hours,
@@ -150,8 +187,13 @@
 		font-size: 43px;
 		line-height: 43px;
 	}
+	.ucg_intraday .ucg_intraday_date .hours:before {
+		font-size: 20px;
+		content: 'h. ';
+		line-height: 20px;
+	}
 	#mainContainer.with-sidebar-opened .ucg_intraday.with-image > .container {
-		padding: 24px 10px 0;
+		padding: 0 10px;
 	}
 	#mainContainer.with-sidebar-opened .ucg_intraday.ucg_image > .container {
 		padding: 0 10px;
@@ -161,28 +203,45 @@
 		line-height: 36px;
 	}
 	#mainContainer.with-sidebar-opened .ucg_intraday .ucg_intraday_text .currency {
-	    font-size: 18px;
-	    line-height: 18px;
-	    margin-bottom: 4px;
-	    margin-top: 14px;
+	    font-size: 36px;
+	    line-height: 36px;
 	}
 	#mainContainer.with-sidebar-opened .ucg_intraday .ucg_intraday_text .trend {
+		margin-top: 16px;
 		font-size: 18px;
-		margin-top: 14px;
 		line-height: 18px;
 		margin-bottom: 4px;
 		padding-right: 23px;
 	}
+	
 	#mainContainer.with-sidebar-opened .ucg_intraday .ucg_intraday_date {
-		margin-top: 20px;	
-	}
-	#mainContainer.with-sidebar-opened .ucg_intraday .ucg_intraday_date > div {
-		padding: 6px 0px 6px 3px;
+		padding-top: 5px;
+	}	
+	#mainContainer.with-sidebar-opened .ucg_intraday .ucg_intraday_date span {
+		padding-top: 10px;
+		font-size: 12px;
+		line-height: 12px;
+		padding-bottom: 5px;
 	}
 	#mainContainer.with-sidebar-opened .ucg_intraday .ucg_intraday_date .day,
 	#mainContainer.with-sidebar-opened .ucg_intraday .ucg_intraday_date .hours,
 	#mainContainer.with-sidebar-opened .ucg_intraday .ucg_intraday_date .minutes {
-		font-size: 36px;
-		line-height: 36px;
+		padding-top: 0;
+		font-size: 24px;
+		line-height: 24px;
+	}	
+	#mainContainer.with-sidebar-opened .ucg_intraday.only-date .ucg_intraday_date {
+		margin-top: 38px;
+	}
+	#mainContainer.with-sidebar-opened .ucg_intraday .ucg_intraday_date .hours:before {
+		font-size: 14px;
+		content: 'h. ';
+		line-height: 14px;
+	}
+	#mainContainer.with-sidebar-opened .ucg_intraday .ucg_intraday_date .day{
+		margin-right: 5px;
+	}
+	#mainContainer.with-sidebar-opened .ucg_intraday .ucg_intraday_date .month {
+		margin-right: 3px;	
 	}
 }

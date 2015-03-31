@@ -4,56 +4,149 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title>UniCredit - Project Index</title>
+		<link type="text/css" rel="stylesheet" href="plugin/css/bootstrap.css"/>
+		<link type="text/css" rel="stylesheet" href="css/font-families.css"/>
+		<link type="text/css" rel="stylesheet" href="css/main.css"/>
+		<script type="text/javascript" src="plugin/js/jquery-1.11.2.min.js"></script>
+		<style>
+		body {
+			background-color: #333;
+			color: #fff;
+			font-family: "unicredit-regular";
+			font-size: 18px;
+		}
+		a.jsp {
+			color: #aa1c0d;
+		}
+		</style>
+		<script type="text/javascript">
+		$(document).ready(function () {
+			$('.with-jsp li a:not(.no-page)').each(function(i,e){
+				var url = $(e).attr("href");
+				if(url.lastIndexOf(".html")>=0){
+					var $jspurl = $("<a/>").addClass("jsp").attr("href", url.substring(0, url.lastIndexOf("."))+".jsp").text("(JSP)");
+					$(e).parent().append(" ").append($jspurl);
+				}
+			});
+		});
+		</script>
 	</head>
-	<body>
-		<h2>Templates</h2>
-		<ul>
-			<li><a href="calendar.html">Calendar</a></li>
-			<li><a href="calendar-noresults.html">Calendar - No Results</a></li>
-			<li><a href="calendar-detail-landscape.html">Calendar detail landscape</a></li>
-			<li><a href="calendar-detail-portrait.html">Calendar detail portrait</a></li>
-			<li><a href="calendar-detail-video.html">Calendar detail video</a></li>
-			<li><a href="frontpage.html">Frontpage</a></li>
-			<li><a href="home.html">Home Page</a></li>
-			<li><a href="worldwide.html">Worldwide</a></li>
-			<li><a href="worldwideCountry.html">Worldwide - Country detail</a></li>
-			<li><a href="worldwideCompanyInfo.html">Worldwide - Company Info</a></li>
-			<li><a href="worldwideCompanyLessInfo.html">Worldwide - Company Info few detail</a></li>
-			<li><a href="worldwideLightTool.html">Worldwide - Light Tool</a></li>
-			<li><a href="home_vborder_columns.html">Examples of Columns with vertical border</a></li>
-		</ul>
-		<h2>Components</h2>
-		<ul>
-			<li><a href="home_accordion_component.html">Accordion Component</a></li>
-			<li><a href="home_ads_component.html">Ads Component</a></li>
-			<li><a href="home_back_button_component.html">Back Button Component</a></li>
-			<li><a href="home_button_component.html">Button component</a></li>
-			<li><a href="home_calendar_component.html">Calendar Tools Component</a></li>
-			<li><a href="home_footnote_component.html">Footnote Component</a></li>
-			<li><a href="home_history_component.html">History Component</a></li>
-			<li><a href="home_horizontal_line_component.html">Horizontal line Component</a></li>
-			<li><a href="home_gallery_component.html">Image and Video Gallery Component</a></li>
-			<li><a href="home_infografic_component.html">Infografic Component</a></li>
-			<li><a href="home_intraday_component.html">Intraday Component</a></li>
-			<li><a href="home_image_component.html">Image Component</a></li>
-			<li><a href="home_image_text_component.html">Image-Text Component</a></li>
-			<li><a href="home_link_component.html">Link Component</a></li>
-			<li><a href="home_quote_component.html">Quote Component</a></li>
-			<li><a href="home_social_component.html">Social with Social Footer Component</a></li>
-			<li><a href="home_swiper_frontpage_component.html">Swiper Frontpage Component</a></li>
-			<li><a href="home_swiper_homepage_component.html">Swiper Homepage Component</a></li>
-			<li><a href="home_tab_component.html">Tab Component</a></li>
-			<li><a href="home_table_component.html">Table Component</a></li>
-			<li><a href="home_text_component.html">Text Component</a></li>
-			<li><a href="home_title_component.html">Title component</a></li>
-			<li><a href="home_video_text_component.html">Video-Text Component</a></li>
-			<li><a href="home_worldwide_component.html">Worldwide Component</a></li>
-		</ul>
-		<h2>TAGS</h2>
-		<ul>
-			<li><a href="tag_2015-02-02">Tag del 02/02/2015</a></li>
-			<li><a href="tag_2015-02-18">Release Tag del 18/02/2015</a></li>
-			<li><a href="tag_2015-02-25">Release Tag del 25/02/2015</a></li>
-		</ul>
+	<body class="with-jsp">
+		<div class="panel">
+			<div class="container">
+				<h2>Templates</h2>
+				<ul>
+					<li><a href="home.html">Home Page</a></li>
+					<li><a href="home_new_header.html">Home Page with New Header</a></li>
+					<li><a href="frontpage_aboutus.html">About Us</a></li>
+					<li><a href="frontpage_governance.html">Governance</a></li>
+					<li><a href="frontpage_investors.html">Investors</a></li>
+					<li><a href="frontpage_pressmedia.html">Press and Media</a></li>
+					<li><a href="frontpage_careers.html">Careers</a></li>
+					<li><a href="frontpage_sustainability.html">Sustainability</a></li>
+					<li><a href="page_standard.html">Standard Page</a></li>
+					<li><a href="home_vborder_columns.html">Examples of Columns with vertical border</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="panel">
+			<div class="container">
+				<h2>Components</h2>
+				<ul>
+					<li><a href="home_accordion_component.html">Accordion</a></li>
+					<li><a href="home_archive_component.html">Archive - in page widget All</a></li>
+					<li><a href="home_back_button_component.html">Back button</a></li>
+					<li><a href="home_ads_component.html">Commercial ADS</a></li>
+					<li><a href="home_calendar_component.html">Calendar Event + Calendar Financial</a></li>
+					<li><a href="home_career_component.html">Career</a></li>
+					<li><a href="home_footnote_component.html">Footnote</a></li>
+					<li><a href="home_gallery_component.html">Gallery</a></li>
+					<li><a href="home_history_component.html">History</a></li>
+					<li><a href="home_horizontal_line_component.html">Horizontal line</a></li>
+					<li><a href="home_image_component.html">Image + Text on Image</a></li>
+					<li><a href="home_infografic_component.html">Infografic</a></li>
+					<li><a href="home_intraday_component.html">Intraday</a></li>
+					<li><a href="home_link_component.html">List link & download</a></li>
+					<li><a href="home_spinner_component.html">Loading Spinner</a></li>
+					<li><a href="home_disclaimer_component.html">Modal Disclaimer</a></li>
+					<li><a href="home_modal_component.html">Modal Message</a></li>
+					<li><a href="home_quote_component.html">Quote</a></li>
+					<li><a href="home_iframe_component.html">Responsive IFRAME</a></li>
+					<li><a href="home_spacer_component.html">Spacer</a></li>
+					<li><a href="home_social_component.html">Social: Twitter, Facebook, Youtube, GooglePlus, LinkedIn & Social Footer</a></li>
+					<li><a href="home_container_swiper_component.html">Swiper Container</a></li>
+					<li><a href="home_swiper_frontpage_component.html">Swiper Frontpage</a></li>
+					<li><a href="home_swiper_homepage_component.html">Swiper Homepage</a></li>
+					<li><a href="home_tab_component.html">Tabs</a></li>
+					<li><a href="home_table_component.html">Table</a></li>
+					<li><a href="home_text_component.html">Text Component</a></li>
+					<li><a href="home_image_text_component.html">Text & Image</a></li>
+					<li><a href="home_video_text_component.html">Text & Video</a></li>
+					<li><a href="home_title_component.html">Title component + Title SEO component</a></li>
+					<li><a href="home_worldwide_component.html">Worldwide</a></li>
+					<li><a href="home_our_worldwide_presence_component.html">Worldwide our Presence</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="panel">
+			<div class="container">
+				<h2>Components Single Pages</h2>
+				<ul>
+					<li><a href="home_breadcrumb_component.html">Breadcrumbs, buttons, Sharing</a></li>
+					<li><a href="home_datebar_component.html">Generic date Bar</a></li>
+					<li><a href="home_button_component.html">Generic Button</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="panel">
+			<div class="container">
+				<h2>Single Pages</h2>
+				<ul>
+					<li><a href="alerts.html">Alerts and notifications policy</a></li>
+					<li><a href="archives.html">Archive General</a></li>
+					<li>Archive Search - Financial reports</li>
+					<li>Archive Search - Press Releases</li>
+					<li>Archive Search - Retail Bonds</li>
+					<li>Archive Search - Transactions</li>
+					<li><a href="board_of_directors.html">Board of directors</a></li>
+					<li><a href="calendar.html">Calendar Search</a></li>
+					<li><a href="calendar-noresults.html">Calendar Search - No Results</a></li>
+					<li><a href="calendar-detail-landscape.html">Calendar detail landscape</a></li>
+					<li><a href="calendar-detail-portrait.html">Calendar detail portrait</a></li>
+					<li><a href="calendar-detail-video.html">Calendar detail video</a></li>
+					<li><a href="careers_form.html">Careers form</a></li>
+					<li><a href="careers_tool.html">Career - Job opportunities</a></li>
+					<li><a href="contact_form.html">Contacts form</a></li>
+					<li><a href="contact_form_thanks.html">Contact form thank you page</a></li>
+					<li><a href="curriculum_vitae.html">Curriculum vitae</a></li>
+					<li><a href="error404.html">Error Page</a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="sitemap.html">Site Map</a></li>
+					<li><a href="press_release.html">Press releases</a></li>
+					<li><a href="shareholders_meeting_step1.html">Shareholder's meeting - Step 1</a></li>
+					<li><a href="shareholders_meeting_step2.html">Shareholder's meeting - Step 2</a></li>
+					<li><a href="unsubscribe.html">Unsubscribe mail alerts</a></li>
+					<li><a href="worldwide.html">Worldwide General</a></li>
+					<li><a href="worldwideCountry.html">Worldwide country detail</a></li>
+					<li><a href="worldwideCountryLess.html">Worldwide country detail less info</a></li>
+					<li><a href="worldwideCompanyInfo.html">Worldwide Company Info</a></li>
+					<li><a href="worldwideCompanyLessInfo.html">Worldwide Company Info less info</a></li>
+					<li><a href="worldwideLightTool.html">Worldwide light tool</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="panel">
+			<div class="container">
+				<h2>TAGS</h2>
+				<ul>
+					<li><a class="no-page" href="tag_2015-03-26">Release Tag del 26/03/2015</a></li>
+					<li><a class="no-page" href="tag_2015-03-12">Release Tag del 12/03/2015</a></li>
+					<li><a class="no-page" href="tag_2015-03-06">Release Tag del 06/03/2015</a></li>
+					<li><a class="no-page" href="tag_2015-02-25">Release Tag del 25/02/2015</a></li>
+					<li><a class="no-page" href="tag_2015-02-18">Release Tag del 18/02/2015</a></li>
+					<li><a class="no-page" href="tag_2015-02-02">Tag del 02/02/2015</a></li>
+				</ul>
+			</div>
+		</div>
 	</body>
 </html>

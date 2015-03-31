@@ -13,6 +13,10 @@
 	width: 100%;
 }
 
+.ucg_tab .container {
+	padding: 0;
+}
+
 /************** chosen-container plugin CSS for the dropdown in mobile resolutions **************/
 
 .ucg_tab .chosen-container {
@@ -21,9 +25,10 @@
 }
 
 .ucg_tab .chosen-container .chosen-single {
+	background-image: none;
 	border: 1px solid #c9c9c9;
 	box-shadow: none;
-	font-family: "UniCredit-Bold";
+	font-family: "unicredit-bold";
 	font-size: 17px;
 	color: #666666;
 	line-height: 40px;
@@ -48,7 +53,7 @@
 
 .ucg_tab .chosen-container .chosen-single div b,
 .ucg_tab .chosen-container .chosen-default div b {
-	background: url('../img/static/select-arrow-down.png') no-repeat scroll center center;
+	background: url('../img/static/select-arrow-down.png') no-repeat scroll center center !important;
 }
 
 .ucg_tab .chosen-container-active.chosen-with-drop .chosen-single {
@@ -57,7 +62,7 @@
 
 .ucg_tab .chosen-container.chosen-with-drop .chosen-single div b,
 .ucg_tab .chosen-container.chosen-with-drop .chosen-default div b {
-	background: url('../img/static/select-arrow-up.png') no-repeat scroll center center;
+	background: url('../img/static/select-arrow-up.png') no-repeat scroll center center !important;
 }
 
 .ucg_tab .chosen-container .chosen-drop  {
@@ -96,6 +101,50 @@
 	padding: 0;
 }
 
+.ucg_tab .tabs {
+	border-bottom: 1px solid #c9c9c9;
+	font-family: "unicredit-medium";
+	height: 78px;
+}
+
+.ucg_tab .tabs .container {
+	padding: 0 15px;
+}
+
+.ucg_tab .tabs .tab {
+	float: left;
+	background-color: #F5F5F5;
+	border-top: 1px solid #c9c9c9;
+	border-bottom: 1px solid #c9c9c9;
+	border-left: 1px solid #c9c9c9;
+	cursor: pointer;
+	padding: 26px 0;
+}
+
+.ucg_tab .tabs .tab:last-child {
+	border-right: 1px solid #c9c9c9;
+}
+
+.ucg_tab .tabs .tab.active {
+	background-color: #FFFFFF;
+	border-bottom: none;
+	padding-bottom: 20px;
+}
+
+.ucg_tab .tabs .tab.active .tabHeader {
+	border-bottom: 2px solid #00afd0;
+	padding-bottom: 5px;
+}
+
+.ucg_tab .tabs .tab .tabHeader a {
+	font-size: 17px;
+	color: #666666;
+}
+
+.ucg_tab .tabs .tab.active .tabHeader a {
+	color: #00afd0;
+}
+
 .ucg_tab .tabsBody {
 	clear: both;
 }
@@ -111,9 +160,12 @@
 }
 
 .ucg_tab .tabSection {
-	border-bottom: 1px solid #c9c9c9;
 	margin-bottom: 40px;
 	padding-bottom: 40px;
+}
+
+.ucg_tab .tabSection.bottomBorder {
+	border-bottom: 1px solid #c9c9c9;
 }
 
 .ucg_tab .tabSection .logo {
@@ -213,44 +265,20 @@
 		width: 100%;
 	}
 
-	.ucg_tab .tabs {
-		border-bottom: 1px solid #c9c9c9;
-		font-family: "UniCredit Medium";
-		margin-top: 6px;
-		height: 88px;
+	.ucg_tab .container {
+		padding: 0 15px;
 	}
 
 	.ucg_tab .tabs .tab {
-		float: left;
-		background-color: #F5F5F5;
-		border-top: 1px solid #c9c9c9;
-		border-bottom: 1px solid #c9c9c9;
-		border-left: 1px solid #c9c9c9;
-		cursor: pointer;
-		padding: 33px 0;
-	}
-
-	.ucg_tab .tabs .tab:last-child {
-		border-right: 1px solid #c9c9c9;
+		padding: 21px 0;
 	}
 
 	.ucg_tab .tabs .tab.active {
-		background-color: #FFFFFF;
-		border-bottom: none;
-		padding-bottom: 22px;
-	}
-
-	.ucg_tab .tabs .tab.active .tabHeader {
-		border-bottom: 2px solid #00afd0;
-		padding-bottom: 10px;
+		padding-bottom: 15px;
 	}
 
 	.ucg_tab .tabs .tab .tabHeader a {
-		color: #666666;
-	}
-
-	.ucg_tab .tabs .tab.active .tabHeader a {
-		color: #00afd0;
+		font-size: 24px;
 	}
 
 	.ucg_tab .tabPanel {

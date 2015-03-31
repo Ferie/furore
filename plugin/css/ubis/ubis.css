@@ -7,8 +7,8 @@
     vertical-align: middle;
     margin: 0;
     padding: 0;
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     background: url(ubis.png) no-repeat;
     border: none;
     cursor: pointer;
@@ -30,22 +30,28 @@
     .icheckbox_ubis.checked.disabled {
         background-position: -80px 0;
     }
+    .icheckbox_ubis.ucg_error {
+        background-position: -100px 0;
+    }
 
 .iradio_ubis {
-    background-position: -100px 0;
+    background-position: -120px 0;
 }
     .iradio_ubis.hover {
-        background-position: -120px 0;
-    }
-    .iradio_ubis.checked {
         background-position: -140px 0;
     }
-    .iradio_ubis.disabled {
+    .iradio_ubis.checked {
         background-position: -160px 0;
+    }
+    .iradio_ubis.disabled {
+        background-position: -180px 0;
         cursor: default;
     }
     .iradio_ubis.checked.disabled {
-        background-position: -180px 0;
+        background-position: -200px 0;
+    }
+    .iradio_ubis.ucg_error {
+        background-position: -220px 0;
     }
 
 /* HiDPI support */
@@ -53,7 +59,7 @@
     .icheckbox_ubis,
     .iradio_ubis {
         background-image: url(ubis@2x.png);
-        -webkit-background-size: 200px 20px;
-        background-size: 200px 20px;
+        -webkit-background-size: auto 20px;
+        background-size: auto 20px;
     }
 }

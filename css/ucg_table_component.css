@@ -5,54 +5,23 @@
 	font-size: 15px;
 	line-height: 1;
 }
-
 .ucg_table p {
 	font-size: 17px;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
+}
+.ucg_table p.note {
+	font-size: 13px;
+	line-height: 1.4;
+	margin-top: 20px;
 }
 
-.ucg_table table {
-	margin-bottom: 25px;
-	width: 100%;
+.ucg_table table .apex {
+	font-size: 7px;
+	vertical-align: super;
 }
-
-.ucg_table table.monocolumn {
-	width: auto;
-}
-
+	
 .ucg_table table .highlighted {
 	background-color: #d1edf4;
-}
-
-.ucg_table table tr {
-	border: 1px solid #c9c9c9;
-}
-
-.ucg_table table tr.tableHead {
-	border: 1px solid #666666;
-}
-
-.ucg_table table tr.tableHead .highlighted {
-	background-color: #545f62;
-}
-
-.ucg_table table th {
-	background-color: #666666;
-	color: #FFFFFF;
-	padding: 10px 15px;
-}
-
-.ucg_table table td {
-	padding: 20px 15px;
-}
-
-.ucg_table table td span.moreRows {
-	display: block;
-	padding-bottom: 15px;
-}
-
-.ucg_table table td span.moreRows:last-child {
-	padding-bottom: 0;
 }
 
 .ucg_table table .odd {
@@ -64,35 +33,156 @@
 }
 
 .ucg_table table .even {
-	/*background-color: #f2f2f2;*/
-	background-color: #c9c9c9;
+	background-color: #f2f2f2;
+	/*background-color: #c9c9c9;*/
 }
 
 .ucg_table table .even .highlighted {
 	background-color: #c6e1e8;
 }
-
-.ucg_table table td.text {
-	font-size: 13px;
-	line-height: 18px;
-	width: 40%;
-}
-
-.ucg_table table td.text b {
-	font-size: 17px;
-}
-
-.ucg_table table .apex {
-	font-size: 7px;
-	vertical-align: super;
-}
-
-.ucg_table p.note {
-	font-size: 13px;
-	color: #666666;
-	line-height: 20px;
-}
-
-@media (min-width: 768px) {
 	
+.ucg_table table tr {
+	padding: 7px 15px;
+	border: 1px solid #c9c9c9;
+}
+.ucg_table table td {
+	padding: 7px 15px;
+}
+.ucg_table table tr.tableHead {
+	border: none;
+}
+.ucg_table table tr.tableHead .highlighted {
+	background-color: #545f62;
+}
+.ucg_table table th {
+	background-color: transparent;
+	color: #333;
+	padding: 10px 15px;
+}
+.ucg_table table tr.tableHead th {
+	background-color: #666666;
+	color: #FFFFFF;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	border-top: 1px solid #c9c9c9;
+}
+.ucg_table table tr.tableHead td {
+	padding-top: 10px;
+	padding-bottom: 10px;	
+}
+
+.ucg_table table tr.dark th {
+	background-color: #666666;
+	color: #FFFFFF;
+}
+.ucg_table table {
+	border: 1px solid #c9c9c9;
+	width: 100%;
+}
+.ucg_table table tr.separator th {
+	padding: 10px;
+	text-align: center;
+}
+.ucg_table table tr.separator th hr {
+	margin: 0;
+	border-color: #999;
+}
+.ucg_table[data-tabletype] table tr {
+	border: none;
+}
+.ucg_table[data-tabletype] table td {
+	padding: 7px 15px;
+}
+.ucg_table[data-tabletype] table th {
+	padding: 7px 15px;
+}
+
+.ucg_table[data-tabletype] table tr.tableHead th {
+	background-color: transparent;
+	color: #666;
+	padding: 10px 15px;
+}	
+.ucg_table[data-tabletype="2"] table th,
+.ucg_table[data-tabletype="2"] table td {
+	padding: 20px 15px;
+}
+.ucg_table[data-tabletype="2"] table .spacer td {
+	padding: 0;
+	border-bottom: 1px solid #c9c9c9;
+}
+.ucg_table[data-tabletype="3"] table tr.tableHead td {
+	color: #333;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	border-top: 1px solid #c9c9c9;
+}	
+.ucg_table[data-tabletype="4"] table th {
+	padding: 20px 15px 5px 15px;
+	line-height: 1.4;
+}
+.ucg_table[data-tabletype="4"] table td {
+	padding: 0 15px;
+}
+.ucg_table[data-tabletype="4"] table .spacer td {
+	padding: 10px 0;
+	border-bottom: 1px solid #c9c9c9;
+}
+.ucg_table[data-tabletype="4"] table .tableHead td {
+	line-height: 1.4;
+	font-size: 13px;
+}
+.ucg_table[data-tabletype="4"] table .tableHead td b {
+	font-size: 17px;
+	margin-bottom: 5px;
+	display: inline-block;
+}
+@media (min-width: 768px) {
+	.ucg_table table.monocolumn {
+		width: auto;
+	}
+		
+	.ucg_table[data-tabletype] table tr {
+		border: 1px solid #c9c9c9;
+	}	
+	.ucg_table[data-tabletype] table tr td,
+	.ucg_table[data-tabletype] table tr th {
+		padding: 20px 15px;
+	}
+	.ucg_table[data-tabletype] table tr.tableHead th {
+	    background-color: #666666;
+	    color: #ffffff;
+	    padding-bottom: 10px;
+	    padding-left: 15px;
+	    padding-right: 15px;
+	    padding-top: 10px;
+	}
+	
+	.ucg_table table td {
+		padding: 20px 15px;
+	}
+	
+	.ucg_table table td span.moreRows {
+		display: block;
+		padding-bottom: 15px;
+	}
+	
+	.ucg_table table td span.moreRows:last-child {
+		padding-bottom: 0;
+	}
+	
+	.ucg_table table td.text {
+		font-size: 13px;
+		line-height: 18px;
+		width: 40%;
+	}
+	
+	.ucg_table table td.text b {
+		font-size: 17px;
+	}
+	
+	.ucg_table p.note {
+		font-size: 13px;
+		color: #666666;
+		line-height: 20px;
+	}	
 }

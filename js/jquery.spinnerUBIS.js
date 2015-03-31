@@ -113,7 +113,7 @@
 		_caclulateHeight: function(st){
 			st.height = 0;
 			st.$setElements.each(function(){
-				var hElement = $(this).outerHeight()*(st.modeInline==true?1:1.11);
+				var hElement = $(this).outerHeight()*(st.modeInline==true?1:1);
 				if(hElement>st.height)
 					st.height = hElement;
 			});

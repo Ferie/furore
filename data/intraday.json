@@ -1,6 +1,6 @@
 [
     {
-    "src": "img/ucg_interday_graph.png",
+    "src": "img/ucg_intraday_graph.png",
     "value": "6,16",
     "currency": "€",
     "trend": { "value": "+ 0,24", "direction": "up" },
@@ -11,7 +11,7 @@
     "minutes": "20"
     },
     {
-    "src": "img/ucg_interday_graph.png",
+    "src": "img/ucg_intraday_graph_2.png",
     "value": "6,18",
     "currency": "€",
     "trend": { "value": "+ 0,2", "direction": "up" },
@@ -22,7 +22,7 @@
     "minutes": "32"
     },
     {
-    "src": "img/ucg_interday_graph.png",
+    "src": "img/ucg_intraday_graph_3.png",
     "value": "5,45",
     "currency": "€",
     "trend": { "value": "- 1,2", "direction": "down" },
@@ -33,7 +33,7 @@
     "minutes": "44"
     },
     {
-    "src": "img/ucg_interday_graph.png",
+    "src": "img/ucg_intraday_graph.png",
     "value": "7,22",
     "currency": "$",
     "trend": { "value": "+ 1,77", "direction": "up" },

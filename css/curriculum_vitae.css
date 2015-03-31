@@ -1,0 +1,96 @@
+#curriculumVitae .ucg_image_text .ucg_img {
+	margin-bottom: 24px;
+	width: 100%;
+}
+
+#curriculumVitae .ucg_title.underlined .ucg_title_container {
+	margin-bottom: 4px;
+	padding-bottom: 12px;
+}
+
+#curriculumVitae .ucg_txt {
+	font-family: "unicredit-regular";
+	font-size: 15px;
+	color: #666666;
+}
+
+#curriculumVitae .ucg_txt p {
+	margin: 0;
+	padding-bottom: 20px;
+}
+
+#curriculumVitae .ucg_txt .cv_name {
+	font-family: "unicredit-light";
+	font-size: 30px;
+	margin-bottom: 4px;
+}
+
+#curriculumVitae .ucg_txt .cv_occupation {
+	padding-bottom: 27px;
+	text-transform: uppercase;
+}
+
+#curriculumVitae .ucg_txt .cv_sectionTitle {
+	font-size: 17px;
+}
+
+#curriculumVitae .ucg_txt .cv_description {
+	font-size: 15px;
+	padding-left: 32px;
+}
+
+#curriculumVitae .ucg_txt .cv_description.historyPosition {
+	padding-left: 15px;
+}
+
+#curriculumVitae .ucg_txt .cv_description .line {
+	background: url("../img/static/vertical_line_middle.png") no-repeat;
+	background-position: 0px -9px;
+	display: table-row;
+	font-size: 22px;
+}
+
+#curriculumVitae .ucg_txt .cv_description .line.first {
+	background: url("../img/static/vertical_line_first.png") no-repeat;
+	background-position: 0px 15px;
+}
+
+#curriculumVitae .ucg_txt .cv_description .line.last {
+	background: url("../img/static/vertical_line_last.png") no-repeat;
+	background-position: 0px -9px;
+}
+
+#curriculumVitae .ucg_txt .cv_description .line .firstColumn {
+	position: relative;
+	left: 17px;
+	display: table-cell;
+	background: url("../img/static/horizontal_line.png") repeat-x;
+	background-position: 0 18px;
+	width: 40%
+}
+
+#curriculumVitae .ucg_txt .cv_description .pastExperience_date {
+	background-color: #FFFFFF;
+	font-size: 15px;
+	padding-right: 5px;
+}
+
+#curriculumVitae .ucg_txt .cv_description .line .secondColumn {
+	background: #FFFFFF;
+	display: table-cell;
+	padding-left: 22px;
+	width: 60%
+}
+
+#curriculumVitae .ucg_txt .cv_description .pastExperience {
+	background-color: #FFFFFF;
+	font-size: 15px;
+}
+
+#curriculumVitae .panel .container {
+	width: 100%;
+}
+
+@media (min-width: 1024px) {
+
+}

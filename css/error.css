@@ -1,0 +1,35 @@
+/************** ERROR PAGE **************/
+
+#errorPage .ucg_title h1 {
+	font-size: 32px;
+	line-height: 54px;
+	text-transform: uppercase;
+}
+
+#errorPage .ucg_title h2 {
+	font-size: 25px;
+	line-height: 1;
+}
+
+#errorPage .ucg_title .ucg_link a {
+	background: none;
+	font-family: "unicredit-bold";
+	font-size: 16px;
+	color: #333333;
+	line-height: 17px;
+	margin-bottom: 5px;
+}
+
+#errorPage .ucg_linklist.panel {
+	margin-bottom: 10px;
+}
+
+#errorPage .ucg_linklist .ucg_link_container .ucg_link {
+	background: none;
+	font-size: 14px;
+	padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+	
+}

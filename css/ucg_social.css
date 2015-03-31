@@ -10,37 +10,46 @@
     line-height: 1.1;
 }
 .ucg_social_facebook .ucg_social_title {
-	background-image: url('../img/static/calendar-share-social-facebook.png');
+	background-image: url('../img/static/sharing-share-social-facebook.png');
 	color: #3b5998;
 }
 .ucg_social_twitter .ucg_social_title {
-	background-image: url('../img/static/calendar-share-social-twitter.png');
+	background-image: url('../img/static/sharing-share-social-twitter.png');
 	color: #5ea9dd;
 }
-.ucg_social_youtube .ucg_social_title {
-	background-image: url('../img/static/calendar-share-social-facebook.png');
-	color: #3b5998;
+.ucg_social_pinterest .ucg_social_title {
+	background-image: url('../img/static/sharing-share-social-pinterest.png');
+	color: #333;
 }
 .ucg_social_googleplus .ucg_social_title {
-	background-image: url('../img/static/calendar-share-social-googleplus.png');
+	background-image: url('../img/static/sharing-share-social-googleplus.png');
 	color: #aa1c0d;
 }
 .ucg_social_linkedin .ucg_social_title {
-	background-image: url('../img/static/calendar-share-social-linkedin.png');
+	background-image: url('../img/static/sharing-share-social-linkedin.png');
 	color: #1985bc;
 }
 .ucg_social_youtube .ucg_social_title {
-	background-image: url('../img/static/calendar-share-social-youtube.png');
+	background-image: url('../img/static/sharing-share-social-youtube.png');
 	color: #aa1c0d;
 }
-.ucg_social .ucg_social_title.no_image {
+.ucg_social.no_image .ucg_social_title {
 	border-bottom: 1px solid #999;
-	margin-bottom: 8px;	
+	margin-bottom: 20px;	
 }
 .ucg_social .ucg_social_image {
 	float: left;
 	margin-bottom: 10px;
-	margin-right: 10px;
+	position: relative;
+	width: 100%;
+}
+.ucg_social.no_image .ucg_social_image {
+	margin: 0;
+}
+.ucg_social .ucg_social_image a {
+	width: 100%;
+	height: 100%;
+	position: absolute;	
 }
 .ucg_social .ucg_social_image img {
 	width: 100%;
@@ -61,6 +70,9 @@
     font-family: 'unicredit-regular';
     font-size: 14px;
     padding: 2px 0;
+}
+.ucg_social.ucg_social_twitter .ucg_social_text {
+    font-size: 17px;
 }
 .ucg_social .ucg_social_text_title {
     line-height: 1.6;
@@ -140,37 +152,37 @@
 	background-attachment: scroll;
 }
 .ucg_social_footer .ucg_social_others a.unicredit {
-	background-image: url('../img/static/calendar-share-social-unicredit-grey.png')
+	background-image: url('../img/static/sharing-share-social-unicredit-grey.png')
 }
 .ucg_social_footer .ucg_social_others a.facebook {
-	background-image: url('../img/static/calendar-share-social-facebook-grey.png')
+	background-image: url('../img/static/sharing-share-social-facebook-grey.png')
 }
 .ucg_social_footer .ucg_social_others a.twitter {
-	background-image: url('../img/static/calendar-share-social-twitter-grey.png')
+	background-image: url('../img/static/sharing-share-social-twitter-grey.png')
 }
 .ucg_social_footer .ucg_social_others a.youtube {
-	background-image: url('../img/static/calendar-share-social-youtube-grey.png')
+	background-image: url('../img/static/sharing-share-social-youtube-grey.png')
 }
 .ucg_social_footer .ucg_social_others a.linkedin {
-	background-image: url('../img/static/calendar-share-social-linkedin-grey.png')
+	background-image: url('../img/static/sharing-share-social-linkedin-grey.png')
 }
 .ucg_social_footer .ucg_social_others a.googleplus {
-	background-image: url('../img/static/calendar-share-social-googleplus-grey.png')
+	background-image: url('../img/static/sharing-share-social-googleplus-grey.png')
 }
 .ucg_social_footer .ucg_social_others a.pinterest {
-	background-image: url('../img/static/calendar-share-social-pinterest-grey.png')
+	background-image: url('../img/static/sharing-share-social-pinterest-grey.png')
 }
 /* SPECIAL CAREER TEXT */
-.ucg_text .ucg_text_container p {
+.ucg_social .ucg_text .ucg_text_container p {
 	margin-bottom: 20px;
 }
 @media (min-width: 768px) {
 	/* SPECIAL CAREER TEXT */
-	.ucg_text .ucg_text_container {
-		min-height: 240px;
+	.ucg_social .ucg_text .ucg_text_container {
+		min-height: 260px;
 	}
 	.ucg_social > .container:first-child {
-		min-height: 240px;
+		min-height: 260px;
 	}
 	.ucg_social .ucg_social_image img {
 		width: auto;

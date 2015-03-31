@@ -1,0 +1,189 @@
+/************** ucg_our_worldwide_presence **************/
+
+.ucg_our_worldwide_presence {
+	font-size: 20px;
+	color: #999999;
+	line-height: 1;
+	overflow: hidden;
+}
+
+.ucg_our_worldwide_presence .col-xs-4,
+.ucg_our_worldwide_presence .col-xs-12,
+.ucg_our_worldwide_presence .col-sm-4 {
+	padding: 0;
+}
+
+.ucg_our_worldwide_presence .row_box {
+	margin-bottom: 36px;
+}
+
+.ucg_our_worldwide_presence .row_box .text-left {
+	margin-bottom: 25px;
+}
+
+.ucg_our_worldwide_presence .imageBranches,
+.ucg_our_worldwide_presence .imageCountries,
+.ucg_our_worldwide_presence .imageEmployers {
+	border-right: 1px solid #c9c9c9;
+	height: 56px;
+	width: 75px;
+}
+
+.ucg_our_worldwide_presence .imageBranches {
+	background: url("../img/static/worldwide-branches.png") no-repeat;
+}
+
+.ucg_our_worldwide_presence .imageCountries {
+	background: url("../img/static/worldwide-countries.png") no-repeat;
+}
+
+.ucg_our_worldwide_presence .imageEmployers {
+	background: url("../img/static/worldwide-employers.png") no-repeat;
+}
+
+.ucg_our_worldwide_presence .row_box .number {
+	font-family: "unicredit-light";
+	font-size: 64px;
+	color: #00afd0;
+	letter-spacing: -5px;
+	margin-bottom: 17px;
+	padding-left: 20px;
+}
+
+.parsys_column .ucg_our_worldwide_presence .col-xs-4,
+.parsys_column .ucg_our_worldwide_presence .col-xs-12,
+.parsys_column .ucg_our_worldwide_presence .col-sm-4 {
+	width: 100%;
+}
+
+.parsys_column .ucg_our_worldwide_presence .col-xs-4.imageBranches,
+.parsys_column .ucg_our_worldwide_presence .col-xs-4.imageCountries,
+.parsys_column .ucg_our_worldwide_presence .col-xs-4.imageEmployers {
+	width: 75px;
+}
+
+.opened .parsys_column .ucg_our_worldwide_presence .col-xs-4.imageBranches,
+.opened .parsys_column .ucg_our_worldwide_presence .col-xs-4.imageCountries,
+.opened .parsys_column .ucg_our_worldwide_presence .col-xs-4.imageEmployers {
+	width: 54px;
+}
+
+@media (min-width: 768px) and (max-width: 959px) {
+	.with-sidebar-opened .ucg_our_worldwide_presence .imageBranches {
+		background-size: 50%;
+		height: 37px;
+		width: 54px;
+	}
+
+	.with-sidebar-opened .ucg_our_worldwide_presence .imageCountries,
+	.with-sidebar-opened .ucg_our_worldwide_presence .imageEmployers {
+		background-size: 70%;
+		height: 37px;
+		width: 54px;
+	}
+
+	.with-sidebar-opened .ucg_our_worldwide_presence .row_box .number {
+		font-size: 42px;
+		letter-spacing: -3px;
+		padding-left: 15px;
+	}
+
+	.opened .ucg_our_worldwide_presence .imageBranches {
+		background-size: 50%;
+		height: 30px;
+		width: 44px;
+	}
+
+	.opened .ucg_our_worldwide_presence .imageCountries,
+	.opened .ucg_our_worldwide_presence .imageEmployers {
+		height: 30px;
+		width: 44px;
+	}
+
+	.opened .ucg_our_worldwide_presence .row_box .number {
+		font-size: 32px;
+		letter-spacing: -2px;
+		padding-left: 15px;
+	}
+
+	.parsys_column .ucg_our_worldwide_presence .col-xs-4,
+	.parsys_column .ucg_our_worldwide_presence .col-xs-12,
+	.parsys_column .ucg_our_worldwide_presence .col-sm-4 {
+		width: 100%;
+	}
+
+	.parsys_column .ucg_our_worldwide_presence .col-xs-4.imageBranches,
+	.parsys_column .ucg_our_worldwide_presence .col-xs-4.imageCountries,
+	.parsys_column .ucg_our_worldwide_presence .col-xs-4.imageEmployers {
+		width: 54px;
+	}
+
+	.opened .parsys_column .ucg_our_worldwide_presence .col-xs-4.imageBranches,
+	.opened .parsys_column .ucg_our_worldwide_presence .col-xs-4.imageCountries,
+	.opened .parsys_column .ucg_our_worldwide_presence .col-xs-4.imageEmployers {
+		background-size: 80%;
+		width: 38px;
+	}
+
+	.opened .parsys_column .ucg_our_worldwide_presence .col-xs-4.imageBranches  {
+		background-size: 62%;
+		height: 31px;
+	}
+
+	.opened .parsys_column .ucg_our_worldwide_presence .row_box .number {
+		padding-left: 10px;
+	}
+}
+
+@media (min-width: 960px) and (max-width: 1099px) {
+	.opened .ucg_our_worldwide_presence .imageBranches {
+		background-size: 50%;
+		height: 37px;
+		width: 54px;
+	}
+
+	.opened .ucg_our_worldwide_presence .imageCountries,
+	.opened .ucg_our_worldwide_presence .imageEmployers {
+		background-size: 70%;
+		height: 37px;
+		width: 54px;
+	}
+
+	.opened .ucg_our_worldwide_presence .row_box .number {
+		font-size: 42px;
+		letter-spacing: -3px;
+		padding-left: 15px;
+	}
+
+	.parsys_column .ucg_our_worldwide_presence .col-xs-4,
+	.parsys_column .ucg_our_worldwide_presence .col-xs-12,
+	.parsys_column .ucg_our_worldwide_presence .col-sm-4 {
+		width: 100%;
+	}
+
+	.parsys_column .ucg_our_worldwide_presence .col-xs-4.imageBranches,
+	.parsys_column .ucg_our_worldwide_presence .col-xs-4.imageCountries,
+	.parsys_column .ucg_our_worldwide_presence .col-xs-4.imageEmployers {
+		width: 75px;
+	}
+
+	.opened .parsys_column .ucg_our_worldwide_presence .col-xs-4.imageBranches,
+	.opened .parsys_column .ucg_our_worldwide_presence .col-xs-4.imageCountries,
+	.opened .parsys_column .ucg_our_worldwide_presence .col-xs-4.imageEmployers {
+		width: 54px;
+	}
+}
+
+@media (min-width: 1100px) {
+	.parsys_column .ucg_our_worldwide_presence .col-xs-4.imageBranches,
+	.parsys_column .ucg_our_worldwide_presence .col-xs-4.imageCountries,
+	.parsys_column .ucg_our_worldwide_presence .col-xs-4.imageEmployers {
+		width: 75px;
+	}
+
+	.opened .parsys_column .ucg_our_worldwide_presence .col-xs-4.imageBranches,
+	.opened .parsys_column .ucg_our_worldwide_presence .col-xs-4.imageCountries,
+	.opened .parsys_column .ucg_our_worldwide_presence .col-xs-4.imageEmployers {
+		width: 75px;
+	}
+}

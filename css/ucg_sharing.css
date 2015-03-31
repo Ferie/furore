@@ -1,0 +1,140 @@
+/**** SOCIAL SINGLE SHARE ****/
+.ucg_breadcrumb_sharing {
+	padding: 0;
+	text-align: center;
+}
+.ucg_breadcrumb_sharing .icon a {
+	padding: 10px 0 10px 20px;
+	margin: -10px 0;
+	font-size: 15px;
+	font-family: 'unicredit-bold';
+	text-transform: uppercase;
+	background: url('../img/static/breadcrumb-share-icon.png') no-repeat scroll left center;
+}
+.ucg_breadcrumb_sharing .icon.collapsed  {
+	background: transparent;
+}
+.ucg_breadcrumb_sharing_panel.panel.panel-collapse {
+	width: 100%;
+	background-color: #f2f2f2;
+	margin: 0;
+	padding: 0;
+	border-top:1px solid #c9c9c9;
+}
+.ucg_breadcrumb_sharing_panel.panel.panel-collapse.collapse.in {
+}
+.ucg_breadcrumb_sharing_panel.panel.panel-collapse.collapsing {
+	overflow: visible;
+}
+.ucg_breadcrumb_sharing_panel.panel.panel-collapse .container {
+	padding: 0px 10px;
+	position: relative;
+}
+.ucg_breadcrumb_sharing_panel.panel.panel-collapse h2 {
+	font-family: 'unicredit-light';
+	line-height: 30px;
+	margin: 16px 0 0 0;
+    padding: 10px 0;
+    font-size: 24px;
+    text-align: center;
+}
+.ucg_breadcrumb_sharing_panel ul {
+	padding: 10px 0;
+	list-style-type: none;
+	display: inline-block;
+	margin: 0;
+	width: 100%;
+}
+.ucg_breadcrumb_sharing_panel ul li {
+	display: inline-block;
+	margin: 0;
+	text-align: center;
+}
+.ucg_breadcrumb_sharing_panel ul li a {
+	line-height: 30px;
+	display: inline-block;
+	margin: 0;
+    padding: 4px 10px 4px 30px;
+	background-color: transparent;
+    background-position: left center;
+    background-repeat: no-repeat;
+    font-family: 'unicredit-medium';
+    font-size: 15px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.ucg_breadcrumb_sharing_panel ul li a.facebook {
+	background-image: url('../img/static/sharing-share-social-facebook.png');
+	color: #3b5998;
+}
+.ucg_breadcrumb_sharing_panel ul li a.twitter {
+	background-image: url('../img/static/sharing-share-social-twitter.png');
+	color: #5ea9dd;
+}
+.ucg_breadcrumb_sharing_panel ul li a.linkedin {
+	background-image: url('../img/static/sharing-share-social-linkedin.png');
+	color: #1985bc;
+}
+.ucg_breadcrumb_sharing_panel ul li a.googleplus {
+	background-image: url('../img/static/sharing-share-social-googleplus.png');
+	color: #aa1c0d;
+}
+.ucg_breadcrumb_sharing_panel ul li a.youtube {
+	background-image: url('../img/static/sharing-share-social-youtube.png');
+	color: #aa1c0d;
+}
+.ucg_breadcrumb_sharing_panel ul li a.pinterest {
+	background-image: url('../img/static/sharing-share-social-pinterest.png');
+	color: #333;
+}
+
+.ucg_breadcrumb_sharing_panel .arrows {
+    height: 13px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+.ucg_breadcrumb_sharing_panel .arrows img.arrow-down {
+    position: relative;
+    top: -1px;
+    vertical-align: top;
+}
+/**** SOCIAL SINGLE SHARE ****/
+@media (min-width: 768px) {
+	.ucg_breadcrumb_sharing {
+		width: auto;
+		float: right;
+		margin-left: 10px;	
+	}
+	/* SOCIAL SHARE */
+	#mainContainer .ucg_breadcrumb_sharing_panel.panel.panel-collapse .container {
+		padding: 20px 10px;
+	}
+	.ucg_breadcrumb_sharing_panel.panel.panel-collapse h2 {
+		margin-top: 1px;
+	}
+	.ucg_breadcrumb_sharing_panel ul li {
+		display: inline-block;
+	    margin: 0px 2%;
+	    width: auto;
+	    float: right;
+    }
+    
+	.ucg_breadcrumb_sharing_panel .arrows {
+	    width: auto;
+	    right: 25px;
+	}
+	.ucg_breadcrumb_sharing_panel .closer {
+		position: absolute;
+		right: 29px;
+		top: 39px;
+	}
+	.ucg_breadcrumb_sharing_panel .closer a {
+		display: inline-block;
+	    height: 18px;
+	    width: 19px;
+	}
+}

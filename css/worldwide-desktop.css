@@ -146,6 +146,26 @@
 		display: none;
 	}
 
+	#worldwide .ucg_tab .container {
+		padding: 0 15px;
+	}
+
+	#worldwide .ucg_tab .tabs {
+		font-family: "unicredit-regular";
+	}
+
+	#worldwide .ucg_tab .tabs .tab {
+		padding: 28px 0;
+	}
+
+	#worldwide .ucg_tab .tabs .tab.active {
+		padding-bottom: 22px;
+	}
+
+	#worldwide .ucg_tab .tabHeader a {
+		font-size: 14px;
+	}
+
 	#worldwide #tabs {
 		border-bottom: 1px solid #c9c9c9;
 		font-family: "UniCredit Medium";
@@ -188,27 +208,37 @@
 		padding: 0;
 	}
 
-	#worldwide .tabSection {
+	#worldwide .tabSection,
+	#worldwide .countryLessInfoPanel {
 		font-size: 24px;
 		margin-bottom: 0;
 		padding: 40px 0 32px;
 	}
 
+	#worldwide .countryLessInfoPanel {
+		padding: 0 0 32px;
+	}
+
 	#worldwide .tabSection .bankName,
-	#worldwide .tabSection .logo {
+	#worldwide .tabSection .logo,
+	#worldwide .countryLessInfoPanel .bankName,
+	#worldwide .countryLessInfoPanel .logo {
 		line-height: 1;
 	}
 
-	#worldwide .tabSection .bankName {
+	#worldwide .tabSection .bankName,
+	#worldwide .countryLessInfoPanel .bankName {
 		float: left;
 	}
 
-	#worldwide .tabSection .logo {
+	#worldwide .tabSection .logo,
+	#worldwide .countryLessInfoPanel .logo {
 		float: right;
 		padding-bottom: 0;
 	}
 
-	#worldwide .tabSection .externalLink {
+	#worldwide .tabSection .externalLink,
+	#worldwide .countryLessInfoPanel .externalLink {
 		clear: both;
 		font-size: 15px;
 		margin-top: 44px;
@@ -216,27 +246,32 @@
 	}
 
 	#worldwide .tabSection .icons,
-	#worldwide #companyInfos .icons {
+	#worldwide #companyInfos .icons,
+	#worldwide .countryLessInfoPanel .icons {
 		margin-top: 0;
 	}
 
-	#worldwide .tabSection .icons {
+	#worldwide .tabSection .icons,
+	#worldwide .countryLessInfoPanel .icons {
 		float: right;
 	}
 
-	#worldwide .tabSection .icons .icon {
+	#worldwide .tabSection .icons .icon,
+	#worldwide .countryLessInfoPanel .icons .icon {
 		float: left;
 		margin: 0;
 		padding-top: 3px;
 		padding-right: 30px;
 	}
 
-	#worldwide .tabSection .icons .icon:last-child {
+	#worldwide .tabSection .icons .icon:last-child,
+	#worldwide .countryLessInfoPanel .icons .icon:last-child {
 		padding-right: 0;
 	}
 
 	#worldwide .tabSection .icons .icon.homeBankingLogin,
-	#worldwide #companyInfos .icons .icon.homeBankingLogin {
+	#worldwide #companyInfos .icons .icon.homeBankingLogin,
+	#worldwide .countryLessInfoPanel .icons .icon.homeBankingLogin {
 		margin-top: 1px;
 		padding-top: 2px;
 		padding-left: 28px;
@@ -244,14 +279,16 @@
 	}
 
 	#worldwide .tabSection .icons .icon.seeJobPositions,
-	#worldwide #companyInfos .icons .icon.seeJobPositions {
+	#worldwide #companyInfos .icons .icon.seeJobPositions,
+	#worldwide .countryLessInfoPanel .icons .icon.seeJobPositions {
 		padding-top: 3px;
 		padding-left: 28px;
 		height: 16px;
 	}
 
 	#worldwide .tabSection .icons .icon.findBranch,
-	#worldwide #companyInfos .icons .icon.findBranch {
+	#worldwide #companyInfos .icons .icon.findBranch,
+	#worldwide .countryLessInfoPanel .icons .icon.findBranch {
 		margin-top: 1px;
 		margin-left: 0;
 		padding-top: 2px;
@@ -260,7 +297,8 @@
 	}
 
 	#worldwide .tabSection .icons .icon.linkedin,
-	#worldwide #companyInfos .icons .icon.linkedin {
+	#worldwide #companyInfos .icons .icon.linkedin,
+	#worldwide .countryLessInfoPanel .icons .icon.linkedin {
 		margin-left: 0;
 		padding-top: 3px;
 		padding-left: 23px;

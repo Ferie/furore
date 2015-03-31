@@ -7,7 +7,7 @@ $(document).ready(function () {
 	function tabsHeader() {
 		$('.ucg_tab').each(function () {
 			var $thisTab = $(this),
-				$thisTabHeader = $(this).find('.tabs .tab'),
+				$thisTabHeader = $thisTab.find('.tabs .tab'),
 				partialWidth = 0,
 				tabsNumber = 0,
 				totalPadding = 0,
@@ -59,7 +59,7 @@ $(document).ready(function () {
 		}, 100);
 	});
 
-	// event that puts the active tab and shows the active panel (desktop)
+	// event that puts the active tab and shows the active panel
 	$('.tabs .tab').on('click', function () {
 		var $this = $(this),
 			$thisTab = $this.parents('.ucg_tab'),
@@ -88,7 +88,17 @@ $(document).ready(function () {
 		}, 400);
 	});
 
-	// skin for the select in Worldwide area
+	$('.ucg_tab .tabs').each(function () {
+		var $this = $(this),
+			tabsNumber = $this.find('.tab').length;
+
+		if (tabsNumber < 3) {
+			$this.removeClass('hidden-xs');
+			$this.siblings('.dropdown').removeClass('visible-xs').hide();
+		}
+	});
+
+	// skin for the dropdown
 	$('.ucg_tab .chosen-select').chosen({
 		allow_single_deselect: true,
 		disable_search: true,

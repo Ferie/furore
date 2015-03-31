@@ -237,6 +237,7 @@ $(document).ready(function() {
 	
 	$("#calendarTools .chosen-select").chosen({
 			allow_single_deselect: true,
+			inherit_select_classes: true,
 			disable_search: true,
 		    width: "100%"}).change(function(){
 		var $txt = $('#calendarTools .chosen-container-single .chosen-single-with-deselect span');

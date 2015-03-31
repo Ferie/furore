@@ -1,0 +1,91 @@
+{
+	"infos": {
+			"title": "We find your solutions"
+		},
+	"elements": [
+		{
+			"index": 1,
+			"description": "UniCredit Pavilion Presentazione",
+			"type": "youtube",
+			"sizes": {
+						"desktop": {
+							"width": "940px",
+							"height": "460px"
+						},
+						"tablet": {
+							"width": "634px",
+							"height": "426px"
+						},
+						"mobile": {
+							"width": "320px",
+							"height": "215px"
+						}
+					},
+			"src": "https://www.youtube.com/watch?v=zwUej7dUN70",
+			"srcMobile": "https://www.youtube.com/watch?v=zwUej7dUN70",
+            "thumb": "img/video-placeholder-1.jpg"
+		},
+        {
+			"index": 2,
+            "description": "Image 010",
+			"type": "image",
+            "src": "img/image-gallery010.jpg",
+            "srcMobile": "img/image-gallery010.jpg",
+            "thumb": "img/image-gallery010-thumb.jpg"
+        },
+        {
+			"index": 3,
+            "description": "Image 011",
+			"type": "image",
+            "src": "img/image-gallery011.jpg",
+            "srcMobile": "img/image-gallery011.jpg",
+            "thumb": "img/image-gallery011-thumb.jpg"
+        },
+        {
+			"index": 4,
+            "description": "Image 012",
+			"type": "image",
+            "src": "img/image-gallery012.jpg",
+            "srcMobile": "img/image-gallery012.jpg",
+            "thumb": "img/image-gallery012-thumb.jpg"
+        },
+        {
+			"index": 5,
+            "description": "Image 013",
+			"type": "image",
+            "src": "img/image-gallery013.jpg",
+            "srcMobile": "img/image-gallery013.jpg",
+            "thumb": "img/image-gallery013-thumb.jpg"
+        },
+        {
+			"index": 6,
+            "description": "Image 014",
+			"type": "image",
+            "src": "img/image-gallery014.jpg",
+            "srcMobile": "img/image-gallery014.jpg",
+            "thumb": "img/image-gallery014-thumb.jpg"
+        },
+		{
+			"index": 7,
+			"description": "UniCredit Conto My Genius a canone zero - Spot",
+			"type": "youtube",
+			"sizes": {
+						"desktop": {
+							"width": "940px",
+							"height": "460px"
+						},
+						"tablet": {
+							"width": "688px",
+							"height": "460px"
+						},
+						"mobile": {
+							"width": "320px",
+							"height": "215px"
+						}
+					},
+			"src": "https://www.youtube.com/watch?v=DkM2xCTgJqM",
+			"srcMobile": "https://www.youtube.com/watch?v=DkM2xCTgJqM",
+            "thumb": "img/video-placeholder-1.jpg"
+		}
+        ]
+}

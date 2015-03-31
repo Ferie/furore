@@ -32,7 +32,7 @@ body div.wrapper.spinner.inline div.spinner-layer {
 }
 body div.wrapper.spinner div.spinnerText {
 	clear:both;
-	margin-top:20px;
+	margin-top:1%;
 	font-family: 'unicredit-light';
 	color: #00afd0;
 	font-size: 24px;

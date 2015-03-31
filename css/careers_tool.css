@@ -1,0 +1,32 @@
+/************** CAREERS TOOL **************/
+
+#careersTool {
+	margin-bottom: 42px;
+}
+
+#careersTool .subtitle {
+	border-bottom: 1px solid #c9c9c9;
+	font-size: 17px;
+	margin: 0 15px 24px;
+	padding-bottom: 23px;
+	text-transform: uppercase;
+}
+
+#careersTool .country {
+	height: 82px;
+	margin-bottom: 32px;
+}
+
+#careersTool .country .countryName {
+	font-size: 19px;
+	line-height: 1;
+	margin-bottom: 12px;
+	padding: 0 15px;
+}
+
+#careersTool .country .externalLink {
+	background: url("../img/static/generic_external_link_icon.png") no-repeat;
+	margin-left: 1px;
+	margin-bottom: 12px;
+	padding-left: 26px;
+}

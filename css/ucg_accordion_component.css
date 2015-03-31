@@ -30,7 +30,7 @@
 	font-family: "UniCredit-Bold";
 	font-size: 17px;
 	margin: 0;
-	padding: 20px 10px;
+	padding: 20px 50px 20px 10px;
 	text-transform: uppercase;
 }
 
@@ -83,6 +83,10 @@
 
 .ucg_accordion .ucg_text.panel {
 	margin: 0;
+}
+
+.ucg_accordion .ucg_title.underlined {
+	margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {

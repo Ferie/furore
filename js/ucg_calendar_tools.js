@@ -40,8 +40,8 @@ function filterCategory(element, category){
 }
 
 function getSlideNum(){
-	//return isBreakpoint("xs") ? 1 : 3;
-	return 3;
+	return isBreakpoint("xs") ? 1 : isBreakpoint("sm") ? 2 : 3;
+	//return 3;
 }
 
 function getSwiperByName(name){
@@ -102,7 +102,7 @@ $(document).ready(function() {
 	});
 	$('.ucg_calendar_tool_controller .iradio_ubis').on('ifChecked', function(){
 		$('.ucg_calendar_tool_controller .ucg_radio').removeClass("checked");
-		$(this).parent().parent().addClass("checked");
+		$(this).parent().addClass("checked");
 		var name = $(this).data("swiper");
 		var $container = $('.ucg_calendar_tool .swiper-container[data-name="'+name+'"]');
 		var $swiper = getSwiperByName(name);
@@ -116,7 +116,12 @@ $(document).ready(function() {
 	});
 	$(window).resize(function(){
 		$.each(swipersCalendar, function(key, value){
-			value.swiper.resizeFix(true);
+			var slideNum = getSlideNum();
+			if(value.swiper.params.slidesPerView!=slideNum){
+				value.swiper.params.slidesPerView = slideNum;
+				value.swiper.reInit();
+			}
+			//value.swiper.resizeFix(true);
 		});
 	});
 });

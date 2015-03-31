@@ -1,0 +1,52 @@
+#boardOfDirectors h3 {
+	font-size: 24px;
+}
+
+#boardOfDirectors .ucg_tab .tabsBody > .container {
+	padding: 0;
+}
+
+#boardOfDirectors .ucg_tab .resume {
+	position: relative;
+	float: left;
+	padding: 0 15px;
+	height: 300px;
+	width: 230px;
+}
+
+#boardOfDirectors .ucg_tab .resume .ucg_image_container img {
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+#boardOfDirectors .ucg_tab .resume .ucg_txt {
+	font-family: "unicredit-regular";
+	color: #666666;
+	padding: 0 20px;
+}
+
+#boardOfDirectors .ucg_tab .resume .ucg_txt .bodName {
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+#boardOfDirectors .ucg_tab .resume .ucg_txt .bodOccupation {
+	font-size: 15px;
+}
+
+#boardOfDirectors .ucg_tab .ucg_linklist {
+	position: absolute;
+	left: 35px;
+	bottom: 10px;
+}
+
+#boardOfDirectors .panel .container {
+	width: 100%;
+}
+
+@media (min-width: 1024px) {
+	#boardOfDirectors .ucg_tab .resume {
+		max-width: none;
+		width: 25%;
+	}
+}

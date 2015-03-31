@@ -16,8 +16,25 @@
 	margin-bottom: 0;
 }
 
+.ucg_text a.apix {
+	vertical-align: super;
+	text-decoration: underline;
+	font-size: 8px;
+	padding: 0 5px;
+	cursor: pointer;
+	font-family: 'unicredit-bold';
+	line-height: 0;
+}
+
+.ucg_text .ucg_text_container .ucg_news {
+	margin-bottom: 50px;
+}
+
 .ucg_text .ucg_text_container .paragraphTitle {
+	font-family: 'unicredit-bold';
+	color: #333;
 	margin-top: 26px;
+	margin-bottom: 0;
 }
 
 .ucg_text .ucg_text_container p:first-child {
@@ -42,14 +59,10 @@
 	font-family: 'unicredit-bold';
 	color: #666666;
 }
+
 .ucg_text .ucg_text_container .ucg_introTitle .ucg_titleLink:hover,
 .ucg_text .ucg_text_container .ucg_introTitle .ucg_titleLink:active {
 	color: #00afd0;
-}
-
-.ucg_text .ucg_text_container .paragraphTitle {
-	font-family: 'unicredit-bold';
-	margin-bottom: 0;
 }
 
 .ucg_text .ucg_text_container .ucg_intro {

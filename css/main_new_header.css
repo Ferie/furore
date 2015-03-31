@@ -1,0 +1,578 @@
+/**** GENERAL RULES ****/
+body {
+	font-family: 'unicredit-regular';
+	font-size: 14px;
+	background: #FFF;
+	color: #666666;
+}
+.clear {
+	clear: both !important;
+	float: none !important;
+	display: block !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	border: none !important;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+a, a:visited, a:focus {
+	color: #00afd0;
+	text-decoration: none;
+	outline: 0;
+}
+a:hover, a:active {
+	color: #00afd0;
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+
+b, strong {
+	font-family: "unicredit-bold";
+	font-weight: normal;
+}
+
+.panel {
+	behavior: url('../plugin/js/PIE.htc');
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	background: none;
+	margin-bottom: 0;
+}
+/* #mainContainer > .panel {
+	margin-bottom: 20px;
+} */
+
+
+
+
+	.body-container-table {
+		margin-top: 60px;
+		display: table;
+		width: 100%;
+		border-collapse: collapse;
+  		border: none;
+	}
+	.body-container-table > .body-container-cell {
+		display: table-cell;
+		/* position: relative;
+		left: -1px; */
+		height: 100%;
+		vertical-align: top;
+		overflow: hidden;		  
+		background-color: #262626;
+		border-collapse: collapse;
+  		border: none;
+	}
+	.body-container-table > .body-container-cell:last-child {
+		background-color: #FFF;
+	}
+	.body-container-table.opened  > .body-container-cell:last-child {
+		display: none;	
+	}
+
+
+
+
+
+
+
+#mainContainer {
+	background-color: #FFF;
+	display: block;
+	/* position: absolute;
+	top: 60px;
+	left: 0px; */
+}
+#mainContainer.opened {
+	display: none;
+}
+#mainContainer .mainContainer-wrapper {
+	position: relative;
+}
+#mainContainer .ucg_cols {
+	padding: 0;
+	margin: 0;
+}
+#mainContainer > .pane {
+	display: block;
+	width: 100%;
+	text-align: center;	
+}
+#mainContainer > .pane h1,
+#mainContainer > .pane h2,
+#mainContainer > .pane h3 {
+	font-family: "unicredit-light";
+    font-weight: normal;
+}
+/**** GENERAL RULES ****/
+	
+/**** HEADER ****/
+#header {
+	background-color: #e32612;
+	height: 60px;
+	color: #FFF;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	z-index: 11;
+}
+#header > div {
+	float: left;
+	height: 60px;
+	padding-bottom: 10px;
+}
+#header > div > a {
+	height: 60px;
+	display: inline-block;
+}
+#header .sidebar-switch a {
+	width: 60px;
+	height: 60px;
+	background-color: #262626;
+	background-image: url('../img/static/menu-nav-sidebar.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+#header .sidebar-switch a.opened {
+	background-image: url('../img/static/menu-nav-sidebar-close.png');
+}
+#header .logo {
+	background-color: #FFF;
+	text-align: center;
+}
+#header .logo img {
+	padding: 17px 0;
+}
+#header > div a {
+	text-transform: uppercase;
+	color: #FFF;
+}
+#header > div a:hover {
+	text-decoration: none;
+}
+#header .search {
+	width: 60px;
+}
+#header .search a {
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	background-image: url('../img/static/menu-nav-search.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+#header .search a {
+	font-family: 'unicredit-bold';
+	white-space: nowrap;
+}
+/**** HEADER ****/
+
+/**** SEARCH ****/
+.ucg_search {
+	position: absolute;
+	top: 60px;
+	left: 0px;
+	background: #FFFFFF;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	z-index: 10;
+	overflow: visible !important;
+}
+
+.ucg_search input.findAsYouType,
+.ucg_search input.findAsYouType:focus {
+	background: #FFFFFF;
+/* 	background: #FFCC00; */
+	border: none;
+	font-family: "unicredit-light";
+	font-size: 40px;
+	line-height: 50px;
+	outline: 0 none;
+	margin: 0;
+	padding: 0 15px;
+	width: 100%;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+.ucg_search .ucg_horizontal_line {
+	position: absolute;
+	top: 49px;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+}
+
+.ucg_search .ucg_horizontal_line .spacer1 {
+	border-bottom: 1px solid #cacaca;
+	/* padding-top: 10px; */
+	width: 100%;
+}
+
+.ucg_search .ucg_horizontal_line .spacer2 {
+	/* padding-bottom: 10px; */
+	width: 100%;
+}
+
+.autocomplete-suggestions {
+	background: #FFFFFF;
+/* 	background: #FF9A33; */
+	border: none;
+	box-shadow: none;
+	padding: 0 15px;
+}
+
+.autocomplete-suggestion {
+	font-family: "unicredit-light";
+	font-size: 40px;
+	line-height: 50px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	outline: 0 none;
+}
+
+.ucg_search.panel .container  {
+	width: 100%;
+	max-width: none;
+	padding: 0;
+}
+
+.ucg_search.with-sidebar-opened.panel .container  {
+	width: 100%;
+}
+/**** SEARCH ****/
+
+/**** SIDEBAR ****/
+#sidebar {
+	width: 0px;
+	overflow: hidden;
+	background-color: #262626;
+	z-index: 1;
+	display: none;
+	/* position: relative;
+	top: 60px;
+	left: 0; */
+}
+#sidebar.opened {
+	display: block;
+	/* width: 100%;
+	overflow-y: scroll;
+	z-index: 11; */
+}
+#sidebar.opened .sidebar-scroller {
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+#sidebar .sidebar-container {
+	width: 0px;
+}
+#sidebar.opened .sidebar-container {
+	/* width: 100%; */
+}
+#sidebar .sidebar-menu {
+	height: auto;
+	padding: 20px 25px;
+}
+#sidebar .sidebar-menu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+#sidebar .sidebar-menu ul li {
+	display: block;
+	text-align: left;
+}
+#sidebar .sidebar-menu ul li a {
+	display: inline-block;
+	width: 100%;
+	text-transform: uppercase;
+	color: #666;
+    font-family: "unicredit-bold";
+    font-size: 15px;
+    line-height: 35px;
+}
+#sidebar .sidebar-menu ul li a.language {
+	background-color: transparent;
+	background-attachment: scroll;
+	background-position: left center;
+	background-repeat: no-repeat;
+	padding-left: 40px;
+}
+#sidebar .sidebar-menu ul li a.language.ita {
+	background-image: url('../img/static/menu-nav-ita.png');	
+}
+#sidebar .sidebar-menu ul li a.language.eng {
+	background-image: url('../img/static/menu-nav-eng.png');	
+}
+#sidebar .sidebar-menu ul li a:hover {
+	color: #fff;
+}
+#sidebar .sidebar-menu ul li a.active{
+	text-decoration: underline;
+	color: #fff;
+}
+#sidebar .sidebar-element {
+	border-bottom: 1px solid #515151;
+	background-color: #262626;
+}
+#sidebar.opened .sidebar-element.active {
+	background-color: #000;
+	border-left: 2px solid #e32612;
+}
+#sidebar .sidebar-element:first-child {
+	border-top: 1px solid #515151;
+}
+#sidebar .sidebar-element .sidebar-collapser {
+	width: 100%;
+	display: inline-block;
+	height: 80px;
+	background-position: 20px center;
+	background-repeat: no-repeat;
+	padding-left: 80px;
+	font-family: 'unicredit-bold';
+	color: #666666;
+	text-transform: uppercase;
+	line-height: 80px;
+	outline: 0;
+	white-space: nowrap;
+	text-align: left;
+}
+#sidebar.opened .sidebar-element .sidebar-collapser:hover,
+#sidebar.opened .sidebar-element .sidebar-collapser:active, 
+#sidebar.opened .sidebar-element.active .sidebar-collapser {color: #FFF; text-decoration: none;}
+#sidebar .sidebar-element .sidebar-collapser:focus, 
+#sidebar .sidebar-element .sidebar-collapser:visited {text-decoration: none;}
+#sidebar .sidebar-element.aboutus .sidebar-collapser  {background-image: url('../img/static/menu-sidebar-aboutus.png');}
+#sidebar .sidebar-element.aboutus .sidebar-collapser:hover,
+#sidebar.opened .sidebar-element.aboutus.active .sidebar-collapser,
+#sidebar.opened .sidebar-element.aboutus .sidebar-collapser:active {background-image: url('../img/static/menu-sidebar-aboutus-active.png');}
+#sidebar .sidebar-element.governance .sidebar-collapser {background-image: url('../img/static/menu-sidebar-governance.png');}
+#sidebar .sidebar-element.governance .sidebar-collapser:hover, 
+#sidebar.opened .sidebar-element.governance.active .sidebar-collapser,
+#sidebar.opened .sidebar-element.governance .sidebar-collapser:active {background-image: url('../img/static/menu-sidebar-governance-active.png');}
+#sidebar .sidebar-element.investors .sidebar-collapser {background-image: url('../img/static/menu-sidebar-investors.png');}
+#sidebar .sidebar-element.investors .sidebar-collapser:hover, 
+#sidebar.opened .sidebar-element.investors.active .sidebar-collapser,
+#sidebar.opened .sidebar-element.investors .sidebar-collapser:active {background-image: url('../img/static/menu-sidebar-investors-active.png');}
+#sidebar .sidebar-element.pressmedia .sidebar-collapser {background-image: url('../img/static/menu-sidebar-pressmedia.png');}
+#sidebar .sidebar-element.pressmedia .sidebar-collapser:hover, 
+#sidebar.opened .sidebar-element.pressmedia.active .sidebar-collapser,
+#sidebar.opened .sidebar-element.pressmedia .sidebar-collapser:active {background-image: url('../img/static/menu-sidebar-pressmedia-active.png');}
+#sidebar .sidebar-element.career .sidebar-collapser {background-image: url('../img/static/menu-sidebar-career.png');}
+#sidebar .sidebar-element.career .sidebar-collapser:hover, 
+#sidebar.opened .sidebar-element.career.active .sidebar-collapser,
+#sidebar.opened .sidebar-element.career .sidebar-collapser:active {background-image: url('../img/static/menu-sidebar-career-active.png');}
+#sidebar .sidebar-element.sustainability .sidebar-collapser {background-image: url('../img/static/menu-sidebar-sustainability.png');}
+#sidebar .sidebar-element.sustainability .sidebar-collapser:hover, 
+#sidebar.opened .sidebar-element.sustainability.active .sidebar-collapser,
+#sidebar.opened .sidebar-element.sustainability .sidebar-collapser:active {background-image: url('../img/static/menu-sidebar-sustainability-active.png');}
+
+#sidebar.opened .sidebar-element.active .sidebar-header {
+	background: url('../img/static/menu-sidebar-arrowdown.png') no-repeat scroll right center transparent;
+}
+#sidebar.opened .sidebar-element.active.opened .sidebar-header {
+	background: url('../img/static/menu-sidebar-arrowup.png') no-repeat scroll right center transparent;
+}
+#sidebar.opened .sidebar-element.active.reverse .sidebar-header {
+	background: url('../img/static/menu-sidebar-arrowup.png') no-repeat scroll right center transparent;
+}
+#sidebar.opened .sidebar-element.active.reverse.opened .sidebar-header {
+	background: url('../img/static/menu-sidebar-arrowdown.png') no-repeat scroll right center transparent;
+}
+
+#sidebar .sidebar-element .collapse{
+	border-top: 1px solid #343434;
+	padding: 12px 0;		
+}
+#sidebar .sidebar-element.reverse .collapse{
+	border-bottom: 1px solid #343434;
+	border-top: none;
+}
+#sidebar .sidebar-element ul {
+	padding: 0 0 0 80px;
+	margin: 0;
+	list-style-type: none;
+}
+#sidebar .sidebar-element ul li {
+	text-align: left;
+}
+#sidebar .sidebar-element ul li a {
+	color: #FFF;
+ 	font-family: 'unicredit-light';
+ 	text-transform: none;
+    font-size: 16px;
+    line-height: 35px; 
+}
+#sidebar .sidebar-element ul li a.masterLink {
+	font-family: 'unicredit-bold';
+}
+#sidebar .sidebar-element.active .collapse a.active {
+	font-family: 'unicredit-bold';
+	text-decoration: underline;	
+}
+/*
+#sidebar .sidebar-footer {
+	background-color: #262626;
+	height: 100%;
+}
+#sidebar .sidebar-footer > div:last-child{
+	padding-bottom: 180px;
+}
+#sidebar .sidebar-footer .champions-league {
+	padding: 30px 0;
+}
+#sidebar .sidebar-footer .champions-league > div {
+	padding: 0 7px;
+}
+#sidebar .sidebar-footer .champions-league .name {
+	color: #666666;
+    font-size: 10px;
+   	line-height: 1.2;
+   	padding: 4px 0;
+}
+#sidebar .sidebar-footer .change-language {
+	padding: 0 7px;
+}
+#sidebar .sidebar-footer .change-language a,
+#sidebar .sidebar-footer .change-language a:focus,
+#sidebar .sidebar-footer .change-language a:visited {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #666666;
+	margin: 3px 5px 0 0;
+}
+#sidebar .sidebar-footer .change-language a:hover,
+#sidebar .sidebar-footer .change-language a:active,
+#sidebar .sidebar-footer .change-language a.active {
+	color: #FFF;
+	text-decoration: none;
+}
+#sidebar .sidebar-footer .change-language .eng {
+	text-align: right;
+}
+#sidebar .sidebar-footer .change-language .ita {
+	text-align: left;
+}
+*/
+/**** SIDEBAR ****/
+
+/**** FOOTER ****/
+#footer {
+	text-align: center;
+	position: relative;
+}
+#mainContainer.smaller-than-window #footer {
+	position: absolute;
+	bottom: 0;
+}
+#footer .lightGreyFooter {
+	background-color: #e6e6e6;
+	padding: 45px 0;
+}
+#footer .darkGreyFooter {
+	background-color: #858585;
+	color: #e6e6e6;
+	padding: 15px 0;
+}
+#footer .footer-row {
+	padding: 20px 0;
+}
+#footer ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+#footer ul li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+#footer ul li a {
+	display: inline-block;
+    margin: 0;
+    color: #cccccc;
+}
+#footer .lightGreyFooter ul li a {
+	padding-top: 40px;
+	background-position: top center;
+	background-repeat: no-repeat;
+	font-size: 16px;
+	vertical-align: top;
+	margin: 0 4.7%;
+	color: #666;
+}
+#footer .lightGreyFooter ul li a.pressmedia {
+	background-image: url('../img/static/footer-nav-pressmedia.png');
+}
+#footer .lightGreyFooter ul li a.contactus {
+	background-image: url('../img/static/footer-nav-contactus.png');
+}
+#footer .lightGreyFooter ul li a.archive {
+	background-image: url('../img/static/footer-nav-archive.png');
+}
+#footer .lightGreyFooter ul li a.uclOfficialBank {
+	background-image: url('../img/static/footer-nav-champions.png');
+	background-position: center top;
+}
+
+#footer .lightGreyFooter .general {
+	padding: 13px 0 0 0;
+}
+#footer .info ul:first-child,
+#footer .utility ul:first-child {
+	padding: 0 10px 0 20px;
+}
+#footer .info ul:last-child,
+#footer .utility ul:last-child {
+	padding: 0 20px 0 10px;
+}
+#footer .info ul li,
+#footer .utility ul li {
+	width: 100%;
+	display: block;
+}
+#footer .utility ul li a {
+	color: #ffffff;
+	font-size: 17px;
+	padding: 5px 0;
+    text-align: left;
+    width: 100%;
+}
+#footer .info ul li a {
+    text-align: left;
+    width: 100%;
+	padding: 5px 0;	
+}
+#footer .darkGreyFooter .utility {
+	padding: 10px 0;
+}
+#footer .darkGreyFooter .info {
+	padding: 10px 0;
+}
+#footer .darkGreyFooter .logos {
+	padding: 30px 20px;
+}
+#footer .darkGreyFooter .logos img {
+	float: left;
+}
+#footer .darkGreyFooter > div:last-child {
+	margin-top: 15px;
+	border-top: 1px solid #ababab;
+	padding: 45px 0 35px 0;
+}
+#footer ul li a:hover,
+#footer ul li a:active {
+	text-decoration: none;
+	color: #FFF;
+}
+/**** FOOTER ****/

@@ -7,6 +7,11 @@
 				headerSelector: '#header',
 				sidebarSelector: '#sidebar',
 				messageSelector: '#message',
+				searchSelector: '.ucg_search',
+				searchFieldClass: '.findAsYouType',
+				searchUrl: 'data/search.json',
+				searchIsInit: false,
+				searchTreshold: 2,
 				containerSelector: '#mainContainer',
 				footerSelector: '#footer',
 				toggleEvent: 'toggleSidebar',
@@ -16,6 +21,7 @@
 				calcHeightComplete: 'calculationHeightCompleted',
 				scrollableSelector: '.scrollable-element',
 				containerWidth: 960,
+				adjHeight: 1.0,
 				collapsedSidebarWidth: 80,
 				openedSidebarWidth: 280,
 				collapsedSidebarWidthMobile: 0,
@@ -27,7 +33,7 @@
 				pixelSpeed: 500/200,
 				cookieName: "UBIS-section-page",
 				breakpoint: "xs",
-				selection: {section: null, page:null},
+				selection: {section: null, page: null},
 				timer: null
 				
 			};
@@ -36,12 +42,14 @@
 			var $header = $(st.headerSelector);
 			var $sidebar = $(st.sidebarSelector);
 			var $message = $(st.messageSelector);
+			var $search = $(st.searchSelector);
 			var $container = $(st.containerSelector);
 			var $footer = $(st.footerSelector);
 			var $scrollables = $(st.scrollableClass);
 			st.$header = $header;
 			st.$sidebar = $sidebar;
 			st.$message = $message;
+			st.$search = $search;
 			st.$container = $container;
 			st.$footer = $footer;
 			st.$scrollables = $scrollables;
@@ -53,10 +61,10 @@
 			st.$header.find('a[data-section][data-link]').click(function(){
 				var mysection =  $(this).data("section");
 				var mylink =  $(this).data("link");
-				$.cookie(st.cookieName, JSON.stringify({section: mysection, page:mylink}), { expiry: 0 })
+				$.cookie(st.cookieName, JSON.stringify({section: mysection, page:""+mylink}), { expiry: 0 })
 				location.reload();
 			});
-			
+			st.$header.find('a.searchToolHeader').click(utils._openSearch);
 
 			st.$header.find('.sidebar-switch a').click(function(){utils._toggleSidebar("toggle");});
 			
@@ -78,6 +86,13 @@
 							//utils._setHeightContainers();		
 							}}).addClass("in");
 					}
+				}
+			});
+			
+
+			st.$search.on("keyup", function(e){
+				if(st.searchIsInit!==true){
+					utils._buildSearch();
 				}
 			});
 			
@@ -196,6 +211,7 @@
 						complete: function(){
 							st.$container.trigger(st.animationEvent);
 							utils._setHeightContainers();
+							st.$container.toggleClass("opened");
 						}}, 
 						utils._getSidebarWidth()*st.pixelSpeed, 
 						"linear");
@@ -210,6 +226,7 @@
 						complete: function(){
 							st.$container.trigger(st.animationEvent);
 							utils._setHeightContainers();
+							st.$container.toggleClass("opened");
 							}}, 
 						utils._getSidebarWidth()*st.pixelSpeed, 
 						"linear");
@@ -229,6 +246,7 @@
 							complete: function(){
 								st.$container.trigger(st.animationEvent);
 								utils._setHeightContainers();
+								st.$container.toggleClass("opened");
 							}}, 
 							utils._getSidebarWidth()*st.pixelSpeed, 
 							"linear");
@@ -243,6 +261,7 @@
 								complete: function(){
 									st.$container.trigger(st.animationEvent);
 									utils._setHeightContainers();
+									st.$container.toggleClass("opened");
 									}}, 
 								utils._getSidebarWidth()*st.pixelSpeed,
 								"linear");
@@ -264,24 +283,29 @@
 			var widthC =  $(window).outerWidth(true)-leftC;
 			var widthF =  $(window).outerWidth(true)-leftC;
 			st.$container.css({top: topC+"px"});
+			st.$search.css({top: topC+"px"});
+			st.$search.animate({left: leftC+"px", width: widthC+"px"}, {"queue": false}, "linear");
 			st.$container.animate({left: leftC+"px", width: widthC+"px"}, {"queue": false}, "linear");
 			st.$footer.animate({width: widthF+"px"}, {"queue": false}, "linear");
 			if(widthC<=st.containerWidth) {
-				st.$container.addClass("with-sidebar-opened");				
+				st.$container.addClass("with-sidebar-opened");
+				st.$search.addClass("with-sidebar-opened");
 			} else {
-				st.$container.removeClass("with-sidebar-opened");			
+				st.$container.removeClass("with-sidebar-opened");
+				st.$search.removeClass("with-sidebar-opened");			
 			}
 		},
 		_setWidthContainer: function(){
 			var widthC = $(window).outerWidth(true)-utils._getContainerLeft();
 			st.$container.css({width: widthC+"px"});
+			st.$search.css({width: widthC+"px"});
 		},
 		_setWidthFooter: function(){
 			var widthF = $(window).outerWidth(true)-utils._getContainerLeft();
 			st.$footer.css({width: widthF+"px"});	
 		},
 		_setElementSizes: function(container){
-			$(container).find("img[data-ucg-height]").each(function(index, element){
+			$(container).find("[data-ucg-height]").each(function(index, element){
 				var w = $(element).data('ucg-width');
 				var h = $(element).data('ucg-height');
 				$(element).data("oldStyle", $(element).attr("style"));
@@ -292,7 +316,7 @@
 			});
 		},
 		_unsetElementSizes: function(container){
-			$(container).find("img[data-ucg-height]").each(function(index, element){
+			$(container).find("[data-ucg-height]").each(function(index, element){
 				if(typeof $(element).data("oldStyle")!= "undefined"){
 					$(element).attr("style", $(element).data("oldStyle"));
 				} else {
@@ -317,7 +341,7 @@
 				d.resolve();
 			});
 			$.when(insertSizes).done(function(){
-				var containerContent =  Math.max(utils._getContentHeight(st.$sidebar), utils._getContentHeight(st.$container), $(window).outerHeight(true)-st.$header.outerHeight(true))*1.05;
+				var containerContent =  Math.max(utils._getContentHeight(st.$sidebar), utils._getContentHeight(st.$container), $(window).outerHeight(true)-st.$header.outerHeight(true))*st.adjHeight;
 				st.$container.css("height", containerContent+"px");
 				st.$sidebar.css("height", containerContent+"px");
 				var sidebarMenuHeight = containerContent;
@@ -351,6 +375,47 @@
 				width = 200;
 			}
 			st.$header.find('.logo').css({width: width+"px"});	
+		},
+		_buildSearch: function(){
+			$.ajax({
+				type: 'GET',
+				url: st.searchUrl,
+				dataType: "json",
+				success: function(data, textStatus, jqXHR){
+					words = $.map(data, function (singleWord) { return { value: singleWord}; });
+					st.$search.find(st.searchFieldClass).devbridgeAutocomplete({
+				        lookup: words,
+				        minChars: st.searchTreshold,
+				        showNoSuggestionNotice: true,
+				        noSuggestionNotice: ''
+				    });
+					st.searchIsInit = true;
+				},
+				error: function (jqXHR, textStatus, errorThrown){
+					st.searchIsInit = false;
+				}
+			});
+		},
+		_destroySearch: function(){
+			//$(st.$search.find(st.searchFieldClass)).devbridgeAutocomplete({});
+			st.$search.find(st.searchFieldClass).val("").devbridgeAutocomplete("dispose");
+			st.searchIsInit = false;
+		},
+		_openSearch: function(){			
+			st.$header.find('a.searchToolHeader').addClass("active");
+			st.$search.slideDown("slow", function(){
+				st.$header.find('a.searchToolHeader').off("click").click(utils._closeSearch);
+			}).addClass("active");
+			st.$search.find(st.searchFieldClass).focus().on("blur", utils._closeSearch);
+			utils._toggleSidebar("close");
+		},
+		_closeSearch: function(){
+			st.$header.find('a.searchToolHeader').removeClass("active");
+			st.$search.slideUp("slow", function(){
+				st.$header.find('a.searchToolHeader').off("click").click(utils._openSearch);
+			}).removeClass("active");
+			st.$search.find(st.searchFieldClass).off("blur");
+			utils._destroySearch();
 		}
 	};
 	

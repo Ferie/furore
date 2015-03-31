@@ -1,0 +1,120 @@
+#smForm .smMessage {
+	text-align: center;
+}
+#smForm .smMessage .ucg_title h4 {
+	margin-bottom: 25px;
+}
+#smForm .smMessage .ucg_title h3 {
+	font-size: 24px;
+	line-height: 26px;
+	margin-bottom: 14px;
+}
+#smForm .shareholder_type_field {
+	margin-bottom: 0;
+}
+#smForm .shareholder_type {
+	margin: 10px 0 20px;
+}
+#smForm .shareholder_type .ucg_radio_button {
+	display: inline-block;
+}
+#smForm .ucg_form .ucg_formTitle {
+	margin-bottom: 10px;
+}
+#smForm .ucg_form .ucg_formRow {
+	padding: 0;
+}
+#smForm .ucg_form .ucg_formRow:last-child {
+	margin-bottom: 7px;
+}
+#smForm .ucg_form .ucg_formRow > .ucg_formField {
+	padding: 0;
+}
+#smForm .ucg_form input,
+#smForm .ucg_form .chosen-container,
+#smForm .ucg_form select {
+	margin-top: 5px;
+}
+/****** STEP 2 *******/
+#smForm.step2 .smMessage .ucg_button_back .container {
+	padding: 0;
+}
+#smForm.step2 .smMessage .ucg_button_back .ucg_button {
+	margin: 0;
+}
+#smForm.step2 .smMessage .ucg_title h3 {
+	line-height: 40px;
+	margin: 0;
+}
+#smForm.step2 .ucg_button,
+#smForm.step2 .ucg_button button {
+	float: none;
+}
+#smForm.step2 .ucg_button button.left {
+	float: left;
+}
+#smForm.step2 .ucg_button button.right {
+	float: right;
+}
+#smForm.step2 .ucg_topic {
+	padding: 30px 0;
+	border-bottom: 1px solid #c9c9c9;
+}
+#smForm.step2 .ucg_topic:last-child {
+	border: none;
+}
+#smForm.step2 .ucg_topic_group .ucg_formTitle h3 {
+    margin-bottom: 7px;
+    margin-top: 18px;
+}
+#smForm.step2 .ucg_topic .ucg_topic_questions {
+	padding: 0 3px;
+}
+#smForm.step2 .ucg_topic .ucg_button .container {
+	padding: 0;
+}
+#smForm.step2 .ucg_topic a {
+	font-size: 15px;
+    line-height: 15px;
+    padding-right: 20px;
+    display: inline-block;
+	background-image: url('../img/static/attachment-arrows.png');
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-color: transparent;
+}
+#smForm.step2 .ucg_topic a.more {
+	background-position: right bottom;
+}
+#smForm.step2 .ucg_topic a.less {
+	background-position: right top;
+}
+#smForm.step2 .ucg_topic .ucg_topic_questions .ucg_formField {
+	margin-bottom: 5px;
+}
+#smForm.step2 .ucg_topic .ucg_topic_questions .ucg_formField .ucg_formCounter {
+	margin-top: 0;
+}
+#smForm.step2 .ucg_topic a.cancel {
+	background-image: url('../img/static/cross-button-blue.png');
+	background-position: right center;
+}
+#smForm.step2 .ucg_topic .ucg_button button {
+	margin: 18px 0 0;
+}
+
+@media (min-width: 768px) {
+	#smForm .ucg_form .ucg_formRow > .ucg_formField {
+		padding: 0 15px;
+		margin-bottom: 10px;
+	}
+	#smForm .ucg_form .ucg_formRow > .ucg_formField:first-child {
+		padding-left: 0;
+	}
+	#smForm .ucg_form .ucg_formRow > .ucg_formField:last-child {
+		padding-right: 0;
+	}
+	#smForm.step2 .smMessage .ucg_button_back {
+		float: left;
+	}
+}

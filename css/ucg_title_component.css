@@ -4,11 +4,21 @@
 	text-align: center;
 }
 
+.ucg_seo_title .container {
+	padding: 0px 30px;
+}
+
 .ucg_seo_title h1 {
 	font-family: 'unicredit-light';
-	font-size: 70px;
-	line-height: 80px;
-	margin-top: 0;
+	font-size: 40px;
+	line-height: 50px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.ucg_seo_title h1.singlePage {
+	font-size: 30px;
+	line-height: 1;
 }
 
 .ucg_title {
@@ -22,19 +32,41 @@
 .ucg_title h1, .ucg_title h2,
 .ucg_title h3, .ucg_title h4,
 .ucg_title h5, .ucg_title h6 {
+	font-family: "unicredit-light";
+    line-height: 1;
 	margin-top: 0px;
 }
 
 .ucg_title h2 {
-	font-family: "unicredit-light";
-    line-height: 1;
 	font-size: 30px;
 }
 
+.ucg_title h3 {
+	font-size: 24px;
+}
+
+.ucg_title h4 {
+	font-size: 17px;
+}
+
+.ucg_title h5 {
+	font-size: 15px;
+}
+
+.ucg_title h6 {
+	font-family: "unicredit-medium";
+	font-size: 14px;
+	color: #999;
+	font-weight:normal;	
+	text-transform: uppercase;
+	line-height: 1.4;
+	margin-bottom: 5px;
+}
+
 .ucg_title .ucg_title_image_container {
-	float: right;
+	float: left;
 	margin-top: 5px;
-	margin-left: 15px;
+	margin-left: 0;
 }
 
 .ucg_title .ucg_title_image_container img {
@@ -42,28 +74,45 @@
 	width: 100%;
 }
 
-.ucg_underlined_title {
+.ucg_title.underlined {
 	width: 100%;
 }
 
-.ucg_underlined_title h5 {
+.ucg_title.underlined h1, .ucg_title.underlined h2,
+.ucg_title.underlined h3, .ucg_title.underlined h4,
+.ucg_title.underlined h5, .ucg_title.underlined h6 {
 	font-family: 'unicredit-regular';
-	font-size: 15px;
-}
-
-.ucg_underlined_title h1, .ucg_underlined_title h2,
-.ucg_underlined_title h3, .ucg_underlined_title h4,
-.ucg_underlined_title h5, .ucg_underlined_title h6 {
 	margin: 0;
 }
 
-.ucg_underlined_title .ucg_title_container {
+.ucg_title.underlined .ucg_title_container {
 	border-bottom: 1px solid #c9c9c9;
-	padding-bottom: 16px;
+	padding: 0 0 16px;
 	text-transform: uppercase;
 }
 
 @media (min-width: 768px) {
+	.ucg_seo_title .container {
+		padding: 0px 100px;
+	}
+
+	.ucg_seo_title h1 {
+		font-size: 70px;
+		line-height: 80px;
+	}
+
+	.ucg_seo_title h1.singlePage {
+		font-size: 36px;
+	}
+
+	.ucg_title h2 {
+		font-size: 40px;
+	}
+
+	.ucg_title h3 {
+		font-size: 30px;
+	}
+
 	.ucg_title .ucg_cols_image {
 		width: auto;
 		float: right;
@@ -72,8 +121,14 @@
 	.ucg_title.ucg_no_image .ucg_cols_text {
 		width: 100%;
 	}
-	
+
 	.ucg_title h2 {
 		font-size: 40px;
+	}
+
+	.ucg_title .ucg_title_image_container {
+		float: right;
+		margin-top: 5px;
+		margin-left: 15px;
 	}
 }

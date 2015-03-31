@@ -1,35 +1,94 @@
-.ucg_infografic {
-	padding: 50px 0 17px;
-}
+/************** ucg_infografic **************/
+
 .ucg_infografic .ucg_image > .container img {
 	max-width: 300px;
 }
+
 .ucg_infografic .ucg_title.panel {
 	margin-top: 0px;
 	margin-bottom: 33px;
 }
-.ucg_infografic .parsys_column.three-columns-box {
-	margin-bottom: 0;
-}
-.ucg_infografic .ucg_infografic_text {
-	margin-bottom: 20px;
-}
-.ucg_infografic .ucg_infografic_text .value {
+
+.ucg_infografic .container > .ucg_image,
+.ucg_infografic .container > .ucg_infografic_text {
+	width: 260px;
+	margin: 30px 50px 0 0;
 	float: left;
+	position: relative;
+}
+
+.ucg_infografic .container > .ucg_image,
+.ucg_infografic .container > .ucg_infografic_text {
+	overflow: hidden;
+}
+.ucg_infografic .container > .ucg_image img {
+	width: 100%;
+	height: auto;
+}
+
+#mainContainer .ucg_infografic .container .ucg_linklist > .container {
+	padding: 0;
+	width: 100%;
+}
+
+.ucg_infografic .ucg_infografic_text .value {
 	font-family: 'unicredit-light';
 	font-size: 40px;
+	letter-spacing: -2px;
 	line-height: 40px;
+	margin-bottom: 25px;
 }
+
 .ucg_infografic .ucg_infografic_text .title {
-	display: block;
 	text-transform: uppercase;
 	font-size: 15px;
 }
-.ucg_infografic .ucg_infografic_text .title a {
+
+.ucg_infografic .ucg_infografic_text .title a.apix {
 	vertical-align: super;
 	text-decoration: underline;
 	font-size: 8px;
 	padding: 0 5px;
 	cursor: pointer;
 	font-family: 'unicredit-bold';
+	line-height: 0;
+}
+
+.ucg_infografic .ucg_linklist.panel {
+	margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+	.ucg_infografic .container > .ucg_image,
+	.ucg_infografic .container > .ucg_infografic_text {
+		height: 380px;
+		overflow: hidden;
+	}
+
+	#mainContainer .ucg_infografic .container .ucg_linklist {
+		position: absolute;
+		bottom: 0;
+	}
+
+	#mainContainer:not(.opened) .ucg_infografic .container > .ucg_infografic_text {
+		border-right: none;
+	}
+
+	#mainContainer:not(.opened) .ucg_infografic.separator .container > .ucg_infografic_text {
+		border-right: 1px solid #c9c9c9;
+	}
+
+	.ucg_infografic .ucg_linklist.panel {
+		margin-top: 0;
+	}
+}
+
+@media (min-width: 960px) {
+	.ucg_infografic .container > .ucg_infografic_text {
+		border-right: none;
+	}
+
+	.ucg_infografic.separator .container > .ucg_infografic_text {
+		border-right: 1px solid #c9c9c9;
+	}
 }

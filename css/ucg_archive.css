@@ -1,0 +1,72 @@
+.ucg_archive .container .ucg_archive_header > div {
+	min-height: 40px;
+}
+.ucg_archive .ucg_archive_title h3 {
+	margin: 0;
+	line-height: 40px;
+}
+.ucg_archive .ucg_archive_hrline .ucg_horizontal_line {
+	padding: 19px 0 20px 0;
+}
+.ucg_archive .ucg_archive_results {
+	margin: 28px 0;
+}
+.ucg_archive .ucg_archive_result {
+	margin: 10px 0 25px 0; 
+}
+.ucg_archive .ucg_archive_result .ucg_archive_title h5 {
+	font-size: 17px;
+	color: #333;
+	margin: 15px 0;
+}
+.ucg_archive .ucg_archive_result  .ucg_archive_date {
+	color: #999;
+	min-width: 100px;
+}
+.ucg_archive .ucg_archive_result.single-without-title {
+	margin-bottom: 10px;
+}
+.ucg_archive .ucg_archive_result.single-without-title .ucg_archive_date {
+	display: inline;
+	float: left;
+	margin-right: 20px;
+}
+.ucg_archive .ucg_archive_result .ucg_archive_attach:not(.multiple) .ucg_linklist > .container {
+	padding: 0;
+}
+.ucg_archive .ucg_archive_result .ucg_archive_attach.multiple .ucg_archive_linkcollapser {
+	font-size: 15px;
+	padding: 0px 20px 0 0;
+	line-height: 15px;
+	height: 15px;
+	min-width: 130px;
+	display: inline-block;
+	background-image: url('../img/static/attachment-arrows.png');
+	background-attachment: scroll;
+	background-color: transparent;
+	background-position: right top;
+	background-repeat: no-repeat;
+}
+.ucg_archive .ucg_archive_result .ucg_archive_attach.multiple .ucg_archive_linkcollapser.collapsed {
+	background-position: right bottom;	
+}
+.ucg_archive .ucg_archive_result .ucg_archive_attach.multiple .collapse.in,
+.ucg_archive .ucg_archive_result .ucg_archive_attach.multiple .collapsing {
+}
+.ucg_archive .ucg_archive_result .ucg_archive_attach .ucg_linklist .ucg_link_container {
+	font-size: 15px;
+}
+.ucg_archive .ucg_archive_result .ucg_archive_attach.multiple .ucg_linklist {
+	margin: 10px 0;	
+	padding: 10px 0 5px 0;	
+	background-color: #f2f2f2;
+}
+.ucg_archive .ucg_archive_result .ucg_archive_attach_group {
+	margin-bottom: 27px;
+}
+.ucg_archive .ucg_archive_result .ucg_archive_attach_group_title h5 {
+	font-size: 15px;
+	margin-bottom: 16px;
+    margin-top: 13px;
+	text-transform: uppercase;	
+}

@@ -29,6 +29,72 @@
 	border-color: #00afd0;
 	color: #FFFFFF;
 }
+.ucg_button button.ucg_button_arrowed,
+.ucg_button button.ucg_button_addons {
+	position: relative;	
+}
+.ucg_button button.ucg_button_arrow_right {
+	padding-right: 30px;
+}
+.ucg_button button.ucg_button_addon_right {
+	padding-right: 50px;
+}
+.ucg_button button.ucg_button_arrow_left {
+	padding-left: 30px;
+}
+.ucg_button button.ucg_button_addon_left {
+	padding-left: 50px;
+}
+.ucg_button button.ucg_button_arrowed span {
+    background-attachment: scroll;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 100%;
+    position: absolute;
+    width: 5px;	
+}
+.ucg_button button.ucg_button_addons span {
+    background-attachment: scroll;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 100%;
+    position: absolute;
+    width: 17px;	
+}
+.ucg_button button.ucg_button_arrowed span.rightArrow {
+    background-image: url("../img/static/arrows-button-dark-right.png");
+    right: 10px;
+}
+.ucg_button button.ucg_button_arrowed span.leftArrow {
+    background-image: url("../img/static/arrows-button-dark-left.png");
+    left: 10px;
+}
+.ucg_button button.ucg_button_arrowed.ucg_button_confirm span.rightArrow {
+    background-image: url("../img/static/arrows-button-white-right.png");
+}
+.ucg_button button.ucg_button_arrowed.ucg_button_confirm span.leftArrow {
+    background-image: url("../img/static/arrows-button-white-left.png");
+}
+.ucg_button button.ucg_button_arrowed.disabled span.rightArrow {
+    background-image: url("../img/static/arrows-button-light-right.png");
+}
+.ucg_button button.ucg_button_arrowed.disabled span.leftArrow {
+    background-image: url("../img/static/arrows-button-light-left.png");
+}
+.ucg_button button.ucg_button_addons.ucg_button_addon_right span {
+    right: 15px;
+}
+.ucg_button button.ucg_button_addons.ucg_button_addon_left span {
+    left: 15px;
+}
+.ucg_button button.ucg_button_addons span.plus {
+    background-image: url("../img/static/addons-button-dark-plus.png");
+}
+.ucg_button button.ucg_button_addons span.minus {
+    background-image: url("../img/static/addons-button-dark-minus.png");
+}
 .ucg_button .btn:hover,
 .ucg_button .btn:focus,
 .ucg_button .btn:active {

@@ -12,6 +12,189 @@
 	
 	/**** SIDEBAR ****/
 	/**** SIDEBAR ****/
+	
+	/**** GENERAL FORMS ****/
+	select option {
+	    background-image: url('../img/retina/radio-button-unchecked_retina.png');
+	    background-size: 22px 22px;
+	}
+	select option:focus,
+	select option:hover,
+	select option:active {
+	    background-image: url('../img/retina/radio-button-checked_retina.png');
+	    background-size: 22px 22px;
+	}
+	.ucg_chosen_radio .chosen-container.little-arrow .chosen-default div b {
+	    background-image: url('../img/retina/select-arrow-little-down_retina.png') !important;
+	    background-size: 26px 13px !important;
+	}
+	.ucg_chosen_radio .chosen-container.little-arrow.chosen-with-drop .chosen-default div b {
+		background-image: url('../img/retina/select-arrow-little-up_retina.png') !important;
+	    background-size: 26px 13px !important;
+	}
+	.ucg_form .countries .chosen-select-ubis-search.chosen-container .chosen-drop .chosen-search input {
+		background-image: url('../img/retina/keywords-search-light_retina.png') !important; 
+		background-repeat: no-repeat !important;
+		background-position: right center !important;
+		background-size: 26px 26px !important;
+	}
+	.ucg_chosen_radio .chosen-container .chosen-drop .chosen-results .active-result {
+	    background-image: url('../img/retina/radio-button-unchecked_retina.png');
+	    background-size: 22px 22px;
+	}
+	.ucg_chosen_radio .chosen-container .chosen-drop .chosen-results .active-result.highlighted {
+	    background-image: url('../img/retina/radio-button-checked_retina.png');
+	    background-size: 22px 22px;
+	}
+	.ucg_chosen_radio .chosen-container.with-deselect .chosen-single.chosen-single-with-deselect:not(.chosen-default) abbr {
+		background-size: 9px 9px !important;
+	}
+	.ucg_chosen_radio .chosen-container.with-deselect.light .chosen-single.chosen-single-with-deselect:not(.chosen-default) abbr {
+		background-image: url('../img/retina/cross-button-light_retina.png') !important;
+	}
+	.ucg_chosen_radio .chosen-container.with-deselect.dark .chosen-single.chosen-single-with-deselect:not(.chosen-default) abbr {
+		background-image: url('../img/retina/cross-button-dark_retina.png') !important;
+	}
+	.ucg_chosen_radio .chosen-container.with-deselect.blue .chosen-single.chosen-single-with-deselect:not(.chosen-default) abbr {
+		background-image: url('../img/retina/cross-button-blue_retina.png') !important;	
+	}
+	.ucg_chosen_radio .chosen-container.with-deselect.white .chosen-single.chosen-single-with-deselect:not(.chosen-default) abbr {
+		background-image: url('../img/retina/cross-button-white_retina.png') !important;	
+	}
+		
+	input.keywords {
+		background-image: url('../img/retina/keywords-search-light_retina.png');
+		background-size: 26px 26px;
+	}	
+	input.keywords.white.selected {
+		background-image: url('../img/retina/keywords-search-white_retina.png');
+	}
+	input.keywords.dark.selected {
+		background-image: url('../img/retina/keywords-search-dark_retina.png');
+	}
+	input.keywords.blue.selected {
+		background-image: url('../img/retina/keywords-search-blue_retina.png');
+	}
+	input.keywords.light.selected {
+		background-image: url('../img/retina/keywords-search-light_retina.png');
+	}
+	.cross a {
+		background-image: url('../img/retina/cross-button-light_retina.png');
+		background-size: 9px 9px;
+	}
+	.cross.light a {
+		background-image: url('../img/retina/cross-button-light_retina.png');
+	}
+	.cross.dark a {
+		background-image: url('../img/retina/cross-button-dark_retina.png');
+	}
+	.cross.blue a {
+		background-image: url('../img/retina/cross-button-blue_retina.png');
+	}
+	.cross.white a {
+		background-image: url('../img/retina/cross-button-white_retina.png');
+	}
+	
+	.input-daterange > div:not(.selected) {
+		background-image: url('../img/retina/datepicker-calendar-icon_retina.png');
+		background-size: 75px 40px;
+	}
+	.input-daterange.active > div:not(.selected) {
+		background-image: url('../img/retina/datepicker-calendar-icon-opened_retina.png');
+		background-size: 75px 40px;
+	}
+	
+		
+	/**** GENERAL FORMS ****/
+	/**** COMPONENT DATE BAR ****/
+	.ucg_datebar .header .date .days li:not(:first-child):before {
+		background-image: url('../img/retina/ucg_datebar_day_arrow_retina.png');
+	}
+	.ucg_datebar .header .buttons button {
+		background-image: url('../img/retina/calendar-events-save_retina.png');
+		background-size: 26px 24px; 
+	}
+	/**** COMPONENT DATE BAR ****/
+	/**** COMPONENT ARCHIVE WIDGET ****/
+	.ucg_archive .ucg_archive_header .chosen-container.little-arrow .chosen-single div b {
+	    background-image: url('../img/retina/select-arrow-little-down_retina.png') !important;
+	    background-size: 26px 13px !important;
+	}
+	.ucg_archive .ucg_archive_header .chosen-container.little-arrow.chosen-with-drop .chosen-single div b {
+		background-image: url('../img/retina/select-arrow-little-up_retina.png') !important;
+	}
+	.ucg_archive .ucg_archive_result .ucg_archive_attach.multiple .ucg_archive_linkcollapser {
+		background-image: url('../img/retina/attachment-arrows_retina.png');
+		background-size: 15px auto;
+	}
+	/**** COMPONENT ARCHIVE WIDGET ****/
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/**** COMPONENT BUTTON ****/
+	.ucg_button button.ucg_button_arrowed span.rightArrow {
+	    background-image: url("../img/retina/arrows-button-dark-right_retina.png");
+		background-size: 5px 9px;
+	}
+	.ucg_button button.ucg_button_arrowed span.leftArrow {
+	    background-image: url("../img/retina/arrows-button-dark-left_retina.png");
+		background-size: 5px 9px;
+	}
+	.ucg_button button.ucg_button_arrowed.ucg_button_confirm span.rightArrow {
+	    background-image: url("../img/retina/arrows-button-white-right_retina.png");
+		background-size: 5px 9px;
+	}
+	.ucg_button button.ucg_button_arrowed.ucg_button_confirm span.leftArrow {
+	    background-image: url("../img/retina/arrows-button-white-left_retina.png");
+		background-size: 5px 9px;
+	}
+	.ucg_button button.ucg_button_arrowed.disabled span.rightArrow {
+	    background-image: url("../img/retina/arrows-button-light-right_retina.png");
+		background-size: 5px 9px;
+	}
+	.ucg_button button.ucg_button_arrowed.disabled span.leftArrow {
+	    background-image: url("../img/retina/arrows-button-light-left_retina.png");
+		background-size: 5px 9px;
+	}
+	.ucg_button button.ucg_button_addons span.plus {
+	    background-image: url("../img/retina/addons-button-dark-plus_retina.png");
+		background-size: 17px 17px;
+	}
+	.ucg_button button.ucg_button_addons span.minus {
+	    background-image: url("../img/retina/addons-button-dark-minus_retina.png");
+		background-size: 17px 17px;
+	}
+	/**** COMPONENT BUTTON ****/
+	
+	/**** SHAREHOLDER PAGE STEP 2 ****/
+	#smForm.step2 .ucg_topic a {
+		background-image: url('../img/retina/attachment-arrows_retina.png');
+		background-size: 15px auto;
+	}
+	#smForm.step2 .ucg_topic a.cancel {
+		background-image: url('../img/retina/cross-button-blue_retina.png');
+		background-size: 9px 9px;
+	}
+	/**** SHAREHOLDER PAGE STEP 2 ****/
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	@media (min-width: 768px) {
 		/**** GENERAL RULES ****/
 		/**** GENERAL RULES ****/

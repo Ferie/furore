@@ -1,0 +1,25 @@
+.ucg_breadcrumb_links {
+	padding: 0;
+}
+.ucg_breadcrumb_links > a {
+	float: right;
+	display: inline-block;
+	margin: 0 10px;
+	padding: 0 5px;
+}
+.ucg_breadcrumb_links .first-crosslink {
+	margin-right: 10px;	
+	font-size: 15px;
+}
+.ucg_breadcrumb_links .second-crosslink {
+	font-family: 'unicredit-bold';
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+	.ucg_breadcrumb_links {
+		width: auto;
+		margin-left: 20px;	
+	}
+}

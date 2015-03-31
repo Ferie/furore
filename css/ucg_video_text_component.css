@@ -5,6 +5,7 @@
 }
 
 .ucg_video_text.panel .container {
+	margin-top: 3px;
 	width: 100%;
 }
 
@@ -12,7 +13,7 @@
 	float: left;
 	margin-top: 3px;
 	margin-bottom: 6px;
-	margin-right: 12px;
+	width: 100%;
 }
 
 .ucg_video_text .ucg_video img {
@@ -42,10 +43,105 @@
 	font-size: 24px;
 }
 
+.ucg_video_text .ucg_txt ul,
+.ucg_video_text .ucg_txt ol,
+.ucg_video_text .ucg_txt p {
+	font-size: 15px;
+	margin-bottom: 0;
+}
+
+.ucg_video_text .ucg_txt .paragraphTitle,
+.ucg_video_text .ucg_txt .paragraph {
+	font-family: 'unicredit-regular';
+	font-size: 17px;
+	color: #333;
+	margin-top: 26px;
+	margin-bottom: 0;
+}
+
+.ucg_video_text .ucg_txt .paragraph {
+	font-size: 15px;
+}
+
+.ucg_video_text .ucg_txt p:first-child {
+	margin-top: 0;
+}
+
+.ucg_video_text .ucg_txt .ucg_news {
+	margin-bottom: 50px;
+}
+
+.ucg_video_text .ucg_txt .ucg_introTitle .ucg_titleLink {
+	font-family: 'unicredit-bold';
+	color: #666666;
+}
+
+.ucg_video_text .ucg_txt .ucg_introTitle .ucg_titleLink:hover,
+.ucg_video_text .ucg_txt .ucg_introTitle .ucg_titleLink:active {
+	color: #00afd0;
+}
+
+.ucg_video_text .ucg_txt .ItemTitle {
+	font-family: 'unicredit-bold';
+	font-size: 15px;
+	color: #333;
+}
+
+.ucg_video_text .ucg_txt .ucg_introTitle {
+	display: block;
+	font-size: 17px;
+	color: #333333;
+	margin-bottom: 5px;
+}
+
+.ucg_video_text .ucg_txt .ucg_intro {
+	color: #626262;
+}
+
+.ucg_video_text .ucg_txt a.apix {
+	vertical-align: super;
+	text-decoration: underline;
+	font-size: 8px;
+	padding: 0 5px;
+	cursor: pointer;
+	font-family: 'unicredit-bold';
+	line-height: 0;
+}
+
 .ucg_video_text .ucg_linklist .container {
 	padding: 0;
 }
 
+.ucg_video_text .ucg_txt .ucg_link_container {
+	list-style-type: none;
+	bottom: 0;
+	padding: 0;
+}
+
+.ucg_video_text .ucg_txt .ucg_ext_link {
+	background: url("../img/static/generic_external_link_icon.png") no-repeat left center / 16px auto;
+	margin-left: 3px;
+	padding-left: 20px;
+}
+
+.ucg_video_text .ucg_txt .ucg_link,
+.ucg_video_text .ucg_txt .ucg_mail {
+	background: none;
+}
+
+.ucg_video_text .ucg_linklist .container {
+	margin-top: 20px;
+	padding: 0;
+}
+
 @media (min-width: 768px) {
+	.ucg_video_text .ucg_video {
+		width: auto;
+		margin-right: 12px;
+	}
+	
+	.ucg_video_text .ucg_video img {
+		width: auto;
+	}
 	
 }
