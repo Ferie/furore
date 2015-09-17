@@ -9,26 +9,36 @@
 		<link type="text/css" rel="stylesheet" href="css/main.css"/>
 		<script type="text/javascript" src="plugin/js/jquery-1.11.2.min.js"></script>
 		<style>
-		body {
-			background-color: #333;
-			color: #fff;
-			font-family: "unicredit-regular";
-			font-size: 18px;
-		}
-		a.jsp {
-			color: #aa1c0d;
-		}
+			body {
+				background-color: #333;
+				color: #fff;
+				font-family: "unicredit-regular";
+				font-size: 18px;
+			}
+			a.jsp {
+				color: #aa1c0d;
+			}
+			a.php {
+				color: #ffcc00;
+			}
 		</style>
 		<script type="text/javascript">
-		$(document).ready(function () {
-			$('.with-jsp li a:not(.no-page)').each(function(i,e){
-				var url = $(e).attr("href");
-				if(url.lastIndexOf(".html")>=0){
-					var $jspurl = $("<a/>").addClass("jsp").attr("href", url.substring(0, url.lastIndexOf("."))+".jsp").text("(JSP)");
-					$(e).parent().append(" ").append($jspurl);
-				}
+			$(document).ready(function () {
+				$('.with-jsp li a:not(.no-page)').each(function (i, e) {
+					var url = $(e).attr("href");
+					if (url.lastIndexOf(".html") >= 0) {
+						var $jspurl = $("<a/>").addClass("jsp").attr("href", url.substring(0, url.lastIndexOf(".")) + ".jsp").text("(JSP)");
+						$(e).parent().append(" ").append($jspurl);
+					}
+				});
+				$('.with-jsp li a.php-converted').each(function (i, e) {
+					var url = $(e).attr("href");
+					if (url.lastIndexOf(".html") >= 0) {
+						var phpURL = $("<a/>").addClass("php").attr("href", url.substring(0, url.lastIndexOf(".")) + ".php").text("(PHP)");
+						$(e).parent().append(" ").append(phpURL);
+					}
+				});
 			});
-		});
 		</script>
 	</head>
 	<body class="with-jsp">
@@ -53,7 +63,7 @@
 			<div class="container">
 				<h2>Components</h2>
 				<ul>
-					<li><a href="home_accordion_component.html">Accordion</a></li>
+					<li><a class="php-converted" href="home_accordion_component.html">Accordion</a></li>
 					<li><a href="home_archive_component.html">Archive - in page widget All</a></li>
 					<li><a href="home_back_button_component.html">Back button</a></li>
 					<li><a href="home_ads_component.html">Commercial ADS</a></li>
@@ -102,7 +112,7 @@
 			<div class="container">
 				<h2>Single Pages</h2>
 				<ul>
-					<li><a href="alerts.html">Alerts and notifications policy</a></li>
+					<li><a class="php-converted" href="alerts.html">Alerts and notifications policy</a></li>
 					<li><a href="archives.html">Archive General</a></li>
 					<li>Archive Search - Financial reports</li>
 					<li>Archive Search - Press Releases</li>
