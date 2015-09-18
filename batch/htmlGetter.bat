@@ -1,13 +1,13 @@
-@ECHO OFF
+
 REM Sostituire i propri path
-cd "C:\Program Files (x86)\GnuWin32\bin"
-set rootSour=http://localhost:8080/unicredit-corporate
-set rootDest=C:\Users\Public\Documents\Partita iva\GECOD\Progetti\Unicredit\Consegne
-set logDest=C:\Users\Public\Documents\Partita iva\GECOD\Progetti\Unicredit\Consegne\wget_log.log
-set start=%date:~-4%-%date:~3,2%-%date:~0,2%
+cd "C:\Program Files\GnuWin32\bin"
+set rootSour=http://localhost:8080/gb-energy-website-v2-main-site/app/furore/
+set rootDest=C:\websites\gb-energy-website-v2-main-site\app\furore
+set logDest=C:\websites\gb-energy-website-v2-main-site\app\furore\wget_log.log
+set start=%date:~-4%-%date:~3,2%-%date:~0,2%%TIME:~0,2%_%TIME:~3,2%_%TIME:~6,2%_%TIME:~9,2%
 mkdir "%rootDest%\%start%"
 REM TEMPLATES
-wget "%rootSour%/home.jsp" -o "%logDest%" -O "%rootDest%\%start%\home.html"
+wget "%rootSour%/home.jsp" -a "%logDest%" -O "%rootDest%\%start%\home.html"
 wget "%rootSour%/frontpage_aboutus.jsp" -a "%logDest%" -O "%rootDest%\%start%\frontpage_aboutus.html"
 wget "%rootSour%/frontpage_governance.jsp" -a "%logDest%" -O "%rootDest%\%start%\frontpage_governance.html"
 wget "%rootSour%/frontpage_investors.jsp" -a "%logDest%" -O "%rootDest%\%start%\frontpage_investors.html"
@@ -20,7 +20,7 @@ REM COMPONENTS
 wget "%rootSour%/home_accordion_component.jsp" -a "%logDest%" -O "%rootDest%\%start%\home_accordion_component.html"
 wget "%rootSour%/home_archive_component.jsp" -a "%logDest%" -O "%rootDest%\%start%\home_archive_component.html"
 wget "%rootSour%/home_back_button_component.jsp" -a "%logDest%" -O "%rootDest%\%start%\home_back_button_component.html"
-wget "%rootSour%/home_ads_component.jsp" -a "%logDest%" -O "%rootDest%\%start%\home_ads_component.html"
+wget "%rootSour%/home_ads_component.jsp" -a "%logDest%" -O "%rosotDest%\%start%\home_ads_component.html"
 wget "%rootSour%/home_calendar_component.jsp" -a "%logDest%" -O "%rootDest%\%start%\home_calendar_component.html"
 wget "%rootSour%/home_career_component.jsp" -a "%logDest%" -O "%rootDest%\%start%\home_career_component.html"
 wget "%rootSour%/home_footnote_component.jsp" -a "%logDest%" -O "%rootDest%\%start%\home_footnote_component.html"

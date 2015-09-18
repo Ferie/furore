@@ -2,16 +2,13 @@
 <!DOCTYPE html>
 <html lang="it">
 	<head>
-		<meta charset="utf-8"> 
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<meta name="description" content="">
-		<meta name="author" content="">
+		<jsp:include page="includes/meta.html"></jsp:include>
+
 		<title>Alerts</title>
 
 		<jsp:include page="includes/css.html"></jsp:include>
 
-		<!-- SPECIFIC CSS START HERE -->	
+		<!-- SPECIFIC CSS START HERE -->
 	
 		<!--generic CSS for Parsys Column container -->
 		<link type="text/css" rel="stylesheet" href="css/ucg_parsys_column.css"/>

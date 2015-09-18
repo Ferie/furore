@@ -11,31 +11,17 @@
 
 		<!--generic CSS for Parsys Column container -->
 		<link type="text/css" rel="stylesheet" href="css/ucg_parsys_column.css"/>
-		<!-- CHOSEN PLUGIN FOR SKINNING SELECT TAGS -->
-		<link type="text/css" rel="stylesheet" href="plugin/css/chosen.min.css"/>
-		<!-- SPACER COMPONENT -->
-		<link type="text/css" rel="stylesheet" href="css/ucg_spacer.css"/>
-		<!-- BREADCRUMB -->
-		<link type="text/css" rel="stylesheet" href="css/ucg_breadcrumb.css"/>
-		<link type="text/css" rel="stylesheet" href="css/ucg_breadcrumb_links.css"/>
-		<link type="text/css" rel="stylesheet" href="css/ucg_sharing.css"/>
-		<!-- HORIZONTAL LINE COMPONENT -->
-		<link type="text/css" rel="stylesheet" href="css/ucg_horizontal_line_component.css"/>
-		<!-- BUTTON COMPONENT -->
-		<link type="text/css" rel="stylesheet" href="css/ucg_button_component.css"/>
-		<!-- TITLE COMPONENT -->
+
+		<!--specific CSS for Accordion Component-->
+		<link type="text/css" rel="stylesheet" href="css/ucg_accordion_component.css"/>
+
+		<!--imported CSS component-->
 		<link type="text/css" rel="stylesheet" href="css/ucg_title_component.css"/>
-		<!-- IMAGE TEXT COMPONENT -->
-		<link type="text/css" rel="stylesheet" href="css/ucg_image_text_component.css"/>
-		<!-- LINK COMPONENT -->
+		<link type="text/css" rel="stylesheet" href="css/ucg_text_component.css"/>
 		<link type="text/css" rel="stylesheet" href="css/ucg_link_component.css"/>
-		<!-- CHECKBOX E RADIO SKIN -->
-		<link type="text/css" rel="stylesheet" href="plugin/css/all.css"/>
-		<!-- SPECIFIC CSS FOR CONTACT FORMS -->
-		<link type="text/css" rel="stylesheet" href="css/form.css"/>
-		<link type="text/css" rel="stylesheet" href="css/form-desktop.css"/>
-		<!-- SOCIAL + SOCIAL FOOTER COMPONENT -->
-		<link type="text/css" rel="stylesheet" href="css/ucg_social.css"/>
+		<link type="text/css" rel="stylesheet" href="css/ucg_image_text_component.css"/>
+		<link type="text/css" rel="stylesheet" href="css/videoplayer.css"/>
+		<link type="text/css" rel="stylesheet" href="css/ucg_video_text_component.css"/>
 
 		<!-- SPECIFIC CSS END HERE -->
 
@@ -45,15 +31,11 @@
 
 		<!-- SPECIFIC JS START HERE -->
 
-		<!-- CHOSEN PLUGIN FOR SKINNING SELECT TAGS -->
-		<script type="text/javascript" src="plugin/js/chosen.patched.jquery.js"></script>
-		<!-- CHECKBOX E RADIO SKIN -->
-		<script type="text/javascript" src="plugin/js/icheck.min.js"></script>
-		<script type="text/javascript" src="js/form.js"></script>
-		<!-- SPACER COMPONENT -->
-		<script type="text/javascript" src="js/ucg_spacer.js"></script>
-		<!-- TITLE COMPONENT -->
-		<script type="text/javascript" src="js/ucg_title.js"></script>
+		<!--specific JS for Accordion Component-->
+		<script type="text/javascript" src="js/ucg_accordion_component.js"></script>
+
+		<!--imported JS for Accordion Component-->
+		<script type="text/javascript" src="js/videoplayer.js"></script>
 
 		<!-- SPECIFIC JS END HERE -->
 	</head>
@@ -74,855 +56,354 @@
 
 						<!-- PAGE START HERE -->
 
-						<div id="contactForm">
-							<div class="parsys contentpagewelcome-parsys">
-								<div class="section">
-									<!-- BREADCRUMB -->
-									<div class="panel ucg_breadcrumb">
-										<div class="container">
-											<div class="panel ucg_breadcrumb_crumbs col-xs-12">
-												<div class="container">
-													<ul>
-														<li><a href="javascript:void(0);">Breadcrum first level</a></li>
-														<li><a href="javascript:void(0);">Second level</a></li>
-														<li><a href="javascript:void(0);">Third level</a></li>
-														<li>Fourth level</li>
-													</ul>
-												</div>
-											</div>
-											<div class="panel ucg_breadcrumb_addon">
-												<div class="container">
-													<!-- BUTTONS -->
-													<div class="ucg_breadcrumb_links col-xs-12">
-														<a class="second-crosslink" href="javascript:void(0);">Second crosslink</a>
-														<a class="first-crosslink" href="javascript:void(0);">First crosslink</a>
-													</div>
-													<!-- /END BUTTONS -->
-													<!-- SHARING -->
-													<div class="ucg_breadcrumb_sharing col-xs-12">
-														<div class="icon collapsed">
-															<a href="javascript:void(0);" data-target=".ucg_breadcrumb_sharing_panel.collapse" data-toggle="collapse">Share</a>
-														</div>
-													</div>
-													<!-- /END SHARING -->
-												</div>
-											</div>
-											<div class="clear"></div>
+						<!-- Modal -->
+						<div class="ucg_videoplayer_container">
+							<div class="ucg_videoplayer modal fade" tabindex="-1" role="dialog" aria-labelledby="ucg_videoplayer" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 										</div>
-										<!-- SHARING COLLAPSABLE-->
-										<div class="panel panel-collapse ucg_breadcrumb_sharing_panel collapse">
-											<div class="container">
-												<div class="arrows">
-													<img class="arrow-down" alt="Arrow Down" src="img/static/breadcrumb-share-down-arrow.png">
-												</div>
-												<div class="col-xs-12 col-sm-4 col-md-3 left">
-													<h2>Share this event on:</h2>
-												</div>
-												<div class="col-xs-12 col-sm-7 col-md-8">
-													<ul>
-														<li class="col-xs-6"><a href="javascript:void(0);" class="facebook">Facebook</a></li>
-														<li class="col-xs-6"><a href="javascript:void(0);" class="twitter">Twitter</a></li>
-														<li class="col-xs-6"><a href="javascript:void(0);" class="linkedin">LinkedIn</a></li>
-														<li class="col-xs-6"><a href="javascript:void(0);" class="googleplus">Google +</a></li>
-													</ul>
-												</div>
-												<div class="closer hidden-xs">
-													<a href="javascript:void(0);" data-target=".ucg_breadcrumb_sharing_panel.collapse" data-toggle="collapse">
-														<img alt="Cross" src="img/static/breadcrumb-share-cross.png">
-													</a>
-												</div>
-											</div>
-										</div>
-										<!-- /END SHARING COLLAPSABLE-->
-									</div>
-									<!-- /END BREADCRUMB -->
-								</div>
-							</div>
-
-							<div class="parsys contentpagewelcome-parsys">
-								<div class="section">
-									<!-- HORIZONTAL LINE -->
-									<div class="ucg_horizontal_line">
-										<div class="spacer1"></div>
-										<div class="spacer2"></div>
-									</div>
-									<!-- /END HORIZONTAL LINE -->
-								</div>
-							</div>
-
-							<div class="parsys contentpagewelcome-parsys">
-								<div class="section">
-									<div class="ucg_spacer" data-ucg-height-mobile="20" data-ucg-height="20"></div>
-								</div>
-							</div>
-
-							<div class="parsys contentpagewelcome-parsys">
-								<div class="section">
-									<!-- TITLE SEO -->
-									<div class="panel ucg_seo_title">
-										<div class="container">
-											<h1 class="singlePage">Alerts</h1>
+										<div class="modal-body">
+											<iframe width="480" height="320" src="" frameborder="0" allowfullscreen></iframe>
 										</div>
 									</div>
-									<!-- /END TITLE SEO -->
 								</div>
 							</div>
+						</div>
+						<!-- End Modal -->
 
-							<div class="parsys contentpagewelcome-parsys">
-								<div class="section">
-									<div class="ucg_spacer" data-ucg-height-mobile="20" data-ucg-height="20"></div>
-								</div>
-							</div>
-
-							<div class="parsys contentpagewelcome-parsys">
-								<div class="section">
-									<!-- HORIZONTAL LINE -->
-									<div class="ucg_horizontal_line">
-										<div class="spacer1"></div>
-										<div class="spacer2"></div>
+						<div class="example">Accordion Component</div>
+						<div class="example">Accordion Component Full page width</div>
+						<div class="ucg_accordion panel">
+							<div class="container">
+								<div class="collapsed accordionPanel accordionPanelOne">
+									<div class="elementTitle">
+										Europe
+										<span class="arrow"></span>
 									</div>
-									<!-- /END HORIZONTAL LINE -->
-								</div>
-							</div>
-
-							<div class="parsys contentpagewelcome-parsys">
-								<div class="section">
-									<div class="ucg_spacer" data-ucg-height-mobile="30" data-ucg-height="33"></div>
-								</div>
-							</div>
-
-							<div class="parsys contentpagewelcome-parsys">
-								<div class="section">
-									<!-- IMAGE TEXT -->
-									<div class="panel ucg_image_text">
-										<div class="container">
-											<div class="ucg_txt">
-												<p>
-													Select th alerts you wish to recive by e-mail and fill the form below to subscribe
-												</p>
-											</div>
+									<div class="collapse clearfix">
+										<div class="elementsContainer col-sm-4">
+											<div class="mainElement"><a href="javascript:void(0);">Italy</a></div>
+											<div class="element"><a href="javascript:void(0);">Bosnia & Herzegovina</a></div>
+											<div class="element"><a href="javascript:void(0);">Czech Republic</a></div>
+											<div class="element"><a href="javascript:void(0);">Greece</a></div>
+											<div class="element"><a href="javascript:void(0);">Latvia</a></div>
+											<div class="element"><a href="javascript:void(0);">Macedonia</a></div>
+											<div class="element"><a href="javascript:void(0);">Norway</a></div>
+											<div class="element"><a href="javascript:void(0);">Ukraine</a></div>
+											<div class="element"><a href="javascript:void(0);">Serbia</a></div>
+											<div class="element"><a href="javascript:void(0);">Spain</a></div>
+										</div>
+										<div class="elementsContainer col-sm-4">
+											<div class="element"><a href="javascript:void(0);">Austria</a></div>
+											<div class="element"><a href="javascript:void(0);">Bulgaria</a></div>
+											<div class="element"><a href="javascript:void(0);">Estonia</a></div>
+											<div class="element"><a href="javascript:void(0);">Hungary</a></div>
+											<div class="element"><a href="javascript:void(0);">Lithuania</a></div>
+											<div class="element"><a href="javascript:void(0);">Montenegro</a></div>
+											<div class="element"><a href="javascript:void(0);">Poland</a></div>
+											<div class="element"><a href="javascript:void(0);">United Kingdom</a></div>
+											<div class="element"><a href="javascript:void(0);">Slovakia</a></div>
+											<div class="element"><a href="javascript:void(0);">Switzerland</a></div>
+										</div>
+										<div class="elementsContainer col-sm-4">
+											<div class="element"><a href="javascript:void(0);">Belgium</a></div>
+											<div class="element"><a href="javascript:void(0);">Croatia</a></div>
+											<div class="element"><a href="javascript:void(0);">France</a></div>
+											<div class="element"><a href="javascript:void(0);">Ireland</a></div>
+											<div class="element"><a href="javascript:void(0);">Luxembourg</a></div>
+											<div class="element"><a href="javascript:void(0);">Netherlands</a></div>
+											<div class="element"><a href="javascript:void(0);">Romania</a></div>
+											<div class="element"><a href="javascript:void(0);">San Marino</a></div>
+											<div class="element"><a href="javascript:void(0);">Slovenia</a></div>
 										</div>
 									</div>
-									<!-- /END IMAGE TEXT -->
+								</div>
+
+								<div class="collapsed accordionPanel accordionPanelTwo">
+									<div class="elementTitle">
+										Asia and Oceania
+										<span class="arrow"></span>
+									</div>
+									<div class="collapse clearfix">
+										<div class="elementsContainer col-sm-4">
+											<div class="element"><a href="javascript:void(0);">Australia</a></div>
+											<div class="element"><a href="javascript:void(0);">Hong Kong</a></div>
+											<div class="element"><a href="javascript:void(0);">Japan</a></div>
+											<div class="element"><a href="javascript:void(0);">South Korea</a></div>
+										</div>
+										<div class="elementsContainer col-sm-4">
+											<div class="element"><a href="javascript:void(0);">Azerbaijan</a></div>
+											<div class="element"><a href="javascript:void(0);">India</a></div>
+											<div class="element"><a href="javascript:void(0);">Russia</a></div>
+											<div class="element"><a href="javascript:void(0);">Turkey</a></div>
+										</div>
+										<div class="elementsContainer col-sm-4">
+											<div class="element"><a href="javascript:void(0);">China</a></div>
+											<div class="element"><a href="javascript:void(0);">Indonesia</a></div>
+											<div class="element"><a href="javascript:void(0);">Singapore</a></div>
+											<div class="element"><a href="javascript:void(0);">Vietnam</a></div>
+										</div>
+									</div>
+								</div>
+
+								<div class="collapsed accordionPanel accordionPanelThree">
+									<div class="elementTitle">
+										Middle-East and Africa
+										<span class="arrow"></span>
+									</div>
+									<div class="collapse clearfix">
+										<div class="elementsContainer col-sm-4">
+											<div class="element"><a href="javascript:void(0);">Libya</a></div>
+										</div>
+										<div class="elementsContainer col-sm-4">
+											<div class="element"><a href="javascript:void(0);">South Africa</a></div>
+										</div>
+										<div class="elementsContainer col-sm-4">
+											<div class="element"><a href="javascript:void(0);">United Arab Emirates</a></div>
+										</div>
+									</div>
+								</div>
+
+								<div class="collapsed accordionPanel accordionPanelFour">
+									<div class="elementTitle">
+										Americas
+										<span class="arrow"></span>
+									</div>
+									<div class="collapse clearfix">
+										<div class="elementsContainer col-sm-4">
+											<div class="element"><a href="javascript:void(0);">Argentina</a></div>
+										</div>
+										<div class="elementsContainer col-sm-4">
+											<div class="element"><a href="javascript:void(0);">Brasil</a></div>
+										</div>
+										<div class="elementsContainer col-sm-4">
+											<div class="element"><a href="javascript:void(0);">United States</a></div>
+										</div>
+									</div>
 								</div>
 							</div>
+						</div>
 
-							<div class="parsys contentpagewelcome-parsys">
-								<div class="section">
-									<form name="contactForm">
-										<div class="panel ucg_form">
-											<div class="container">
-												<div class="alert alert-danger alert-dismissible fade in">
-													You made <span class="ucg_error_num">3</span> errors filling the form, please check
-													<button type="button" class="close" data-dismiss="alert">
-														&times;
-													</button>
-												</div>
-												<div class="alertColumnContainer">
-													<div class="alertColumn col-sm-4">
-														<div class="panel ucg_title underlined ucg_no_image">
-															<div class="container">
-																<div class="ucg_cols ucg_cols_text col-xs-12">
-																	<div class="ucg_title_container">
-																		<h5>Additional Info</h5>
-																	</div>
-																	<div class="ucg_subtitle_container"></div>
-																</div>
-																<div class="ucg_cols ucg_cols_image col-xs-12">
-																	<div class="ucg_title_image_container"></div>
-																</div>
+						<div class="example">Accordion Component on CQ5 column (2/3 - 1/3)</div>
+						<div class="parsys_column twoone-columns-box clearfix">
+							<div class="parsys_column twoone-columns-box-c0">
+								<div class="ucg_accordion panel">
+									<div class="container">
+										<div class="collapsed accordionPanel accordionPanelOne">
+											<div class="elementTitle">
+												Company Info
+												<span class="arrow"></span>
+											</div>
+											<div class="collapse clearfix">
+												<div class="elementsContainer col-sm-12">
+													<div class="panel ucg_text">
+														<div class="container">
+															<div class="ucg_text_container">
+																<p>
+																	<b>Business category:</b> Consumer and SME Banking, Corporate and Investments banking<br>
+																	<b>Type:</b> Representative office
+																</p>
+																<p class="paragraphTitle"><b>Market leader in Austria</b></p>
+																<p>
+																	With total assets of EUR 220.8 billion and market shares ranging from 20 to 65 per cent, Bank Austria is by far the largest bank in Austria.<br>
+																	As far as Austrian companies are concerned, Bank Austria is the main banker for:
+																</p>
+																<ul>
+																	<li>82 per cent of large corporates;</li>
+																	<li>62 per cent of medium-sized companies;</li>
+																	<li>45 per cent of small businesses are customers of Bank Austria.</li>
+																</ul>
+																<p>
+																	As a modern universal bank, it provides its customers with access to financial markets. The bank operates a network of more than 360 branch offices within Austria, with a total of 11,000 employees
+																</p>
+																<p class="paragraphTitle"><b>The largest network in Central and Eastern Europe</b></p>
+																<p>
+																	Austria is one of the core markets of UniCredit Group, together with Germany, Italy and Central and Eastern Europe.<br>
+																	Within UniCredit Group, Bank Austria is responsible for all banking operations in the growth markets of Central and Eastern Europe (CEE), with the exception of Poland.<br>
+																	Vienna is thus the controls centre for a network stretching from the Baltic to the Black Sea and from Hungary to the Chinese border.<br>
+																	Our values Our common basic values are enshrined in the Integrity Charter. These values reflect our corporate philosophy, which determines our actions and behav- iour.
+																</p>
+																<p class="paragraphTitle"><b>History</b></p>
+																<p>
+																	Bank Austria was created by the merger of Austria's leading banks with a long- standing tradition, the "k.k. privilegirte Oesterreichische Credit-Anstalt für Handel und Gewerbe" (founded in 1855), the "k.k. privilegierte Oesterreichische Laender- bank" (founded in 1880) and the "Zentral-Sparkasse der Gemeinde Wien" (founded in 1905).<br>
+																	Bank Austria has been a member of UniCredit Group since November 2005.
+																</p>
+																<p class="paragraphTitle"><b>Recognised excellence</b></p>
+																<p>
+																	In the past years, Bank Austria has received more than 250 awards from renowned international financial magazines in recognition of its achievements. Euromoney and The Banker have repeatedly named Bank Austria "Best Bank" and "Bank of the Year". Numerous awards have also been given to Bank Austria in the fields of custody, trade finance, project finance and foreign exchange, and to Bank Austria's CEE subsidiaries..
+																</p>
 															</div>
 														</div>
-														<div class="panel ucg_image_text">
-															<div class="container">
-																<div class="ucg_txt">
-																	<div class="ucg_checkbox">
-																		<label class="ucg_checkbox_label">
-																			<input class="icheckbox_ubis" type="checkbox" name="financialReports" id="newPressRealeases" />
-																			<span class="labelText">New press realeases</span>
-																		</label>
-																	</div>
-																	<div class="ucg_radio second_level">
-																		<label class="ucg_radio_button">
-																			<input type="radio" class="iradio_ubis" name="pressReleaseSelection" value="price_only" />
-																			<span class="labelText">Price sensitive only</span>
-																		</label>
-																		<label class="ucg_radio_button">
-																			<input type="radio" class="iradio_ubis" name="pressReleaseSelection" value="all" />
-																			<span class="labelText">All</span>
-																		</label>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div class="alertColumn col-sm-4">
-														<div class="panel ucg_title underlined ucg_no_image">
-															<div class="container">
-																<div class="ucg_cols ucg_cols_text col-xs-12">
-																	<div class="ucg_title_container">
-																		<h5>New documents</h5>
-																	</div>
-																	<div class="ucg_subtitle_container"></div>
-																</div>
-																<div class="ucg_cols ucg_cols_image col-xs-12">
-																	<div class="ucg_title_image_container"></div>
-																</div>
-															</div>
-														</div>
-														<div class="panel ucg_image_text">
-															<div class="container">
-																<div class="ucg_txt">
-																	<div class="ucg_checkbox">
-																		<label class="ucg_checkbox_label">
-																			<input class="icheckbox_ubis" type="checkbox" name="financialReports" />
-																			<span class="labelText">Financial reports</span>
-																		</label>
-																	</div>
-																	<div class="ucg_checkbox">
-																		<label class="ucg_checkbox_label">
-																			<input class="icheckbox_ubis" type="checkbox" name="groupPresentations" />
-																			<span class="labelText">Group presentations</span>
-																		</label>
-																	</div>
-																	<div class="ucg_checkbox">
-																		<label class="ucg_checkbox_label">
-																			<input class="icheckbox_ubis" type="checkbox" name="shareholdersmeeting" />
-																			<span class="labelText">Shareholders meetings</span>
-																		</label>
-																	</div>
-																	<div class="ucg_checkbox">
-																		<label class="ucg_checkbox_label">
-																			<input class="icheckbox_ubis" type="checkbox" name="internalDealingTransactions" />
-																			<span class="labelText">Internal dealing transactions</span>
-																		</label>
-																	</div>
-																	<div class="ucg_checkbox">
-																		<label class="ucg_checkbox_label">
-																			<input class="icheckbox_ubis" type="checkbox" name="sustainabilityReport" />
-																			<span class="labelText">Sustainability report</span>
-																		</label>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div class="alertColumn col-sm-4">
-														<div class="panel ucg_title underlined ucg_no_image">
-															<div class="container">
-																<div class="ucg_cols ucg_cols_text col-xs-12">
-																	<div class="ucg_title_container">
-																		<h5>Page Update</h5>
-																	</div>
-																	<div class="ucg_subtitle_container"></div>
-																</div>
-																<div class="ucg_cols ucg_cols_image col-xs-12">
-																	<div class="ucg_title_image_container"></div>
-																</div>
-															</div>
-														</div>
-														<div class="panel ucg_image_text">
-															<div class="container">
-																<div class="ucg_txt">
-																	<div class="ucg_checkbox">
-																		<label class="ucg_checkbox_label">
-																			<input class="icheckbox_ubis" type="checkbox" name="groupResults" />
-																			<span class="labelText">Group results</span>
-																		</label>
-																	</div>
-																	<div class="ucg_checkbox">
-																		<label class="ucg_checkbox_label">
-																			<input class="icheckbox_ubis" type="checkbox" name="rating" />
-																			<span class="labelText">Rating</span>
-																		</label>
-																	</div>
-																	<div class="ucg_checkbox">
-																		<label class="ucg_checkbox_label">
-																			<input class="icheckbox_ubis" type="checkbox" name="consensus" />
-																			<span class="labelText">Consensus</span>
-																		</label>
-																	</div>
-																	<div class="ucg_checkbox">
-																		<label class="ucg_checkbox_label">
-																			<input class="icheckbox_ubis" type="checkbox" name="shareholderStructure" />
-																			<span class="labelText">Shareholder structure</span>
-																		</label>
-																	</div>
-																	<div class="ucg_checkbox">
-																		<label class="ucg_checkbox_label">
-																			<input class="icheckbox_ubis" type="checkbox" name="shareCapital" />
-																			<span class="labelText">Share capital</span>
-																		</label>
-																	</div>
-																	<div class="ucg_checkbox">
-																		<label class="ucg_checkbox_label">
-																			<input class="icheckbox_ubis" type="checkbox" name="analystCoverage" />
-																			<span class="labelText">Analyst coverage</span>
-																		</label>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="ucg_horizontal_line">
-													<div class="spacer1"></div>
-													<div class="spacer2"></div>
-												</div>
-												<div class="ucg_formLanguageSelection clearfix">
-													<div class="ucg_formLanguageSelectionIntro left">
-														Preferred language:
-													</div>
-													<div class="ucg_radio left">
-														<label class="ucg_radio_button">
-															<input type="radio" class="iradio_ubis required" name="languageSelection" value="ita" data-toggle="popover" data-content="This field is mandatory" />
-															<span class="labelText">Italian</span>
-														</label>
-														<label class="ucg_radio_button">
-															<input type="radio" class="iradio_ubis required" name="languageSelection" value="eng" />
-															<span class="labelText">English</span>
-														</label>
 													</div>
 												</div>
 											</div>
-											<!-- HORIZONTAL LINE -->
-											<div class="ucg_horizontal_line">
-												<div class="spacer1"></div>
-												<div class="spacer2"></div>
+										</div>
+
+										<div class="collapsed accordionPanel accordionPanelTwo">
+											<div class="elementTitle">
+												Press release download links
+												<span class="arrow"></span>
 											</div>
-											<!-- /END HORIZONTAL LINE -->
-											<div class="ucg_spacer" data-ucg-height-mobile="30" data-ucg-height="30"></div>
-											<div class="container">
-												<div class="ucg_formTitle">
-													<h2>Your data</h2>
-												</div>
-												<div class="formSectionContainer col-xs-12 col-sm-8 clearfix">
-													<div class="ucg_formRow clearfix">
-														<div class="ucg_formField col-xs-12">
-															Title*
-															<div class="ucg_radio">
-																<label class="ucg_radio_button">
-																	<input type="radio" class="iradio_ubis required" name="title" value="mr" data-toggle="popover" data-content="This field is mandatory" />
-																	<span class="labelText">Mr</span>
-																</label>
-																<label class="ucg_radio_button">
-																	<input type="radio" class="iradio_ubis required" name="title" value="mrs" />
-																	<span class="labelText">Mrs</span>
-																</label>
-																<label class="ucg_radio_button">
-																	<input type="radio" class="iradio_ubis required" name="title" value="ms" />
-																	<span class="labelText">Ms</span>
-																</label>
+											<div class="collapse clearfix">
+												<div class="elementsContainer col-sm-12">
+													<div class="panel ucg_title underlined">
+														<div class="container">
+															<div class="ucg_title_image_container"></div>
+															<div class="ucg_title_container">
+																<h5>Download</h5>
 															</div>
+															<div class="ucg_subtitle_container"></div>
 														</div>
 													</div>
-													<div class="ucg_formRow clearfix">
-														<div class="ucg_formField col-xs-12 col-sm-6">
-															First Name*
-															<input type="text" class="ucg_formInput required" name="firstName" maxlength="100" placeholder="Name" data-toggle="popover" data-content="This field is mandatory">
-														</div>
-														<div class="ucg_formField col-xs-12 col-sm-6">
-															Surname*
-															<input type="text" class="ucg_formInput required" name="surname" maxlength="100" placeholder="Surame" data-toggle="popover" data-content="This field is mandatory">
-														</div>
-													</div>
-													<div class="ucg_formRow clearfix">
-														<div class="ucg_formField col-xs-12">
-															Email address*
-															<input type="email" class="ucg_formInput required" name="emailAddress" maxlength="100" placeholder="Your email address" data-toggle="popover" data-content="This field is mandatory">
-														</div>
-													</div>
-													<div class="ucg_formRow clearfix">
-														<div class="ucg_formField col-xs-12 col-sm-10">
-															Street address*
-															<input type="text" class="ucg_formInput required" name="streetAddress" maxlength="100" placeholder="Street Address" data-toggle="popover" data-content="This field is mandatory">
-														</div>
-														<div class="ucg_formField col-xs-12 col-sm-2">
-															Number*
-															<input type="number" class="ucg_formInput required" name="addressNumber" placeholder="Number" data-toggle="popover" data-content="This field is mandatory">
-														</div>
-													</div>
-													<div class="ucg_formRow clearfix">
-														<div class="ucg_formField col-xs-12 col-sm-6">
-															Town*
-															<input type="text" class="ucg_formInput required" name="town" maxlength="100" placeholder="Town" data-toggle="popover" data-content="This field is mandatory">
-														</div>
-														<div class="ucg_formField col-xs-12 col-sm-6">
-															Province*
-															<input type="text" class="ucg_formInput required" name="province" maxlength="100" placeholder="Province" data-toggle="popover" data-content="This field is mandatory">
-														</div>
-													</div>
-													<div class="ucg_formRow clearfix">
-														<div class="ucg_formField col-xs-12 col-sm-6">
-															Postal Code*
-															<input type="number" class="ucg_formInput required" name="postcode" placeholder="Postal code" data-toggle="popover" data-content="This field is mandatory">
-														</div>
-														<div class="ucg_formField countries col-xs-12 col-sm-6">
-															Country of residence*
-															<select name="country" class="chosen-select little-arrow chosen-select-ubis-search required" data-placeholder="Select country..." data-toggle="popover" data-placement="bottom" data-content="This field is mandatory">
-																<option value=""></option>
-																<option value="AF">Afghanistan</option>
-																<option value="AX">Åland Islands</option>
-																<option value="AL">Albania</option>
-																<option value="DZ">Algeria</option>
-																<option value="AS">American Samoa</option>
-																<option value="AD">Andorra</option>
-																<option value="AO">Angola</option>
-																<option value="AI">Anguilla</option>
-																<option value="AQ">Antarctica</option>
-																<option value="AG">Antigua and Barbuda</option>
-																<option value="AR">Argentina</option>
-																<option value="AM">Armenia</option>
-																<option value="AW">Aruba</option>
-																<option value="AU">Australia</option>
-																<option value="AT">Austria</option>
-																<option value="AZ">Azerbaijan</option>
-																<option value="BS">Bahamas</option>
-																<option value="BH">Bahrain</option>
-																<option value="BD">Bangladesh</option>
-																<option value="BB">Barbados</option>
-																<option value="BY">Belarus</option>
-																<option value="BE">Belgium</option>
-																<option value="BZ">Belize</option>
-																<option value="BJ">Benin</option>
-																<option value="BM">Bermuda</option>
-																<option value="BT">Bhutan</option>
-																<option value="BO">Bolivia, Plurinational State of</option>
-																<option value="BQ">Bonaire, Sint Eustatius and Saba</option>
-																<option value="BA">Bosnia and Herzegovina</option>
-																<option value="BW">Botswana</option>
-																<option value="BV">Bouvet Island</option>
-																<option value="BR">Brazil</option>
-																<option value="IO">British Indian Ocean Territory</option>
-																<option value="BN">Brunei Darussalam</option>
-																<option value="BG">Bulgaria</option>
-																<option value="BF">Burkina Faso</option>
-																<option value="BI">Burundi</option>
-																<option value="KH">Cambodia</option>
-																<option value="CM">Cameroon</option>
-																<option value="CA">Canada</option>
-																<option value="CV">Cape Verde</option>
-																<option value="KY">Cayman Islands</option>
-																<option value="CF">Central African Republic</option>
-																<option value="TD">Chad</option>
-																<option value="CL">Chile</option>
-																<option value="CN">China</option>
-																<option value="CX">Christmas Island</option>
-																<option value="CC">Cocos (Keeling) Islands</option>
-																<option value="CO">Colombia</option>
-																<option value="KM">Comoros</option>
-																<option value="CG">Congo</option>
-																<option value="CD">Congo, the Democratic Republic of the</option>
-																<option value="CK">Cook Islands</option>
-																<option value="CR">Costa Rica</option>
-																<option value="CI">Côte d'Ivoire</option>
-																<option value="HR">Croatia</option>
-																<option value="CU">Cuba</option>
-																<option value="CW">Curaçao</option>
-																<option value="CY">Cyprus</option>
-																<option value="CZ">Czech Republic</option>
-																<option value="DK">Denmark</option>
-																<option value="DJ">Djibouti</option>
-																<option value="DM">Dominica</option>
-																<option value="DO">Dominican Republic</option>
-																<option value="EC">Ecuador</option>
-																<option value="EG">Egypt</option>
-																<option value="SV">El Salvador</option>
-																<option value="GQ">Equatorial Guinea</option>
-																<option value="ER">Eritrea</option>
-																<option value="EE">Estonia</option>
-																<option value="ET">Ethiopia</option>
-																<option value="FK">Falkland Islands (Malvinas)</option>
-																<option value="FO">Faroe Islands</option>
-																<option value="FJ">Fiji</option>
-																<option value="FI">Finland</option>
-																<option value="FR">France</option>
-																<option value="GF">French Guiana</option>
-																<option value="PF">French Polynesia</option>
-																<option value="TF">French Southern Territories</option>
-																<option value="GA">Gabon</option>
-																<option value="GM">Gambia</option>
-																<option value="GE">Georgia</option>
-																<option value="DE">Germany</option>
-																<option value="GH">Ghana</option>
-																<option value="GI">Gibraltar</option>
-																<option value="GR">Greece</option>
-																<option value="GL">Greenland</option>
-																<option value="GD">Grenada</option>
-																<option value="GP">Guadeloupe</option>
-																<option value="GU">Guam</option>
-																<option value="GT">Guatemala</option>
-																<option value="GG">Guernsey</option>
-																<option value="GN">Guinea</option>
-																<option value="GW">Guinea-Bissau</option>
-																<option value="GY">Guyana</option>
-																<option value="HT">Haiti</option>
-																<option value="HM">Heard Island and McDonald Islands</option>
-																<option value="VA">Holy See (Vatican City State)</option>
-																<option value="HN">Honduras</option>
-																<option value="HK">Hong Kong</option>
-																<option value="HU">Hungary</option>
-																<option value="IS">Iceland</option>
-																<option value="IN">India</option>
-																<option value="ID">Indonesia</option>
-																<option value="IR">Iran, Islamic Republic of</option>
-																<option value="IQ">Iraq</option>
-																<option value="IE">Ireland</option>
-																<option value="IM">Isle of Man</option>
-																<option value="IL">Israel</option>
-																<option value="IT">Italy</option>
-																<option value="JM">Jamaica</option>
-																<option value="JP">Japan</option>
-																<option value="JE">Jersey</option>
-																<option value="JO">Jordan</option>
-																<option value="KZ">Kazakhstan</option>
-																<option value="KE">Kenya</option>
-																<option value="KI">Kiribati</option>
-																<option value="KP">Korea, Democratic People's Republic of</option>
-																<option value="KR">Korea, Republic of</option>
-																<option value="KW">Kuwait</option>
-																<option value="KG">Kyrgyzstan</option>
-																<option value="LA">Lao People's Democratic Republic</option>
-																<option value="LV">Latvia</option>
-																<option value="LB">Lebanon</option>
-																<option value="LS">Lesotho</option>
-																<option value="LR">Liberia</option>
-																<option value="LY">Libya</option>
-																<option value="LI">Liechtenstein</option>
-																<option value="LT">Lithuania</option>
-																<option value="LU">Luxembourg</option>
-																<option value="MO">Macao</option>
-																<option value="MK">Macedonia, the former Yugoslav Republic of</option>
-																<option value="MG">Madagascar</option>
-																<option value="MW">Malawi</option>
-																<option value="MY">Malaysia</option>
-																<option value="MV">Maldives</option>
-																<option value="ML">Mali</option>
-																<option value="MT">Malta</option>
-																<option value="MH">Marshall Islands</option>
-																<option value="MQ">Martinique</option>
-																<option value="MR">Mauritania</option>
-																<option value="MU">Mauritius</option>
-																<option value="YT">Mayotte</option>
-																<option value="MX">Mexico</option>
-																<option value="FM">Micronesia, Federated States of</option>
-																<option value="MD">Moldova, Republic of</option>
-																<option value="MC">Monaco</option>
-																<option value="MN">Mongolia</option>
-																<option value="ME">Montenegro</option>
-																<option value="MS">Montserrat</option>
-																<option value="MA">Morocco</option>
-																<option value="MZ">Mozambique</option>
-																<option value="MM">Myanmar</option>
-																<option value="NA">Namibia</option>
-																<option value="NR">Nauru</option>
-																<option value="NP">Nepal</option>
-																<option value="NL">Netherlands</option>
-																<option value="NC">New Caledonia</option>
-																<option value="NZ">New Zealand</option>
-																<option value="NI">Nicaragua</option>
-																<option value="NE">Niger</option>
-																<option value="NG">Nigeria</option>
-																<option value="NU">Niue</option>
-																<option value="NF">Norfolk Island</option>
-																<option value="MP">Northern Mariana Islands</option>
-																<option value="NO">Norway</option>
-																<option value="OM">Oman</option>
-																<option value="PK">Pakistan</option>
-																<option value="PW">Palau</option>
-																<option value="PS">Palestinian Territory, Occupied</option>
-																<option value="PA">Panama</option>
-																<option value="PG">Papua New Guinea</option>
-																<option value="PY">Paraguay</option>
-																<option value="PE">Peru</option>
-																<option value="PH">Philippines</option>
-																<option value="PN">Pitcairn</option>
-																<option value="PL">Poland</option>
-																<option value="PT">Portugal</option>
-																<option value="PR">Puerto Rico</option>
-																<option value="QA">Qatar</option>
-																<option value="RE">Réunion</option>
-																<option value="RO">Romania</option>
-																<option value="RU">Russian Federation</option>
-																<option value="RW">Rwanda</option>
-																<option value="BL">Saint Barthélemy</option>
-																<option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
-																<option value="KN">Saint Kitts and Nevis</option>
-																<option value="LC">Saint Lucia</option>
-																<option value="MF">Saint Martin (French part)</option>
-																<option value="PM">Saint Pierre and Miquelon</option>
-																<option value="VC">Saint Vincent and the Grenadines</option>
-																<option value="WS">Samoa</option>
-																<option value="SM">San Marino</option>
-																<option value="ST">Sao Tome and Principe</option>
-																<option value="SA">Saudi Arabia</option>
-																<option value="SN">Senegal</option>
-																<option value="RS">Serbia</option>
-																<option value="SC">Seychelles</option>
-																<option value="SL">Sierra Leone</option>
-																<option value="SG">Singapore</option>
-																<option value="SX">Sint Maarten (Dutch part)</option>
-																<option value="SK">Slovakia</option>
-																<option value="SI">Slovenia</option>
-																<option value="SB">Solomon Islands</option>
-																<option value="SO">Somalia</option>
-																<option value="ZA">South Africa</option>
-																<option value="GS">South Georgia and the South Sandwich Islands</option>
-																<option value="SS">South Sudan</option>
-																<option value="ES">Spain</option>
-																<option value="LK">Sri Lanka</option>
-																<option value="SD">Sudan</option>
-																<option value="SR">Suriname</option>
-																<option value="SJ">Svalbard and Jan Mayen</option>
-																<option value="SZ">Swaziland</option>
-																<option value="SE">Sweden</option>
-																<option value="CH">Switzerland</option>
-																<option value="SY">Syrian Arab Republic</option>
-																<option value="TW">Taiwan, Province of China</option>
-																<option value="TJ">Tajikistan</option>
-																<option value="TZ">Tanzania, United Republic of</option>
-																<option value="TH">Thailand</option>
-																<option value="TL">Timor-Leste</option>
-																<option value="TG">Togo</option>
-																<option value="TK">Tokelau</option>
-																<option value="TO">Tonga</option>
-																<option value="TT">Trinidad and Tobago</option>
-																<option value="TN">Tunisia</option>
-																<option value="TR">Turkey</option>
-																<option value="TM">Turkmenistan</option>
-																<option value="TC">Turks and Caicos Islands</option>
-																<option value="TV">Tuvalu</option>
-																<option value="UG">Uganda</option>
-																<option value="UA">Ukraine</option>
-																<option value="AE">United Arab Emirates</option>
-																<option value="GB">United Kingdom</option>
-																<option value="US">United States</option>
-																<option value="UM">United States Minor Outlying Islands</option>
-																<option value="UY">Uruguay</option>
-																<option value="UZ">Uzbekistan</option>
-																<option value="VU">Vanuatu</option>
-																<option value="VE">Venezuela, Bolivarian Republic of</option>
-																<option value="VN">Viet Nam</option>
-																<option value="VG">Virgin Islands, British</option>
-																<option value="VI">Virgin Islands, U.S.</option>
-																<option value="WF">Wallis and Futuna</option>
-																<option value="EH">Western Sahara</option>
-																<option value="YE">Yemen</option>
-																<option value="ZM">Zambia</option>
-																<option value="ZW">Zimbabwe</option>
-															</select>
-														</div>
-													</div>
-												</div>
-												<!-- HORIZONTAL LINE -->
-												<div class="ucg_horizontal_line">
-													<div class="spacer1"></div>
-													<div class="spacer2"></div>
-												</div>
-												<!-- /END HORIZONTAL LINE -->
-												<div class="formSectionContainer">
-													<div class="ucg_formDisclaimerTitle">
-														Information according to D. Decree No. 196/2003
-													</div>
-													<div class="ucg_formDisclaimerContainer">
-														<div class="ucg_formDisclaimer">
-															<p>UniCredit S.p.A., as Data Controller of personal data processing, hereby informs you that your personal data, that you have filled in the registration form within the section "Governance" of UniCredit website "www.unicreditgroup.eu", will be processed by manual, IT and telematic means, for the only purposes to answer your questions about the matters of the items on the agenda, before or, at the latest, during the shareholders meeting.Your personal data are required in order to allow the Data Controller to verify your legitimization to act</p>
-															<p>UniCredit S.p.A., as Data Controller of personal data processing, hereby informs you that your personal data, that you have filled in the registration form within the section "Governance" of UniCredit website "www.unicreditgroup.eu", will be processed by manual, IT and telematic means, for the only purposes to answer your questions about the matters of the items on the agenda, before or, at the latest, during the shareholders meeting.Your personal data are required in order to allow the Data Controller to verify your legitimization to act</p>
-														</div>
-													</div>
-													<div class="ucg_formDisclaimerAgreement clearfix">
-														<div class="ucg_formDisclaimerAgreementIntro left">
-															I do agree to use my personal data:
-														</div>
-														<div class="ucg_radio left">
-															<label class="ucg_radio_button">
-																<input type="radio" class="iradio_ubis required" name="privacyAgreement" value="yes" data-toggle="popover" data-content="This field is mandatory" />
-																<span class="labelText">Yes</span>
-															</label>
-															<label class="ucg_radio_button">
-																<input type="radio" class="iradio_ubis required" name="privacyAgreement" value="no" />
-																<span class="labelText">No</span>
-															</label>
-														</div>
-													</div>
-												</div>
-												<!-- HORIZONTAL LINE -->
-												<div class="ucg_horizontal_line">
-													<div class="spacer1"></div>
-													<div class="spacer2"></div>
-												</div>
-												<!-- /END HORIZONTAL LINE -->
-												<div class="formSectionContainerCaptcha col-xs-12 clearfix">
-													<div class="ucg_formCaptcha col-xs-8 col-sm-4">
-														<img alt="" src="img/captcha.png">
-													</div>
-													<div class="ucg_formCaptcha col-xs-12 col-sm-8">
-														<div class="ucg_formCaptchaNoPadding col-xs-12">
-															Please enter the charachters from the picture*
-														</div>
-														<div class="ucg_formCaptchaNoPadding col-xs-8 col-sm-6">
-															<input type="text" class="ucg_formInput required" name="captcha" maxlength="100" data-toggle="popover" data-content="This field is mandatory">
-														</div>
-													</div>
-													<!-- LINK -->
 													<div class="panel ucg_linklist">
 														<div class="container">
 															<ul class="ucg_link_container">
-																<li class="ucg_captcha_link">
-																	<a href="javascript:void(0);">New picture</a>
+																<li class="ucg_download_link">
+																	<a href="javascript:void(0);"><b>PDF</b> | Press release - 2014 Comprehensive Assessment Results</a> (96kb)
+																</li>
+																<li class="ucg_download_link">
+																	<a href="javascript:void(0);"><b>PDF</b> | 2013 Consolidated Reports and Accounts</a> (301kb)
+																</li>
+																<li class="ucg_download_link">
+																	<a href="javascript:void(0);"><b>PDF</b> | Unicredit Spa 2013 Reports and Accounts</a> (150kb)
+																</li>
+																<li class="ucg_download_link">
+																	<a href="javascript:void(0);"><b>DOC</b> | Press release (Italian only)</a> (106kb)
+																</li>
+																<li class="ucg_download_link">
+																	<a href="javascript:void(0);"><b>MP3</b> | Download audio</a> (13.56Mb)
+																</li>
+																<li class="ucg_download_link">
+																	<a href="javascript:void(0);"><b>MP4</b> | Download video</a> (193Mb)
+																</li>
+																<li class="ucg_download_link">
+																	<a href="javascript:void(0);"><b>HTML</b> | Download file</a> (22kb)
 																</li>
 															</ul>
 														</div>
 													</div>
-													<!-- /END LINK -->
 												</div>
-												<!-- HORIZONTAL LINE -->
-												<div class="ucg_horizontal_line">
-													<div class="spacer1"></div>
-													<div class="spacer2"></div>
-												</div>
-												<!-- /END HORIZONTAL LINE -->
-												<!-- BUTTON -->
-												<div class="panel ucg_button">
-													<div class="container">
-														<button type="submit" class="btn ucg_button_confirm" title="submit">Activate alerts</button>
-													</div>
-												</div>
-												<!-- /END BUTTON -->
 											</div>
 										</div>
-									</form>
-								</div>
-							</div>
 
-							<div class="panel grey">
-								<div class="parsys contentpagewelcome-parsys">
-									<div class="section">
-										<div class="ucg_spacer" data-ucg-height-mobile="20" data-ucg-height="40"></div>
-									</div>
-								</div>
-
-								<div class="parsys contentpagewelcome-parsys">
-									<div class="parbase section textimage">
-										<!-- TITLE -->
-										<div class="panel ucg_title ucg_no_image">
-											<div class="container">
-												<div class="ucg_cols ucg_cols_text col-xs-12">
-													<div class="ucg_title_container">
-														<h2>From our official profiles</h2>
-													</div>
-													<div class="ucg_subtitle_container">
-														<h4></h4>
-													</div>
-												</div>
-												<div class="ucg_cols ucg_cols_image col-xs-12">
-													<div class="ucg_title_image_container">
+										<div class="collapsed accordionPanel accordionPanelThree">
+											<div class="elementTitle">
+												Latest Press Release
+												<span class="arrow"></span>
+											</div>
+											<div class="collapse clearfix">
+												<div class="elementsContainer col-sm-12">
+													<div class="panel ucg_video_text">
+														<div class="container">
+															<div class="ucg_video">
+																<a class="ucg_videoplayer_starter" href="javascript:void(0);" data-video="https://www.youtube.com/embed/j_kOGqFslos?autoplay=1"></a>
+																<img class="placeholder" src="img/press_and_news.png" alt="Press and news" title="Press and news">
+															</div>
+															<div class="ucg_txt">
+																<h3>Celebrating Christmas with UniCredit's Light-Covered Art in Milan</h3>
+																<p>UniCredit will help celebrate Christmas at Milan's Gae Aulenti Square from December 6 to January 6 by erecting a Christmas tree sculpture that spells "Best Wishes" in all of our Group's languages and by lighting the spire of UniCredit Tower ...</p>
+																<div class="panel ucg_linklist">
+																	<div class="container">
+																		<ul class="ucg_link_container">
+																			<li class="ucg_link">
+																				<a href="javascript:void(0);">Read more</a>
+																			</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+														</div>
 													</div>
 												</div>
 											</div>
 										</div>
-										<!-- /END TITLE -->
-									</div>
-								</div>
 
-								<div class="parsys contentpagewelcome-parsys">
-									<div class="section">
-										<div class="ucg_spacer" data-ucg-height-mobile="20" data-ucg-height="40"></div>
-									</div>
-								</div>
-
-								<!-- 3 COLUMN SOCIAL -->
-								<div class="parsys_column three-columns-box clearfix">
-									<div class="parsys_column three-columns-box-c0">
-										<div class="panel ucg_social ucg_social_facebook">
-											<div class="container">
-												<div class="ucg_social_title">Unicredit champions facebook</div>
-												<div class="ucg_social_image">
-													<img alt="" src="img/social-facebook-c3.jpg">
-												</div>
-												<div class="clear visible-xs"></div>
-												<div class="ucg_social_data">
-													<span>21 November</span>
-												</div>
-												<div class="ucg_social_text">
-													<p>We wish you a good weekend with this quote by Steven Gerrard... Click LIKE if you agree!</p>
-												</div>
+										<div class="collapsed accordionPanel accordionPanelFour">
+											<div class="elementTitle">
+												Contacts
+												<span class="arrow"></span>
 											</div>
-											<div class="container">
-												<div class="ucg_social_link">
-													<a href="https://www.facebook.com/UniCreditChampionsIT" target="_blank">Become a fan</a>
+											<div class="collapse clearfix">
+												<div class="elementsContainer col-sm-8">
+													<div class="panel ucg_image_text">
+														<div class="container">
+															<div class="ucg_img">
+																<img src="img/DISTORSIONI_MOLASCHI.png" alt="">
+															</div>
+															<div class="ucg_txt">
+																<h3>Innovation</h3>
+																<p>As a leading European bank, we make it easy for our customers to seize the opportunities and meet the challenges of real life.</p>
+															</div>
+														</div>
+													</div>
+													<div class="panel ucg_linklist">
+														<div class="container">
+															<ul class="ucg_link_container">
+																<li class="ucg_internal_link">
+																	<a href="javascript:void(0);">Innovation at Unicredit</a>
+																</li>
+															</ul>
+														</div>
+													</div>
 												</div>
-											</div>
-										</div>
-									</div>
-									<div class="parsys_column three-columns-box-c1">
-										<div class="panel ucg_social ucg_social_twitter no_image">
-											<div class="container">
-												<div class="ucg_social_title">@UniCredit_PR</div>
-												<div class="ucg_social_image"></div>
-												<div class="ucg_social_data">
-													<span>28 November</span>
-												</div>
-												<div class="ucg_social_text">
-													<p>
-														<a class="tag" href="javascript:void(0);">#Cultura</a>: dal 28-11 c/o lo Spazio <a class="tag" href="javascript:void(0);">#Trento</a> UniCredit di Palazzo Firmian la mostra '<a class="tag" href="javascript:void(0);">#PAD</a>, PaesaggioArchitetturaDesign' <a class="shortLink" href="javascript:void(0);">http://goo.gl/NSMBDJ</a>
-													</p>
-												</div>
-											</div>
-											<div class="container">
-												<div class="ucg_social_link">
-													<a href="https://www.facebook.com/UniCreditChampionsIT" target="_blank">Follow us</a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="parsys_column three-columns-box-c2">
-										<div class="panel ucg_social ucg_social_youtube">
-											<div class="container">
-												<div class="ucg_social_title">Unicredit Channel</div>
-												<div class="ucg_social_image">
-													<a class="ucg_videoplayer_starter" href="javascript:void(0);">
-														<!-- <img title="Go to video" alt="Go to video" src="img/static/videoplayer_play.png"> -->
-													</a>
-													<img alt="" src="img/social-youtube-c3.jpg">
-												</div>
-												<div class="clear visible-xs"></div>
-												<div class="ucg_social_data">
-													<span>28 November</span>
-												</div>
-												<div class="ucg_social_text">
-													<p>UniCredit Tower.</p>
-												</div>
-											</div>
-											<div class="container">
-												<div class="ucg_social_link">
-													<a href="https://www.facebook.com/UniCreditChampionsIT" target="_blank">Subscribe</a>
+												<div class="elementsContainer col-sm-4">
+													<div class="panel ucg_title">
+														<div class="container">
+															<div class="ucg_title_text_container">
+																<div class="ucg_title_container">
+																	<h2>Contacts</h2>
+																</div>
+																<div class="ucg_subtitle"><h4></h4></div>
+															</div>
+															<div class="ucg_title_image_container"></div>
+														</div>
+													</div>
+													<div class="panel ucg_text">
+														<div class="container">
+															<div class="ucg_text_container">
+																<p>Media relations<br>
+																	Fax: +39 02 8862 2802<br>
+																	<a href="mailto:mediarelations@unicredit.eu" class="ucg_mail">mediarelations@unicredit.eu</a>
+																</p>
+																<div class="panel ucg_linklist">
+																	<div class="container">
+																		<ul class="ucg_link_container">
+																			<li class="ucg_internal_link">
+																				<a href="#">Read the latest issue</a>
+																			</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<!-- /END 3 COLUMN SOCIAL -->
-
-								<div class="parsys contentpagewelcome-parsys">
-									<div class="parbase section">
-										<!-- SOCIAL FOOTER -->
-										<div class="panel ucg_social_footer">
-											<div class="container">
-												<div class="ucg_social_title">
-													<span class="col-xs-12">Follow UniCredit Group also on</span>
-													<div class="ucg_social_others col-xs-12">
-														<a href="javascript:void(0);" class="unicredit"></a>
-														<a href="javascript:void(0);" class="twitter"></a>
-														<a href="javascript:void(0);" class="linkedin"></a>
-														<a href="javascript:void(0);" class="facebook"></a>
-														<a href="javascript:void(0);" class="googleplus"></a>
-														<a href="javascript:void(0);" class="pinterest"></a>
-													</div>
+							</div>
+							<div class="parsys_column twoone-columns-box-c1">
+								<div class="panel ucg_image_text">
+									<div class="container">
+										<div class="ucg_img">
+											<img src="img/RIFLESSI_TITTI_CIMMINO.png" alt="">
+										</div>
+										<div class="ucg_txt">
+											<h3>Our business model</h3>
+											<p>The UniCredit business model is based on global functions specialization, customers proximity, holding global coordination.</p>
+											<div class="panel ucg_linklist">
+												<div class="container">
+													<ul class="ucg_link_container">
+														<li class="ucg_internal_link">
+															<a href="javascript:void(0);">Business model</a>
+														</li>
+													</ul>
 												</div>
 											</div>
 										</div>
-										<!-- SOCIAL FOOTER -->
 									</div>
 								</div>
 							</div>

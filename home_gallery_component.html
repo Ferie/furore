@@ -9,13 +9,14 @@
     <meta name="author" content="">
     <title>Image Gallery Component</title>
 	
+	
 		<link type="text/css" rel="stylesheet" href="plugin/css/bootstrap.css"/>
-	<link type="text/css" rel="stylesheet" href="css/font-families.css"/>
-	<link type="text/css" rel="stylesheet" href="css/main_new_header.css"/>
-	<link type="text/css" rel="stylesheet" href="css/main_new_header-desktop.css"/>
-	<!--[if lt IE 9]>
-	<link type="text/css" rel="stylesheet" href="css/ie8.css"/>
-	<![endif]-->
+		<link type="text/css" rel="stylesheet" href="css/font-families.css"/>
+		<link type="text/css" rel="stylesheet" href="css/main_new_header.css"/>
+		<link type="text/css" rel="stylesheet" href="css/main_new_header-desktop.css"/>
+		<!--[if lt IE 9]>
+			<link type="text/css" rel="stylesheet" href="css/ie8.css"/>
+		<![endif]-->
 	
 	<!-- SPECIFIC CSS START HERE -->
     <link type="text/css" rel="stylesheet" href="plugin/css/idangerous.swiper.css"/>
@@ -31,18 +32,19 @@
        
     <link type="text/css" rel="stylesheet" href="css/retina.css"/>
 	
+	
 		<script type="text/javascript" src="plugin/js/jquery-1.11.2.min.js"></script>
-	<script type="text/javascript" src="plugin/js/jquery.cookie.js"></script>
-	<script type="text/javascript" src="plugin/js/jquery.autocomplete.js"></script>
-	<script type="text/javascript" src="plugin/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/utility.js"></script>
-	<script type="text/javascript" src="js/jquery.new_headerUBIS.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
-	<!--[if lt IE 9]>
-	  <script type="text/javascript" src="plugin/js/html5shiv.js"></script>
-	  <script type="text/javascript" src="plugin/js/respond.min.js"></script>
-	  <script type="text/javascript" src="js/ie8.js"></script>
-	<![endif]-->
+		<script type="text/javascript" src="plugin/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="plugin/js/jquery.autocomplete.js"></script>
+		<script type="text/javascript" src="plugin/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/utility.js"></script>
+		<script type="text/javascript" src="js/jquery.new_headerUBIS.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<!--[if lt IE 9]>
+			<script type="text/javascript" src="plugin/js/html5shiv.js"></script>
+			<script type="text/javascript" src="plugin/js/respond.min.js"></script>
+			<script type="text/javascript" src="js/ie8.js"></script>
+		<![endif]-->
     
 	<!-- SPECIFIC JS START HERE -->
     <script type="text/javascript" src="plugin/js/idangerous.swiper.js"></script>
@@ -57,46 +59,51 @@
   
 </head>
 <body>
-	<div id="message" style="display: none;">Messaggio</div>
-	<div id="header">
-		<div class="sidebar-switch">
-			<a href="javascript:void(0);"></a>	
+
+		<div id="message" style="display: none;">Messaggio</div>
+
+		<div id="header">
+			<div class="sidebar-switch">
+				<a href="javascript:void(0);"></a>
+			</div>
+			<div class="logo">
+				<a href="https://www.unicreditgroup.eu"><img alt="Unicredit Logo" src="img/static/logo.png"></a>
+			</div>
+			<div class="header-menu menu hidden-xs">
+				<ul>
+					<li><a class="language ita" href="javascript:void(0);" data-section="menu" data-link="language.ita">ITA</a></li>
+					<li><a class="search searchToolHeader" href="javascript:void(0);">Search</a></li>
+					<li><a class="contactus" href="javascript:void(0);" data-section="menu" data-link="contactus">Contact us</a></li>
+					<li><a class="calendar" href="calendar.html" data-section="menu" data-link="calendar">Calendar</a></li>
+					<li><a class="worldwide" href="worldwide.html" data-section="menu" data-link="worldwide">Worldwide</a></li>
+					<li><a class="uefa" href="javascript:void(0);" data-section="menu" data-link="uefa">Uefa</a></li>
+				</ul>
+			</div>
+			<div class="online-banking hidden-xs">
+				<a href="javascript:void(0);">
+					Online banking
+				</a>
+			</div>
+			<div class="search visible-xs">
+				<a class="searchToolHeader" href="javascript:void(0);">
+				</a>
+			</div>
 		</div>
-		<div class="logo">
-			<a href="https://www.unicreditgroup.eu"><img alt="Unicredit Logo" src="img/static/logo.png"></a>
+
+		<div class="panel ucg_search" style="display: none;">
+			<div class="container">
+				<input class="findAsYouType" type="text" name="findAsYouType" placeholder="Search for..." data-threshold="3">
+			</div>
+			<div class="ucg_horizontal_line">
+				<div class="spacer1"></div>
+				<div class="spacer2"></div>
+			</div>
 		</div>
-		<div class="header-menu menu hidden-xs">
-			<ul>
-				<li><a class="language ita" href="javascript:void(0);" data-section="menu" data-link="language.ita">ITA</a></li>
-				<li><a class="search searchToolHeader" href="javascript:void(0);">Search</a></li>
-				<li><a class="contactus" href="javascript:void(0);" data-section="menu" data-link="contactus">Contact us</a></li>
-				<li><a class="calendar" href="calendar.html" data-section="menu" data-link="calendar">Calendar</a></li>
-				<li><a class="worldwide" href="worldwide.html" data-section="menu" data-link="worldwide">Worldwide</a></li>
-				<li><a class="uefa" href="javascript:void(0);" data-section="menu" data-link="uefa">Uefa</a></li>
-			</ul>
-		</div>
-		<div class="online-banking hidden-xs">
-			<a href="javascript:void(0);">
-				Online banking
-			</a>	
-		</div>
-		<div class="search visible-xs">
-			<a class="searchToolHeader" href="javascript:void(0);">
-			</a>	
-		</div>
-	</div>
-<div class="panel ucg_search" style="display: none;">
-	<div class="container">
-		<input class="findAsYouType" type="text" name="findAsYouType" placeholder="Search for..." data-threshold="3">
-	</div>
-	<div class="ucg_horizontal_line">
-		<div class="spacer1"></div>
-		<div class="spacer2"></div>
-	</div>
-</div>
+
 <div class="body-container-table">
 	<div class="body-container-cell">
-		<div id="sidebar">
+	
+	<div id="sidebar">
 		<div class="sidebar-scroller">
 			<div class="sidebar-container">
 				<div class="sidebar-element aboutus">
@@ -200,7 +207,7 @@
 					<ul>
 						<li><a class="alerts" href="javascript:void(0);" data-section="menu" data-link="alerts">Alerts</a></li>
 						<li><a class="archive" href="archives.html" data-section="menu" data-link="archive">General archive</a></li>
-					</ul>	
+					</ul>
 					<ul class="visible-xs">
 						<li><a class="search" href="javascript:void(0);" data-section="menu" data-link="search">Search</a></li>
 						<li><a class="contactus" href="javascript:void(0);" data-section="menu" data-link="contactus">Contact us</a></li>
@@ -311,47 +318,48 @@
 			
 			<!-- PAGE END HERE -->
 						
-								<div id="footer">
-					<div class="darkGreyFooter">
-						<div class="footer-row utility">
-							<ul class="col-xs-6">
-								<li><a href="javascript:void(0);">Feed Rss UniCreditGroup.eu</a></li>
-								<li><a href="javascript:void(0);">Mobile & Apps</a></li>
-								<li><a href="javascript:void(0);">Contacts</a></li>
-								<li><a href="javascript:void(0);">Glossary</a></li>
-							</ul>  	                                          
-							<ul class="col-xs-6">
-								<li><a href="javascript:void(0);">Useful links</a></li>
-								<li><a href="javascript:void(0);">System requirement</a></li>
-								<li><a href="javascript:void(0);">Site Map</a></li>
-								<li><a href="javascript:void(0);">Faq</a></li>
-							</ul>  
-							<div class="clear"></div>	                                             	
+				
+						<div id="footer">
+							<div class="darkGreyFooter">
+								<div class="footer-row utility">
+									<ul class="col-xs-6">
+										<li><a href="javascript:void(0);">Feed Rss UniCreditGroup.eu</a></li>
+										<li><a href="javascript:void(0);">Mobile & Apps</a></li>
+										<li><a href="javascript:void(0);">Contacts</a></li>
+										<li><a href="javascript:void(0);">Glossary</a></li>
+									</ul>
+									<ul class="col-xs-6">
+										<li><a href="javascript:void(0);">Useful links</a></li>
+										<li><a href="javascript:void(0);">System requirement</a></li>
+										<li><a href="javascript:void(0);">Site Map</a></li>
+										<li><a href="javascript:void(0);">Faq</a></li>
+									</ul>
+									<div class="clear"></div>
+								</div>
+								<div class="footer-row info">
+									<ul class="col-xs-6">
+										<li><a href="javascript:void(0);">General Company Info</a></li>
+										<li><a href="javascript:void(0);">Disclaimer</a></li>
+										<li><a href="javascript:void(0);">Privacy</a></li>
+									</ul>
+									<ul class="col-xs-6">
+										<li><a href="javascript:void(0);">SDIR and 1Info</a></li>
+										<li><a href="javascript:void(0);">AML and Patriot Act</a></li>
+										<li><a href="javascript:void(0);">Credits</a></li>
+									</ul>
+									<div class="clear"></div>
+								</div>
+								<div class="footer-row logos">
+									<img alt="Logo Patti Chiari" src="img/static/footer-nav-pattichiari.png">
+									<img alt="Logo Champions League" src="img/static/footer-nav-champions-light.png">
+									<div class="clear"></div>
+								</div>
+								<div class="footer-row copyright">
+									Â© 2012 UniCredit S.p.A.<span class="hidden-xs"> - </span><br class="visible-xs"/>P.Iva 00348170101 Tutti i diritti riservati
+									<div class="clear"></div>
+								</div>
+							</div>
 						</div>
-						<div class="footer-row info">
-							<ul class="col-xs-6">
-								<li><a href="javascript:void(0);">General Company Info</a></li>
-								<li><a href="javascript:void(0);">Disclaimer</a></li>
-								<li><a href="javascript:void(0);">Privacy</a></li>
-							</ul>  	                                          
-							<ul class="col-xs-6">
-								<li><a href="javascript:void(0);">SDIR and 1Info</a></li>
-								<li><a href="javascript:void(0);">AML and Patriot Act</a></li>
-								<li><a href="javascript:void(0);">Credits</a></li>
-							</ul>
-							<div class="clear"></div>
-						</div>
-						<div class="footer-row logos">
-							<img alt="Logo Patti Chiari" src="img/static/footer-nav-pattichiari.png">
-							<img alt="Logo Champions League" src="img/static/footer-nav-champions-light.png">
-							<div class="clear"></div>
-						</div>
-						<div class="footer-row copyright">
-							Â© 2012 UniCredit S.p.A.<span class="hidden-xs"> - </span><br class="visible-xs"/>P.Iva 00348170101 Tutti i diritti riservati
-							<div class="clear"></div>
-						</div>			
-					</div>
-				</div>
 			</div>
 		</div>
 	</div>

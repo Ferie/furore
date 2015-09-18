@@ -1,0 +1,44 @@
+--2015-09-18 10:56:09--  http://localhost:8080/gb-energy-website-v2-main-site/app/furore//home_accordion_component.jsp
+Resolving localhost... ::1, 127.0.0.1
+Connecting to localhost|::1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/websites/gb-energy-website-v2-main-site/app/furore/2015-09-1810_56_09_40/home_accordion_component.html'
+
+     0K .......... .......... .......... .                     3.17M=0.01s
+
+2015-09-18 10:56:09 (3.17 MB/s) - `C:/websites/gb-energy-website-v2-main-site/app/furore/2015-09-1810_56_09_40/home_accordion_component.html' saved [32389]
+
+--2015-09-18 10:56:36--  http://localhost:8080/gb-energy-website-v2-main-site/app/furore/home_accordion_component.jsp
+Resolving localhost... ::1, 127.0.0.1
+Connecting to localhost|::1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/websites/gb-energy-website-v2-main-site/app/furore/2015-09-1810_56_36_67/home_accordion_component.html'
+
+     0K .......... .......... .......... .                     3.05M=0.01s
+
+2015-09-18 10:56:36 (3.05 MB/s) - `C:/websites/gb-energy-website-v2-main-site/app/furore/2015-09-1810_56_36_67/home_accordion_component.html' saved [32389]
+
+--2015-09-18 11:00:03--  http://localhost:8080/gb-energy-website-v2-main-site/app/furore/home_accordion_component.jsp
+Resolving localhost... ::1, 127.0.0.1
+Connecting to localhost|::1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/websites/gb-energy-website-v2-main-site/app/furore/2015-09-1811_00_03_16/home_accordion_component.html'
+
+     0K .......... .......... .......... .                     2.68M=0.01s
+
+2015-09-18 11:00:03 (2.68 MB/s) - `C:/websites/gb-energy-website-v2-main-site/app/furore/2015-09-1811_00_03_16/home_accordion_component.html' saved [32386]
+
+--2015-09-18 11:02:55--  http://localhost:8080/gb-energy-website-v2-main-site/app/furore/home_accordion_component.jsp
+Resolving localhost... ::1, 127.0.0.1
+Connecting to localhost|::1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/websites/gb-energy-website-v2-main-site/app/furore/2015-09-1811_02_55_11/home_accordion_component.html'
+
+     0K .......... .......... .......... .                     3.77M=0.008s
+
+2015-09-18 11:02:55 (3.77 MB/s) - `C:/websites/gb-energy-website-v2-main-site/app/furore/2015-09-1811_02_55_11/home_accordion_component.html' saved [32710]
+
