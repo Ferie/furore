@@ -3,7 +3,7 @@
 	<head>
 		<jsp:include page="includes/meta.html"></jsp:include>
 
-		<title>Internal Page Components</title>
+		<title></title>
 
 		<jsp:include page="includes/css.html"></jsp:include>
 
@@ -11,7 +11,7 @@
 
 		
 
-		<!-- SPECIFIC CSS END HERE -->    
+		<!-- SPECIFIC CSS END HERE -->
 
 		<link type="text/css" rel="stylesheet" href="css/retina.css"/>
 
@@ -41,6 +41,8 @@
 					<div class="mainContainer-wrapper">
 
 						<!-- PAGE STARTS HERE -->
+
+
 
 						<!-- PAGE ENDS HERE -->
 

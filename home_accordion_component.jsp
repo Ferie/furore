@@ -23,7 +23,7 @@
 		<link type="text/css" rel="stylesheet" href="css/videoplayer.css"/>
 		<link type="text/css" rel="stylesheet" href="css/ucg_video_text_component.css"/>
 
-		<!-- SPECIFIC CSS END HERE -->    
+		<!-- SPECIFIC CSS END HERE -->
 
 		<link type="text/css" rel="stylesheet" href="css/retina.css"/>
 
