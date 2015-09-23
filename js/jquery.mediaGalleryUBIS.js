@@ -73,13 +73,13 @@
 				navSwiper: null,
 				players: [],
 				galleryTitle: "Gallery title",
-				source: "data/gallery.json",
+				source: "../data/gallery.json",
 				preloadedImageRange:1,//Carica n immagini prima e n immagini dopo quella corrente
-				placeHolder:"img/static/gallery-placeholder.jpg",
+				placeHolder:"../img/static/gallery-placeholder.jpg",
 				host:"http://localhost:8080/unicredit-corporate",
 				//mediaType is the  media type displayed by the gallery and the visualization order of the the types
 				mediaType:{"YOUTUBE":"youtube","IMAGE":"image"},
-				thumbSelectedImage:"img/static/gallery-selected.png",
+				thumbSelectedImage:"../img/static/gallery-selected.png",
 				imageCached:[],
 				fullWindow:false
 			};
