@@ -1,0 +1,16 @@
+<jsp:include page="../includes/meta.html"></jsp:include>
+<?php require_once("../includes/meta.html"); ?>
+<jsp:include page="../includes/css.html"></jsp:include>
+<?php require_once("../includes/css.html"); ?>
+<jsp:include page="../includes/js.html"></jsp:include>
+<?php require_once("../includes/js.html"); ?>
+<jsp:include page="../includes/message.html"></jsp:include>
+<?php require_once("../includes/message.html"); ?>
+<jsp:include page="../includes/header.html"></jsp:include>
+<?php require_once("../includes/header.html"); ?>
+<jsp:include page="../includes/search.html"></jsp:include>
+<?php require_once("../includes/search.html"); ?>
+<jsp:include page="../includes/sidebar.html"></jsp:include>
+<?php require_once("../includes/sidebar.html"); ?>
+<jsp:include page="../includes/footer.html"></jsp:include>
+<?php require_once("../includes/footer.html"); ?>

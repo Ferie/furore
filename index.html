@@ -27,35 +27,35 @@
 				$('.with-jsp li a:not(.no-page)').each(function (i, e) {
 					var url = $(e).attr("href");
 					if (url.lastIndexOf(".html") >= 0) {
-						var $jspurl = $("<a/>").addClass("jsp").attr("href", 'jsp/' + url.substring(0, url.lastIndexOf(".")) + ".jsp").text("(JSP)");
-						$(e).parent().append(" ").append($jspurl);
+						var $jspUrl = $("<a/>").addClass("jsp").attr("href", 'jsp/' + url.substring(0, url.lastIndexOf(".")) + ".jsp").text("(JSP)");
+						$(e).parent().append(" ").append($jspUrl);
 					}
 				});
-				$('.with-jsp li a.php-converted').each(function (i, e) {
+				$('.with-php li a:not(.no-page)').each(function (i, e) {
 					var url = $(e).attr("href");
 					if (url.lastIndexOf(".html") >= 0) {
-						var phpURL = $("<a/>").addClass("php").attr("href", 'php/' + url.substring(0, url.lastIndexOf(".")) + ".php").text("(PHP)");
-						$(e).parent().append(" ").append(phpURL);
+						var $phpUrl = $("<a/>").addClass("php").attr("href", 'php/' + url.substring(0, url.lastIndexOf(".")) + ".php").text("(PHP)");
+						$(e).parent().append(" ").append($phpUrl);
 					}
 				});
 			});
 		</script>
 	</head>
-	<body class="with-jsp">
+	<body class="with-jsp with-php">
 		<div class="panel">
 			<div class="container">
 				<h2>Templates</h2>
 				<ul>
-					<li><a href="home.html">Home Page</a></li>
-					<li><a href="home_new_header.html">Home Page with New Header</a></li>
-					<li><a href="frontpage_aboutus.html">About Us</a></li>
-					<li><a href="frontpage_governance.html">Governance</a></li>
-					<li><a href="frontpage_investors.html">Investors</a></li>
-					<li><a href="frontpage_pressmedia.html">Press and Media</a></li>
-					<li><a href="frontpage_careers.html">Careers</a></li>
-					<li><a href="frontpage_sustainability.html">Sustainability</a></li>
-					<li><a href="page_standard.html">Standard Page</a></li>
-					<li><a href="home_vborder_columns.html">Examples of Columns with vertical border</a></li>
+					<li><a href="html/home.html">Home Page</a></li>
+					<li><a href="html/home_new_header.html">Home Page with New Header</a></li>
+					<li><a href="html/frontpage_aboutus.html">About Us</a></li>
+					<li><a href="html/frontpage_governance.html">Governance</a></li>
+					<li><a href="html/frontpage_investors.html">Investors</a></li>
+					<li><a href="html/frontpage_pressmedia.html">Press and Media</a></li>
+					<li><a href="html/frontpage_careers.html">Careers</a></li>
+					<li><a href="html/frontpage_sustainability.html">Sustainability</a></li>
+					<li><a href="html/page_standard.html">Standard Page</a></li>
+					<li><a href="html/home_vborder_columns.html">Examples of Columns with vertical border</a></li>
 				</ul>
 			</div>
 		</div>
@@ -63,38 +63,38 @@
 			<div class="container">
 				<h2>Components</h2>
 				<ul>
-					<li><a class="php-converted" href="home_accordion_component.html">Accordion</a></li>
-					<li><a href="home_archive_component.html">Archive - in page widget All</a></li>
-					<li><a href="home_back_button_component.html">Back button</a></li>
-					<li><a href="home_ads_component.html">Commercial ADS</a></li>
-					<li><a href="home_calendar_component.html">Calendar Event + Calendar Financial</a></li>
-					<li><a href="home_career_component.html">Career</a></li>
-					<li><a href="home_footnote_component.html">Footnote</a></li>
-					<li><a href="home_gallery_component.html">Gallery</a></li>
-					<li><a href="home_history_component.html">History</a></li>
-					<li><a href="home_horizontal_line_component.html">Horizontal line</a></li>
-					<li><a href="home_image_component.html">Image + Text on Image</a></li>
-					<li><a href="home_infografic_component.html">Infografic</a></li>
-					<li><a href="home_intraday_component.html">Intraday</a></li>
-					<li><a href="home_link_component.html">List link & download</a></li>
-					<li><a href="home_spinner_component.html">Loading Spinner</a></li>
-					<li><a href="home_disclaimer_component.html">Modal Disclaimer</a></li>
-					<li><a href="home_modal_component.html">Modal Message</a></li>
-					<li><a href="home_quote_component.html">Quote</a></li>
-					<li><a href="home_iframe_component.html">Responsive IFRAME</a></li>
-					<li><a href="home_spacer_component.html">Spacer</a></li>
-					<li><a href="home_social_component.html">Social: Twitter, Facebook, Youtube, GooglePlus, LinkedIn & Social Footer</a></li>
-					<li><a href="home_container_swiper_component.html">Swiper Container</a></li>
-					<li><a href="home_swiper_frontpage_component.html">Swiper Frontpage</a></li>
-					<li><a href="home_swiper_homepage_component.html">Swiper Homepage</a></li>
-					<li><a href="home_tab_component.html">Tabs</a></li>
-					<li><a href="home_table_component.html">Table</a></li>
-					<li><a href="home_text_component.html">Text Component</a></li>
-					<li><a href="home_image_text_component.html">Text & Image</a></li>
-					<li><a href="home_video_text_component.html">Text & Video</a></li>
-					<li><a href="home_title_component.html">Title component + Title SEO component</a></li>
-					<li><a href="home_worldwide_component.html">Worldwide</a></li>
-					<li><a href="home_our_worldwide_presence_component.html">Worldwide our Presence</a></li>
+					<li><a href="html/home_accordion_component.html">Accordion</a></li>
+					<li><a href="html/home_archive_component.html">Archive - in page widget All</a></li>
+					<li><a href="html/home_back_button_component.html">Back button</a></li>
+					<li><a href="html/home_ads_component.html">Commercial ADS</a></li>
+					<li><a href="html/home_calendar_component.html">Calendar Event + Calendar Financial</a></li>
+					<li><a href="html/home_career_component.html">Career</a></li>
+					<li><a href="html/home_footnote_component.html">Footnote</a></li>
+					<li><a href="html/home_gallery_component.html">Gallery</a></li>
+					<li><a href="html/home_history_component.html">History</a></li>
+					<li><a href="html/home_horizontal_line_component.html">Horizontal line</a></li>
+					<li><a href="html/home_image_component.html">Image + Text on Image</a></li>
+					<li><a href="html/home_infografic_component.html">Infografic</a></li>
+					<li><a href="html/home_intraday_component.html">Intraday</a></li>
+					<li><a href="html/home_link_component.html">List link & download</a></li>
+					<li><a href="html/home_spinner_component.html">Loading Spinner</a></li>
+					<li><a href="html/home_disclaimer_component.html">Modal Disclaimer</a></li>
+					<li><a href="html/home_modal_component.html">Modal Message</a></li>
+					<li><a href="html/home_quote_component.html">Quote</a></li>
+					<li><a href="html/home_iframe_component.html">Responsive IFRAME</a></li>
+					<li><a href="html/home_spacer_component.html">Spacer</a></li>
+					<li><a href="html/home_social_component.html">Social: Twitter, Facebook, Youtube, GooglePlus, LinkedIn & Social Footer</a></li>
+					<li><a href="html/home_container_swiper_component.html">Swiper Container</a></li>
+					<li><a href="html/home_swiper_frontpage_component.html">Swiper Frontpage</a></li>
+					<li><a href="html/home_swiper_homepage_component.html">Swiper Homepage</a></li>
+					<li><a href="html/home_tab_component.html">Tabs</a></li>
+					<li><a href="html/home_table_component.html">Table</a></li>
+					<li><a href="html/home_text_component.html">Text Component</a></li>
+					<li><a href="html/home_image_text_component.html">Text & Image</a></li>
+					<li><a href="html/home_video_text_component.html">Text & Video</a></li>
+					<li><a href="html/home_title_component.html">Title component + Title SEO component</a></li>
+					<li><a href="html/home_worldwide_component.html">Worldwide</a></li>
+					<li><a href="html/home_our_worldwide_presence_component.html">Worldwide our Presence</a></li>
 				</ul>
 			</div>
 		</div>
@@ -102,9 +102,9 @@
 			<div class="container">
 				<h2>Components Single Pages</h2>
 				<ul>
-					<li><a href="home_breadcrumb_component.html">Breadcrumbs, buttons, Sharing</a></li>
-					<li><a href="home_datebar_component.html">Generic date Bar</a></li>
-					<li><a href="home_button_component.html">Generic Button</a></li>
+					<li><a href="html/home_breadcrumb_component.html">Breadcrumbs, buttons, Sharing</a></li>
+					<li><a href="html/home_datebar_component.html">Generic date Bar</a></li>
+					<li><a href="html/home_button_component.html">Generic Button</a></li>
 				</ul>
 			</div>
 		</div>
@@ -113,35 +113,35 @@
 				<h2>Single Pages</h2>
 				<ul>
 					<li><a class="php-converted" href="alerts.html">Alerts and notifications policy</a></li>
-					<li><a href="archives.html">Archive General</a></li>
+					<li><a href="html/archives.html">Archive General</a></li>
 					<li>Archive Search - Financial reports</li>
 					<li>Archive Search - Press Releases</li>
 					<li>Archive Search - Retail Bonds</li>
 					<li>Archive Search - Transactions</li>
-					<li><a href="board_of_directors.html">Board of directors</a></li>
-					<li><a href="calendar.html">Calendar Search</a></li>
-					<li><a href="calendar-noresults.html">Calendar Search - No Results</a></li>
-					<li><a href="calendar-detail-landscape.html">Calendar detail landscape</a></li>
-					<li><a href="calendar-detail-portrait.html">Calendar detail portrait</a></li>
-					<li><a href="calendar-detail-video.html">Calendar detail video</a></li>
-					<li><a href="careers_form.html">Careers form</a></li>
-					<li><a href="careers_tool.html">Career - Job opportunities</a></li>
-					<li><a href="contact_form.html">Contacts form</a></li>
-					<li><a href="contact_form_thanks.html">Contact form thank you page</a></li>
-					<li><a href="curriculum_vitae.html">Curriculum vitae</a></li>
-					<li><a href="error404.html">Error Page</a></li>
-					<li><a href="news.html">News</a></li>
-					<li><a href="sitemap.html">Site Map</a></li>
-					<li><a href="press_release.html">Press releases</a></li>
-					<li><a href="shareholders_meeting_step1.html">Shareholder's meeting - Step 1</a></li>
-					<li><a href="shareholders_meeting_step2.html">Shareholder's meeting - Step 2</a></li>
-					<li><a href="unsubscribe.html">Unsubscribe mail alerts</a></li>
-					<li><a href="worldwide.html">Worldwide General</a></li>
-					<li><a href="worldwideCountry.html">Worldwide country detail</a></li>
-					<li><a href="worldwideCountryLess.html">Worldwide country detail less info</a></li>
-					<li><a href="worldwideCompanyInfo.html">Worldwide Company Info</a></li>
-					<li><a href="worldwideCompanyLessInfo.html">Worldwide Company Info less info</a></li>
-					<li><a href="worldwideLightTool.html">Worldwide light tool</a></li>
+					<li><a href="html/board_of_directors.html">Board of directors</a></li>
+					<li><a href="html/calendar.html">Calendar Search</a></li>
+					<li><a href="html/calendar-noresults.html">Calendar Search - No Results</a></li>
+					<li><a href="html/calendar-detail-landscape.html">Calendar detail landscape</a></li>
+					<li><a href="html/calendar-detail-portrait.html">Calendar detail portrait</a></li>
+					<li><a href="html/calendar-detail-video.html">Calendar detail video</a></li>
+					<li><a href="html/careers_form.html">Careers form</a></li>
+					<li><a href="html/careers_tool.html">Career - Job opportunities</a></li>
+					<li><a href="html/contact_form.html">Contacts form</a></li>
+					<li><a href="html/contact_form_thanks.html">Contact form thank you page</a></li>
+					<li><a href="html/curriculum_vitae.html">Curriculum vitae</a></li>
+					<li><a href="html/error404.html">Error Page</a></li>
+					<li><a href="html/news.html">News</a></li>
+					<li><a href="html/sitemap.html">Site Map</a></li>
+					<li><a href="html/press_release.html">Press releases</a></li>
+					<li><a href="html/shareholders_meeting_step1.html">Shareholder's meeting - Step 1</a></li>
+					<li><a href="html/shareholders_meeting_step2.html">Shareholder's meeting - Step 2</a></li>
+					<li><a href="html/unsubscribe.html">Unsubscribe mail alerts</a></li>
+					<li><a href="html/worldwide.html">Worldwide General</a></li>
+					<li><a href="html/worldwideCountry.html">Worldwide country detail</a></li>
+					<li><a href="html/worldwideCountryLess.html">Worldwide country detail less info</a></li>
+					<li><a href="html/worldwideCompanyInfo.html">Worldwide Company Info</a></li>
+					<li><a href="html/worldwideCompanyLessInfo.html">Worldwide Company Info less info</a></li>
+					<li><a href="html/worldwideLightTool.html">Worldwide light tool</a></li>
 				</ul>
 			</div>
 		</div>

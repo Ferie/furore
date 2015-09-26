@@ -3,7 +3,7 @@
 	<head>
 		<?php require_once("../includes/meta.html"); ?>
 
-		<title>Alerts</title>
+		<title>Careers Form</title>
 
 		<?php require_once("../includes/css.html"); ?>
 
@@ -46,10 +46,10 @@
 
 		<!-- SPECIFIC JS START HERE -->
 
-		<!-- CHOSEN PLUGIN FOR SKINNING SELECT TAGS -->
-		<script type="text/javascript" src="../plugin/js/chosen.patched.jquery.js"></script>
 		<!-- CHECKBOX E RADIO SKIN -->
 		<script type="text/javascript" src="../plugin/js/icheck.min.js"></script>
+		<!-- CHOSEN PLUGIN FOR SKINNING SELECT TAGS -->
+		<script type="text/javascript" src="../plugin/js/chosen.patched.jquery.js"></script>
 		<script type="text/javascript" src="../js/form.js"></script>
 		<!-- SPACER COMPONENT -->
 		<script type="text/javascript" src="../js/ucg_spacer.js"></script>
@@ -164,7 +164,7 @@
 									<!-- TITLE SEO -->
 									<div class="panel ucg_seo_title">
 										<div class="container">
-											<h1 class="singlePage">Alerts</h1>
+											<h1 class="singlePage">Careers contacts</h1>
 										</div>
 									</div>
 									<!-- /END TITLE SEO -->
@@ -201,7 +201,10 @@
 										<div class="container">
 											<div class="ucg_txt">
 												<p>
-													Select th alerts you wish to recive by e-mail and fill the form below to subscribe
+													If you want to apply online, please follow this link <a href="javascript:void(0);" class="ucg_int_link">Apply now</a>
+												</p>
+												<p>
+													Fill in the form to contact us about other Careers related issues (mandatory items are marked with *)
 												</p>
 											</div>
 										</div>
@@ -212,194 +215,57 @@
 
 							<div class="parsys contentpagewelcome-parsys">
 								<div class="section">
-									<form name="contactForm">
-										<div class="panel ucg_form">
-											<div class="container">
+									<div class="panel ucg_form">
+										<div class="container">
+											<form name="careersForm">
 												<div class="alert alert-danger alert-dismissible fade in">
 													You made <span class="ucg_error_num">3</span> errors filling the form, please check
 													<button type="button" class="close" data-dismiss="alert">
 														&times;
 													</button>
 												</div>
-												<div class="alertColumnContainer">
-												<div class="alertColumn col-sm-4">
-													<div class="panel ucg_title underlined ucg_no_image">
-														<div class="container">
-															<div class="ucg_cols ucg_cols_text col-xs-12">
-																<div class="ucg_title_container">
-																	<h5>Additional Info</h5>
-																</div>
-																<div class="ucg_subtitle_container"></div>
-															</div>
-															<div class="ucg_cols ucg_cols_image col-xs-12">
-																<div class="ucg_title_image_container"></div>
-															</div>
-														</div>
-													</div>
-													<div class="panel ucg_image_text">
-														<div class="container">
-															<div class="ucg_txt">
-																<div class="ucg_checkbox">
-																	<label class="ucg_checkbox_label">
-																		<input class="icheckbox_ubis" type="checkbox" name="financialReports" id="newPressRealeases" />
-																		<span class="labelText">New press realeases</span>
-																	</label>
-																</div>
-																<div class="ucg_radio second_level">
-																	<label class="ucg_radio_button">
-																		<input type="radio" class="iradio_ubis" name="pressReleaseSelection" value="price_only" />
-																		<span class="labelText">Price sensitive only</span>
-																	</label>
-																	<label class="ucg_radio_button">
-																		<input type="radio" class="iradio_ubis" name="pressReleaseSelection" value="all" />
-																		<span class="labelText">All</span>
-																	</label>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="alertColumn col-sm-4">
-													<div class="panel ucg_title underlined ucg_no_image">
-														<div class="container">
-															<div class="ucg_cols ucg_cols_text col-xs-12">
-																<div class="ucg_title_container">
-																	<h5>New documents</h5>
-																</div>
-																<div class="ucg_subtitle_container"></div>
-															</div>
-															<div class="ucg_cols ucg_cols_image col-xs-12">
-																<div class="ucg_title_image_container"></div>
-															</div>
-														</div>
-													</div>
-													<div class="panel ucg_image_text">
-														<div class="container">
-															<div class="ucg_txt">
-																<div class="ucg_checkbox">
-																	<label class="ucg_checkbox_label">
-																		<input class="icheckbox_ubis" type="checkbox" name="financialReports" />
-																		<span class="labelText">Financial reports</span>
-																	</label>
-																</div>
-																<div class="ucg_checkbox">
-																	<label class="ucg_checkbox_label">
-																		<input class="icheckbox_ubis" type="checkbox" name="groupPresentations" />
-																		<span class="labelText">Group presentations</span>
-																	</label>
-																</div>
-																<div class="ucg_checkbox">
-																	<label class="ucg_checkbox_label">
-																		<input class="icheckbox_ubis" type="checkbox" name="shareholdersmeeting" />
-																		<span class="labelText">Shareholders meetings</span>
-																	</label>
-																</div>
-																<div class="ucg_checkbox">
-																	<label class="ucg_checkbox_label">
-																		<input class="icheckbox_ubis" type="checkbox" name="internalDealingTransactions" />
-																		<span class="labelText">Internal dealing transactions</span>
-																	</label>
-																</div>
-																<div class="ucg_checkbox">
-																	<label class="ucg_checkbox_label">
-																		<input class="icheckbox_ubis" type="checkbox" name="sustainabilityReport" />
-																		<span class="labelText">Sustainability report</span>
-																	</label>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="alertColumn col-sm-4">
-													<div class="panel ucg_title underlined ucg_no_image">
-														<div class="container">
-															<div class="ucg_cols ucg_cols_text col-xs-12">
-																<div class="ucg_title_container">
-																	<h5>Page Update</h5>
-																</div>
-																<div class="ucg_subtitle_container"></div>
-															</div>
-															<div class="ucg_cols ucg_cols_image col-xs-12">
-																<div class="ucg_title_image_container"></div>
-															</div>
-														</div>
-													</div>
-													<div class="panel ucg_image_text">
-														<div class="container">
-															<div class="ucg_txt">
-																<div class="ucg_checkbox">
-																	<label class="ucg_checkbox_label">
-																		<input class="icheckbox_ubis" type="checkbox" name="groupResults" />
-																		<span class="labelText">Group results</span>
-																	</label>
-																</div>
-																<div class="ucg_checkbox">
-																	<label class="ucg_checkbox_label">
-																		<input class="icheckbox_ubis" type="checkbox" name="rating" />
-																		<span class="labelText">Rating</span>
-																	</label>
-																</div>
-																<div class="ucg_checkbox">
-																	<label class="ucg_checkbox_label">
-																		<input class="icheckbox_ubis" type="checkbox" name="consensus" />
-																		<span class="labelText">Consensus</span>
-																	</label>
-																</div>
-																<div class="ucg_checkbox">
-																	<label class="ucg_checkbox_label">
-																		<input class="icheckbox_ubis" type="checkbox" name="shareholderStructure" />
-																		<span class="labelText">Shareholder structure</span>
-																	</label>
-																</div>
-																<div class="ucg_checkbox">
-																	<label class="ucg_checkbox_label">
-																		<input class="icheckbox_ubis" type="checkbox" name="shareCapital" />
-																		<span class="labelText">Share capital</span>
-																	</label>
-																</div>
-																<div class="ucg_checkbox">
-																	<label class="ucg_checkbox_label">
-																		<input class="icheckbox_ubis" type="checkbox" name="analystCoverage" />
-																		<span class="labelText">Analyst coverage</span>
-																	</label>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-												</div>
-												<div class="ucg_horizontal_line">
-													<div class="spacer1"></div>
-													<div class="spacer2"></div>
-												</div>
-												<div class="ucg_formLanguageSelection clearfix">
-													<div class="ucg_formLanguageSelectionIntro left">
-														Preferred language:
-													</div>
-													<div class="ucg_radio left">
-														<label class="ucg_radio_button">
-															<input type="radio" class="iradio_ubis required" name="languageSelection" value="ita" data-toggle="popover" data-content="This field is mandatory" />
-															<span class="labelText">Italian</span>
-														</label>
-														<label class="ucg_radio_button">
-															<input type="radio" class="iradio_ubis required" name="languageSelection" value="eng" />
-															<span class="labelText">English</span>
-														</label>
-													</div>
-												</div>
-											</div>
-											<!-- HORIZONTAL LINE -->
-											<div class="ucg_horizontal_line">
-												<div class="spacer1"></div>
-												<div class="spacer2"></div>
-											</div>
-											<!-- /END HORIZONTAL LINE -->
-											<div class="ucg_spacer" data-ucg-height-mobile="30" data-ucg-height="30"></div>
-											<div class="container">
 												<div class="ucg_formTitle">
-													<h2>Your data</h2>
+													<h2>Your message</h2>
 												</div>
-												<div class="formSectionContainer col-xs-12 col-sm-8 clearfix">
+												<div class="formSectionContainer col-xs-12">
+													<div class="ucg_formField col-xs-12 col-sm-8">
+														Topic*
+														<select name="topicName" class="topicName little-arrow chosen-select" data-placeholder="Select Topci Name">
+															<option value="careers_online_appl">Online applications</option>
+															<option value="careers_tech_ass">Careers: technical assistance</option>
+															<option value="careers_job_pos">Careers: job's positions</option>
+														</select>
+													</div>
+													<div class="ucg_formIntro">
+														<!-- IMAGE TEXT -->
+														<div class="panel ucg_image_text">
+															<div class="container">
+																<div class="ucg_txt">
+																	<p>
+																		To apply online please see <a href="javascript:void(0);" class="ucg_int_link">UniCredit Careers</a>
+																	</p>
+																</div>
+															</div>
+														</div>
+														<!-- /END IMAGE TEXT -->
+													</div>
+													<div class="ucg_formField ucg_formIntro col-xs-12 col-sm-8">
+
+													</div>
+													<div class="ucg_formField col-xs-12 col-sm-8 hidden">
+														Message*
+														<textarea class="ucg_formTextarea required" maxlength="1000" data-toggle="popover" data-content="This field is mandatory"></textarea>
+													</div>
+													<div class="ucg_formField col-xs-12 col-sm-4 hidden">
+														<div class="ucg_formCounter">
+															Remaining characters: <span class="remaining_characters">1000</span>
+														</div>
+													</div>
+												</div>
+												<div class="ucg_formTitle hidden">
+													<h2>Your details</h2>
+												</div>
+												<div class="formSectionContainer col-xs-12 col-sm-8 hidden clearfix">
 													<div class="ucg_formRow clearfix">
 														<div class="ucg_formField col-xs-12">
 															Title*
@@ -718,12 +584,12 @@
 													</div>
 												</div>
 												<!-- HORIZONTAL LINE -->
-												<div class="ucg_horizontal_line">
+												<div class="ucg_horizontal_line hidden">
 													<div class="spacer1"></div>
 													<div class="spacer2"></div>
 												</div>
 												<!-- /END HORIZONTAL LINE -->
-												<div class="formSectionContainer">
+												<div class="formSectionContainer hidden">
 													<div class="ucg_formDisclaimerTitle">
 														Information according to D. Decree No. 196/2003
 													</div>
@@ -750,12 +616,12 @@
 													</div>
 												</div>
 												<!-- HORIZONTAL LINE -->
-												<div class="ucg_horizontal_line">
+												<div class="ucg_horizontal_line hidden">
 													<div class="spacer1"></div>
 													<div class="spacer2"></div>
 												</div>
 												<!-- /END HORIZONTAL LINE -->
-												<div class="formSectionContainerCaptcha col-xs-12 clearfix">
+												<div class="formSectionContainerCaptcha col-xs-12 hidden clearfix">
 													<div class="ucg_formCaptcha col-xs-8 col-sm-4">
 														<img alt="" src="../img/captcha.png">
 													</div>
@@ -780,21 +646,21 @@
 													<!-- /END LINK -->
 												</div>
 												<!-- HORIZONTAL LINE -->
-												<div class="ucg_horizontal_line">
+												<div class="ucg_horizontal_line hidden">
 													<div class="spacer1"></div>
 													<div class="spacer2"></div>
 												</div>
 												<!-- /END HORIZONTAL LINE -->
 												<!-- BUTTON -->
-												<div class="panel ucg_button">
+												<div class="panel ucg_button hidden">
 													<div class="container">
-														<button type="submit" class="btn ucg_button_confirm" title="submit">Activate alerts</button>
+														<button type="submit" class="btn ucg_button_confirm" title="submit">Submit</button>
 													</div>
 												</div>
 												<!-- /END BUTTON -->
-											</div>
+											</form>
 										</div>
-									</form>
+									</div>
 								</div>
 							</div>
 

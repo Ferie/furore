@@ -1,60 +1,62 @@
 <!DOCTYPE html>
 <html lang="it">
 	<head>
-		<?php require_once('includes/meta.html'); ?>
+		<?php require_once("../includes/meta.html"); ?>
 
-		<title>Alerts</title>
+		<title>Internal Page Components</title>
 
-		<?php require_once('includes/css.html'); ?>
+		<?php require_once("../includes/css.html"); ?>
 
 		<!-- SPECIFIC CSS START HERE -->
 
 		<!--generic CSS for Parsys Column container-->
-		<link type="text/css" rel="stylesheet" href="css/ucg_parsys_column.css"/>
+		<link type="text/css" rel="stylesheet" href="../css/ucg_parsys_column.css"/>
 
 		<!--specific CSS for Accordion Component-->
-		<link type="text/css" rel="stylesheet" href="css/ucg_accordion_component.css"/>
+		<link type="text/css" rel="stylesheet" href="../css/ucg_accordion_component.css"/>
 
 		<!--imported CSS component-->
-		<link type="text/css" rel="stylesheet" href="css/ucg_title_component.css"/>
-		<link type="text/css" rel="stylesheet" href="css/ucg_text_component.css"/>
-		<link type="text/css" rel="stylesheet" href="css/ucg_link_component.css"/>
-		<link type="text/css" rel="stylesheet" href="css/ucg_image_text_component.css"/>
-		<link type="text/css" rel="stylesheet" href="css/videoplayer.css"/>
-		<link type="text/css" rel="stylesheet" href="css/ucg_video_text_component.css"/>
+		<link type="text/css" rel="stylesheet" href="../css/ucg_title_component.css"/>
+		<link type="text/css" rel="stylesheet" href="../css/ucg_text_component.css"/>
+		<link type="text/css" rel="stylesheet" href="../css/ucg_link_component.css"/>
+		<link type="text/css" rel="stylesheet" href="../css/ucg_image_text_component.css"/>
+		<link type="text/css" rel="stylesheet" href="../css/videoplayer.css"/>
+		<link type="text/css" rel="stylesheet" href="../css/ucg_video_text_component.css"/>
 
 		<!-- SPECIFIC CSS END HERE -->
 
-		<link type="text/css" rel="stylesheet" href="css/retina.css"/>
+		<link type="text/css" rel="stylesheet" href="../css/retina.css"/>
 
-		<?php require_once('includes/js.html'); ?>
+		<?php require_once("../includes/js.html"); ?>
 
 		<!-- SPECIFIC JS START HERE -->
 
 		<!--specific JS for Accordion Component-->
-		<script type="text/javascript" src="js/ucg_accordion_component.js"></script>
+		<script type="text/javascript" src="../js/ucg_accordion_component.js"></script>
 
 		<!--imported JS for Accordion Component-->
-		<script type="text/javascript" src="js/videoplayer.js"></script>
+		<script type="text/javascript" src="../js/videoplayer.js"></script>
 
 		<!-- SPECIFIC JS END HERE -->
 	</head>
 
 	<body>
-		<?php require_once('includes/message.html'); ?>
-		<?php require_once('includes/header.html'); ?>
-		<?php require_once('includes/search.html'); ?>
+		<?php require_once("../includes/message.html"); ?>
+
+		<?php require_once("../includes/header.html"); ?>
+
+		<?php require_once("../includes/search.html"); ?>
 
 		<div class="body-container-table">
 			<div class="body-container-cell">
-				<?php require_once('includes/sidebar.html'); ?>
+				<?php require_once("../includes/sidebar.html"); ?>
 			</div>
 
 			<div class="body-container-cell">
 				<div id="mainContainer">
 					<div class="mainContainer-wrapper">
 
-						<!-- PAGE START HERE -->
+						<!-- PAGE STARTS HERE -->
 
 						<!-- Modal -->
 						<div class="ucg_videoplayer_container">
@@ -299,7 +301,7 @@
 														<div class="container">
 															<div class="ucg_video">
 																<a class="ucg_videoplayer_starter" href="javascript:void(0);" data-video="https://www.youtube.com/embed/j_kOGqFslos?autoplay=1"></a>
-																<img class="placeholder" src="img/press_and_news.png" alt="Press and news" title="Press and news">
+																<img class="placeholder" src="../img/press_and_news.png" alt="Press and news" title="Press and news">
 															</div>
 															<div class="ucg_txt">
 																<h3>Celebrating Christmas with UniCredit's Light-Covered Art in Milan</h3>
@@ -330,7 +332,7 @@
 													<div class="panel ucg_image_text">
 														<div class="container">
 															<div class="ucg_img">
-																<img src="img/DISTORSIONI_MOLASCHI.png" alt="">
+																<img src="../img/DISTORSIONI_MOLASCHI.png" alt="">
 															</div>
 															<div class="ucg_txt">
 																<h3>Innovation</h3>
@@ -389,7 +391,7 @@
 								<div class="panel ucg_image_text">
 									<div class="container">
 										<div class="ucg_img">
-											<img src="img/RIFLESSI_TITTI_CIMMINO.png" alt="">
+											<img src="../img/RIFLESSI_TITTI_CIMMINO.png" alt="">
 										</div>
 										<div class="ucg_txt">
 											<h3>Our business model</h3>
@@ -409,9 +411,9 @@
 							</div>
 						</div>
 
-						<!-- PAGE END HERE -->
+						<!-- PAGE ENDS HERE -->
 
-						<?php require_once('includes/footer.html'); ?>
+						<?php require_once("../includes/footer.html"); ?>
 					</div>
 				</div>
 			</div>
