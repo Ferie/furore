@@ -3589,3 +3589,2377 @@ Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_10_39/arch
 
 2015-09-27 14:10:49 (51,3 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_10_39/archives.html' saved [41035]
 
+--2015-09-27 14:29:21--  http://localhost:8080/GitHub/furore/jsp/home.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home.html'
+
+     0K .......... .......... .......... .......... .......    39,5M=0,001s
+
+2015-09-27 14:29:21 (39,5 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home.html' saved [48288]
+
+--2015-09-27 14:29:21--  http://localhost:8080/GitHub/furore/jsp/frontpage_aboutus.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/frontpage_aboutus.html'
+
+     0K .......... .......... .......... .......... .......... 68,4M
+    50K .......... .......... .......                          37,4M=0,001s
+
+2015-09-27 14:29:21 (52,7 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/frontpage_aboutus.html' saved [79849]
+
+--2015-09-27 14:29:21--  http://localhost:8080/GitHub/furore/jsp/frontpage_governance.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/frontpage_governance.html'
+
+     0K .......... .......... .......... .........             52,8M=0,001s
+
+2015-09-27 14:29:21 (52,8 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/frontpage_governance.html' saved [40017]
+
+--2015-09-27 14:29:21--  http://localhost:8080/GitHub/furore/jsp/frontpage_investors.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/frontpage_investors.html'
+
+     0K .......... .......... .......... .......... ..         52,0M=0,001s
+
+2015-09-27 14:29:21 (52,0 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/frontpage_investors.html' saved [43874]
+
+--2015-09-27 14:29:21--  http://localhost:8080/GitHub/furore/jsp/frontpage_pressmedia.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/frontpage_pressmedia.html'
+
+     0K .......... .......... .......... .......... ...        58,2M=0,001s
+
+2015-09-27 14:29:21 (58,2 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/frontpage_pressmedia.html' saved [44505]
+
+--2015-09-27 14:29:21--  http://localhost:8080/GitHub/furore/jsp/frontpage_careers.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/frontpage_careers.html'
+
+     0K .......... .......... .......... .......... ....       57,9M=0,001s
+
+2015-09-27 14:29:21 (57,9 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/frontpage_careers.html' saved [45852]
+
+--2015-09-27 14:29:21--  http://localhost:8080/GitHub/furore/jsp/frontpage_sustainability.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/frontpage_sustainability.html'
+
+     0K .......... .......... .......... .......... ....       56,1M=0,001s
+
+2015-09-27 14:29:21 (56,1 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/frontpage_sustainability.html' saved [45103]
+
+--2015-09-27 14:29:21--  http://localhost:8080/GitHub/furore/jsp/page_standard.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/page_standard.html'
+
+     0K .......... .......... .......... .......... .......... 67,6M
+    50K .......... .......... .......... .......... .......... 58,3M
+   100K .......... .......... .....                            51,6M=0,002s
+
+2015-09-27 14:29:21 (60,0 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/page_standard.html' saved [129021]
+
+--2015-09-27 14:29:21--  http://localhost:8080/GitHub/furore/jsp/home_accordion_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_accordion_component.html'
+
+     0K .......... .......... .......... ..                    43,8M=0,001s
+
+2015-09-27 14:29:22 (43,8 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_accordion_component.html' saved [32801]
+
+--2015-09-27 14:29:22--  http://localhost:8080/GitHub/furore/jsp/home_archive_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_archive_component.html'
+
+     0K .......... .....                                       67,9M=0s
+
+2015-09-27 14:29:22 (67,9 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_archive_component.html' saved [16238]
+
+--2015-09-27 14:29:22--  http://localhost:8080/GitHub/furore/jsp/home_back_button_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_back_button_component.html'
+
+     0K .......... .....                                       50,2M=0s
+
+2015-09-27 14:29:22 (50,2 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_back_button_component.html' saved [15924]
+
+--2015-09-27 14:29:22--  http://localhost:8080/GitHub/furore/jsp/home_breadcrumb_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_breadcrumb_component.html'
+
+     0K .......... ..........                                  54,9M=0s
+
+2015-09-27 14:29:22 (54,9 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_breadcrumb_component.html' saved [21021]
+
+--2015-09-27 14:29:22--  http://localhost:8080/GitHub/furore/jsp/home_button_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_button_component.html'
+
+     0K .......... .....                                       65,7M=0s
+
+2015-09-27 14:29:22 (65,7 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_button_component.html' saved [15663]
+
+--2015-09-27 14:29:22--  http://localhost:8080/GitHub/furore/jsp/home_calendar_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_calendar_component.html'
+
+     0K .......... .......... .                                65,2M=0s
+
+2015-09-27 14:29:22 (65,2 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_calendar_component.html' saved [21810]
+
+--2015-09-27 14:29:22--  http://localhost:8080/GitHub/furore/jsp/home_career_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_career_component.html'
+
+     0K .......... ......                                      43,5M=0s
+
+2015-09-27 14:29:22 (43,5 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_career_component.html' saved [16555]
+
+--2015-09-27 14:29:22--  http://localhost:8080/GitHub/furore/jsp/home_container_swiper_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_container_swiper_component.html'
+
+     0K .......... .......... ......                           46,5M=0,001s
+
+2015-09-27 14:29:22 (46,5 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_container_swiper_component.html' saved [26710]
+
+--2015-09-27 14:29:22--  http://localhost:8080/GitHub/furore/jsp/home_datebar_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_datebar_component.html'
+
+     0K .......... ........                                    77,6M=0s
+
+2015-09-27 14:29:22 (77,6 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_datebar_component.html' saved [19381]
+
+--2015-09-27 14:29:22--  http://localhost:8080/GitHub/furore/jsp/home_disclaimer_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_disclaimer_component.html'
+
+     0K .......... ..........                                  87,7M=0s
+
+2015-09-27 14:29:22 (87,7 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_disclaimer_component.html' saved [21243]
+
+--2015-09-27 14:29:22--  http://localhost:8080/GitHub/furore/jsp/home_footnote_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_footnote_component.html'
+
+     0K .......... .......                                     75,4M=0s
+
+2015-09-27 14:29:22 (75,4 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_footnote_component.html' saved [18031]
+
+--2015-09-27 14:29:22--  http://localhost:8080/GitHub/furore/jsp/home_gallery_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_gallery_component.html'
+
+     0K .......... .......                                     81,3M=0s
+
+2015-09-27 14:29:22 (81,3 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_gallery_component.html' saved [17929]
+
+--2015-09-27 14:29:22--  http://localhost:8080/GitHub/furore/jsp/home_history_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_history_component.html'
+
+     0K .......... .......... .......... .......... .........  44,9M=0,001s
+
+2015-09-27 14:29:22 (44,9 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_history_component.html' saved [50622]
+
+--2015-09-27 14:29:22--  http://localhost:8080/GitHub/furore/jsp/home_horizontal_line_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_horizontal_line_component.html'
+
+     0K .......... ....                                        59,9M=0s
+
+2015-09-27 14:29:22 (59,9 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_horizontal_line_component.html' saved [14952]
+
+--2015-09-27 14:29:22--  http://localhost:8080/GitHub/furore/jsp/home_iframe_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_iframe_component.html'
+
+     0K .......... .....                                       46,3M=0s
+
+2015-09-27 14:29:22 (46,3 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_iframe_component.html' saved [15691]
+
+--2015-09-27 14:29:22--  http://localhost:8080/GitHub/furore/jsp/home_image_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_image_component.html'
+
+     0K .......... .......                                     65,9M=0s
+
+2015-09-27 14:29:22 (65,9 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_image_component.html' saved [18296]
+
+--2015-09-27 14:29:22--  http://localhost:8080/GitHub/furore/jsp/home_image_text_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_image_text_component.html'
+
+     0K .......... .......... ...                              64,4M=0s
+
+2015-09-27 14:29:22 (64,4 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_image_text_component.html' saved [23948]
+
+--2015-09-27 14:29:22--  http://localhost:8080/GitHub/furore/jsp/home_infografic_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_infografic_component.html'
+
+     0K .......... .......                                     52,8M=0s
+
+2015-09-27 14:29:22 (52,8 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_infografic_component.html' saved [18253]
+
+--2015-09-27 14:29:22--  http://localhost:8080/GitHub/furore/jsp/home_intraday_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_intraday_component.html'
+
+     0K .......... ..........                                  29,3M=0,001s
+
+2015-09-27 14:29:23 (29,3 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_intraday_component.html' saved [21027]
+
+--2015-09-27 14:29:23--  http://localhost:8080/GitHub/furore/jsp/home_link_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_link_component.html'
+
+     0K .......... .......... ..                               90,2M=0s
+
+2015-09-27 14:29:23 (90,2 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_link_component.html' saved [23240]
+
+--2015-09-27 14:29:23--  http://localhost:8080/GitHub/furore/jsp/home_modal_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_modal_component.html'
+
+     0K .......... .....                                       42,6M=0s
+
+2015-09-27 14:29:23 (42,6 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_modal_component.html' saved [15658]
+
+--2015-09-27 14:29:23--  http://localhost:8080/GitHub/furore/jsp/home_our_worldwide_presence_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_our_worldwide_presence_component.html'
+
+     0K .......... .........                                   82,0M=0s
+
+2015-09-27 14:29:23 (82,0 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_our_worldwide_presence_component.html' saved [19714]
+
+--2015-09-27 14:29:23--  http://localhost:8080/GitHub/furore/jsp/home_quote_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_quote_component.html'
+
+     0K .......... ........                                    69,2M=0s
+
+2015-09-27 14:29:23 (69,2 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_quote_component.html' saved [18472]
+
+--2015-09-27 14:29:23--  http://localhost:8080/GitHub/furore/jsp/home_social_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_social_component.html'
+
+     0K .......... .......... .......                          48,1M=0,001s
+
+2015-09-27 14:29:23 (48,1 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_social_component.html' saved [28083]
+
+--2015-09-27 14:29:23--  http://localhost:8080/GitHub/furore/jsp/home_spacer_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_spacer_component.html'
+
+     0K .......... .....                                       51,3M=0s
+
+2015-09-27 14:29:23 (51,3 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_spacer_component.html' saved [15619]
+
+--2015-09-27 14:29:23--  http://localhost:8080/GitHub/furore/jsp/home_spinner_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_spinner_component.html'
+
+     0K .......... ........                                    53,4M=0s
+
+2015-09-27 14:29:23 (53,4 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_spinner_component.html' saved [18498]
+
+--2015-09-27 14:29:23--  http://localhost:8080/GitHub/furore/jsp/home_swiper_frontpage_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_swiper_frontpage_component.html'
+
+     0K .......... ........                                    56,6M=0s
+
+2015-09-27 14:29:23 (56,6 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_swiper_frontpage_component.html' saved [18443]
+
+--2015-09-27 14:29:23--  http://localhost:8080/GitHub/furore/jsp/home_swiper_homepage_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_swiper_homepage_component.html'
+
+     0K .......... ........                                    48,3M=0s
+
+2015-09-27 14:29:23 (48,3 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_swiper_homepage_component.html' saved [18940]
+
+--2015-09-27 14:29:23--  http://localhost:8080/GitHub/furore/jsp/home_tab_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_tab_component.html'
+
+     0K .......... .......... .......                          49,9M=0,001s
+
+2015-09-27 14:29:23 (49,9 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_tab_component.html' saved [27783]
+
+--2015-09-27 14:29:23--  http://localhost:8080/GitHub/furore/jsp/home_table_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_table_component.html'
+
+     0K .......... .......... ....                             73,6M=0s
+
+2015-09-27 14:29:23 (73,6 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_table_component.html' saved [24903]
+
+--2015-09-27 14:29:23--  http://localhost:8080/GitHub/furore/jsp/home_text_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_text_component.html'
+
+     0K .......... .......... .....                            67,4M=0s
+
+2015-09-27 14:29:23 (67,4 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_text_component.html' saved [25985]
+
+--2015-09-27 14:29:23--  http://localhost:8080/GitHub/furore/jsp/home_title_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_title_component.html'
+
+     0K .......... .......... .                                69,5M=0s
+
+2015-09-27 14:29:23 (69,5 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_title_component.html' saved [22492]
+
+--2015-09-27 14:29:23--  http://localhost:8080/GitHub/furore/jsp/home_vborder_columns.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_vborder_columns.html'
+
+     0K .......... .......... ....                             63,8M=0s
+
+2015-09-27 14:29:23 (63,8 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_vborder_columns.html' saved [24936]
+
+--2015-09-27 14:29:24--  http://localhost:8080/GitHub/furore/jsp/home_video_text_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_video_text_component.html'
+
+     0K .......... .......... .....                            81,8M=0s
+
+2015-09-27 14:29:24 (81,8 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_video_text_component.html' saved [25651]
+
+--2015-09-27 14:29:24--  http://localhost:8080/GitHub/furore/jsp/home_worldwide_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_worldwide_component.html'
+
+     0K .......... .......... .......... ..                    42,0M=0,001s
+
+2015-09-27 14:29:24 (42,0 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/home_worldwide_component.html' saved [33101]
+
+--2015-09-27 14:29:24--  http://localhost:8080/GitHub/furore/jsp/archives.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/archives.html'
+
+     0K .......... .......... .......... ..........            37,6M=0,001s
+
+2015-09-27 14:29:24 (37,6 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/archives.html' saved [41035]
+
+--2015-09-27 14:29:24--  http://localhost:8080/GitHub/furore/jsp/careers_form.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/careers_form.html'
+
+     0K .......... .......... .......... .......... .......... 54,0M
+    50K .                                                      3,52G=0,001s
+
+2015-09-27 14:29:24 (55,2 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/careers_form.html' saved [52319]
+
+--2015-09-27 14:29:24--  http://localhost:8080/GitHub/furore/jsp/careers_tool.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/careers_tool.html'
+
+     0K .......... .......... .......... ..                    13,4M=0,002s
+
+2015-09-27 14:29:24 (13,4 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/careers_tool.html' saved [33186]
+
+--2015-09-27 14:29:24--  http://localhost:8080/GitHub/furore/jsp/contact_form.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/contact_form.html'
+
+     0K .......... .......... .......... .......... .......... 37,8M
+    50K ...                                                    46,6M=0,001s
+
+2015-09-27 14:29:24 (38,3 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/contact_form.html' saved [55219]
+
+--2015-09-27 14:29:24--  http://localhost:8080/GitHub/furore/jsp/contact_form_thanks.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/contact_form_thanks.html'
+
+     0K .......... .......... .....                            85,6M=0s
+
+2015-09-27 14:29:24 (85,6 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/contact_form_thanks.html' saved [26007]
+
+--2015-09-27 14:29:24--  http://localhost:8080/GitHub/furore/jsp/alerts.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/alerts.html'
+
+     0K .......... .......... .......... .......... .......... 31,3M
+    50K .......                                                41,0M=0,002s
+
+2015-09-27 14:29:24 (32,2 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/alerts.html' saved [58426]
+
+--2015-09-27 14:29:24--  http://localhost:8080/GitHub/furore/jsp/board_of_directors.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/board_of_directors.html'
+
+     0K .......... .......... .......... .......... .......... 63,5M
+    50K .......... ......                                      26,9M=0,001s
+
+2015-09-27 14:29:24 (47,6 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/board_of_directors.html' saved [67952]
+
+--2015-09-27 14:29:24--  http://localhost:8080/GitHub/furore/jsp/calendar.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/calendar.html'
+
+     0K .......... .......... .......... .......               51,4M=0,001s
+
+2015-09-27 14:29:24 (51,4 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/calendar.html' saved [38456]
+
+--2015-09-27 14:29:24--  http://localhost:8080/GitHub/furore/jsp/calendar-noresults.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/calendar-noresults.html'
+
+     0K .......... .......... ..                               68,9M=0s
+
+2015-09-27 14:29:24 (68,9 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/calendar-noresults.html' saved [22967]
+
+--2015-09-27 14:29:24--  http://localhost:8080/GitHub/furore/jsp/calendar-detail-landscape.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/calendar-detail-landscape.html'
+
+     0K .......... ..........                                  61,4M=0s
+
+2015-09-27 14:29:25 (61,4 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/calendar-detail-landscape.html' saved [21271]
+
+--2015-09-27 14:29:25--  http://localhost:8080/GitHub/furore/jsp/calendar-detail-portrait.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/calendar-detail-portrait.html'
+
+     0K .......... .......... .                                59,6M=0s
+
+2015-09-27 14:29:25 (59,6 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/calendar-detail-portrait.html' saved [21616]
+
+--2015-09-27 14:29:25--  http://localhost:8080/GitHub/furore/jsp/calendar-detail-video.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/calendar-detail-video.html'
+
+     0K .......... .......... ..                               63,0M=0s
+
+2015-09-27 14:29:25 (63,0 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/calendar-detail-video.html' saved [22846]
+
+--2015-09-27 14:29:25--  http://localhost:8080/GitHub/furore/jsp/error404.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/error404.html'
+
+     0K .......... .......... ..........                       43,9M=0,001s
+
+2015-09-27 14:29:25 (43,9 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/error404.html' saved [31646]
+
+--2015-09-27 14:29:25--  http://localhost:8080/GitHub/furore/jsp/curriculum_vitae.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/curriculum_vitae.html'
+
+     0K .......... .......... .......... ...                   54,6M=0,001s
+
+2015-09-27 14:29:25 (54,6 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/curriculum_vitae.html' saved [34413]
+
+--2015-09-27 14:29:26--  http://localhost:8080/GitHub/furore/jsp/news.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/news.html'
+
+     0K .......... .......... .......... ......                36,0M=0,001s
+
+2015-09-27 14:29:26 (36,0 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/news.html' saved [37067]
+
+--2015-09-27 14:29:26--  http://localhost:8080/GitHub/furore/jsp/press_release.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/press_release.html'
+
+     0K .......... .......... ......                           34,8M=0,001s
+
+2015-09-27 14:29:26 (34,8 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/press_release.html' saved [26676]
+
+--2015-09-27 14:29:26--  http://localhost:8080/GitHub/furore/jsp/search.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 500 Internal Server Error
+2015-09-27 14:29:26 ERROR 500: Internal Server Error.
+
+--2015-09-27 14:29:26--  http://localhost:8080/GitHub/furore/jsp/shareholders_meeting_step1.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/shareholders_meeting_step1.html'
+
+     0K .......... .......... .......... .......... .......... 37,2M
+    50K .......... ........                                    30,3M=0,002s
+
+2015-09-27 14:29:26 (35,1 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/shareholders_meeting_step1.html' saved [69738]
+
+--2015-09-27 14:29:26--  http://localhost:8080/GitHub/furore/jsp/shareholders_meeting_step2.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/shareholders_meeting_step2.html'
+
+     0K .......... .......... .......... .......... .....      33,0M=0,001s
+
+2015-09-27 14:29:26 (33,0 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/shareholders_meeting_step2.html' saved [46186]
+
+--2015-09-27 14:29:26--  http://localhost:8080/GitHub/furore/jsp/sitemap.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/sitemap.html'
+
+     0K .......... .......... .......... .......... ........   33,7M=0,001s
+
+2015-09-27 14:29:26 (33,7 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/sitemap.html' saved [50065]
+
+--2015-09-27 14:29:26--  http://localhost:8080/GitHub/furore/jsp/unsubscribe.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/unsubscribe.html'
+
+     0K .......... .......... ........                         35,5M=0,001s
+
+2015-09-27 14:29:27 (35,5 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/unsubscribe.html' saved [28877]
+
+--2015-09-27 14:29:27--  http://localhost:8080/GitHub/furore/jsp/worldwide.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/worldwide.html'
+
+     0K .......... .......... .....                            99,9M=0s
+
+2015-09-27 14:29:27 (99,9 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/worldwide.html' saved [25694]
+
+--2015-09-27 14:29:27--  http://localhost:8080/GitHub/furore/jsp/worldwideCountry.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/worldwideCountry.html'
+
+     0K .......... .......... .....                            80,1M=0s
+
+2015-09-27 14:29:27 (80,1 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/worldwideCountry.html' saved [26528]
+
+--2015-09-27 14:29:27--  http://localhost:8080/GitHub/furore/jsp/worldwideCountryLess.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/worldwideCountryLess.html'
+
+     0K .......... ........                                    62,7M=0s
+
+2015-09-27 14:29:27 (62,7 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/worldwideCountryLess.html' saved [18962]
+
+--2015-09-27 14:29:27--  http://localhost:8080/GitHub/furore/jsp/worldwideCompanyInfo.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/worldwideCompanyInfo.html'
+
+     0K .......... .......... ..                               85,5M=0s
+
+2015-09-27 14:29:27 (85,5 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/worldwideCompanyInfo.html' saved [23360]
+
+--2015-09-27 14:29:27--  http://localhost:8080/GitHub/furore/jsp/worldwideCompanyLessInfo.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/worldwideCompanyLessInfo.html'
+
+     0K .......... .........                                   81,3M=0s
+
+2015-09-27 14:29:27 (81,3 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/worldwideCompanyLessInfo.html' saved [19784]
+
+--2015-09-27 14:29:27--  http://localhost:8080/GitHub/furore/jsp/worldwideLightTool.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/worldwideLightTool.html'
+
+     0K .......... .......... ....                             80,3M=0s
+
+2015-09-27 14:29:27 (80,3 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_29_21/worldwideLightTool.html' saved [25286]
+
+--2015-09-27 14:52:58--  http://localhost:8080/GitHub/furore/jsp/home.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home.html'
+
+     0K .......... .......... .......... .......... .......    44,6M=0,001s
+
+2015-09-27 14:52:58 (44,6 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home.html' saved [48288]
+
+--2015-09-27 14:52:58--  http://localhost:8080/GitHub/furore/jsp/frontpage_aboutus.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/frontpage_aboutus.html'
+
+     0K .......... .......... .......... .......... .......... 70,3M
+    50K .......... .......... .......                          38,9M=0,001s
+
+2015-09-27 14:52:58 (54,5 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/frontpage_aboutus.html' saved [79849]
+
+--2015-09-27 14:52:58--  http://localhost:8080/GitHub/furore/jsp/frontpage_governance.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/frontpage_governance.html'
+
+     0K .......... .......... .......... .........             46,5M=0,001s
+
+2015-09-27 14:52:58 (46,5 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/frontpage_governance.html' saved [40017]
+
+--2015-09-27 14:52:58--  http://localhost:8080/GitHub/furore/jsp/frontpage_investors.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/frontpage_investors.html'
+
+     0K .......... .......... .......... .......... ..         53,2M=0,001s
+
+2015-09-27 14:52:58 (53,2 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/frontpage_investors.html' saved [43874]
+
+--2015-09-27 14:52:58--  http://localhost:8080/GitHub/furore/jsp/frontpage_pressmedia.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/frontpage_pressmedia.html'
+
+     0K .......... .......... .......... .......... ...        48,5M=0,001s
+
+2015-09-27 14:52:58 (48,5 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/frontpage_pressmedia.html' saved [44505]
+
+--2015-09-27 14:52:58--  http://localhost:8080/GitHub/furore/jsp/frontpage_careers.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/frontpage_careers.html'
+
+     0K .......... .......... .......... .......... ....       40,9M=0,001s
+
+2015-09-27 14:52:58 (40,9 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/frontpage_careers.html' saved [45852]
+
+--2015-09-27 14:52:58--  http://localhost:8080/GitHub/furore/jsp/frontpage_sustainability.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/frontpage_sustainability.html'
+
+     0K .......... .......... .......... .......... ....       35,3M=0,001s
+
+2015-09-27 14:52:58 (35,3 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/frontpage_sustainability.html' saved [45103]
+
+--2015-09-27 14:52:58--  http://localhost:8080/GitHub/furore/jsp/page_standard.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/page_standard.html'
+
+     0K .......... .......... .......... .......... .......... 83,3M
+    50K .......... .......... .......... .......... .......... 59,7M
+   100K .......... .......... .....                            51,2M=0,002s
+
+2015-09-27 14:52:58 (64,7 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/page_standard.html' saved [129021]
+
+--2015-09-27 14:52:58--  http://localhost:8080/GitHub/furore/jsp/home_accordion_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_accordion_component.html'
+
+     0K .......... .......... .......... ..                    54,7M=0,001s
+
+2015-09-27 14:52:58 (54,7 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_accordion_component.html' saved [32801]
+
+--2015-09-27 14:52:58--  http://localhost:8080/GitHub/furore/jsp/home_ads_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_ads_component.html'
+
+     0K .......... ......                                      58,0M=0s
+
+2015-09-27 14:52:58 (58,0 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_ads_component.html' saved [16450]
+
+--2015-09-27 14:52:58--  http://localhost:8080/GitHub/furore/jsp/home_archive_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_archive_component.html'
+
+     0K .......... .....                                       51,3M=0s
+
+2015-09-27 14:52:58 (51,3 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_archive_component.html' saved [16238]
+
+--2015-09-27 14:52:58--  http://localhost:8080/GitHub/furore/jsp/home_back_button_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_back_button_component.html'
+
+     0K .......... .....                                       48,0M=0s
+
+2015-09-27 14:52:58 (48,0 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_back_button_component.html' saved [15924]
+
+--2015-09-27 14:52:58--  http://localhost:8080/GitHub/furore/jsp/home_breadcrumb_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_breadcrumb_component.html'
+
+     0K .......... ..........                                  57,4M=0s
+
+2015-09-27 14:52:58 (57,4 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_breadcrumb_component.html' saved [21021]
+
+--2015-09-27 14:52:58--  http://localhost:8080/GitHub/furore/jsp/home_button_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_button_component.html'
+
+     0K .......... .....                                       66,2M=0s
+
+2015-09-27 14:52:58 (66,2 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_button_component.html' saved [15663]
+
+--2015-09-27 14:52:58--  http://localhost:8080/GitHub/furore/jsp/home_calendar_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_calendar_component.html'
+
+     0K .......... .......... .                                57,6M=0s
+
+2015-09-27 14:52:58 (57,6 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_calendar_component.html' saved [21810]
+
+--2015-09-27 14:52:58--  http://localhost:8080/GitHub/furore/jsp/home_career_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_career_component.html'
+
+     0K .......... ......                                      60,3M=0s
+
+2015-09-27 14:52:58 (60,3 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_career_component.html' saved [16555]
+
+--2015-09-27 14:52:58--  http://localhost:8080/GitHub/furore/jsp/home_container_swiper_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_container_swiper_component.html'
+
+     0K .......... .......... ......                           57,7M=0s
+
+2015-09-27 14:52:58 (57,7 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_container_swiper_component.html' saved [26710]
+
+--2015-09-27 14:52:59--  http://localhost:8080/GitHub/furore/jsp/home_datebar_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_datebar_component.html'
+
+     0K .......... ........                                    77,8M=0s
+
+2015-09-27 14:52:59 (77,8 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_datebar_component.html' saved [19381]
+
+--2015-09-27 14:52:59--  http://localhost:8080/GitHub/furore/jsp/home_disclaimer_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_disclaimer_component.html'
+
+     0K .......... ..........                                  63,6M=0s
+
+2015-09-27 14:52:59 (63,6 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_disclaimer_component.html' saved [21243]
+
+--2015-09-27 14:52:59--  http://localhost:8080/GitHub/furore/jsp/home_footnote_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_footnote_component.html'
+
+     0K .......... .......                                     39,7M=0s
+
+2015-09-27 14:52:59 (39,7 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_footnote_component.html' saved [18031]
+
+--2015-09-27 14:52:59--  http://localhost:8080/GitHub/furore/jsp/home_gallery_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_gallery_component.html'
+
+     0K .......... .......                                     63,7M=0s
+
+2015-09-27 14:52:59 (63,7 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_gallery_component.html' saved [17929]
+
+--2015-09-27 14:52:59--  http://localhost:8080/GitHub/furore/jsp/home_history_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_history_component.html'
+
+     0K .......... .......... .......... .......... .........  44,5M=0,001s
+
+2015-09-27 14:52:59 (44,5 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_history_component.html' saved [50622]
+
+--2015-09-27 14:52:59--  http://localhost:8080/GitHub/furore/jsp/home_horizontal_line_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_horizontal_line_component.html'
+
+     0K .......... ....                                        47,1M=0s
+
+2015-09-27 14:52:59 (47,1 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_horizontal_line_component.html' saved [14952]
+
+--2015-09-27 14:52:59--  http://localhost:8080/GitHub/furore/jsp/home_iframe_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_iframe_component.html'
+
+     0K .......... .....                                       47,9M=0s
+
+2015-09-27 14:52:59 (47,9 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_iframe_component.html' saved [15691]
+
+--2015-09-27 14:52:59--  http://localhost:8080/GitHub/furore/jsp/home_image_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_image_component.html'
+
+     0K .......... .......                                     74,0M=0s
+
+2015-09-27 14:52:59 (74,0 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_image_component.html' saved [18296]
+
+--2015-09-27 14:52:59--  http://localhost:8080/GitHub/furore/jsp/home_image_text_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_image_text_component.html'
+
+     0K .......... .......... ...                              83,5M=0s
+
+2015-09-27 14:52:59 (83,5 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_image_text_component.html' saved [23948]
+
+--2015-09-27 14:52:59--  http://localhost:8080/GitHub/furore/jsp/home_infografic_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_infografic_component.html'
+
+     0K .......... .......                                     33,2M=0,001s
+
+2015-09-27 14:52:59 (33,2 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_infografic_component.html' saved [18253]
+
+--2015-09-27 14:52:59--  http://localhost:8080/GitHub/furore/jsp/home_intraday_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_intraday_component.html'
+
+     0K .......... ..........                                  59,7M=0s
+
+2015-09-27 14:52:59 (59,7 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_intraday_component.html' saved [21027]
+
+--2015-09-27 14:52:59--  http://localhost:8080/GitHub/furore/jsp/home_link_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_link_component.html'
+
+     0K .......... .......... ..                               75,3M=0s
+
+2015-09-27 14:52:59 (75,3 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_link_component.html' saved [23240]
+
+--2015-09-27 14:52:59--  http://localhost:8080/GitHub/furore/jsp/home_modal_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_modal_component.html'
+
+     0K .......... .....                                       45,0M=0s
+
+2015-09-27 14:52:59 (45,0 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_modal_component.html' saved [15658]
+
+--2015-09-27 14:52:59--  http://localhost:8080/GitHub/furore/jsp/home_our_worldwide_presence_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_our_worldwide_presence_component.html'
+
+     0K .......... .........                                   35,3M=0,001s
+
+2015-09-27 14:52:59 (35,3 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_our_worldwide_presence_component.html' saved [19714]
+
+--2015-09-27 14:53:00--  http://localhost:8080/GitHub/furore/jsp/home_quote_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_quote_component.html'
+
+     0K .......... ........                                    48,5M=0s
+
+2015-09-27 14:53:00 (48,5 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_quote_component.html' saved [18472]
+
+--2015-09-27 14:53:00--  http://localhost:8080/GitHub/furore/jsp/home_search_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_search_component.html'
+
+     0K .......... ....                                        59,4M=0s
+
+2015-09-27 14:53:00 (59,4 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_search_component.html' saved [14609]
+
+--2015-09-27 14:53:00--  http://localhost:8080/GitHub/furore/jsp/home_social_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_social_component.html'
+
+     0K .......... .......... .......                          52,5M=0,001s
+
+2015-09-27 14:53:00 (52,5 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_social_component.html' saved [28083]
+
+--2015-09-27 14:53:00--  http://localhost:8080/GitHub/furore/jsp/home_spacer_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_spacer_component.html'
+
+     0K .......... .....                                       49,7M=0s
+
+2015-09-27 14:53:00 (49,7 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_spacer_component.html' saved [15619]
+
+--2015-09-27 14:53:00--  http://localhost:8080/GitHub/furore/jsp/home_spinner_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_spinner_component.html'
+
+     0K .......... ........                                    54,3M=0s
+
+2015-09-27 14:53:00 (54,3 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_spinner_component.html' saved [18498]
+
+--2015-09-27 14:53:00--  http://localhost:8080/GitHub/furore/jsp/home_swiper_frontpage_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_swiper_frontpage_component.html'
+
+     0K .......... ........                                    31,3M=0,001s
+
+2015-09-27 14:53:00 (31,3 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_swiper_frontpage_component.html' saved [18443]
+
+--2015-09-27 14:53:00--  http://localhost:8080/GitHub/furore/jsp/home_swiper_homepage_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_swiper_homepage_component.html'
+
+     0K .......... ........                                    56,8M=0s
+
+2015-09-27 14:53:00 (56,8 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_swiper_homepage_component.html' saved [18940]
+
+--2015-09-27 14:53:00--  http://localhost:8080/GitHub/furore/jsp/home_tab_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_tab_component.html'
+
+     0K .......... .......... .......                          40,7M=0,001s
+
+2015-09-27 14:53:00 (40,7 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_tab_component.html' saved [27783]
+
+--2015-09-27 14:53:00--  http://localhost:8080/GitHub/furore/jsp/home_table_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_table_component.html'
+
+     0K .......... .......... ....                             75,9M=0s
+
+2015-09-27 14:53:00 (75,9 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_table_component.html' saved [24903]
+
+--2015-09-27 14:53:00--  http://localhost:8080/GitHub/furore/jsp/home_text_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_text_component.html'
+
+     0K .......... .......... .....                            73,7M=0s
+
+2015-09-27 14:53:00 (73,7 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_text_component.html' saved [25985]
+
+--2015-09-27 14:53:00--  http://localhost:8080/GitHub/furore/jsp/home_title_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_title_component.html'
+
+     0K .......... .......... .                                87,1M=0s
+
+2015-09-27 14:53:00 (87,1 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_title_component.html' saved [22492]
+
+--2015-09-27 14:53:00--  http://localhost:8080/GitHub/furore/jsp/home_vborder_columns.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_vborder_columns.html'
+
+     0K .......... .......... ....                             72,0M=0s
+
+2015-09-27 14:53:00 (72,0 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_vborder_columns.html' saved [24936]
+
+--2015-09-27 14:53:00--  http://localhost:8080/GitHub/furore/jsp/home_video_text_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_video_text_component.html'
+
+     0K .......... .......... .....                            74,0M=0s
+
+2015-09-27 14:53:00 (74,0 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_video_text_component.html' saved [25651]
+
+--2015-09-27 14:53:00--  http://localhost:8080/GitHub/furore/jsp/home_worldwide_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_worldwide_component.html'
+
+     0K .......... .......... .......... ..                    60,5M=0,001s
+
+2015-09-27 14:53:00 (60,5 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/home_worldwide_component.html' saved [33101]
+
+--2015-09-27 14:53:00--  http://localhost:8080/GitHub/furore/jsp/archives.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/archives.html'
+
+     0K .......... .......... .......... ..........            47,6M=0,001s
+
+2015-09-27 14:53:01 (47,6 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/archives.html' saved [41035]
+
+--2015-09-27 14:53:01--  http://localhost:8080/GitHub/furore/jsp/careers_form.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/careers_form.html'
+
+     0K .......... .......... .......... .......... .......... 41,5M
+    50K .                                                      3,52G=0,001s
+
+2015-09-27 14:53:01 (42,4 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/careers_form.html' saved [52319]
+
+--2015-09-27 14:53:01--  http://localhost:8080/GitHub/furore/jsp/careers_tool.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/careers_tool.html'
+
+     0K .......... .......... .......... ..                    46,3M=0,001s
+
+2015-09-27 14:53:01 (46,3 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/careers_tool.html' saved [33186]
+
+--2015-09-27 14:53:01--  http://localhost:8080/GitHub/furore/jsp/contact_form.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/contact_form.html'
+
+     0K .......... .......... .......... .......... .......... 2,50M
+    50K ...                                                    12,6G=0,02s
+
+2015-09-27 14:53:01 (2,69 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/contact_form.html' saved [55219]
+
+--2015-09-27 14:53:01--  http://localhost:8080/GitHub/furore/jsp/contact_form_thanks.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/contact_form_thanks.html'
+
+     0K .......... .......... .....                            76,3M=0s
+
+2015-09-27 14:53:01 (76,3 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/contact_form_thanks.html' saved [26007]
+
+--2015-09-27 14:53:01--  http://localhost:8080/GitHub/furore/jsp/alerts.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/alerts.html'
+
+     0K .......... .......... .......... .......... .......... 46,8M
+    50K .......                                                39,7M=0,001s
+
+2015-09-27 14:53:01 (45,8 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/alerts.html' saved [58426]
+
+--2015-09-27 14:53:01--  http://localhost:8080/GitHub/furore/jsp/board_of_directors.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/board_of_directors.html'
+
+     0K .......... .......... .......... .......... .......... 82,4M
+    50K .......... ......                                      41,4M=0,001s
+
+2015-09-27 14:53:01 (66,2 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/board_of_directors.html' saved [67952]
+
+--2015-09-27 14:53:01--  http://localhost:8080/GitHub/furore/jsp/calendar.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/calendar.html'
+
+     0K .......... .......... .......... .......               22,4M=0,002s
+
+2015-09-27 14:53:01 (22,4 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/calendar.html' saved [38456]
+
+--2015-09-27 14:53:01--  http://localhost:8080/GitHub/furore/jsp/calendar-noresults.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/calendar-noresults.html'
+
+     0K .......... .......... ..                               60,1M=0s
+
+2015-09-27 14:53:01 (60,1 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/calendar-noresults.html' saved [22967]
+
+--2015-09-27 14:53:01--  http://localhost:8080/GitHub/furore/jsp/calendar-detail-landscape.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/calendar-detail-landscape.html'
+
+     0K .......... ..........                                  82,1M=0s
+
+2015-09-27 14:53:01 (82,1 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/calendar-detail-landscape.html' saved [21271]
+
+--2015-09-27 14:53:01--  http://localhost:8080/GitHub/furore/jsp/calendar-detail-portrait.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/calendar-detail-portrait.html'
+
+     0K .......... .......... .                                81,3M=0s
+
+2015-09-27 14:53:01 (81,3 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/calendar-detail-portrait.html' saved [21616]
+
+--2015-09-27 14:53:01--  http://localhost:8080/GitHub/furore/jsp/calendar-detail-video.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/calendar-detail-video.html'
+
+     0K .......... .......... ..                               70,7M=0s
+
+2015-09-27 14:53:01 (70,7 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/calendar-detail-video.html' saved [22846]
+
+--2015-09-27 14:53:01--  http://localhost:8080/GitHub/furore/jsp/error404.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/error404.html'
+
+     0K .......... .......... ..........                       42,9M=0,001s
+
+2015-09-27 14:53:01 (42,9 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/error404.html' saved [31646]
+
+--2015-09-27 14:53:01--  http://localhost:8080/GitHub/furore/jsp/curriculum_vitae.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/curriculum_vitae.html'
+
+     0K .......... .......... .......... ...                   56,5M=0,001s
+
+2015-09-27 14:53:01 (56,5 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/curriculum_vitae.html' saved [34413]
+
+--2015-09-27 14:53:01--  http://localhost:8080/GitHub/furore/jsp/news.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/news.html'
+
+     0K .......... .......... .......... ......                51,8M=0,001s
+
+2015-09-27 14:53:01 (51,8 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/news.html' saved [37067]
+
+--2015-09-27 14:53:01--  http://localhost:8080/GitHub/furore/jsp/press_release.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/press_release.html'
+
+     0K .......... .......... ......                           52,1M=0s
+
+2015-09-27 14:53:01 (52,1 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/press_release.html' saved [26676]
+
+--2015-09-27 14:53:02--  http://localhost:8080/GitHub/furore/jsp/search.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 500 Internal Server Error
+2015-09-27 14:53:02 ERROR 500: Internal Server Error.
+
+--2015-09-27 14:53:02--  http://localhost:8080/GitHub/furore/jsp/shareholders_meeting_step1.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/shareholders_meeting_step1.html'
+
+     0K .......... .......... .......... .......... .......... 64,2M
+    50K .......... ........                                    30,4M=0,001s
+
+2015-09-27 14:53:02 (49,5 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/shareholders_meeting_step1.html' saved [69738]
+
+--2015-09-27 14:53:02--  http://localhost:8080/GitHub/furore/jsp/shareholders_meeting_step2.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/shareholders_meeting_step2.html'
+
+     0K .......... .......... .......... .......... .....      48,0M=0,001s
+
+2015-09-27 14:53:02 (48,0 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/shareholders_meeting_step2.html' saved [46186]
+
+--2015-09-27 14:53:02--  http://localhost:8080/GitHub/furore/jsp/sitemap.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/sitemap.html'
+
+     0K .......... .......... .......... .......... ........   27,1M=0,002s
+
+2015-09-27 14:53:02 (27,1 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/sitemap.html' saved [50065]
+
+--2015-09-27 14:53:02--  http://localhost:8080/GitHub/furore/jsp/unsubscribe.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/unsubscribe.html'
+
+     0K .......... .......... ........                         45,8M=0,001s
+
+2015-09-27 14:53:02 (45,8 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/unsubscribe.html' saved [28877]
+
+--2015-09-27 14:53:02--  http://localhost:8080/GitHub/furore/jsp/worldwide.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/worldwide.html'
+
+     0K .......... .......... .....                            88,2M=0s
+
+2015-09-27 14:53:02 (88,2 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/worldwide.html' saved [25694]
+
+--2015-09-27 14:53:02--  http://localhost:8080/GitHub/furore/jsp/worldwideCountry.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/worldwideCountry.html'
+
+     0K .......... .......... .....                            37,4M=0,001s
+
+2015-09-27 14:53:02 (37,4 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/worldwideCountry.html' saved [26528]
+
+--2015-09-27 14:53:02--  http://localhost:8080/GitHub/furore/jsp/worldwideCountryLess.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/worldwideCountryLess.html'
+
+     0K .......... ........                                    63,9M=0s
+
+2015-09-27 14:53:02 (63,9 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/worldwideCountryLess.html' saved [18962]
+
+--2015-09-27 14:53:02--  http://localhost:8080/GitHub/furore/jsp/worldwideCompanyInfo.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/worldwideCompanyInfo.html'
+
+     0K .......... .......... ..                               91,1M=0s
+
+2015-09-27 14:53:02 (91,1 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/worldwideCompanyInfo.html' saved [23360]
+
+--2015-09-27 14:53:02--  http://localhost:8080/GitHub/furore/jsp/worldwideCompanyLessInfo.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/worldwideCompanyLessInfo.html'
+
+     0K .......... .........                                   31,0M=0,001s
+
+2015-09-27 14:53:02 (31,0 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/worldwideCompanyLessInfo.html' saved [19784]
+
+--2015-09-27 14:53:02--  http://localhost:8080/GitHub/furore/jsp/worldwideLightTool.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/worldwideLightTool.html'
+
+     0K .......... .......... ....                             72,1M=0s
+
+2015-09-27 14:53:02 (72,1 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---14_52_57/worldwideLightTool.html' saved [25286]
+
+--2015-09-27 15:24:09--  http://localhost:8080/GitHub/furore/jsp/home.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home.html'
+
+     0K .......... .......... .......... .......... .......    17,9M=0,003s
+
+2015-09-27 15:24:09 (17,9 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home.html' saved [48290]
+
+--2015-09-27 15:24:09--  http://localhost:8080/GitHub/furore/jsp/frontpage_aboutus.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/frontpage_aboutus.html'
+
+     0K .......... .......... .......... .......... .......... 67,4M
+    50K .......... .......... .......                          31,7M=0,002s
+
+2015-09-27 15:24:09 (48,0 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/frontpage_aboutus.html' saved [79851]
+
+--2015-09-27 15:24:09--  http://localhost:8080/GitHub/furore/jsp/frontpage_governance.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/frontpage_governance.html'
+
+     0K .......... .......... .......... .........             56,0M=0,001s
+
+2015-09-27 15:24:09 (56,0 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/frontpage_governance.html' saved [40019]
+
+--2015-09-27 15:24:09--  http://localhost:8080/GitHub/furore/jsp/frontpage_investors.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/frontpage_investors.html'
+
+     0K .......... .......... .......... .......... ..         57,7M=0,001s
+
+2015-09-27 15:24:09 (57,7 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/frontpage_investors.html' saved [43876]
+
+--2015-09-27 15:24:09--  http://localhost:8080/GitHub/furore/jsp/frontpage_pressmedia.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/frontpage_pressmedia.html'
+
+     0K .......... .......... .......... .......... ...        42,6M=0,001s
+
+2015-09-27 15:24:09 (42,6 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/frontpage_pressmedia.html' saved [44507]
+
+--2015-09-27 15:24:09--  http://localhost:8080/GitHub/furore/jsp/frontpage_careers.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/frontpage_careers.html'
+
+     0K .......... .......... .......... .......... ....       35,3M=0,001s
+
+2015-09-27 15:24:09 (35,3 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/frontpage_careers.html' saved [45854]
+
+--2015-09-27 15:24:09--  http://localhost:8080/GitHub/furore/jsp/frontpage_sustainability.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/frontpage_sustainability.html'
+
+     0K .......... .......... .......... .......... ....       50,5M=0,001s
+
+2015-09-27 15:24:09 (50,5 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/frontpage_sustainability.html' saved [45105]
+
+--2015-09-27 15:24:09--  http://localhost:8080/GitHub/furore/jsp/page_standard.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/page_standard.html'
+
+     0K .......... .......... .......... .......... .......... 60,0M
+    50K .......... .......... .......... .......... .......... 62,8M
+   100K .......... .......... .....                            43,3M=0,002s
+
+2015-09-27 15:24:09 (56,5 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/page_standard.html' saved [129023]
+
+--2015-09-27 15:24:09--  http://localhost:8080/GitHub/furore/jsp/home_accordion_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_accordion_component.html'
+
+     0K .......... .......... .......... ..                    22,6M=0,001s
+
+2015-09-27 15:24:09 (22,6 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_accordion_component.html' saved [32803]
+
+--2015-09-27 15:24:09--  http://localhost:8080/GitHub/furore/jsp/home_ads_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_ads_component.html'
+
+     0K .......... ......                                      39,5M=0s
+
+2015-09-27 15:24:09 (39,5 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_ads_component.html' saved [16452]
+
+--2015-09-27 15:24:09--  http://localhost:8080/GitHub/furore/jsp/home_archive_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_archive_component.html'
+
+     0K .......... .....                                       45,6M=0s
+
+2015-09-27 15:24:09 (45,6 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_archive_component.html' saved [16240]
+
+--2015-09-27 15:24:09--  http://localhost:8080/GitHub/furore/jsp/home_back_button_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_back_button_component.html'
+
+     0K .......... .....                                       54,9M=0s
+
+2015-09-27 15:24:09 (54,9 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_back_button_component.html' saved [15926]
+
+--2015-09-27 15:24:09--  http://localhost:8080/GitHub/furore/jsp/home_breadcrumb_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_breadcrumb_component.html'
+
+     0K .......... ..........                                  62,5M=0s
+
+2015-09-27 15:24:09 (62,5 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_breadcrumb_component.html' saved [21023]
+
+--2015-09-27 15:24:09--  http://localhost:8080/GitHub/furore/jsp/home_button_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_button_component.html'
+
+     0K .......... .....                                       56,3M=0s
+
+2015-09-27 15:24:09 (56,3 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_button_component.html' saved [15665]
+
+--2015-09-27 15:24:09--  http://localhost:8080/GitHub/furore/jsp/home_calendar_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_calendar_component.html'
+
+     0K .......... .......... .                                48,6M=0s
+
+2015-09-27 15:24:09 (48,6 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_calendar_component.html' saved [21812]
+
+--2015-09-27 15:24:10--  http://localhost:8080/GitHub/furore/jsp/home_career_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_career_component.html'
+
+     0K .......... ......                                      45,0M=0s
+
+2015-09-27 15:24:10 (45,0 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_career_component.html' saved [16557]
+
+--2015-09-27 15:24:10--  http://localhost:8080/GitHub/furore/jsp/home_container_swiper_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_container_swiper_component.html'
+
+     0K .......... .......... ......                           39,2M=0,001s
+
+2015-09-27 15:24:10 (39,2 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_container_swiper_component.html' saved [26712]
+
+--2015-09-27 15:24:10--  http://localhost:8080/GitHub/furore/jsp/home_datebar_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_datebar_component.html'
+
+     0K .......... ........                                    61,9M=0s
+
+2015-09-27 15:24:10 (61,9 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_datebar_component.html' saved [19383]
+
+--2015-09-27 15:24:10--  http://localhost:8080/GitHub/furore/jsp/home_disclaimer_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_disclaimer_component.html'
+
+     0K .......... ..........                                  61,4M=0s
+
+2015-09-27 15:24:10 (61,4 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_disclaimer_component.html' saved [21245]
+
+--2015-09-27 15:24:10--  http://localhost:8080/GitHub/furore/jsp/home_footnote_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_footnote_component.html'
+
+     0K .......... .......                                     58,1M=0s
+
+2015-09-27 15:24:10 (58,1 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_footnote_component.html' saved [18033]
+
+--2015-09-27 15:24:10--  http://localhost:8080/GitHub/furore/jsp/home_gallery_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_gallery_component.html'
+
+     0K .......... .......                                     53,6M=0s
+
+2015-09-27 15:24:10 (53,6 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_gallery_component.html' saved [17931]
+
+--2015-09-27 15:24:10--  http://localhost:8080/GitHub/furore/jsp/home_history_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_history_component.html'
+
+     0K .......... .......... .......... .......... .........  45,9M=0,001s
+
+2015-09-27 15:24:10 (45,9 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_history_component.html' saved [50624]
+
+--2015-09-27 15:24:10--  http://localhost:8080/GitHub/furore/jsp/home_horizontal_line_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_horizontal_line_component.html'
+
+     0K .......... ....                                        60,1M=0s
+
+2015-09-27 15:24:10 (60,1 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_horizontal_line_component.html' saved [14954]
+
+--2015-09-27 15:24:10--  http://localhost:8080/GitHub/furore/jsp/home_iframe_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_iframe_component.html'
+
+     0K .......... .....                                       31,4M=0s
+
+2015-09-27 15:24:10 (31,4 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_iframe_component.html' saved [15693]
+
+--2015-09-27 15:24:10--  http://localhost:8080/GitHub/furore/jsp/home_image_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_image_component.html'
+
+     0K .......... .......                                     69,2M=0s
+
+2015-09-27 15:24:10 (69,2 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_image_component.html' saved [18298]
+
+--2015-09-27 15:24:10--  http://localhost:8080/GitHub/furore/jsp/home_image_text_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_image_text_component.html'
+
+     0K .......... .......... ...                              49,1M=0s
+
+2015-09-27 15:24:10 (49,1 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_image_text_component.html' saved [23950]
+
+--2015-09-27 15:24:10--  http://localhost:8080/GitHub/furore/jsp/home_infografic_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_infografic_component.html'
+
+     0K .......... .......                                     55,2M=0s
+
+2015-09-27 15:24:10 (55,2 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_infografic_component.html' saved [18255]
+
+--2015-09-27 15:24:10--  http://localhost:8080/GitHub/furore/jsp/home_intraday_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_intraday_component.html'
+
+     0K .......... ..........                                  77,8M=0s
+
+2015-09-27 15:24:10 (77,8 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_intraday_component.html' saved [21029]
+
+--2015-09-27 15:24:10--  http://localhost:8080/GitHub/furore/jsp/home_link_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_link_component.html'
+
+     0K .......... .......... ..                               89,8M=0s
+
+2015-09-27 15:24:10 (89,8 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_link_component.html' saved [23242]
+
+--2015-09-27 15:24:10--  http://localhost:8080/GitHub/furore/jsp/home_new_header.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_new_header.html'
+
+     0K .......... .......... .......... .......... .......    44,6M=0,001s
+
+2015-09-27 15:24:11 (44,6 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_new_header.html' saved [48177]
+
+--2015-09-27 15:24:11--  http://localhost:8080/GitHub/furore/jsp/home_modal_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_modal_component.html'
+
+     0K .......... .....                                       46,2M=0s
+
+2015-09-27 15:24:11 (46,2 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_modal_component.html' saved [15660]
+
+--2015-09-27 15:24:11--  http://localhost:8080/GitHub/furore/jsp/home_our_worldwide_presence_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_our_worldwide_presence_component.html'
+
+     0K .......... .........                                   71,8M=0s
+
+2015-09-27 15:24:11 (71,8 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_our_worldwide_presence_component.html' saved [19716]
+
+--2015-09-27 15:24:11--  http://localhost:8080/GitHub/furore/jsp/home_quote_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_quote_component.html'
+
+     0K .......... ........                                    75,3M=0s
+
+2015-09-27 15:24:11 (75,3 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_quote_component.html' saved [18474]
+
+--2015-09-27 15:24:11--  http://localhost:8080/GitHub/furore/jsp/home_search_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_search_component.html'
+
+     0K .......... ....                                        46,2M=0s
+
+2015-09-27 15:24:11 (46,2 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_search_component.html' saved [14627]
+
+--2015-09-27 15:24:11--  http://localhost:8080/GitHub/furore/jsp/home_social_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_social_component.html'
+
+     0K .......... .......... .......                          56,6M=0s
+
+2015-09-27 15:24:11 (56,6 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_social_component.html' saved [28085]
+
+--2015-09-27 15:24:11--  http://localhost:8080/GitHub/furore/jsp/home_spacer_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_spacer_component.html'
+
+     0K .......... .....                                       42,1M=0s
+
+2015-09-27 15:24:11 (42,1 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_spacer_component.html' saved [15621]
+
+--2015-09-27 15:24:11--  http://localhost:8080/GitHub/furore/jsp/home_spinner_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_spinner_component.html'
+
+     0K .......... ........                                    51,8M=0s
+
+2015-09-27 15:24:11 (51,8 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_spinner_component.html' saved [18500]
+
+--2015-09-27 15:24:11--  http://localhost:8080/GitHub/furore/jsp/home_swiper_frontpage_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_swiper_frontpage_component.html'
+
+     0K .......... ........                                    37,8M=0s
+
+2015-09-27 15:24:11 (37,8 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_swiper_frontpage_component.html' saved [18445]
+
+--2015-09-27 15:24:11--  http://localhost:8080/GitHub/furore/jsp/home_swiper_homepage_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_swiper_homepage_component.html'
+
+     0K .......... ........                                    55,3M=0s
+
+2015-09-27 15:24:11 (55,3 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_swiper_homepage_component.html' saved [18942]
+
+--2015-09-27 15:24:11--  http://localhost:8080/GitHub/furore/jsp/home_tab_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_tab_component.html'
+
+     0K .......... .......... .......                          58,5M=0s
+
+2015-09-27 15:24:11 (58,5 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_tab_component.html' saved [27785]
+
+--2015-09-27 15:24:11--  http://localhost:8080/GitHub/furore/jsp/home_table_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_table_component.html'
+
+     0K .......... .......... ....                             71,9M=0s
+
+2015-09-27 15:24:11 (71,9 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_table_component.html' saved [24905]
+
+--2015-09-27 15:24:11--  http://localhost:8080/GitHub/furore/jsp/home_text_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_text_component.html'
+
+     0K .......... .......... .....                            93,8M=0s
+
+2015-09-27 15:24:11 (93,8 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_text_component.html' saved [25987]
+
+--2015-09-27 15:24:11--  http://localhost:8080/GitHub/furore/jsp/home_title_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_title_component.html'
+
+     0K .......... .......... .                                87,9M=0s
+
+2015-09-27 15:24:11 (87,9 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_title_component.html' saved [22494]
+
+--2015-09-27 15:24:11--  http://localhost:8080/GitHub/furore/jsp/home_vborder_columns.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_vborder_columns.html'
+
+     0K .......... .......... ....                             76,9M=0s
+
+2015-09-27 15:24:11 (76,9 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_vborder_columns.html' saved [24938]
+
+--2015-09-27 15:24:11--  http://localhost:8080/GitHub/furore/jsp/home_video_text_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_video_text_component.html'
+
+     0K .......... .......... .....                            49,3M=0s
+
+2015-09-27 15:24:11 (49,3 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_video_text_component.html' saved [25653]
+
+--2015-09-27 15:24:12--  http://localhost:8080/GitHub/furore/jsp/home_worldwide_component.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_worldwide_component.html'
+
+     0K .......... .......... .......... ..                    51,5M=0,001s
+
+2015-09-27 15:24:12 (51,5 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/home_worldwide_component.html' saved [33103]
+
+--2015-09-27 15:24:12--  http://localhost:8080/GitHub/furore/jsp/archives.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/archives.html'
+
+     0K .......... .......... .......... ..........            57,8M=0,001s
+
+2015-09-27 15:24:12 (57,8 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/archives.html' saved [41037]
+
+--2015-09-27 15:24:12--  http://localhost:8080/GitHub/furore/jsp/careers_form.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/careers_form.html'
+
+     0K .......... .......... .......... .......... .......... 49,6M
+    50K .                                                      3,53G=0,001s
+
+2015-09-27 15:24:12 (50,7 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/careers_form.html' saved [52321]
+
+--2015-09-27 15:24:12--  http://localhost:8080/GitHub/furore/jsp/careers_tool.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/careers_tool.html'
+
+     0K .......... .......... .......... ..                    27,9M=0,001s
+
+2015-09-27 15:24:12 (27,9 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/careers_tool.html' saved [33188]
+
+--2015-09-27 15:24:12--  http://localhost:8080/GitHub/furore/jsp/contact_form.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/contact_form.html'
+
+     0K .......... .......... .......... .......... .......... 59,3M
+    50K ...                                                    46,9M=0,001s
+
+2015-09-27 15:24:12 (58,2 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/contact_form.html' saved [55221]
+
+--2015-09-27 15:24:12--  http://localhost:8080/GitHub/furore/jsp/contact_form_thanks.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/contact_form_thanks.html'
+
+     0K .......... .......... .....                            78,6M=0s
+
+2015-09-27 15:24:12 (78,6 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/contact_form_thanks.html' saved [26009]
+
+--2015-09-27 15:24:12--  http://localhost:8080/GitHub/furore/jsp/alerts.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/alerts.html'
+
+     0K .......... .......... .......... .......... .......... 41,8M
+    50K .......                                                36,3M=0,001s
+
+2015-09-27 15:24:12 (41,0 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/alerts.html' saved [58428]
+
+--2015-09-27 15:24:12--  http://localhost:8080/GitHub/furore/jsp/board_of_directors.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/board_of_directors.html'
+
+     0K .......... .......... .......... .......... .......... 82,2M
+    50K .......... ......                                      27,8M=0,001s
+
+2015-09-27 15:24:12 (55,5 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/board_of_directors.html' saved [67954]
+
+--2015-09-27 15:24:12--  http://localhost:8080/GitHub/furore/jsp/calendar.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/calendar.html'
+
+     0K .......... .......... .......... .......               44,5M=0,001s
+
+2015-09-27 15:24:12 (44,5 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/calendar.html' saved [38458]
+
+--2015-09-27 15:24:12--  http://localhost:8080/GitHub/furore/jsp/calendar-noresults.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/calendar-noresults.html'
+
+     0K .......... .......... ..                               63,4M=0s
+
+2015-09-27 15:24:12 (63,4 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/calendar-noresults.html' saved [22969]
+
+--2015-09-27 15:24:12--  http://localhost:8080/GitHub/furore/jsp/calendar-detail-landscape.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/calendar-detail-landscape.html'
+
+     0K .......... ..........                                  65,7M=0s
+
+2015-09-27 15:24:12 (65,7 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/calendar-detail-landscape.html' saved [21273]
+
+--2015-09-27 15:24:12--  http://localhost:8080/GitHub/furore/jsp/calendar-detail-portrait.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/calendar-detail-portrait.html'
+
+     0K .......... .......... .                                62,7M=0s
+
+2015-09-27 15:24:12 (62,7 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/calendar-detail-portrait.html' saved [21618]
+
+--2015-09-27 15:24:12--  http://localhost:8080/GitHub/furore/jsp/calendar-detail-video.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/calendar-detail-video.html'
+
+     0K .......... .......... ..                               88,0M=0s
+
+2015-09-27 15:24:12 (88,0 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/calendar-detail-video.html' saved [22848]
+
+--2015-09-27 15:24:12--  http://localhost:8080/GitHub/furore/jsp/error404.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/error404.html'
+
+     0K .......... .......... ..........                       26,4M=0,001s
+
+2015-09-27 15:24:12 (26,4 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/error404.html' saved [31648]
+
+--2015-09-27 15:24:12--  http://localhost:8080/GitHub/furore/jsp/curriculum_vitae.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/curriculum_vitae.html'
+
+     0K .......... .......... .......... ...                   25,5M=0,001s
+
+2015-09-27 15:24:12 (25,5 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/curriculum_vitae.html' saved [34415]
+
+--2015-09-27 15:24:12--  http://localhost:8080/GitHub/furore/jsp/news.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/news.html'
+
+     0K .......... .......... .......... ......                48,3M=0,001s
+
+2015-09-27 15:24:12 (48,3 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/news.html' saved [37069]
+
+--2015-09-27 15:24:12--  http://localhost:8080/GitHub/furore/jsp/press_release.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/press_release.html'
+
+     0K .......... .......... ......                           59,7M=0s
+
+2015-09-27 15:24:12 (59,7 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/press_release.html' saved [26678]
+
+--2015-09-27 15:24:12--  http://localhost:8080/GitHub/furore/jsp/search.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 500 Internal Server Error
+2015-09-27 15:24:12 ERROR 500: Internal Server Error.
+
+--2015-09-27 15:24:13--  http://localhost:8080/GitHub/furore/jsp/shareholders_meeting_step1.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/shareholders_meeting_step1.html'
+
+     0K .......... .......... .......... .......... .......... 60,6M
+    50K .......... ........                                    41,0M=0,001s
+
+2015-09-27 15:24:13 (53,7 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/shareholders_meeting_step1.html' saved [69740]
+
+--2015-09-27 15:24:13--  http://localhost:8080/GitHub/furore/jsp/shareholders_meeting_step2.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/shareholders_meeting_step2.html'
+
+     0K .......... .......... .......... .......... .....      47,2M=0,001s
+
+2015-09-27 15:24:13 (47,2 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/shareholders_meeting_step2.html' saved [46188]
+
+--2015-09-27 15:24:13--  http://localhost:8080/GitHub/furore/jsp/sitemap.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/sitemap.html'
+
+     0K .......... .......... .......... .......... ........   39,7M=0,001s
+
+2015-09-27 15:24:13 (39,7 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/sitemap.html' saved [50067]
+
+--2015-09-27 15:24:13--  http://localhost:8080/GitHub/furore/jsp/unsubscribe.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/unsubscribe.html'
+
+     0K .......... .......... ........                         66,2M=0s
+
+2015-09-27 15:24:13 (66,2 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/unsubscribe.html' saved [28879]
+
+--2015-09-27 15:24:13--  http://localhost:8080/GitHub/furore/jsp/worldwide.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/worldwide.html'
+
+     0K .......... .......... .....                             102M=0s
+
+2015-09-27 15:24:13 (102 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/worldwide.html' saved [25696]
+
+--2015-09-27 15:24:13--  http://localhost:8080/GitHub/furore/jsp/worldwideCountry.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/worldwideCountry.html'
+
+     0K .......... .......... .....                            12,9M=0,002s
+
+2015-09-27 15:24:13 (12,9 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/worldwideCountry.html' saved [26530]
+
+--2015-09-27 15:24:13--  http://localhost:8080/GitHub/furore/jsp/worldwideCountryLess.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/worldwideCountryLess.html'
+
+     0K .......... ........                                    77,3M=0s
+
+2015-09-27 15:24:13 (77,3 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/worldwideCountryLess.html' saved [18964]
+
+--2015-09-27 15:24:13--  http://localhost:8080/GitHub/furore/jsp/worldwideCompanyInfo.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/worldwideCompanyInfo.html'
+
+     0K .......... .......... ..                               73,5M=0s
+
+2015-09-27 15:24:13 (73,5 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/worldwideCompanyInfo.html' saved [23362]
+
+--2015-09-27 15:24:13--  http://localhost:8080/GitHub/furore/jsp/worldwideCompanyLessInfo.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/worldwideCompanyLessInfo.html'
+
+     0K .......... .........                                   58,1M=0s
+
+2015-09-27 15:24:13 (58,1 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/worldwideCompanyLessInfo.html' saved [19786]
+
+--2015-09-27 15:24:13--  http://localhost:8080/GitHub/furore/jsp/worldwideLightTool.jsp
+Resolving localhost... 127.0.0.1, 127.0.0.1, 127.0.0.1, ...
+Connecting to localhost|127.0.0.1|:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/worldwideLightTool.html'
+
+     0K .......... .......... ....                             60,8M=0s
+
+2015-09-27 15:24:13 (60,8 MB/s) - `C:/Informatica/xampp/htdocs/GitHub/furore/2015-09-27---15_24_09/worldwideLightTool.html' saved [25288]
+
