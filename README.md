@@ -4,6 +4,8 @@ Progetto di base con diversi componenti utilizzabili singolarmente.
 
 La cartella "html" contiene il codice generato dai "jsp" tramite l'utilizzo di wget.
 
+Il batch che scarica il sito locale e crea gli html, crea questi nuovi file in una cartella temporanea con data e ora di creazione.
+
 Gli altri script della cartella batch servono per convertire i jsp in file php funzionanti a parte per la prima riga di jsp che va rimossa a mano tramite editor con funzione trova sostituisci.
 
 Il file di supporto per la sostituzione sostituisce a righe alterne una riga (di codice jsp) con la successiva (che è php)
