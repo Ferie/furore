@@ -27,14 +27,14 @@
 				$('.with-jsp li a:not(.no-page)').each(function (i, e) {
 					var url = $(e).attr("href");
 					if (url.lastIndexOf(".html") >= 0) {
-						var $jspUrl = $("<a/>").addClass("jsp").attr("href", 'jsp/' + url.substring(0, url.lastIndexOf(".")) + ".jsp").text("(JSP)");
+						var $jspUrl = $("<a/>").addClass("jsp").attr("href", 'jsp/' + url.substring(5, url.lastIndexOf(".")) + ".jsp").text("(JSP)");
 						$(e).parent().append(" ").append($jspUrl);
 					}
 				});
 				$('.with-php li a:not(.no-page)').each(function (i, e) {
 					var url = $(e).attr("href");
 					if (url.lastIndexOf(".html") >= 0) {
-						var $phpUrl = $("<a/>").addClass("php").attr("href", 'php/' + url.substring(0, url.lastIndexOf(".")) + ".php").text("(PHP)");
+						var $phpUrl = $("<a/>").addClass("php").attr("href", 'php/' + url.substring(5, url.lastIndexOf(".")) + ".php").text("(PHP)");
 						$(e).parent().append(" ").append($phpUrl);
 					}
 				});
