@@ -1,9 +1,9 @@
 
 REM Sostituire i propri path
 cd "C:\Program Files\GnuWin32\bin"
-set rootSour=http://localhost:8080/gb-energy-website-v2-main-site/app/furore/jsp/
-set rootDest=C:\websites\gb-energy-website-v2-main-site\app\furore
-set logDest=C:\websites\gb-energy-website-v2-main-site\app\furore\wget_log.log
+set rootSour=http://localhost:8080/GitHub/furore/jsp
+set rootDest=C:\Informatica\xampp\htdocs\GitHub\furore
+set logDest=C:\Informatica\xampp\htdocs\GitHub\furore\wget_log.log
 set start=%date:~-4%-%date:~3,2%-%date:~0,2%---%TIME:~0,2%_%TIME:~3,2%_%TIME:~6,2%
 mkdir "%rootDest%\%start%"
 REM TEMPLATES
@@ -69,5 +69,5 @@ wget "%rootSour%/news.jsp" -a "%logDest%" -O "%rootDest%\%start%\news.html"
 wget "%rootSour%/calendar-detail-landscape.jsp" -a "%logDest%" -O "%rootDest%\%start%\calendar-detail-landscape.html"
 wget "%rootSour%/calendar-detail-portrait.jsp" -a "%logDest%" -O "%rootDest%\%start%\calendar-detail-portrait.html"
 wget "%rootSour%/calendar-detail-video.jsp" -a "%logDest%" -O "%rootDest%\%start%\calendar-detail-video.html"
-REM wget "%rootSour%/careers_form.jsp" -a "%logDest%" -O "%rootDest%\%start%\careers_form.html"
+wget "%rootSour%/careers_form.jsp" -a "%logDest%" -O "%rootDest%\%start%\careers_form.html"
 wget "%rootSour%/archives.jsp" -a "%logDest%" -O "%rootDest%\%start%\archives.html"
