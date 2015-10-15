@@ -9,7 +9,7 @@ jQuery(document).ready(function() {
 		timer = setTimeout(function(){ 
 			$.ajax({
 				type: 'GET',
-				url: 'data/intraday.json',
+				url: '../data/intraday.json',
 				dataType: "json",
 				success: function(data, textStatus, jqXHR){
 					var toLoad = (lastLoad+1)%data.length;

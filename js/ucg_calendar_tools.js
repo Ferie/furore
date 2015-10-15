@@ -54,7 +54,7 @@ function getSwiperByName(name){
 function getEventsData(swiperContainer) {
 	$.ajax({
 		type: 'GET',
-		url: 'data/events.json',
+		url: '../data/events.json',
 		dataType: "json",
 		success: function(data, textStatus, jqXHR){
 			var $name = $(swiperContainer).data('name');
